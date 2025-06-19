@@ -1,49 +1,48 @@
-﻿# 3.3.2. 운반(무게 수정)
+﻿# 3.3.2. Transport (Modifying the Weight)
 
-* 제어기의 전면 Door가 완전한 잠김 상태인지를 확인하여 주십시오.
+* 	Check whether the front door of the controller is completely locked.
 
-* 제어기 위에 고정되어 있지 않은 것이 있다면 치워 주십시오.
+*	Remove anything that is not fixed onto the controller.
 
-* 제어기 위의 Eye Bolt가 확실히 채워졌는지 확인하여 주십시오.
+*	Check if the eye bolts on the controller are surely fastened.
 
-* 제어기는 정밀장치이므로 강한 충격이 가해지지 않도록 운반에 주의하여 주십시오.
+*	As the controller is a precision device, pay attention to the transport of it to prevent any strong impact from being applied to it.
 
-* 제어기의 중량은 Max. 250kg입니다. 크레인을 사용할 경우 Wire가 제어기 위의 물건에 손상을 입히지 않도록 주의하여 주십시오.
-※    제어기의 중량은 “2. 세부사양”을 참고하시기 바랍니다.
+*	The weight of the controller is maximum 200kg. When using a crane, take precautions to prevent an object on the controller from being damaged by the wire. 
 
-* 지게차를 사용할 경우 제어기가 흔들리지 않도록 고정하여 주십시오. 
+※ For the weight of the controller, refer to “2. Details of Specifications’.
 
-* 차량으로 이동시 스퀴드 등으로 로봇 본체 및 제어기를 고정해 주십시오
+*	 When using a forklift, fix the controller in a way to prevent the controller from shaking.
 
-* 포장 및 운반 관련 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 부주의, 조작 미숙 및 과실로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+*	When moving the product by vehicle, fix the manipulator and controller by using squids.
 
-* 크레인을 사용한 제어기 운반 시 아래 사항을 확인하여 주십시오.
+*	When transporting the product, fully understand the contents related to the packing and transport, and follow the instructions. Our company will not be responsible for any damage to or breaking of the product due to customer’s carelessness, inexperience in operation, or negligence.
 
-  - 일반적으로 제어기의 운반은 아이볼트를 이용한 크레인 와이어를 사용해야 합니다.
+*	Check the following items when transporting the controller by using a crane.
 
-  - 와이어가 제어기를 견딜 수 있도록 충분한 강도를 가지고 있는지 확인하십시오.
 
-  - 아이볼트가 단단하게 체결되었는지 확인하십시오.
+    - 	In general, the controller should be transported by using crane wires for which eye bolts are used.
+    -	Check whether the wires have sufficient strength to withstand the weight of the controller.
+    -	Check whether the eye bolts are fastened tightly.
+
 
 ![](../../_assets/그림_3.3_제어기_와이어_연결_위치.png  )
 
-그림 3.3 제어기 와이어 연결 위치
+Figure 3.3 Controller Wire Connection Position
 
-* 지게차를 사용한 제어기 운반 시 아래 사항을 확인하여 주십시오.
-  - 와이어 로프를 이용해 운반할 경우는, 제어기를 견딜 수 있는 와이어를 사용하십시오.
+*	Check the following items when transporting the controller by using a forklift,
+    -	When transporting the product by using wire ropes, use a wire that can withstand the weight of the controller.
+    -	Check whether the eyebolts are firmly fixed.
+    -	Transport the controller while keeping it as low as possible.<br/><br/>
 
-  - 아이볼트가 견고하게 고정되었는지 확인하십시오.
-
-  - 제어기는 가능한 낮게하여 운반하십시오.
 
 ![](../../_assets/그림_3.4_지게차를_이용한_제어기_운반.png  )
 
-그림 3.4 지게차를 이용한 제어기 운반
+Figure 3.4 Transport of the Controller by Using a Forklift
 
 
 {% hint style="warning" %}
-리프팅 장비를 이용해 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수해야 합니다.
-크레인을 이용해 이동할 때에는 제품 아래에 작업자가 없는지 반드시 확인하십시오. 또한, 절대 크레인 또는 제품 아래에서 작업하거나 지나다니지 마십시오.
+If you transport the product by uisng lifting equpment, you should comply with the relevant national and local safety regulations and equipment usage guidelines. When moving the product by using a crane, you must make sure that that no workers are under the product. Also, never work or walk under the crane or the product.
 {% endhint %}
 
 

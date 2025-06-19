@@ -1,16 +1,16 @@
-﻿# 5.2.1. 개요
+﻿# 5.2.1. Overview
 
-브레이크 해제유닛은 로봇의 각 축 모터브레이크를 해제가 필요할 경우 사용할 수 있는 유닛입니다. 주로 초기 로봇 설치 시 로봇 자세를 설정하는 데 도움을 줄 수 있습니다. 브레이크 해제 시 반드시 “1.8.2 관련 기타 기능”의 “수동브레이크 해제”의 안전 사항을 충분히 인지한 후 사용하시기 바랍니다.
+The brake release unit can be used when it is necessary to release the motor brake for each axis of the robot. It can help to set the robot posture mainly during the initial installation of the robot. When releasing the brake, you must fully understand the safety information of “Release of the manual brake” in “1.8.2 Other Related Functions” before using the robot.
 
 {% hint style="info" %}
-1. 동시에 두개의 축 이상을 해제하지 마십시오.
-2. 반드시 로봇과 안전거리를 유지한 후 브레이크 해제유닛을 사용하십시오.
-3. 크레인과 같은 기구를 사용하여 로봇 축낙하를 대비 후 브레이크 해제유닛을 사용하십시오.
-4. 최소 2인이상 1조로 작업을 진행하여 안전사항을 체크하십시오.
+1. Do not release more than two axes at the same time.
+2. Keep a safe distance from the robot first before using the brake release unit.
+3. Use the brake release unit after preparing for the dropping of the robot’s axis using equipment such as a crane.
+4. Check the safety matters while working in a group of at least two people.
 {% endhint %}
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 상기 “주의사항”을 지키지 않는 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the relevant requirements of international standards and national laws or not following the above “caution.”
 {% endhint %}
 

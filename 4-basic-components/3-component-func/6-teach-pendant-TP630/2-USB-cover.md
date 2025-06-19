@@ -1,3 +1,4 @@
-﻿# 4.3.6.2. USB 커버
+﻿# 4.3.6.2. USB Cover
 
-티치펜던트 옆면 고무커버 아래 USB A type 커넥터가 장착되어 있으므로, 사용자는 USB Memory Stick을 이용하여 각종 보드류의 버전뿐만 아니라 데이터 및 티칭 프로그램 등 필요한 파일들을 업/다운 로드 할 수 있습니다.
+There is a USB A type connector mounted under the rubber cover at the bottom of the teach pendant, allowing the user to upload/download necessary files, such as versions of diverse types of boards, as well as data and teaching programs, using a USB memory stick.
+ 

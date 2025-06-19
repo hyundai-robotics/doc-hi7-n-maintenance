@@ -1,1 +1,1 @@
-﻿# 4.3.5. 전원공급모듈 (H6PSM)
+﻿# 4.3.5. Power Supply Module (H6PSM)

@@ -1,19 +1,19 @@
-﻿# 1.13.1. 제어기 보수, 점검시 안전대책
+﻿# 1.13.1. Safety Measures When Maintaining and Inspecting the Controller
 
-로봇 제어기 보수, 점검 시 다음의 안전대책을 따라 주십시오.
+Observe the following safety measures when maintaining and inspecting the robot controller.
 
-* 보수, 점검 작업을 하는 사람은 특별 보수교육을 받아서, 내용을 숙지한 사람만이 해야 합니다.
+* 	Maintenance and inspection works should be performed only by those who have received special maintenance trainings and fully understand the related contents.
 
-* 제어기 보수, 점검 절차에 의하여 작업을 진행하여 주십시오. 
+*	Progress the work according to the controller maintenance and inspection procedures.
 
-* 보수, 점검작업은 반드시 주위의 안전을 확인하여 위험을 피하기 위한 통로나 장소를 확보하고서 안전한 작업을 하여 주십시오.
+*	For the maintenance and inspection works, you must check the surroundings for safety and secure a passage or a place to avoid danger before progressing the work safely.
 
-* 로봇의 일상점검이나 수리, 부품 교환 등의 작업을 할 때는 반드시 전원을 내리고 작업하십시오. 또, 다른 작업자가 부주의로 전원을 투입할 수 없도록 1차 전원에 \[전원투입금지\] 등의 경고 표시를 하여 주십시오.
+*	Must turn off the power before performing daily inspection or maintenance of the robot or replacement of parts. In addition, in order to prevent other workers from inadvertently turning on the power, put a warning marking such as [Power-On Prohibited] on the primary power supply. 
 
-* 교환 부품은 반드시 지정된 부품을 사용하십시오.
+*	Always use the designated replacement parts. 
 
-* 제어기 문을 열 경우는 반드시 전원을 내리고, 약 3분 동안 기다린 후 작업에 들어가십시오.
+*	When required to open the controller door, you must turn off the power first and then wait for about 3 minutes before starting the work.
 
-* 제어기 내부의 보수 및 점검 작업시, 충분한 조도가 확보되지 않을 경우에는 외부 조명등을 사용 하십시오\[배정1\] .
+*	Use external lighting when sufficient illumination is not secured when performing maintenance and inspection works inside the controller.
 
-* 서보 앰프의 방열판과 회생저항은 열이 심하게 발생하므로 만지지 마십시오. 보수가 끝낸 다음 제어기내에 공구, 이물질 등을 놓아두지 않았는지 확인한 후 문을 확실하게 닫아 주십시오. ----\[배정1\]Hi5a 의 점검사항에 추가되었던 문구 반영.
+*	Do not touch the heat sink and regenerative resistor of the servo amplifier because they generate excessive heat. After maintenance, check whether tools, foreign substances, etc. are left behind inside the controller, and then close the door securely.

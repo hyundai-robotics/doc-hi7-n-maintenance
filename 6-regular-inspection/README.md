@@ -1,4 +1,3 @@
-﻿# 6. 정기 점검
+﻿# 6. Periodic Inspections
 
-제어기의 정기 점검은 고장의 발생을 최소화하고 성능을 지속적으로 유지하기
-위함이며, 정기 점검 작업시의 주의 사항 및 작업 내용을 설명합니다.
+The periodic inspection of the controller is designed to minimize the occurrence of failures and to maintain the performance continuously. This section describes the cautions and contents of works during the periodic inspection. 

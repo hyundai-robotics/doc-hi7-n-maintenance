@@ -1,21 +1,21 @@
-﻿# 1.11.3. 자동 운전시 안전대책
+﻿# 1.11.3. Safety Measures for Auto Operation
 
-로봇 자동 운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
+Observe the following measures considering that safety is very important when operating the robot in auto mode.
 
-* 안전망 출입구에는 \[운전중 출입금지\] 표시를 하는 한편 작업자에게는 운전중에는 출입을 금할 것을 철저히 당부하여 주십시오. 로봇이 정지하고 있다면 상항을 판단 후 안전망 안으로 들어 갈 수가 있습니다.
+* 	Put up a sign [No entry during operation] on the safety fence entrance and ask the worker to refrain from entering during operation. If the robot is stopped, you may enter inside the safety fence after judging the situation. 
 
-* 자동운전 개시 때에는 안전망 안에 작업자가 있는지 꼭 확인하여 주십시오. 작업자가 있음을 확인하지 않고 작업할 경우 인명사고를 낼 수 있습니다.
+*	When starting the auto operation, you must check whether there is a worker inside the safety fence. If you work without checking whether there is a worker inside, it may cause an accident involving people. 
 
-* 자동운전 개시 때에는 프로그램 번호, 스텝 번호, 모드, 기동선택 등이 자동운전 가능 상태임을 확인하고서 개시하여 주십시오. 다른 프로그램이나 스텝이 선택된 상태에서 기동할 경우 로봇이 예상하지 않았던 동작을 하여 사고를 발생시킬 수 있습니다.
+*	When starting the auto operation, check first that that the program number, step number, mode, start selection, etc. are in proper state for auto operation. If you start the robot while an irrelevant program or step is selected, the robot may behave unexpectedly causing an accident. 
 
-* 자동운전 개시 때에는 로봇이 자동운전 개시할 수 있는 위치에 있는가를 확인하고 개시하여 주십시오. 프로그램 번호나 스텝 번호가 로봇 위치와 맞는지 확인하여 주십시오. 프로그램이나 스텝이 맞더라도 로봇이 다른 위치에 있을 경우 통상과 다른 동작으로 인해 사고가 발생할 수 있습니다.
+*	When starting the auto operation, check in advance that the robot is in the position where the robot can start the auto operation. Check also whether the program number or step number matches with the robot position. Even when the program or step is correct, if the robot is in a different position, an accident may occur due to an operation different from a normal operation 
 
-* 자동운전 개시 때에는 즉시 비상정지 스위치를 누를 수 있도록 준비해주십시오. 예측하지 않았던 로봇의 동작이나 상황이 발생할 경우 즉시 비상정지를 눌러 주십시오.
+*	Be prepared to press the emergency stop button immediately at the start of auto operation. If an unexpected robot operation or unexpecred situation occurs, immediately press the emergency stop button. 
 
-* 로봇의 동작경로, 동작상황, 동작음 등을 파악하여 이상한 상태는 없는지를 판단할 수 있도록 하여 주십시오. 로봇은 갑자기 고장 등 이상을 일으키는 경우도 있습니다만, 고장이 발생하기 전에 어떤 징조를 나타내는 경우가 있습니다. 이것을 사전에 예지하기 위해서 로봇의 정상 운전 상태를 잘 파악해 두십시오.
+*	Check the operation path, operation status, and operation sound, etc. of the robot to judge whether there is any abnormal state. The robot may suddenly cause an abnormality such as a failure, but it may give some symptoms before the failure occurs. In order to predict this in advance, it is required to well understand the normal operation status of the robot. 
 
-* 어떤 이상을 발견하면 즉시 비상정지하고, 이상에 대한 적절한 조치를 취해 주십시오. 적절한 조치없이 사용시 생산정지뿐만 아니라 중대한 인명사고를 유발할 수 있는 심각한 고장이 발생할 수 있습니다.
+*	If any abnormality is found, immediately make an emergency stop and take proper measure for it. Using the robot without proper measures could lead to a severe failure that may lead to production interruption and significant accidents involving people. 
 
-* 이상발생 후, 조치를 완료하고 동작을 확인하는 경우 안전망 안에 작업자가 있는 상태에서는 동작시키지 말아 주십시오, 신뢰성이 낮은 상태로 다른 이상이 발생하는 등, 예측하지 못한 사고가 발생할 수 있습니다.
+*	While completing measures and checking the operation after an abnormality occurred, do not operate the robot while the worker is still inside the safety fence. Unexpected accidents such as other abnormalities may occur as the reliability is low. 
 
-* 자동모드를 선택하기 전, 중단된 안전 장치의 기능이 있다면, 반드시 완전한 기능으로 돌아오게 한 후 작업을 진행해야 합니다.
+*	Before selecting the auto mode, if there is a safety device function that has been stopped, you should progress works after recovering the function back to completely normal state.

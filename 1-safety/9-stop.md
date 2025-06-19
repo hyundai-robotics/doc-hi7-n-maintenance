@@ -1,11 +1,11 @@
-﻿# 1.9. 정지
+﻿# 1.9. Stop
 
-Hi6제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. IEC 60204-1에 명시된 정지분류 기준으로 안전입력 별 분류는 아래와 같습니다.
+The safety system of Hi6 controller can handle the stop operation as shown below. Safety inputs can be classified as follows according to the stop classification criteria specified in IEC 60204-1.
 
-* 정지분류 0: 기계 액추에이터의 전원을 즉시 제거하여 정지(제어되지 않은 정지)
+*  Stop classification Stopping (uncontrolled stoping) occurs as the power to the machine actuator is immediately removed.
 
-    →  비상 정지 버튼
+    →  Emergency stop button
 
-* 정지분류1: 정지를 달성하기 위해 기계 액추에이터에 사용할 수 있는 전력이 있는 제어 정지 및 정지가 달성되면 전력을 제거
+*  Stop classification 1: Controlled stop in which the machine actuator still has a power that can be used to achieve the stopping. The power will be removd when the stopping is achieved. 
 
-    →  비상 정지 버튼 외 안전입력
+    →  Safety inputs except for the emergency stop button

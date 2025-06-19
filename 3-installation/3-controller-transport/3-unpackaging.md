@@ -1,13 +1,14 @@
-﻿# 3.3.3. 포장 해제
+﻿# 3.3.3. Unpacking 
 
-* 포장을 해체하고 로봇을 설치하기 전에 안전 규정 및 다른 지침을 주의깊게 숙지하십시오.
+* 	Fully understand the safety regulations and other guidelines carefully before unpacking and installing the robot.
 
-* 포장 해체 지침에 따라 포장을 해제하십시오.
+*	Unpack the product according to the unpacking instructions.
 
-* 로봇과 제어기를 안전하게 설치할 수 있는 장소인지 확인하십시오.
+*	Check whether the location is an area where the robot and controller can be safely installed.
 
-* 로봇과 제어기가 안전하게 이동할 수 있는 경로가 확보되었는지 확인하십시오.
+*	Check if a path that allows the robot and controller to move safely is secured.
 
-* 로봇의 운반은 자격 있는 사람이 수행하십시오.
+*	Transport of the robot should be performed by a qualified person.
 
-* 포장의 해체시 운송중이나, 포장의 해체시 파손된 부분이 없는지 확인하십시오.
+*	When unpacking the product, check that whether there is any damage that might have occurred during transport or unpcking.
+

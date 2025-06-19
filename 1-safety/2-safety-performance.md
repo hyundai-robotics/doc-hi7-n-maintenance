@@ -1,14 +1,14 @@
-﻿# 1.2. 안전 성능
+﻿# 1.2. Safety Performance
 
-산업용 로봇의 안전 모듈의 성능은 다음과 같습니다.
+The performance of the industrial robot's safety modules is as follows.
 
-표 1-1 안전모듈의 안전성능
+Table 1-1 Safety Performance of Safety Modules
 <table>
 <thead>
   <tr>
-    <th>항목</th>
-    <th>안전 성능</th>
-    <th>적용 표준</th>
+    <th>Item</th>
+    <th>Safety performance</th>
+    <th>Applicable standards</th>
   </tr>
 </thead>
 <tbody>

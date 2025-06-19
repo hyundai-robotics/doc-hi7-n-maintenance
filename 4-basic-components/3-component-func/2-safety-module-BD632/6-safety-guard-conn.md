@@ -1,38 +1,41 @@
-﻿# 4.3.2.6. 안전가드의 연결
+﻿# 4.3.2.6. Connection of the Safety Guard 
 
-(1\)    일반안전가드
+(1\) General Safety Guard
 
-일반 안전가드는 제어기의 모드(자동, 수동)에 무관하게 작동하는 안전가드입니다. 즉 설치된 안전가드 내부로 사람이 진입하거나 가드가 끊어진 경우 제어기는 즉각적으로 모터파워를 제거합니다. 사용될 수 있는 안전가드는 접점출력의 형태가 되어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
+The general safety guard operates regardless of the controller's mode (automatic or manual). In other words, when a person enters inside the installed safety guard or when the guard is broken, the controller will immediately shut off the motor power. The safety guard that can be used should be in the form of contact output. In the terminal block TBEM, terminals are configured in a way that they connect the contact outputs of the safety guard to the dual safety chain, as shown in the figure below.
+
+
 
 ![](../../../_assets/그림_4.34_터미널블록_TBRMT에_일반_안전가드를_연결하는_방법.png  )
 
-그림 4.14 터미널블록 TBRMT에 일반 안전가드를 연결하는 방법
+Figure 4.14 Method to Connect a General Safety Guard to the Terminal Block TBRMT
 
-일반 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(15-7, 16-8번 핀)들을 연결하여 입력을 무효화시킵니다.
+If the general safety guard is not to be used, connect the terminals (pins 15-7 and 16-8) of the terminal block TBEM, as shown below, to disable the input.
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.15 일반 안전가드를 사용하지 않을 경우 조치방법
+Figure 4.15 Method to Perform When Not Using a General Safety Guard
 
 {% hint style="warning" %}
-일반 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
+If a general safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. In addition, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 
-\(2\)    접점입력 자동안전가드
 
-자동 안전가드는 제어기가 자동모드에 있을 경우에만 작동하는 안전가드로서 아래와 같이 2개의 입력을 제공합니다. 일반 안전가드와 마찬가지로 접점출력의 형태이어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
+\(2\) Automatic Safety Guard of Contact Input Type 
+
+The automatic safety guard operates only when the controller is in the automatic mode and provides two inputs, as shown below. Like a general safety guard, the automatic safety guard should be in the form of contact output. In the terminal block TBEM, terminals are configured in a way that they connect the contact outputs of the safety guard to the dual safety chain, as shown in the figure below.
 
 ![](../../../_assets/그림_4.36_터미널블록_TBEM에_접점입력_자동_안전가드를_연결하는_방법.png  )
 
-그림 4.16 터미널블록 TBEM에 접점입력 자동 안전가드를 연결하는 방법
+Figure 4.16 Method to Connect an Automatic Safety Guard of Contact Input Type to the Terminal Block TBEM
 
-자동 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(11-3, 12-4, 13-5, 14-6)들을 연결하여 입력을 무효화시킵니다.
+If the automatic safety guard is not to be used, connect the terminals of the terminal block TBEM((pins 11-3, 12-4, 13-5 and 14-6), as shown below, to disable the input.
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.17 접점입력 자동 안전가드를 사용하지 않을 경우 조치방법
+Figure 4.17 Method to Perform When Not Using an Automatic Safety Guard of Contact Input Type
 
 {% hint style="warning" %}
-자동 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
+If an automatic safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop works normally. In addition, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 

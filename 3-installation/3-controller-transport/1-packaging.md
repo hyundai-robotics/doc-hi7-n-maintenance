@@ -1,9 +1,10 @@
-﻿# 3.3.1. 포장
+﻿# 3.3.1. Packing
 
-* 모델 명판을 박스에 부착하십시오.
+* 	Attach the model name plate to the box.
 
-* 노출된 모든 커넥터를 더스트 캡이나 폴리 비닐 등으로 보호하십시오.
+*	Protect all exposed connectors with a dust cap or polyvinyl.
 
-* T/P가 박스에 포장될 때는 외부의 충격에 의해 LCD의 파손을 방지하기 위해 공기로 충전된 완충재를 사용하여 주십시오.
+*	When the teach pendant is packaged in a box, use an air-filled cushioning to prevent the LCD from getting damaged due to external impact.
 
-* 방수 처리된 팩킹 리스트를 박스 바깥면에 부착하십시오.
+*	Attach the waterproofed packing list to the outside of the box.
+

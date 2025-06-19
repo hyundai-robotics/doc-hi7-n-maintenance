@@ -1,33 +1,37 @@
-﻿# 1.8.1. 주요 안전 기능
+﻿# 1.8.1. Main Safety Functions
 
-* 비상정지 (IEC 60204-1,10,7)
+* Emergency stop (IEC 60204-1,10,7)
 
-제어기와 티칭펜던트에 각각 비상정지 버튼이 한 개씩 있으며, 필요에 따라 추가로 비상정지 입력을 로봇의 안전 체인 회로에 연결할 수 있습니다. 비상정지 기능은 로봇의 모든 제어 기능보다도 우선적으로 적용되는 기능입니다. 로봇 각축 모터에 공급되는 전원을 즉각 차단하여 로봇을 정지시키며, 로봇에 의하여 제어되는 안전에 관련된 기능들을 사용하지 못하도록 합니다.
+There is one emergency stop button on the controller and teach pendant respectively. It is possible to connect, if necessary, an additional emergency button to the safety chain circuit of the robot. The emergency stop function is to be applied with higher priority over all other control functions of the robot. The function will immediately cut off the power supply to the motors of individual axes of the robot, stopping the robot and making it impossible to use safety related funtions controlled by the robot. 
+
+
 
 {% hint style="info" %}
-비상정지는 모터 동력을 즉각 차단하므로, 무분별한 사용은 로봇 내구성에 피로가 누적될 수 있습니다. 반드시, 비상상황에서만 사용하시기 바랍니다.
+As the emergency stop function immediately cuts off the motor power, so reckless use of the function may result in accumulation of fatigue that affects the durability of the robot. The functoin must be used only in emergency situations.
 {% endhint %}
+
 
 ![](../../_assets/그림_1.2_제어기,_티칭펜던트_비상정지_스위치.png  )
 
-그림 1.2 제어기, 티칭펜던트 비상정지 스위치
+Figure 1.2 Emergency Stop Buttons on the Controller and Teaching Pendant
 
 ![](../../_assets/그림_1.3_추가_비상정지_장치_연결.png  )
 
-그림 1.3 추가 비상정지 장치 연결
+Figure 1.3 Connection of an Additional Emergency Stop Device
 
-* 보호정지 (ISO 10218-1:2011)
+*	Protective stop (ISO 10218-1:2011)
 
-로봇은 안전가드, 안전패드, 안전등과 같은 외부의 안전장치와 연결되어 사용할 수 있도록 다수의 안전입력을 가져야합니다. 이러한 안전입력은 로봇자체 및 주변설비 등으로부터 입력시 로봇을 정지시키므로서, 안전한 상태가 되도록 합니다. 자세한 안전입력에 대한 연결에 대해서는 “4.3.2.안전모듈(BD632)”을 참고하시기 바랍니다.
+The robot should have multiple safety inputs so that it can be used in connection with external safety devices such as safety guards, safety pads, and safety lamps. These safety inputs will make the robot stop when there is an input from the robot itself and peripheral facilities, securing a safe state. For details on the connection to the safety inputs, refer to “4.3.2. Safety Module (BD632)”.
 
-* 속도제한기능(EN ISO 10218-1:2011)
+*   Speed limit (EN ISO 10218-1:2011)
 
-수동조작 모드에서 로봇의 속도는 최고 250 mm/s로 제한됩니다. 속도의 제한은 TCP(Tool Centre Point) 뿐만 아니라 수동조작을 행하는 로봇의 모든 부분에 적용됩니다. 또한 로봇에 장착된 장비의 속도는 모니터링이 가능하도록 해야 합니다.
+In manual operation mode, the speed of the robot is limited to a maximum of 250 mm / s. The speed limit applies not only to the TCP (Tool Center Point) but also to all other parts of the robot that are to be operated in manual mode. It should be also made possible to monitor the speed of the equipment mounted on the robot.
 
-* 동작영역제한(ANSI/RIA R15.06-2012)
+*  Operaiton area limit (ANSI/RIA R15.06-2012)
 
-로봇을 적용할 때 충분한 안전영역을 확보하기 위하여 로봇의 동작범위를 하드웨어리미트(Hardware limit), 스토퍼(Stopper)을 사용하여 제한 할 수 있습니다. 안전가드 등과 같은 외부 안전 장치와 로봇이 충돌할 경우 이런 기능은 손해를 최소화 할 것입니다. 1,2,3축은 주로 스토퍼나 하드웨어리미트에 의해 동작 범위가 제한됩니다. 만약 기계적인 스토퍼 또는 하드웨어리미트에 의하여 동작범위가 변경될 경우는 소프트웨어 상에서도 동작영역 한계 파라미터가 변경되어야 합니다. 변경에 대한 사항은 조작메뉴얼을 참고하시기 바랍니다. 각축의 동작영역의 한계는 사용자에 의해 변경이 가능하며, 출하시에는 로봇의 최대 동작영역으로 설정되어 있습니다. Hi6제어기의 안전시스템은 하드웨어리미트 스위치를 옵션으로 4개까지 지원 가능하며, 연결과 관련된 사항은 “4.3.2. 안전모듈(BD632)”을 참고하시기 바립니다.
+When applying a robot, in order to secure a sufficient safety area, the operation range of the robot can be limited by using a hardware limit or a stopper. This function can minimize the damage if the robot collides with an external safety device such as a safety guard. Axis 1, 2, and 3 are mainly limited by a stopper or hardware limit. If the operation range is changed due to a mechanical stopper or hardware limit, the operation range limit parameter should be also changed in software as well. Please refer to the operation manual about the change. The operation area limit of each axis can be changed by the user, and at the time of shipment, it is set to the maximum operation range of the robot. The safety system of the Hi6 controller can support up to 4 hardware limit switches as an option. Refer to “4.3.2. Please refer to “Safety Module (BD632)” for the matters related to the connection.
 
-* 조작모드의 선택(ANSI/RIA R15.06-2012)
+*  Operaiton mode selection (ANSI/RIA R15.06-2012)
 
-로봇은 수동 또는 자동, 리모트모드에서 조작할 수 있습니다. 수동모드에서의 최고 속도는 250 mm/s로 제한되며, 티칭펜던트를 통해서만 조작이 가능합니다. 또한 옵션 구성에 의해 제어반에 모드스위치의 추가장착이 가능합니다. 조작에 관한 상세 내용은 조작 매뉴얼을 참고하시기 바랍니다.
+You can operate the robot in manual, automatic or remote mode. The maximum speed in manual mode is limited to 250 mm/s, and you can perform operation only with the teaching pendant. In addition, it is possible to mount a mode switch additionally on the control panel by configuring it as an option. For details on the operation, please refer to the operation manual.
+

@@ -1,44 +1,44 @@
-﻿# 1.10.2. 로봇 및 주변기기 배치
+﻿# 1.10.2. Placement of the Robot and Peripheral Devices 
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나,” 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
 {% endhint %}
 
-자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다.
+Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws.
 
-* 포장 해체 시, 운반이나 해체 과정에서 발생할 수 있는 제품의 손상 여부를 확인하십시오.
+*	When unpacking the product, check it for damage that may occur while transporting or unpacka it.
 
-* 포장 해체 후 제품을 설치하기 전에는, 반드시 안전 규정과 지시 사항, 제품의 설치 및 사용 환경 정보를 확인하고 설치 방법을 숙지하십시오.
+*	Before installing the product after unpacking it, you must check the safety regulations, instructions, information related to the product installation and use environments, and fully undertand the installation methods.
 
-* 제어기나 주변장치의 1차 전원을 접속할 경우 공급측 전원이 OFF되어 있는가를 확인한 후 작업을 하시기 바랍니다. 고전압을 1차 전원으로 사용하므로 감전사고의 위험이 있습니다.
+*	When connecting the primary power of the controller or peripheral device, peroform the connection after checking first whether the supply side power is turned off. Since high voltage is used as the primary power source, there is a risk of electric shock.
 
-* 안전망의 출입구에 \[운전중 진입금지\] 표찰을 부착하고, 작업자에게 그 취지를 주지시켜 주십시오.
+*	Put up a sign “No entry during operation” at the entrance of the safety fence, and inform the workers of the intents.
 
-* 제어기, 인터록반, 기타 조작반 등은 전부 안전망 밖에서 조작할 수 있도록 배치하여 주십시오.
+*	Place the controller, interlock panels, and other control panels in a way that they can be operated from outside the safety fence.
 
-* 조작 스탠드를 설치할 경우 조작 스탠드에도 비상정지 버튼을 부착하여 주십시오. 로봇을 조작하는 모든 곳에서 비상시에 정지할 수 있도록 하여야 합니다.
+*	When installing the operation stand, attach an emergency stop button to it also. Wherever you operate the robot, you should be able to stop the robot in an emergency situation.
 
-* 로봇 본체와 제어기, 인터록(Interlock)반, 타이머(Timer) 등의 배선, 배관류가 작업자 발에 걸리거나 포크리프트(Forklift) 등에 직접 밟히지 않도록 하여 주십시오. 작업자가 감전되거나, 배선이 단선되는 사고가 발생할 위험이 있습니다.
+*	Do not allow the wiring or piping of the manipulator, controller, interlock panel, timer, etc. to get caught on by the workers' feet or to get stepped on directly by the forklift. Otherwise, there is a risk of accidents of the worker getting electric shock or the wires getting disconnected. 
 
-* 제어기, 인터록(Interlock)반, 조작스탠드 등은 로봇 본체의 움직임이 충분히 보일 수 있는 곳에 배치하여 주십시오. 로봇의 동작이 보이지 않는 곳에서 로봇에 이상이 발생하고 있거나 작업자가 작업중일 때, 로봇을 조작할 경우 대형 사고가 발생할 위험이 있습니다.
+*	Place the controller, interlock panel, and operation stand at a place where the operation of the manipulator can be seen sufficiently. If the robot is operating abnormally in an area from which the robot operation cannot be seen, or the worker is working on something in the area, there is a risk of major accidents taking place during operation.
 
-* 필요로 하는 로봇의 작업영역이 로봇의 동작가능영역보다 좁을 경우 로봇의 동작영역을 제한 하십시오. 소프트리미트(Soft limit), 하드웨어리미트(Hardware limit), 기계적 스토퍼(Stopper) 등으로 제한 가능합니다. 로봇을 잘못  조작하는 등의 이상조작으로 제한영역을 벗어나는 동작이 발생할 경우에도 사전에 동작영역제한 기능에 의해 로봇이 자동으로 정지합니다.
+*	If the required robot operation area is narrower than the allowable robot operation area, you should limit the robot operation area. It can be limited by soft limit, hardware limit, mechanical stopper, etc. Even when the robot operates off the normal operation area due to abnormal operation such as mistakes in the operation of the robot, the robot will be stopped in advance by the operation area limit function. 
 
-* 용접중 스패터(Spatter) 등이 작업자에게 떨어지거나 주변에 떨어져 화상 또는 화재의 위험이 있을 수 있습니다. 로봇 본체의 움직임이 충분히 보이는 범위에 차광판, 커버(Cover) 등을 설치하여 주십시오.
+*	During welding, spatter may fall on or fall near the worker and cause a burn or fire. Install a light shield plate, cover, etc. in the range where the movement of the manipulator can be seen sufficiently.
 
-* 로봇의 운전상태를 나타내는 자동, 수동 상태는 조금 떨어진 곳에서도 인식할 수 있도록 눈에 잘 띄는 장치를 설치해 주십시오. 자동운전을 개시할 경우 부저(Buzzer)나 경보등 등이 유용합니다.
+*	When it comes to a device that shows the auto and manual operation modes of the robot, an easily visible device should be installed to ensure that the status can be recognized from a distance. In case of starting the operation in auto mode, a buzzer or an alarm will be useful.
 
-* 로봇 주변의 장치에는 돌출부가 없도록 하여 주십시오. 필요하면 커버 등으로 덮어 주십시오. 통상 작업자가 접촉하여 사고가 발생할 위험이 있으며, 갑작스런 로봇 동작에 놀란 작업자가 넘어져서 대형 사고가 발생할 위험이 있습니다.
+*	Make sure there is no protruding part on the peripheral devices of the robot. If necessary, place a cover on them. Otherwise, in general, an accident could occur when the worker comes into contact with a protruding part, and a major accident could occur when a worker surprised over a sudden movement of the robot could fall over. 
 
-* 안전망 안으로 손을 넣어 작업물의 반입, 반출을 실시하는 시스템 설계는 하지 말아 주십시오. 압착, 절단 사고의 위험이 있습니다.
+*	Do not design a system that requires the worker to put in hands inside the safety fence to carry in and carry out a workpiece.
+
 
 ![](../../_assets/그림_1.5_LCD핸들링_로봇의_빔형_안전펜스.png  )
 
-그림 1.5 LCD핸들링 로봇의 빔형 안전펜스
+Figure 1.5 Beam Type Safety Fence for the LCD Handling Robot
 
-산업용 로봇 주변장치와 작업자의 배치
+Placement of the Peripheral Devices and Workers for the Industrial Robot
 
 ![](../../_assets/그림_1.6_산업용_로봇의_원통형_안전펜스.png  )
 
-그림 1.6 산업용 로봇의 원통형 안전펜스
+Figure 1.6 Cylinder Type Safety Fence for the Industrial Robot

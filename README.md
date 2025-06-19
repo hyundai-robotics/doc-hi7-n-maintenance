@@ -1,126 +1,114 @@
-﻿# Hi6-N 제어기 보수 설명서
+﻿# Hi6-N Controller Maintenance Manual
 
-## 개요
+## Overview
 
-본 장의 주된 목적은 산업용 로봇의 사용자와 보수, 조작하는 작업자의 안전에 대한 사항을 기술하는 것입니다.
+The main purpose of this chapter is to describe the matters about the safety for the users of the industrial robot and for the workers who maintain and operate the robot.
 
-로봇 시스템의 설치, 교체, 조정, 조작, 보전, 보수를 행하는 모든 작업자들은 반드시 조작, 보수설명서를 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+Every worker who installs, replaces, adjusts, operate, preserves and maintains the robot system must carefully read and fully understand the operation manual and maintenance manual. Also, keep the manuals nearby so that you can view it whenever necessary.
 
-당사에서는 보전, 보수, 조작 교육을 계획하여 시행하고 있으니, 로봇 사용자는 로봇 작업자에 대하여 해당 교육을 받을 수 있도록 하여 주십시오.
-그리고 반드시 본 교육 과정을 이수한 작업자만이 로봇을 취급하는 작업을 할 수 있도록 하여 주십시오.
+Our company plans and implements the preservation, maintenance and operation trainings so the person using the robot should ensure that the workers working in the robot system should receive the relevant trainings. It must be ensured that only those who have completed this course can handle the robot.
 
-당사 산업용 로봇의 사용자는 해당 국가에서 적용되는 로봇과 관계된 안전관련 법규를 확실히 파악하여 준수하여야 할 책임과 로봇 시스템에서 일하는 작업자를 보호하기 위한 안전장치를 제대로 설계, 설치, 운용할 책임이 있습니다.
+The users of our industrial robots are responsible for surely understanding and complying with safety-related laws applicable in concerned countries and for properly designing, installing, and operating safety devices to protect workers working in robot systems.
 
-로봇 시스템의 위험지역 즉 로봇, 툴(tool), 주변 장치들이 동작하는 지역에서는 ANSI/RIA R15.06-2012에 의하여 작업자 또는 작업물 외의 물체가 위험지역으로 진입하는 것을 방지하기 위한 안전장치가 있어야 합니다.
-위험을 불구하고 작업자나 물체가 위험지역으로 들어가야 할 때는 비상정지(emergency stop)장치에 의하여 로봇 시스템이 즉시 정지되도록 시스템을 구성하여야 합니다. 이러한 안전장치의 설치, 확인, 운용의 책임은 작업자에게 있습니다.
+The dangerous areas of the robot system, in other words, the areas where the robot, tools and peripheral devices are operating, should be equipped with safety devices according to ANSI / RIA R15.06-2012 to prevent an object, other than the workers and the workpiece, from entering the dangerous areas. The robot system should be configured in a way that it can be stopped immediately by an emergency stop device when a worker or object needs to enter the dangerous area in spite of possible danger. The workers are responsible for installing, checking and operating these safety devices.
 
-이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 옵션과 모델에 따라 일부 내용이 다를 수 있습니다. 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다.
-개정에 관한 상세한 정보는 당사의 인터넷 웹사이트(www.hyundai-robotics.com)를 방문하여 확인하시기 바랍니다.
+This manual has been created based on standard specifications, so some contents may differ depending on the options and model of the product that you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website (www.hyundai-robotics.com).
 
-## 저작권
 
-이 설명서에서 다루고 있는 내용은 저작권 법과 비밀 유지 계약에 의하여 보호받고 있습니다. 이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내 부 교육 자료로 제공되어 사용될 수 있습니다만, 명시적으로 허용하지 않은 사용, 복사, 제 3자에의 공개 및 배포 등의 행위는 엄격히 금지됩니다.
+## Copyrights
+
+The contents covered in this manual are protected by copyright laws and confidentiality agreements. This manual may be provided as reference material for customers who have purchased Hyundai Robotics products or may be used as internal training material. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by Hyundai Robotics, are strictly prohibited.
 
 Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 
-## 안전 주의 사항
 
-제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+## Safety Cautions
 
-■ 위험
+Before using the product, you must fully understand the following safety cautions for proper use, user safety, and prevention of property damage.
+
+■ 	Danger
 
 {% hint style="danger" %}
-긴박한 위험: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
 {% endhint %}
 
 
-* 안전 회로는 어떠한 방법으로든 결코 무시하거나, 수정, 변경되지 않도록 하십시오.
-* 중력 또는 브레이크 해제에 의해 추가적인 문제가 발생할 수 있으므로, 반드시 각 보봇별 운송에 사용되는 지정된 로프와 크레인을 사용하여 브레이크 해제 시 흘러내림 또는 추가적인 사고가 발생하지 않도록 조치를 취한 후 작업해야 합니다.
+* Make sure that the safety circuit is never ignored, modified or altered in any way.
+* Considering that additional problems may occur due to gravity or brake release, you must take a measure, before carrying out works, such as using a rope and crane that are to be used for transport of individual robots to prevent the brake from running down or additional accidents from taking place during the release of the brake.
 
-■ 경고
+■ Warning
 
 {% hint style="warning" %}
-잠재적인 위험: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
 {% endhint %}
 
-* 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에
-  손상을 주는 일체의 행위를 금합니다.
-* 로봇 동작시 로봇과 작업자가 충돌할 위험이 있기 때문에 작업자가 로봇과 가까이 하지 않도록 안전망을 설치하여 주십시오.
-* ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
-* 안전사고 예방을 위해 안전작업 절차를 반드시 지켜 주십시오. 어떠한 상황에서도 안전장치나 회로를 변경하거나 무시하지 않도록 하며 감전사고에 유의하여 주십시오. 자동모드에서 모든 정상적인 작업은 안전가드 밖에서 행하여야만 합니다. 작업 전에는 로봇의 작업영역 안에 사람이 없는지를 반드시 확인하여 주십시오.
-* 티칭 작업시 발밑을 충분히 확인하면서 작업합니다. 특히 고속(250mm/s 이상) 티칭 작업시 반드시 안전가드 밖에서 작업을 하십시오.
-* 안전 관련 기능에 영향을 미칠 수있는 구성 부품 변경 또는 로봇에 옵션 장비 (하드웨어 및 소프트웨어 모두) 추가 한 경우 “1.11 로봇 조작시 안전 작업”에 기재 된 사항을 유의하여 반드시 기능 정상 여부를 확인하여 주십시오.
-* 엔드 이펙터(End Effector)를 설치 및 운영하는 경우 반드시 ISO/TR 20218-1:2018을 준수하여 적용 및 보수, 운영을 하여야 한다.
-* 리프팅 장비를 이용해 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수해야 합니다. 크레인을 이용해 이동할 때에는 제품 아래에 작업자가 없는지 반드시 확인하십시오. 또한, 절대 크레인 또는 제품 아래에서 작업하거나 지나다니지 마십시오.
-* 일반 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치 입니다.
-* 자동 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치 입니다.
-* 안전 입력을 설치하여 사용할 경우에는 정상적으로 기능이 작동하는지 확인 후 로봇을 가동시켜야 합니다. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
-* ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다.국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 상기 “주의사항”을 지키지 않는 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
-* 안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
-* 비상정지 출력을 설치하여 사용할 경우에는 비상정지 출력이 정상적으로 작동되는지 확인 후 로봇을 작동하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
 
-■ 주의
+* Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited.
+* When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent the worker from getting close to the robot.
+* The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
+* Must observe the safety work procedures to prevent safety accidents. Do not change or ignore safety devices or circuits under any circumstances, and pay attention to possible electric shock. In auto mode, all normal works should be performed outside the safety guard. Before carrying out works, make sure that there are no people in the operation area of the robot.
+* Sufficiently check under your feet when teaching. In particular, you must perform the teaching work outside the safety guard when teaching at a high speed (250mm/s or above).
+* When it comes to changing of components or addition of optional equipment (both hardware and software) to the robot both of which may affect safety-related functions, you must check whether the functions are in normal conditions, by paying attention to the items described in “1.11 Safety Works When Operating the Robot”.
+* When installing and operating an end effector, you must perform application, maintenance and operation according to ISO/TR 20218-1:2018.
+* When transporting the product by using lifting equipment, you should comply with the relevant national and local safety regulations and equipment usage guidelines. When moving the product using a crane, you must make sure that that no workers are under the product. Also, never work or walk under a crane or the product.
+* If a general safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. Also, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
+* If an automatic safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. Also, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
+* If a safety input is to be installed and used, the robot should be operated after confirming that the input function operates normally. This is an essential measure that must be taken in advance for the safety of workers.
+* The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not following the above “caution”.
+* If a safety-related input is installed and enabled, you must check whether the function operates normally by referring to “1.11 Safety Measures When Operating the Robot”.
+* If an emergency stop output is to be installed and used, the robot should be operated after confirming that the emergency stop output operates normally. This is an essential measure that must be taken in advance for the safety of workers.
+
+■ Caution
 
 {% hint style="info" %}
-저위험 요소: 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다.
+Low-level danger factor: Incompliance may result in minor injury to the worker or damage to property, such as damage to the product.
 {% endhint %}
 
-* 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
-* 비상정지는 모터 동력을 즉각 차단하므로, 무분별한 사용은 로봇 내구성에 피로가 누적 될 수 있습니다. 반드시, 비상상황에서만 사용하시기 바랍니다.
-* 하드웨어 리미트 스위치 고장에 의해 조깅 동작이 되지 않는 경우 당사에서는 책임이 없습니다. 반드시 주기적으로 점검하여 주십시오. 고장시 대책에 대해서는 트러블슈팅 매뉴얼을 참고 바랍니다
-* 출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리 해서는 안됩니다. 어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
-  시운전을 할 경우는 티칭(teaching)프로그램, 지그(jig), 시퀀스(sequence) 등 전체 시스템에 대하여 설계 오류나 티칭(teaching) 오류, 제작 불량 등이 존재할 가능성이 있습니다. 이로 인하여 시운전 작업에
-  있어서 한층 더 안전의식을 가지고 작업에 임해야 합니다. 복합요인으로 인해 안전사고가 발생할 경우가 있습니다. 로봇 시운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
-* 출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리 해서는 안됩니다. 어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
-* 로봇 본체의 보수, 점검시 로봇의 암(arm)이 낙하 또는 그밖의 위험이 생길 경우가 있으니, 반드시 지시된 절차대로 작업을 진행하여 주십시오
-* 구동력이 없는 로봇의축을 이동 시 중력에 의한 낙하 또는 제동 장치의 해제로 인해 추가적인 위험이 발생할 수 있으므로, 반드시 지시된 절차에 따라 작업을 진행하여 주십시오.
-* 전원을 켜기 전에 로봇의 작업영역 안에 작업자가 없는지, 자신이 안전한 장소에 있는지를 확인 한 후 전원을 투입하십시오.
-* 제품 설치 전에 반드시 충분한 위험성 평가를 수행하고 평과의 결과를 바탕으로 안전 기능을 설정하십시오. 안전 기능에 대한 자세한 내용은 “1. 안전” 파트를 참조하십시오.
-* 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
-* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
-* 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
-* 권장하는 장소에 제품을 설치하지 않을 경우 제품의 성능 및 수명이 감소될 수 있습니다. 권장 사항을 준수하여 제품을 설치 및 사용하십시오.
-  - 케이블을 연결하기 전에 제어기의 메인 전원 스위치를 “OFF”로 하고, 메인 전원 스위치를 잠그기 위해 자물쇠를 사용하십시오.
-  - 제어기에는 DC400V의 충전된 에너지가 있습니다. 주의하십시오. 충전된 에너지를 방전시키기 위해 전원 스위치를 “OFF”로 한 후 최소한 5분간 기다리십시오.
-  - PCB를 다룰 때에는 정전기에 의해 손상되지 않도록 주의하십시오.
-  - 배선과 결선은 반드시 자격있는 사람에 의해 수행되어야 합니다.
-* 로봇별로 커넥터 접촉부가 위의 그림과 상이 할 수 있으므로 반드시 와이어하네스(Wire Harness) 연결 전 해당 로봇 보수 매뉴얼을 숙독하여 연결을 하십시오.
-  - 제어기 및 로봇 본체의 배선은 신호선과 전력선을 분리하여 배선하십시오.또한 고전력선과 신호선간에는 분리된 DUCT를 사용하여 배선하십시오.
-  - 배선은 보호 Cover를 사용하여 통행 시 손상이 생기지 않도록 조치하여 주십시오.
-  - 반드시 1차 전원 투입 전에 접속관계, 제어기의 전원 사양 및 공급 전원 사양등을 재확인하여 주십시오.
-* 보수 담당자께서는 제어기의 내부의 각종 장치, 부품배치 및 각각의 그 기능들에 대하여 이해한 후 작업에 임하여 주십시오.
-* DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 임의로 변경하면 안됩니다.
-* 다음은 사용자가 임의로 변경할 수 없으며, FPGA JTAG을 통한 재프로그래밍이 필요한 경우에만 참고하세요.
 
-* 드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 꼭 확인하시기 바랍니다.
-  - 동시에 두개의 축 이상을 해제하지 마십시오.
-  - 반드시 로봇과 안전거리를 유지한 후 브레이크 해제유닛을 사용하십시오.
-  - 크레인과 같은 기구를 사용하여 로봇 축낙하를 대비 후 브레이크 해제유닛을 사용하십시오.
-  - 최소 2인이상 1조로 작업을 진행하여 안전사항을 체크하십시오.
-
-* 브레이크 해제유닛 사용 시 다음 절차를 따라주십시오.
-  - AC220V 전원 스위치 OFF 및 DC24V 전원 스위치 OFF 상태 확인
-  - AC 전원 케이블을 AC 전원 커넥터에 연결
-  - AC220V 전원 스위치 ON
-  - DC24V 전원 스위치 ON
-
-* 브레이크 해제유닛 사용 종료 시, 다음 절차를 따라주십시오.
-  - DC24V 전원 스위치 OFF
-  - AC220V 전원 스위치 OFF
-  - AC 전원케이블 분리
-
-* AC220V 전원과 DC24V 배터리 전원을 동시에 사용하지 마십시오.
-
-* 상용 리모트 IO를 사용하기 위해서는 필드버스 통신이 반드시 필요 합니다. 따라서, 위에 언급된 5.1절을 참고하여 PCI 통신 카드를 같이 구성하시기 바랍니다.
-
-* 구동장치는 로봇에 따라 다르므로 교환할 때에는 형식을 꼭 확인하여 주십시오.
-
-* 제품 운반 시에는 올바를 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
-
-* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
-
-* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
-
-* 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
-
-* 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
+* Mark the installation and dangerous areas of the robot in a way that they can be clearly differentiated from other facilities and devices in terms of type, color and style.
+* As the emergency stop function immediately cuts off the motor power, so reckless use of the function may result in accumulation of fatigue that affects the durability of the robot. The function must be used only in emergency situations.
+* Our company is not responsible if the jogging operation does not work due to the failure of the hardware limit switch. You must check it periodically. For the measure to take in case of a failure, please refer to the troubleshooting manual.
+* You should not be negligent in paying attention to sudden movements while entry is made possible. Under any circumstances, you must avoid approaching the robot without preparing for possible emergency situation.
+* In the case of trial-operation, there may be a design error, teaching error, or defect in manufacturing with regard to the entire system including the teaching program, jigs, and sequencing. For this reason, you should work with elevated safety awareness in trial-operation. Multiple factors can contribute to safety accidents. Observe the following measures considering that safety is very important when trial-operating the robot.
+* During maintenance and inspection of the manipulator, the robot arm may fall, or there could be a different type of danger. So, you must proceed with the work according to the instructed procedures
+* When moving the axis of the robot that has no driving force applied, there is a risk of the axis dropping due to gravity and also an additional risk due to the release of the brake system. So, you must proceed with the work according to the instructed procedures.
+* Before turning on the power, check that there is no worker inside the robot operation area and you are in a safe place.
+* Before installing the product, you must perform a sufficient risk assessment and then set the safety functions based on the assessment results. For details on safety functions, refer to “1. Safety” section.
+* When installing and repairing the product, contact the customer support team and ask an expert.
+* Do not install and use the product in an area that has lots of dust or is dirty. Dust or foreign substances may cause product failure or performance problems. 
+* Mark the installation and dangerous areas of the robot in a way that they can be clearly differentiated from other facilities and devices in terms of type, color and style.
+* If the product is not installed in the recommended locations, the performance and service life of the product may be reduced. Install and use the product according to the recommendations.
+1. Before connecting the cables, turn “off” the controller's main power switch and then lock it by using a padlock. 
+2. The controller has DC400V charged energy. Be careful. Wait at least 5 minutes after turning “off” the power switch, and then wait 5 minutes at least to discharge the charged energy.
+3. When handling the PCB, take precautions not to allow static electricity to damage it
+4. Wiring and connection of wires must be performed by qualified personnel.
+	Since the contact part of the connector for each robot may be different from the figure above, you must read the relevant robot maintenance manual carefully before connecting the wire harness.
+	1. When performing the wiring work for the controller and manipulator, separate the signal line and the power line. In addition, use a separate duct for the high power line and the signal line respectively.
+2. Use a protective cover for the wiring, as a measure to prevent the wiring from getting damaged when people are passing nearby.
+3. Before supplying the primary power, you must check again the relationship with regard to connection, the power specification and power supply specification of the controller.
+* The person in charge of maintenance should work after understanding the placement of various devices and parts and their functions inside the controller.
+* The DIP switch is set to OFF mode when shipped from the factory, and the setting should not be changed arbitrarily by the user.
+* The user cannot change the following items arbitrarily, and needs to refer to them only when required to reprogram through FPGA JTAG.
+* The drive module differs depending on the type of the robot, so you must check the type when replacing it.
+1. Do not release more than two axes at the same time.
+2. Must keep a safe distance from the robot first before using the brake release unit.
+3. Use the brake release unit after preparing for the dropping of the robot’s axis by using equipment such as a crane.
+4. Check the safety matters while working in a group of at least 2 people.
+* When using the brake release unit, follow the procedures below.
+1. Turn off the AC220V power switch and check that the DC24V power switch is turned off.
+2. Connect the AC power cable to the AC power connector.
+3. Turn on the AC220V power switch. 
+4. Turn on the DC24V power switch.
+- When the use of the brake release unit is finished, follow the procedures below.
+1. Turn off the DC24V power switch.
+2. Turn off the AC220V power switch.
+3. Disconnect the AC power cable. 
+- Do not use AC220V power and DC24V battery power at the same time.
+* Fieldbus communication must be available to use commercial remote IO. Therefore, you should configure the PCI communication card together by referring to the Paragraph 5.1 mentioned above.
+* The drive unit differs depending on the type of the robot, so you must check the type when replacing the drive unit.
+* When transporting the product, you should maintain a proper posture and work in a group of at least two workers. Otherwise, injury to parts of the body such as the back, arms and legs may result.
+* If you transport the product by using lifting equipment, you should comply with relevant national and local safety regulations and equipment usage guidelines. 
+* When transporting the product, you should fully understand the transport-related contents in the manual and follow the instructions. Our company will not be responsible for any damage to or breaking of the product due to the customer’s transport of the product. 
+* These are important parts to be prepared for daily maintenance and inspection.
+* These are maintenance parts to be prepared when multiple units are purchased.

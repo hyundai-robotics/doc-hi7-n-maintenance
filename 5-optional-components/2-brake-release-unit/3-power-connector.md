@@ -1,62 +1,61 @@
-﻿# 5.2.3. 전원 및 커넥터
+﻿# 5.2.3. Power and Connectors 
 
-브레이크 해제 유닛의 전원 및 커넥터 배치는 다음 그림5.4와 같으며 각각에 대한 용도 및 접속장치는 표 5-5와 같습니다.
+The placement of the power and connectors of the brake release unit is as shown in Figure 5.4 below, and their individual usage and connection devices are as shown in Table 5-5 below.
 
 {% hint style="info" %}
-- 브레이크 해제유닛 사용 시 다음 절차를 따라주십시오.
-1. AC220V 전원 스위치 OFF 및 DC24V 전원 스위치 OFF 상태 확인  
-2. AC 전원 케이블을 AC 전원 커넥터에 연결 
-3. AC220V 전원 스위치 ON 
-4. DC24V 전원 스위치 ON
+- When using the brake release unit, follow the procedures below.
+1. Turn off the AC220V power switch and check that the DC24V power switch is turned off.
+2. Connect the AC power cable to the AC power connector.
+3. Turn on the AC220V power switch.
+4. Turn on the DC24V power switch.
 
-- 브레이크 해제유닛 사용 종료 시, 다음 절차를 따라주십시오.
-1. DC24V 전원 스위치 OFF
-2. AC220V 전원 스위치 OFF
-3. AC 전원케이블 분리 
+- When the use of the brake release unit is finished, follow the procedures below.
+1. Turn off the DC24V power switch.
+2. Turn off the AC220V power switch.
+4. Disconnect the AC power cable.
 
-- AC220V 전원과 DC24V 배터리 전원을 동시에 사용하지 마십시오. 
+- Do not use AC220V power and DC24V battery power at the same time.
 {% endhint %}
 
-
 {% hint style="warning" %}
-상기 “주의사항”을 지키지 않는 경우에 발생하는 사고 및 고장에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the above “caution.”
 {% endhint %}
 
 
 ![](../../_assets/그림_5.4_브레이크_해제_유닛_스위치_및_커넥터.png  )
 
-그림 5.4 브레이크 해제 유닛 스위치 및 커넥터
+Figure 5.4 Switches and Connectors of the Brake Release Unit</br></br>
 
-표 5-5 브레이크 해제 유닛 커넥터의 종류 및 용도
+Table 5-5 Types and Usage of the Connectors of the Brake Release Unit
 
 <table>
 <thead>
   <tr>
-    <th>명 칭</th>
-    <th>용      도</th>
-    <th>외부연결장치</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Connection of external devices</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>AC220V 전원 커넥터 및 스위치</td>
-    <td>AC 전원 인가</td>
-    <td>100V AC ~ 240V AC 단상</td>
+    <td>AC 220V power connector and switch</td>
+    <td>Application of the AC power</td>
+    <td>100V AC~240V AC Single phase</td>
   </tr>
   <tr>
-    <td>브레이크 해제 케이블 연결 커넥터</td>
-    <td>브레이크 해제유닛과 제어기 연결</td>
-    <td>BD640보드 CNB1, CNB7, CNB8</td>
+    <td>Brake release cable connection connector</td>
+    <td>Connection of the brake release unit and controller</td>
+    <td>CNB1, CNB7, and CNB8 of BD640</td>
   </tr>
   <tr>
-    <td>DC24V 배터리 전원 커넥터</td>
-    <td>휴대용 24V 배터리 전원 연결</td>
-    <td>휴대용 24V 배터리</td>
+    <td>DC24V battery power connector</td>
+    <td>Connection of the power of a portable 24V battery</td>
+    <td>Portable 24V battery</td>
   </tr>
   <tr>
-    <td>DC24V전원 스위치</td>
-    <td>브레이크 해제유닛 구동 ON/OFF</td>
-    <td>없음</td>
+    <td>DC24V power switch</td>
+    <td>Brake release unit drive on/off</td>
+    <td>None</td>
   </tr>
 </tbody>
 </table>

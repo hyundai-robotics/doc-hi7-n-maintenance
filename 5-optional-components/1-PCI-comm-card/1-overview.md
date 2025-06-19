@@ -1,8 +1,8 @@
-﻿# 5.1.1. 개요
+﻿# 5.1.1. Overview
 
-Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드를 이용하여 필요한 산업용 통신을 사용할 수 있습니다. 보편적인 모델인 Ethernet용 PCI 통신 카드 기반으로 설명되어 있으며, 자세한 내용은 “PC Cards CIFX 50 50E 70E 100EH UM 51 EN”문서의 PC Cards CIFX 50 모델을 참조하여 주시기 바랍니다.
+To use industrial communication in the Hi6 controller, you can use a PCI communication card. Descriptions below are provided based on a PCI communication card for Ethernet, which is a general model. For details, please refer to the contents for the PC Cards CIFX 50 model in the document “PC Cards CIFX 50 50E 70E 100EH UM 51 EN.”
 
-표 5-1 PCI 통신 카드 품명
+Table 5-1 Part Names of PCI Communication Cards
 
 <table>
 <thead>

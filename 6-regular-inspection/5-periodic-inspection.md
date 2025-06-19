@@ -1,15 +1,15 @@
-﻿# 6.5. 주기적 점검
+﻿# 6.5. Cyclic Inspections
 
-표 6-3 주기 점검
+Table 6-3 Cyclic Inspections 
 
 <table>
 <thead>
   <tr>
     <th rowspan="2">No.</th>
-    <th colspan="3">주기(개월)</th>
-    <th rowspan="2">점검 요소</th>
-    <th rowspan="2">점검 항목</th>
-    <th rowspan="2">비고</th>
+    <th colspan="3">Cycle</br>(Months)</th>
+    <th rowspan="2">Elements to Inspect </th>
+    <th rowspan="2">Items to Inspect</th>
+    <th rowspan="2">Remarks</th>
   </tr>
   <tr>
     <th>3</th>
@@ -23,8 +23,8 @@
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>문(door)의 포장</td>
-    <td>‧변형 및 떨어짐 확인</td>
+    <td>Packing of the door</td>
+    <td>‧Checking for deformation and detachment</td>
     <td></td>
   </tr>
   <tr>
@@ -32,20 +32,20 @@
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">뒷면</td>
-    <td>‧냉각팬 날개부의 먼지 및 회전</td>
+    <td rowspan="4">Back</td>
+    <td>‧Checking dust on and rotation of the cooling fan blade part</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧회생방전저항의 파손 및 먼지</td>
+    <td>‧Checking the regenerative discharge resistor for damage and dust</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧Transformer Room의 촉감에 의한 발열 확인, 청소</td>
+    <td>‧Checking the transformer room for any heat using the sense of touch, and then cleaning the room</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧Transformer의 터미널 블록 풀림 및 파손</td>
+    <td>‧Checking the transformer terminal block for any loosening and damage</td>
     <td></td>
   </tr>
   <tr>
@@ -53,8 +53,8 @@
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Wireharness</td>
-    <td>‧커넥터의 풀림 및 파손</td>
+    <td>Wire harness</td>
+    <td>‧Checking the connectors for any loosening and damage</td>
     <td></td>
   </tr>
   <tr>
@@ -62,8 +62,8 @@
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>모터 드라이브</td>
-    <td>‧커넥터와 단자 풀림 및 파손</td>
+    <td>Motor drive</td>
+    <td>‧Checking the connectors and terminals for any loosening and damage </td>
     <td></td>
   </tr>
   <tr>
@@ -71,8 +71,8 @@
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>각 보드별 커넥터</td>
-    <td>‧촉감에 의한 풀림 확인</td>
+    <td>Connectors of each board</td>
+    <td>‧Checking for any loosening using the sense of touch</td>
     <td></td>
   </tr>
   <tr>
@@ -80,8 +80,8 @@
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>조작 패널</td>
-    <td>‧ 버튼스위치 상태 확인</td>
+    <td>Operation panel</td>
+    <td>‧Checking the status of buttons and switches</td>
     <td></td>
   </tr>
   <tr>
@@ -89,8 +89,8 @@
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>제어기 전체</td>
-    <td>‧먼지 청소</td>
+    <td>The whole controller</td>
+    <td>‧Cleaning dust</td>
     <td></td>
   </tr>
   <tr>
@@ -98,8 +98,8 @@
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>명판</td>
-    <td>‧각종 명판 점검</td>
+    <td>Nameplate</td>
+    <td>‧Inspecting various nameplates</td>
     <td></td>
   </tr>
   <tr>
@@ -107,8 +107,8 @@
     <td rowspan="4"></td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">전압 측정</td>
-    <td>‧1차전원 전압</td>
+    <td rowspan="4">Voltage measurement</td>
+    <td>‧Voltage of the primary power</td>
     <td rowspan="4"></td>
   </tr>
   <tr>
@@ -118,15 +118,15 @@
     <td>‧CNPB1 PB-MB</td>
   </tr>
   <tr>
-    <td>‧ CN24VB1 P24B-24GND</td>
+    <td>‧CN24VB1 P24B-24GND</td>
   </tr>
   <tr>
     <td>10</td>
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>접지</td>
-    <td>‧단자 풀림 및 빠짐 확인</td>
+    <td>Grounding</td>
+    <td>‧Checking the terminals for any loosening and detachment</td>
     <td></td>
   </tr>
   <tr>
@@ -134,29 +134,30 @@
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>전지</td>
-    <td>‧전압 점검 및 정기교환</td>
-    <td>메인보드 LED</td>
+    <td>Battery</td>
+    <td>‧Checking the voltage and replacing the battery Periodically</td>
+    <td>Main board LEDs</td>
   </tr>
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">티치펜던트</td>
-    <td>‧외관검사 및 커넥터 접속부 확인</td>
+    <td rowspan="4">Teach pendant</td>
+    <td>‧Inspecting the exterior and checking the connector connection part</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧LCD Display 상태 확인</td>
+    <td>‧LCD Display</br>Checking the status of the LCD display
+</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧LED 표시 확인</td>
+    <td>‧Checking the display of LEDs</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧버튼스위치 및 LED 상태 확인</td>
+    <td>‧Checking the status of the buttons, switches, and LEDs</td>
     <td></td>
   </tr>
   <tr>
@@ -164,36 +165,37 @@
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td rowspan="5">안전 관련 부품</td>
-    <td>‧ 비상정지 스위치 확인 (제어기, 티치펜던트)</td>
+    <td rowspan="5">Safety-related parts</td>
+    <td>‧Checking the emergency stop switch (on the controller and teach pendant)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧주 전원 차단 스위치 점검(NFB1)</td>
+    <td>‧Checking the main power circuit breaker switch (NFB1)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧티치펜던트의 인에이블 디바이스 확인</td>
+    <td>‧Checking the Enable device of the teach pendant</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧ 회로 보호기 점검(CP1)</td>
+    <td>‧Checking the circuit protector (CP1)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧전자 접촉기 확인(MC1, MC2)</td>
+    <td>‧Checking the magnetic contacts (MC1, MC2)
+</td>
     <td></td>
   </tr>
   <tr>
@@ -201,8 +203,8 @@
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>안전 관련 보드</td>
-    <td>‧ BD632 점검(커넥터, LED)</td>
+    <td>Safety-related board</td>
+    <td>‧Checking the BD630 (Connectors, LEDs)</td>
     <td></td>
   </tr>
 </tbody>

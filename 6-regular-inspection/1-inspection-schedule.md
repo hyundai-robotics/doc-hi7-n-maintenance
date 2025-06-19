@@ -1,7 +1,7 @@
-﻿# 6.1. 점검 일정
+﻿# 6.1. Inspection Schedule 
 
-기본적으로 다음 그림과 같은 일정에 점검을 실시합니다. 정기 점검은 고장을 미연에 방지함과 제어기 및 로봇 본체를 오래 사용하더라도 안전성의 확보 및 정도를 계속 유지시키기 위함입니다. 정기점검은 절대적으로  필요한 일이며, 정상운전 중에도 필히 하여야 합니다.
+Inspections should be carried out according to the schedule shown in the figure below. Periodic inspections are designed to prevent failures in advance and to secure safety and maintain accuracy even when the controller and manipulator are used for a long time. Periodic inspections are absolutely necessary and must be conducted even during normal operation.
 
 ![](../_assets/그림_6.1_점검_일정.png  )
 
-그림 6.1 점검 일정
+Figure 6.1 Inspection Schedule

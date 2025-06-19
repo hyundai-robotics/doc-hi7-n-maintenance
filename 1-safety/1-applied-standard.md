@@ -1,6 +1,6 @@
-﻿# 1.1. 적용 표준
+﻿# 1.1. Applicable Standards
 
-이 제품에 적용된 안전 표준은 다음과 같습니다.
+The safety standards applied to the product are as follows
 
 * ANSI/RIA/ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
 

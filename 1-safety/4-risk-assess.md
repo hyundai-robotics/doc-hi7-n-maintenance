@@ -1,22 +1,21 @@
-﻿# 1.4. 위험성 평가
+﻿# 1.4. Risk Assessment
 
-로봇을 포함한 통합 시스템 구성에 있어 위험성 평가는 대부분의 국가에서 법적 필수 사항으로 다루고 있을 만큼 중요한 요소 중 하나입니다. 로봇이 시스템에 통합되는 방식에 따라 로봇 설치에 대한 안전 평가가 달라지므로 로봇 자체만으로는 통합 시스템의 위험성을 평가할 수 없습니다.
+When it comes to configuring an integrated system including a robot, risk assessment is one of the most critical factors that are handled as legal requirements in most countries. A risk assessment of an integrated system cannot be performed only on a single robot because the safety assessment for the installation of the will differ depending on how the robot is integrated into the system.
 
-시스템 관리자는 ISO 12100 및 ISO 10218-2의 지침에 따라 시스템을 구성하고 운영하여 위험성 평가를 진행해야 합니다.
+The system administrator should configure and operate the system according to the guidelines of ISO 12100 and ISO 10218-2 to conduct a risk assessment.
+You should conduct the risk assessment by taking into account the entire process of an integrated system including the robot. The main objectives of the risk assessment are as follows.
 
-로봇을 포함한 통합 시스템의 전체 프로세스를 고려하여 위험성 평가를 진행하십시오. 위험성 평가의 주요 목표는 다음과 같습니다.
+* Basic settings for the use of the robot, and teaching of the robot
+* Trouble diagnosis, and maintenance
+* Normal operation of the installed robot
 
-* 로봇 사용의 기본 설정 및 로봇 티칭
+After installing the robot and configuring the s
+ystem, you must conduct a risk assessment. The risk assessment mainly determines the appropriateness of safety devices in the robot integrated system, as well as the necessity for additional emergency stop devices and other safety devices. It is very important to know the appropriate safety devices and properly configure the robot integrated system. You should configure the integrated system by referring to the relevant information in the manual. For details on configuring the safety functions, refer to “1.8. Safety Functions”. In addition, when installing the robot in a specific location or configuring safety-related functions by using the safety I/O, the important items in the risk assessment of an integrated robot system are as follows.
 
-* 문제 진단 및 유지 보수
+* Severity
+* Frequency of exposure to risks
+* Possible occurrence
+* Possible avoidance
 
-* 설치된 로봇의 정상 동작
+In the process of configuring an integrated system, if the safety-related functions of the robot do not sufficiently eliminate the risk factors, it is possible to check the necessity for additional protective devices during the risk assessment.
 
-로봇을 설치하고 시스템을 구성한 후에는 반드시 위험성 평가를 실행해야 합니다. 위험성 평가에서는 로봇 통합 시스템의 안전 장치의 적절성을 비롯하여 추가 비상 정지 장치 및 다른 안전 장치의 필요성 등을 주로 판단합니다. 적절한 안전 장치를 파악하여 로봇 통합 시스템을 올바르게 구성하는 것은 매우 중요합니다. 설명서 내에서 관련 내용을 참조하여 통합 시스템을 구성하십시오. 안전 기능 구성에 대한 자세한 사항은 “1.8. 안전기능”을 참조하십시오. 또한, 로봇을 특정한 위치에 설치하거나 안전 I/O를 이용하여 안전 관련 기능을 구성할 경우, 로봇 통합 시스템의 위험성 평가 시 중요 항목은 다음과 같습니다.
-
-* 심각도
-* 위험 노출 빈번도
-* 발생 가능성
-* 회피 가능성
-
-통합 시스템 구성 시 로봇의 안전 관련 기능으로 위험 요소가 충분히 제거되지 않은 경우 위험성 평가에서 추가 보호 장치의 필요성을 확인할 수 있습니다.

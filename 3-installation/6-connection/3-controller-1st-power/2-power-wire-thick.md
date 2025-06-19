@@ -1,14 +1,15 @@
-﻿# 3.6.3.2. 전원 전선 굵기
+﻿# 3.6.3.2. Power Cable Thickness 
 
-표 3-3 권장 최소 전선 굵기
+
+Table 3-3 Recommended Minimum Cable Thickness 
 
 <table>
 <thead>
   <tr>
     <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>No.&nbsp;&nbsp;&nbsp;</th>
-    <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 길이m(feet)&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N00(U),Hi6-N80(U))&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기 <br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N30(U))&nbsp;&nbsp;&nbsp;</th>
+    <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>Cable length m(feet)&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>Cable thickness<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N00(U),Hi6-N80(U))&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>Cable thickness<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N30(U))&nbsp;&nbsp;&nbsp;</th>
   </tr>
   <tr>
     <th>&nbsp;&nbsp;&nbsp;<br>mm2&nbsp;&nbsp;&nbsp;</th>

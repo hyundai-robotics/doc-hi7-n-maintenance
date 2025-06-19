@@ -1,133 +1,121 @@
-﻿# Hi6-N 제어기 보수 설명서
+﻿# Hi6-N Controller Maintenance Manual
 
-## 개요
+## Overview
 
-본 장의 주된 목적은 산업용 로봇의 사용자와 보수, 조작하는 작업자의 안전에 대한 사항을 기술하는 것입니다.
+The main purpose of this chapter is to describe the matters about the safety for the users of the industrial robot and for the workers who maintain and operate the robot.
 
-로봇 시스템의 설치, 교체, 조정, 조작, 보전, 보수를 행하는 모든 작업자들은 반드시 조작, 보수설명서를 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+Every worker who installs, replaces, adjusts, operate, preserves and maintains the robot system must carefully read and fully understand the operation manual and maintenance manual. Also, keep the manuals nearby so that you can view it whenever necessary.
 
-당사에서는 보전, 보수, 조작 교육을 계획하여 시행하고 있으니, 로봇 사용자는 로봇 작업자에 대하여 해당 교육을 받을 수 있도록 하여 주십시오.
-그리고 반드시 본 교육 과정을 이수한 작업자만이 로봇을 취급하는 작업을 할 수 있도록 하여 주십시오.
+Our company plans and implements the preservation, maintenance and operation trainings so the person using the robot should ensure that the workers working in the robot system should receive the relevant trainings. It must be ensured that only those who have completed this course can handle the robot.
 
-당사 산업용 로봇의 사용자는 해당 국가에서 적용되는 로봇과 관계된 안전관련 법규를 확실히 파악하여 준수하여야 할 책임과 로봇 시스템에서 일하는 작업자를 보호하기 위한 안전장치를 제대로 설계, 설치, 운용할 책임이 있습니다.
+The users of our industrial robots are responsible for surely understanding and complying with safety-related laws applicable in concerned countries and for properly designing, installing, and operating safety devices to protect workers working in robot systems.
 
-로봇 시스템의 위험지역 즉 로봇, 툴(tool), 주변 장치들이 동작하는 지역에서는 ANSI/RIA R15.06-2012에 의하여 작업자 또는 작업물 외의 물체가 위험지역으로 진입하는 것을 방지하기 위한 안전장치가 있어야 합니다.
-위험을 불구하고 작업자나 물체가 위험지역으로 들어가야 할 때는 비상정지(emergency stop)장치에 의하여 로봇 시스템이 즉시 정지되도록 시스템을 구성하여야 합니다. 이러한 안전장치의 설치, 확인, 운용의 책임은 작업자에게 있습니다.
+The dangerous areas of the robot system, in other words, the areas where the robot, tools and peripheral devices are operating, should be equipped with safety devices according to ANSI / RIA R15.06-2012 to prevent an object, other than the workers and the workpiece, from entering the dangerous areas. The robot system should be configured in a way that it can be stopped immediately by an emergency stop device when a worker or object needs to enter the dangerous area in spite of possible danger. The workers are responsible for installing, checking and operating these safety devices.
 
-이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 옵션과 모델에 따라 일부 내용이 다를 수 있습니다. 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다.
-개정에 관한 상세한 정보는 당사의 인터넷 웹사이트(www.hyundai-robotics.com)를 방문하여 확인하시기 바랍니다.
+This manual has been created based on standard specifications, so some contents may differ depending on the options and model of the product that you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website (www.hyundai-robotics.com).
 
-## 저작권
 
-이 설명서에서 다루고 있는 내용은 저작권 법과 비밀 유지 계약에 의하여 보호받고 있습니다. 이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내 부 교육 자료로 제공되어 사용될 수 있습니다만, 명시적으로 허용하지 않은 사용, 복사, 제 3자에의 공개 및 배포 등의 행위는 엄격히 금지됩니다.
+## Copyrights
+
+The contents covered in this manual are protected by copyright laws and confidentiality agreements. This manual may be provided as reference material for customers who have purchased Hyundai Robotics products or may be used as internal training material. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by Hyundai Robotics, are strictly prohibited.
 
 Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 
-## 안전 주의 사항
 
-제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+## Safety Cautions
 
-■ 위험
+Before using the product, you must fully understand the following safety cautions for proper use, user safety, and prevention of property damage.
+
+■ 	Danger
 
 {% hint style="danger" %}
-긴박한 위험: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
 {% endhint %}
 
 
-* 안전 회로는 어떠한 방법으로든 결코 무시하거나, 수정, 변경되지 않도록 하십시오.
-* 중력 또는 브레이크 해제에 의해 추가적인 문제가 발생할 수 있으므로, 반드시 각 보봇별 운송에 사용되는 지정된 로프와 크레인을 사용하여 브레이크 해제 시 흘러내림 또는 추가적인 사고가 발생하지 않도록 조치를 취한 후 작업해야 합니다.
+* Make sure that the safety circuit is never ignored, modified or altered in any way.
+* Considering that additional problems may occur due to gravity or brake release, you must take a measure, before carrying out works, such as using a rope and crane that are to be used for transport of individual robots to prevent the brake from running down or additional accidents from taking place during the release of the brake.
 
-■ 경고
+■ Warning
 
 {% hint style="warning" %}
-잠재적인 위험: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
 {% endhint %}
 
-* 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에
-  손상을 주는 일체의 행위를 금합니다.
-* 로봇 동작시 로봇과 작업자가 충돌할 위험이 있기 때문에 작업자가 로봇과 가까이 하지 않도록 안전망을 설치하여 주십시오.
-* ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
-* 안전사고 예방을 위해 안전작업 절차를 반드시 지켜 주십시오. 어떠한 상황에서도 안전장치나 회로를 변경하거나 무시하지 않도록 하며 감전사고에 유의하여 주십시오. 자동모드에서 모든 정상적인 작업은 안전가드 밖에서 행하여야만 합니다. 작업 전에는 로봇의 작업영역 안에 사람이 없는지를 반드시 확인하여 주십시오.
-* 티칭 작업시 발밑을 충분히 확인하면서 작업합니다. 특히 고속(250mm/s 이상) 티칭 작업시 반드시 안전가드 밖에서 작업을 하십시오.
-* 안전 관련 기능에 영향을 미칠 수있는 구성 부품 변경 또는 로봇에 옵션 장비 (하드웨어 및 소프트웨어 모두) 추가 한 경우 “1.11 로봇 조작시 안전 작업”에 기재 된 사항을 유의하여 반드시 기능 정상 여부를 확인하여 주십시오.
-* 엔드 이펙터(End Effector)를 설치 및 운영하는 경우 반드시 ISO/TR 20218-1:2018을 준수하여 적용 및 보수, 운영을 하여야 한다.
-* 리프팅 장비를 이용해 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수해야 합니다. 크레인을 이용해 이동할 때에는 제품 아래에 작업자가 없는지 반드시 확인하십시오. 또한, 절대 크레인 또는 제품 아래에서 작업하거나 지나다니지 마십시오.
-* 일반 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치 입니다.
-* 자동 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치 입니다.
-* 안전 입력을 설치하여 사용할 경우에는 정상적으로 기능이 작동하는지 확인 후 로봇을 가동시켜야 합니다. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
-* ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다.국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 상기 “주의사항”을 지키지 않는 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
-* 안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
-* 비상정지 출력을 설치하여 사용할 경우에는 비상정지 출력이 정상적으로 작동되는지 확인 후 로봇을 작동하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
 
-■ 주의
+* Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited.
+* When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent the worker from getting close to the robot.
+* The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
+* Must observe the safety work procedures to prevent safety accidents. Do not change or ignore safety devices or circuits under any circumstances, and pay attention to possible electric shock. In auto mode, all normal works should be performed outside the safety guard. Before carrying out works, make sure that there are no people in the operation area of the robot.
+* Sufficiently check under your feet when teaching. In particular, you must perform the teaching work outside the safety guard when teaching at a high speed (250mm/s or above).
+* When it comes to changing of components or addition of optional equipment (both hardware and software) to the robot both of which may affect safety-related functions, you must check whether the functions are in normal conditions, by paying attention to the items described in “1.11 Safety Works When Operating the Robot”.
+* When installing and operating an end effector, you must perform application, maintenance and operation according to ISO/TR 20218-1:2018.
+* When transporting the product by using lifting equipment, you should comply with the relevant national and local safety regulations and equipment usage guidelines. When moving the product using a crane, you must make sure that that no workers are under the product. Also, never work or walk under a crane or the product.
+* If a general safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. Also, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
+* If an automatic safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. Also, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
+* If a safety input is to be installed and used, the robot should be operated after confirming that the input function operates normally. This is an essential measure that must be taken in advance for the safety of workers.
+* The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not following the above “caution”.
+* If a safety-related input is installed and enabled, you must check whether the function operates normally by referring to “1.11 Safety Measures When Operating the Robot”.
+* If an emergency stop output is to be installed and used, the robot should be operated after confirming that the emergency stop output operates normally. This is an essential measure that must be taken in advance for the safety of workers.
+
+■ Caution
 
 {% hint style="info" %}
-저위험 요소: 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다.
+Low-level danger factor: Incompliance may result in minor injury to the worker or damage to property, such as damage to the product.
 {% endhint %}
 
-* 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
-* 비상정지는 모터 동력을 즉각 차단하므로, 무분별한 사용은 로봇 내구성에 피로가 누적 될 수 있습니다. 반드시, 비상상황에서만 사용하시기 바랍니다.
-* 하드웨어 리미트 스위치 고장에 의해 조깅 동작이 되지 않는 경우 당사에서는 책임이 없습니다. 반드시 주기적으로 점검하여 주십시오. 고장시 대책에 대해서는 트러블슈팅 매뉴얼을 참고 바랍니다
-* 출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리 해서는 안됩니다. 어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
-  시운전을 할 경우는 티칭(teaching)프로그램, 지그(jig), 시퀀스(sequence) 등 전체 시스템에 대하여 설계 오류나 티칭(teaching) 오류, 제작 불량 등이 존재할 가능성이 있습니다. 이로 인하여 시운전 작업에
-  있어서 한층 더 안전의식을 가지고 작업에 임해야 합니다. 복합요인으로 인해 안전사고가 발생할 경우가 있습니다. 로봇 시운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
-* 출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리 해서는 안됩니다. 어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
-* 로봇 본체의 보수, 점검시 로봇의 암(arm)이 낙하 또는 그밖의 위험이 생길 경우가 있으니, 반드시 지시된 절차대로 작업을 진행하여 주십시오
-* 구동력이 없는 로봇의축을 이동 시 중력에 의한 낙하 또는 제동 장치의 해제로 인해 추가적인 위험이 발생할 수 있으므로, 반드시 지시된 절차에 따라 작업을 진행하여 주십시오.
-* 전원을 켜기 전에 로봇의 작업영역 안에 작업자가 없는지, 자신이 안전한 장소에 있는지를 확인 한 후 전원을 투입하십시오.
-* 제품 설치 전에 반드시 충분한 위험성 평가를 수행하고 평과의 결과를 바탕으로 안전 기능을 설정하십시오. 안전 기능에 대한 자세한 내용은 “1. 안전” 파트를 참조하십시오.
-* 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
-* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
-* 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
-* 권장하는 장소에 제품을 설치하지 않을 경우 제품의 성능 및 수명이 감소될 수 있습니다. 권장 사항을 준수하여 제품을 설치 및 사용하십시오.
-  - 케이블을 연결하기 전에 제어기의 메인 전원 스위치를 “OFF”로 하고, 메인 전원 스위치를 잠그기 위해 자물쇠를 사용하십시오.
-  - 제어기에는 DC400V의 충전된 에너지가 있습니다. 주의하십시오. 충전된 에너지를 방전시키기 위해 전원 스위치를 “OFF”로 한 후 최소한 5분간 기다리십시오.
-  - PCB를 다룰 때에는 정전기에 의해 손상되지 않도록 주의하십시오.
-  - 배선과 결선은 반드시 자격있는 사람에 의해 수행되어야 합니다.
-* 로봇별로 커넥터 접촉부가 위의 그림과 상이 할 수 있으므로 반드시 와이어하네스(Wire Harness) 연결 전 해당 로봇 보수 매뉴얼을 숙독하여 연결을 하십시오.
-  - 제어기 및 로봇 본체의 배선은 신호선과 전력선을 분리하여 배선하십시오.또한 고전력선과 신호선간에는 분리된 DUCT를 사용하여 배선하십시오.
-  - 배선은 보호 Cover를 사용하여 통행 시 손상이 생기지 않도록 조치하여 주십시오.
-  - 반드시 1차 전원 투입 전에 접속관계, 제어기의 전원 사양 및 공급 전원 사양등을 재확인하여 주십시오.
-* 보수 담당자께서는 제어기의 내부의 각종 장치, 부품배치 및 각각의 그 기능들에 대하여 이해한 후 작업에 임하여 주십시오.
-* DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 임의로 변경하면 안됩니다.
-* 다음은 사용자가 임의로 변경할 수 없으며, FPGA JTAG을 통한 재프로그래밍이 필요한 경우에만 참고하세요.
 
-* 드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 꼭 확인하시기 바랍니다.
-  - 동시에 두개의 축 이상을 해제하지 마십시오.
-  - 반드시 로봇과 안전거리를 유지한 후 브레이크 해제유닛을 사용하십시오.
-  - 크레인과 같은 기구를 사용하여 로봇 축낙하를 대비 후 브레이크 해제유닛을 사용하십시오.
-  - 최소 2인이상 1조로 작업을 진행하여 안전사항을 체크하십시오.
+* Mark the installation and dangerous areas of the robot in a way that they can be clearly differentiated from other facilities and devices in terms of type, color and style.
+* As the emergency stop function immediately cuts off the motor power, so reckless use of the function may result in accumulation of fatigue that affects the durability of the robot. The function must be used only in emergency situations.
+* Our company is not responsible if the jogging operation does not work due to the failure of the hardware limit switch. You must check it periodically. For the measure to take in case of a failure, please refer to the troubleshooting manual.
+* You should not be negligent in paying attention to sudden movements while entry is made possible. Under any circumstances, you must avoid approaching the robot without preparing for possible emergency situation.
+* In the case of trial-operation, there may be a design error, teaching error, or defect in manufacturing with regard to the entire system including the teaching program, jigs, and sequencing. For this reason, you should work with elevated safety awareness in trial-operation. Multiple factors can contribute to safety accidents. Observe the following measures considering that safety is very important when trial-operating the robot.
+* During maintenance and inspection of the manipulator, the robot arm may fall, or there could be a different type of danger. So, you must proceed with the work according to the instructed procedures
+* When moving the axis of the robot that has no driving force applied, there is a risk of the axis dropping due to gravity and also an additional risk due to the release of the brake system. So, you must proceed with the work according to the instructed procedures.
+* Before turning on the power, check that there is no worker inside the robot operation area and you are in a safe place.
+* Before installing the product, you must perform a sufficient risk assessment and then set the safety functions based on the assessment results. For details on safety functions, refer to “1. Safety” section.
+* When installing and repairing the product, contact the customer support team and ask an expert.
+* Do not install and use the product in an area that has lots of dust or is dirty. Dust or foreign substances may cause product failure or performance problems. 
+* Mark the installation and dangerous areas of the robot in a way that they can be clearly differentiated from other facilities and devices in terms of type, color and style.
+* If the product is not installed in the recommended locations, the performance and service life of the product may be reduced. Install and use the product according to the recommendations.
+1. Before connecting the cables, turn “off” the controller's main power switch and then lock it by using a padlock. 
+2. The controller has DC400V charged energy. Be careful. Wait at least 5 minutes after turning “off” the power switch, and then wait 5 minutes at least to discharge the charged energy.
+3. When handling the PCB, take precautions not to allow static electricity to damage it
+4. Wiring and connection of wires must be performed by qualified personnel.
+	Since the contact part of the connector for each robot may be different from the figure above, you must read the relevant robot maintenance manual carefully before connecting the wire harness.
+	1. When performing the wiring work for the controller and manipulator, separate the signal line and the power line. In addition, use a separate duct for the high power line and the signal line respectively.
+2. Use a protective cover for the wiring, as a measure to prevent the wiring from getting damaged when people are passing nearby.
+3. Before supplying the primary power, you must check again the relationship with regard to connection, the power specification and power supply specification of the controller.
+* The person in charge of maintenance should work after understanding the placement of various devices and parts and their functions inside the controller.
+* The DIP switch is set to OFF mode when shipped from the factory, and the setting should not be changed arbitrarily by the user.
+* The user cannot change the following items arbitrarily, and needs to refer to them only when required to reprogram through FPGA JTAG.
+* The drive module differs depending on the type of the robot, so you must check the type when replacing it.
+1. Do not release more than two axes at the same time.
+2. Must keep a safe distance from the robot first before using the brake release unit.
+3. Use the brake release unit after preparing for the dropping of the robot’s axis by using equipment such as a crane.
+4. Check the safety matters while working in a group of at least 2 people.
+* When using the brake release unit, follow the procedures below.
+1. Turn off the AC220V power switch and check that the DC24V power switch is turned off.
+2. Connect the AC power cable to the AC power connector.
+3. Turn on the AC220V power switch. 
+4. Turn on the DC24V power switch.
+- When the use of the brake release unit is finished, follow the procedures below.
+1. Turn off the DC24V power switch.
+2. Turn off the AC220V power switch.
+3. Disconnect the AC power cable. 
+- Do not use AC220V power and DC24V battery power at the same time.
+* Fieldbus communication must be available to use commercial remote IO. Therefore, you should configure the PCI communication card together by referring to the Paragraph 5.1 mentioned above.
+* The drive unit differs depending on the type of the robot, so you must check the type when replacing the drive unit.
+* When transporting the product, you should maintain a proper posture and work in a group of at least two workers. Otherwise, injury to parts of the body such as the back, arms and legs may result.
+* If you transport the product by using lifting equipment, you should comply with relevant national and local safety regulations and equipment usage guidelines. 
+* When transporting the product, you should fully understand the transport-related contents in the manual and follow the instructions. Our company will not be responsible for any damage to or breaking of the product due to the customer’s transport of the product. 
+* These are important parts to be prepared for daily maintenance and inspection.
+* These are maintenance parts to be prepared when multiple units are purchased.# 1. Safety
 
-* 브레이크 해제유닛 사용 시 다음 절차를 따라주십시오.
-  - AC220V 전원 스위치 OFF 및 DC24V 전원 스위치 OFF 상태 확인
-  - AC 전원 케이블을 AC 전원 커넥터에 연결
-  - AC220V 전원 스위치 ON
-  - DC24V 전원 스위치 ON
+Refer to the maintenance manual of each robot for detailed specifications regarding the installation of end effectors.# 1.1. Applicable Standards
 
-* 브레이크 해제유닛 사용 종료 시, 다음 절차를 따라주십시오.
-  - DC24V 전원 스위치 OFF
-  - AC220V 전원 스위치 OFF
-  - AC 전원케이블 분리
-
-* AC220V 전원과 DC24V 배터리 전원을 동시에 사용하지 마십시오.
-
-* 상용 리모트 IO를 사용하기 위해서는 필드버스 통신이 반드시 필요 합니다. 따라서, 위에 언급된 5.1절을 참고하여 PCI 통신 카드를 같이 구성하시기 바랍니다.
-
-* 구동장치는 로봇에 따라 다르므로 교환할 때에는 형식을 꼭 확인하여 주십시오.
-
-* 제품 운반 시에는 올바를 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
-
-* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
-
-* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
-
-* 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
-
-* 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
-# 1. 안전
-# 1.1. 적용 표준
-
-이 제품에 적용된 안전 표준은 다음과 같습니다.
+The safety standards applied to the product are as follows
 
 * ANSI/RIA/ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
 
@@ -168,17 +156,17 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * IEC 60204-1:2016 Safety of machinery - Electrical equipment of machines - Part 1: General requirements
 
 * ISO 11161:2007 Safety of machinery - Integrated manufacturing systems - Basic requirements
-# 1.2. 안전 성능
+# 1.2. Safety Performance
 
-산업용 로봇의 안전 모듈의 성능은 다음과 같습니다.
+The performance of the industrial robot's safety modules is as follows.
 
-표 1-1 안전모듈의 안전성능
+Table 1-1 Safety Performance of Safety Modules
 <table>
 <thead>
   <tr>
-    <th>항목</th>
-    <th>안전 성능</th>
-    <th>적용 표준</th>
+    <th>Item</th>
+    <th>Safety performance</th>
+    <th>Applicable standards</th>
   </tr>
 </thead>
 <tbody>
@@ -202,418 +190,383 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
   </tr>
 </tbody>
 </table>
-# 1.3. 안전 교육
+# 1.3. Safety Trainings
 
-제품의 기능을 효과적으로 사용하려면 반드시 설명서의 내용을 숙지하고 제품을 올바르게 설치, 사용 및 보수해야 합니다. 제품 사용자는 로봇이 설치 및 사용되는 지역의 로봇 관련 안전 법규의 숙지 및 준수의 책임과 로봇 시스템에서 작업하는 사용자의 안전을 담보할 안전 장치를 제대로 설계, 설치 및 운용할 책임을 가집니다.
+In order to use the functions of the product effectively, you must fully understand the contents of the manual and then install, use and maintain the product properly. The users of the product are responsible for fully understanding and complying with robot-related safety laws in the area where the robot is installed and used, and also responsible for properly designing, installing, and operating safety devices to ensure the safety of users working in the robot system.
 
-* 로봇 시스템의 설치, 사용 및 보수를 행하는 모든 작업자들은 반드시 설명서를 숙독하여 내용을 완전히 이해해야 합니다. 특히 안전 주의 사항(![img](../_assets/삼각형1.png))을 반드시 숙지하기 바랍니다.
+* All the workers who install, use, and maintain the robot system must read the manual carefully and understand the contents completely. In particular, they must fully understand the safety cautions(![](../_assets/삼각형1.png)).
 
-* 당사에서는 제품의 설치, 사용 및 보수 관련 교육을 계획하여 시행하고 있습니다. 제품 사용자 및 작업자는 반드시 해당 교육 과정을 이수한 후에 제품을 사용하십시오.
+* Our company plans and implements the trainings for the installation, use and maintenance of the product. So, the product users and the workers must complete relevant training courses before using the product.
+* The workers responsible for teaching and inspecting the robot must complete the robot use and safety trainings before using the robot. The contents covered in the safety training courses include the following items.
+  * The concept of safety. and the purpose and function of the safety devices
+  * Procedures for safe handling of the robot
+  * Performance and potential danger of the robot and robotic system
+  * Items including the works related to specific applications of the robot
 
-* 로봇의 티칭(teaching) 및 점검을 담당하는 작업자는 로봇 사용 전에 반드시 로봇 사용 및 안전 교육을 이수해야 합니다. 안전 교육 과정에서 다루는 내용은 다음과 같습니다.
+# 1.4. Risk Assessment
 
-  - 안전 개념 및 안전 장치의 목적과 기능
+When it comes to configuring an integrated system including a robot, risk assessment is one of the most critical factors that are handled as legal requirements in most countries. A risk assessment of an integrated system cannot be performed only on a single robot because the safety assessment for the installation of the will differ depending on how the robot is integrated into the system.
 
-  - 로봇을 안전하게 다루는 절차
+The system administrator should configure and operate the system according to the guidelines of ISO 12100 and ISO 10218-2 to conduct a risk assessment.
+You should conduct the risk assessment by taking into account the entire process of an integrated system including the robot. The main objectives of the risk assessment are as follows.
 
-  - 로봇 및 로봇 시스템의 성능과 잠재적인 위험 요소
+* Basic settings for the use of the robot, and teaching of the robot
+* Trouble diagnosis, and maintenance
+* Normal operation of the installed robot
 
-  - 특정 로봇의 응용 관련 작업 등
-# 1.4. 위험성 평가
+After installing the robot and configuring the s
+ystem, you must conduct a risk assessment. The risk assessment mainly determines the appropriateness of safety devices in the robot integrated system, as well as the necessity for additional emergency stop devices and other safety devices. It is very important to know the appropriate safety devices and properly configure the robot integrated system. You should configure the integrated system by referring to the relevant information in the manual. For details on configuring the safety functions, refer to “1.8. Safety Functions”. In addition, when installing the robot in a specific location or configuring safety-related functions by using the safety I/O, the important items in the risk assessment of an integrated robot system are as follows.
 
-로봇을 포함한 통합 시스템 구성에 있어 위험성 평가는 대부분의 국가에서 법적 필수 사항으로 다루고 있을 만큼 중요한 요소 중 하나입니다. 로봇이 시스템에 통합되는 방식에 따라 로봇 설치에 대한 안전 평가가 달라지므로 로봇 자체만으로는 통합 시스템의 위험성을 평가할 수 없습니다.
+* Severity
+* Frequency of exposure to risks
+* Possible occurrence
+* Possible avoidance
 
-시스템 관리자는 ISO 12100 및 ISO 10218-2의 지침에 따라 시스템을 구성하고 운영하여 위험성 평가를 진행해야 합니다.
+In the process of configuring an integrated system, if the safety-related functions of the robot do not sufficiently eliminate the risk factors, it is possible to check the necessity for additional protective devices during the risk assessment.
 
-로봇을 포함한 통합 시스템의 전체 프로세스를 고려하여 위험성 평가를 진행하십시오. 위험성 평가의 주요 목표는 다음과 같습니다.
+# 1.5. Potential Risks
 
-* 로봇 사용의 기본 설정 및 로봇 티칭
+If the results of the risk assessment of an integrated system linked to the robot reveal that the risk factors have not been sufficiently removed only with the safety-related functions of the robot, additional protective measures must be taken.
+The items to take into consideration when establishing additional protective measures is as follows.
+* During installation, fingers can be pinched (caught) between the robot base and the mounting table.
+* Injuries (puncture wound, penetrating injury, etc.) from sharp edges or pointed parts of obstacles or tools in the operation area.
+* Injuries (bruise, falling over, fracture, etc.) due to collision with the robot
+* Injuries caused (puncture wound, penetrating injury, fracture, etc.) due to obstacles around the robot
+* Injuries that may occur because the fastening part is not completely fixed
+* Injuries (skin damage, shortness of breath, etc.) that may occur when working with toxic and hazardous substances
+* Separation of a workpiece from the tool due to sudden power failure
+* A mistake caused by confusing with the emergency stop switch of other equipment
+* Errors due to arbitrary change of the setting of safety-related functions.
+The type of risk that may occur depends on the system configuration, so you must conduct the risk assessment before using the integrated system.
+# 1.6. Effectiveness and Responsibility
 
-* 문제 진단 및 유지 보수
+It is required to observe the safety requirements according to the safety regulations and laws of the countries and regions where the robot is installed and used. Suppliers and users of the robot integrated systems have a variety of responsibilities, including the following items.
+*	Risk assessment of the robot integrated system
+*	Addition and removal of safety devices according to the risk assessment results
+*	Check whether the integrated system is configured, installed and set up correctly.
+*	Establishment of the methods and guidelines to use the integrated system, and trainings for the users
+*	Management of safety devices (Prohibition of user's arbitrary change and manipulation of safety devices)
+*	Provision of important information, as well as contact information, related to the use and safety of the product
+*	Provision of all kinds of technical documents including manuals
 
-* 설치된 로봇의 정상 동작
+The safety information in this manual does not cover all risk factors and situations that may arise while using the product.
 
-로봇을 설치하고 시스템을 구성한 후에는 반드시 위험성 평가를 실행해야 합니다. 위험성 평가에서는 로봇 통합 시스템의 안전 장치의 적절성을 비롯하여 추가 비상 정지 장치 및 다른 안전 장치의 필요성 등을 주로 판단합니다. 적절한 안전 장치를 파악하여 로봇 통합 시스템을 올바르게 구성하는 것은 매우 중요합니다. 설명서 내에서 관련 내용을 참조하여 통합 시스템을 구성하십시오. 안전 기능 구성에 대한 자세한 사항은 “1.8. 안전기능”을 참조하십시오. 또한, 로봇을 특정한 위치에 설치하거나 안전 I/O를 이용하여 안전 관련 기능을 구성할 경우, 로봇 통합 시스템의 위험성 평가 시 중요 항목은 다음과 같습니다.
+# 1.7. Safety Labels 
 
-* 심각도
-* 위험 노출 빈번도
-* 발생 가능성
-* 회피 가능성
-
-통합 시스템 구성 시 로봇의 안전 관련 기능으로 위험 요소가 충분히 제거되지 않은 경우 위험성 평가에서 추가 보호 장치의 필요성을 확인할 수 있습니다.
-# 1.5. 잠재적 위험
-
-로봇과 연동된 통합 시스템의 위험성 평가에서 로봇의 안전 관련 기능만으로 위험 요소가 충분히 제거되지 않았다는 결과가 도출되었을 경우에는 반드시 추가 보호 대책을 수립해야 합니다.
-
-추가 보호 대책 수립 시 고려해야 할 사항은 다음과 같습니다.
-
-* 설치 시 로봇 베이스와 설치대 사이에 손가락 끼임(협착)
-
-* 작업 영역 내의 장애물 및 툴의 날카로운 가장자리나 뾰족한 부분에 의한 상해(찔림, 관통 등)
-
-* 로봇과의 충돌에 의한 상해(멍, 넘어짐, 골절 등)
-
-* 로봇 주변의 장애물에 의한 상해(찔림, 관통, 골절 등)
-
-* 체결 부위가 완전히 고정되지 않아 발생할 수 있는 상해
-
-* 독성이 있는 물질 및 유해 물질 작업 시 발생할 수 있는 상해(피부 손상, 호흡 곤란 등)
-
-* 갑작스러운 전원 중단으로 툴에서 작업물 이탈 
-  
-* 다른 장비의 비상 정지 스위치와 혼동하여 발생하는 실수
-
-* 안전 관련 기능 설정의 임의 변경에 의한 오류 등
-
-발생 가능한 위험의 유형은 시스템 구성에 따라 다르므로 통합 시스템을 사용하기 전에는 반드시 위험성 평가를 실행하십시오.
-# 1.6. 유효성 및 책임
-
-로봇을 설치 및 사용하는 국가 및 지역의 안전 규정 및 법률을 기준으로 안전 요건을 준수해야 합니다. 로봇 통합 시스템의 공급자와 사용자에게는 다음의 사항을 비롯하여 다양한 책임이 부여됩니다.
-
-* 로봇 통합 시스템의 위험성 평가
-
-* 위험성 평가 결과에 따른 안전 장치의 추가 및 제거
-
-* 통합 시스템의 올바른 구성, 설치 및 설정 여부 확인
-
-* 통합 시스템의 사용 방법과 지침 구축 및 사용자 교육
-
-* 안전 장치 관리(사용자의 안전 장치 임의 변경 및 조작 금지)
-
-* 제품 사용 및 안전에 관한 중요 정보 및 연락처 등의 정보 제공
-
-* 설명서를 비롯한 모든 종류의 기술 문서 제공 등
-
-이 설명서의 안전 관련 내용에서 제품 사용 중 발생할 수 있는 모든 위험 요소와 상황을 다루지는 않습니다.
-# 1.7. 안전 라벨
-
-제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다. 또한 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Name plates, warning markings, safety symbols, etc. are attached on the inside and outside of the controller. Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. Mark the installation and dangerous areas of the robot in a way that they can be differentiated from other facilities and devices in terms of type, color and style.
 
 ![](../_assets/그림_1.1_안전라벨.png)
 
-그림 1.1 안전라벨
+Figure 1.1 Safety Labels
 
-표 1-2 안전라벨.
+Table 1-2 Safety Labels
 
 ![](../_assets/1.7._안전_라벨(Hi6).png)
 
-
 {% hint style="warning" %}
-제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다.
+Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited.
 {% endhint %}
-
 
 {% hint style="info" %}
-로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Mark the installation and dangerous areas of the robot in a way that they can be differentiated from other facilities and devices in terms of type, color and style.
 {% endhint %}
-# 1.8 안전기능
 
-로봇의 안전 시스템은 [ISO13849-1:2015]의 안전성능(PL)=d Cat3와 [IEC62061:2005\]의 안전무결성수준(SIL) 레벨2을 만족시키기 위해 이중화(HFT=1) 설계되었으며, 안전 관련 디바이스의 상태를 지속적으로 모니터링합니다. 자가진단에 의한 에러 검출 또는 안전 관련 신호가 입력되면 위험성평가에 의해 결정된 정지 분류에 따라 로봇을 정지시킵니다. 또한, 안전회로의 이중화 스위치 중 어느 하나라도 활성화 되었을 경우 모터 구동 전원과 브레이크 구동 전원을 차단하여 안전한 상태가 되도록 합니다. 해당 상태에 대한 정보는 티칭펜던트를 통해 확인 가능합니다.
+# 1.8 Safety Functions
+
+The safety system of the robot is designed in dual configuration (HFT=1) to satisfy the safety performance (PL) = d Cat3 of [ISO13849-1:2015] and the safety integrity level (SIL) 2 of [IEC62061:2005], and continuously monitors the status of safety related devices. When an error is detected by self-diagnosis, or a safety related signal is inputted, the safety functions will stop the robot according to the classification of stop situations determined based on the risk assessment. Also, when any of the dual switches of the safety circuit is activated, the motor drive power and brake drive power will be cut off by the sfety functions to secure a safe state. Information on the relevant status can be checked through the teaching pendant.
 
 {% hint style="danger" %}
-안전 회로는 어떠한 방법으로든 결코 무시하거나, 수정, 변경되지 않도록 하십시오.
+Make sure that the safety circuit is never ignored, modified or altered in any way.
 {% endhint %}
 
-로봇의 안전 관련 주요한 기능은 아래와 같습니다.
-# 1.8.1. 주요 안전 기능
 
-* 비상정지 (IEC 60204-1,10,7)
+The safety-related main functions of the robot are as follows.
+# 1.8.1. Main Safety Functions
 
-제어기와 티칭펜던트에 각각 비상정지 버튼이 한 개씩 있으며, 필요에 따라 추가로 비상정지 입력을 로봇의 안전 체인 회로에 연결할 수 있습니다. 비상정지 기능은 로봇의 모든 제어 기능보다도 우선적으로 적용되는 기능입니다. 로봇 각축 모터에 공급되는 전원을 즉각 차단하여 로봇을 정지시키며, 로봇에 의하여 제어되는 안전에 관련된 기능들을 사용하지 못하도록 합니다.
+* Emergency stop (IEC 60204-1,10,7)
+
+There is one emergency stop button on the controller and teach pendant respectively. It is possible to connect, if necessary, an additional emergency button to the safety chain circuit of the robot. The emergency stop function is to be applied with higher priority over all other control functions of the robot. The function will immediately cut off the power supply to the motors of individual axes of the robot, stopping the robot and making it impossible to use safety related funtions controlled by the robot. 
+
+
 
 {% hint style="info" %}
-비상정지는 모터 동력을 즉각 차단하므로, 무분별한 사용은 로봇 내구성에 피로가 누적될 수 있습니다. 반드시, 비상상황에서만 사용하시기 바랍니다.
+As the emergency stop function immediately cuts off the motor power, so reckless use of the function may result in accumulation of fatigue that affects the durability of the robot. The functoin must be used only in emergency situations.
 {% endhint %}
+
 
 ![](../../_assets/그림_1.2_제어기,_티칭펜던트_비상정지_스위치.png  )
 
-그림 1.2 제어기, 티칭펜던트 비상정지 스위치
+Figure 1.2 Emergency Stop Buttons on the Controller and Teaching Pendant
 
 ![](../../_assets/그림_1.3_추가_비상정지_장치_연결.png  )
 
-그림 1.3 추가 비상정지 장치 연결
+Figure 1.3 Connection of an Additional Emergency Stop Device
 
-* 보호정지 (ISO 10218-1:2011)
+*	Protective stop (ISO 10218-1:2011)
 
-로봇은 안전가드, 안전패드, 안전등과 같은 외부의 안전장치와 연결되어 사용할 수 있도록 다수의 안전입력을 가져야합니다. 이러한 안전입력은 로봇자체 및 주변설비 등으로부터 입력시 로봇을 정지시키므로서, 안전한 상태가 되도록 합니다. 자세한 안전입력에 대한 연결에 대해서는 “4.3.2.안전모듈(BD632)”을 참고하시기 바랍니다.
+The robot should have multiple safety inputs so that it can be used in connection with external safety devices such as safety guards, safety pads, and safety lamps. These safety inputs will make the robot stop when there is an input from the robot itself and peripheral facilities, securing a safe state. For details on the connection to the safety inputs, refer to “4.3.2. Safety Module (BD632)”.
 
-* 속도제한기능(EN ISO 10218-1:2011)
+*   Speed limit (EN ISO 10218-1:2011)
 
-수동조작 모드에서 로봇의 속도는 최고 250 mm/s로 제한됩니다. 속도의 제한은 TCP(Tool Centre Point) 뿐만 아니라 수동조작을 행하는 로봇의 모든 부분에 적용됩니다. 또한 로봇에 장착된 장비의 속도는 모니터링이 가능하도록 해야 합니다.
+In manual operation mode, the speed of the robot is limited to a maximum of 250 mm / s. The speed limit applies not only to the TCP (Tool Center Point) but also to all other parts of the robot that are to be operated in manual mode. It should be also made possible to monitor the speed of the equipment mounted on the robot.
 
-* 동작영역제한(ANSI/RIA R15.06-2012)
+*  Operaiton area limit (ANSI/RIA R15.06-2012)
 
-로봇을 적용할 때 충분한 안전영역을 확보하기 위하여 로봇의 동작범위를 하드웨어리미트(Hardware limit), 스토퍼(Stopper)을 사용하여 제한 할 수 있습니다. 안전가드 등과 같은 외부 안전 장치와 로봇이 충돌할 경우 이런 기능은 손해를 최소화 할 것입니다. 1,2,3축은 주로 스토퍼나 하드웨어리미트에 의해 동작 범위가 제한됩니다. 만약 기계적인 스토퍼 또는 하드웨어리미트에 의하여 동작범위가 변경될 경우는 소프트웨어 상에서도 동작영역 한계 파라미터가 변경되어야 합니다. 변경에 대한 사항은 조작메뉴얼을 참고하시기 바랍니다. 각축의 동작영역의 한계는 사용자에 의해 변경이 가능하며, 출하시에는 로봇의 최대 동작영역으로 설정되어 있습니다. Hi6제어기의 안전시스템은 하드웨어리미트 스위치를 옵션으로 4개까지 지원 가능하며, 연결과 관련된 사항은 “4.3.2. 안전모듈(BD632)”을 참고하시기 바립니다.
+When applying a robot, in order to secure a sufficient safety area, the operation range of the robot can be limited by using a hardware limit or a stopper. This function can minimize the damage if the robot collides with an external safety device such as a safety guard. Axis 1, 2, and 3 are mainly limited by a stopper or hardware limit. If the operation range is changed due to a mechanical stopper or hardware limit, the operation range limit parameter should be also changed in software as well. Please refer to the operation manual about the change. The operation area limit of each axis can be changed by the user, and at the time of shipment, it is set to the maximum operation range of the robot. The safety system of the Hi6 controller can support up to 4 hardware limit switches as an option. Refer to “4.3.2. Please refer to “Safety Module (BD632)” for the matters related to the connection.
 
-* 조작모드의 선택(ANSI/RIA R15.06-2012)
+*  Operaiton mode selection (ANSI/RIA R15.06-2012)
 
-로봇은 수동 또는 자동, 리모트모드에서 조작할 수 있습니다. 수동모드에서의 최고 속도는 250 mm/s로 제한되며, 티칭펜던트를 통해서만 조작이 가능합니다. 또한 옵션 구성에 의해 제어반에 모드스위치의 추가장착이 가능합니다. 조작에 관한 상세 내용은 조작 매뉴얼을 참고하시기 바랍니다.
-# 1.8.2. 관련 기타 기능
+You can operate the robot in manual, automatic or remote mode. The maximum speed in manual mode is limited to 250 mm/s, and you can perform operation only with the teaching pendant. In addition, it is possible to mount a mode switch additionally on the control panel by configuring it as an option. For details on the operation, please refer to the operation manual.
 
-로봇의 암(Arm)에 의한 사고로 사람의 끼임이 발생하는 경우 아래의 사항을 숙지하고 조치해 주시기 바랍니다.
+# 1.8.2. Other Related Functions
 
-* 수동브레이크 해제
+Required to fully understand the following items and take actions if a person is pinched due to an accident caused by the arm of the robot.
+
+* Release of the manual brake 
 
 {% hint style="danger" %}
-중력 또는 브레이크 해제에 의해 추가적인 문제가 발생할 수 있으므로, 반드시 각 보봇별 운송에 사용되는 지정된 로프와 크레인을 사용하여 브레이크 해제 시 흘러내림 또는 추가적인 사고가 발생하지 않도록 조치를 취한 후 작업해야 합니다.
+Considering that additional problems may occur due to gravity or brake release, you must take a measure, before carrying out works, such as using a rope and crane that are to used for transporation of individual robots to prevent the brake from running down or additional accidents from taking place during the release of the brake.
 {% endhint %}
 
 
-    - 제어기의 전원을 제거한 후 브레이크 해제 유닛을 지정된 로봇 커넥터 또는 제어기 내부 보드 커넥터에 연결하여 필요에 따른 축별 수동 브레이크 해제를 바랍니다.
+    - After removing power from the controller, connect the brake release unit to the designated connector of the robot or the internal board connector of the controller and then release the manual brake for each axis as needed.
 
-    - 각 로봇별 축에 대한 정보와 지정된 운송장비(예: 로프, 크레인)는 로봇 별 로봇 보수 매뉴얼을 참조하십시오.
+    - Refer to the maintenance manual of each robot for the information on individual axes of each robot, and for the designated transport equipment (eg, rope, crane) for each robot.
 
-* 하드웨어 리미트 입력에 의하여 로봇이 정지하는 경우
-  리밋 스위치에 의하여 로봇이 정지되면 정수 설정모드에서 티칭펜던트로 로봇을 조깅하여 위치를 변화 시킬 수 있습니다. 현장 상황에 맞춰 소프트 리밋을 지정 후 교육받은 작업자에 의해 설치되도록 해주십시오.
+When the robot is stopped by the limit switch, it is possible to change the position by jogging the robot with the teaching pendant in the constant setting mode. After designating the soft limit according to the site situation, make sure that it is installed by a trained worker.
 
 {% hint style="info" %}
-하드웨어 리미트 스위치 고장에 의해 조깅 동작이 되지 않는 경우 당사에서는 책임이 없습니다.
-반드시 주기적으로 점검하여 주십시오. 고장시 대책에 대해서는 트러블슈팅 매뉴얼을 참고 바랍니다.
+Our company is not responsible if the jogging operation does not work due to the failure of the hardware limit switch. 
+You must check it periodically. For the measure to take in case of a failure, please refer to the troubleshooting manual.
 {% endhint %}
 
-# 1.9. 정지
+# 1.9. Stop
 
-Hi6제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. IEC 60204-1에 명시된 정지분류 기준으로 안전입력 별 분류는 아래와 같습니다.
+The safety system of Hi6 controller can handle the stop operation as shown below. Safety inputs can be classified as follows according to the stop classification criteria specified in IEC 60204-1.
 
-* 정지분류 0: 기계 액추에이터의 전원을 즉시 제거하여 정지(제어되지 않은 정지)
+*  Stop classification Stopping (uncontrolled stoping) occurs as the power to the machine actuator is immediately removed.
 
-    →  비상 정지 버튼
+    →  Emergency stop button
 
-* 정지분류1: 정지를 달성하기 위해 기계 액추에이터에 사용할 수 있는 전력이 있는 제어 정지 및 정지가 달성되면 전력을 제거
+*  Stop classification 1: Controlled stop in which the machine actuator still has a power that can be used to achieve the stopping. The power will be removd when the stopping is achieved. 
 
-    →  비상 정지 버튼 외 안전입력
-# 1.10. 설치 시 안전 대책
-# 1.10.1. 안전 가드 설치
+    →  Safety inputs except for the emergency stop button
+# 1.10. Safety Measures When Installing
+# 1.10.1. Installing the Safety Guard
 
 {% hint style="warning" %}
-로봇 동작시 로봇과 작업자가 충돌할 위험이 있기 때문에 작업자가 로봇과 가까이하지 않도록 안전망을 설치하여 주십시오.
+When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot.
 {% endhint %}
 
-로봇 동작시 로봇과 작업자가 충돌할 위험이 있기 때문에 작업자가 로봇과 가까이 하지 않도록 ISO 13855:2010를 준수하여 안전망을 설치하여 주십시오. 로봇이나 용접치구의 점검, 또는 팁 드레싱(tip dressing), 팁교환(tip changing) 등 어떠한 이유든지 로봇동작 중에 안전망(fence)의 문을 열고 설비에 접근하면 로봇이 정지하도록 구성하여 주십시오.
+When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot according to ISO 13855:2010. Configure the system to ensure that the robot stops when a worker opens the door of the safety fence and approaches the facility, during the robot operation, for any reason, such as inspecting the robot or a welding fixure, performing tip dressing or tip changing, etc.
 
-[](../../_assets/그림_1.4_안전펜스_연결.png  )
+![](../../_assets/그림_1.4_안전펜스_연결.png  )
 
-그림 1.4 안전펜스 연결
+Figure 1.4 Connection of the Safety Fence<br/><br/>
 
-출처: ISO 13855:2010 Safety of machinery — Positioning of safeguards with respect to the approach speeds of parts of the human body
+Source : ISO 13855:2010 Safety of machinery — Positioning of safeguards with respect to the approach speeds of parts of the human body
 
-[](../../_assets/표_1-3_안전펜스_설치_규격.png  )
+![](../../_assets/표_1-3_안전펜스_설치_규격.png  )
 
-출처: ISO 13855:2010 Safety of machinery - Positioning of safeguards with respect to the approach speeds of parts of the human body
+Source : ISO 13855:2010 Safety of machinery - Positioning of safeguards with respect to the approach speeds of parts of the human body
 
-* 안전망은 로봇 동작영역을 커버하며, 작업자가 티칭(teaching) 작업 및 보수작업 등에 지장이 없도록 충분한 공간을 확보하여야 하며, 쉽게 이동시키지 못하도록 견고하게 하고, 사람들이 쉽게 넘어 들어가지 못하는 구조로 하여 주십시오.
+*   The safety fence should cover the operation area of the robot, and should secure enough space so that there is no interference when the worker carries out works, such as teaching, maintenance, etc. The safety fence should be made solid to prevent it frome being moved easily and should be structured in a way not to allow people to enter inside the fence by going over the safety fence.
 
-* 안전망은 원칙적으로 고정식으로 설치해야 하며 요철 또는 예리한 부위 등의 위험부분이 없는 것을 사용하여 주십시오.
+*	In principle, it is required to install and use a fixed type safety fence that does not have dangerous parts such as uneven or sharp parts.
 
-* 안전망 안으로 출입이 가능하도록 출입문을 설치하고, 출입문에는 안전플러그를 반드시 설치하여 플러그를 뽑지 않으면 문이 열리지 않도록 합니다. 또 안전플러그를 뽑거나 안전망이 열린 상태에서는 로봇이 모터OFF/브레이크 Hold가 되도록 배선해 주십시오.
+*	An entrance door should be installed to allow people to enter inside the safety fence, and a safety plug must be installed on the door in a way that the door should not open unless the plug is removed. In addition, wiring should be configured in a way that allows the motor to be turned off and the brake to be in hold state when the safety plug is removed or the sfety fence is opened.
 
-* 안전플러그를 뽑은 상태에서 로봇을 동작하고자 할 경우에는 저속으로 재생 되도록 배선하여 주십시오.
+*	If you want to operate the robot even when the safety plug is removed, wiring should be configured in a way that allows the robot to play back at low speed.
 
-* 로봇의 비상정지 버튼은 작업자가 빠르게 누를 수 있는 곳에 설치하여 주십시오.
+*	Install the emergency stop button of the robot at a location where the operator can quickly press it.
 
-* 안전망을 설치하지 않은 경우에는 안전플러그를 대신할 수 있도록, 로봇의 안전가드 범위의 사양 내에 들어가는 장소 전체에 광전스위치, 매트스위치 등과 같은 안전 장치를 설치하여, 사람이 진입하였을 때 로봇이 자동으로 정지하도록 해주십시오.
+*	If a safety fence is not to be installed, safety devices such as photoelectric switches and mat switches should be installed covering the entire area that falls within the specification of the safety guard range of the robot, as substitute devices for the safety fence, making it possile for the robot to stop automatically when a person enters inside the safety fence. 
 
-* 로봇의 동작영역(위험영역)은 바닥에 페인트 칠을 하는 것과 같이 식별될 수 있도록 하여 주십시오.
-# 1.10.2. 로봇 및 주변기기 배치
+*	Make sure that the robot's operation area (danger area) can be identified in some way, such as painting the floor.
+
+# 1.10.2. Placement of the Robot and Peripheral Devices 
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나,” 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
 {% endhint %}
 
-자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다.
+Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws.
 
-* 포장 해체 시, 운반이나 해체 과정에서 발생할 수 있는 제품의 손상 여부를 확인하십시오.
+*	When unpacking the product, check it for damage that may occur while transporting or unpacka it.
 
-* 포장 해체 후 제품을 설치하기 전에는, 반드시 안전 규정과 지시 사항, 제품의 설치 및 사용 환경 정보를 확인하고 설치 방법을 숙지하십시오.
+*	Before installing the product after unpacking it, you must check the safety regulations, instructions, information related to the product installation and use environments, and fully undertand the installation methods.
 
-* 제어기나 주변장치의 1차 전원을 접속할 경우 공급측 전원이 OFF되어 있는가를 확인한 후 작업을 하시기 바랍니다. 고전압을 1차 전원으로 사용하므로 감전사고의 위험이 있습니다.
+*	When connecting the primary power of the controller or peripheral device, peroform the connection after checking first whether the supply side power is turned off. Since high voltage is used as the primary power source, there is a risk of electric shock.
 
-* 안전망의 출입구에 \[운전중 진입금지\] 표찰을 부착하고, 작업자에게 그 취지를 주지시켜 주십시오.
+*	Put up a sign “No entry during operation” at the entrance of the safety fence, and inform the workers of the intents.
 
-* 제어기, 인터록반, 기타 조작반 등은 전부 안전망 밖에서 조작할 수 있도록 배치하여 주십시오.
+*	Place the controller, interlock panels, and other control panels in a way that they can be operated from outside the safety fence.
 
-* 조작 스탠드를 설치할 경우 조작 스탠드에도 비상정지 버튼을 부착하여 주십시오. 로봇을 조작하는 모든 곳에서 비상시에 정지할 수 있도록 하여야 합니다.
+*	When installing the operation stand, attach an emergency stop button to it also. Wherever you operate the robot, you should be able to stop the robot in an emergency situation.
 
-* 로봇 본체와 제어기, 인터록(Interlock)반, 타이머(Timer) 등의 배선, 배관류가 작업자 발에 걸리거나 포크리프트(Forklift) 등에 직접 밟히지 않도록 하여 주십시오. 작업자가 감전되거나, 배선이 단선되는 사고가 발생할 위험이 있습니다.
+*	Do not allow the wiring or piping of the manipulator, controller, interlock panel, timer, etc. to get caught on by the workers' feet or to get stepped on directly by the forklift. Otherwise, there is a risk of accidents of the worker getting electric shock or the wires getting disconnected. 
 
-* 제어기, 인터록(Interlock)반, 조작스탠드 등은 로봇 본체의 움직임이 충분히 보일 수 있는 곳에 배치하여 주십시오. 로봇의 동작이 보이지 않는 곳에서 로봇에 이상이 발생하고 있거나 작업자가 작업중일 때, 로봇을 조작할 경우 대형 사고가 발생할 위험이 있습니다.
+*	Place the controller, interlock panel, and operation stand at a place where the operation of the manipulator can be seen sufficiently. If the robot is operating abnormally in an area from which the robot operation cannot be seen, or the worker is working on something in the area, there is a risk of major accidents taking place during operation.
 
-* 필요로 하는 로봇의 작업영역이 로봇의 동작가능영역보다 좁을 경우 로봇의 동작영역을 제한 하십시오. 소프트리미트(Soft limit), 하드웨어리미트(Hardware limit), 기계적 스토퍼(Stopper) 등으로 제한 가능합니다. 로봇을 잘못  조작하는 등의 이상조작으로 제한영역을 벗어나는 동작이 발생할 경우에도 사전에 동작영역제한 기능에 의해 로봇이 자동으로 정지합니다.
+*	If the required robot operation area is narrower than the allowable robot operation area, you should limit the robot operation area. It can be limited by soft limit, hardware limit, mechanical stopper, etc. Even when the robot operates off the normal operation area due to abnormal operation such as mistakes in the operation of the robot, the robot will be stopped in advance by the operation area limit function. 
 
-* 용접중 스패터(Spatter) 등이 작업자에게 떨어지거나 주변에 떨어져 화상 또는 화재의 위험이 있을 수 있습니다. 로봇 본체의 움직임이 충분히 보이는 범위에 차광판, 커버(Cover) 등을 설치하여 주십시오.
+*	During welding, spatter may fall on or fall near the worker and cause a burn or fire. Install a light shield plate, cover, etc. in the range where the movement of the manipulator can be seen sufficiently.
 
-* 로봇의 운전상태를 나타내는 자동, 수동 상태는 조금 떨어진 곳에서도 인식할 수 있도록 눈에 잘 띄는 장치를 설치해 주십시오. 자동운전을 개시할 경우 부저(Buzzer)나 경보등 등이 유용합니다.
+*	When it comes to a device that shows the auto and manual operation modes of the robot, an easily visible device should be installed to ensure that the status can be recognized from a distance. In case of starting the operation in auto mode, a buzzer or an alarm will be useful.
 
-* 로봇 주변의 장치에는 돌출부가 없도록 하여 주십시오. 필요하면 커버 등으로 덮어 주십시오. 통상 작업자가 접촉하여 사고가 발생할 위험이 있으며, 갑작스런 로봇 동작에 놀란 작업자가 넘어져서 대형 사고가 발생할 위험이 있습니다.
+*	Make sure there is no protruding part on the peripheral devices of the robot. If necessary, place a cover on them. Otherwise, in general, an accident could occur when the worker comes into contact with a protruding part, and a major accident could occur when a worker surprised over a sudden movement of the robot could fall over. 
 
-* 안전망 안으로 손을 넣어 작업물의 반입, 반출을 실시하는 시스템 설계는 하지 말아 주십시오. 압착, 절단 사고의 위험이 있습니다.
+*	Do not design a system that requires the worker to put in hands inside the safety fence to carry in and carry out a workpiece.
+
 
 ![](../../_assets/그림_1.5_LCD핸들링_로봇의_빔형_안전펜스.png  )
 
-그림 1.5 LCD핸들링 로봇의 빔형 안전펜스
+Figure 1.5 Beam Type Safety Fence for the LCD Handling Robot
 
-산업용 로봇 주변장치와 작업자의 배치
+Placement of the Peripheral Devices and Workers for the Industrial Robot
 
 ![](../../_assets/그림_1.6_산업용_로봇의_원통형_안전펜스.png  )
 
-그림 1.6 산업용 로봇의 원통형 안전펜스
-# 1.10.3. 로봇 설치
+Figure 1.6 Cylinder Type Safety Fence for the Industrial Robot
+# 1.10.3. Installation of the Robot
 
-{% hint style="info" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+{% hint style="warning" %}
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
 {% endhint %}
 
-자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다.
+Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws.
+*	When unpacking the pruduct, check it for damage that may occur while transporting or unpacking it.
 
-* 포장 해체 시, 운반이나 해체 과정에서 발생할 수 있는 제품의 손상 여부를 확인하십시오.
+*	Before installing the product after unpacking it, you must check the safety regulations, instructions, information related to the product installation and use environments, and fully undertand the installation methods.
+*	The worker who uses the robot should fully understand the contents described in the application and auxiliary manuals, and operate and handle the industrial robot skillfully.
+*	The worker who installs the robot should be able to apply the safety instructions during the installation if there is a problem.
+*	The system supplier should guarantee that all circuits used for safety functions perform their functions surely.
+*	The main power supply to the robot should be installed in a way that it can be cut off from outside the robot operation area.
+*	The system supplier should surely guarantee that all circuits used for safety functions perform their functions safely.
+*	The emergency stop button should be located at a place where the worker can easily approach it when required to stop the robot urgently. 
+*	By taking into consideration the dimensions of the manipulator and the operation range, make sure that that there is no interference with peripheral devices.
+*	Avoid installing the robot in a place that is exposed to direct sunlight, has high level of humidity, has oil or chemicals around and has lots of metal powder or explosive gas in the air.
+*	Install the robot in an area where the ambient temperature is 0 - 45 ℃.
+*	Secure enough space for disassembling and inspecting the robot easily.
+*	Install a safety fence and prevent people from entering the robot operation range.
+*	Make sure there is no obstacle in the robot operation area.
+*	When installing the robot in an area exposed to direct sunlight or near a heating element, you should take measures in consideration of the thermodynamic state of the controller.
+*	Take additional measures when installing the robot in an area that has lots of dust such as metal powder in the air.
+*	Carry out installation in a way that welding current never flows to the robot. In other words, there should be insulation between the spot gun and the wrist of the robot. 
+*	Since grounding is important for preventing a malfunction due to noise and an electric shock, you should install the robot as shown below.
 
-* 포장 해체 후 제품을 설치하기 전에는, 반드시 안전 규정과 지시 사항, 제품의 설치 및 사용 환경 정보를 확인하고 설치 방법을 숙지하십시오. 
+     - Install the dedicated grounding terminal while setting it as Type 3 Grounding higher.
+     - Connect the grounding wire to the grounding bus bar inside the control panel.
+     - When the manipulator is installed, if it is directly grounded to the floor by an anchor, etc., the controller side and the manipulator side will make a two-point grounding, forming a closed circuit, which conversely may cause malfunctioning due to some reasons such as noise. In this case, connect the grounding wire to the base part of the manipulator, but not to the controller side. In addition, if there is shaking when the robot stops, there is a high possibility that the grounding is incomplete or there is a closed circuit. It is required to check the grounding again.
+     - If you use a gun with an embedded transformer, there is a risk of dropping because the primary power cable is connected directly to the spot gun. In this case, in order to protect the control panel and prevent electric shock, connect the grounding wire directly to the base part of the manipulator and do not connect it to the controller.<br/><br/>
 
-* 로봇을 사용하는 작업자는 응용, 보조 설명서에 기술된 사항을 숙지하여 산업용 로봇을 능숙하게 조작, 취급하도록 하여야 합니다.
-
-* 로봇을 설치하는 작업자는 문제점이 있을 경우 안전 지시사항을 설치 작업중에 적용할 수 있어야 합니다.
-
-* 시스템 공급자는 안전기능을 사용하는 모든 회로가 그 기능을 확실하게 수행함을 보장하여야 합니다.
-
-* 로봇에 공급하는 주전원은 로봇의 작업영역 밖에서 차단될 수 있도록 설치되어야 합니다.
-
-* 시스템 공급자는 비상정지 기능을 사용하는 모든 회로가 제 기능을 안전한 방법으로 수행함을 확실하게 보장하여야 합니다.
-
-* 로봇을 급히 정지할 경우를 위하여 비상정지 버튼은 작업자가 접근하기 쉬운 곳에 위치하여야 합니다.
-
-* 본체치수, 동작범위를 고려하여 주변기기와의 간섭이 없도록 합니다.
-
-* 직사광선이 닿는 장소, 습기가 많은 장소, 기름기나 화학물질이 있는 장소, 공기중에 금속가루, 폭발성 기체가 많은 곳의 설치는 피하여 주십시오.
-
-* 주위온도 0~45 ℃의 범위인 곳에 설치하여 주십시오.
-
-* 분해, 점검이 용이하도록 충분한 공간을 확보하여 주십시오.
-
-* 안전망을 설치하고, 로봇의 동작범위 안에 사람이 진입하지 못하도록 하여 주십시오.
-
-* 로봇 동작영역에는 장애물이 없도록 하여 주십시오.
-
-* 직사광선이 닿는 장소, 발열체의 부근에 설치할 경우에는 제어기의 열역학 상태를 고려하여 대책을 세워주십시오.
-
-* 공기중에 금속가루 등의 분진이 많은 곳에 설치할 경우는 별도의 대책을 세워 주십시오.
-
-* 로봇에 용접 전류가 절대로 흐르지 않도록 설치하여 주십시오. 즉, 스폿 건(spot gun)과 로봇 손목 사이는 절연합니다.
-
-* 접지는 노이즈에 의한 오동작 및 감전방지 등의 점에서 중요하므로, 하기와 같이 설치하여 주십시오.
-  - 전용 접지단자를 설치하고 제3종 접지 이상으로 합니다.
-
-  - 접지선은 제어반 내부의 접지 버스바(bus bar)에 접속합니다.
-
-  - 로봇 본체 설치시에 앵커(anchor) 등에 의해 바닥에 직접 접지된 경우에는 제어기측과 로봇 본체측이 2점 접지로 되어 폐회로가 발생, 역으로 노이즈 등에 의한 오동작이 우려됩니다. 이러한 경우에는 로봇 본체의 베이스(base)부에 접지선을 접속하고 제어기측은 접속하지 않습니다. 또한 로봇 정지시에 떨림이 있을 경우에는 접지의 불완전 혹은 폐회로 발생의 가능성이 크므로 다시 한번 접지를 살펴주십시오.
-
-  - 트랜스 내장 건(gun)을 사용할 경우에는 1차 전원 케이블이 직접 스폿 건(spot gun)에 접속되기 때문에 떨어질 위험성이 있습니다. 이 경우에는 제어반의 보호와 감전방지를 위해 로봇 본체의 베이스(base)부에 직접 접지선을 접속하고, 제어기에는 접속하지 말아 주십시오.
-
-* 로봇 별 로봇 보수메뉴얼을 참고하여 설치 하시기 바랍니다.
-
-* 현장 상황에 맞춰 소프트 리미미트를 지정 후 하드웨어 리미트의 위치 및 조정은 반드시 교육된 작업자에 의해 설치하시기 바랍니다. 설치 시 동작 여부를 반드시 체크해주십시오.
-# 1.11. 로봇 조작시 안전 작업
+* Carry out the installation by referring to the robot maintenance manual for each robot.
+* After designating the soft limit suitable for the site situation, the positionining and adjustment of the hardware limit must be performed by a trained worker. After installation, you must check whether the functions are working well.
+# 1.11. Safety Works When Operating the Robot
 
 
 {% hint style="warning" %}
-안전사고 예방을 위해 안전작업 절차를 반드시 지켜 주십시오. 어떠한 상황에서도 안전장치나 회로를 변경하거나 무시하지 않도록 하며 감전사고에 유의하여 주십시오. 
-자동모드에서 모든 정상적인 작업은 안전가드 밖에서 행하여야만 합니다. 작업 전에는 로봇의 작업영역 안에 사람이 없는지를 반드시 확인하여 주십시오. 
+Must observe safety work procedures to prevent safety accidents. Do not change or ignore safety devices or circuits under any circumstances, and pay attention to possible electric shock. 
+In auto mode, all normal works should be performed outside the safety guard. Before carrying out works, you must make sure that there are no people in the operation area of the robot.
 {% endhint %}
 
-# 1.11.1. 로봇 조작시 안전대책
+# 1.11.1. Safety Measures When Operting the Robot 
 
-로봇 조작시 안전은 매우 중요하므로 아래의 대책을 따라 주십시오.
+Observe the following measures considering that safety is very important when operating the robot.
+*	The worker who operates or may operate the robot, and the supervisor should take certain trainings. Except for those who are recognized to be fully aware of the safety and functions of the robot and designated accordingly, any unqualified person should not operate the robot.
 
-* 로봇을 조작하는 작업자와 조작할 가능성이 있는 작업자 및 감시인은 소정의 교육을 수강하여 안전 및 로봇의 기능에 관해서 충분히 인식한 사람으로 지명된 자 외에는 조작하지 말아 주십시오.
+*	Before operating the robot, you must check whether the product has been installed by a qualified installer in compliance with the relevant national and regional regulations and laws.
 
-* 로봇을 조작전 반드시 자격이 있는 설치 전문가에 의해 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품이 설치되었는지 확인을 받은 후 조작을 하십시오.
+*	Before operating the robot, check whether the safety functions are working normally.
 
-* 로봇의 조작전 안전기능이 정상적으로 작동하는지 확인 후 조작을 하십시오.
+*	Must wear a safety helmet, protective glasses and safety shoes. 
 
-* 안전모, 보안경, 안전화는 필히 착용하십시오. 
+*	Two people must work together. One person should be teaching and the other should be monitoring from the operation panel. One of the two should be ready to press the emergency stop switch at any time, and the other should perform the work quickly with sufficient care in the operation area. In addition, check the evacuation route before starting the work. 
 
-* 반드시 2명이 작업합니다. 1명은 티칭(teaching) 작업, 1명은 조작반에서 감시합니다. 1인은 언제라도 비상정지 스위치를 누를 태세를 갖추고 또 한 사람은 동작영역에서 충분히 주의하여 신속하게 작업을 행합니다. 또한 작업 전에는 미리 대피경로를 확인하여 두십시오.
+*	Supply the power after confirming that there is no worker within the safety guard.
 
-* 안전 가드 내에 작업자가 없는가를 확인 후 전원을 투입합니다.
+*	Works such as teaching should be performed outside the robot safety guard in principle. However, when required to stop the system and work within the operation range, the worker should bring in the mode switch key (or a switch to change to the auto mode), or the safety plug when going inside. Such action is necessary to make sure that no other worker accidentally changes the robot to the auto operation mode. Also, pay special attention to the direction of the operation of the robot just in preparation for the robot malfunctioning or operating in wrong conditions.
 
-* 티칭(teaching) 등의 작업은 원칙적으로 로봇안전가드 밖에서 합니다. 그러나 장비를 정지하고 동작범위 내에서 작업하는 경우에는 모드 스위치 키(또는 자동운전으로 바꾸기 위한 스위치) 안전플러그를 가지고 들어가 주십시오. 다른 작업자가 잘못하여 자동운전으로 바꾸지 않도록 할 필요가 있습니다. 또한 만일의 경우 로봇의 오동작, 오조건에 대비하여 그 동작의 방향에 특히 주의를 기울여 주십시오.
-※    감시인은 다음의 사항을 준수하여 주십시오.
-  - 로봇 전체를 볼 수 있는 곳에 위치하고 감시의 직무에 전념합니다.
-  - 이상이 있을 때 즉시 비상정지버튼을 누릅니다.
-  - 작업에 종사하는 자 외에는 가동범위 내에 있지 않도록 합니다.
+※   The supervisor should observe the followings.
+            
+    - The supervisor should be positioned at a location where she or he can see the robot entirely and should be dedicated to the duties of supervision.
+    - If there is any problem, press the emergency stop button immediately.
+    - Other people except for the persons involved in the work should not be allowed to stay within the operation range.
 
-* 기본적으로, 수동조작시 속도는 최대 250 mm/sec 로 제한됩니다. 이때, 가드 밖의 작업자와 함께 문제가 생길 시 언제라도 비상정지 스위치를 누를 태세를 갖추고 작업을 진행해야 합니다.
+* In manual operation mode, the speed should be limited to a maximum of 250 mm/sec. At this time, you should progress the work while being prepared, together with the worker outide the guard, to press the emergency stop switch at any time if a problem occurs.
 
-* 하이 스피드 모드로 수동 조작을 하는 경우에는 안전 가드내에서 밖에서 작업을 진행해야 합니다.
+*	When operating the robot manually in high-speed mode, you should progress the operation from outside the safety guard.
 
-* 티칭(teaching)시에는 \[티칭작업중\]이라는 푯말 붙이고 작업합니다. 
+*	When performing a teaching work, you shoud put up a sign [Teaching in progress]. 
 
-* 안전가드 내에 진입할 때는 작업자가 필히 안전 플러그 또는 그에 상응하는 장치를 뽑아서 갖고 들어가십시오.
+*	When required to enter inside the safety guard, the worker should pull out the safety plug or an equivalent, and then bring it in when going inside.
 
-* 티칭(teaching) 작업장소 및 그 주변에 노이즈의 발생원인이 되는 기기를 사용하지 말아주십시오.
+*	Do not use equipment that could be a source of noise near the teaching place or its surroundings.
 
-* 티칭(teaching) 포인트를 보면서 티치펜던트(teach pendant)의 로봇조작 버튼을 손의 감각으로써만 조작하지 말고 눈으로 확인하며 조작하십시오.
+*	Do not operate the robot operation buttons on the teach pendant just by using the feeling at the hands while watching the teaching points. Instead, operate the buttons while checking with bare eyes.
 
 {% hint style="warning" %}
-티칭 작업시 발밑을 충분히 확인하면서 작업합니다. 특히 고속(250mm/s 이상) 티칭 작업시 반드시 안전가드 밖에서 작업을 하십시오.
+Sufficiently check under your feet when teaching. In particular, you must perform the teaching work outside the safety guard when teaching at a high spped (250mm/s or above).
 {% endhint %}
 
-* 이상 발생시의 조치는 다음과 같이 하십시오.
 
-  - 이상한 동작이 발견되었을 때는 즉시 비상정지 스위치를 누르십시오.
+* 	Take the following measures when abnormality occurs.
+이
+     - 	If abnormal operation is found, immediately press the emergency stop button.
 
-  - 비상 정지되어 이상확인을 할 때에는 관련설비의 정지상태를 필히 확인하십시오.
+     - 	If abnormality is to be checked following an emergency stop, the stop status of the concerned facility must be checked.
 
-  - 전원의 이상발생으로 로봇이 자동적으로 정지한 경우에는 완전히 로봇이 정지된 것을 확인한 후에 원인을 조사하여 대책을 실시합니다.
+     - 	If the robot stops automatically due to abnormality with the power. Check first that the robot is stopped completely, and then investigate the cause and take measures.
 
-  - 비상정지 장치가 제 기능을 수행하지 않는 경우는 즉시 주전원을 차단하고 원인을 조사하여 대책을 실시합니다.
+     - 	If the emergency stop device does not perform functions properly, immediately shut off the main power, and then investigate the cause and take measures.
 
-  - 이상의 원인조사는 지명된 사람 외에는 하지 말아야 합니다. 비상 정지된 후 재기동은 이상의 원인이 확실히 밝혀진 후 대책을 실시하고 나서 순서에 의해 작업을 합니다.
+     - 	The investigation of the cause of the abnormality should not be performed by any other than the designated person. After the emergency stop, you should restart the system after surely identifying the cause of the abnormality and taking measure accordingly.
 
-* 로봇의 가동방법, 조작방법, 이상시의 조치 등에 관하여 설치장소, 작업내용에 따라 적절한 작업규정을 작성해 둡니다. 또한, 그 작업규정에 따라서 작업을 진행하도록 해야 합니다.
+* 	Prepare proper work regulations, considering the installation location and work details, with regard to the robot operation and manipulation methods, and actions to take when abnormality occurs. In addition, work should be carried out according to the work regulations.
+*	Precautions to take when the robot is stopped
 
-* 로봇 정지 시 유의사항
-  - 로봇이 정지해 있는 것으로 알고, 무작정 접근하는 것은 반드시 피하여야 합니다. 정지해 있다고 생각한 로봇에 접근하였는데, 로봇이 갑자기 움직여서 재해가 발생한 경우가 많습니다. 로봇이 정지해 있는 상태에는 아래와 같은 경우가 있습니다.
-표 1-4 로봇정지 시 로봇상태
+    * Must avoid approaching the robot recklessly while thinking that the robot is stopped. When you approach the robot because you think it is stopped, the robot may suddenly move, causing an accident in many cases. The robot will be in the stopped state in the following cases.<br/><br/>
+
+
+Table 1-4 Status of the robot when it stop mode
 <table>
 <tbody>
 <tr class="odd">
 <td></td>
-<td><p>로봇 상태</p></td>
-<td><p>구동원</p></td>
-<td><p>출입가능여부</p></td>
+<td><p>State of the robot</p></td>
+<td><p>Source of driving</p></td>
+<td><p>Entry</p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
-<td><p>일시정지 중</p>
-<p>(가벼운 이상, 일시정지 스위치)</p></td>
+<td><p>In temporary stop mode</p>
+<p>(Minor abnormality, temporary stop switch)</p></td>
 <td><p>ON</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>2</p></td>
-<td><p>비상정지 중</p>
-<p>(중대한 이상, 비상정지 스위치, 안전문)</p></td>
+<td><p>In emergency stop mode</p>
+<p>(Major abnormality, emergency stop switch and safety door)</p></td>
 <td><p>OFF</p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="even">
 <td><p>3</p></td>
-<td><p>주변장치에서의 입력신호대기</p>
+<td><p>Waiting for input signal from peripheral devices</p>
 <p>(START INTERLOCK)</p></td>
 <td><p>ON</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
 <td><p>4</p></td>
-<td><p>재생완료 중</p></td>
+<td><p>Playback being completed</p></td>
 <td><p>ON</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="even">
 <td><p>5</p></td>
-<td><p>대기 중</p></td>
+<td><p>Waiting in progress</p></td>
 <td><p>ON</p></td>
 <td><p>X</p></td>
 </tr>
@@ -621,174 +574,168 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 </table>
 
 {% hint style="info" %}
-출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리해서는 안됩니다.
-어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
+You should not be negligent in paying attention to sudden movements even when entry is made possible. Must avoid approaching without preparing for possible emergency situation under any circumstances.
 {% endhint %}
 
-*  일시정지중, 가벼운 이상조치를 위해 출입문을 여는 경우 (노즐접촉과 용착 검출, 아크 이상에 의한 경우 등)에는 티칭(teaching) 작업의 출입과 똑같은 대책을 강구해서 출입합니다.
+  
+    - If the entrance door needs to be opened to take measures for minor abnormalities (such as nozzle contact, deposition detection and arc abnormality) during a temporary stop, the same measures as taken for opening the door for the teaching should be taken.
 
-* 로봇 조작을 완료하면 안전망 안을 청소하여 공구, 기름, 이물질 등이 남아 있지 않은지를 확인하여 주십시오. 작업영역이 기름 등으로 더러워지거나, 공구류가 떨어져 있으면 그것이 원인이 되어 전도 등의 사고가 발생할 경우가 있습니다. 항상 정리정돈을 생활화하기 바랍니다.
-# 1.11.2. 로봇 시운전시 안전대책
+* After completing the robot operation, clean the inside of the safety fence to make sure that no tools, oil or foreign substances remain. If the operation area is stained with oil, or if tools are left in the operation area, it could cause an accident such as falling over. Make sure that arranging and organizing are performed always.
+# 1.11.2. Safety Measures When Trial-Operating the Robot
 
 {% hint style="info" %}
-시운전을 할 경우는 티칭(teaching)프로그램, 지그(jig), 시퀀스(sequence) 등 전체 시스템에 대하여 설계 오류나 티칭(teaching) 오류, 제작 불량 등이 존재할 가능성이 있습니다. 이로 인하여 시운전 작업에 있어서 한층 더 안전의식을 가지고 작업에 임해야 합니다. 복합요인으로 인해 안전사고가 발생할 경우가 있습니다. 로봇 시운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
+In the case of trial-operation, there may be a design error, a teaching error, or a defect in manufacturing with regard to the entire system including the teaching program, jigs, and sequencing. For this reason, you should work with elevated safety awareness in trial-operation. Multiple factors can contribute to safety accidents. Observe the following measures considering that safety is very important when trial-operating the robot.
+{% endhint %}
+
+* 	Before operating the robot, check the functions of buttons such as the emergency stop button and the stop button as well as the functions of relevant signals. After that, check the operation related to detection of abnormality. First of all, it is important to check all the signals that stop the robot. When an accident is expected, the most important thing is to stop the robot.
+
+*	When performing trial opreation of the robot, first set it to manual mode, input a job program with which you can test all axes, and then check the operation by repeating more than 1 cycle for each step While the robot is moving, open the safety guard or remove the enabling switch (enabling swith on the teaching pendant) to see whether the robot stop. If a problem is found, press the emergency stop button to check whether the robot stops. If the emergency stop device does not perform its function well, immediately shut off the main power. After that, you should call the responsible aftersales person. If there is no problem, increase the speed in sequence (50% → 75% → 100%), and check the operation by repeating more than 1 cycle each. Operating at high speed from the beginning may lead to a major accident.
+
+*	It is not possible to predict what kind of problem will occur during trial-operation. Never enter inside the safety fence during trial-operation. As the reliability is low, it is very likely that unexpected accidents could occur
+
+# 1.11.3. Safety Measures for Auto Operation
+
+Observe the following measures considering that safety is very important when operating the robot in auto mode.
+
+* 	Put up a sign [No entry during operation] on the safety fence entrance and ask the worker to refrain from entering during operation. If the robot is stopped, you may enter inside the safety fence after judging the situation. 
+
+*	When starting the auto operation, you must check whether there is a worker inside the safety fence. If you work without checking whether there is a worker inside, it may cause an accident involving people. 
+
+*	When starting the auto operation, check first that that the program number, step number, mode, start selection, etc. are in proper state for auto operation. If you start the robot while an irrelevant program or step is selected, the robot may behave unexpectedly causing an accident. 
+
+*	When starting the auto operation, check in advance that the robot is in the position where the robot can start the auto operation. Check also whether the program number or step number matches with the robot position. Even when the program or step is correct, if the robot is in a different position, an accident may occur due to an operation different from a normal operation 
+
+*	Be prepared to press the emergency stop button immediately at the start of auto operation. If an unexpected robot operation or unexpecred situation occurs, immediately press the emergency stop button. 
+
+*	Check the operation path, operation status, and operation sound, etc. of the robot to judge whether there is any abnormal state. The robot may suddenly cause an abnormality such as a failure, but it may give some symptoms before the failure occurs. In order to predict this in advance, it is required to well understand the normal operation status of the robot. 
+
+*	If any abnormality is found, immediately make an emergency stop and take proper measure for it. Using the robot without proper measures could lead to a severe failure that may lead to production interruption and significant accidents involving people. 
+
+*	While completing measures and checking the operation after an abnormality occurred, do not operate the robot while the worker is still inside the safety fence. Unexpected accidents such as other abnormalities may occur as the reliability is low. 
+
+*	Before selecting the auto mode, if there is a safety device function that has been stopped, you should progress works after recovering the function back to completely normal state.
+# 1.12. Safety Measures When Entering Inside the Safety Fence
+
+When required to enter the safety door in the robot operation area, a worker and a super visor who have received certain trainings should perform works in a group of two. Also, they must wear a safety helmet, protective glasses and safety shoes. The supervisor should be prepared to press the emergency stop switch at any time, and the worker must bring in the teach pendant when going inside, making impossible for other people to operate the robot. Must put up a sign on the control panel to indicate that the robot is being operated.
+
+When you enter the robot operation area, you must full understand the following items. 
+
+*	No one except for the teaching person should enter the robot operation area.
+*	The operation setting mode of the controller should be manual mode on the control panel.
+*	Always wear certified work clothes.
+*	Do not wear gloves when operating the controller.
+*	Don't let underwear, shirt, tie etc. come out of the work clothes.
+*	Do not wear large jewelry such as earrings, rings or necklaces.
+*	Must wear safety shoes, safety helmet and protective glasses, and, when necessary, should wear safety gear such as safety gloves.
+*	Before operating the robot, check if the emergency stop circuit is functioning well to turn off the motor when the emergency stop button on the control panel or the teach pendant is pressed
+*	Work in a position facing the manipulator.
+*	Follow predetermined work procedures.
+*	Thinking that the robot may rush towards you unexpectedly, you should prepare a method or place for evacuation. 
+
+
+{% hint style="info" %}
+You should not be negligent in paying attention to sudden movements even when entry is made possible. Must avoid approaching without preparing for possible emergency situation under any circumstances.
+{% endhint %}
+
+# 1.13. Safety Measures When Maintaining and Inspecting# 1.13.1. Safety Measures When Maintaining and Inspecting the Controller
+
+Observe the following safety measures when maintaining and inspecting the robot controller.
+
+* 	Maintenance and inspection works should be performed only by those who have received special maintenance trainings and fully understand the related contents.
+
+*	Progress the work according to the controller maintenance and inspection procedures.
+
+*	For the maintenance and inspection works, you must check the surroundings for safety and secure a passage or a place to avoid danger before progressing the work safely.
+
+*	Must turn off the power before performing daily inspection or maintenance of the robot or replacement of parts. In addition, in order to prevent other workers from inadvertently turning on the power, put a warning marking such as [Power-On Prohibited] on the primary power supply. 
+
+*	Always use the designated replacement parts. 
+
+*	When required to open the controller door, you must turn off the power first and then wait for about 3 minutes before starting the work.
+
+*	Use external lighting when sufficient illumination is not secured when performing maintenance and inspection works inside the controller.
+
+*	Do not touch the heat sink and regenerative resistor of the servo amplifier because they generate excessive heat. After maintenance, check whether tools, foreign substances, etc. are left behind inside the controller, and then close the door securely.
+# 1.13.2. Safety Measures When Maintaining and Inspecting the Robot System and Manipulator
+
+Observe the following safety measures when maintaining and inspecting the robot system and manipulator.
+
+* 	Refer to safety measures for the maintenance and inspection of the controller.
+
+*	When maintaining and inspecting the robot system and manipulator, proceed with the work according to the instructed procedures.
+
+*	Must cut off the main power of the controller. In order to prevent other workers from powering it up again, put a warning marking such as [Power-On Prohibited] on the primary power supply.
+ 
+
+{% hint style="info" %}
+During maintenance and inspection of the manipulator, the robot arm may fall, or there could be a different type of danger. So, you must proceed with the work according to the instructed procedures. 
 {% endhint %}
 
 
-* 조작에 우선하여 비상정지 스위치, 정지 스위치 등과 같이 정지에 해당 하는 로봇을 멈추기 위한 스위치류, 신호 등의 기능 작동여부를 확인하여 주십시오. 그 후 이상검출관련 동작을 확인하여 주십시오. 먼저 로봇을 정지시키는 모든 신호의 확인이 가장 중요합니다. 사고 발생이 예지될 시 가장 중요한 것이 로봇을 정지시키는 일입니다.
-
-* 로봇을 시운전할 경우는 먼저 수동모드(매뉴얼 모드)로 설정을 한 후 모든 축을 테스트해 볼 수 있는 잡프로그램을 입력한 후 스탭단위로 1사이클 이상 동작을 확인하여 주십시오. 로봇이 움직이는 동안 안전가드를 열거나 또는 인에이블링 스위치(티칭펜던트 인에이블링)를 떼어 로봇이 정지를 하는지 확인을 해주십시오. 문제점이 발견되었을 경우는 비상정지 버튼을 눌러 로봇이 정지하는 것을 확인합니다. 만약 비상정지 장치가 제 기능을 수행하지 않는다면, 즉시 주전원을 차단합니다. 그리고 담당 AS직원을 호출하여 주십시오. 문제가 없다면, 순서대로 속도를 올려(50 % → 75 % → 100 %)서, 각각 1 사이클(Cycle) 이상 반복하여 동작을 확인하여 주십시오. 처음부터 고속으로 동작시키면 큰 사고를 발생시킬 수 있습니다.
-
-* 시운전시에는 어떤 문제점이 발생할지 예상할 수 없습니다. 시운전 중에는 절대로 안전망 안으로 들어가지 말아주십시오. 신뢰성이 낮은 상태이기 때문에 예상하지 못하는 사고가 발생할 가능성이 매우 높습니다.
-# 1.11.3. 자동 운전시 안전대책
-
-로봇 자동 운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
-
-* 안전망 출입구에는 \[운전중 출입금지\] 표시를 하는 한편 작업자에게는 운전중에는 출입을 금할 것을 철저히 당부하여 주십시오. 로봇이 정지하고 있다면 상항을 판단 후 안전망 안으로 들어 갈 수가 있습니다.
-
-* 자동운전 개시 때에는 안전망 안에 작업자가 있는지 꼭 확인하여 주십시오. 작업자가 있음을 확인하지 않고 작업할 경우 인명사고를 낼 수 있습니다.
-
-* 자동운전 개시 때에는 프로그램 번호, 스텝 번호, 모드, 기동선택 등이 자동운전 가능 상태임을 확인하고서 개시하여 주십시오. 다른 프로그램이나 스텝이 선택된 상태에서 기동할 경우 로봇이 예상하지 않았던 동작을 하여 사고를 발생시킬 수 있습니다.
-
-* 자동운전 개시 때에는 로봇이 자동운전 개시할 수 있는 위치에 있는가를 확인하고 개시하여 주십시오. 프로그램 번호나 스텝 번호가 로봇 위치와 맞는지 확인하여 주십시오. 프로그램이나 스텝이 맞더라도 로봇이 다른 위치에 있을 경우 통상과 다른 동작으로 인해 사고가 발생할 수 있습니다.
-
-* 자동운전 개시 때에는 즉시 비상정지 스위치를 누를 수 있도록 준비해주십시오. 예측하지 않았던 로봇의 동작이나 상황이 발생할 경우 즉시 비상정지를 눌러 주십시오.
-
-* 로봇의 동작경로, 동작상황, 동작음 등을 파악하여 이상한 상태는 없는지를 판단할 수 있도록 하여 주십시오. 로봇은 갑자기 고장 등 이상을 일으키는 경우도 있습니다만, 고장이 발생하기 전에 어떤 징조를 나타내는 경우가 있습니다. 이것을 사전에 예지하기 위해서 로봇의 정상 운전 상태를 잘 파악해 두십시오.
-
-* 어떤 이상을 발견하면 즉시 비상정지하고, 이상에 대한 적절한 조치를 취해 주십시오. 적절한 조치없이 사용시 생산정지뿐만 아니라 중대한 인명사고를 유발할 수 있는 심각한 고장이 발생할 수 있습니다.
-
-* 이상발생 후, 조치를 완료하고 동작을 확인하는 경우 안전망 안에 작업자가 있는 상태에서는 동작시키지 말아 주십시오, 신뢰성이 낮은 상태로 다른 이상이 발생하는 등, 예측하지 못한 사고가 발생할 수 있습니다.
-
-* 자동모드를 선택하기 전, 중단된 안전 장치의 기능이 있다면, 반드시 완전한 기능으로 돌아오게 한 후 작업을 진행해야 합니다.
-# 1.12. 안전망 내 진입시 안전 대책
-
-로봇작업 영역 안의 안전문으로 들어갈때에는 소정의 교육을 수강한 작업자와 감시인이 2인 1조가 되어 작업을 진행해야 합니다. 또한, 안전모, 보안경, 안전화는 필히 착용하십시오. 감시인은 언제라도 비상정지 스위치를 누를
-태세를 갖추고, 작업자는 반드시 티칭펜던트를 가지고 들어가도록 하여, 다른 사람이 로봇을 조작하지 못하게 하십시오. 제어기 조작반에는 반드시 지금 로봇 조작중임을 알릴 수 있는 푯말을 걸어 두십시오.
-
-만약 사람이 로봇 작업영역 안으로 들어갈 때는 다음 사항을 반드시 숙지하여 주십시오.
-
-* 티칭하는 사람 외에 로봇 작업영역 안으로 들어가지 마십시오.
-
-* 제어기의 조작설정 모드는 제어기 조작반에서 수동모드 위치에 있어야 합니다.
-
-* 늘 인증된 작업복을 입습니다.
-
-* 제어기를 조작할 때는 장갑을 착용하지 말아 주십시오.
-
-* 작업복 밖으로 속옷, 셔츠, 넥타이등이 나오지 않도록 하십시오.
-
-* 귀고리, 반지, 목걸이 등과 같은 큰 보석은 착용하지 말아 주십시오.
-
-* 안전화, 안전모, 보안경은 꼭 착용하며, 필요에 따라서 안전장갑과 같은 안전장비를 착용합니다.
-
-* 로봇을 조작하기 전 제어기 조작반과 티치펜던트(teach pendant) 상의 비상정지 스위치를 눌렀을 때 비상정지 회로가 제 기능을 발휘하여 모터OFF가 되는지를 확인합니다.
-
-* 로봇 본체와 마주보는 자세로 작업하여 주십시오. 
-
-* 미리 결정된 작업 절차를 따릅니다.
-
-* 예상치 못하게 로봇이 자기를 향하여 돌진할 경우가 있다고 생각하고 대피할 수 있는 방법이나 장소를 마련해 두십시오.
-
 {% hint style="info" %}
-출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리해서는 안됩니다.
-어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
+When moving the axis of the robot without driving force applied, there is a risk of the axis dropping due to gravity and also an additional risk due to the release of the brake system. So, you must proceed with the work according to the instructed procedures.
 {% endhint %}
-# 1.13. 보수 점검시 안전 대책
-# 1.13.1. 제어기 보수, 점검시 안전대책
+# 1.13.3. Actions to Take after Maintenance and Inspection
 
-로봇 제어기 보수, 점검 시 다음의 안전대책을 따라 주십시오.
+Observe the following actions after maintenance and inspection.
 
-* 보수, 점검 작업을 하는 사람은 특별 보수교육을 받아서, 내용을 숙지한 사람만이 해야 합니다.
+*	Check if the wires or parts inside the controller are connected normally.
 
-* 제어기 보수, 점검 절차에 의하여 작업을 진행하여 주십시오. 
+*	After maintenance, check whether any tool is left behind inside and around the controller, manipulator or the robot system, and keep them surely arranged and organized. Must close every door.
 
-* 보수, 점검작업은 반드시 주위의 안전을 확인하여 위험을 피하기 위한 통로나 장소를 확보하고서 안전한 작업을 하여 주십시오.
+*	If any problem or fatal defect is found, do not turn on the power of the robot.
 
-* 로봇의 일상점검이나 수리, 부품 교환 등의 작업을 할 때는 반드시 전원을 내리고 작업하십시오. 또, 다른 작업자가 부주의로 전원을 투입할 수 없도록 1차 전원에 \[전원투입금지\] 등의 경고 표시를 하여 주십시오.
+*	Turn on the main breaker in the control panel.
 
-* 교환 부품은 반드시 지정된 부품을 사용하십시오.
+*	Check the current position and status of the robot. 
 
-* 제어기 문을 열 경우는 반드시 전원을 내리고, 약 3분 동안 기다린 후 작업에 들어가십시오.
+*	Operate the robot at a low speed.
 
-* 제어기 내부의 보수 및 점검 작업시, 충분한 조도가 확보되지 않을 경우에는 외부 조명등을 사용 하십시오\[배정1\] .
-
-* 서보 앰프의 방열판과 회생저항은 열이 심하게 발생하므로 만지지 마십시오. 보수가 끝낸 다음 제어기내에 공구, 이물질 등을 놓아두지 않았는지 확인한 후 문을 확실하게 닫아 주십시오. ----\[배정1\]Hi5a 의 점검사항에 추가되었던 문구 반영.
-# 1.13.2. 로봇시스템, 로봇본체의 보수, 점검시 안전대책
-
-로봇시스템, 로봇본체의 보수, 점검시 다음의 안전대책을 따라 주십시오.
-
-* 제어기 보수, 점검시 안전대책을 참조하여 주십시오.
-
-* 로봇시스템, 로봇 본체를 보수, 점검할 때는 지시된 절차에 의하여 작업을 진행하여 주십시오.
-
-* 제어기의 주전원은 꼭 차단하여 주십시오. 다른 작업자가 다시 전원을 올리지 못하도록 1차 전원에 \[전원투입금지\] 등의 경고 표시를 하여 주십시오.  
 
 {% hint style="info" %}
-로봇 본체의 보수, 점검시 로봇의 암(arm)이 낙하 또는 그밖의 위험이 생길 경우가 있으니, 반드시 지시된 절차대로 작업을 진행하여 주십시오
-{% endhint %}
-
-{% hint style="info" %}
-구동력이 없는 로봇의축을 이동 시 중력에 의한 낙하 또는 제동 장치의 해제로 인해 추가적인 위험이 발생할 수 있으므로, 반드시 지시된 절차에 따라 작업을 진행하여 주십시오.
-{% endhint %}
-# 1.13.3. 보수, 점검 후 조치사항
-
-보수, 점검 후에는 다음의 조치사항을 따라 주십시오.
-
-* 제어기 내의 전선이나 부품이 정상적으로 결합되어 있는지를 점검하여 주십시오.
-
-* 보수가 끝난 뒤 제어기, 로봇 본체, 시스템 내 또는 주위에 공구가 남겨져 있는지 확인하여 정리정돈을 확실히 하여 주십시오. 각 문은 반드시 닫아 주십시오.
-
-* 만약 어떤 문제나 치명적인 결함이 발견되었을 때는 로봇의 전원을 켜지 마십시오.
-
-* 제어반 내에 주전원 차단기를 켜십시오.
-
-* 로봇의 현재의 위치와 상태를 확인하십시오.
-
-* 로봇을 저속에서 작동하십시오.
-
-{% hint style="info" %}
-전원을 켜기 전에 로봇의 작업영역 안에 작업자가 없는지, 자신이 안전한 장소에 있는지를 확인한 후 전원을 투입하십시오.
+Before turning on the power, check that there is no worker inside the robot operation area and you are in a safe place
 {% endhint %}
 
 {% hint style="warning" %}
-안전 관련 기능에 영향을 미칠 수있는 구성 부품 변경 또는 로봇에 옵션 장비 (하드웨어 및 소프트웨어 모두) 추가한 경우 “1.11 로봇 조작시 안전 작업”에 기재된 사항을 유의하여 반드시 기능 정상 여부를 확인하여 주십시오.
+When it comes to the change of components or additoin of optional equipment (both hardware and software) to the robot both of which may affect safety-related functions, you must check whether the functions are in normal conditions, by paying attention to the items described in “1.11 Safety Works When Operating the Robot”. 
 {% endhint %}
 
-# 1.14. 엔드 이펙터(End Effector) 안전
+# 1.14. Safety Related to End Effctors
 
 {% hint style="warning" %}
-엔드 이펙터(End Effector)를 설치 및 운영하는 경우 반드시 ISO 10218-1:2018을 준수하여 적용 및 보수, 운영을 하여야 한다. 
+When installing and operating end effectors, you must comply with ISO 10218-1:2018 in applying, maintaining and operating them.
 {% endhint %}
 
 
-자세한 엔드 이펙터 설치에 관한 사양은 각 로봇 보수메뉴얼을 참고하시기 바랍니다.# 1.14.1. 그리퍼(Gripper)
+Refer to the maintenance manual of each robot for detailed specifications regarding the installation of end effectors.# 1.14.1. Gripper
 
-* 만약 작업물을 잡기 위해 그리퍼(gripper)를 사용할 경우 불시에 작업물이 떨어지는 것에 대한 방비책이 있어야 합니다.
+* 	When a gripper is used to hold a workpiece, there should be a measure to take against abrupt dropping of the workpiece.
 
-* 엔드 이펙터(end effector) 및 암(arm)상에 기기를 취부할 경우에는 볼트는 규정된 크기와 개수를 사용하고, 토크 렌치를 사용하여 규정토크로서 완전히 조여 주십시오. 또 볼트에 녹이 없는 것이나 더럽지 않은 것을 사용하십시오. 
+*	When installing the device onto an end effector or arm, you should use the bolts of specified sizes and the specified number of bolts, and tighten them completely according to regulated torques by using torque wrenches. You should use bolts that are not rusted or stained.
 
-* 엔드 이펙터 제작에 있어서는 로봇 손목부 부하허용치의 범위 안에서 사용 가능하도록 고려하십시오. 또, 전원이나 에어공급을 중단하였을 경우에도 파지물이 방출되거나 떨어지는 일이 없는 구조로 하고, 모서리부나 돌출부의 처리를 확실하게 해서, 대인, 대물 손상을 주지 않는 구조로 하여 주십시오.
-# 1.14.2. 툴(Tool) / 작업물
+*	When manufacturing an end effector, you should take into account that it can be used within the allowable load value of the wrist of the robot. An end effector should hava a structure that will not allow a gripped material to be released or dropped even when the power supply or air supply is interrupted, and the corners and protrusions should be surely treated in order to prevent people or objects from suffering any damage.
 
-* 밀링 커트와 같은 공구를 안전하게 바꾸는 것이 가능하도록 해야 합니다. 커터가 회전하는 것이 멈출 때까지 안전장치는 제 기능을 확실히 발휘하여야 합니다.
+# 1.14.2. Tools/Workpieces
 
-* 툴(Tool)은 갑작스러운 정전 또는 제어 장애 등이 발생되더라도 작업물에 이상이 없도록 설계되어야 합니다. 수동 조작일 때는 작업물의 분리가 가능해야 합니다.
-# 1.14.3. 공압 / 수압 시스템
+* 	It should be possible to safely change tools such as a milling cutter. Until the cutter stops rotating, the safety devices should surely perform proper functions.
 
-* 특별한 안전법규는 공압, 수압 시스템까지 적용됩니다.
+*	The tool should be designed in a way that the workpiece will not have any abnormality even when a sudden power failure or control failure occurs. In manual operation, it should be possible to separate the workpiece.
 
-* 이러한 시스템은 정지 후에도 잔여 에너지가 남아 있을 수 있으니, 특히 주의를 기울여 주십시오. 공압, 수압 시스템을 수리하기 전에는 반드시 기기내의 압력을 제거하여 주십시오.
-# 2. 세부 사양
-# 2.1. 제어기 모델별 세부사양
+# 1.14.3. Pneumatic / Hydraulic Systems
 
-표 2‑1 제어기 모델별 세부 사양
+* 	Special safety laws will be applied to the pneumatic and hydraulic systems. 
+
+*	In this type of systems, as residual energy may remain even after the system is shut down, you should pay attention in particular. Before repairing the pneumatic or hydraulic systems, you must remove the pressure inside the devices.
+# 2. Details of Specifications
+# 2.1. Details of Specifications of Each Controller Model
+
+Table 2‑1 Details of Specifications of Each Controller Model
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>모델&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6-N00-A0<br>Hi6-N30-A0<br>Hi6-N80-A0&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>Model&nbsp;&nbsp;&nbsp;</th>
+    <th><br>Hi6-N00-A0<br>Hi6-N30-A0<br>Hi6-N80-A0</th>
     <th><br>Hi6-N00U-A0<br>Hi6-N30U-A0<br>Hi6-N80U-A0</th>
   </tr>
 </thead>
@@ -798,146 +745,146 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>2.7GHz Dual core&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>프로그램 실행방식&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>티칭 &amp; 플레이백&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Program execution method&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Teaching &amp; playback&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>조작 방식&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>메뉴기반&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Opertion method&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Menu-based&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>보간 형식&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>PTP, 직선, 원호&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Interpolation type&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>PTP, linear and circular&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>메모리 백업 방식&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>배터리 백업 IC 메모리&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Memory backup method&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Battery backup IC memory&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>엔코더 형식&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>앱솔루트(absolute) 엔코더&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Encoder type&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Absolute encoder&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>서보 드라이브 유닛&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>6축일체형, 디지탈 서보&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Servo drive unit&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>6 axes integrated, digital servo&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 축수&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 동시 32축&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Maximum number of units&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Maximum 32 axes simultaneously&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>스텝&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Step&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>10,000,000 steps&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>프로그램 선택&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>255(바이너리)/8(디스크리트)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Program selection&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>255 (binary)/8 (discret)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>티치펜던트 표시&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>7-inch 칼라TFT-LCD(800x480)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Display on the teach pendant&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>7-inch colorful TFT-LCD (800x480)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>필드버스 인터페이스&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Fieldbus interface&nbsp;&nbsp;&nbsp;(optional)&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>DeviceNet,&nbsp;&nbsp;&nbsp;ProfiNET, Modbus TCP/UDP, EtherCAT &nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>디지털 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 8점 (최대 496점) / 출력: 8점 (최대 496점)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Digital I/O<br>&nbsp;&nbsp;&nbsp;(optional)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Input: 8 points (maximum 496 points) / Output: 8 points (maximum 496 points)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>아날로그 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 4점 / 출력: 4점&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Analogue I/O<br>&nbsp;&nbsp;&nbsp;(optional)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Input: 4 points / Output: 4 points&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>컨베어 펄스 카운터&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>라인드라이버 / 오픈컬렉터 &nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Conveyor pulse counter&nbsp;&nbsp;&nbsp;(optional)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Line driver / Open collector&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>통신 인터페이스&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Ethernet 3포트/ USB 2.0 2포트/ RS232 2포트&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Communication interface&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>3Ethernet port/ 2 USB 2.0 ports/ 2 RS232 ports&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td rowspan="4">&nbsp;&nbsp;&nbsp;<br>기판&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;&nbsp;<br>메인모듈&nbsp;&nbsp;&nbsp;</td>
+    <td rowspan="4">&nbsp;&nbsp;&nbsp;<br>Circuit board&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Main module&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6COM-T&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>서보보드&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Servo board&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD640&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>안전모듈&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Safety module&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD632&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>전원공급모듈&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Power supply module&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6PSM(BD6C2)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
-    <td>&nbsp;&nbsp;&nbsp;<br>중형&nbsp;&nbsp;&nbsp;6축용&nbsp;&nbsp;&nbsp;</td>
+    <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>Drive&nbsp;&nbsp;&nbsp;module&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>For medium-sized 6 axes</td>
     <td colspan="2"><br>N00(U)-A0 : H6D6X<br>N80(U)-A0 : H6D6X<br>N30(U)-A0 : H6D6A</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>부가&nbsp;&nbsp;&nbsp;1축용&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>For one additional axis&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6D1X, H6D1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>와이어 하네스&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Wire harness&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>CMC1, CMC2, CEC1&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>티칭펜던트&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Teach pendant&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>TP630&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>정격 공급 전압&nbsp;&nbsp;&nbsp;</td>
-    <td><br>3상 220V(50/60 Hz)<br>±10%<br>선택 사양 : 3상 380V, 400V, 415V,440V</td>
-    <td>&nbsp;&nbsp;&nbsp;<br>3상 220V(50/60 Hz)<br>±10%<br>선택 사양 : 3상 460V, 480V</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Rated supply voltage&nbsp;&nbsp;&nbsp;</td>
+    <td><br>3-phase 220V(50/60 Hz)±10%±10%<br>Option: 3-phase 380V, 400V, 415V and 440V</td>
+    <td><br>3-phase 220V(50/60 Hz)±10%<br>Option: 3-phase 460V and 480V</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 소비 전력&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>Hi6-N80(U)-A0 : 10.5KVA<br>Hi6-N00(U)-A0 : 7.8KVA<br>Hi6-N30(U)-A0 : 4.4KVA</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Maximum power consumption&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2"><br>Hi6-N80(U)-A0:10.5KVA<br>Hi6-N00(U)-A0: 7.8KVA<br>Hi6-N30(U)-A0: 4.4KVA&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>동작 온도&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Operation temperature&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>0 ~ 45 ℃&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>동작 습도&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Operation humidity&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>75%&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>보호등급&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Protection grade&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>IP54&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>소음 레벨&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 68dB&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Noise level&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Maximum 68 dB&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>외관 크기*1<br>(WxHxD)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W650xD560xH580 (mm)<br>Caster(옵션) 포함시 &nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Exterior diemsion*1 (WxHxD)<br>&nbsp;&nbsp;&nbsp;(WxHxD)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W650xD560xH580 (mm)<br>Caster 100mm Exclude&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>중 량&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">표준 사양(TR 미포함)<br>Hi6-N30(U): 120kg<br>Hi6-N00(U): 120kg<br>Hi6-N80(U): 125kg<br><br>옵션 사양(TR포함)<br>Hi6-N30(U): 165kg<br>Hi6-N00(U): 185kg<br>Hi6-N80(U): 195kg</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Weight&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Standard Voltage Specification(Exclude TR)<br>Hi6-N30(U): 120kg<br>Hi6-N00(U): 120kg<br>Hi6-N80(U): 125kg<br><br>Optional Voltage Specification(Include TR)<br>Hi6-N30(U): 165kg<br>Hi6-N00(U): 185kg<br>Hi6-N80(U): 195kg</td>
   </tr>
 </tbody>
 </table>
 
+<br>
 
-표 2‑2 전원 요구 조건
-
+Table 2‑2 Power Requirements
 <table>
 <thead>
   <tr>
-    <th>&nbsp;&nbsp;&nbsp;<br>제어기 종류&nbsp;&nbsp;&nbsp;</th>
-    <th>&nbsp;&nbsp;&nbsp;<br>용량*1) [KVA]&nbsp;&nbsp;&nbsp;</th>
-    <th>&nbsp;&nbsp;&nbsp;<br>입력 전압 *2) [V]&nbsp;&nbsp;&nbsp;</th>
-    <th>&nbsp;&nbsp;&nbsp;<br>주파수[Hz]&nbsp;&nbsp;&nbsp;</th>
-    <th>&nbsp;&nbsp;&nbsp;<br>피크전류[A]&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Controller type&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Capacity *1) [KVA]&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Input voltage *2) [V]&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Frequency[Hz]&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Peak current [A]&nbsp;&nbsp;&nbsp;</th>
   </tr>
 </thead>
 <tbody>
@@ -987,53 +934,54 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 </table>
 
 
-주 1) 전원 용량 : 제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 본체 보수설명서 참조
+Note 1) Power capacity: Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the manipulator maintenance manual.
 
-주 2) 전압 범위 : ±10 % (제어기의 전원 터미널)
-# 2.2. 제어기 외관
+Note 2) Voltage range: ±10% (at the power terminal of the controller)
+# 2.2. Exterior of the Controller
 
 ![](../_assets/2.2._제어기_외관(Hi6).png )
 
-그림 2.1 제어기 전면 외관도
-# 3. 제어기의 설치
+Figure 2.1 Front Exterior of the Controller
 
-설치 위치나 방향, 주위 공간의 크기 등을 고려하여 제품을 올바르게 설치, 운반, 보관하면 제품의 수명을 확보하고 성능 저하를 방지할 수 있습니다.
+# 3. Installation of the Controller
 
-* 구성
+If you properly install, transport, and store the product in consideration of the position and direction of the installation and the size of the surrounding space, you can secure the service life of the product and prevent the degradation of its performance.
 
-* 설치 및 사용 환경 확인
+*	Checking of the installation and use environments
 
-* 제어기의 운반
+*	Transport of the controller
 
-* 제어기의 보관
+*	Storage of the controller
 
-* 제어기의 폐기
+*	Discarding of the controller
+
 
 {% hint style="info" %}
-제품 설치 전에 반드시 충분한 위험성 평가를 수행하고 평과의 결과를 바탕으로 안전 기능을 설정하십시오. 안전 기능에 대한 자세한 내용은 “1. 안전” 을 참조하십시오.
+Before installing the product, you must perform a risk assessment sufficiently and then set the safety function based on the assement results. For details on safety functions, refer to “1. Safety”.
 {% endhint %}
 
-# 3.1. 구성
-# 3.1.1. 기본구성
+# 3.1. Configuration
+# 3.1.1. Basic Configuration
 
 ![](../../_assets/그림_3.1_산업용_로봇_설치의_기본_구성.png)
 
-그림 3.1 산업용 로봇 설치의 기본 구성
+Figure 3.1 Basic Installation Configuration of the Industrial Robot
 
-* Hi6제어기(Hi6 Controller)
+* 	Hi6 controller
 
-* 티칭펜던트(Teaching Pendant)
+*	Teaching pendant
 
-* Wire Harness(Hi6제어기 ↔ 로봇)
+*	Wire harness (Hi6 controller ↔ robot)
 
-* 로봇(Robot)
-# 3.1.2. 각종 명판의 확인
+*	Robot
+
+# 3.1.2. Checking of Various Name Plates
 
 ![](../../_assets/그림_1.1_안전라벨.png  )
 
-그림 3.2 제어기 라벨
+Figure 3.2 Controller’s Labels <br/><br/>
 
-표 3-1 라벨 종류
+Table 3-1 Label Type
 
 ![](../../_assets/표3-1_라벨_종류-1.png  )
 
@@ -1043,165 +991,163 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 
 
 {% hint style="warning" %}
-제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다.
+Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
 
 
 {% hint style="info" %}
-로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Mark the installation and dangerous areas of the robot in a way that they can be differentiated from other facilities and devices in terms of type, color and style.
 {% endhint %}
-# 3.2. 설치 및 사용 환경
+# 3.2. Installation and Use Environmets 
 
-설치 및 사용 환경 조건을 고려하여 알맞은 장소에 제품을 설치합니다.
+Install the product in an appropriate place in consideration of the installation and use environments and conditions.
 
-* 제품의 적정 사용 온도는 0℃ ~ 45℃이고, 적정 보관 습도는 20 ~ 85%RH입니다.
+*	The proper use temperature of the product is 0℃ - 45℃, and the proper storage humidity is 20 to 85%RH.
 
-* 제품을 옮기거나 사용할 때에는 떨어뜨리는 등 강한 충격을 주지 마십시오.
+*	Do not drop the product or apply a strong impact to it while moving or using it.
 
-* 제품의 무게에 따라 올바른 방법으로 안전에 유의하여 제품을 운반 및 설치하십시오.
+*	Transport and install the product in a correct way based on the weight of the product while paying attention to the safety.
 
-* 제품이 쉽게 전복되지 않는 단단하고 평평한 곳, 진동이 없는 곳에 제품을 설치하고 사용하십시오.
+*	Install and use the product in a solid, flat and vibration-free area where the product will not turn over easily.
 
-* 물이나 습기, 가스, 먼지 등의 이물질이 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오.
+*	Do not install and use the product in an area with a lot of foreign substances such as water, moisture, gas, dust, or in a dirty place.
 
-* 인화성 및 부식성 물질이나 가스가 있는 곳, 열이 발생하는 곳 또는 화기 주변에 제품을 설치 및 사용하지 마십시오.
+*	Do not install or use the product in an area with flammable and corrosive substances or gases, or in an area wherer heat is generated, or near heat of fire.
 
-* 강한 전기적 노이즈 발생원이 있거나 그 영향이 미치는 곳에 제품을 설치 및 사용하지 마십시오.
+*	Do not install or use the product in an area that has a source of strong electrical noise or is affected by it.
 
-* 제어기는 “1.10. 설치 시 안전 대책”을 참고하여 안전한 장소에 설치하여 주십시오.
+*	Install the controller in a safe area by referring to “1.10 Safety Measures When Installing”.
 
-* 제어기의 보수시에는 “1.13. 보수 점검시 안전 대책”을 참고하여 진행해 주십시오.
+*	Carry out the controller maintenance work by referring to “1.13. Safety Measures When Maintaining and Inspecting”.
 
-* 용접작업을 행하는 곳에서는 용접 Spatter 및 냉각수의 영향이 없는 곳에 설치하여 주십시오.
+*	When installing the product in an area where welding work is performed, install the product in a location where there will be no effect from welding spatter and cooling water.
 
-* 제어기의 설치 시 주위 벽이나 장애물이 있을 경우 최소 500mm이상 거리를 두고 설치하여 주십시오.
+*	When installing the controller, keep a distance of at least 500mm if there is a wall or obstacle nearby.
 
-* 로봇 설치에 대한 사항은 각 로봇 보수 매뉴얼을 참고하여 설치하여 주십시오.
+*	For the matters related to the installation of the robot, refer to each robot maintenance manual.
+
 
 {% hint style="info" %}
-권장하는 장소에 제품을 설치하지 않을 경우 제품의 성능 및 수명이 감소될 수 있습니다. 권장 사항을 준수하여 제품을 설치 및 사용하십시오.
+If the product is not installed in the recommended locations, the performance and service life of the product may be reduced. Install and use the product according to the recommendations.
 {% endhint %}
-
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+Our company (or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not reviewing the “risk assessment”.
 {% endhint %}
-# 3.3. 제어기의 운반
 
-Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 설명합니다.
-로봇의 포장, 운반에 관련한 사항은 로봇보수메뉴얼을 참고하시기 바랍니다.
-# 3.3.1. 포장
+# 3.3. Transport of the Controller
 
-* 모델 명판을 박스에 부착하십시오.
+The following items describle the precautions to take in packing, transporting, and unpacking the Hi6 controller. Rrefer to the robot maintenance manual for the matters related to the packing and transport of the robot.# 3.3.1. Packing
 
-* 노출된 모든 커넥터를 더스트 캡이나 폴리 비닐 등으로 보호하십시오.
+* 	Attach the model name plate to the box.
 
-* T/P가 박스에 포장될 때는 외부의 충격에 의해 LCD의 파손을 방지하기 위해 공기로 충전된 완충재를 사용하여 주십시오.
+*	Protect all exposed connectors with a dust cap or polyvinyl.
 
-* 방수 처리된 팩킹 리스트를 박스 바깥면에 부착하십시오.
-# 3.3.2. 운반(무게 수정)
+*	When the teach pendant is packaged in a box, use an air-filled cushioning to prevent the LCD from getting damaged due to external impact.
 
-* 제어기의 전면 Door가 완전한 잠김 상태인지를 확인하여 주십시오.
+*	Attach the waterproofed packing list to the outside of the box.
 
-* 제어기 위에 고정되어 있지 않은 것이 있다면 치워 주십시오.
+# 3.3.2. Transport (Modifying the Weight)
 
-* 제어기 위의 Eye Bolt가 확실히 채워졌는지 확인하여 주십시오.
+* 	Check whether the front door of the controller is completely locked.
 
-* 제어기는 정밀장치이므로 강한 충격이 가해지지 않도록 운반에 주의하여 주십시오.
+*	Remove anything that is not fixed onto the controller.
 
-* 제어기의 중량은 Max. 250kg입니다. 크레인을 사용할 경우 Wire가 제어기 위의 물건에 손상을 입히지 않도록 주의하여 주십시오.
-※    제어기의 중량은 “2. 세부사양”을 참고하시기 바랍니다.
+*	Check if the eye bolts on the controller are surely fastened.
 
-* 지게차를 사용할 경우 제어기가 흔들리지 않도록 고정하여 주십시오. 
+*	As the controller is a precision device, pay attention to the transport of it to prevent any strong impact from being applied to it.
 
-* 차량으로 이동시 스퀴드 등으로 로봇 본체 및 제어기를 고정해 주십시오
+*	The weight of the controller is maximum 200kg. When using a crane, take precautions to prevent an object on the controller from being damaged by the wire. 
 
-* 포장 및 운반 관련 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 부주의, 조작 미숙 및 과실로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+※ For the weight of the controller, refer to “2. Details of Specifications’.
 
-* 크레인을 사용한 제어기 운반 시 아래 사항을 확인하여 주십시오.
+*	 When using a forklift, fix the controller in a way to prevent the controller from shaking.
 
-  - 일반적으로 제어기의 운반은 아이볼트를 이용한 크레인 와이어를 사용해야 합니다.
+*	When moving the product by vehicle, fix the manipulator and controller by using squids.
 
-  - 와이어가 제어기를 견딜 수 있도록 충분한 강도를 가지고 있는지 확인하십시오.
+*	When transporting the product, fully understand the contents related to the packing and transport, and follow the instructions. Our company will not be responsible for any damage to or breaking of the product due to customer’s carelessness, inexperience in operation, or negligence.
 
-  - 아이볼트가 단단하게 체결되었는지 확인하십시오.
+*	Check the following items when transporting the controller by using a crane.
+
+
+    - 	In general, the controller should be transported by using crane wires for which eye bolts are used.
+    -	Check whether the wires have sufficient strength to withstand the weight of the controller.
+    -	Check whether the eye bolts are fastened tightly.
+
 
 ![](../../_assets/그림_3.3_제어기_와이어_연결_위치.png  )
 
-그림 3.3 제어기 와이어 연결 위치
+Figure 3.3 Controller Wire Connection Position
 
-* 지게차를 사용한 제어기 운반 시 아래 사항을 확인하여 주십시오.
-  - 와이어 로프를 이용해 운반할 경우는, 제어기를 견딜 수 있는 와이어를 사용하십시오.
+*	Check the following items when transporting the controller by using a forklift,
+    -	When transporting the product by using wire ropes, use a wire that can withstand the weight of the controller.
+    -	Check whether the eyebolts are firmly fixed.
+    -	Transport the controller while keeping it as low as possible.<br/><br/>
 
-  - 아이볼트가 견고하게 고정되었는지 확인하십시오.
-
-  - 제어기는 가능한 낮게하여 운반하십시오.
 
 ![](../../_assets/그림_3.4_지게차를_이용한_제어기_운반.png  )
 
-그림 3.4 지게차를 이용한 제어기 운반
+Figure 3.4 Transport of the Controller by Using a Forklift
 
 
 {% hint style="warning" %}
-리프팅 장비를 이용해 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수해야 합니다.
-크레인을 이용해 이동할 때에는 제품 아래에 작업자가 없는지 반드시 확인하십시오. 또한, 절대 크레인 또는 제품 아래에서 작업하거나 지나다니지 마십시오.
+If you transport the product by uisng lifting equpment, you should comply with the relevant national and local safety regulations and equipment usage guidelines. When moving the product by using a crane, you must make sure that that no workers are under the product. Also, never work or walk under the crane or the product.
 {% endhint %}
 
 
-# 3.3.3. 포장 해제
+# 3.3.3. Unpacking 
 
-* 포장을 해체하고 로봇을 설치하기 전에 안전 규정 및 다른 지침을 주의깊게 숙지하십시오.
+* 	Fully understand the safety regulations and other guidelines carefully before unpacking and installing the robot.
 
-* 포장 해체 지침에 따라 포장을 해제하십시오.
+*	Unpack the product according to the unpacking instructions.
 
-* 로봇과 제어기를 안전하게 설치할 수 있는 장소인지 확인하십시오.
+*	Check whether the location is an area where the robot and controller can be safely installed.
 
-* 로봇과 제어기가 안전하게 이동할 수 있는 경로가 확보되었는지 확인하십시오.
+*	Check if a path that allows the robot and controller to move safely is secured.
 
-* 로봇의 운반은 자격 있는 사람이 수행하십시오.
+*	Transport of the robot should be performed by a qualified person.
 
-* 포장의 해체시 운송중이나, 포장의 해체시 파손된 부분이 없는지 확인하십시오.
-# 3.4. 제어기의 보관
+*	When unpacking the product, check that whether there is any damage that might have occurred during transport or unpcking.
 
-제어기를 설치하지 않고 보관할 경우 다음 사항을 참고하여 보관하십시오.
+# 3.4. Storage of the Controller
 
-* 제어기를 포장된 상태로 보관하고 전원 및 통신 연결 부분은 단단히 밀봉하십시오.
+When storing the controller, instead of installing it, refer to the following items.
+*	Store the controller while keeping it in the packaged state and seal the power and communication connection parts tightly.
 
-* 제어기를 장기간 보관할 때는 반드시 전도 위험에 대한 안전 조치를 취하십시오.
+*	When storing the controller for a long time, you must take safety measures against the risk of it falling over.
 
-* 제어기를 포장재로 감싸 보관하는 경우에는 흡습제와 함께 포장하거나 건조한 장소에 보관하십시오. 습기가 많은 장소에 보관하면 포장재 내부에 습기가 생겨 제품이 손상될 수 있습니다.
+*	When storing the controller wrapped in packing material, pack it with a desiccant or store it in a dry place. If it is stored in a highly humid place, moisture may form inside the packing material, damaging the product.
 
-* 온도와 습도가 변하기 쉬운 곳(결로 현상이 있는 곳)을 피하고 주위 온도가 -15℃ ∼ 40℃인 서늘하고 건조한 장소에 제어기를 보관하십시오.
+*	Avoid places where temperature and humidity may change easily (where condensation occurs) and store the controller in a cool, dry place where the ambient temperature ranges from -15 ℃ to 40 ℃.
 
-* 화학 제품, 산성 및 알칼리 제품, 배터리, 차단기 등이 있는 장소에 제어기를 보관하지 마십시오
-# 3.5. 제어기의 폐기
+*	Do not store the controller in locations where there are chemical products, acid and alkali products, batteries, circuit breakers, etc.
 
-사용자의 안전을 확보하고 환경을 보호하기 위해 특정 부품은 지정된 방법에 따라 관리 및 폐기해야 합니다. 또한 산업성 폐기 물질이 포함된 경우 절대 일반 산업용 쓰레기 또는 가정용 쓰레기와 함께 폐기해서는 안 됩니다. 로봇 시스템의 전체 또는 일부를 폐기할 때에는 해당 국가 또는 지역의 관련 규정 및 법규를 반드시 준수하십시오. 제품의 폐기 및 처분과 관련된 자세한 내용은 당사의 고객지원팀으로 문의하시기 바랍니다.
-# 3.6. 접속
+# 3.5. Discarding of the Controller
+
+In order to ensure user safety and protect the environment, certain parts should be managed and discarded according to specified methods, and if they contain industrial waste materials, they must never be discarded together with general industrial or household waste. When discarding all or part of the robot system, you must comply with the relevant national or local regulations and laws. For details on the discarding and disposal of the product, please contact our customer support team.# 3.6. Connection
 
 {% hint style="info" %}
-1. 케이블을 연결하기 전에 제어기의 메인 전원 스위치를 “OFF”로 하고, 메인 전원 스위치를 잠그기 위해 자물쇠를 사용하십시오. 
-2. 제어기에는 DC400V의 충전된 에너지가 있습니다. 주의하십시오. 
-충전된 에너지를 방전시키기 위해 전원 스위치를 “OFF”로 한 후 최소한 5분간 기다리십시오.
-3. PCB를 다룰 때에는 정전기에 의해 손상되지 않도록 주의하십시오.
-4. 배선과 결선은 반드시 자격있는 사람에 의해 수행되어야 합니다.
+1. Before connecting the cables, turn “off” the controller's main power switch and lock it by using use a padlock. 
+2. The controller has DC400V charged energy. Be careful. 
+Turn “off” the power switch and then wait 5 minutes at least to discharge the charged energy.
+3. When handling the PCB, take precautions not to allow static electricity to damage it.
+4. Wiring and connection of wires must be performed by qualified personnel.
 {% endhint %}
+# 3.6.1. Connection of the Teaching Pendant 
 
-# 3.6.1. 티칭펜던트(Teaching Pendant)의 접속
-
-티칭펜던트(Teaching Pendant)의 케이블 커넥터를 제어기의 CNRTP 리셉터클에 연결하여 주십시오.
+Connect the cable connector of the teaching pendant to the CNRTP receptacle of the controller.
 
 ![](../../_assets/그림_3.5_Hi6-N_(U)_티칭펜던트의_접속.png  )
 
-그림 3.5 Hi6-N\*\*(U) 티칭펜던트의 접속
-# 3.6.2. 로봇 본체와 제어기의 접속
+Figure 3.5 Connection of Hi6-N**(U) Teaching Pendant  
+# 3.6.2. Connection of the Manipulator and Controller
 
-로봇 본체와 제어기간의 연결은 와이어하네스(wire harness)로 연결합니다. 각각의 리셉터클 명칭을 확인하시고 연결하여 주십시오.
+Connect between the manipulator and controller by using a wire harness. Check the names of individual receptacles while connecting them.
 
-![](../../_assets/3.6.2._로봇_본체와_제어기의_접속-1.png  )
+![](../../_assets/3.6.2._로봇_본체와_제어기의_접속-1.png)<br/><br/>
 
-Wire Harness 결선도
+Wire Harness connection diagram
 
 <table>
 <thead>
@@ -1243,34 +1189,37 @@ Wire Harness 결선도
 </table>
 
 {% hint style="info" %}
-로봇별로 커넥터 접촉부가 위의 그림과 상이 할 수 있으므로 반드시 와이어하네스(Wire Harness) 연결 전 해당 로봇 보수 매뉴얼을 숙독하여 연결을 하십시오.
+Since the contact part of the connector for each robot may be different from the figure above, you must read the relevant robot maintenance manual carefully before connecting the wire harness.
 {% endhint %}
 
 
-그림 3.6 로봇 본체와 제어기의 접속 (Hi6-N\*\*(U))
-# 3.6.3. 제어기와 1차 전원의 접속
+Figure 3.6 Connection of the Manipulator and Controller (Hi6-N**(U))
+# 3.6.3. Connectin of the Controller and Primary Power
 
-1차 전원 및 브레이커(NFB)에서 전원이 제거된 상태인지를 확인하십시오. Hi6-N\*\* 제어기는 전원 케이블을 전원 인입구로 넣어서 브레이커(NFB)에 연결하여 주십시오.
+Check whether the power has been removed from the primary power and breaker (NFB).
+In the case of a Hi6-N** controller, insert the power cable through the power inlet and then connect it to the breaker (NFB).
 
-이때 1차 전원의 케이블 끝단은 적당한 크기의 터미널 단자를 사용하여 주십시오
+At this time, use a terminal receptable of an appropriate size for the end side of the primary power supply cable.
+
 
 ![](../../../_assets/그림_3.8_Hi6-N__U__제어기에_1차_전원_접속부.png  )
+
 ![](../../../_assets/그림_3.8_Hi6-N__U__제어기에_1차_전원_접속부_2.png  )
 
-그림 3.7 Hi6-N\*\*(U) 제어기에 1차 전원 접속부
-# 3.6.3.1. 전원 요구 조건
+Figure 3.7 Primary Power Connection Part of Hi6-N**(U) Controller
+# 3.6.3.1. Power Requirements 
 
-표 3-2 전원 요구 조건
+Table 3-2 Power Requirements 
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>제어기 종류</strong></p></td>
-<td><p><strong>용량<sup>*1)</sup> [KVA]</strong></p></td>
-<td><p><strong>입력 전압 <sup>*2)</sup> [V]</strong></p></td>
-<td><p><strong>주파수[Hz]</strong></p></td>
-<td><p><strong>피크전류[A]</strong></p></td>
+<td><p><strong>Controller type</strong></p></td>
+<td><p><strong>Capacity*1)<sup>*1)</sup>[KVA]</strong></p></td>
+<td><p><strong>Input voltage<sup>*2)</sup>[V]</strong></p></td>
+<td><p><strong>Frequency[Hz]</strong></p></td>
+<td><p><strong>Peak current[A]</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -1323,22 +1272,25 @@ Wire Harness 결선도
 </tbody>
 </table>
 
-주 1) 전원 용량
 
-제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 “본체보수설명서” 참조
+Note 1) Power capacity
 
-주 2) 전압 범위: ±10% (제어기의 전원 터미널)
-# 3.6.3.2. 전원 전선 굵기
+Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the “Manipulator Maintenance Manual”.
 
-표 3-3 권장 최소 전선 굵기
+Note 2) Voltage range: ±10% (at the power terminal of the controller)
+
+# 3.6.3.2. Power Cable Thickness 
+
+
+Table 3-3 Recommended Minimum Cable Thickness 
 
 <table>
 <thead>
   <tr>
     <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>No.&nbsp;&nbsp;&nbsp;</th>
-    <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 길이m(feet)&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N00(U),Hi6-N80(U))&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기 <br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N30(U))&nbsp;&nbsp;&nbsp;</th>
+    <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>Cable length m(feet)&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>Cable thickness<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N00(U),Hi6-N80(U))&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>Cable thickness<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N30(U))&nbsp;&nbsp;&nbsp;</th>
   </tr>
   <tr>
     <th>&nbsp;&nbsp;&nbsp;<br>mm2&nbsp;&nbsp;&nbsp;</th>
@@ -1382,31 +1334,30 @@ Wire Harness 결선도
   </tr>
 </tbody>
 </table>
-# 3.6.4. 제어기와 접지
+# 3.6.4. The Controller and Grounding
 
-제어기를 안전하게 사용하기 위해 제어기에 접지선을 연결하여 주십시오. 5.5㎟ 이상의 접지선을 사용하여 주십시오. (제 3종 접지)
-# 3.6.5. 기타 주의 사항
+For using the controller safely, connect the grounding wire to the controller. Use a grounding wire of 5.5㎟ or more. (Grounding of Category 3).
+# 3.6.5. Other Cautions 
 
 {% hint style="info" %}
-1. 제어기 및 로봇 본체의 배선은 신호선과 전력선을 분리하여 배선하십시오.
-   또한 고전력선과 신호선간에는 분리된 DUCT를 사용하여 배선하십시오.
-2. 배선은 보호 Cover를 사용하여 통행 시 손상이 생기지 않도록 조치하여 주십시오.
-3. 반드시 1차 전원 투입 전에 접속관계, 제어기의 전원 사양 및 공급 전원 사양등을 재확인하여 주십시오.
+1. When wiring the controller and manipulator, separate the signal line and the power line.
+In addition, use separate ducts respectively for high power lines and signal lines.
+2. Use a protective cover for the wires, as a measure to prevent the wires from getting damaged when people are passing.
+3. Before supplying the primary power, you must check again the relationship in terms of connection, the power specification and the power supply specification of the controller.
 {% endhint %}
+# 3.6.6. Connection of the Ethernet Port for the User
 
-# 3.6.6. 사용자 이더넷 포트의 접속
+The Ethernet port for the user is located on the front door of the controller. The pin descriptin and connection with a Pc are as follows.</br></br>
 
-사용자용 이더넷 포트는 제어기 전면 도어부에 위치하며, Pin Description 및 PC와의 결선은 다음과 같습니다.
-
-표 3-4 핀 설명 (RJ45 커넥터 사양; RJ 45P Shield)
+Table 3-4 Pin Description (RJ45 Connector Specification; RJ 45P Shield)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>RJ45 Pin No.</strong></p></td>
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>약자</strong></p></td>
-<td><p><strong>방향</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Abbreviation</strong></p></td>
+<td><p><strong>Direction</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -1434,155 +1385,162 @@ Wire Harness 결선도
 </tr>
 </tbody>
 </table>
-# 4. 제어기의 기본구성
+# 4. Basic Configuration of the Controller
 
-![](../_assets/4._제어기의_기본구성(Hi6)-주의.png  )
-# 4.1. 구성
+{% hint style="info" %}
+The person in charge of maintenance should work after understanding the placement of various devices and parts and their functions inside the controller.
+{% endhint %}
 
-제어기는 제어기 본체와 티칭펜던트(Teaching Pendant)로 구성되어 있습니다.
+# 4.1. Configuration 
+
+The controller consists of the main body and teaching pendant.
 
 ![](../_assets/그림_4.1_Hi6-N_(U)_제어기.png  )
 
-그림 4.1 Hi6-N\*\*(U) 제어기
+Figure 4.1 Hi6-N**(U) Controller
 
 ![](../_assets/그림_4.2_티칭펜던트_TP630.png  )
 
-그림 4.2 티칭펜던트 TP630
-# 4.2. 부품 배치
+Figure 4.2 Teaching Pendant TP630
+# 4.2. Placement of Parts
 
-Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과 같으며 그림 4.3부터 그림 4.5 과 같이 배치되어 있습니다.
+The main components of the Hi6-N00/N30/N80 controller and their individual names are shown below in Table 4-1 and are arranged as shown in Figure 4.3 to Figure 4.5.</br></br>
 
-표 4-1 Hi6-N00/N30/N80 제어기 각 부품 명칭
+Table 4-1 Names of Individual Parts of the Hi6-N00/N30/N80 Controller
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>번호</strong></p></td>
-<td><p><strong>형식</strong></p></td>
-<td><p><strong>품명</strong></p></td>
+<td><p><strong>No</strong></p></td>
+<td><p><strong>Type</strong></p></td>
+<td><p><strong>Part name</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
 <td><p>H6COM-T</p></td>
-<td><p>메인제어모듈</p></td>
+<td><p>Main control module</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
 <td><p>BD640</p></td>
-<td><p>서보(Servo)보드</p></td>
+<td><p>Servo board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
 <td><p>BD632</p></td>
-<td><p>안전(Safety)보드</p></td>
+<td><p>Safety board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
 <td><p>H6PSM</p></td>
-<td><p>전원공급모듈</p></td>
+<td><p>Power supply module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>H6D6X(대/중형)</p>
-<p>/H6D6A(소형)</p></td>
-<td><p>대/중/소형 6축용 드라이브모듈</p></td>
+<td><p>H6D6X(Large/Medium-sized)</p>
+<p>/H6D6A(Small-sized)</p></td>
+<td><p>Drive module for Large/Medium/Small-sized 6 axes</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>H6D1X(선택사양)</p></td>
-<td><p>100A 1축 드라이브모듈</p></td>
+<td><p>H6D1X(Optional)</p></td>
+<td><p>Drive module for 1 axis of 100A</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>6-1</strong></p></td>
-<td><p>H6D1Z(선택사양)</p></td>
-<td><p>50A 1축 드라이브모듈</p></td>
+<td><p>H6D1Z(Optional)</p></td>
+<td><p>Drive module for 1 axis of 50A</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>7</strong></p></td>
 <td><p>OP EM. SW.</p></td>
-<td><p>제어반 비상정지 스위치</p></td>
+<td><p>Emergency switch on the controller panel</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>8</strong></p></td>
 <td><p>NFB</p></td>
-<td><p>배선용 차단기(No Fuse Breaker)</p></td>
+<td><p>No fuse breaker</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>9</strong></p></td>
 <td><p>FAN2</p></td>
-<td><p>드라이브 내부 냉각용 팬(Fan)</p></td>
+<td><p>Drive module internal cooling fan</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>10~12</strong></p></td>
 <td><p>FAN3~5</p></td>
-<td><p>드라이브 외부 냉각용 팬(Fan)</p></td>
+<td><p>Drive module external cooling fan</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>13</strong></p></td>
 <td><p>NFT1</p></td>
-<td><p>노이즈 필터(Line Noise Filter)</p></td>
+<td><p>Line noise filter</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>14</strong></p></td>
 <td><p>RDR1</p></td>
-<td><p>소형/중형/대형 회생방전 저항(CE/UL인증품)</p></td>
+<td><p>Small/Medium/Large-sized regenerative discharge resistor</br>(CE/UL certified article)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>15</strong></p></td>
 <td><p>TR</p></td>
-<td><p>옵션 입력전원 변압기(Transformer)</p></td>
+<td><p>Transformer for the input power for options</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>16</strong></p></td>
 <td><p>CMC1</p></td>
-<td><p>모터구동용 전원케이블 인입커넥터</p></td>
+<td><p>Motor drive power cable inlet connection</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>17</strong></p></td>
 <td><p>CMC2</p></td>
-<td><p>모터구동용 전원케이블 인입커넥터</p>
-<p>(소형 제어기는 CMC2가 미실장)</p></td>
+<td><p>Motor drive power cable inlet connection</p>
+<p>(Small controllers without a CMC2 mounted)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>18</strong></p></td>
-<td><p>AMC1(옵션)</p></td>
-<td><p>옵션 모터구동용 전원케이블 인입커넥터1</p></td>
+<td><p>AMC1(Option)</p></td>
+<td><p>Inlet connector for the motor-driving power cable
+for options 1
+</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>19</strong></p></td>
-<td><p>AMC2(옵션)</p></td>
-<td><p>옵션 모터구동용 전원케이블 인입커넥터2</p></td>
+<td><p>AMC2(Option)</p></td>
+<td><p>Inlet connector for the motor-driving power cable
+for options 2
+</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>20</strong></p></td>
 <td><p>CEC1</p></td>
-<td><p>모터 엔코더 케이블 인입 커넥터</p></td>
+<td><p>Encoder communication cable inlet connection</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>21</strong></p></td>
 <td><p>AEC1</p></td>
-<td><p>옵션 모터 엔코더 케이블 인입 커넥터1</p></td>
+<td><p>Inlet connector for the motor encoder cable for options 1</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>22</strong></p></td>
 <td><p>AEC2</p></td>
-<td><p>옵션 모터 엔코더 케이블 인입 커넥터2</p></td>
+<td><p>Inlet connector for the motor encoder cable for options 2</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>23</strong></p></td>
 <td><p>CNRTP</p></td>
-<td><p>티칭펜던트 케이블 인입 커넥터</p></td>
+<td><p>Teaching pendant cable inlet connector </p></td>
 </tr>
 </tbody>
 </table>
 
 ![](../_assets/그림_4.3_Hi6-N00(U),N30(U),N80(U)_제어기_전면_외부의_부품배치.png  )
 
-그림 4.3 Hi6-N00(U)/N30(U)/N80(U) 제어기 전면 외부의 부품배치
+Figure 4.3 Placement of Parts on the Front Exterior of the Hi6-N00(U)/N30(U)/N80(U) Controller
 
 ![](../_assets/그림_4.4_Hi6-N00(U),N30(U),N80(U)_제어기_전면_내부의_부품배치.png  )
 
-그림 4.4 Hi6-N00(U)/N30(U)/N80(U) 제어기 전면 내부의 부품배치
+Figure 4.4 Placement of Parts on the Front Interior of the Hi6-N00(U)/N30(U)/N80(U) Controller
 
 ![](../_assets/그림_4.5_Hi6-N00(U),N30(U),N80(U)_제어기_후면_부품배치-1.png  )
 
@@ -1590,250 +1548,247 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 
 ![](../_assets/그림_4.5_Hi6-N00(U),N30(U),N80(U)_제어기_후면_부품배치-3.png  )
 
-그림 4.5 Hi6-N00(U)/N30(U)/N80(U) 제어기 후면 부품배치
-# 4.3. 구성품별 기능
+Figure 4.5 Placement of Parts on the Back of the Hi6-N00(U)/N30(U)/N80(U) Controller
+# 4.3. Functions of the Individual Components 
 
-표 4-2 각 구성품별 기능요약
+Table 4-2 Summary of Functions of the Individual Components
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">제어 모듈</td>
-    <td>메인제어모듈(H6COM-T)</td>
-    <td>- 기록점 기록 및 동작 경로 계산<br>- 프로그램 및 로봇 정수 보존<br>- 티치펜던트(T/P)통신<br>- LAN, USB, 직렬(RS232)통신 접속</td>
+    <td rowspan="3">Control module</td>
+    <td>Main control module (H6COM-T)</td>
+    <td>- Recording the record points and calculating the operation paths<br>- 	Preservation of the programs and robot integers<br>- Teach pendant (T/P) communication<br>- Connection of the LAN, USB, and the serial (RS232) communication</td>
   </tr>
   <tr>
-    <td>서보보드(BD640)</td>
-    <td>- 서보제어용 DSP<br>- 엔코더 접속(시리얼 I/F)<br>- 서보모터 및 브레이크 개폐출력<br>- 시퀀스제어</td>
+    <td>Servo board (BD640)</td>
+    <td>-	DSP for servo control<br>- Encoder connection (Serial I/F)<br>- Open/close outputs for the servo motor<br>- Sequence control</td>
   </tr>
   <tr>
-    <td>안전모듈(BD632)</td>
-    <td>- 제어기내 입출력(시스템용I/O)<br>- 본체로부터의 각종 입력신호 처리<br>- 안전체인 회로</td>
+    <td>Safety module (BD632)</td>
+    <td>- I/O in the controller (I/O for the system)<br>- Processing of various input signals from the manipulator<br>- Safety chain circuit</td>
   </tr>
   <tr>
-    <td>드라이브모듈<br>(Drive Module)</td>
-    <td>대/중형6축: H6D6X<br>소형6축: H6D6A<br>부가축: H6D1X, H6D1Z</td>
-    <td>- 모터 구동용 전원 생성<br>- 회생 방전<br>- 서보 모터 전력 증폭 회로<br>- 각종 에러출력</td>
+    <td>Drive module</td>
+    <td>Large/Medium-sized 6 axes: H6D6X<br>Small-sized 6 axes: H6D6A<br>Additional axis: H6D1X, H6D1Z</td>
+    <td>- Generation of the motor drive power<br>- Regenerative discharge<br>- Servo motor power amplification circuit<br>- Various error outputs</td>
   </tr>
   <tr>
     <td>T/P<br>(Teach Pendant)</td>
     <td>TP630</td>
-    <td>- 각종정보표시(LCD)<br>- 버튼 스위치 입력(Function/Jog 등)<br>- 비상정지, Enable 및 T/P On/Off 입력</td>
+    <td>- Display of various information (LCD)<br>- Button inputs and switch inputs (function/jog, etc.)<br>- Emergency stop, enable, and T/P On/Off inputs</td>
   </tr>
   <tr>
-    <td>냉각장치</td>
+    <td>Cooling device</td>
     <td>Fan</td>
-    <td>- 반내 공기순환<br>- 구동장치 냉각</td>
+    <td>- Air circulation inside the panel<br>- Cooling of the drive module</td>
   </tr>
   <tr>
-    <td>전원공급모듈</td>
+    <td>Power supply module</td>
     <td>H6PSM</td>
-    <td>- 모터 구동 전원의 개폐<br>- 각종 전원의 분배</td>
+    <td>- Opening/closing of the motor drive power<br>- Distribution of various power</td>
   </tr>
 </tbody>
 </table>
 
 
-※ 제어기별 구성품 종류는 ‘2.1절 로봇 제어기의 세부사양’을 참고 바랍니다.
-# 4.3.1. 메인모듈(H6COM-T)
-# 4.3.1.1. 개요
+※ For the types of components of each controller, refer to “2.1 Details of Specifications of Each Controller Model.”# 4.3.1. Main Module (H6COM-T)
+# 4.3.1.1. Overview
 
-H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드의 결합으로 이루어져 있습니다. Main CPU 보드는 SSD 슬롯, CPU슬롯, 메모리카드 슬롯, USB포트, COM포트 와 Carrier보드를 체결하는 버스커넥터로 구성되어 있습니다. Carier보드는 3개의 외부 LAN포트, 2개의 내부 시스템용 LAN포트 2개의USB포트, GPIO포트, 2개의 PCI 커넥터, 1개의 PCI-e커넥터와 DC 24V전원 커넥터를 포함하고 있습니다. 내부 시스템 LAN포트는 EtherCAT통신과 Teach Pandent와의 인터페이스를 위한 목적으로 사용되며, GIO는 전원장치로부터 정전신호를 감지하기 위해 사용됩니다. USB는 디버깅 목적으로 쓰입니다. 기타 범용적인 버스 인터페이스를 지원하기 위해 PCI 확장슬롯과 외부의 LAN포트 여분 3포트를 제공하며, 해당 슬롯을 통해 EtherCAT 외의 다른 통신인터페이스 들과 연결될 수 있습니다.
+H6COM-T is structure as shown in Figure 4.3, in which the main CPU board and the carrier board are combined. The main CPU board consists of an SSD slot, a CPU slot, a memory card slot, a USB port, a COM port, and a bus connector that is to be connected to the carrier board. The carrier board contains three LAN ports for external systems, two LAN ports for internal systems, two USB ports, one GPIO port, two PCI connectors, one PCI-e connector and one DC 24V power connector. The LAN ports for internal systems are used for EtherCAT communication, as well as for interface with the teach pendant, and the GPIO port is used to detect a power failure signal from the power system. The SB is used for debugging. One PCI expansion slot and three spare LAN ports for external systems are provided to support other universal bus interfaces. The connection to other communication interfaces than EtherCAT can be made via the relevant slots.
 
 ![](../../../_assets/그림_4.23_H6COM-T.png  )
 
-그림 4.6 H6COM-T
-# 4.3.1.2. 커넥터
+Figure 4.6 H6COM-T
+# 4.3.1.2. Connectors
 
-다음 표 4-3는 커넥터의 용도와외부장치접속에 대한 설명입니다.
+Table 4-3 describes the usage of the connector and the connection of external devices.
 
-표 4-3 Hi6COM-T 커넥터의 종류 및 용도
+Table 4-3 Types and Usage of the Connectors of Hi6COM-T
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DC IN 24V</strong></p></td>
-<td><p>DC 24V 메인전원 공급</p></td>
+<td><p>DC24V main power supply</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>COM 1,2</strong></p></td>
-<td><p>시리얼포트 (RS232/RS422/RS485)</p></td>
+<td><p>Serial port (RS232/RS422/RS485)</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>GIO</strong></p></td>
-<td><p>전원장치 정전신호 인가</p></td>
+<td><p>Application of the power failure of the power unit</p></td>
 <td><p>-</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>LAN 4</strong></p></td>
+<td><p>EtherCAT master connector port</p></td>
+<td><p>EtherCAT connector</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>LAN 5</strong></p></td>
+<td><p>Ethernet port: For communication between teach pendants</p></td>
+<td><p>TP connector</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LAN 1</strong></p></td>
-<td><p>EtherCAT 마스터 커넥터 포트</p></td>
-<td><p>EtherCAT 커넥터</p></td>
+<td><p>Ethernet port: For the user (PC I/F)</p></td>
+<td><p>Optional EtherCAT connector</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LAN 2</strong></p></td>
-<td><p>이더넷포트: T/P간 통신용</p></td>
-<td><p>TP 커넥터</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LAN 3</strong></p></td>
-<td><p>이더넷포트: 사용자용(PC I/F)</p></td>
-<td><p>옵션용 EtherCAT 커넥터</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LAN4</strong></p></td>
-<td><p>이더넷포트: 사용자용(PC I/F)</p></td>
+<td><p>Ethernet port: For the user (PC I/F)</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>LAN5</strong></p></td>
-<td><p>이더넷포트: 사용자용(PC I/F)</p></td>
+<td><p><strong>LAN 3</strong></p></td>
+<td><p>Ethernet port: For the user (PC I/F)</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>PCI, PCIe</strong></p></td>
-<td><p>옵션용 확장보드 슬롯</p></td>
+<td><p>Optional expansion board slot</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>USB1,2</strong></p></td>
-<td><p>USB포트: 사용자용(PC I/F)</p></td>
+<td><p>USB port: For the user (PC I/F)</p></td>
 <td><p>-</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.2. 안전모듈(BD632)
-# 4.3.2.1. 개요
+# 4.3.2. Safety Module (BD632)
+# 4.3.2.1. Overview
 
-안전모듈(BD632)은 ISO 13849-1를 준수하여 PLr=d cat3(SIL2)을 만족시키기 위해 이중화된 안전 전기회로로 설계되었으며, 안전 관련 입력의 상태를 지속적으로 모니터링합니다. 만약 시스템 에러 또는 안전 관련 입력이 검지되면, 위험성 평가에 의해 결정된 정지 분류에 따라 모터전원과 브레이크 전원을 차단함으로써, 로봇을 안전한 상태가 되도록 하는 역할을 합니다.
-# 4.3.2.2. 커넥터
+For meeting the requirement of PLr=d cat3 (SIL2) in compliance with IOS 13849-1, the safety module (BD632) is designed in a dualized safety electric circuit and continuously monitors the status of safety-related inputs. If a system error or safety-related input is detected, this safety module renders the robot into a safe state by cutting off the motor power and brake power according to the classification of the stop types determined through risk assessment.
+# 4.3.2.2. Connectors
 
-다음 그림은 BD632(Safety IO Module)에 있는 각종 커넥터의 위치와 용도를 나타낸 것입니다.
+The following figure shows the positions and usage of various connectors installed on BD632 (Safety IO Module).
 
 ![](../../../_assets/그림_4.24_BD632(Safety_IO_Board)의_커넥터_및_스위치_배치.png  )
 
-그림 4.7 BD632(Safety IO Board)의 커넥터 및 스위치 배치
+Figure 4.7 Placement of the Connectors and Switches of the BD632 (Safety IO Board)</br></br>
 
-표 4-4 BD632(Safety IO Board)커넥터 종류 및 용도
+Table 4-4 Types and Usage of the Connectors of the BD632 (Safety IO Board)
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>번호</strong></p></td>
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong></strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>A</strong></p></td>
 <td><p><strong>CNSMPS1</strong></p></td>
-<td><p>SMPS DC24V전원 공급</p></td>
+<td><p>SMPS DC24V power supply</p></td>
 <td><p>DC24V SMPS</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>A</strong></p></td>
 <td><p><strong>CNSMPS2</strong></p></td>
-<td><p>SMPS DC24V전원 공급</p></td>
+<td><p>SMPS DC24V power supply</p></td>
 <td><p>DC24V SMPS</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>B</strong></p></td>
 <td><p><strong>CNTP</strong></p></td>
-<td><p>티칭 펜던트의 전원, 비상정지, 모드스위치, 인에이블링 스위치
-입력</p></td>
-<td><p>티칭펜던트</p></td>
+<td><p>Inputs of the emergency stop switch, mode switch, and enable switch of the teaching pendant</p></td>
+<td><p>Teaching Pendant</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>C</strong></p></td>
 <td><p><strong>CNMC</strong></p></td>
-<td><p>MC(Magnet Contact) 입출력신호 접속</p></td>
+<td><p>Connection of the Magnet Contact (MC) input and output signals</p></td>
 <td><p>MC(Magnet Contact)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>D</strong></p></td>
 <td><p><strong>CNLS</strong></p></td>
-<td><p>Arm간섭, Over-travel검지용 리밋스위치 입력</p></td>
+<td><p>Limit switch input for the detection of arm interference and over-travel</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong>E</strong></p></td>
 <td><p><strong>CNLS7</strong></p></td>
-<td><p>부가 7축 Over-travel검지용 리밋스위치 입력</p></td>
+<td><p>Limit switch input for the detection of the over-travel of the additional axis 7</p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p><strong>F</strong></p></td>
 <td><p><strong>CNLS8</strong></p></td>
-<td><p>부가 8축 Over-travel검지용 리밋스위치 입력</p></td>
+<td><p>Limit switch input for the detection of the over-travel of the additional axis 8</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong>G</strong></p></td>
 <td><p><strong>CNSV</strong></p></td>
-<td><p>서보시퀀스보드(BD640) I/F</p>
-<p>(모터온오프, 피드백, 서보시퀀스보드 상태, 안전보드 상태)</p></td>
+<td><p>Servo sequence board (BD640) I/F</p>
+<p>(Status related to motor on/off, feedback, the servo sequence board, and the safety board)</p></td>
 <td><p>BD640</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>H</strong></p></td>
 <td><p><strong>CNEMSW</strong></p></td>
-<td><p>OP(Operational Panel)의 비상정지 입력</p></td>
+<td><p>Emergency stop input of the Operational Panel (OP)</p></td>
 <td><p>OP(Operational Panel)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>I</strong></p></td>
 <td><p><strong>CNOPSW</strong></p></td>
-<td><p>OP(Operational Panel)의 모드스위치, 키입력</p></td>
+<td><p>Inputs of the mode switch and keys of the Operational Panel (OP)</p></td>
 <td><p>OP(Operational Panel)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>J</strong></p></td>
 <td><p><strong>CNOPLP</strong></p></td>
-<td><p>OP(Operational Panel)의 LAMP 출력</p></td>
+<td><p>Lamp output of the Operational Panel (OP)</p></td>
 <td><p>OP(Operational Panel)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>K</strong></p></td>
 <td><p><strong>TBEM</strong></p></td>
-<td><p>외부 안전 입력</p>
-<p>(비상정지, AUTO모드 안전가드1, AUTO모드 안전가드2, 일반안전가드
-입력)</p></td>
-<td><p>유저 IO</p></td>
+<td><p>External safety inputs</p>
+<p>(Emergency stop, auto mode safety guard 1, auto mode safety guard 2, and general safety guard input)</p></td>
+<td><p>User IO</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>L</strong></p></td>
 <td><p><strong>EXMON</strong></p></td>
-<td><p>외부모터온</p></td>
+<td><p>External motor on signal input</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong>M</strong></p></td>
 <td><p><strong>TBPLC</strong></p></td>
-<td><p>안전 PLC용 안전신호 접속</p></td>
+<td><p>Connection of the safety PLC safety signals</p></td>
 <td><p>Safety PLC</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>N</strong></p></td>
 <td><p><strong>MJ1</strong></p></td>
-<td><p>이더켓 통신 연결(INPUT)</p></td>
+<td><p>EtherCat communication connection (INPUT)</p></td>
 <td><p>BD640</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>N</strong></p></td>
 <td><p><strong>MJ2</strong></p></td>
-<td><p>이더켓 통신 연결(OUTPUT)</p></td>
+<td><p>EtherCat communication connection (OUTPUT)</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="even">
@@ -1845,51 +1800,51 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 <tr class="odd">
 <td><p><strong>P</strong></p></td>
 <td><p><strong>SW1,SW2</strong></p></td>
-<td><p>OP INSTALL 입력(enable, disable)</p></td>
+<td><p>OP INSTALL input (enable, disable)</p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p><strong>Q</strong></p></td>
 <td><p><strong>A_JTAG1,B_JTAG1</strong></p></td>
-<td><p>J-TAG커넥터(프로그램 다운로드)</p></td>
+<td><p>J-TAG connector (Program download)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong>R</strong></p></td>
 <td><p><strong>SW7</strong></p></td>
-<td><p>ES, SG  입력(enable, disable)</p></td>
+<td><p>ES, SG input (enable, disable)</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\(1\) BD632 외부안전신호용 터미널블럭: TBEM
+\(1\) External Safety Signal Terminal Block of the BD632: TBEM
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.8 BD632(Safety IO Board) TBEM
+Figure 4.8 BD632(Safety IO Board) TBEM
 
 {% hint style="info" %}
-안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
+When a safety-related input is connected and activated, you must check whether the function is operating normally by referring to “1.11 Safety Measures When Operating the Robot.”
 {% endhint %}
 
-표 4-5 BD632(Safety IO Board) TBEM 설명
+Table 4-5 Description of TBEM of the BD632 (Safety IO Board) 
 
 <table>
 <thead>
   <tr>
-    <th>단자번호</th>
-    <th>단자명</th>
-    <th>용도</th>
-    <th>기타</th>
+    <th>Terminal no.</th>
+    <th>Terminal name</th>
+    <th>Usage</th>
+    <th>Others</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>16</td>
     <td>SGG1+</td>
-    <td rowspan="2">일반안전가드 체인1입력</td>
-    <td rowspan="2">일반안전가드 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">General safety guard chain 1 input</td>
+    <td rowspan="2">If the general safety guard chain 1 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>8</td>
@@ -1898,8 +1853,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>15</td>
     <td>SGG2+</td>
-    <td rowspan="2">일반안전가드 체인2입력</td>
-    <td rowspan="2">일반안전가드 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">General safety guard chain 2 input</td>
+    <td rowspan="2">If the general safety guard chain 2 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>7</td>
@@ -1908,8 +1863,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>14</td>
     <td>SGA11+</td>
-    <td rowspan="2">자동안전가드1 체인1입력</td>
-    <td rowspan="2">자동안전가드1 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">Automatic safety guard 1 chain 1 input</td>
+    <td rowspan="2">If the automatic safety guard 1 chain 1 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>6</td>
@@ -1918,8 +1873,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>13</td>
     <td>SGA21+</td>
-    <td rowspan="2">자동안전가드1 체인2입력</td>
-    <td rowspan="2">자동안전가드1 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">Automatic safety guard 1 chain 2 input</td>
+    <td rowspan="2">If the automatic safety guard 1 chain 2 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>5</td>
@@ -1928,8 +1883,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>12</td>
     <td>SGA12+</td>
-    <td rowspan="2">자동안전가드2 체인1입력</td>
-    <td rowspan="2">자동안전가드2 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">Automatic safety guard 2 chain 1 input</td>
+    <td rowspan="2">If the automatic safety guard 2 chain 1 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>4</td>
@@ -1938,8 +1893,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>11</td>
     <td>SGA22+</td>
-    <td rowspan="2">자동안전가드2 체인2입력</td>
-    <td rowspan="2">자동안전가드2 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
+    <td rowspan="2">Automatic safety guard 2 chain 2 input</td>
+    <td rowspan="2">If the automatic safety guard 2 chain 2 input is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>3</td>
@@ -1948,8 +1903,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>10</td>
     <td>EMEX1+</td>
-    <td rowspan="2">외부비상정지 체인1 입력</td>
-    <td rowspan="2">외부장치의 비상정지 체인1을 사용하지 않을 경우 쇼트시킵니다.</td>
+    <td rowspan="2">External emergency stop chain 1 input</td>
+    <td rowspan="2">If the external emergency stop chain 1 is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>2</td>
@@ -1958,8 +1913,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>9</td>
     <td>EMEX2+</td>
-    <td rowspan="2">외부비상정지 체인2 입력</td>
-    <td rowspan="2">외부장치의 비상정지 체인2을 사용하지 않을 경우 쇼트시킵니다.</td>
+    <td rowspan="2">External emergency stop chain 2 input</td>
+    <td rowspan="2">If the external emergency stop chain 2 is not to be used, it should be short-circuited.</td>
   </tr>
   <tr>
     <td>1</td>
@@ -1969,76 +1924,79 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 </table>
 
 
-\(2\)   BD632 안전 PLC 연결용 터미널블럭: TBPLC
+\(2\) Safety PLC Connection Terminal Block of the BD632: TBPLC
 
 ![](../../../_assets/그림_4.26_BD632(Safety_IO_Board)_TBPLC.png  )
 
-그림 4.9 BD632(Safety IO Board) TBPLC
+Figure 4.9 BD632(Safety IO Board) TBPLC
 
-![](../../../_assets/4.3.2.2._커넥터(Hi6)-경고.png  )
+{% hint style="warning" %}
+When a safety-related input is connected and activated, you must check whether the function is operating normally by referring to “1.11 Safety Measures When Operating the Robot.”
+{% endhint %}
 
-표 4-6 BD632(Safety IO Board) TBPLC 설명
+
+Table 4-6 Description of TBPLC of BD632 (Safety IO Board)
 
 <table>
 <thead>
   <tr>
-    <th>단자번호</th>
-    <th>단자명</th>
-    <th>용도</th>
-    <th>기타</th>
+    <th>Terminal no.</th>
+    <th>Terminal name</th>
+    <th>Usage</th>
+    <th>Others</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>12</td>
     <td>PLC_P</td>
-    <td>안전 PLC 24V</td>
+    <td>Safety PLC 24V</td>
     <td></td>
   </tr>
   <tr>
     <td>6</td>
     <td>PLC_G</td>
-    <td>안전 PLC GND</td>
-    <td>SG/ES신호의 Common역할을 함.</td>
+    <td>Safety PLC GND</td>
+    <td>To function as Common for the SG/ES signal </td>
   </tr>
   <tr>
     <td>11</td>
     <td>PLC_TO1</td>
-    <td>Safety IO의 모니터링용 출력에 대한 입력단자</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
+    <td>Input terminal for the monitoring output of the safety IO</td>
+    <td rowspan="2">PNP output type applicable only</td>
   </tr>
   <tr>
     <td>5</td>
     <td>PLC_FDBK1</td>
-    <td>Safety IO의 T0에 대한 피드백신호 출력</td>
+    <td>Feedback signal output for T0 of the safety IO</td>
   </tr>
   <tr>
     <td>10</td>
     <td>SG1</td>
-    <td>안전PLC로부터의 안전가드 입력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
+    <td>Chain 1 for the safety guard input from the safety PLC</td>
+    <td rowspan="2">PNP output type applicable only</td>
   </tr>
   <tr>
     <td>4</td>
     <td>SG2</td>
-    <td>안전PLC로부터의 안전가드 입력 체인 2</td>
+    <td>Chain 2 for the safety guard input from the safety PLC</td>
   </tr>
   <tr>
     <td>9</td>
     <td>ES1</td>
-    <td>안전PLC로부터의 비상정지 입력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
+    <td>Chain 1 for the emergency stop input from the safety PLC</td>
+    <td rowspan="2">PNP output type applicable only</td>
   </tr>
   <tr>
     <td>3</td>
     <td>ES2</td>
-    <td>안전PLC로부터의 비상정지 입력 체인 2</td>
+    <td>Chain 2 for the emergency stop input from the safety PLC</td>
   </tr>
   <tr>
     <td>8</td>
     <td>EMOUT11+</td>
-    <td rowspan="2">내부 비상정지 출력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
+    <td rowspan="2">Internal emergency stop output chain 1</td>
+    <td rowspan="2">PNP output type applicable only</td>
   </tr>
   <tr>
     <td>2</td>
@@ -2047,8 +2005,8 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
   <tr>
     <td>7</td>
     <td>EMOUT21+</td>
-    <td rowspan="2">내부 비상정지 출력 체인 2</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
+    <td rowspan="2">Internal emergency stop output chain 2</td>
+    <td rowspan="2">PNP output type applicable only</td>
   </tr>
   <tr>
     <td>1</td>
@@ -2057,869 +2015,872 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 </tbody>
 </table>
 
-\(3\)    외부 모터온 커넥터
+\(3\)  External Motor On connecter
 
 ![](../../../_assets/외부_모터온_커넥터.png  )
 
-표 4-7 BD632 외부 모터온 스위치
+Table 4-7 BD632 external motor on switch 
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>단자번호</strong></p></td>
-<td><p><strong>단자명</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>기타</strong></p></td>
+<td><p><strong>Terminal no. </strong></p></td>
+<td><p><strong>Terminal name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Others</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>5</p></td>
 <td><p>EXMON_C1+</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C1+와<br>EXMON_C1-를 쇼트시킵니다.</p></td>
+<td><p>External motor on (Contact type)</p></td>
+<td><p>When not to be used, EXMON_C1+ should be short-circuited with EXMON_C1-.</p></td>
 </tr>
 <tr class="odd">
 <td><p>1</p></td>
 <td><p>EXMON_C1-</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C1+와<br>EXMON_C1-를 쇼트시킵니다.</p></td>
+<td><p>External motor on (Contact type)</p></td>
+<td><p>When not to be used, EXMON_C1+ should be short-circuited with EXMON_C1-.</p></td>
 </tr>
 <tr class="even">
 <td><p>8</p></td>
 <td><p>EXMON_C2+</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C2+와<br>EXMON_C2-를 쇼트시킵니다.</p></td>
+<td><p>External motor on (Contact type)</p></td>
+<td><p>When not to be used, EXMON_C2+ should be short-circuited with EXMON_C2-.</p></td>
 </tr>
 <tr class="odd">
 <td><p>4</p></td>
 <td><p>EXMON_C2-</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C2+와<br>EXMON_C2-를 쇼트시킵니다.</p></td>
+<td><p>External motor on (Contact type)</p></td>
+<td><p>When not to be used, EXMON_C2+ should be short-circuited with EXMON_C2-.</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.2.3. 표시장치
+# 4.3.2.3. Display Devices
 
 ![](../../../_assets/그림_4.27_BD632(Safety_IO_Board)의_표시장치.png  )
 
-그림 4.10 BD632(Safety IO Board)의 표시장치
+Figure 4.10 Display Devices of BD632 (Safety IO Board)</br></br>
 
-표 4-8 BD632(Safety IO Module) 표시장치 설명
+Table 4-8 Description of the Display Devices of the BD632 (Safety IO Module)
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>표시내용</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>정상시</strong></p></td>
-<td><p><strong>이상발생시 조치 내용</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Contents of display</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>When normal</strong></p></td>
+<td><p><strong>Actions to take when an abnormality occurs</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LED1</strong></p></td>
-<td><p>24V전원(체인1)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F1)확인</p>
-<p>조치2: BD632보드교체</p></td>
+<td><p>24 V power (Chain 1)</p></td>
+<td><p>Green</p>
+<p>Red</p></td>
+<td><p>Green LED turned on</p></td>
+<td><p>Phenomenon Red LED turned on or off </p>
+<p>Action 1: Check the inpput voltage (24 V).</p>
+<p>Action 2: If the LED is turned off, check the fuse (F1).</p>
+<p>Action 3: Replace the BD632 board.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LED2</strong></p></td>
-<td><p>24V전원(체인2)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F2)확인</p>
-<p>조치2: BD632보드교체</p></td>
+<td><p>24 V power (Chain 2)</p></td>
+<td><p>Green</p>
+<p>Red</p></td>
+<td><p>Green LED turned on</p></td>
+<td><p>Phenomenon Red LED turned on or off</p>
+<p>Action 1: Check the inpput voltage (24 V).</p>
+<p>Action 2: If the LED is turned off, check the fuse (F2).</p>
+<p>Action 3: Replace the BD632 board.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LED3</strong></p></td>
-<td><p>24V전원(체인1)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F3)확인</p>
-<p>조치2: BD632보드교체</p></td>
+<td><p>24 V power (Chain 1)</p></td>
+<td><p>Green</p>
+<p>Red</p></td>
+<td><p>Green LED turned on</p></td>
+<td><p>Phenomenon Red LED turned on or off</p>
+<p>Action 1: Check the inpput voltage (24 V).</p>
+<p>Action 2: If the LED is turned off, check the fuse (F3).</p>
+<p>Action 3: Replace the BD632 board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LED4</strong></p></td>
-<td><p>24V전원(체인2)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F5)확인</p>
-<p>조치2: BD632보드교체</p></td>
+<td><p>24 V power (Chain 2)</p></td>
+<td><p>Green</p>
+<p>Red</p></td>
+<td><p>Green LED turned on</p></td>
+<td><p>Phenomenon Red Turned on or Turned off</p>
+<p>Action 1: Check the inpput voltage (24 V).</p>
+<p>Action 2: If the LED is turned off, check the fuse (F5).</p>
+<p>Action 3: Replace the BD632 board.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDR1</strong></p></td>
-<td><p>리셋</p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>현상: 적색 점등</p>
-<p>조치1: BD632보드교체</p></td>
+<td><p>Reset</p></td>
+<td><p>Red</p></td>
+<td><p>Turned off</p></td>
+<td><p>Phenomenon Red Turned on</p>
+<p>Action 1: Replace the BD632 board.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDR2</strong></p></td>
-<td><p>이더캣 통신 에러 LED</p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>현상: 적색 점등</p>
-<p>조치1: 이더켓 케이블 연결 상태 확인</p>
-<p>조치2: BD632 보드 교체</p>
-<p>조치3: H6COM or BD640 점검</p></td>
+<td><p>EtherCAT communication error LED</p></td>
+<td><p>Red</p></td>
+<td><p>Turned off</p></td>
+<td><p>Phenomenon Red Turned on</p>
+<p>Action 1: Check the EtherCAT cable connection status.</p>
+<p>Action 2: Replace the BD632 board.</p>
+<p>Action 3: Check H6COM-T or BD640</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG3</strong></p></td>
-<td><p>OP 설치 LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>스위치 On(OP 설치시) 녹색 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p></td>
+<td><p>OP installation LED (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>Switch On (When the OP is installed) green LED turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG4</strong></p></td>
-<td><p>OP 설치 LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>스위치 On(OP 설치시) 녹색 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p></td>
+<td><p>OP installation LED (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>Switch On (When the OP is installed) green LED turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG5</strong></p></td>
-<td><p>STO출력 LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>STO On: 점등</p>
-<p>STO OFF: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
+<td><p>STO output LED (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>STO On: Turned on</p>
+<p>STO OFF: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board</p>
+<p>Action 2: Replace the magnet contact.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG6</strong></p></td>
-<td><p>STO출력 LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>STO On: 점등</p>
-<p>STO OFF: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
+<td><p>STO output LED (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>STO On: Turned on</p>
+<p>STO OFF: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board.</p>
+<p>Action 2: Replace the magnet contact</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG7</strong></p></td>
-<td><p>MC상태 체크LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC Close: 점등</p>
-<p>MC Open: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
+<td><p>MC status check LED (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>MC Close: Turned on</p>
+<p>MC Open: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board</p>
+<p>Action 2: Replace the magnet contact</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG8</strong></p></td>
-<td><p>MC상태 체크LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC Close: 점등</p>
-<p>MC Open: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
+<td><p>MC status check LED (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>MC Close: Turned on</p>
+<p>MC Open: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the BD632 board</p>
+<p>Action 2: Replace the magnet contact</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG9</strong></p></td>
-<td><p>티칭펜던트 수동모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant manual mode input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG10</strong></p></td>
-<td><p>티칭펜던트 수동모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant manual mode input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG11</strong></p></td>
-<td><p>티칭펜던트 자동모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant auto mode input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG12</strong></p></td>
-<td><p>티칭펜던트 자동모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant auto mode input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG13</strong></p></td>
-<td><p>티칭펜던트 원격모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant remote mode input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG14</strong></p></td>
-<td><p>티칭펜던트 원격모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant remote mode input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG15</strong></p></td>
-<td><p>티칭펜던트 인에이블링 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant enable input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG16</strong></p></td>
-<td><p>티칭펜던트 인에이블링 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant enable input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG17</strong></p></td>
-<td><p>티칭펜던트 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant emergency stop input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG18</strong></p></td>
-<td><p>티칭펜던트 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
+<td><p>Teach pendant emergency stop input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace the teach pendant</p>
+<p>Action 2: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG19</strong></p></td>
-<td><p>OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OVT스위치 교체</p></td>
+<td><p>OVT input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the OVT switch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG20</strong></p></td>
-<td><p>OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OVT스위치 교체</p></td>
+<td><p>OVT input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the OVT switch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG21</strong></p></td>
-<td><p>하드리밋 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 하드리밋 스위치 교체</p></td>
+<td><p>Hard limit input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the hard limit switch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG22</strong></p></td>
-<td><p>하드리밋 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 하드리밋 스위치 교체</p></td>
+<td><p>Hard limit input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the hard limit switch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG23</strong></p></td>
-<td><p>부가축 OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 부가축OVT스위치 교체</p></td>
+<td><p>Additional axis OVT input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the additional axis OVT switch.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG24</strong></p></td>
-<td><p>부가축 OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 부가축OVT스위치 교체</p></td>
+<td><p>Additional axis OVT input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the additional axis OVT switch.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG25</strong></p></td>
-<td><p>확장축 OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 확장축 OVT스위치 교체</p></td>
+<td><p>Extended OVT input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the extended OVT switch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG26</strong></p></td>
-<td><p>확장축 OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 확장축 OVT스위치 교체</p></td>
+<td><p>Extended OVT input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the extended OVT switch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG27</strong></p></td>
-<td><p>안전가드입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 일반안전가드 교체</p></td>
+<td><p>Safety guard input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the safety guard</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG28</strong></p></td>
-<td><p>안전가드입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 일반안전가드 교체</p></td>
+<td><p>Safety guard input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the safety guard</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG29</strong></p></td>
-<td><p>자동모드 안전가드1 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드1 안전가드 교체</p></td>
+<td><p>Auto mode safety guard 1 input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the auto mode 1 safety guard</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG30</strong></p></td>
-<td><p>자동모드 안전가드1 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드1 안전가드 교체</p></td>
+<td><p>Auto mode safety guard 1 input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the auto mode 1 safety guard</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG31</strong></p></td>
-<td><p>자동모드 안전가드2 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드2 안전가드 교체</p></td>
+<td><p>Auto mode safety guard 2 input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the auto mode 2 safety guard</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG32</strong></p></td>
-<td><p>자동모드 안전가드2 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드2 안전가드 교체</p></td>
+<td><p>Auto mode safety guard 2 input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the auto mode 2 safety guard</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG33</strong></p></td>
-<td><p>외부 모터온 입력(접점type)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 모터온 접점 스위치 교체</p></td>
+<td><p>External motor on input (Contact type)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the external motor on contact switch.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG34</strong></p></td>
-<td><p>외부 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 비상정지 위치 교체</p></td>
+<td><p>External emergency stop input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Replace the external emergency stop switch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG35</strong></p></td>
-<td><p>외부 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 비상정지 스위치 교체</p></td>
+<td><p>External emergency stop input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Replace the external emergency stop switch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG36</strong></p></td>
-<td><p>서보 상태 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: BD640교체</p></td>
+<td><p>Servo state input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace BD640</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG37</strong></p></td>
-<td><p>안전모듈 상태 출력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632교체</p></td>
+<td><p>Safety module state output (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG38</strong></p></td>
-<td><p>서보 상태 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: BD640교체</p></td>
+<td><p>Servo state input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace BD640</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG39</strong></p></td>
-<td><p>안전모듈 상태 출력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632교체</p></td>
+<td><p>Safety module state output (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG40</strong></p></td>
-<td><p>OP 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OP 비상정지 위치 교체</p></td>
+<td><p>OP emergency stop input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>: Replace the OP emergency stop switch. </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG41</strong></p></td>
-<td><p>OP 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OP 비상정지 스위치 교체</p></td>
+<td><p>OP emergency stop input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the cable</p>
+<p>Action 2: Replace BD632</p>
+<p>: Replace the OP emergency stop switch. </p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG52</strong></p></td>
-<td><p>PLC 전원</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 퓨즈(F6) 점검</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
+<td><p>PLC power</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the fuse (F6)</p>
+<p>Action 2: Inspect the cable</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace the connected board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG53</strong></p></td>
-<td><p>비상정지(npn type) 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
+<td><p>Emergency stop (npn type) input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect LEDG52 (when abnormal, take action for LEDG52)</p>
+<p>Action 2: Inspect the cable</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace the connected board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG54</strong></p></td>
-<td><p>비상정지(npn type) 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
+<td><p>Emergency stop (npn type) input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect LEDG52 (when abnormal, take action for LEDG52)</p>
+<p>Action 2: Inspect the cable</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace the connected board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG55</strong></p></td>
-<td><p>자동모드 안전가드(npn type) 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
+<td><p>Safety guard (npn type) input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect LEDG52 (when abnormal, take action for LEDG52)</p>
+<p>Action 2: Inspect the cable</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace the connected board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG56</strong></p></td>
-<td><p>자동모드 안전가드(npn type) 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
+<td><p>Safety guard (npn type) input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When not inputted: Turned on</p>
+<p>When not inputted: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect LEDG52 (when abnormal, take action for LEDG52)</p>
+<p>Action 2: Inspect the cable</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace the connected board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG57</strong></p></td>
-<td><p>24V 전원입력</p></td>
-<td><p>녹색</p></td>
-<td><p>녹색 점등</p></td>
-<td><p>현상: 소등</p>
-<p>조치1: 24V전원 케이블 및 전압 점검(CNSMPS1커넥터 연결 전원)</p>
-<p>조치2: 퓨즈점검(F1)</p>
-<p>조치3: BD632교체</p></td>
+<td><p>24 V power input</p></td>
+<td><p>Green</p></td>
+<td><p>Green Turned on</p></td>
+<td><p>Phenomenon Turned off</p>
+<p>Action 1: Inspect the 24 V power cable and voltage (power for connecting the CNSMPS1 connector)</p>
+<p>Action 2: Inspect the fuse (F1)</p>
+<p>Action 3: Replace BD632</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG58</strong></p></td>
-<td><p>이더캣 MJ1커넥터 ACT LED</p></td>
-<td><p>녹색</p></td>
-<td><p>이더캣 케이블 연결시: 점등</p>
-<p>이더캣 케이블 미연결시: 소등</p>
-<p>이더캣 통신시: 블링크</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ1 connector ACT LED</p></td>
+<td><p>Green</p></td>
+<td><p>When EterCAT cable connected: Turned on</p>
+<p>When EterCAT cable not connected: Turned off</p>
+<p>During EtherCAT communication: Blinking</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG59</strong></p></td>
-<td><p>이더캣 MJ2커넥터 ACT LED</p></td>
-<td><p>녹색</p></td>
-<td><p>이더캣 케이블 연결시: 점등</p>
-<p>이더캣 케이블 미연결시: 소등</p>
-<p>이더캣 통신시: 블링크</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ2 connector ACT LED</p></td>
+<td><p>Green</p></td>
+<td><p>When EterCAT cable connected: Turned on</p>
+<p>When EterCAT cable not connected: Turned off</p>
+<p>During EtherCAT communication: Blinking</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG60</strong></p></td>
-<td><p>이더캣 상태 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>통신연결시: 블링크</p>
-<p>통신미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT state LED</p></td>
+<td><p>Green</p></td>
+<td><p>When communication connected: Blinking</p>
+<p>When communication not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG61</strong></p></td>
-<td><p>이더캣 RUN LED</p></td>
-<td><p>녹색</p></td>
-<td><p>통신연결시: 블링크</p>
-<p>통신미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT RUN LED</p></td>
+<td><p>Green</p></td>
+<td><p>When communication connected: Blinking</p>
+<p>When communication not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG62</strong></p></td>
-<td><p>안전체인 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
+<td><p>Safety chain input (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG63</strong></p></td>
-<td><p>안전체인 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
+<td><p>Safety chain input (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG64</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 스피드 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ2 connector speed LED</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG65</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 스피드 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ1 connector speed LED</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG68</strong></p></td>
-<td><p>안전체인출력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
+<td><p>Safety chain output (Chain 1)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG69</strong></p></td>
-<td><p>안전체인출력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
+<td><p>Safety chain output (Chain 2)</p></td>
+<td><p>Green</p></td>
+<td><p>When inputted: Turned off</p>
+<p>When not inputted: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG70</strong></p></td>
 <td><p>ACFLT</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 or 전장품 교체</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board or electrical equipment</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG71</strong></p></td>
 <td><p>EXMON_C2</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 or 전장품 교체</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Replace the connected board or electrical equipment</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG72</strong></p></td>
-<td><p>마그네트 컨택트 ON/OFF신호 (채널1)</p></td>
-<td><p>녹색</p></td>
-<td><p>ON신호시: 소등</p>
-<p>OFF신호시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-BD640)</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 펌웨어 확인</p></td>
+<td><p>Magnet contact ON/OFF signal (Channel 1)
+</p></td>
+<td><p>Green</p></td>
+<td><p>When ON signal: Turned off</p>
+<p>When OFF signal: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable(BD632-BD640)</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Check the firmware</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG73</strong></p></td>
-<td><p>마그네트 상태 Feedback(채널1)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC CLOSE: 소등</p>
-<p>MC OPEN: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-H6PSM-MC)</p>
-<p>조치2: MC교체</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 펌웨어 확인</p></td>
+<td><p>Magnet status Feedback(Channel 1)</p></td>
+<td><p>Green</p></td>
+<td><p>MC CLOSE: Turned off</p>
+<p>MC OPEN: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable(BD632-H6PSM-MC)</p>
+<p>Action 2: Replace MC</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Check the firmware</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LEDG74</strong></p></td>
-<td><p>마그네트 컨택트 ON/OFF신호 (채널2)</p></td>
-<td><p>녹색</p></td>
-<td><p>ON신호시: 소등</p>
-<p>OFF신호시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-BD640)</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 펌웨어 확인</p></td>
+<td><p>Magnet contact ON/OFF signal (Channel 2)
+</p></td>
+<td><p>Green</p></td>
+<td><p>When ON signal: Turned off</p>
+<p>When OFF signal: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable(BD632-BD640)</p>
+<p>Action 2: Replace BD632</p>
+<p>Action 3: Check the firmware</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LEDG75</strong></p></td>
-<td><p>마그네트 상태 Feedback(채널2)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC CLOSE: 소등</p>
-<p>MC OPEN: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-H6PSM-MC)</p>
-<p>조치2: MC교체</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 펌웨어 확인</p></td>
+<td><p>Magnet status Feedback(Channel 2)</p></td>
+<td><p>Green</p></td>
+<td><p>MC CLOSE: Turned off</p>
+<p>MC OPEN: Turned on</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the connected cable(BD632-H6PSM-MC)</p>
+<p>Action 2: Replace MC</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Check the firmware</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MJ1 G</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 링크 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 블링크</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ1 connector link LED</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Blinking</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MJ1 Y</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 ACT LED</p></td>
-<td><p>노랑색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ1 connector ACT LED</p></td>
+<td><p>Yellow</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MJ2 G</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 링크 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 블링크</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ2 connector link LED</p></td>
+<td><p>Green</p></td>
+<td><p>When connected: Blinking</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MJ2 Y</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 ACT LED</p></td>
-<td><p>노랑색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
+<td><p>EtherCAT MJ2 connector ACT LED</p></td>
+<td><p>Yellow</p></td>
+<td><p>When connected: Turned on</p>
+<p>When not connected: Turned off</p></td>
+<td><p>Phenomenon States other than normal state</p>
+<p>Action 1: Inspect the EtherCAT cable</p>
+<p>Action 2: Check the firmware</p>
+<p>Action 3: Replace BD632</p>
+<p>Action 4: Replace BD640 or H6COM-T</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SEG1</strong></p></td>
-<td><p>안전모듈 상태 LED(체인1)</p></td>
+<td><p>Safety module state LED (Chain 1)</p></td>
 <td><p>7-seg</p></td>
-<td><p>정상시: 숫자 표기 및 점이 블링크</p></td>
-<td><p>현상: 소등 또는 점이 블링크가 되지 않고 멈춰 있음.</p>
-<p>조치1: BD632교체</p></td>
+<td><p>When normal: A number will be displayed, and the dot will blink.</p></td>
+<td><p>Phenomenon Turned off, or the dot stops blinking</p>
+<p>Action 1: Replace BD632</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SEG2</strong></p></td>
-<td><p>안전모듈 상태 LED(체인2)</p></td>
+<td><p>Safety module state LED (Chain 2)</p></td>
 <td><p>7-seg</p></td>
-<td><p>정상시: 숫자 표기 및 점이 블링크</p></td>
-<td><p>현상: 소등 또는 점이 블링크가 되지 않고 멈춰 있음.</p>
-<p>조치1: BD632교체</p></td>
+<td><p>When normal: A number will be displayed, and the dot will blink.</p></td>
+<td><p>Phenomenon Turned off, or the dot stops blinking</p>
+<p>Action 1: Replace BD632</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.2.4. 설정장치
+# 4.3.2.4. Setting Devices
 
 ![](../../../_assets/그림_4.31_BD632(Safety_IO_Board)의_설정장치_설명.png  )
 
-그림 4.11 BD632(Safety IO Board)의 설정장치 설명
+Figure 4.11 Description of the Setting Devices of the BD632 (Safety IO Board)
 
 {% hint style="warning" %}
-안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
+When a safety-related input is connected and activated, you must check whether the function is operating normally by referring to “1.11 Safety Measures When Operating the Robot.”
 {% endhint %}
 
-표 4-9 BD632(Safety IO Module)의 SW1, SW2, SW3, SW4, SW7 설정장치 설명
+
+Table 4-9 Description of the SW1, SW2, SW3, SW4 and SW7 setting devices of BD632 (Safety IO Module)
 
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">스위치</th>
+    <th colspan="2">Switch</th>
     <th rowspan="2">SW1</th>
     <th rowspan="2">SW2</th>
     <th rowspan="2">SW3</th>
@@ -2927,283 +2888,294 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
     <th rowspan="2">SW7</th>
   </tr>
   <tr>
-    <th colspan="2">번호</th>
+    <th colspan="2">number</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td colspan="2">용도</td>
-    <td>OP(Operational Panel) 설치 여부 설정 (체인1)</td>
-    <td>OP(Operational Panel) 설치 여부 설정 (체인2)</td>
-    <td>OVT6,LS, OVT7(부가축), OVT8(확장축) 설치 여부 설정(체인1)</td>
-    <td>OVT6, LS, OVT7(부가축), OVT8(확장축) 설치 여부 설정(체인2)</td>
-    <td>PLC ES, SG 설치 여부 설정<br>(체인1, 체인2)</td>
+    <td colspan="2">Usage</td>
+    <td>Sets whether to install the Operation Panel (OP) (Chain 1)</td>
+    <td>Sets whether to install the Operation Panel (OP) (Chain 2)</td>
+    <td>Sets whether to install OVT6, LS, OVT7 (additional axis), and OVT8 (extended axis) (Chain 1)</td>
+    <td>Sets whether to install OVT6, LS, OVT7 (additional axis), and OVT8 (extended axis) (Chain 2)</td>
+    <td>Sets whether to install the PLC ES, SG(Chain 1, Chain 2)
+</td>
   </tr>
   <tr>
-    <td rowspan="2">설정</td>
+    <td rowspan="2">Contents of setting</td>
     <td>OFF</td>
-    <td>미설치</td>
-    <td>미설치</td>
-    <td>1: OVT6 설치<br>2: LS 설치<br>3: OVT7 설치<br>4: OVT8 설치</td>
-    <td>1: OVT6 설치<br>2: LS 설치<br>3: OVT7 설치<br>4: OVT8 설치</td>
-    <td>1: ES설치(체인1)<br>2: SG설치(체인1)<br>3: ES설치(체인2)<br>4: SG설치(체인2)</td>
+    <td>Non-installation</td>
+    <td>Non-installation</td>
+    <td>1: Installation of OVT6</br>2: Installation of LS<br>3: Installation of OVT7</br>4: Installation of OVT8
+</td>
+    <td>1: Installation of OVT6</br>2: Installation of LS</br>3: Installation of OVT7</br>4: Installation of OVT8</br>
+</td>
+    <td>1: Installation of ES(Chain 1)</br>2: Installation of SG(Chain 1)</br>3: Installation of ES(Chain 2)</br>4: Installation of SG(Chain 2)</br>
+</td>
   </tr>
   <tr>
     <td>ON</td>
-    <td>설치</td>
-    <td>설치</td>
-    <td>1: OVT6 미설치<br>2: LS 미설치<br>3: OVT7 미설치<br>4: OVT8 미설치</td>
-    <td>1: OVT6 미설치<br>2: LS 미설치<br>3: OVT7 미설치<br>4: OVT8 미설치</td>
-    <td>1: ES미설치(체인1)<br>2: SG미설치(체인1)<br>3: ES미설치(체인2)<br>4: SG미설치(체인2)</td>
+    <td>Installation</td>
+    <td>Installation</td>
+    <td>1: No installation of OVT6</br>2: No installation of LS</br>3: No installation of OVT7</br>4: No installation of OVT8</br>
+</td>
+    <td>1: No installation of OVT6</br>2: No installation of LS</br>3: No installation of OVT7</br>4: No installation of OVT8</br>
+</td>
+    <td>1: No installation of ES(Chain 1)</br>2: No installation of SG(Chain 1)</br>3: No installation of ES(Chain 2)</br>4: No installation of SG(Chain 2)</br>
+</td>
   </tr>
   <tr>
-    <td colspan="2">출고시</td>
-    <td>미설치(OFF)</td>
-    <td>미설치(OFF)</td>
-    <td>1: OFF<br>2: OFF<br>3: On(부가축OVT연결시 OFF)<br>4: On(확장축OVT연결시 OFF)</td>
-    <td>1: OFF<br>2: OFF<br>3: On(부가축OVT연결시 OFF)<br>4: On(확장축OVT연결시 OFF)</td>
-    <td>1: ES미설치(체인1)<br>2: SG미설치(체인1)<br>3: ES미설치(체인2)<br>4: SG미설치(체인2)</td>
+    <td colspan="2">Setting when shipped from the factory</td>
+    <td>Non-installation (OFF)</td>
+    <td>Non-installation (OFF)</td>
+    <td>1: OFF</br>2: OFF</br>3: On (OFF when an additional axis OVT is connected)</br>4: On (OFF when an extended axis OVT is connected)</br>
+</td>
+    <td>1: OFF</br>2: OFF</br>3: On (OFF when an additional axis OVT is connected)</br>4: On (OFF when an extended axis OVT is connected)</br>
+</td>
+    <td>1: No installation of ES(Chain 1)</br>2: No installation of SG(Chain 1)</br>3: No installation of ES(Chain 2)</br>4: No installation of SG(Chain 2)</br>
+</td>
   </tr>
 </tbody>
 </table>
-# 4.3.2.5. 비상정지의 연결
+# 4.3.2.5. Connections of the Emergency Stop
 
-(1\)    접점입력 외부비상정지 
+(1\)  External Emergency Stop of Contact Input Type 
 
-외부비상정지(EMEX)는 제어기의 모드(자동, 수동)에 무관하게 작동되도록 설계 되어 있으며, BD632(Safety IO Board)에 의해 지속적으로 모니터링됩니다. 안전 입력이 들어오면, 모터 파워를 제거하여 로봇을 안전한
-상태로 만듭니다. 
-외부 비상 정지 스위치의 연결은 아래 그림과 같이 접점출력의 형태로 사용하여야 합니다.
+The external emergency stop (EMEX) is designed in a way that it can be operated regardless of the controller mode (automatic or manual) and is continuously monitored by the BD632 (Safety IO Board). When a safety input is coming in, the motor power will be shut off to put the robot in a safe state. The external emergency stop switch should be connected and used in the form of contact output, as shown in the figure below.
 
 ![](../../../_assets/그림_4.32_터미널블록_TBEM에_외부비상정지_스위치를_연결하는_방법.png  )
 
-그림 4.12 터미널블록 TBEM에 외부비상정지 스위치를 연결하는 방법
+Figure 4.12 Method to Connect the External Emergency Stop Switch to the Terminal Block TBEM
 
-외부 비상정지를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(TBEM 커넥터의 9-1, 10-2번 핀 연결)들을 연결하여 입력을 무효화시킵니다.
+If the external emergency stop is not to be used, connect the terminals of the terminal block TBEM (connect the pins 9-1 and 10-2 of the TBEM connector), as shown below, to disable the input.
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.13 접점입력 외부비상정지를 사용하지 않을 경우 조치방법
+Figure 4.13 Method to Perform When Not Using the External Emergency Stop of Contact Input Type
 
 {% hint style="warning" %}
-외부 비상정지를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
+If an external emergency stop is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. In addition, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
+# 4.3.2.6. Connection of the Safety Guard 
 
-# 4.3.2.6. 안전가드의 연결
+(1\) General Safety Guard
 
-(1\)    일반안전가드
+The general safety guard operates regardless of the controller's mode (automatic or manual). In other words, when a person enters inside the installed safety guard or when the guard is broken, the controller will immediately shut off the motor power. The safety guard that can be used should be in the form of contact output. In the terminal block TBEM, terminals are configured in a way that they connect the contact outputs of the safety guard to the dual safety chain, as shown in the figure below.
 
-일반 안전가드는 제어기의 모드(자동, 수동)에 무관하게 작동하는 안전가드입니다. 즉 설치된 안전가드 내부로 사람이 진입하거나 가드가 끊어진 경우 제어기는 즉각적으로 모터파워를 제거합니다. 사용될 수 있는 안전가드는 접점출력의 형태가 되어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
+
 
 ![](../../../_assets/그림_4.34_터미널블록_TBRMT에_일반_안전가드를_연결하는_방법.png  )
 
-그림 4.14 터미널블록 TBRMT에 일반 안전가드를 연결하는 방법
+Figure 4.14 Method to Connect a General Safety Guard to the Terminal Block TBRMT
 
-일반 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(15-7, 16-8번 핀)들을 연결하여 입력을 무효화시킵니다.
+If the general safety guard is not to be used, connect the terminals (pins 15-7 and 16-8) of the terminal block TBEM, as shown below, to disable the input.
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.15 일반 안전가드를 사용하지 않을 경우 조치방법
+Figure 4.15 Method to Perform When Not Using a General Safety Guard
 
 {% hint style="warning" %}
-일반 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
+If a general safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop operates normally. In addition, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 
-\(2\)    접점입력 자동안전가드
 
-자동 안전가드는 제어기가 자동모드에 있을 경우에만 작동하는 안전가드로서 아래와 같이 2개의 입력을 제공합니다. 일반 안전가드와 마찬가지로 접점출력의 형태이어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
+\(2\) Automatic Safety Guard of Contact Input Type 
+
+The automatic safety guard operates only when the controller is in the automatic mode and provides two inputs, as shown below. Like a general safety guard, the automatic safety guard should be in the form of contact output. In the terminal block TBEM, terminals are configured in a way that they connect the contact outputs of the safety guard to the dual safety chain, as shown in the figure below.
 
 ![](../../../_assets/그림_4.36_터미널블록_TBEM에_접점입력_자동_안전가드를_연결하는_방법.png  )
 
-그림 4.16 터미널블록 TBEM에 접점입력 자동 안전가드를 연결하는 방법
+Figure 4.16 Method to Connect an Automatic Safety Guard of Contact Input Type to the Terminal Block TBEM
 
-자동 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(11-3, 12-4, 13-5, 14-6)들을 연결하여 입력을 무효화시킵니다.
+If the automatic safety guard is not to be used, connect the terminals of the terminal block TBEM((pins 11-3, 12-4, 13-5 and 14-6), as shown below, to disable the input.
 
 ![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
 
-그림 4.17 접점입력 자동 안전가드를 사용하지 않을 경우 조치방법
+Figure 4.17 Method to Perform When Not Using an Automatic Safety Guard of Contact Input Type
 
 {% hint style="warning" %}
-자동 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
+If an automatic safety guard is to be installed and used, the robot should be operated after confirming that the emergency stop works normally. In addition, check if the emergency stop input is disabled. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 
-# 4.3.2.7. Safety PLC, IO의 연결
+# 4.3.2.7. Connection of the Safety PLC/IO
 
-Safety PLC 또는 IO와 로봇제어기와는 다음과 같은 방법으로 비상입력신호와 모니터링 출력 신호들을 연결합니다.
+The emergency input signal and monitoring output signal between the safety PLC or IO, and the robot controller should be connected in the following way.
 
 ![](../../../_assets/그림_4.38_Safety_PLC,IO의_연결방법.png  )
 
-그림 4.18 Safety PLC/IO의 연결방법
+Figure 4.18 Method to Connect the Safety PLC/IO
 
-\(1\) P-COM 입력 안전입력
+\(1\) P-COM Input and Safety Input 
 
-안전 PLC의 안전입력(ES, SG)은 터미널블럭 TBEM에서 PNP출력을 제어기가 입력 받을 수 있도록 설계되었습니다. 그런 이유로 반드시 PLC의 전원(DC24V)전원을 연결 후 사용 해야 합니다.
+The safety inputs (ES, SG) of the safety PLC are designed in a way that the controller can receive the PNP output, as an input, from the terminal block TBEM. Considering this, you must connect the power (DC24V) of the PLC before using the safety inputs.
 
 {% hint style="warning" %}
-안전 입력을 설치하여 사용할 경우에는 정상적으로 기능이 작동하는지 확인 후 로봇을 가동시켜야 합니다. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
+If a safety input is to be installed and used, the robot should be operated after confirming that the function works normally. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 
 
-\(2\) 비상정지출력
+\(2\) Emergency Stop Output
 
-제어기 내부에 설치된 비상정지스위치(조작패널, 티치펜던트 등)의 상태를 외부장치에서 사용하고자 할 때에는 PNP출력을 제어기가 ON/OFF하여 사용할 수 있도록 설계 되었습니다.
+Emergency stop output is designed in a way that allows the controller to use the PNP output by turning it on or off when it is necessary for an external device to use the status of the emergency stop switch (on the operation panel, teach pendant, etc.) installed inside the controller.
 
 {% hint style="warning" %}
-비상정지 출력을 설치하여 사용할 경우에는 비상정지 출력이 정상적으로 작동되는지 확인 후 로봇을 작동하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
+If an emergency stop output is to be installed and used, the robot should be operated after confirming that the emergency stop output operates normally. This is an essential measure that must be taken in advance for the safety of workers.
 {% endhint %}
 
-# 4.3.2.8. 외부 모터온 신호의 연결
+# 4.3.2.8. Connection of the External Motor On Signal
 
 ![](../../../_assets/그림_4.39_외부_모터온_신호의_연결방법.png  )
 
-그림 4.19 외부 모터온 신호의 연결방법
+Figure 4.19 Method for Connection of the External Motor On Signal
 
-제어기 외부에서 모터온 신호 입력을 사용할 경우 위의 접점의 형태로 연결하여 사용해야 합니다. 연결하지 않을 경우 점퍼선으로 연결을 해주시기 바랍니다.(N.C접점)
-# 4.3.3. 서보보드(BD640)
-# 4.3.3.1. 개요
+When using a motor on signal input from the outside of the controller, the relevant connection should be configured in the form of a contact as above. If you don't connect, please connect it with a jumper wire. (N.C Contact type)
+# 4.3.3. Servo Board (BD640)
+# 4.3.3.1. Overview
 
-메인으로부터 이더켓 통신을 통하여 받은 위치 지령에 의하여 6축(최대8축)분 모터에 대한 동작제어를 수행하며, 엔코더 신호처리, 에러상황점검 및 구동장치(Drive Unit)의 PWM신호를 만듭니다.
+The servo board controls the operation of six axes (maximum eight axes) according to the position command received from the main board through EtherCAT communication, and processes the encoder signal, checks the error status, and creates the PWM signal of the drive unit.
 
 ![](../../../_assets/4.3.3.1._개요(Hi6).png  )
-# 4.3.3.2. 커넥터
+# 4.3.3.2. Connectors
 
-표 4-10 서보보드(BD640) 커넥터 종류 및 용도
+Table 4-10 Types and Usage of the Connectors of the Servo Board (BD640)
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNEC1,4</strong></p></td>
-<td><p>엔코더 신호 접속</p></td>
+<td><p>Connection of the encoder signal</p></td>
 <td><p>CNR4</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNEC7,8</strong></p></td>
-<td><p>부가축 엔코더 신호 접속</p></td>
+<td><p>Connection of encoder signal of the additional axis</p></td>
 <td><p>CNR7,CNR8</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNBS1,2,3</strong></p></td>
-<td><p>구동장치(Drive Unit)신호 접속</p></td>
-<td><p>구동장치의 CNBS1,2,3</p></td>
+<td><p>Connection of the drive unit signal</p></td>
+<td><p>CNBS1, CNBS2, and CNBS 3 of the drive unit</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNJTAG1</strong></p></td>
-<td><p>FPGA JTAG 에뮬레이터Port</p></td>
-<td><p>JTAG 에뮬레이터</p></td>
+<td><p>FPGA JTAG emulator port</p></td>
+<td><p>JTAG emulator</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>JP1</strong></p></td>
 <td><p>FPGA BOOT MODE</p></td>
-<td><p>FPGA 플래쉬 및 JTAG 부팅모드</p></td>
+<td><p>FPGA flash and JTAG boot mode</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VR1</strong></p></td>
-<td><p>엔코더 입력 전원 조절 장치</p></td>
+<td><p>Encoder input power regulator</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPNB1</strong></p></td>
-<td><p>브레이크 전원 입력</p></td>
-<td><p>브레이크 케이블</p></td>
+<td><p>Brake power input</p></td>
+<td><p>Brake cable</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNB1</strong></p></td>
-<td><p>메인축 브레이크 전원</p></td>
-<td><p>1~6축 브레이크 케이블</p></td>
+<td><p>Brake power of the main axis</p></td>
+<td><p>Brake cables for axis 1 to axis 6</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNB7,8</strong></p></td>
-<td><p>부가축 브레이크 전원</p></td>
-<td><p>7,8축 브레이크 케이블</p></td>
+<td><p>Brake power of the additional axis</p></td>
+<td><p>Brake cables for axis 7 and axis 8</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPRC1</strong></p></td>
-<td><p>MC 릴레이 접점</p></td>
+<td><p>MC relay contact</p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p><strong>CN24VB1</strong></p></td>
-<td><p>BD640 메인 전원</p></td>
+<td><p>BD640 main power</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNSV1</strong></p></td>
-<td><p>BD632 DIO 접점 인터페이스</p></td>
+<td><p>BD630 DIO contact interface</p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p><strong>DS1</strong></p></td>
-<td><p>DSP 부팅모드</p></td>
+<td><p>DSP boot mode</p></td>
 <td><p>-</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.3.3. 표시장치
+# 4.3.3.3. Display Devices
 
-표 4-11 서보보드(BD640) LED
+ Table 4-11 LEDs of the Servo Board (BD640)
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>상태</strong></p>
-<p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>정상시</strong></p></td>
-<td><p><strong>이상시</strong></p></td>
-<td><p><strong>비    고</strong></p></td>
+<td><p><strong>Status</strong></p>
+<p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>When normal</strong></p></td>
+<td><p><strong>When abnormal</strong></p></td>
+<td><p><strong>Remarks</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AL1</strong></p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>점등</p></td>
-<td><p>전체 축의 PWM 제어 신호가 OFF됨</p></td>
+<td><p>Red</p></td>
+<td><p>Turned off</p></td>
+<td><p>Turned on</p></td>
+<td><p>The PWM control signals for all axes will be turned off.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SON1~8</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>모터ON시 점등</p></td>
-<td><p>모터OFF시 소등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the motor is on</p></td>
+<td><p>Will be turned off when the motor is off</p></td>
 <td><p>-</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.3.4. 설정장치
+# 4.3.3.4. Setting Devices 
 
 {% hint style="info" %}
-DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 임의로 변경하면 안됩니다.
+The DIP switch is set to OFF mode when shipped from the factory, and the setting should not be changed arbitrarily by the user.
 {% endhint %}
 
-표 4-12 서보보드(BD640) DIP스위치(DS1) 설정방법
+
+Table 4-12 Method to Set the DIP Switch (DS1) of the Servo Board (BD640) 
 
 <table>
 <thead>
   <tr>
-    <th>스위치 번호</th>
+    <th>Switch number</th>
     <th>1</th>
     <th>2</th>
-    <th>모드</th>
+    <th>Mode</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>출고 시 설정</td>
+    <td>Setting when shipped from the factory</td>
     <td>OFF</td>
     <td>OFF</td>
     <td>GET MODE</td>
   </tr>
   <tr>
-    <td>테스트 시</td>
+    <td>When testing</td>
     <td>ON</td>
     <td>OFF</td>
     <td>WAIT MODE</td>
   </tr>
   <tr>
-    <td>스위치 외형</td>
+    <td>Switch exterior</td>
     <td colspan="3"></td>
   </tr>
 </tbody>
@@ -3212,16 +3184,16 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 ![](../../../_assets/표4-11_스위치외형.png)</br></br>
 
 {% hint style="info" %}
-다음은 사용자가 임의로 변경할 수 없으며, FPGA JTAG을 통한 재프로그래밍이 필요한 경우에만 참고하세요.
+The user cannot change the following items arbitrarily and needs to refer to them only when required to reprogram through FPGA JTAG.
 {% endhint %}
 
 
-표 4-13 서보보드(BD640) 점퍼 (JP1) 설명
+Table 4-13 Description of the Jumper (JP1) of the Servo Board (BD640) 
 
 <table>
 <thead>
   <tr>
-    <th colspan="2" rowspan="2">명칭<br>설정내용</th>
+    <th colspan="2" rowspan="2">Name<br>Contents of the setting</th>
     <th colspan="4">JP1</th>
   </tr>
   <tr>
@@ -3233,133 +3205,134 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">점퍼 셋팅</td>
-    <td>QSPI (플래쉬) 부팅 모드</td>
+    <td rowspan="2">Setting of the jumper</td>
+    <td>QSPI (flash) boot mode</td>
     <td>⊙</td>
     <td>⊙</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>JTAG 프로그래밍 모드</td>
+    <td>JTAG programming mode</td>
     <td></td>
     <td>⊙</td>
     <td>⊙</td>
     <td></td>
   </tr>
   <tr>
-    <td>출고 시 설정</td>
+    <td>Setting when shipped from the factory</td>
     <td colspan="5">1, 2 : short / 3 : open</td>
   </tr>
 </tbody>
 </table>
-# 4.3.4. 드라이브모듈 (Drive Module)
-# 4.3.4.1. H6D6X (중형 6축 일체형 드라이브모듈)
+# 4.3.4. Drive Module
+# 4.3.4.1. H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
-드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
+The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
-전원공급모듈로부터 입력되는 3상 전류를 다이오드모듈로 정류 후 직류로 변화하여 평활용 커패시터에 저장합니다. 로봇의 감속 시에 모터로부터 발생하는 전력은 IGBT와 저항을 통하여 소비하며, 다음과 같이 구성되어 있습니다
+The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows. 
 
-표 4-14 H6D6X(중형 6축 일체형 드라이브모듈)의 구성
+Table 4-14 Configuration of H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="6">BD651<br>(Power Board)</td>
-    <td>게이트 드라이브 회로</td>
-    <td>IPM 게이트 신호 생성</td>
+    <td>Gate drive circuit</td>
+    <td>Generates the IPM gate signal</td>
   </tr>
   <tr>
-    <td>게이트 전원 모듈</td>
-    <td>게이트 전원 전달</td>
+    <td>Gate power module</td>
+    <td>Transmit the gate power</td>
   </tr>
   <tr>
-    <td>전류 검출부</td>
-    <td>모터에 흐르는 전류를 검출</td>
+    <td>Current detection part</td>
+    <td>Detects the current that flows through the motor</td>
   </tr>
   <tr>
-    <td>회생 제어</td>
-    <td>PN전압의 상승 시 IGBT 구동</td>
+    <td>Regenerative control</td>
+    <td>Drives the IGBT when the PN voltage rises</td>
   </tr>
   <tr>
-    <td>에러검출부</td>
-    <td>PN 과전압, 회생방전 저항 과열, PN 저전압 에러 검지</td>
+    <td>Error detection part</td>
+    <td>Detects the PN overvoltage, regenerative discharge resistor overheating, and PN undervoltage errors</td>
   </tr>
   <tr>
-    <td>고전압 커패시터</td>
-    <td>직류 전원 평활</td>
+    <td>High voltage capacitor</td>
+    <td>Smooths the direct current</td>
   </tr>
   <tr>
-    <td rowspan="2">BD652<br>(Interface Board)</td>
-    <td>시퀀스 연동부</td>
-    <td>시퀀스 상태와 서보 온 신호 연동</td>
+    <td rowspan="2">BD652<br>(Iterface Board)</td>
+    <td>Sequence interlocking part</td>
+    <td>Interlocks between the sequence status and the servo on signal</td>
   </tr>
   <tr>
-    <td>전용 IO 터미널블록</td>
-    <td>제어기 내부의 예비 IO 포트</td>
+    <td>Dedicated IO Terminal Blocks</td>
+    <td>Reserved IO port inside the controller</td>
   </tr>
   <tr>
-    <td rowspan="4">기타부품</td>
-    <td>방열판(Heat Sink)</td>
-    <td>전력소자로부터 발생하는 열을 외부로 방출</td>
+    <td rowspan="4">Other parts</td>
+    <td>Heat sink</td>
+    <td>Releases the heat generated from power elements to the outside</td>
   </tr>
   <tr>
-    <td>정류부</td>
-    <td>교류입력 전원을 정류하여 모터 구동용 직류 전원 생성</td>
+    <td>Rectification part</td>
+    <td>Rectify the AC input power to generate DC power for driving the motor</td>
   </tr>
   <tr>
-    <td>회생 IGBT</td>
-    <td>회생방전 수행</td>
+    <td>Regenerative IGBT</td>
+    <td>Performs regenerative discharge</td>
   </tr>
   <tr>
     <td>IPM</td>
-    <td>3상 모터 구동용 전력 변환</td>
+    <td>Convert the power for driving a three-phase motor</td>
   </tr>
 </tbody>
 </table>
 
-■  **중형 6축 일체형 드라이브모듈 형번 구성**
+■  **Configuration of the Type Number of the Medium-Sized 6 Axes Integrated Drive Module**
 
 ![](../../../_assets/중형_6축_일체형_드라이브모듈_형번_구성.png  )
 
-표 4-15 중형 6축 일체형 드라이브모듈의 형식기호
+Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module 
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>구분</strong></p></td>
-<td><p><strong>형식기호</strong></p></td>
+<td><p><strong>Category</strong></p></td>
+<td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 중형 6축 드라이브모듈</strong></p></td>
+<td><p><strong>Hi6 Medium-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6X</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-16 중형 6축 일체형 드라이브모듈의 사양
+Table 4-16 Specification of the Medium-Sized 6 Axes Integrated Drive Module
 
 <table>
 <thead>
   <tr>
-    <th>구성</th>
-    <th colspan="2">분류</th>
-    <th colspan="2">적용</th>
+    <th>Configuration</th>
+    <th colspan="2">Classification</th>
+    <th colspan="2">Application </th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">IPM용량</td>
+    <td rowspan="2">IPM capacity</td>
     <td>3X</td>
     <td>3Y</td>
     <td>HS180, HS220, HH300, HH050</td>
-    <td rowspan="2">6축 일체형</td>
+    <td rowspan="2">6 axes integrated </td>
   </tr>
   <tr>
     <td>4X</td>
@@ -3367,68 +3340,66 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
     <td>HC2502B2D, HC2503B2D</td>
   </tr>
   <tr>
-    <td>년도</td>
+    <td>Year</td>
     <td colspan="2">00 ~ 99</td>
-    <td colspan="2">생산년도: 2000년 ~ 2099년</td>
+    <td colspan="2">Production year: 2000~2099</td>
   </tr>
   <tr>
-    <td>월</td>
+    <td>Month</td>
     <td colspan="2">01 ~ 12</td>
-    <td colspan="2">생산월: 1월 ~ 12월</td>
+    <td colspan="2">Production month: January~December</td>
   </tr>
   <tr>
-    <td>일련번호</td>
+    <td>Serial No.</td>
     <td colspan="2">001 ~ 999</td>
-    <td colspan="2">월 생산대수: 1대 ~ 999대</td>
+    <td colspan="2">Number of units produced monthly: 1~999</td>
   </tr>
 </tbody>
 </table>
 
-표 4-17 중형 6축 드라이브모듈의 IPM 기호
+Table 4-17 Symbols of the IPM of the medium-sized 6 axes drive module 
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>IPM 기호</th>
-    <th>IPM 사양</th>
+    <th>IPM symbol</th>
+    <th>IPM Specification</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">중형 6축 드라이브 모듈
-</td>
+    <td rowspan="6">Drive module of the medium-sized 6 axes</td>
     <td>X</td>
-    <td>(IPM 전류정격) 100A</td>
+    <td>(IPM current rating) 100A</td>
   </tr>
   <tr>
     <td>Y</td>
-    <td>(IPM 전류정격) 75A</td>
-    <td rowspan="5">
+    <td>(IPM current rating) 75A</td>
   </tr>
-  <tr>
+   <tr>
     <td>Z</td>
-    <td>(IPM 전류정격) 50A</td>
+    <td>(IPM current rating) 50A</td>
   </tr>
 </tbody>
 </table>
 
-표 4-18 중형 6축 드라이브모듈의 홀센서(Hall Sensor) 기호
+Table 4-18 Symbols of the Hall Sensors of the medium-sized 6 axes drive module 
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>Hall Sensor기호(사양)</th>
-    <th>Full Scale 전류(Im)</th>
-    <th>IPM 사양 (정격 전류)</th>
+    <th>Hall sensor symbol (Specification)</th>
+    <th>Full-scalecurrent (Im)</th>
+    <th>IPM specification<br>(Rated current)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">중형 6축 드라이브 모듈
-</td>
-    <tr>
+    <td rowspan="6">Drive module of the medium-sized 6 axes</td>
+  </tr>
+  <tr>
     <td>1 (4V/50A)</td>
     <td>93.75Apeak</td>
     <td rowspan="5">PM100CG1APL065 202G (100A)<br>PM75CG1APL065 202G (75A)<br>PM50CG1APL065 202G (50A)</td>
@@ -3453,340 +3424,343 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </table>
 
 {% hint style="info" %}
-드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
+The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
+
 
 ![](../../../_assets/그림_4.39_BD651_부품_배치도.png  )
 
-그림 4.20 BD651 부품 배치도
+Figure 4.20 Parts Placement Diagram of BD651</br></br>
 
-표 4-19 BD651 커넥터 설명
+Table 4-19 Description of the Connectors of BD651
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>PWM신호, IPM에러 신호</p></td>
-<td><p>BD652 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals</p></td>
+<td><p>Board-to-board connectors of the BD652</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNRST</strong></p></td>
-<td><p>3상 전원 입력</p></td>
-<td><p>전장 모듈 CNRST</p></td>
+<td><p>3-phase power input</p></td>
+<td><p>CNRST for the electronic module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD652 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of the BD652</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNDR</strong></p></td>
-<td><p>회생방전 전력 출력</p></td>
-<td><p>회생방전 저항</p></td>
+<td><p>Regenerative discharge power output</p></td>
+<td><p>Regenerative discharge resistor</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNTR</strong></p></td>
-<td><p>회생방전 저항 과열 검지</p></td>
-<td><p>회생방전 저항 온도센서</p></td>
+<td><p>Regenerative discharge resistor overheating detection</p></td>
+<td><p>Regenerative discharge resistor temperature sensor</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNM1~3</strong></p></td>
-<td><p>1축~3축 모터 구동 출력</p></td>
+<td><p>Motor drive output for axis 1 to axis 3</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNM4~6</strong></p></td>
-<td><p>4축~6축 모터 구동 출력</p></td>
+<td><p>Motor drive output for axis 4 to axis 6</p></td>
 <td><p>CMC2</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPN7~8</strong></p></td>
-<td><p>부가축 드라이브모듈 직류전원</p></td>
-<td><p>선택사양 부가축 드라이브모듈 CNPN</p></td>
+<td><p>Direct current power for the drive module of the additional axis</p></td>
+<td><p>CNPN for the drive module for an optional additional axis.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNFG1</strong></p></td>
-<td><p>1축~3축 모터의 Frame Ground</p></td>
+<td><p>Frame ground for axis 1 to axis 3</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNFG2</strong></p></td>
-<td><p>4축~6축 모터의 Frame Ground</p></td>
+<td><p>Frame ground for axis 4 to axis 6</p></td>
 <td><p>CMC2</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-20 BD651 LED 설명
+Table 4-20 Description of LEDs of BD651
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태 표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status Display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC ON</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>컨버터부 제어전압 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control voltage of the converter part is normal</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DR</strong></p></td>
-<td><p>적색</p></td>
-<td><p>회생방전 동작 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on the regenerative discharge is operating</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PN</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN전압이 42V이상 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on when the PN voltage is higher than 42V</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RYON</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN방전 동작 시 소등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned off when the PN discharge is operating</p></td>
 </tr>
 </tbody>
 </table>
 
 ![](../../../_assets/그림_4.40_BD652_부품_배치도.png  )
 
-그림 4.21 BD652 부품 배치도
+Figure 4.21 Parts Placement Diagram of BD652
 
-표 4-21 BD652 커넥터 설명
+Table 4-21 Description of the Connectors of BD652
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
-<td><p>8축 PWM신호, IPM에러 신호<br>컨버터부 에러 신호</p></td>
-<td><p>BD640 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD640</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>축별 PWM신호, IPM에러 신호</p></td>
-<td><p>BD651 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for individual axes</p></td>
+<td><p>Board-to-board connectors of BD651</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM7~8</strong></p></td>
-<td><p>부가축 PWM신호, IPM에러 신호</p></td>
-<td><p>부가축 드라이브모듈(BD658 또는 BD659)의 CNPWM</p></td>
+<td><p>PWM signal and IPM error signal for the additional axis</p></td>
+<td><p>CNPWM of the drive module (BD658 or BD659) of the additional axis</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD651 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD651</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TBIO</strong></p></td>
-<td><p>예비 전용IO 터미널블록</p></td>
+<td><p>Reserved only for the IO terminal block</p></td>
 <td><p>Reserved</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-22 BD652 LED 설명
+Table 4-22 Description of the LEDs of BD652
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태 표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status Display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>제어전원 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control power is normal</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.4.2. H6D6A (소형 6축 일체형 드라이브모듈)
+# 4.3.4.2. H6D6A (Small-Sized 6 Axes Integrated Drive Module)
 
-드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
+The drive module performs a power amplification function that allows the current to flow to individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
-전원공급모듈로부터 입력되는 3상 전류를 다이오드 모듈로 정류하여 직류로 변화하여 평활용 커패시터에 저장합니다. 로봇의 감속 시에 모터로부터 발생하는 전력은 IGBT와 저항을 통하여 소비하며, 다음과 같이 구성되어 있습니다.
+The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows.
 
-표 4-23 H6D6A (소형 6축 일체형 드라이브모듈)의 구성
+
+Table 4-23 Configuration of H6D6A (Small-Sized 6 Axes Integrated Drive Module)
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Components</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="6">BD653<br>(Power Board)</td>
-    <td>게이트 드라이브 회로</td>
-    <td>IPM 게이트 신호 전달</td>
+    <td>Gate drive circuit</td>
+    <td>Generates the IPM gate signal</td>
   </tr>
   <tr>
-    <td>게이트 전원 모듈</td>
-    <td>IPM 게이트 전원 생성</td>
+    <td>Gate power module</td>
+    <td>Generates the gate power</td>
   </tr>
   <tr>
-    <td>전류 검출부</td>
-    <td>모터에 흐르는 전류를 검출</td>
+    <td>Current detection part</td>
+    <td>Detects the current that flows through the motor</td>
   </tr>
   <tr>
-    <td>회생 제어</td>
-    <td>PN전압의 상승 시 IGBT 구동</td>
+    <td>Regenerative control</td>
+    <td>Turn on the IGBT when the PN voltage rises</td>
   </tr>
   <tr>
-    <td>에러검출부</td>
-    <td>PN 과전압, 회생방전 저항 과열, PN 저전압 에러 검지</td>
+    <td>Error detection part</td>
+    <td>Detects the overvoltage, regenerative resistor overheating, and undervoltage errors</td>
   </tr>
   <tr>
-    <td>고전압 커패시터</td>
-    <td>직류 전원 평활</td>
+    <td>High voltage capacitor</td>
+    <td>Smooths the direct current</td>
   </tr>
   <tr>
-    <td rowspan="2">BD654<br>(Interface Board)</td>
-    <td>시퀀스 연동부</td>
-    <td>전용 IO 터미널블록</td>
+    <td rowspan="2">BD654<br>(Iterface Board)</td>
+    <td>Sequence interlocking part</td>
+    <td>Interlocks between the sequence status and the servo on signal</td>
   </tr>
   <tr>
-    <td>시스템용 DIO 입출력</td>
-    <td>제어기 내부의 예비 IO 포트</td>
+    <td>Dedicated IO Terminal Blocks</td>
+    <td>Reserved IO port inside the controller</td>
   </tr>
   <tr>
-    <td rowspan="4">기타부품</td>
-    <td>방열판(Heat Sink)</td>
-    <td>전력소자에서 발생하는 열을 외부로 방출</td>
+    <td rowspan="4">Other Parts</td>
+    <td>Heat sink</td>
+    <td>Releases the heat generated in power elements to the outside</td>
   </tr>
   <tr>
-    <td>정류부</td>
-    <td>교류입력 전원을 정류하여 모터 구동용 직류 전원 생성</td>
+    <td>Rectification part</td>
+    <td>Rectify the AC input power to generate DC power for driving the motor</td>
   </tr>
   <tr>
-    <td>회생 IGBT</td>
-    <td>회생방전 수행</td>
+    <td>Regenerative IGBT</td>
+    <td>Performs regenerative discharge</td>
   </tr>
   <tr>
     <td>IPM</td>
-    <td>3상 모터 구동용 전력 변환</td>
+    <td>Convert the power for driving a three-phase motor</td>
   </tr>
 </tbody>
 </table>
 
 {% hint style="info" %}
-구동장치는 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
+The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
 
-■  **소형 6축 일체형 드라이브모듈 형번 구성**
+■  **Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module**
+
 
 ![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성.png  )
 
-표 4-24 소형 6축 일체형 드라이브모듈의 형식기호
+Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>구분</strong></p></td>
-<td><p><strong>형식기호</strong></p></td>
+<td><p><strong>Category </strong></p></td>
+<td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 소형 6축 드라이브모듈</strong></p></td>
+<td><p><strong>Hi6 Small-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6A</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-25 소형 6축 일체형 드라이브모듈의 사양
+Table 4-25 Specification of the Small-Sized 6 Axes Integrated Drive Module
 
 <table>
 <thead>
   <tr>
-    <th>구성</th>
-    <th colspan="2">분류</th>
-    <th colspan="2">적용</th>
+    <th>Configuration</th>
+    <th colspan="2">Classification</th>
+    <th colspan="2">Application</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>IPM용량</td>
+    <td>IPM capacity</td>
     <td>3A</td>
     <td>3D</td>
     <td>HA006B, HH020</td>
-    <td>6축 일체형</td>
+    <td>6 axes integrated </td>
   </tr>
   <tr>
-    <td>년도</td>
+    <td>Year</td>
     <td colspan="2">00 ~ 99</td>
-    <td colspan="2">생산년도 : 2000년 ~ 2099년</td>
+    <td colspan="2">Production year: 2000-2099</td>
   </tr>
   <tr>
-    <td>월</td>
+    <td>Month</td>
     <td colspan="2">01 ~ 12</td>
-    <td colspan="2">생산월 : 1월 ~ 12월</td>
+    <td colspan="2">Production month: January-December</td>
   </tr>
   <tr>
-    <td>일련번호</td>
+    <td>Serial No.</td>
     <td colspan="2">001 ~ 999</td>
-    <td colspan="2">월 생산대수 : 1대 ~ 999대</td>
+    <td colspan="2">Number of units produced monthly: 1~999</td>
   </tr>
 </tbody>
 </table>
 
-표 4-26 소형 6축 드라이브모듈의 IPM 기호
+Table 4-26 Capacity of the Small-Sized IPM
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>IPM 기호</th>
-    <th>IPM 사양</th>
-    </tr>
+    <th>IPM symbol</th>
+    <th>IPM Specification</th>
+  </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="7">소형 6축 드라이브모듈</td>
+    <td rowspan="7">Drive module of the small-sized 6 axes</td>
     <td>A</td>
-    <td>(IPM 허용 전류정격) 30A</td>
+    <td>(IPM allowable current rating) 30A</td>
   </tr>
   <tr>
     <td>D</td>
-    <td>(IPM 허용 전류정격) 10A</td>
+    <td>(IPM allowable current rating) 10A</td>
   </tr>
 </tbody>
 </table>
 
-표 4-27 소형 6축 드라이브모듈의 홀센서(Hall Sensor) 기호
+Table 4-27 Symbols of the Hall Sensors of the Small-Sized IPM
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>Hall Sensor기호(사양)</th>
-    <th>Full Scale 전류(Im)</th>
-    <th>IPM 사양 (허용 전류정격)</th>
+    <th>Hall sensor symbol (Specification)</th>
+    <th>Full-scale current (Im)</th>
+    <th>IPM specification (Allowable current rating)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="7">소형<br>드라이브모듈</td>
+    <td rowspan="7">Drive module of the small-sized 6 axes</td>
     <td>3 (4V/15A)</td>
     <td>27.27Apeak</td>
     <td rowspan="2">6MBP50VAA060 (30A)</td>
@@ -3822,229 +3796,229 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </table>
 
 {% hint style="info" %}
-드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
+The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
 
 ![](../../../_assets/그림_4.41_BD653_부품_배치도.png  )
 
-그림 4.22 BD653 부품 배치도
+Figure 4.22 Parts Placement Diagram of BD653 
 
-표 4-28 BD653 커넥터 설명
+Table 4-28 Description of the Connectors of BD653
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>PWM신호, IPM에러 신호</p></td>
-<td><p>BD654 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals</p></td>
+<td><p>Board-to-board connectors of BD654</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNRST</strong></p></td>
-<td><p>3상 전원 입력</p></td>
-<td><p>전장 모듈 CNRST</p></td>
+<td><p>3-phase power input</p></td>
+<td><p>CNRST for the electronic module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD654 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD654</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNDR</strong></p></td>
-<td><p>회생방전 출력</p></td>
-<td><p>회생방전 저항</p></td>
+<td><p>Regenerative discharge power output </p></td>
+<td><p>Regenerative discharge resistor</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNTR</strong></p></td>
-<td><p>회생방전 저항 과열 검지</p></td>
-<td><p>회생방전 저항 온도센서</p></td>
+<td><p>Regenerative discharge resistor overheating detection</p></td>
+<td><p>Regenerative discharge resistor temperature sensor</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNM1~6</strong></p></td>
-<td><p>모터 구동 출력</p></td>
+<td><p>Motor drive output</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPN7~8</strong></p></td>
-<td><p>부가축 드라이브모듈 직류전원</p></td>
-<td><p>선택사양 부가축 드라이브모듈 CNPN</p></td>
+<td><p>Direct current for the drive module of the additional axis</p></td>
+<td><p>CNPN for the drive module for an optional additional axis</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNFG1, CNFG4</strong></p></td>
-<td><p>모터의 Frame Ground</p></td>
+<td><p>Frame ground for motors</p></td>
 <td><p>CMC1</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-29 BD653 LED 설명
+Table 4-29 Description of the LEDs of BD653
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC ON</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>컨버터부 제어전압 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control voltage of the converter part is normal</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DR</strong></p></td>
-<td><p>적색</p></td>
-<td><p>회생방전 동작 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on the regenerative discharge is operating</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PN</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN전압이 42V이상 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on when the PN voltage is higher than 42V</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RYON</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN방전 동작 시 소등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned off when the PN discharge operation starts</p></td>
 </tr>
 </tbody>
 </table>
 
 ![](../../../_assets/그림_4.42_BD654_부품_배치도.png  )
 
-그림 4.23 BD654 부품 배치도
+Figure 4.23 Parts Placement Diagram of BD654</br></br>
 
-표 4-30 BD654 커넥터 설명
+Table 4-30 Description of the Connectors of BD654
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부 장치 접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
-<td><p>8축 PWM신호, IPM에러 신호<br>컨버터부 에러 신호</p></td>
-<td><p>BD640 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD640</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>축별 PWM신호, IPM에러 신호</p></td>
-<td><p>BD653 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for individual axes</p></td>
+<td><p>Board-to-board connectors of BD653</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM7~8</strong></p></td>
-<td><p>부가축 PWM신호, IPM에러 신호</p></td>
-<td><p>부가축 드라이브모듈(BD658 또는 BD659)의 CNPWM</p></td>
+<td><p>PWM signal and IPM error signal for the additional axis</p></td>
+<td><p>CNPWM of the drive module (BD 658 or BD 659) of the additional axis</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD653 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD653</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TBIO</strong></p></td>
-<td><p>예비 전용IO 터미널블록</p></td>
+<td><p>Reserved only IO terminal block</p></td>
 <td><p>Reserved</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-31 BD654 LED 설명
+Table 4-31 Description of the LEDs of BD654
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태 표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status Display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>제어전원 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control power is normal</p></td>
 </tr>
 </tbody>
 </table>
-# 4.3.4.3. 선택사양 드라이브모듈 사양
+# 4.3.4.3. Specification of the Optional Drive Module
 
-
-■  **선택사항 드라이브모듈의 형번 구성**
+■  **Configuration of the Type Number of the Optional Drive Module**
 
 ![](../../../_assets/선택사양_드라이브모듈의_형번_구성.png  )
 
-표 4-32 선택사양 드라이브모듈의 형식 기호
+Table 4-32 Type Symbol of the Optional Drive Module
 
 <table>
 <thead>
   <tr>
-    <th>구분</th>
-    <th>형식 기호</th>
+    <th>Category</th>
+    <th>Type symbol</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Hi6 1축 드라이브모듈</td>
+    <td>Hi6 1 Axes drive module</td>
     <td>H6D1</td>
   </tr>
 </tbody>
 </table>
 
-표 4-33 선택사양 드라이브모듈의 IPM 기호
+Table 4-33 Capacity of the IPM of the Optional Drive Module
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>IPM 기호</th>
-    <th>IPM 사양</th>
+    <th>IPM symbol</th>
+    <th>IPM Specification</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">부가축 드라이브모듈</td>
+    <td rowspan="6">Drive module of the additional axis</td>
     <td>X</td>
-    <td>(IPM 전류정격) 100A</td>
+    <td>(IPM current rating) 100A</td>
   </tr>
   <tr>
     <td>Y</td>
-    <td>(IPM 전류정격) 75A</td>
+    <td>(IPM current rating) 75A</td>
+  </tr>
   <tr>
     <td>Z</td>
-    <td>(IPM 전류정격) 50A</td>
+    <td>(IPM current rating) 50A</td>
   </tr>
 </tbody>
 </table>
 
-표 4-34 션택사양 드라이브모듈의 홀센서(Hall Sensor) 기호
+Table 4-34 Symbols of the Hall Sensors of the Optional Drive Module
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>Hall Sensor기호(사양)</th>
-    <th>Full Scale 전류(Im)</th>
-    <th>IPM 사양 (정격 전류)</th>
+    <th>Hall sensor symbol(Specification)</br>Full-scale current (Im)</th>
+    <th>Full-scale current(Im)</th>
+    <th>IPM specification</br>(Rated current</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">부가축<br>드라이브모듈</td>
-   </tr>
+    <td rowspan="6">Drive module of the additional axis</td>
+  </tr>
   <tr>
     <td>1 (4V/50A)</td>
     <td>93.75Apeak</td>
@@ -4068,346 +4042,348 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
   </tr>
 </tbody>
 </table>
-# 4.3.4.4. H6D1X (캐리지용 드라이브모듈; 선택사양)
+# 4.3.4.4. H6D1X (Carriage Drive Module; Optional)
 
-드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 캐리지용 드라이브모듈은 100A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이  성되어 있습니다.
+The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The carriage drive module can drive one motor of 100A or below and is configured as follows.
 
 ![](../../../_assets/그림_4.43_H6D1X용BD658_부품_배치도.png  )
 
-그림 4.24 H6D1X용BD658 부품 배치도
+Figure 4.24 Parts Placement Diagram of BD658 for H6D1X</br></br>
 
-표 4-35 H6D1X의 구성
+Table 4-35 Configuration of H6D1X
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">BD658<br>(IPM보드)</td>
-    <td>로직부</td>
-    <td>6축 드라이브모듈로부터 수신한 PWM신호를 IPM의 상하단 구동신호로 변환하며, 에러처리 수행</td>
+    <td rowspan="3">BD658</br>(IPM board)
+</td>
+    <td>Logic part</td>
+    <td>Converts the PWM signals received from the drive module for the 6 axes into the upper and lower sides drive signals of the IPM, and processes errors</td>
   </tr>
   <tr>
-    <td>게이트 전원 모듈</td>
-    <td>IPM 게이트 전원 생성</td>
+    <td>Gate power module</td>
+    <td>Generates the IPM gate power</td>
   </tr>
   <tr>
-    <td>전류 검출부</td>
-    <td>모터에 흐르는 전류를 검출</td>
+    <td>Current detection part</td>
+    <td>Detects the current that flows through the motor</td>
   </tr>
   <tr>
-    <td rowspan="2">기타부품</td>
-    <td>방열판(Heat Sink)</td>
-    <td>IPM에서 발생하는 열을 외부로 방출</td>
+    <td rowspan="2">Other parts</td>
+    <td>Heat sink</td>
+    <td>Releases the heat generated in IPM to the outside</td>
   </tr>
   <tr>
     <td>IPM</td>
-    <td>3상 모터 구동용 전력 변환</td>
+    <td>Convert the power for driving a three-phase motor</td>
   </tr>
 </tbody>
 </table>
 
-표 4-36 H6D1X 커넥터 설명
+Table 4-36 Description of the Connectors of H6D1X
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용도</th>
-    <th>외부 장치 접속</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Connection of external devices</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>CNPWM</td>
-    <td>PWM신호, 에러신호</td>
-    <td>6축 드라이브모듈(BD652 또는 BD654)의 CNPWM7 또는  CNPWM8</td>
+    <td>PWM signal and error signal</td>
+    <td>CNPWM7 or CNPWM8 of the drive module (BD652 or BD654) for the 6 axes</td>
   </tr>
   <tr>
     <td>CNM</td>
-    <td>모터 구동 출력</td>
-    <td>AMC1 또는  AMC2</td>
-  </tr>
-  <tr>
-    <td>CNFG</td>
-    <td>모터 Frame Ground</td>
-    <td>AMC1 또는  AMC2</td>
-  </tr>
-  <tr>
-    <td>CNPN</td>
-    <td>구동 직류전원 입력</td>
-    <td>6축 드라이브모듈(BD651 또는 BD653)의 CNPN7 또는  CNPN8</td>
-  </tr>
-</tbody>
-</table>
-# 4.3.4.5. H6D1Z (서보건용 드라이브모듈; 선택사양)
-
-드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 서보건용 드라이브모듈은 50A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
-
-![](../../../_assets/그림_4.44_H6D1Z용_BD659_부품_배치도.png  )
-
-그림 4.25 H6D1Z용 BD659 부품 배치도
-
-표 4-37 H6D1Z의 구성
-
-<table>
-<thead>
-  <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td rowspan="3">BD659<br>(IPM보드)</td>
-    <td>로직부</td>
-    <td>6축 드라이브모듈로부터 수신한 PWM신호를<br>IPM의 상하단 구동신호로 변환하며, 에러처리를 수행</td>
-  </tr>
-  <tr>
-    <td>게이트 전원모듈</td>
-    <td>IPM 게이트 전원 생성</td>
-  </tr>
-  <tr>
-    <td>전류 검출부</td>
-    <td>모터에 흐르는 전류를 검출</td>
-  </tr>
-  <tr>
-    <td rowspan="2">기타부품</td>
-    <td>방열판(Heat Sink)</td>
-    <td>IPM에서 발생하는 열을 외부로 방출</td>
-  </tr>
-  <tr>
-    <td>IPM</td>
-    <td>3상 모터 구동용 전력 변환</td>
-  </tr>
-</tbody>
-</table>
-
-표 4-38 H6D1Z커넥터 설명
-
-<table>
-<thead>
-  <tr>
-    <th>명칭</th>
-    <th>용도</th>
-    <th>외부 장치 접속</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>CNPWM</td>
-    <td>PWM신호, 에러신호</td>
-    <td>6축 드라이브모듈(BD652 또는 BD654)의 CNPWM7 또는 CNPWM8</td>
-  </tr>
-  <tr>
-    <td>CNM</td>
-    <td>모터 구동 출력</td>
+    <td>Motor drive output</td>
     <td>AMC1 or AMC2</td>
   </tr>
   <tr>
     <td>CNFG</td>
-    <td>모터 Frame Ground</td>
-    <td>AMC1 또는 AMC2</td>
+    <td>Frame ground for the motor</td>
+    <td>AMC1 or AMC2</td>
   </tr>
   <tr>
     <td>CNPN</td>
-    <td>구동 직류전원 입력</td>
-    <td>6축 드라이브모듈(BD651 또는 BD653)의 CNPN7 또는 CNPN8</td>
+    <td>Drive direct current power input</td>
+    <td>CNPN7 or CNPN8 of the drive module (BD651 or BD653) for the 6 axes</td>
   </tr>
 </tbody>
 </table>
-# 4.3.5. 전원공급모듈 (H6PSM)
-# 4.3.5.1. H6PSM 및 전원분배보드 (BD6C2)
+# 4.3.4.5. H6D1Z (Servo Gun Drive Module; Optional)
 
-H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
+The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The servo gun drive module can drive one motor of 50A or below and is configured as follows.
 
-![](../../../_assets/그림_4.45_H6PSM(Hi6-N_제어기_전원공급모듈)_외부.png  )
+![](../../../_assets/그림_4.44_H6D1Z용_BD659_부품_배치도.png  )
 
-그림 4.26 H6PSM(Hi6-N 제어기 전원공급모듈) 외부
+Figure 4.25 Parts Placement Diagram of BD659 for H6D1Z</br></br>
 
-모터전원용 3상 AC전원의 개폐, 브레이크 전원 생성, 팬 구동 등의 AC제어전원, 제어모듈의 직류 전원공급을 위한 SMPS전원 등의 분배는 다음 그림의 전원계통도와 같습니다. 각각의 전원에는 회로차단기(CP) 또는 퓨즈가 연결되어 있어 과전류에 대한 회로 보호를 합니다.
-
-![](../../../_assets/그림_4.47_Hi6-N_제어기의_전원계통.png  )
-
-그림 4.27 Hi6-N 제어기의 전원계통
-
-표 4-39 전장모듈에서 퓨즈의 종류와 용도
+Table 4-37 Configuration of H6D1Z
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용도</th>
-    <th>사양</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3">BD659<br>(IPM board)</td>
+    <td>Logic part</td>
+    <td>Converts the PWM signals received from the drive module for the 6 axes into the upper and lower sides drive signals of the IPM, and processes errors</td>
+  </tr>
+  <tr>
+    <td>Gate power module</td>
+    <td>Generates the IPM gate power</td>
+  </tr>
+  <tr>
+    <td>Current detection part</td>
+    <td>Detects the current that flows through the motor</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Other parts</td>
+    <td>Heat sink</td>
+    <td>Releases the heat generated in IPM to the outside</td>
+  </tr>
+  <tr>
+    <td>IPM</td>
+    <td>Convert the power for driving a three-phase motor</td>
+  </tr>
+</tbody>
+</table>
+
+Table 4-38 Description of the Connectors of H6D1Z
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Connection of external devices</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CNPWM</td>
+    <td>PWM signal and error signal</td>
+    <td>CNPWM7 or CNPWM8 of the drive module (BD652 or BD654) for the 6 axes</td>
+  </tr>
+  <tr>
+    <td>CNM</td>
+    <td>Motor drive output</td>
+    <td>AMC1 or AMC2</td>
+  </tr>
+  <tr>
+    <td>CNFG</td>
+    <td>Frame ground for the motor</td>
+    <td>AMC1 or AMC2</td>
+  </tr>
+  <tr>
+    <td>CNPN</td>
+    <td>Drive direct current power input</td>
+    <td>CNPN7 or CNPN8 of the drive module (BD651 or BD653) for the 6 axes</td>
+  </tr>
+</tbody>
+</table>
+# 4.3.5. Power Supply Module (H6PSM)
+# 4.3.5.1. H6PSM and Power Distribution Board (BD6C2) 
+
+The H6PSM (Hi6-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
+
+![](../../../_assets/그림_4.45_H6PSM(Hi6-N_제어기_전원공급모듈)_외부.png  )
+
+Figure 4.26 Exterior of H6PSM (Hi6-N Controller Power Supply Module)
+
+The following figure shows the power system diagram for the AC control power related to the opening and closing of the 3-phase AC power for the motor power, the generation of the brake power, and the driving of the fan. The diagram in the figure also shows the power distribution, such as the SMPS power for the DC power supply to the control module. A circuit breaker (CP) or fuse is connected to each power to protect individual circuits against overcurrent.
+
+![](../../../_assets/그림_4.47_Hi6-N_제어기의_전원계통.png  )
+
+Figure 4.27 Power System of the Hi6-N Controller</br></br>
+
+Table 4-39 Types and Usage of the Fuses of the Electronic Module 
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Specification</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>F1, F2</td>
-    <td>냉각 팬 전원(AC220V) 과전류보호용 퓨즈</td>
+    <td>Overcurrent protection fuse for the cooling fan power (AC220V)</td>
     <td>AC220V 5A</td>
   </tr>
   <tr>
     <td>F3, F4</td>
-    <td>CMSMPS전원(AC220V) 과전류보호용 퓨즈</td>
+    <td>Overcurrent protection fuse for the CMSMPS power (AC220V) </td>
     <td>AC220V 5A</td>
   </tr>
   <tr>
     <td>F5, F6</td>
-    <td>BKSMPS전원(AC220V) 과전류보호용 퓨즈</td>
+    <td>Overcurrent protection fuse for the BKSMPS power (AC220V) </td>
     <td>AC220V 5A</td>
   </tr>
 </tbody>
 </table>
-# 4.3.5.2. BD6C2 커넥터
+# 4.3.5.2. Connectors of BD6C2
 
-전장보드(BD6C2)의 커넥터 배치는 다음 그림과 같으며 각각에 대한 용도 및 접속장치는 표 4-40과 같습니다.
+The placement of the connectors of the electronic board (BD6C2) is shown in the following figure, and the usage and connection devices for each are as shown in Table 4-39.
 
 ![](../../../_assets/그림_4.48_전장보드(BD6C2)의_커넥터.png  )
 
-그림 4.28 전장보드(BD6C2)의 커넥터
+Figure 4.28 Connectors of the Electronic Board (BD6C2)</br></br>
 
-표 4-40 BD6C2 커넥터의 종류와 용도
+Table 4-40 Types and Usage of the Connectors of BD6C2
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용도</th>
-    <th>사양</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Specification</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>CNAC</td>
-    <td>제어용 3상 전원 입력</td>
-    <td>3상 220V</td>
+    <td>3-phase power input for control</td>
+    <td>3-phase 220V</td>
   </tr>
   <tr>
     <td>CN220</td>
-    <td>CMSMPS용 전원 출력</td>
-    <td>단상 220V</td>
+    <td>CMSMPS power output</td>
+    <td>Single-phase 220V</td>
   </tr>
   <tr>
     <td>CNFN1~4</td>
-    <td>AC팬 전원 출력</td>
-    <td>단상 220V</td>
+    <td>AC fan power output</td>
+    <td>Single-phase 220V</td>
   </tr>
   <tr>
     <td>CNPR1</td>
-    <td>돌입전류 제한 회로 입력</td>
-    <td>3상 220V, MC1입력단</td>
+    <td>Inrush current limiting circuit input</td>
+    <td>3-phase 220V, MC1 input side</td>
   </tr>
   <tr>
     <td>CNPR2</td>
-    <td>돌입전류 제한 회로 출력</td>
-    <td>3상 220V, MC2출력단</td>
+    <td>Inrush current limiting circuit output</td>
+    <td>3-phase 220V, MC2 output side </td>
   </tr>
   <tr>
     <td>CNBKAC</td>
-    <td>브레이크용 SMPS 입력</td>
-    <td>단상 220V</td>
+    <td>Brake SMPS input</td>
+    <td>Single-phase 220V</td>
   </tr>
   <tr>
     <td>CNBKDC</td>
-    <td>브레이크용 SMPS 출력</td>
+    <td>Brake SMPS output</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNPB1</td>
-    <td>브레이크제어용 전원</td>
+    <td>Brake control power</td>
     <td>24VDC, PB, BD640</td>
   </tr>
   <tr>
     <td>CNPB2</td>
-    <td>브레이크제어용 전원</td>
+    <td>Brake control power</td>
     <td>24VDC, PB, Reserved</td>
   </tr>
   <tr>
     <td>CNPRC</td>
-    <td>돌입전류 제한 회로 제어 및 모니터링</td>
+    <td>Inrush current limiting circuit control and monitoring</td>
     <td>BD640 CNPRC</td>
   </tr>
   <tr>
     <td>CNFPS1</td>
-    <td>CMSMPS 정전검출 신호 출력1</td>
+    <td>CMSMPS power failure detection signal output 1</td>
     <td>H6COM DIO</td>
   </tr>
   <tr>
     <td>CNFPS2</td>
-    <td>CMSMPS 정전검출 신호 출력2</td>
+    <td>CMSMPS power failure detection signal output 2</td>
     <td>Reserved</td>
   </tr>
   <tr>
     <td>CNMC1</td>
-    <td>전자접촉기 MC1 제어 및 모니터링</td>
+    <td>Electronic contact MC1 control and monitoring</td>
     <td>MC1</td>
   </tr>
   <tr>
     <td>CNMC2</td>
-    <td>전자접촉기 MC2 제어 및 모니터링</td>
+    <td>Electronic contact MC2 control and monitoring</td>
     <td>MC2</td>
   </tr>
   <tr>
     <td>CNMC</td>
-    <td>전자접촉기 제어 및 모니터링</td>
+    <td>Electronic contact control and monitoring</td>
     <td>BD632 CNMC</td>
   </tr>
   <tr>
     <td>CN24VB</td>
-    <td>모듈별 제어전원 입력</td>
-    <td>24VDC, CMBUFFER 출력</td>
+    <td>Control power input for each module</td>
+    <td>24VDC, CMBUFFER output</td>
   </tr>
   <tr>
     <td>CN24VB1~8</td>
-    <td>모듈별 제어전원 출력</td>
-    <td>24VDC, 모듈별 CN24VB</td>
+    <td>Control power output for each module</td>
+    <td>24VDC, CN24VB for each module</td>
   </tr>
   <tr>
     <td>CNBM</td>
-    <td>CMSMPS 정전검출 신호 입력</td>
+    <td>CMSMPS power failure detection signal input</td>
     <td>CMSMPS 13-14</td>
   </tr>
 </tbody>
 </table>
-# 4.3.6. 티치펜던트 (TP630)
-# 4.3.6.1. 개요
+# 4.3.6. Teach Pendant (TP630)
+# 4.3.6.1. Overview
 
-티치펜던트(TP630)는 제어기의 메인모듈(H6COM-T)과 이더넷으로 통신하며, 다음과 같은 기능을 사용자가 직접 조작할 수 있도록 합니다.
+The teach pendant (TP630) communicates with the main module (H6COM-T) of the controller through Ethernet and allows the user to directly operate the following functions.
 
-* 모니터링   : 작업프로그램 / 각 축 데이터 / 입출력 신호 / 로봇 상태 등
+*	Monitoring	: Job program / Data of each axis / Input and output signals / Status of the robot, etc.
 
-* 이력 관리              : 시스템 버전, 가동시간, 에러이력, 정지이력 등
+*	Log management 	: System version, operation time, error log, stop log, etc.
 
-* 파일 관리              : 버전 & 티칭 프로그램 업/다운
+*	File management 	: Version and teach program up/down
 
-* 각종 변수 설정       : 사용자 환경 / 제어 / 로봇 / 응용 / 자동정수 등
+*	Setting of various variables : User environment / control / robot / application / automatic integer, etc.
 
-* 로봇 티칭              : 조그 & 티칭 프로그램 등록
+*	Robot teaching 	: Jog and teach program registration
 
-* 로봇 조작              : MOTOR ON / START / STOP / MODE 설정
+*	Robot operation 	: Motor on / start / stop / mode settings
 
-티치펜던트는 또한 사용자의 안전을 위하여 3단 인에이블스위치, 비상정지스위치 등을 장착하고 있습니다.
+The teach pendant is also equipped with a three-stage enable switch and emergency stop switch to ensure user safety.
+In addition, a USB A type connector is mounted under the rubber cover at the bottom of the teach pendant, allowing the user to upload/download necessary files, such as data and teaching programs, as well as versions of diverse types of boards using a USB memory stick.
 
-또한, 티치펜던트 하단 고무커버 아래 USB A type 커넥터가 장착되어 있으므로, 사용자는 USB Memory Stick을 이용하여 각종 보드류의 버전뿐만 아니라 데이터 및 티칭 프로그램 등 필요한 파일들을 업/다운 로드 할 수 있습니다.
 
 ![](../../../_assets/그림_4.49_티치펜던트_TP630의_외관.png  )
 
-그림 4.29 티치펜던트 TP630의 외관
-# 4.3.6.2. USB 커버
+Figure 4.29 Exterior of the Teach Pendant TP630
+# 4.3.6.2. USB Cover
 
-티치펜던트 옆면 고무커버 아래 USB A type 커넥터가 장착되어 있으므로, 사용자는 USB Memory Stick을 이용하여 각종 보드류의 버전뿐만 아니라 데이터 및 티칭 프로그램 등 필요한 파일들을 업/다운 로드 할 수 있습니다.
-# 5. 제어기의 선택구성
-# 5.1. PCI 통신 카드
-# 5.1.1. 개요
+There is a USB A type connector mounted under the rubber cover at the bottom of the teach pendant, allowing the user to upload/download necessary files, such as versions of diverse types of boards, as well as data and teaching programs, using a USB memory stick.
+ 
+# 5. Optional Components of the Controller
+# 5.1. PCI Communication Card
+# 5.1.1. Overview
 
-Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드를 이용하여 필요한 산업용 통신을 사용할 수 있습니다. 보편적인 모델인 Ethernet용 PCI 통신 카드 기반으로 설명되어 있으며, 자세한 내용은 “PC Cards CIFX 50 50E 70E 100EH UM 51 EN”문서의 PC Cards CIFX 50 모델을 참조하여 주시기 바랍니다.
+To use industrial communication in the Hi6 controller, you can use a PCI communication card. Descriptions below are provided based on a PCI communication card for Ethernet, which is a general model. For details, please refer to the contents for the PC Cards CIFX 50 model in the document “PC Cards CIFX 50 50E 70E 100EH UM 51 EN.”
 
-표 5-1 PCI 통신 카드 품명
+Table 5-1 Part Names of PCI Communication Cards
 
 <table>
 <thead>
@@ -4511,314 +4487,318 @@ Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드
   </tr>
 </tbody>
 </table>
-# 5.1.2. PCI 통신카드 구성
+# 5.1.2. Configuration of the PCI Communication Card
 
-PCI통신카드는 기본적으로(Ethernet 기반 통신 사용 기준) 다음과 같이 구성되어 있으며, 산업용 통신에 따라 커넥터 및 LED 개수가 다릅니다.
+A PCI communication card is basically configured, as shown below (when Ethernet-based communication is used), and varies in the number of connectors and LEDs depending on the type of industrial communication.
 
 ![](../../_assets/그림_5.1_PCI통신_카드_외관.png  )
 
-그림 5.1 PCI통신 카드 외관
+Figure 5.1 Exterior of the PCI Communication Card</br></br>
 
-표 5-2 PCI 통신 카드 외관 설명
+Table 5-2 Description of the Exterior of the PCI Communication Card
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용도</th>
+    <th>Name</th>
+    <th>Usage</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Rotary Switch</td>
-    <td>Slot ID에 따른 통신 설정</td>
+    <td>Sets the communication according to the slot ID</td>
   </tr>
   <tr>
     <td>LED</td>
-    <td>시스템 및 통신 상태 표시</td>
+    <td>Displays the system and communication status</td>
   </tr>
   <tr>
     <td>Communication Port</td>
-    <td>통신 연결용 포트</td>
+    <td>Communication connection port</td>
   </tr>
   <tr>
     <td>PCI Bus</td>
-    <td>PC연결용 Bus</td>
+    <td>PC connection bus</td>
   </tr>
 </tbody>
 </table>
-# 5.1.3. PCI 통신 카드 전면부
+# 5.1.3. Front Part of the PCI Communication Card
 
-PCI통신 카드 전면부를 통해 통신 세팅, 통신 케이블 연결, 통신 상태 확인을 할 수 있습니다. 기본적으로 Rotary Switch를 H6COM PCI Slot 위치에 따라 순서대로 1 ~ 4번을 세팅해서 사용합니다..
+You can check the communication setting, communication cable connection, and communication status through the front part of the PCI communication card. Basically, you can use the card by setting the rotary switch to 1-4 in order according to the location of the H6COM-T PCI slot.
 
 ![](../../_assets/그림_5.2_PCI통신_카드_전면부.png  )
 
-그림 5.2 PCI통신 카드 전면부
+Figure 5.2 Front Part of the PCI Communication Card</br></br>
 
-표 5-3 PCI 통신 카드 전면부 구성 및 기능 설명
+Table 5-3 Configuration of the Front Part of the PCI Communication Card, and the Description of the Functions
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용      도</th>
-    <th>기능 설명</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Description of Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Rotary Switch</td>
-    <td>Slot 번호 별 통신 설정용</td>
-    <td>H6COM PCI Slot맨 위에서부터 1번 ~ 4번으로 고정 사용<br>(통신은 TP에서 설정)</td>
+    <td>Sets the communication for each slot number</td>
+    <td>H6COM-T PCI slots are fixed as #1~#4 sequentially starting from the one at the top (Communication to be set from TP).</td>
   </tr>
   <tr>
     <td>System LED</td>
-    <td>시스템 상태 확인용 LED</td>
-    <td>Green : 시스템 동작중<br>Yellow : 부트로더 대기 중</td>
+    <td>System status checking LED</td>
+    <td>Green: System in operation</br>Yellow: Boot loader waiting
+</td>
   </tr>
   <tr>
     <td>Communication Status LED</td>
-    <td>통신 상태 확인용 LED</td>
-    <td>Green : 통신 동작중<br>Red : 통신 에러</td>
+    <td>Communication status checking LED</td>
+    <td>Green: Communication in operation</br>Red: Communication error
+</td>
   </tr>
   <tr>
     <td>Communication Interface</td>
-    <td>통신 케이블 연결용 포트</td>
-    <td>통신에 따른 커넥터 사용</td>
+    <td>Communication cable connection port</td>
+    <td>Use of connectors suitable for communication</td>
   </tr>
 </tbody>
 </table>
-# 5.2. 브레이크 해제 유닛
-# 5.2.1. 개요
+# 5.2. Brake Release Unit 
+# 5.2.1. Overview
 
-브레이크 해제유닛은 로봇의 각 축 모터브레이크를 해제가 필요할 경우 사용할 수 있는 유닛입니다. 주로 초기 로봇 설치 시 로봇 자세를 설정하는 데 도움을 줄 수 있습니다. 브레이크 해제 시 반드시 “1.8.2 관련 기타 기능”의 “수동브레이크 해제”의 안전 사항을 충분히 인지한 후 사용하시기 바랍니다.
+The brake release unit can be used when it is necessary to release the motor brake for each axis of the robot. It can help to set the robot posture mainly during the initial installation of the robot. When releasing the brake, you must fully understand the safety information of “Release of the manual brake” in “1.8.2 Other Related Functions” before using the robot.
 
 {% hint style="info" %}
-1. 동시에 두개의 축 이상을 해제하지 마십시오.
-2. 반드시 로봇과 안전거리를 유지한 후 브레이크 해제유닛을 사용하십시오.
-3. 크레인과 같은 기구를 사용하여 로봇 축낙하를 대비 후 브레이크 해제유닛을 사용하십시오.
-4. 최소 2인이상 1조로 작업을 진행하여 안전사항을 체크하십시오.
+1. Do not release more than two axes at the same time.
+2. Keep a safe distance from the robot first before using the brake release unit.
+3. Use the brake release unit after preparing for the dropping of the robot’s axis using equipment such as a crane.
+4. Check the safety matters while working in a group of at least two people.
 {% endhint %}
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 상기 “주의사항”을 지키지 않는 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the relevant requirements of international standards and national laws or not following the above “caution.”
 {% endhint %}
 
-# 5.2.2. 브레이크 해제 스위치
+# 5.2.2. Brake Release Switch
 
-브레이크 해제유닛의 스위치 배치는 그림 5.3과 같으며 각각에 대한 용도 및 동작설명은 표 5-4와 같습니다. 원하는 축의 브레이크를 해제하기 위해서는 먼저 Enable 버튼을 누르고, Enable 버튼을 누르고 있는 상태에서 B1~B8 중 버튼을 동시에 누르면 해당 축이 해제됩니다.
+The placement of the switches of the brake release unit is as shown in Figure 5.3, and their individual usage and operation are described in Table 5-4. To release the brake of the targeted axis, first press the Enable button, and then, while pressing the Enable button, press one of the buttons B1–B8 at the same time. Then, the relevant axis will be released.
+
 
 ![](../../_assets/그림_5.3_브레이크_해제유닛_스위치_및_상태확인_LED.png  )
 
-그림 5.3 브레이크 해제유닛 스위치 및 상태확인 LED
+Figure 5.3 Switches and Status Checking LEDs of the Brake Release Unit</br></br>
 
-표 5-4 브레이크 해제 유닛 스위치 용도
+Table 5-4 Usage of the Switches of the Brake Release Unit 
 
 <table>
 <thead>
   <tr>
-    <th>명 칭</th>
-    <th>용 도</th>
-    <th>동작 시</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>During operation</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>E</td>
-    <td>브레이크 해제 Enable</td>
-    <td>노란색 Enable LED ON</td>
+    <td>Brake Release Enable</td>
+    <td>Yellow Enable LED ON</td>
   </tr>
   <tr>
     <td>B1</td>
-    <td>1축 브레이크 해제</td>
-    <td>초록색 D1 LED ON</td>
+    <td>Axis 1 Brake Release</td>
+    <td>Green D1 LED ON</td>
   </tr>
   <tr>
     <td>B2</td>
-    <td>2축 브레이크 해제</td>
-    <td>초록색 D2 LED ON</td>
+    <td>Axis 2 Brake Release</td>
+    <td>Green D2 LED ON</td>
   </tr>
   <tr>
     <td>B3</td>
-    <td>3축 브레이크 해제</td>
-    <td>초록색 D3 LED ON</td>
+    <td>Axis 3 Brake Release</td>
+    <td>Green D3 LED ON</td>
   </tr>
   <tr>
     <td>B4</td>
-    <td>4축 브레이크 해제</td>
-    <td>초록색 D4 LED ON</td>
+    <td>Axis 4 Brake Release</td>
+    <td>Green D4 LED ON</td>
   </tr>
   <tr>
     <td>B5</td>
-    <td>5축 브레이크 해제</td>
-    <td>초록색 D5 LED ON</td>
+    <td>Axis 5 Brake Release</td>
+    <td>Green D5 LED ON</td>
   </tr>
   <tr>
     <td>B6</td>
-    <td>6축 브레이크 해제</td>
-    <td>초록색 D6 LED ON</td>
+    <td>Axis 6 Brake Release</td>
+    <td>Green D6 LED ON</td>
   </tr>
   <tr>
     <td>B7</td>
-    <td>7축 브레이크 해제</td>
-    <td>초록색 D7 LED ON</td>
+    <td>Axis 7 Brake Release</td>
+    <td>Green D7 LED ON</td>
   </tr>
   <tr>
     <td>B8</td>
-    <td>8축 브레이크 해제</td>
-    <td>초록색 D8 LED ON</td>
+    <td>Axis 8 Brake Release</td>
+    <td>Green D8 LED ON</td>
   </tr>
 </tbody>
 </table>
-# 5.2.3. 전원 및 커넥터
+# 5.2.3. Power and Connectors 
 
-브레이크 해제 유닛의 전원 및 커넥터 배치는 다음 그림5.4와 같으며 각각에 대한 용도 및 접속장치는 표 5-5와 같습니다.
+The placement of the power and connectors of the brake release unit is as shown in Figure 5.4 below, and their individual usage and connection devices are as shown in Table 5-5 below.
 
 {% hint style="info" %}
-- 브레이크 해제유닛 사용 시 다음 절차를 따라주십시오.
-1. AC220V 전원 스위치 OFF 및 DC24V 전원 스위치 OFF 상태 확인  
-2. AC 전원 케이블을 AC 전원 커넥터에 연결 
-3. AC220V 전원 스위치 ON 
-4. DC24V 전원 스위치 ON
+- When using the brake release unit, follow the procedures below.
+1. Turn off the AC220V power switch and check that the DC24V power switch is turned off.
+2. Connect the AC power cable to the AC power connector.
+3. Turn on the AC220V power switch.
+4. Turn on the DC24V power switch.
 
-- 브레이크 해제유닛 사용 종료 시, 다음 절차를 따라주십시오.
-1. DC24V 전원 스위치 OFF
-2. AC220V 전원 스위치 OFF
-3. AC 전원케이블 분리 
+- When the use of the brake release unit is finished, follow the procedures below.
+1. Turn off the DC24V power switch.
+2. Turn off the AC220V power switch.
+4. Disconnect the AC power cable.
 
-- AC220V 전원과 DC24V 배터리 전원을 동시에 사용하지 마십시오. 
+- Do not use AC220V power and DC24V battery power at the same time.
 {% endhint %}
 
-
 {% hint style="warning" %}
-상기 “주의사항”을 지키지 않는 경우에 발생하는 사고 및 고장에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the above “caution.”
 {% endhint %}
 
 
 ![](../../_assets/그림_5.4_브레이크_해제_유닛_스위치_및_커넥터.png  )
 
-그림 5.4 브레이크 해제 유닛 스위치 및 커넥터
+Figure 5.4 Switches and Connectors of the Brake Release Unit</br></br>
 
-표 5-5 브레이크 해제 유닛 커넥터의 종류 및 용도
+Table 5-5 Types and Usage of the Connectors of the Brake Release Unit
 
 <table>
 <thead>
   <tr>
-    <th>명 칭</th>
-    <th>용      도</th>
-    <th>외부연결장치</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>Connection of external devices</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>AC220V 전원 커넥터 및 스위치</td>
-    <td>AC 전원 인가</td>
-    <td>100V AC ~ 240V AC 단상</td>
+    <td>AC 220V power connector and switch</td>
+    <td>Application of the AC power</td>
+    <td>100V AC~240V AC Single phase</td>
   </tr>
   <tr>
-    <td>브레이크 해제 케이블 연결 커넥터</td>
-    <td>브레이크 해제유닛과 제어기 연결</td>
-    <td>BD640보드 CNB1, CNB7, CNB8</td>
+    <td>Brake release cable connection connector</td>
+    <td>Connection of the brake release unit and controller</td>
+    <td>CNB1, CNB7, and CNB8 of BD640</td>
   </tr>
   <tr>
-    <td>DC24V 배터리 전원 커넥터</td>
-    <td>휴대용 24V 배터리 전원 연결</td>
-    <td>휴대용 24V 배터리</td>
+    <td>DC24V battery power connector</td>
+    <td>Connection of the power of a portable 24V battery</td>
+    <td>Portable 24V battery</td>
   </tr>
   <tr>
-    <td>DC24V전원 스위치</td>
-    <td>브레이크 해제유닛 구동 ON/OFF</td>
-    <td>없음</td>
+    <td>DC24V power switch</td>
+    <td>Brake release unit drive on/off</td>
+    <td>None</td>
   </tr>
 </tbody>
 </table>
-# 5.2.3. 브레이크 해제 유닛 상태 표시 LED
+# 5.2.4. Brake Release Unit Status Display LEDs
+The LEDs for displaying the status of the brake release unit are as shown in Figure 5.3, and their individual usage and operation status are as shown in Table 5-6 below.
 
-브레이크 해제 유닛 브레이크 해제 유닛의 상태 표시를 위한 LED는 그림 5.3과 같으며 각각에 대한 용도 및 동작상태는 표 5-6과 같습니다.
+Table 5--6 Usage and Operation of the LEDs for the Status of the Brake Release Unit
 
-표 5-6 브레이크 해제 유닛 상태 LED 용도 및 동작
 
 <table>
 <thead>
   <tr>
-    <th>명 칭</th>
-    <th>용      도</th>
-    <th>LED ON 동작</th>
+    <th>Name</th>
+    <th>Usage</th>
+    <th>LED On operation</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Enable</td>
-    <td>Enable 스위치 누름 확인</td>
-    <td>Enable 스위치 누름 시<br> <br>노란색 Enable LED ON</td>
+    <td>Checking by pressing the Enable switch</td>
+    <td>When the Enable switch is pressed,</br>the yellow Enable LED will be turned on.</td>
   </tr>
   <tr>
     <td>D1</td>
-    <td>1축 스위치 누름 확인</td>
-    <td>1축 스위치 누름 시 초록색 D1 LED ON</td>
+    <td>Checking by pressing the switch for axis 1</td>
+    <td>When the switch for axis 1 is pressed, the green D1 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D2</td>
-    <td>2축 스위치 누름 확인</td>
-    <td>2축 스위치 누름 시 초록색 D2 LED ON</td>
+    <td>Checking by pressing the switch for axis 2</td>
+    <td>When the switch for axis 2 is pressed, the green D2 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D3</td>
-    <td>3축 스위치 누름 확인</td>
-    <td>3축 스위치 누름 시 초록색 D3 LED ON</td>
+    <td>Checking by pressing the switch for axis 3</td>
+    <td>When the switch for axis 3 is pressed, the green D3 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D4</td>
-    <td>4축 스위치 누름 확인</td>
-    <td>4축 스위치 누름 시 초록색 D4 LED ON</td>
+    <td>Checking by pressing the switch for axis 4</td>
+    <td>When the switch for axis 4 is pressed, the green D4 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D5</td>
-    <td>5축 스위치 누름 확인</td>
-    <td>5축 스위치 누름 시 초록색 D5 LED ON</td>
+    <td>Checking by pressing the switch for axis 5</td>
+    <td>When the switch for axis 5 is pressed, the green D5 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D6</td>
-    <td>6축 스위치 누름 확인</td>
-    <td>6축 스위치 누름 시 초록색 D6 LED ON</td>
+    <td>Checking by pressing the switch for axis 6</td>
+    <td>When the switch for axis 6 is pressed, the green D6 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D7</td>
-    <td>7축 스위치 누름 확인</td>
-    <td>7축 스위치 누름 시 초록색 D7 LED ON</td>
+    <td>Checking by pressing the switch for axis 7</td>
+    <td>When the switch for axis 7 is pressed, the green D7 LED will be turned on.</td>
   </tr>
   <tr>
     <td>D8</td>
-    <td>8축 스위치 누름 확인</td>
-    <td>8축 스위치 누름 시 초록색 D8 LED ON</td>
+    <td>Checking by pressing the switch for axis 8</td>
+    <td>When the switch for axis 8 is pressed, the green D8 LED will be turned on.</td>
   </tr>
 </tbody>
 </table>
-# 5.3. 리모트 IO
-# 5.3.1. 개요
+# 5.3. Remote IO
+# 5.3.1. Overview
 
-Hi6 제어기에서 범용 IO 신호를 사용하기 위해서 상용 리모트 IO가 필요합니다. 상용 리모트 IO는 기본적으로 “통신모듈” 1개에 “IO 모듈”(사용자 선택)을 연결하여 사용합니다. 아래의 모듈은 Crevis사의 상용 리모트 IO 모듈을 소개해 놓았으며, 타사의 상용 리모트 IO를 구매하여 사용하여도 무방합니다. 자세한 사용법은 구매하신 IO업체에 요청하시면 됩니다.
+To use general IO signals in the Hi6 controller, you need the commercial remote IO. Basically, the commercial remote IO can be used by connecting an “IO module” (selected by the user) to one “communication module.” The module introduced below is a commercial remote IO module of Crevis, and you may purchase and use a commercial remote of other companies. For details on how to use each module, you are required to ask the company about the IO module you purchased.
 
 {% hint style="info" %}
-상용 리모트 IO를 사용하기 위해서는 필드버스 통신이 반드시 필요 합니다. 따라서, 위에 언급된 ‘5.1. PCI 통신카드’을 참고하여 PCI 통신 카드를 같이 구성하시기 바랍니다.
+Fieldbus communication must be available to use the commercial remote IO. Therefore, you should configure the PCI communication card together by referring to “5.1 PCI Communication Card” mentioned above.
 {% endhint %}
+
 
 ![](../../_assets/그림_5.5상용_리모트_IO_구성_예시.png  )
 
-그림 5.5 상용 리모트 IO 구성 예시
-# 5.3.2. 통신 모듈(Crevis사)
+Figure 5.5 Example of Configuration of Commercial Remote IO
+# 5.3.2. Communication Module (of Crevis)
 
-통신 모듈의 종류를 다음과 같으며 원하는 통신에 따라 사용하면 됩니다.
+The types of communication modules are as shown below and can be used according to the desired communication.
 
-표 5-7 통신 모듈(Crevis사)
+Table 5-7 Communication Module (of Crevis)
+
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4842,18 +4822,19 @@ Hi6 제어기에서 범용 IO 신호를 사용하기 위해서 상용 리모트 
 </tr>
 </tbody>
 </table>
-# 5.3.3. IO 및 기타 모듈(Crevis 사)
+# 5.3.3. IO and Other Modules (of Crevis)
 
-IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게 구성해서 사용하면 됩니다.
+The types of IO and other modules are as shown below and can be configured and used according to the desired operation.
 
-표 5-8 IO 모듈(Crevis사)
+Table 5-8 IO Module (of Crevis)
+
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4900,14 +4881,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-9 Relay 모듈(Crevis사)
+Table 5-9 Relay Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4917,14 +4898,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-10 아날로그 IO 모듈(Crevis사)
+Table 5-10 Analogue IO Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4940,14 +4921,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-11 펄스 측정 모듈(Crevis사)
+Table 5-11 Pulse Measuring Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4964,14 +4945,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-12 Serial 통신 모듈(Crevis사)
+Table 5-12 Serial Communication Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -4985,136 +4966,135 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tr>
 </tbody>
 </table>
-# 6. 정기 점검
+# 6. Periodic Inspections
 
-제어기의 정기 점검은 고장의 발생을 최소화하고 성능을 지속적으로 유지하기
-위함이며, 정기 점검 작업시의 주의 사항 및 작업 내용을 설명합니다.
-# 6.1. 점검 일정
+The periodic inspection of the controller is designed to minimize the occurrence of failures and to maintain the performance continuously. This section describes the cautions and contents of works during the periodic inspection. # 6.1. Inspection Schedule 
 
-기본적으로 다음 그림과 같은 일정에 점검을 실시합니다. 정기 점검은 고장을 미연에 방지함과 제어기 및 로봇 본체를 오래 사용하더라도 안전성의 확보 및 정도를 계속 유지시키기 위함입니다. 정기점검은 절대적으로  필요한 일이며, 정상운전 중에도 필히 하여야 합니다.
+Inspections should be carried out according to the schedule shown in the figure below. Periodic inspections are designed to prevent failures in advance and to secure safety and maintain accuracy even when the controller and manipulator are used for a long time. Periodic inspections are absolutely necessary and must be conducted even during normal operation.
 
 ![](../_assets/그림_6.1_점검_일정.png  )
 
-그림 6.1 점검 일정
-# 6.2. 정기 점검 시 일반적 주의사항
+Figure 6.1 Inspection Schedule
+# 6.2. General Cautions for Periodic Inspections
 
-* 점검 작업은 당사가 실시한 로봇 트레이닝 센터의 수강을 수료한 사람이 하도록 하십시오.
+* 	The inspection work should be conducted by a person who has completed the courses implemented at the robot training center by our company.
 
-* 점검 작업을 하기 전에 작업에 필요한 부품 및 공구, 도면 등을 확인하십시오.
+*	Before carrying out inspection works, check the parts, tools, drawings, etc. necessary for the work.
 
-* 교환 부품은 당사가 지정한 전문 부품을 필히 사용하십시오.
+*	Use the specialized replacement parts designated by our company.
 
-* 로봇의 본체를 점검할 때는 전원을 필히 끄고 하십시오.
+*	Turn off the power when inspecting the manipulator.
 
-* 제어기의 문을 열고 작업할 때는 1차 전원을 끄고 주위에는 먼지 등이 날아들어 오지 않도록 주의하십시오.
+*	When conducting works while keeping the door open, turn off the primary power and take precautions to prohibit dust, etc. to fly into the surrounding area.
 
-* 제어기의 부품에 손을 대어야 할 경우에는 정전기에 의한 IC파괴가 생기지 않도록 특히 주의하십시오. (커넥터 접촉시에도 주의)
+*	When required to touch the parts of the controller, you should take special care not to allow the IC to be destroyed by static electricity (Be careful also when contacting the connector).
 
-* 로봇 본체를 동작시키면서 정기 점검할 경우는 동작범위 내에 절대로 사람이 들어가지 않도록 주의하십시오.
+*	When performing periodic inspections while operating the manipulator, take precautions to prohibit anyone from entering inside the operation range.
 
-* 전압 측정은 지정된 장소에서 하고, 감전 및 단락에 주의하십시오.
+*	You should measure the voltage at a designated place and take precautions for electric shock and short-circuiting.
 
-* 로봇과 제어기 점검을 동시에 하지 않도록 하십시오.
+*	Do not inspect the robot and the controller at the same time. 
 
-* 점검 후에는 필히 시운전하여 로봇동작 확인 후 정상운전을 하십시오.
-# 6.3. 일반 점검
+*	After inspection, you must perform a trial-operation to check the operation of the robot before performing the normal operation.
 
-표 6-1 일상 점검
+# 6.3. General Inspections 
+
+Table 6-1 Daily Inspection 
 
 <table>
 <thead>
   <tr>
     <th>No.</th>
-    <th>점검 요소</th>
-    <th>점검 항목</th>
-    <th>비고</th>
+    <th>Elements to inspect</th>
+    <th>Items to inspect</th>
+    <th>Remarks</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="3">1</td>
-    <td rowspan="3">제어기</td>
-    <td>표시 램프는 정상인가?</td>
-    <td>눈으로 확인</td>
+    <td rowspan="3">Controller</td>
+    <td>Are the display lamps normal?</td>
+    <td>Check with your own eyes.</td>
   </tr>
   <tr>
-    <td>문은 바로 닫혀 있는가?</td>
-    <td>눈으로 확인</td>
+    <td>Is the door closed properly?</td>
+    <td>Check with your own eyes.</td>
   </tr>
   <tr>
-    <td>Teach Pendant의 화면은 이상이 없는가?</td>
-    <td>눈으로 확인</td>
+    <td>Is there any problem with the screen of the teach pendant?</td>
+    <td>Check with your own eyes.</td>
   </tr>
   <tr>
     <td rowspan="4">2</td>
-    <td rowspan="4">로봇본체</td>
-    <td>동작시 잡음이 있는가?</td>
-    <td>귀로 듣는다</td>
+    <td rowspan="4">Manipulator</td>
+    <td>Is there any noise during the operation?</td>
+    <td>Listen with your own ears.</td>
   </tr>
   <tr>
-    <td>선단 결합 부위의 나사 풀림은 없는가?</td>
-    <td>조인다.</td>
+    <td>Is there any loosening of the screw at the front-end connection part?</td>
+    <td>Fasten.</td>
   </tr>
   <tr>
-    <td>본체 배선 및 Wireharness에 흠집, 오염 및 파손은 없는가?</td>
-    <td>눈으로 확인</td>
+    <td>Is there any scratch, contamination, or damage to the wiring and wire harness of the manipulator?</td>
+    <td>Check with your own eyes.</td>
   </tr>
   <tr>
-    <td>본체의 손상을 유발하는 흙먼지나 기타 장애요인은 없는가?</td>
-    <td>눈확인 및 청소</td>
+    <td>Is there any dirt or obstacle that causes damage to the manipulator?</td>
+    <td>Check with your own eyes, then clean.</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>기 타</td>
-    <td>제어기 및 로봇 본체 주변에 방해요소는 없는가?</td>
-    <td>눈으로 확인</td>
+    <td>Others</td>
+    <td>Is there any interference with the surrounding area of the controller and manipulator?</td>
+    <td>Check with your own eyes.</td>
   </tr>
 </tbody>
 </table>
-# 6.4. 첫회 점검(750시간 점검)
+# 6.4. First Inspection (Inspection When Reaching 750 Hours) 
 
-표 6-2 첫회 점검
+Table 6-2 First Inspection 
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>점검 요소</strong></p></td>
-<td><p><strong>점검 항목</strong></p></td>
-<td><p><strong>비고</strong></p></td>
+<td><p><strong>Elements to Inspect</strong></p></td>
+<td><p><strong>Items to Inspect</strong></p></td>
+<td><p><strong>Remarks</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>외부, 주요 나사</p></td>
-<td><p>나사 풀림</p></td>
-<td><p>조인다.</p></td>
+<td><p>External and main screws</p></td>
+<td><p>Loosening of screws </p></td>
+<td><p>Fasten.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>본체 전기배선 커넥터 및 Wireharness</p></td>
-<td><p>커넥터 풀림</p></td>
-<td><p>조인다.</p></td>
+<td><p>Electric wiring connectors and wire harnesses of the manipulator</p></td>
+<td><p>Loosening of connectors</p></td>
+<td><p>Fasten.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>Dog 및 리밋스위치 취부 나사</p></td>
-<td><p>나사 풀림</p></td>
-<td><p>조인다.</p></td>
+<td><p>Screws for fastening the dogs and limit switches</p></td>
+<td><p>Loosening of screws</p></td>
+<td><p>Fasten.</p></td>
 </tr>
 </tbody>
 </table>
-# 6.5. 주기적 점검
+# 6.5. Cyclic Inspections
 
-표 6-3 주기 점검
+Table 6-3 Cyclic Inspections 
 
 <table>
 <thead>
   <tr>
     <th rowspan="2">No.</th>
-    <th colspan="3">주기(개월)</th>
-    <th rowspan="2">점검 요소</th>
-    <th rowspan="2">점검 항목</th>
-    <th rowspan="2">비고</th>
+    <th colspan="3">Cycle</br>(Months)</th>
+    <th rowspan="2">Elements to Inspect </th>
+    <th rowspan="2">Items to Inspect</th>
+    <th rowspan="2">Remarks</th>
   </tr>
   <tr>
     <th>3</th>
@@ -5128,8 +5108,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>문(door)의 포장</td>
-    <td>‧변형 및 떨어짐 확인</td>
+    <td>Packing of the door</td>
+    <td>‧Checking for deformation and detachment</td>
     <td></td>
   </tr>
   <tr>
@@ -5137,20 +5117,20 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">뒷면</td>
-    <td>‧냉각팬 날개부의 먼지 및 회전</td>
+    <td rowspan="4">Back</td>
+    <td>‧Checking dust on and rotation of the cooling fan blade part</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧회생방전저항의 파손 및 먼지</td>
+    <td>‧Checking the regenerative discharge resistor for damage and dust</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧Transformer Room의 촉감에 의한 발열 확인, 청소</td>
+    <td>‧Checking the transformer room for any heat using the sense of touch, and then cleaning the room</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧Transformer의 터미널 블록 풀림 및 파손</td>
+    <td>‧Checking the transformer terminal block for any loosening and damage</td>
     <td></td>
   </tr>
   <tr>
@@ -5158,8 +5138,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Wireharness</td>
-    <td>‧커넥터의 풀림 및 파손</td>
+    <td>Wire harness</td>
+    <td>‧Checking the connectors for any loosening and damage</td>
     <td></td>
   </tr>
   <tr>
@@ -5167,8 +5147,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>모터 드라이브</td>
-    <td>‧커넥터와 단자 풀림 및 파손</td>
+    <td>Motor drive</td>
+    <td>‧Checking the connectors and terminals for any loosening and damage </td>
     <td></td>
   </tr>
   <tr>
@@ -5176,8 +5156,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>각 보드별 커넥터</td>
-    <td>‧촉감에 의한 풀림 확인</td>
+    <td>Connectors of each board</td>
+    <td>‧Checking for any loosening using the sense of touch</td>
     <td></td>
   </tr>
   <tr>
@@ -5185,8 +5165,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>조작 패널</td>
-    <td>‧ 버튼스위치 상태 확인</td>
+    <td>Operation panel</td>
+    <td>‧Checking the status of buttons and switches</td>
     <td></td>
   </tr>
   <tr>
@@ -5194,8 +5174,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>제어기 전체</td>
-    <td>‧먼지 청소</td>
+    <td>The whole controller</td>
+    <td>‧Cleaning dust</td>
     <td></td>
   </tr>
   <tr>
@@ -5203,8 +5183,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>명판</td>
-    <td>‧각종 명판 점검</td>
+    <td>Nameplate</td>
+    <td>‧Inspecting various nameplates</td>
     <td></td>
   </tr>
   <tr>
@@ -5212,8 +5192,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td rowspan="4"></td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">전압 측정</td>
-    <td>‧1차전원 전압</td>
+    <td rowspan="4">Voltage measurement</td>
+    <td>‧Voltage of the primary power</td>
     <td rowspan="4"></td>
   </tr>
   <tr>
@@ -5223,15 +5203,15 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>‧CNPB1 PB-MB</td>
   </tr>
   <tr>
-    <td>‧ CN24VB1 P24B-24GND</td>
+    <td>‧CN24VB1 P24B-24GND</td>
   </tr>
   <tr>
     <td>10</td>
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>접지</td>
-    <td>‧단자 풀림 및 빠짐 확인</td>
+    <td>Grounding</td>
+    <td>‧Checking the terminals for any loosening and detachment</td>
     <td></td>
   </tr>
   <tr>
@@ -5239,29 +5219,30 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>전지</td>
-    <td>‧전압 점검 및 정기교환</td>
-    <td>메인보드 LED</td>
+    <td>Battery</td>
+    <td>‧Checking the voltage and replacing the battery Periodically</td>
+    <td>Main board LEDs</td>
   </tr>
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">티치펜던트</td>
-    <td>‧외관검사 및 커넥터 접속부 확인</td>
+    <td rowspan="4">Teach pendant</td>
+    <td>‧Inspecting the exterior and checking the connector connection part</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧LCD Display 상태 확인</td>
+    <td>‧LCD Display</br>Checking the status of the LCD display
+</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧LED 표시 확인</td>
+    <td>‧Checking the display of LEDs</td>
     <td></td>
   </tr>
   <tr>
-    <td>‧버튼스위치 및 LED 상태 확인</td>
+    <td>‧Checking the status of the buttons, switches, and LEDs</td>
     <td></td>
   </tr>
   <tr>
@@ -5269,36 +5250,37 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td rowspan="5">안전 관련 부품</td>
-    <td>‧ 비상정지 스위치 확인 (제어기, 티치펜던트)</td>
+    <td rowspan="5">Safety-related parts</td>
+    <td>‧Checking the emergency stop switch (on the controller and teach pendant)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧주 전원 차단 스위치 점검(NFB1)</td>
+    <td>‧Checking the main power circuit breaker switch (NFB1)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧티치펜던트의 인에이블 디바이스 확인</td>
+    <td>‧Checking the Enable device of the teach pendant</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧ 회로 보호기 점검(CP1)</td>
+    <td>‧Checking the circuit protector (CP1)</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>‧전자 접촉기 확인(MC1, MC2)</td>
+    <td>‧Checking the magnetic contacts (MC1, MC2)
+</td>
     <td></td>
   </tr>
   <tr>
@@ -5306,274 +5288,273 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>안전 관련 보드</td>
-    <td>‧ BD632 점검(커넥터, LED)</td>
+    <td>Safety-related board</td>
+    <td>‧Checking the BD630 (Connectors, LEDs)</td>
     <td></td>
   </tr>
 </tbody>
 </table>
-# 6.6. 장기 휴가 시 점검
+# 6.6. Inspection When Going on a Long Vacation
 
-장기 휴가의 경우 로봇 제어기의 전원을 내리기 전에 아래 사항을 점검하십시오.
+When going on a long vacation, you should check the following items first before turning off the controller of the robot.
 
-1. 메인보드에 있는 전지방전검지용 황색LED(BATLOW)가 점등되는지 확인하십시오. 전지에 이상이 있을 때 황색LED가 점등되며 이 때는 정격의 전지로 교환하여 주십시오. 전지에 이상이 있는 상태에서 제어기 입력 전원을 내리면 약 7일 후에는 보드 내의 각종 프로그램 / 정수 데이터가 지워져 버리므로 필히 HRView, USB Memory등을 사용하여 백업을 받아 놓으십시오.
-1. 제어기의 문이 잘 잠겨 있는지 확인하십시오.
-# 6.7. 보수 부품 항목
+(1)	Check whether the yellow LED (BATLOW) for battery discharge detection on the main board is turned on. The yellow LED will be turned on if there is a problem with the battery. In this case, replace the battery with a battery of rated capacity. If the controller input power is turned off while there is a problem with the battery, various programs and integer data in the board will be removed after about seven days. Therefore, you must back them up using HRView or a USB memory.
 
-각 부품들의 특성을 설명합니다.
+(2)	Check if the door of the controller is secured.
 
-**보수 부품 A**
+# 6.7. Maintenance Parts 
+
+The characteristics of individual parts are described below. 
+
+**Maintenance Parts of the Category A**
 
 {% hint style="info" %}
-일상적 보수점검으로서 준비해야 할 중요 부품입니다.
+These are the important parts to be prepared for daily maintenance and inspection.
 {% endhint %}
 
 
-통상의 운전을 유지하기 위해서는 위 부품A-2, 부품A-3은 최소한의 필요한 부품이며 1 set이상을 준비하여 주십시오.
+To maintain normal operation, the parts of the category A-2 and parts of the category A-3 are the minimum necessary parts, and at least one set of each group should be prepared.
 
-표 6-4 보수 부품 점검 A
+
+Table 6-4 Inspection of Maintenance Parts of the Category A 
+
 
 <table>
 <thead>
   <tr>
-    <th>종류</th>
-    <th>내용</th>
-    <th>비고 (참조)</th>
+    <th>Type</th>
+    <th>Contents</th>
+    <th>Remarks (Reference)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>보수 부품 A-1</td>
-    <td>표준 부속 예비 부품</td>
+    <td>Maintenance parts of the category A-1</td>
+    <td>Spare parts for standard parts</td>
     <td></td>
   </tr>
   <tr>
-    <td>보수 부품 A-2</td>
-    <td>중요 백업 부품</td>
+    <td>Maintenance parts of the category A-2</td>
+    <td>Important backup parts</td>
     <td></td>
   </tr>
   <tr>
-    <td>보수 부품 A-3</td>
-    <td>정기 교환 부품</td>
+    <td>Maintenance parts of the category A-3</td>
+    <td>Periodic replacement parts</td>
     <td></td>
   </tr>
 </tbody>
 </table>
 
-표 6-5 보수 부품 A-1 (표준 부속 예비 부품)
+Table 6-5 Maintenance Parts of the Category A-1 (Spare Parts for Standard Parts) 
 
 <table>
 <thead>
   <tr>
     <th>No.</th>
-    <th>품명</th>
-    <th>형식</th>
+    <th>Part name</th>
+    <th>Type</th>
     <th>Maker</th>
-    <th>수량(EA)</th>
-    <th>비고</th>
+    <th>Quantity(EA)</th>
+    <th>Remarks</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>1</td>
     <td>Fuse (F1,F2)</td>
-    <td>GP75(250V, 7.5A)</td>
-    <td>Daito</td>
+    <td>0218005</td>
+    <td>Littlefuse</td>
     <td>2</td>
     <td>BD6C2</td>
   </tr>
   <tr>
     <td>2</td>
     <td>Fuse (F3,F4)</td>
-    <td>GP75(250V, 7.5A)</td>
-    <td>Daito</td>
+    <td>0218005</td>
+    <td>Littlefuse</td>
     <td>2</td>
     <td>BD6C2</td>
   </tr>
   <tr>
     <td>3</td>
     <td>Fuse (F5,F6)</td>
-    <td>GP75(250V, 7.5A)</td>
-    <td>Daito</td>
+    <td>0218005</td>
+    <td>Littlefuse</td>
     <td>2</td>
     <td>BD6C2</td>
   </tr>
 </tbody>
 </table>
 
-표 6-6 보수 부품 A-2 (중요 백업부품)
+Table 6-6 Maintenance Parts of the Category A-2 (Important Backup Parts) 
 
 <table>
 <thead>
   <tr>
     <th>No.</th>
-    <th>품 명</th>
-    <th>형 식</th>
+    <th>Part name</th>
+    <th>Type</th>
     <th>Maker</th>
-    <th>수량(EA)</th>
-    <th>비고</th>
+    <th>Quantity(EA)</th>
+    <th>Remarks</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>1</td>
-    <td>모터 드라이브</td>
+    <td>Motor drive</td>
     <td>H6D6X<br>H6D6A</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>중형 로봇<br>소형 로봇</td>
+    <td>Large-sized robot</br>Medium-sized<br>Small-sized robot</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>메인제어모듈</td>
+    <td>Main control module</td>
     <td>H6COM</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
     <td>3</td>
-    <td>티치펜던트</td>
+    <td>Teach pendant</td>
     <td>TP600</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
     <td>4</td>
-    <td>전원공급모듈</td>
+    <td>Power supply module</td>
     <td>H6PSM30<br>H6PSM15</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>중형 로봇<br>소형 로봇</td>
+    <td>Large-sized robot</br>Medium-sized robot<br>Small-sized robot</td>
   </tr>
   <tr>
     <td rowspan="3">5</td>
-    <td rowspan="3">보드</td>
+    <td rowspan="3">Boards</td>
     <td>BD640</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>서보보드</td>
+    <td>Servo board</td>
   </tr>
   <tr>
     <td>BD632</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>안전IO보드</td>
+    <td>Safety IO board</td>
   </tr>
-  <tr>
-    <td>BD631</td>
-    <td>현대로보틱스</td>
-    <td>1</td>
-    <td>안전EC보드</td>
-  </tr>
+  
 </tbody>
 </table>
 
-표 6-7 보수 부품 A-3 (정기 교환 부품)
+Table 6-7 Maintenance Parts of the Category A-3 (Periodic Replacement Parts) 
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>품명</strong></p></td>
-<td><p><strong>형식</strong></p></td>
+<td><p><strong>Part name</strong></p></td>
+<td><p><strong>Type</strong></p></td>
 <td><p><strong>Maker</strong></p></td>
-<td><p><strong>수량(EA)</strong></p></td>
-<td><p><strong>비고</strong></p></td>
+<td><p><strong>Quantity(EA)</strong></p></td>
+<td><p><strong>Remarks</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
-<td><p>전지 (3.6V AA Size)</p></td>
+<td><p>Battery(3.6V AA Size)</p></td>
 <td><p>ER6V-T1</p></td>
 <td><p>TOSHIBA (JAPAN)</p></td>
 <td><p>1</p></td>
-<td><p>2년 주기 교환</p></td>
+<td><p>Replace it every two years</p></td>
 </tr>
 </tbody>
 </table>
 
-**보수부품 B**
+**Maintenance Parts of the Category B**
 
 {% hint style="info" %}
-여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
+These are the maintenance parts to be prepared when multiple units are purchased.
 {% endhint %}
 
 
-표 6-8 보수 부품 점검 B
+Table 6-8 Maintenance Parts of the Category B 
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>종류</strong></p></td>
-<td><p><strong>내용</strong></p></td>
-<td><p><strong>비고 (참조)</strong></p></td>
+<td><p><strong>Type</strong></p></td>
+<td><p><strong>Contents</strong></p></td>
+<td><p><strong>Remarks (Reference)</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>보수 부품 B-1</p></td>
-<td><p>현대로보틱스에서 구입해야 할 부품</p></td>
+<td><p>Maintenance parts of the category B-1</p></td>
+<td><p>Parts that should be purchased from Hyundai Robotics</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>보수 부품 B-2</p></td>
-<td><p>부품 Maker에게서 직접 구입 가능한 부품</p></td>
+<td><p>Maintenance parts of the category B-2</p></td>
+<td><p>Parts that can be purchased directly from the parts maker</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-표 6-9 보수 부품 B-1 (현대로보틱스에서 구입해야 할 부품)
+Table 6-9 Maintenance Parts of the Category B-1 (Parts that should be purchased from Hyundai Robotics)
 
 <table>
 <thead>
   <tr>
     <th>No.</th>
-    <th>품명</th>
-    <th>형식</th>
+    <th>Part Name</th>
+    <th>Type</th>
     <th>Maker</th>
-    <th>수량(EA)</th>
-    <th>비고</th>
+    <th>Quantity(EA)</th>
+    <th>Remarks</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="3">1</td>
-    <td rowspan="3">와이어 하네스</td>
+    <td rowspan="3">Wire harness</td>
     <td>CMC1</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>대형/중형/소형</td>
+    <td>Large-sized/Medium-sized/Small-sized</td>
   </tr>
   <tr>
     <td>CMC2</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>대형/중형</td>
+    <td>Large-sized/Medium-sized</td>
   </tr>
   <tr>
     <td>CEC1</td>
-    <td>현대로보틱스</td>
+    <td>Hyundai Robotics</td>
     <td>1</td>
-    <td>대형/중형/소형</td>
+    <td>Large-sized/Medium-sized/Small-sized</td>
   </tr>
 </tbody>
 </table>
 
-표 6-10 보수 부품 B-2 (Maker에게서 직접 구입 가능한 부품)
+Table 6-10 Maintenance Parts of the Category B-2 (Parts that can be purchased directly from the parts maker)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>품명</strong></p></td>
-<td><p><strong>형식</strong></p></td>
+<td><p><strong>Part Name</strong></p></td>
+<td><p><strong>Type</strong></p></td>
 <td><p><strong>Maker</strong></p></td>
-<td><p><strong>수량(EA)</strong></p></td>
-<td><p><strong>비고</strong></p></td>
+<td><p><strong>Quantity(EA)</strong></p></td>
+<td><p><strong>Remarks</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>배선용 차단기(NFB)</p></td>
+<td><p>No fuse breaker (NFB)</p></td>
 <td><p>-</p></td>
 <td><p>-</p></td>
 <td><p>1</p></td>
@@ -5581,7 +5562,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>전자 접촉기(MC1, MC2)</p></td>
+<td><p>Magnetic contact (MC1, MC2)</p></td>
 <td><p>-</p></td>
 <td><p>-</p></td>
 <td><p>2</p></td>
@@ -5589,7 +5570,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>회로 보호기 (CP1)</p></td>
+<td><p>Circuit protector (CP1)</p></td>
 <td><p>-</p></td>
 <td><p>-</p></td>
 <td><p>1</p></td>
@@ -5599,12 +5580,12 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </table>
 
 ![](../_assets/6.7._보수_부품_항목-보존온도.png  )
-# 별첨
-# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+# Appendices
+# Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
 
-당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+The industrial robot should be installed in consideration of the inspection standards, both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection (if subject to inspection).
 
-"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
-# 품질보증
+"[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
+# Quality Assurance
 
-"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"

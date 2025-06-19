@@ -1,3 +1,3 @@
-﻿# 3.5. 제어기의 폐기
+﻿# 3.5. Discarding of the Controller
 
-사용자의 안전을 확보하고 환경을 보호하기 위해 특정 부품은 지정된 방법에 따라 관리 및 폐기해야 합니다. 또한 산업성 폐기 물질이 포함된 경우 절대 일반 산업용 쓰레기 또는 가정용 쓰레기와 함께 폐기해서는 안 됩니다. 로봇 시스템의 전체 또는 일부를 폐기할 때에는 해당 국가 또는 지역의 관련 규정 및 법규를 반드시 준수하십시오. 제품의 폐기 및 처분과 관련된 자세한 내용은 당사의 고객지원팀으로 문의하시기 바랍니다.
+In order to ensure user safety and protect the environment, certain parts should be managed and discarded according to specified methods, and if they contain industrial waste materials, they must never be discarded together with general industrial or household waste. When discarding all or part of the robot system, you must comply with the relevant national or local regulations and laws. For details on the discarding and disposal of the product, please contact our customer support team.

@@ -1,36 +1,36 @@
-﻿# 5.1.2. PCI 통신카드 구성
+﻿# 5.1.2. Configuration of the PCI Communication Card
 
-PCI통신카드는 기본적으로(Ethernet 기반 통신 사용 기준) 다음과 같이 구성되어 있으며, 산업용 통신에 따라 커넥터 및 LED 개수가 다릅니다.
+A PCI communication card is basically configured, as shown below (when Ethernet-based communication is used), and varies in the number of connectors and LEDs depending on the type of industrial communication.
 
 ![](../../_assets/그림_5.1_PCI통신_카드_외관.png  )
 
-그림 5.1 PCI통신 카드 외관
+Figure 5.1 Exterior of the PCI Communication Card</br></br>
 
-표 5-2 PCI 통신 카드 외관 설명
+Table 5-2 Description of the Exterior of the PCI Communication Card
 
 <table>
 <thead>
   <tr>
-    <th>명칭</th>
-    <th>용도</th>
+    <th>Name</th>
+    <th>Usage</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Rotary Switch</td>
-    <td>Slot ID에 따른 통신 설정</td>
+    <td>Sets the communication according to the slot ID</td>
   </tr>
   <tr>
     <td>LED</td>
-    <td>시스템 및 통신 상태 표시</td>
+    <td>Displays the system and communication status</td>
   </tr>
   <tr>
     <td>Communication Port</td>
-    <td>통신 연결용 포트</td>
+    <td>Communication connection port</td>
   </tr>
   <tr>
     <td>PCI Bus</td>
-    <td>PC연결용 Bus</td>
+    <td>PC connection bus</td>
   </tr>
 </tbody>
 </table>

@@ -1,1 +1,1 @@
-﻿# 5. 제어기의 선택구성
+﻿# 5. Optional Components of the Controller

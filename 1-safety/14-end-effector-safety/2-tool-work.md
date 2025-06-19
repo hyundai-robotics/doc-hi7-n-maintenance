@@ -1,5 +1,6 @@
-﻿# 1.14.2. 툴(Tool) / 작업물
+﻿# 1.14.2. Tools/Workpieces
 
-* 밀링 커트와 같은 공구를 안전하게 바꾸는 것이 가능하도록 해야 합니다. 커터가 회전하는 것이 멈출 때까지 안전장치는 제 기능을 확실히 발휘하여야 합니다.
+* 	It should be possible to safely change tools such as a milling cutter. Until the cutter stops rotating, the safety devices should surely perform proper functions.
 
-* 툴(Tool)은 갑작스러운 정전 또는 제어 장애 등이 발생되더라도 작업물에 이상이 없도록 설계되어야 합니다. 수동 조작일 때는 작업물의 분리가 가능해야 합니다.
+*	The tool should be designed in a way that the workpiece will not have any abnormality even when a sudden power failure or control failure occurs. In manual operation, it should be possible to separate the workpiece.
+

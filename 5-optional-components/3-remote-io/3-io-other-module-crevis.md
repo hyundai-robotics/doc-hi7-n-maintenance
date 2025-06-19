@@ -1,15 +1,16 @@
-﻿# 5.3.3. IO 및 기타 모듈(Crevis 사)
+﻿# 5.3.3. IO and Other Modules (of Crevis)
 
-IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게 구성해서 사용하면 됩니다.
+The types of IO and other modules are as shown below and can be configured and used according to the desired operation.
 
-표 5-8 IO 모듈(Crevis사)
+Table 5-8 IO Module (of Crevis)
+
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -56,14 +57,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-9 Relay 모듈(Crevis사)
+Table 5-9 Relay Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -73,14 +74,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-10 아날로그 IO 모듈(Crevis사)
+Table 5-10 Analogue IO Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -96,14 +97,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-11 펄스 측정 모듈(Crevis사)
+Table 5-11 Pulse Measuring Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -120,14 +121,14 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tbody>
 </table>
 
-표 5-12 Serial 통신 모듈(Crevis사)
+Table 5-12 Serial Communication Module (of Crevis)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model Name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>

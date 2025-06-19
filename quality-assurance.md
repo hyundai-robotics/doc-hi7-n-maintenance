@@ -1,3 +1,3 @@
-﻿# 품질보증
+﻿# Quality Assurance
 
-"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"

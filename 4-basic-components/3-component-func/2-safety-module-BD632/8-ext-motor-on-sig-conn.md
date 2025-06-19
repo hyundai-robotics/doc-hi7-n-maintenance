@@ -1,7 +1,7 @@
-﻿# 4.3.2.8. 외부 모터온 신호의 연결
+﻿# 4.3.2.8. Connection of the External Motor On Signal
 
 ![](../../../_assets/그림_4.39_외부_모터온_신호의_연결방법.png  )
 
-그림 4.19 외부 모터온 신호의 연결방법
+Figure 4.19 Method for Connection of the External Motor On Signal
 
-제어기 외부에서 모터온 신호 입력을 사용할 경우 위의 접점의 형태로 연결하여 사용해야 합니다. 연결하지 않을 경우 점퍼선으로 연결을 해주시기 바랍니다.(N.C접점)
+When using a motor on signal input from the outside of the controller, the relevant connection should be configured in the form of a contact as above. If you don't connect, please connect it with a jumper wire. (N.C Contact type)

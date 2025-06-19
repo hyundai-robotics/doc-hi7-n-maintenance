@@ -1,3 +1,3 @@
-﻿# 3.6.4. 제어기와 접지
+﻿# 3.6.4. The Controller and Grounding
 
-제어기를 안전하게 사용하기 위해 제어기에 접지선을 연결하여 주십시오. 5.5㎟ 이상의 접지선을 사용하여 주십시오. (제 3종 접지)
+For using the controller safely, connect the grounding wire to the controller. Use a grounding wire of 5.5㎟ or more. (Grounding of Category 3).

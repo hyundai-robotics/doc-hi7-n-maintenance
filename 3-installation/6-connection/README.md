@@ -1,10 +1,9 @@
-﻿# 3.6. 접속
+﻿# 3.6. Connection
 
 {% hint style="info" %}
-1. 케이블을 연결하기 전에 제어기의 메인 전원 스위치를 “OFF”로 하고, 메인 전원 스위치를 잠그기 위해 자물쇠를 사용하십시오. 
-2. 제어기에는 DC400V의 충전된 에너지가 있습니다. 주의하십시오. 
-충전된 에너지를 방전시키기 위해 전원 스위치를 “OFF”로 한 후 최소한 5분간 기다리십시오.
-3. PCB를 다룰 때에는 정전기에 의해 손상되지 않도록 주의하십시오.
-4. 배선과 결선은 반드시 자격있는 사람에 의해 수행되어야 합니다.
+1. Before connecting the cables, turn “off” the controller's main power switch and lock it by using use a padlock. 
+2. The controller has DC400V charged energy. Be careful. 
+Turn “off” the power switch and then wait 5 minutes at least to discharge the charged energy.
+3. When handling the PCB, take precautions not to allow static electricity to damage it.
+4. Wiring and connection of wires must be performed by qualified personnel.
 {% endhint %}
-

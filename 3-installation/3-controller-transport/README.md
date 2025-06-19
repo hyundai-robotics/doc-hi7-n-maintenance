@@ -1,4 +1,3 @@
-﻿# 3.3. 제어기의 운반
+﻿# 3.3. Transport of the Controller
 
-Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 설명합니다.
-로봇의 포장, 운반에 관련한 사항은 로봇보수메뉴얼을 참고하시기 바랍니다.
+The following items describle the precautions to take in packing, transporting, and unpacking the Hi6 controller. Rrefer to the robot maintenance manual for the matters related to the packing and transport of the robot.

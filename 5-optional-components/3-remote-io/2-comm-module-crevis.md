@@ -1,15 +1,16 @@
-﻿# 5.3.2. 통신 모듈(Crevis사)
+﻿# 5.3.2. Communication Module (of Crevis)
 
-통신 모듈의 종류를 다음과 같으며 원하는 통신에 따라 사용하면 됩니다.
+The types of communication modules are as shown below and can be used according to the desired communication.
 
-표 5-7 통신 모듈(Crevis사)
+Table 5-7 Communication Module (of Crevis)
+
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>NO</strong></p></td>
-<td><p><strong>모델명</strong></p></td>
-<td><p><strong>사양</strong></p></td>
+<td><p><strong>Model name</strong></p></td>
+<td><p><strong>Specification</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>

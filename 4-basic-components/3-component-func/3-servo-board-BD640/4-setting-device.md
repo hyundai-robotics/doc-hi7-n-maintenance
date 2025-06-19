@@ -1,35 +1,36 @@
-﻿# 4.3.3.4. 설정장치
+﻿# 4.3.3.4. Setting Devices 
 
 {% hint style="info" %}
-DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 임의로 변경하면 안됩니다.
+The DIP switch is set to OFF mode when shipped from the factory, and the setting should not be changed arbitrarily by the user.
 {% endhint %}
 
-표 4-12 서보보드(BD640) DIP스위치(DS1) 설정방법
+
+Table 4-12 Method to Set the DIP Switch (DS1) of the Servo Board (BD640) 
 
 <table>
 <thead>
   <tr>
-    <th>스위치 번호</th>
+    <th>Switch number</th>
     <th>1</th>
     <th>2</th>
-    <th>모드</th>
+    <th>Mode</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>출고 시 설정</td>
+    <td>Setting when shipped from the factory</td>
     <td>OFF</td>
     <td>OFF</td>
     <td>GET MODE</td>
   </tr>
   <tr>
-    <td>테스트 시</td>
+    <td>When testing</td>
     <td>ON</td>
     <td>OFF</td>
     <td>WAIT MODE</td>
   </tr>
   <tr>
-    <td>스위치 외형</td>
+    <td>Switch exterior</td>
     <td colspan="3"></td>
   </tr>
 </tbody>
@@ -38,16 +39,16 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 ![](../../../_assets/표4-11_스위치외형.png)</br></br>
 
 {% hint style="info" %}
-다음은 사용자가 임의로 변경할 수 없으며, FPGA JTAG을 통한 재프로그래밍이 필요한 경우에만 참고하세요.
+The user cannot change the following items arbitrarily and needs to refer to them only when required to reprogram through FPGA JTAG.
 {% endhint %}
 
 
-표 4-13 서보보드(BD640) 점퍼 (JP1) 설명
+Table 4-13 Description of the Jumper (JP1) of the Servo Board (BD640) 
 
 <table>
 <thead>
   <tr>
-    <th colspan="2" rowspan="2">명칭<br>설정내용</th>
+    <th colspan="2" rowspan="2">Name<br>Contents of the setting</th>
     <th colspan="4">JP1</th>
   </tr>
   <tr>
@@ -59,22 +60,22 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">점퍼 셋팅</td>
-    <td>QSPI (플래쉬) 부팅 모드</td>
+    <td rowspan="2">Setting of the jumper</td>
+    <td>QSPI (flash) boot mode</td>
     <td>⊙</td>
     <td>⊙</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>JTAG 프로그래밍 모드</td>
+    <td>JTAG programming mode</td>
     <td></td>
     <td>⊙</td>
     <td>⊙</td>
     <td></td>
   </tr>
   <tr>
-    <td>출고 시 설정</td>
+    <td>Setting when shipped from the factory</td>
     <td colspan="5">1, 2 : short / 3 : open</td>
   </tr>
 </tbody>

@@ -1,5 +1,5 @@
-﻿# 4.3.3.1. 개요
+﻿# 4.3.3.1. Overview
 
-메인으로부터 이더켓 통신을 통하여 받은 위치 지령에 의하여 6축(최대8축)분 모터에 대한 동작제어를 수행하며, 엔코더 신호처리, 에러상황점검 및 구동장치(Drive Unit)의 PWM신호를 만듭니다.
+The servo board controls the operation of six axes (maximum eight axes) according to the position command received from the main board through EtherCAT communication, and processes the encoder signal, checks the error status, and creates the PWM signal of the drive unit.
 
 ![](../../../_assets/4.3.3.1._개요(Hi6).png  )

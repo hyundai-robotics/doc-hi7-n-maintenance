@@ -1,21 +1,22 @@
-﻿# 6.2. 정기 점검 시 일반적 주의사항
+﻿# 6.2. General Cautions for Periodic Inspections
 
-* 점검 작업은 당사가 실시한 로봇 트레이닝 센터의 수강을 수료한 사람이 하도록 하십시오.
+* 	The inspection work should be conducted by a person who has completed the courses implemented at the robot training center by our company.
 
-* 점검 작업을 하기 전에 작업에 필요한 부품 및 공구, 도면 등을 확인하십시오.
+*	Before carrying out inspection works, check the parts, tools, drawings, etc. necessary for the work.
 
-* 교환 부품은 당사가 지정한 전문 부품을 필히 사용하십시오.
+*	Use the specialized replacement parts designated by our company.
 
-* 로봇의 본체를 점검할 때는 전원을 필히 끄고 하십시오.
+*	Turn off the power when inspecting the manipulator.
 
-* 제어기의 문을 열고 작업할 때는 1차 전원을 끄고 주위에는 먼지 등이 날아들어 오지 않도록 주의하십시오.
+*	When conducting works while keeping the door open, turn off the primary power and take precautions to prohibit dust, etc. to fly into the surrounding area.
 
-* 제어기의 부품에 손을 대어야 할 경우에는 정전기에 의한 IC파괴가 생기지 않도록 특히 주의하십시오. (커넥터 접촉시에도 주의)
+*	When required to touch the parts of the controller, you should take special care not to allow the IC to be destroyed by static electricity (Be careful also when contacting the connector).
 
-* 로봇 본체를 동작시키면서 정기 점검할 경우는 동작범위 내에 절대로 사람이 들어가지 않도록 주의하십시오.
+*	When performing periodic inspections while operating the manipulator, take precautions to prohibit anyone from entering inside the operation range.
 
-* 전압 측정은 지정된 장소에서 하고, 감전 및 단락에 주의하십시오.
+*	You should measure the voltage at a designated place and take precautions for electric shock and short-circuiting.
 
-* 로봇과 제어기 점검을 동시에 하지 않도록 하십시오.
+*	Do not inspect the robot and the controller at the same time. 
 
-* 점검 후에는 필히 시운전하여 로봇동작 확인 후 정상운전을 하십시오.
+*	After inspection, you must perform a trial-operation to check the operation of the robot before performing the normal operation.
+

@@ -1,16 +1,16 @@
-﻿# 3.6.6. 사용자 이더넷 포트의 접속
+﻿# 3.6.6. Connection of the Ethernet Port for the User
 
-사용자용 이더넷 포트는 제어기 전면 도어부에 위치하며, Pin Description 및 PC와의 결선은 다음과 같습니다.
+The Ethernet port for the user is located on the front door of the controller. The pin descriptin and connection with a Pc are as follows.</br></br>
 
-표 3-4 핀 설명 (RJ45 커넥터 사양; RJ 45P Shield)
+Table 3-4 Pin Description (RJ45 Connector Specification; RJ 45P Shield)
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>RJ45 Pin No.</strong></p></td>
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>약자</strong></p></td>
-<td><p><strong>방향</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Abbreviation</strong></p></td>
+<td><p><strong>Direction</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>

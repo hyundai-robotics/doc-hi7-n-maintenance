@@ -1,3 +1,3 @@
-﻿# 4.3.2.1. 개요
+﻿# 4.3.2.1. Overview
 
-안전모듈(BD632)은 ISO 13849-1를 준수하여 PLr=d cat3(SIL2)을 만족시키기 위해 이중화된 안전 전기회로로 설계되었으며, 안전 관련 입력의 상태를 지속적으로 모니터링합니다. 만약 시스템 에러 또는 안전 관련 입력이 검지되면, 위험성 평가에 의해 결정된 정지 분류에 따라 모터전원과 브레이크 전원을 차단함으로써, 로봇을 안전한 상태가 되도록 하는 역할을 합니다.
+For meeting the requirement of PLr=d cat3 (SIL2) in compliance with IOS 13849-1, the safety module (BD632) is designed in a dualized safety electric circuit and continuously monitors the status of safety-related inputs. If a system error or safety-related input is detected, this safety module renders the robot into a safe state by cutting off the motor power and brake power according to the classification of the stop types determined through risk assessment.

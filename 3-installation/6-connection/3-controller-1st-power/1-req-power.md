@@ -1,16 +1,16 @@
-﻿# 3.6.3.1. 전원 요구 조건
+﻿# 3.6.3.1. Power Requirements 
 
-표 3-2 전원 요구 조건
+Table 3-2 Power Requirements 
 
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>제어기 종류</strong></p></td>
-<td><p><strong>용량<sup>*1)</sup> [KVA]</strong></p></td>
-<td><p><strong>입력 전압 <sup>*2)</sup> [V]</strong></p></td>
-<td><p><strong>주파수[Hz]</strong></p></td>
-<td><p><strong>피크전류[A]</strong></p></td>
+<td><p><strong>Controller type</strong></p></td>
+<td><p><strong>Capacity*1)<sup>*1)</sup>[KVA]</strong></p></td>
+<td><p><strong>Input voltage<sup>*2)</sup>[V]</strong></p></td>
+<td><p><strong>Frequency[Hz]</strong></p></td>
+<td><p><strong>Peak current[A]</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
@@ -63,8 +63,10 @@
 </tbody>
 </table>
 
-주 1) 전원 용량
 
-제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 “본체보수설명서” 참조
+Note 1) Power capacity
 
-주 2) 전압 범위: ±10% (제어기의 전원 터미널)
+Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the “Manipulator Maintenance Manual”.
+
+Note 2) Voltage range: ±10% (at the power terminal of the controller)
+
