@@ -124,4 +124,3 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
 
 * 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
-test
