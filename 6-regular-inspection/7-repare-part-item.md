@@ -82,6 +82,14 @@
     <td>2</td>
     <td>BD6C2</td>
   </tr>
+  <tr>
+    <td>4</td>
+    <td>Fuse (F1)</td>
+    <td>0458007.DR(63V, 7A)</td>
+    <td>Littelfuse</td>
+    <td>1</td>
+    <td>BD604</td>
+  </tr>
 </tbody>
 </table>
 
