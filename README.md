@@ -21,7 +21,7 @@
 
 이 설명서에서 다루고 있는 내용은 저작권 법과 비밀 유지 계약에 의하여 보호받고 있습니다. 이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내 부 교육 자료로 제공되어 사용될 수 있습니다만, 명시적으로 허용하지 않은 사용, 복사, 제 3자에의 공개 및 배포 등의 행위는 엄격히 금지됩니다.
 
-Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2025 HYUNDAI ROBOTICS. All rights reserved.
 
 ## 안전 주의 사항
 

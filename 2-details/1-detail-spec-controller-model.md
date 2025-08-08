@@ -6,8 +6,8 @@
 <thead>
   <tr>
     <th colspan="2">&nbsp;&nbsp;&nbsp;<br>모델&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6-N00-A0<br>Hi6-N30-A0<br>Hi6-N80-A0&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6-N00U-A0<br>Hi6-N30U-A0<br>Hi6-N80U-A0</th>
+    <th><br>Hi6a-N00-A0<br>Hi6a-N30-A0<br>Hi6a-N80-A0&nbsp;&nbsp;&nbsp;</th>
+    <th><br>Hi6a-N00U-A0<br>Hi6a-N30U-A0<br>Hi6a-N80U-A0</th>
   </tr>
 </thead>
 <tbody>
@@ -81,16 +81,16 @@
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6COM-T&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>서보보드&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD640&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>서보안전보드&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD642&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>안전모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD632&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>백플레인보드&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD604&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>전원공급모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6PSM(BD6C2)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
@@ -140,7 +140,7 @@
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>중 량&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">표준 사양(TR 미포함)<br>Hi6-N30(U): 120kg<br>Hi6-N00(U): 120kg<br>Hi6-N80(U): 125kg<br><br>옵션 사양(TR포함)<br>Hi6-N30(U): 165kg<br>Hi6-N00(U): 185kg<br>Hi6-N80(U): 195kg</td>
+    <td colspan="2">표준 사양(TR 미포함)<br>Hi6a-N30(U): 80kg<br>Hi6a-N00(U): 80kg<br>Hi6a-N80(U): 90kg<br><br>옵션 사양(TR포함)<br>Hi6a-N30(U): 140kg<br>Hi6a-N00(U): 160kg<br>Hi6a-N80(U): 170kg</td>
   </tr>
 </tbody>
 </table>
@@ -160,42 +160,42 @@
 </thead>
 <tbody>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N30&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N30&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N00&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N00&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N80&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N80&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N30U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N30U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N00U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N00U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N80U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N80U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>

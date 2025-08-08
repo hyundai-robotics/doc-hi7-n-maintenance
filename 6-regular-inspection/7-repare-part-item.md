@@ -1,6 +1,10 @@
 ﻿# 6.7. 보수 부품 항목
 
+<<<<<<< HEAD
+각 부품들의 특성을 설명합니다
+=======
 각 부품들의 특성을 설명합니
+>>>>>>> 833d96fc1b1bd2ee887041b0e71fb0efd43df446
 
 **보수 부품 A**
 
@@ -77,6 +81,14 @@
     <td>Daito</td>
     <td>2</td>
     <td>BD6C2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Fuse (F1)</td>
+    <td>0458007.DR(63V, 7A)</td>
+    <td>Littelfuse</td>
+    <td>1</td>
+    <td>BD604</td>
   </tr>
 </tbody>
 </table>
