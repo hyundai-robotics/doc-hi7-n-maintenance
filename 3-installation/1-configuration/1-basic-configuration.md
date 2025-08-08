@@ -4,7 +4,7 @@
 
 그림 3.1 산업용 로봇 설치의 기본 구성
 
-* Hi6제어기(Hi6 Controller)
+* Hi6a 제어기(Hi6a Controller)
 
 * 티칭펜던트(Teaching Pendant)
 
