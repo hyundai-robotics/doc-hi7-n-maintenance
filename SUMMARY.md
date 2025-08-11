@@ -64,7 +64,7 @@
     * [4.3.1. 메인모듈(H6COM-T)](4-basic-components/3-component-func/1-main-module-H6COM-T/README.md)
       * [4.3.1.1. 개요](4-basic-components/3-component-func/1-main-module-H6COM-T/1-overview.md)
       * [4.3.1.2. 커넥터](4-basic-components/3-component-func/1-main-module-H6COM-T/2-connector.md)
-    * [4.3.2. 서보안전 보드(BD642))](4-basic-components/3-component-func/2-safety-module-BD632/README.md)
+    * [4.3.2. 서보안전 보드(BD642))](4-basic-components/3-component-func/2-Servo-safety-board-BD642/README.md)
       * [4.3.2.1. 개요](4-basic-components/3-component-func/2-safety-module-BD632/1-overview.md)
       * [4.3.2.2. 커넥터](4-basic-components/3-component-func/2-safety-module-BD632/2-connector.md)
       * [4.3.2.3. 표시장치](4-basic-components/3-component-func/2-safety-module-BD632/3-display.md)
