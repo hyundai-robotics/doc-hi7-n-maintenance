@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6-N 제어기 보수 설명서](README.md)
+* [Hi6a 제어기 보수 설명서](README.md)
 
 * [1. 안전](1-safety/README.md)
   * [1.1. 적용 표준](1-safety/1-applied-standard.md)
@@ -108,6 +108,18 @@
     * [5.4.4. 설정장치](5-optional-components/4-BD680-Option-safetyIO-board/4-bd680-setting.md)
     * [5.4.5. 안전출력 결선](5-optional-components/4-BD680-Option-safetyIO-board/5-bd680-cnso-conn.md)
     * [5.4.6. 안전입력 결선](5-optional-components/4-BD680-Option-safetyIO-board/6-bd680-cnsi-conn.md)
+  * [5.5. 사용자 DIO (BD681))](5-optional-components/5-UserDIO/README.md)
+    * [5.5.1. 개요](5-optional-components/5-UserDIO/1-overview.md)
+    * [5.5.2. 하드웨어 정보](5-optional-components/5-UserDIO/2-HW-Inform.md)
+    * [5.5.3. 사용자 DIO 설정 방법](5-optional-components/5-UserDIO/3-Setting/README.md)
+      * [5.5.3.1. 보드 스위치 확인](5-optional-components/5-UserDIO/3-Setting/1-Board-Switch-Setting.md)
+      * [5.5.3.2 EtherCAT 설정](5-optional-components/5-UserDIO/3-Setting/2-EtherCAT-Setting.md)
+      * [5.5.3.3 FB 블럭 설정](5-optional-components/5-UserDIO/3-Setting/3-FB-Block_Setting.md)
+      * [5.5.3.4 내장 PLC 설정 확인](5-optional-components/5-UserDIO/3-Setting/4-Internal-PLC-Setting.md)
+      * [5.5.3.5 센서 동기 설정](5-optional-components/5-UserDIO/3-Setting/5-Sensor-Sync-Setting.md)
+    * [5.5.4 사용자 DIO 사용 방법](5-optional-components/5-UserDIO/4-Usage-Instructions/README.md)
+      * [5.5.4.1 DIO 사용 방법](5-optional-components/5-UserDIO/4-Usage-Instructions/1-DIO-Usage.md)
+      * [5.5.4.2 컨베이어 엔코더 인터페이스 사용 방법](5-optional-components/5-UserDIO/4-Usage-Instructions/2-Conveyor-Usage.md)
 
 * [6. 정기 점검](6-regular-inspection/README.md)
   * [6.1. 점검 일정](6-regular-inspection/1-inspection-schedule.md)
