@@ -14,7 +14,7 @@
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>Hi6-N00</p></td>
+<td><p>Hi6a-N00</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -22,7 +22,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>Hi6-N30</p></td>
+<td><p>Hi6a-N30</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -30,7 +30,7 @@
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>Hi6-N80</p></td>
+<td><p>Hi6a-N80</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -38,7 +38,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>Hi6-N00U</p></td>
+<td><p>Hi6a-N00U</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -46,7 +46,7 @@
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>Hi6-N30U</p></td>
+<td><p>Hi6a-N30U</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -54,7 +54,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>Hi6-N80U</p></td>
+<td><p>Hi6a-N80U</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
