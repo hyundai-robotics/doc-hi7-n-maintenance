@@ -200,9 +200,10 @@ The drive module differs depending on the type of the robot, so you must check t
 {% endhint %}
 
 
-![](../../../_assets/그림_4.39_BD651_부품_배치도.png  )
+![](../../../_assets/그림_4_20_BD651V60_부품_배치도.png  )</br></br>
+![](../../../_assets/그림_4_21_BD651V70_부품_배치도.png  )</br></br>
 
-Figure 4.20 Parts Placement Diagram of BD651</br></br>
+Figure 4.20 Parts Placement Diagram of BD651V60, BD651V70</br></br>
 
 Table 4-19 Description of the Connectors of BD651
 
@@ -303,9 +304,11 @@ Table 4-20 Description of LEDs of BD651
 </tbody>
 </table>
 
-![](../../../_assets/그림_4.40_BD652_부품_배치도.png  )
+![](../../../_assets/그림_4_22_BD652V60_부품_배치도.png  ) </br></br>
 
-Figure 4.21 Parts Placement Diagram of BD652
+![](../../../_assets/그림_4_23_BD652V70_부품_배치도.png  ) </br></br>
+
+Figure 4.21 Parts Placement Diagram of BD652V60, BD652V70
 
 Table 4-21 Description of the Connectors of BD652
 

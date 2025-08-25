@@ -2,9 +2,9 @@
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The servo gun drive module can drive one motor of 50A or below and is configured as follows.
 
-![](../../../_assets/그림_4.44_H6D1Z용_BD659_부품_배치도.png  )
+![](../../../_assets/그림_4_27_BD659V60_부품_배치도.png  )
 
-Figure 4.25 Parts Placement Diagram of BD659 for H6D1Z</br></br>
+Figure 4.25 Parts Placement Diagram of BD659V60 for H6D1Z</br></br>
 
 Table 4-37 Configuration of H6D1Z
 
