@@ -20,7 +20,7 @@
     <td>- 디지털 입력 최대 48 채널<br>- 디지털 출력 최대 48 채널<br>- NPN/PNP 전환 가능<br>- 디지털 출력 중 릴레이 출력 8채널 선택가능<br>- 컨베이어 인터페이스 2 체널</td>    
   </tr>
   <tr>
-    <td>안전통신보드보드(BD671)</td>
+    <td>안전 통신 보드(BD671)</td>
     <td>- PROFiSafe/PROfiNET 통신 지원<br>- PROFiSafe 통신 : 입력 64 포인트, 출력 64 포인트<br>- PROFiNET 통신 : 입력 240 byte, 출력 240 byte </td>
   </tr>
   <tr>
