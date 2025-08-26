@@ -1,5 +1,7 @@
 ﻿# 5.4.3. 표시장치
 
+(1) 보드 TOP면 표시 장치   
+
 아래 그림은 옵션 안전IO모듈(BD680)의 표시(LED)장치 위치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
 
 ![](../../_assets/BD680_PCB_상태.png)   
@@ -45,3 +47,62 @@
 </table>
 </tbody>
 
+(2) 보드 전면 표시 장치   
+
+아래 그림은 옵션 안전IO모듈(BD680)의 전면 표시 장치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
+
+![](../../_assets/BD680_전면표시장치.png)   
+그림 5.4.3-2 옵션 안전IO모듈(BD680)의 전면 표시장치 배치   
+
+표 5.4.3-2 옵션 안전IO모듈(BD680) 전면 표시장치 설명   
+<table>
+<tbody>
+  <tr>
+    <td><strong>번호</strong></td>
+    <td><strong>명칭</strong></td>
+    <td><strong>표시내용</strong></td>
+    <td><strong>색상</strong></td>
+    <td><strong>표시상태</strong></td>
+    <td><strong>표시상태 설명</strong></td>
+  </tr>
+  <tr>
+    <td>(1)</td>
+    <td>SW1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>향후 사용 예정</td>
+  </tr>
+  <tr>
+    <td rowspan="2">(2)</td>
+    <td>A_SOx<br>
+        (x=1~8)</td>
+    <td>A채널 안전출력x 상태표시</td>
+    <td rowspan="2">녹색</td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전출력x ON 상태 <br>
+                    각 채널 안전출력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SOx<br>
+        (x=1~8)</td>
+    <td>B채널 안전출력x 상태표시</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">(3)</td>
+    <td>A_SIx<br>
+        (x=1~8)</td>
+    <td>A채널 안전입력x 상태표시</td>
+    <td rowspan="2">녹색 </td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전입력x ON 상태 <br>
+                    각 채널 안전입력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SIx<br>
+        (x=1~8)</td>
+    <td>B채널 안전입력x 상태표시</td>
+  </tr>
+</table>
+</tbody>
