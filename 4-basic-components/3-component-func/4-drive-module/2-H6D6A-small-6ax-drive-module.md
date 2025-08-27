@@ -202,9 +202,10 @@
 드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
 {% endhint %}
 
-![](../../../_assets/그림_4.41_BD653_부품_배치도.png  )
+![](../../../_assets/그림_4_24_BD653V60_부품_배치도.png  )
 
-그림 4.22 BD653 부품 배치도
+
+그림 4.22 BD653V60 부품 배치도
 
 표 4-28 BD653 커넥터 설명
 
@@ -295,9 +296,9 @@
 </tbody>
 </table>
 
-![](../../../_assets/그림_4.42_BD654_부품_배치도.png  )
+![](../../../_assets/그림_4_25_BD654V60_부품_배치도.png  )
 
-그림 4.23 BD654 부품 배치도
+그림 4.23 BD654V60 부품 배치도
 
 표 4-30 BD654 커넥터 설명
 
@@ -327,11 +328,6 @@
 <td><p><strong>CNCVT</strong></p></td>
 <td><p>컨버터부 에러 신호</p></td>
 <td><p>BD653 Board to Board 커넥터</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>TBIO</strong></p></td>
-<td><p>예비 전용IO 터미널블록</p></td>
-<td><p>Reserved</p></td>
 </tr>
 </tbody>
 </table>
