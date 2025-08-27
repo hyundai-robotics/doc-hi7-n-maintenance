@@ -1,11 +1,13 @@
 ﻿# 4.3.2.3. 표시장치
 
-아래 그림은 서보/안전모듈(BD642)의 표시장(LED, 7세그먼트)장치 위치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.   
+(1) 보드 TOP면 표시 장치   
+
+아래 그림은 서보/안전모듈(BD642)의 표시장치(LED, 7세그먼트) 위치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.   
 
 ![](../../../_assets/BD642_PCB_상태.png)   
-그림 4.3.2.3-1 서보/안전모듈(BD642)의 표시장치 배치
+그림 4.3.2.3-1 서보/안전모듈(BD642) 보드TOP 표시장치 배치
 
-표 4.3.2.3-1 서보/안전모듈(BD642) 표시장치 설명   
+표 4.3.2.3-1 서보/안전모듈(BD642) 보드TOP 표시장치 설명   
 <table>
 <tbody>
   <tr>
@@ -206,6 +208,156 @@
       <br>조치 : 보드(BD642) 교체
     </td>
   </tr>
+
+  <tr>
+    <td>(16)<br>
+        (17)<br>
+        (18)
+    </td>
+    <td>LED27
+      <br>LED28
+      <br>SEG1
+    </td>
+    <td>  
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+      다음 전면표시 장치 항목 참조
+    </td>
+  </tr>
+
 </table>
 </tbody>
 
+(2) 보드 전면 표시 장치   
+아래 그림은 서보/안전모듈(BD642)의 전면 표시 장치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
+
+![](../../../_assets/BD642_전면표시장치.png)   
+그림 4.3.2.3-2 서보/안전모듈(BD642) 전면 표시장치 배치
+
+표 4.3.2.3-2 서보/안전모듈(BD642) 전면 표시장치 설명   
+<table>
+<tbody>
+  <tr>
+    <td><strong>번호</strong></td>
+    <td><strong>명칭</strong></td>
+    <td><strong>표시내용</strong></td>
+    <td><strong>색상</strong></td>
+    <td><strong>표시상태</strong></td>
+    <td><strong>표시상태 설명</strong></td>
+  </tr>
+  <tr>
+    <td rowspan="2">(1)</td>
+    <td>A_SO1</td>
+    <td>A채널 안전출력1 상태표시</td>
+    <td rowspan="2">녹색 </td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전출력1 ON 상태 <br>
+                    각 채널 안전출력1 OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SO1</td>
+    <td>B채널 안전출력1 상태표시</td>
+  </tr>
+  <tr>
+    <td rowspan="2">(2)</td>
+    <td>A_SIx<br>
+        (x=1~4)</td>
+    <td>A채널 안전입력x 상태표시</td>
+    <td rowspan="2">녹색</td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전입력x ON 상태 <br>
+                    각 채널 안전입력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SIn<br>
+        (n=1~4)</td>
+    <td>B채널 안전입력x 상태표시</td>
+  </tr>
+
+  <tr>
+    <td rowspan="10">(3)</td>
+    <td>LED27 (1)</td>
+    <td>LED27 (1) 표시내용</td>
+    <td rowspan="5">녹색</td>
+    <td>점등<br>소등</td>
+    <td>LED27 (1) ???<br>
+        LED27 (1) ???</td>
+  </tr>
+  <tr>
+    <td>LED27 (2)</td>
+    <td>LED27 (2) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED27 (2) ???<br>
+        LED27 (2) ???</td>
+  </tr>
+  <tr>
+    <td>LED27 (3)</td>
+    <td>LED27 (3) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED27 (3) ???<br>
+        LED27 (3) ???</td>
+  </tr>
+  <tr>
+    <td>LED27 (4)</td>
+    <td>LED27 (4) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED27 (4) ???<br>
+        LED27 (4) ???</td>
+  </tr>
+  <tr>
+    <td>LED27 (5)</td>
+    <td>LED27 (5) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED27 (5) ???<br>
+        LED27 (5) ???</td>
+  </tr>
+  <tr>
+    <td>LED28 (1)</td>
+    <td>LED28 (1) 표시내용</td>
+    <td rowspan="5">적색</td>
+    <td>점등<br>소등</td>
+    <td>LED28 (1) ???<br>
+        LED28 (1) ???</td>
+  </tr>
+  <tr>
+    <td>LED28 (2)</td>
+    <td>LED28 (2) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED28 (2) ???<br>
+        LED28 (2) ???</td>
+  </tr>
+  <tr>
+    <td>LED28 (3)</td>
+    <td>LED28 (3) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED28 (3) ???<br>
+        LED28 (3) ???</td>
+  </tr>
+  <tr>
+    <td>LED28 (4)</td>
+    <td>LED28 (4) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED28 (4) ???<br>
+        LED28 (4) ???</td>
+  </tr>
+  <tr>
+    <td>LED28 (5)</td>
+    <td>LED28 (5) 표시내용</td>
+    <td>점등<br>소등</td>
+    <td>LED28 (5) ???<br>
+        LED28 (5) ???</td>
+  </tr>
+  <tr>
+    <td>(4)</td>
+    <td>SEG1</td>
+    <td>BD642 보드 상태표시???</td>
+    <td rowspan="2">적색 </td>
+    <td rowspan="2">?<br>
+                    ??</td>
+    <td rowspan="2">??? <br>
+                    ????</td>
+  </tr>
+</table>
+</tbody>
