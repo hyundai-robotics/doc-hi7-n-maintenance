@@ -121,6 +121,11 @@
       * [5.5.4.1 DIO 사용 방법](5-optional-components/5-UserDIO/4-Usage-Instructions/1-DIO-Usage.md)
       * [5.5.4.2 컨베이어 엔코더 인터페이스 사용 방법](5-optional-components/5-UserDIO/4-Usage-Instructions/2-Conveyor-Usage.md)
 
+  * [5.6. 안전 통신 보드 (BD671))](5-optional-components/6-PROFIsafe-Board/README.md)
+    * [5.5.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
+    * [5.5.2. 하드웨어 정보](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
+
+
 * [6. 정기 점검](6-regular-inspection/README.md)
   * [6.1. 점검 일정](6-regular-inspection/1-inspection-schedule.md)
   * [6.2. 정기 점검 시 일반적 주의사항](6-regular-inspection/2-regular-insp-general-cautions.md)
