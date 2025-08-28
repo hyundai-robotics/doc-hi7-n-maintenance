@@ -1,5 +1,5 @@
 ﻿# Table of contents
-1
+
 * [Hi6a 제어기 보수 설명서](README.md)
 
 * [1. 안전](1-safety/README.md)
