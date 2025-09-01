@@ -9,7 +9,7 @@ Wire Harness 결선도
 <table>
 <thead>
   <tr>
-    <th>&nbsp;&nbsp;&nbsp;<br>Hi6-N Controller&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Hi6a-N Controller&nbsp;&nbsp;&nbsp;</th>
     <th>&nbsp;&nbsp;&nbsp;<br>ROBOT&nbsp;&nbsp;&nbsp;</th>
   </tr>
 </thead>

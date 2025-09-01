@@ -281,83 +281,78 @@
     <td>LED27 (1)</td>
     <td>LED27 (1) 표시내용</td>
     <td rowspan="5">녹색</td>
-    <td>점등<br>소등</td>
-    <td>LED27 (1) ???<br>
-        LED27 (1) ???</td>
+    <td>
+    <td> LED27 (1) MCU_A MOD</td>
   </tr>
   <tr>
     <td>LED27 (2)</td>
     <td>LED27 (2) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED27 (2) ???<br>
-        LED27 (2) ???</td>
+    <td>
+    <td>LED27 (2) MCU_B MOD</td>
   </tr>
   <tr>
     <td>LED27 (3)</td>
     <td>LED27 (3) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED27 (3) ???<br>
-        LED27 (3) ???</td>
+    <td>
+    <td>LED27 (3) ZYNQ MOD</td>
   </tr>
   <tr>
     <td>LED27 (4)</td>
     <td>LED27 (4) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED27 (4) ???<br>
-        LED27 (4) ???</td>
+    <td>
+    <td>LED27 (4) DSP_RUN</td>
   </tr>
   <tr>
     <td>LED27 (5)</td>
     <td>LED27 (5) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED27 (5) ???<br>
-        LED27 (5) ???</td>
+    <td>
+    <td>LED27 (5) ZYNQ_RUN</td>
   </tr>
   <tr>
     <td>LED28 (1)</td>
     <td>LED28 (1) 표시내용</td>
     <td rowspan="5">적색</td>
-    <td>점등<br>소등</td>
-    <td>LED28 (1) ???<br>
-        LED28 (1) ???</td>
+    <td>
+    <td>LED28 (1) MCU_A STA</td>
   </tr>
   <tr>
     <td>LED28 (2)</td>
     <td>LED28 (2) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED28 (2) ???<br>
-        LED28 (2) ???</td>
+    <td>
+    <td>LED28 (2) MCU_B STA</td>
   </tr>
   <tr>
     <td>LED28 (3)</td>
     <td>LED28 (3) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED28 (3) ???<br>
-        LED28 (3) ???</td>
+    <td>
+    <td>LED28 (3) ZYNQ STA</td>
   </tr>
   <tr>
     <td>LED28 (4)</td>
     <td>LED28 (4) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED28 (4) ???<br>
-        LED28 (4) ???</td>
+    <td>
+    <td>LED28 (4) DSP ERR</td>
   </tr>
   <tr>
     <td>LED28 (5)</td>
     <td>LED28 (5) 표시내용</td>
-    <td>점등<br>소등</td>
-    <td>LED28 (5) ???<br>
-        LED28 (5) ???</td>
+    <td>
+    <td>LED28 (5) ZYNQ ERR</td>
   </tr>
   <tr>
     <td>(4)</td>
     <td>SEG1</td>
-    <td>BD642 보드 상태표시???</td>
+    <td>BD642 보드 상태표시</td>
     <td rowspan="2">적색 </td>
-    <td rowspan="2">?<br>
-                    ??</td>
-    <td rowspan="2">??? <br>
-                    ????</td>
+    <td>             </td>
+    <td>부팅상태 표시</td>
   </tr>
 </table>
+
+표 4.3.2.3-3 서보/안전모듈(BD642) 전면 LED 상태 설명
+![](../../../_assets/표_4_3_2_3_LED_상태표시.png)  
+
+
+![](../../../_assets/그림_4_3_2_3_Segment_상태표시.png)  
+그림 4.3.2.3-3 세그먼트 상태 표시내용
 </tbody>

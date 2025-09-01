@@ -3,32 +3,21 @@
 산업용 로봇의 안전 모듈의 성능은 다음과 같습니다.
 
 표 1-1 안전모듈의 안전성능
-<table>
-<thead>
-  <tr>
-    <th>항목</th>
-    <th>안전 성능</th>
-    <th>적용 표준</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>HFT</td>
-    <td>1</td>
-    <td rowspan="2">IEC 61508/62061/61800-5-2</td>
-  </tr>
-  <tr>
-    <td>SIL (Safety Integrity Level)</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>Category</td>
-    <td>3</td>
-    <td rowspan="2">ISO 13849-1</td>
-  </tr>
-  <tr>
-    <td>PL (Performance Level)</td>
-    <td>d</td>
-  </tr>
-</tbody>
-</table>
+SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
+|            **항목**            | **안전 성능** |         **적용 표준**         |
+| :--------------------------: | :-------: | :-----------------------: |
+|              HFT             |     1     | IEC 61508/62061/61800-5-2 |
+| SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
+|           Category           |     4     |        ISO 13849-1        |
+|    PL (Performance Level)    |     e     |        ISO 13849-1        |
+|    		PFH    			   |1.34217E-08|        ISO 13849-1        |
+
+
+
+그 외의 안전 기능의 안전 성능은 다음과 같습니다.
+|            **항목**            | **안전 성능** |         **적용 표준**         |
+| :--------------------------: | :-------: | :-----------------------: |
+|              HFT             |     1     | IEC 61508/62061/61800-5-2 |
+| SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
+|           Category           |     3     |        ISO 13849-1        |
+|    PL (Performance Level)    |     d     |        ISO 13849-1        |

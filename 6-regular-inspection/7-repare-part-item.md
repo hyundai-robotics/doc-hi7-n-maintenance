@@ -110,7 +110,7 @@
   <tr>
     <td>1</td>
     <td>모터 드라이브</td>
-    <td>H6D6X<br>H6D6A</td>
+    <td>H6AD6X<br>H6AD6A</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -118,7 +118,7 @@
   <tr>
     <td>2</td>
     <td>메인제어모듈</td>
-    <td>H6COM</td>
+    <td>H6COM-T</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td></td>
@@ -126,7 +126,7 @@
   <tr>
     <td>3</td>
     <td>티치펜던트</td>
-    <td>TP600</td>
+    <td>TP630</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td></td>
@@ -134,7 +134,7 @@
   <tr>
     <td>4</td>
     <td>전원공급모듈</td>
-    <td>H6PSM30<br>H6PSM15</td>
+    <td>H6APSM30<br>H6APSM15</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -142,22 +142,16 @@
   <tr>
     <td rowspan="3">5</td>
     <td rowspan="3">보드</td>
-    <td>BD640</td>
+    <td>BD642</td>
     <td>현대로보틱스</td>
     <td>1</td>
-    <td>서보보드</td>
+    <td>서보안전보드</td>
   </tr>
   <tr>
-    <td>BD632</td>
+    <td>BD604</td>
     <td>현대로보틱스</td>
     <td>1</td>
-    <td>안전IO보드</td>
-  </tr>
-  <tr>
-    <td>BD631</td>
-    <td>현대로보틱스</td>
-    <td>1</td>
-    <td>안전EC보드</td>
+    <td>백플레인보드</td>
   </tr>
 </tbody>
 </table>

@@ -61,13 +61,9 @@
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>디지털 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 8점 (최대 496점) / 출력: 8점 (최대 496점)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 36점 (최대 44점) / 출력: 36점 (최대 44점)&nbsp;&nbsp;&nbsp;</td>
   </tr>
-  <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>아날로그 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 4점 / 출력: 4점&nbsp;&nbsp;&nbsp;</td>
-  </tr>
-  <tr>
+   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>컨베어 펄스 카운터&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>라인드라이버 / 오픈컬렉터 &nbsp;&nbsp;&nbsp;</td>
   </tr>
@@ -95,11 +91,11 @@
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>중형&nbsp;&nbsp;&nbsp;6축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6D6X<br>N80(U)-A0 : H6D6X<br>N30(U)-A0 : H6D6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>부가&nbsp;&nbsp;&nbsp;1축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6D1X, H6D1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>와이어 하네스&nbsp;&nbsp;&nbsp;</td>
@@ -136,7 +132,7 @@
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>외관 크기*1<br>(WxHxD)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W650xD560xH580 (mm)<br>Caster(옵션) 포함시 &nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W680xD520xH550 (mm)<br>Caster(옵션) 포함시 &nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>중 량&nbsp;&nbsp;&nbsp;</td>
