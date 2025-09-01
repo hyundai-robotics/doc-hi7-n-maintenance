@@ -2,13 +2,13 @@
 
 H6APSM(Hi6a-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
 
-![](../../../_assets/그림_4.45_H6PSM(Hi6-N_제어기_전원공급모듈)_외부.png  )
+![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부.png  )
 
 그림 4.26 H6APSM(Hi6a-N 제어기 전원공급모듈) 외부
 
 모터전원용 3상 AC전원의 개폐, 브레이크 전원 생성, 220VAC to 24VDC SMPS 입력 등의 AC제어전원, 제어모듈의 직류 전원공급을 위한 SMPS전원 등의 분배는 다음 그림의 전원계통도와 같습니다. 각각의 전원에는 회로차단기(CP) 또는 퓨즈가 연결되어 있어 과전류에 대한 회로 보호를 합니다.
 
-![](../../../_assets/그림_4.47_Hi6-N_제어기의_전원계통.png  )
+![](../../../_assets/그림_4.27_Hi6a-N_제어기의_전원계통.png  )
 
 그림 4.27 Hi6a-N 제어기의 전원계통
 
@@ -24,19 +24,24 @@ H6APSM(Hi6a-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 
 </thead>
 <tbody>
   <tr>
-    <td>F1, F2</td>
-    <td>냉각 팬 전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>F1, F2, F3</td>
+    <td>제어전원(AC220V) 과전류보호용 퓨즈</td>
+    <td>AC220V 8A</td>
   </tr>
   <tr>
-    <td>F3, F4</td>
-    <td>CMSMPS전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>FS17</td>
+    <td>CMDCFAN, DCFAN2~5 GND 과전류보호용 퓨즈</td>
+    <td>7VAC/60VDC 7A</td>
   </tr>
   <tr>
-    <td>F5, F6</td>
-    <td>BKSMPS전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>FS18</td>
+    <td>DCFAN2~5 과전류보호용 퓨즈</td>
+    <td>125VAC/125VDC 6.3A</td>
+  </tr>
+  <tr>
+    <td>FS19</td>
+    <td>Control module 냉각용 DCFAN 과전류보호용 퓨즈</td>
+    <td>125VAC/125VDC 0.315A</td>
   </tr>
 </tbody>
 </table>
