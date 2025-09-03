@@ -7,13 +7,15 @@
 
 표 4.3.2.2-1 서보/안전모듈(BD642)커넥터 명칭, 용도 및 외부연결장치
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>용도</strong></td>
-    <td><strong>외부연결장치</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>용도</strong></th>
+    <th><strong>외부연결장치</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td>A</td>
     <td>J4</td>
