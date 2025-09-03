@@ -11,14 +11,16 @@
 
 표 4.3.2.4-1 서보/안전모듈(BD642) SW1 설정장치 설명   
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>설정상태</strong></td>
-    <td><strong>설정내용</strong></td>
-    <td><strong>비고</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>설정상태</strong></th>
+    <th><strong>설정내용</strong></th>
+    <th><strong>비고</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td rowspan="2">①</td>
     <td rowspan="2">SW1</td>
