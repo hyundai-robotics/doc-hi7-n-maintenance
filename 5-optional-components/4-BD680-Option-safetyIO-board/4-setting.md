@@ -7,14 +7,16 @@
 
 표 5.4.4-1 옵션 안전IO모듈(BD680) SW1 설정장치 설명   
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>설정상태</strong></td>
-    <td><strong>설정내용</strong></td>
-    <td><strong>비고</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>설정상태</strong></th>
+    <th><strong>설정내용</strong></th>
+    <th><strong>비고</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td>①</td>
     <td>SW1</td>
@@ -24,4 +26,3 @@
   </tr>
 </table>
 </tbody>
-

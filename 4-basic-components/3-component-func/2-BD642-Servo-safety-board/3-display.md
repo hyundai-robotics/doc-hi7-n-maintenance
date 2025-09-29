@@ -9,15 +9,17 @@
 
 표 4.3.2.3-1 서보/안전모듈(BD642) 보드TOP 표시장치 설명   
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>표시내용</strong></td>
-    <td><strong>색상</strong></td>
-    <td><strong>정상시</strong></td>
-    <td><strong>이상시 조치내용</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>정상시</strong></th>
+    <th><strong>이상시 조치내용</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td>(1)<br>(2)</td>
     <td>LED1<br>LED2</td>
@@ -238,15 +240,17 @@
 
 표 4.3.2.3-2 서보/안전모듈(BD642) 전면 표시장치 설명   
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>표시내용</strong></td>
-    <td><strong>색상</strong></td>
-    <td><strong>표시상태</strong></td>
-    <td><strong>표시상태 설명</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>표시상태</strong></th>
+    <th><strong>표시상태 설명</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td rowspan="2">(1)</td>
     <td>A_SO1</td>

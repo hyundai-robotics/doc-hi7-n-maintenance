@@ -10,15 +10,17 @@
 표 5.4.3-1 옵션 안전IO모듈(BD680)의 표시장치 설명   
 
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>표시내용</strong></td>
-    <td><strong>색상</strong></td>
-    <td><strong>정상시</strong></td>
-    <td><strong>이상시 조치내용</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>정상시</strong></th>
+    <th><strong>이상시 조치내용</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td>(1)</td>
     <td>LED1</td>
@@ -56,15 +58,17 @@
 
 표 5.4.3-2 옵션 안전IO모듈(BD680) 전면 표시장치 설명   
 <table>
-<tbody>
+<thead>
   <tr>
-    <td><strong>번호</strong></td>
-    <td><strong>명칭</strong></td>
-    <td><strong>표시내용</strong></td>
-    <td><strong>색상</strong></td>
-    <td><strong>표시상태</strong></td>
-    <td><strong>표시상태 설명</strong></td>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>표시상태</strong></th>
+    <th><strong>표시상태 설명</strong></th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td>(1)</td>
     <td>SW1</td>
