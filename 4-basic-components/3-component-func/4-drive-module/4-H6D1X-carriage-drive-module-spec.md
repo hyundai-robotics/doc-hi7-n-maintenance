@@ -2,7 +2,7 @@
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The carriage drive module can drive one motor of 100A or below and is configured as follows.
 
-![](../../../_assets/그림_4_26_BD658V60_부품_배치도.png  )
+![](../../../_assets/그림_4_26_BD658V60_부품_배치도.PNG  )
 
 Figure 4.24 Parts Placement Diagram of BD658V60 for H6D1X</br></br>
 

@@ -204,7 +204,7 @@ Table 4-27 Symbols of the Hall Sensors of the Small-Sized IPM
 The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
 
-![](../../../_assets/그림_4_24_BD653V60_부품_배치도.png  )
+![](../../../_assets/그림_4_24_BD653V60_부품_배치도.PNG  )
 
 Figure 4.22 Parts Placement Diagram of BD653V60 
 
@@ -297,7 +297,7 @@ Table 4-29 Description of the LEDs of BD653
 </tbody>
 </table>
 
-![](../../../_assets/그림_4_25_BD654V60_부품_배치도.png  )
+![](../../../_assets/그림_4_25_BD654V60_부품_배치도.PNG  )
 
 Figure 4.23 Parts Placement Diagram of BD654</br></br>
 
