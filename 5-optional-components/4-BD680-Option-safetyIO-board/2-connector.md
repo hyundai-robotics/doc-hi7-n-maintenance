@@ -1,43 +1,43 @@
-﻿# 5.4.2. 커넥터
+﻿# 5.4.2. Connector
 
-아래 그림은 옵션 안전IO모듈(BD680)의 외부연결에 필요한 커넥터의 위치를 보여줍니다. 또한, 아래 표는 각 커넥터의 명칭, 용도를 기술합니다.
+The figure below shows the locations of connectors required for external connections of the Optional Safety I/O Module(BD680). The table below describes the name and function of each connector.
 
 ![](../../_assets/BD680_PCB_커넥터.png)   
-그림 5.4.2-1 옵션 안전IO모듈(BD680)커넥터 배치   
+Figure 5.4.2-1 Layout of Connectors on the Optional Safety I/O Module(BD680)   
 
-표 5.4.2-1 옵션 안전IO모듈(BD680)커넥터 명칭, 용도 및 외부연결장치   
+Table 5.4.2-1 Names, Functions, and External Connection Devices of BD680 Connectors
 <table>
 <thead>
   <tr>
-    <th><strong>번호</strong></th>
-    <th><strong>명칭</strong></th>
-    <th><strong>용도</strong></th>
-    <th><strong>외부연결장치</strong></th>
+    <th><strong>No.</strong></th>
+    <th><strong>Name</strong></th>
+    <th><strong>Function</strong></th>
+    <th><strong>External Connection Device</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>A</td>
     <td>CNSO2</td>
-    <td>안전 출력단자</td>
-    <td>외부 디바이스</td>
+    <td>Safety Output Terminal</td>
+    <td>External Device</td>
   </tr>
   <tr>
     <td>B</td>
     <td>CNSI2</td>
-    <td>안전 입력단자</td>
-    <td>외부 디바이스</td>
+    <td>Safety Input Terminal</td>
+    <td>External Device</td>
   </tr>
   <tr>
     <td>C</td>
     <td>J1
       <br>J2</td>
-    <td>BD642연결 커넥터(Board to Board)</td>
-    <td>서보/안전모듈(BD642)</td>
+    <td>BD642 Connection(Board to Board)(Board to Board)</td>
+    <td>Servo/Safety Module(BD642)</td>
   </tr>
 </tbody>
 </table>
 
 {% hint style="info" %}
-안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
+When safety-related inputs are connected and activated, always refer to “1.11. Safety Measures During Robot Operation” to verify proper function.
 {% endhint %}

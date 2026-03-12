@@ -1,55 +1,55 @@
-﻿# 5.4.6. 안전입력 결선
+﻿# 5.4.6. Safety Input Wiring
 
 {% hint style="warning" %}
-안전입력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+When performing safety input wiring, ensure the controller power is turned OFF before starting the wiring work.
 {% endhint %}
 
-아래 그림은 옵션 안전IO모듈(BD680) 실물사진과 실제 설치 시, 전면에서 보았을 때의 커넥터 위치를 보여줍니다.    
+The figure below shows the actual appearance of the Optional Safety IO Module(BD680) and the location of the safety input connector(CNSI2) when viewed from the front.   
 
 ![](../../_assets/BD680_전면사진_안전입력.png)  
-그림 5.4.6-1 옵션 안전IO모듈(BD680) 실물사진과 안전입력 커넥터 위치   
+Figure 5.4.6-1 Optional Safety IO Module(BD680) – Physical View and Safety Input Connector(CNSI2) Location
 
-안전입력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN/PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.   
+The wiring for safety inputs differs depending on whether internal or external power is used and the type of signal(NPN/PNP). The following diagrams show the wiring configuration for each case.
 
-(1) 내부전원 사용시   
+(1) When Using Internal Power   
 * NPN-TYPE(: Active Low)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
-A채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번-3번 핀을 연결합니다.  
-B채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번-15번 핀을 연결합니다.  
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.     
+In the figure below, red represents A-Channel and blue represents B-Channel.
+A-Channel: When using internal power, connect pins 1–3 on connector CNSI2 as shown in the figure.
+B-Channel: When using internal power, connect pins 13–15 on connector CNSI2 as shown in the figure.
+For connection to external devices, refer to the wiring example below.
 
 ![](../../_assets/BD680_안전입력_내부전원_NPN.png)   
-그림 5.4.6-2 옵션 안전IO모듈(BD680) 안전입력 내부전원 NPN-TYPE 사용시 결선도   
+Figure 5.4.6-2 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(NPN-TYPE)
 
 * PNP-TYPE(: Active High)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
-A채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 3번-12번 핀을 연결합니다.  
-B채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 15번-24번 핀을 연결합니다.  
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+In the figure below, red represents A-Channel and blue represents B-Channel.
+A-Channel: When using internal power, connect pins 3–12 on connector CNSI2 as shown in the figure.
+B-Channel: When using internal power, connect pins 15–24 on connector CNSI2 as shown in the figure.
+For connection to external devices, refer to the wiring example below.
 
 ![](../../_assets/BD680_안전입력_내부전원_PNP.png)   
-그림 5.4.6-3 옵션 안전IO모듈(BD680) 안전입력 내부전원 PNP-TYPE 사용시 결선도   
+Figure 5.4.6-3 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(PNP-TYPE)
 
 {% hint style="warning" %}
-내부전원을 외부 장치와 결선할 때, 장치의 전원으로 사용해서는 안됩니다.
+Do not use the internal power as the power supply for external devices when connecting to them.
 {% endhint %}  
 
-(2) 외부전원 사용시   
+(2) When Using External Power   
 * NPN-TYPE(: Active Low)  
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
-A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번, 12번 핀을 연결하지 않으며 외부전원(EX_AV)는 3번 핀에 연결합니다.  
-B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번, 24번 핀을 연결하지 않으며 외부전원(EX_BV)는 15번 핀에 연결합니다.  
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+The red color in the figure represents A-Channel, and the blue color represents B-Channel.
+A-Channel: When using external power, do not connect pins 1 and 12 of connector CNSI2. Connect the external power EX_AV to pin 3.
+B-Channel: When using external power, do not connect pins 13 and 24 of connector CNSI2. Connect the external power EX_BV to pin 15.
+Refer to the wiring example below for connections to external devices.
 
 ![](../../_assets/BD680_안전입력_외부전원_NPN.png)   
-그림 5.4.6-4 옵션 안전IO모듈(BD680) 안전입력 외부전원 NPN-TYPE 사용시 결선도   
+Figure 5.4.6-4 Wiring Diagram of Safety Inputs Using External Power(NPN-TYPE) for Option Safety I/O Module(BD680)
 
 * PNP-TYPE(: Active High)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
-A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번, 12번 핀을 연결하지 않으며 외부전원(EX_AG)는 3번 핀에 연결합니다.  
-B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번, 24번 핀을 연결하지 않으며 외부전원(EX_BG)는 15번 핀에 연결합니다.  
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+he red color in the figure represents A-Channel, and the blue color represents B-Channel.
+A-Channel: When using external power, do not connect pins 1 and 12 of connector CNSI2. Connect the external power EX_AG to pin 3.
+B-Channel: When using external power, do not connect pins 13 and 24 of connector CNSI2. Connect the external power EX_BG to pin 15.
+Refer to the wiring example below for connections to external devices.
 
 ![](../../_assets/BD680_안전입력_외부전원_PNP.png)   
-그림 5.4.6-5 옵션 안전IO모듈(BD680) 안전입력 외부전원 PNP-TYPE 사용시 결선도
+Figure 5.4.6-5 Wiring Diagram of Safety Inputs Using External Power(PNP-TYPE) for Option Safety I/O Module(BD680)
 

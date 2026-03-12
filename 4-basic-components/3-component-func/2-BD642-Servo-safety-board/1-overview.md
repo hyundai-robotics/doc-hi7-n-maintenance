@@ -1,9 +1,9 @@
-﻿# 4.3.2.1. 개요
+﻿# 4.3.2.1. Overview
 
-서보/안전모듈(BD642)은 로봇 제어기에서 서보제어 및 안전기능을 수행합니다.   
+The Servo/Safety Module(BD642) performs both servo control and safety functions within the robot controller. The servo control function supports simultaneous control of up to eight axes, consisting of six primary robot axes and two auxiliary axes.
 
-서보제어는 전체 8축(로봇 기본 6축, 부가축 2축) 모터를 동시 제어 가능합니다. 서보제어에 필요한 기능은 모터 제어에 필요한 피드백 신호(전류센서, 위치센서 등) 입력부, 피드백 신호를 이용한 모터제어 알고리즘(위치,속도 & 토크제어 및 전류 제어) 구현을 위한 연산 처리부(MCU & FPGA) 그리고 실제 서보제어를 위한 파워 소자들(IPM, 정류 다이오드, DC링크 & 브레이크 등)을 제어 및 모니터링하는 부분으로 구성되어 있습니다.   
+The servo control system is composed of several functional blocks. These include an input stage that receives feedback signals required for motor control(such as current sensor signals and position feedback signals), a processing unit consisting of an MCU and FPGA that executes the motor control algorithms(including position, velocity, torque, and current control) and a power control stage that controls and monitors the power devices used for servo operation, such as the IPM, rectifier diodes, DC link, and brake circuits.
 
-또한, 로봇 제어기에 필요한 안전기능을 수행합니다. 안전 기능 구현을 위하여 MCU를 듀얼 채널로 구성하여 STO 처리 및 안전 입/출력 신호 처리 등을 수행합니다.   
+In addition to motion control, the module provides the safety functions required by the robot controller. For safety implementation, the MCU is configured in a dual-channel architecture to ensure reliable processing of safety functions. This architecture supports Safe Torque Off (STO) handling as well as the processing of safety-related input and output signals.
 
-이 외 로봇 제어기 인터페이스 기능으로는 T/P 인터페이스, BD671(PROFIsafe)보드 인터페이스, Main Com 인터페이스, BD604(백 플레인)보드 인터페이스, BD680(Option Safety IO)보드 인터페이스 그리고 BD6C3(Power Distribution) 보드 인터페이스 등이 있습니다.   
+The module also provides communication and signal interfaces required for integration with other components of the robot controller system. These include interfaces for the T/P(Teach Pendant), BD671(PROFIsafe) board, Main COM, BD604(Backplane) board, BD680(Optional Safety I/O) board and BD6C3 (Power Distribution) board.

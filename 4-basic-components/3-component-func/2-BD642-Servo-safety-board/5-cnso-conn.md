@@ -1,51 +1,52 @@
-﻿# 4.3.2.5. 안전출력 결선
+﻿# 4.3.2.5. Safety Output Wiring
 
 {% hint style="warning" %}
-안전출력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+When performing safety output wiring, ensure that the controller power is turned OFF before starting the wiring work.
 {% endhint %}
 
-아래 그림은 서보/안전모듈(BD642) 실물사진과 실제 설치 시, 전면에서 보았을 때의 안전입력 커넥터(CNSO1) 위치를 보여줍니다.   
+The figure below shows a photograph of the Servo/Safety Module(BD642) and the location of the safety output connector(CNSO1) as viewed from the front during actual installation.
 
-![](../../../_assets/BD642_전면사진_안전출력.png)   
-그림 4.3.2.5-1 서보/안전모듈(BD642) 실물사진과 안전출력 커넥터(CNSO1) 위치   
+![](../../../_assets/BD642_전면사진_안전출력.png)<br>
+Figure 4.3.2.5-1 Photograph of the Servo/Safety Module(BD642) and Location of the Safety Output Connector(CNSO1)
 
-안전출력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN / PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.   
+When wiring the safety outputs, the wiring method differs depending on whether an internal power supply or an external power supply is used. It also varies according to the NPN or PNP type configuration.
+The following figures show the wiring examples for each case.
 
-(1) 내부전원 사용시   
+(1) When Using the Internal Power Supply   
 * NPN-TYPE(: Active Low)   
-아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 1번-2번 핀을 연결합니다.   
-B채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 3번-4번 핀을 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A channel and blue indicates the B channel.
+When using the internal power supply for the A channel, connect pins 1 and 2 of connector CNSO1 as shown in the figure below.
+When using the internal power supply for the B channel, connect pins 3 and 4 of connector CNSO1 as shown in the figure below.
+For connection to external devices, refer to the wiring example below.
 
 ![](../../../_assets/BD642_안전출력_내부전원_NPN.png)   
-그림 4.3.2.5-2 서보/안전모듈(BD642) 안전출력 내부전원 NPN-TYPE 사용시 결선도   
+Figure 4.3.2.5-2 Safety Output Wiring Diagram (Internal Power Supply, NPN Type) – Servo/Safety Module(BD642)   
 
 * PNP-TYPE(: Active High)   
-아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 5번-6번 핀을 연결합니다.   
-B채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO2의 7번-8번 핀을 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A channel, and blue indicates the B channel.
+When using the internal power supply for the A channel, connect pins 5 and 6 of connector CNSO1 as shown in the figure below.
+When using the internal power supply for the B channel, connect pins 7 and 8 of connector CNSO1 as shown in the figure below.
+For connection to external devices, refer to the wiring example below.
 
 ![](../../../_assets/BD642_안전출력_내부전원_PNP.png)   
-그림 4.3.2.5-3 서보/안전모듈(BD642) 안전출력 내부전원 PNP-TYPE 사용시 결선도   
+Figure 4.3.2.5-3 Safety Output Wiring Diagram (Internal Power Supply, PNP Type) – Servo/Safety Module(BD642)   
 
-(2) 외부전원 사용시   
+(2) When Using an External Power Supply   
 * NPN-TYPE(: Active Low)   
-아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-커넥터 CNSO1의 1번, 4번, 5번, 8번은 연결하지 않습니다.   
-A채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_AG(GND)는 2번 핀에 연결합니다.   
-B채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_BG(GND)는 3번 핀에 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A channel, and blue indicates the B channel.
+Pins 1, 4, 5 and 8 of connector CNSO1 must not be connected.
+When using an external power supply for the A channel, connect EX_AG (GND) to pin 2 of connector CNSO1 as shown in the figure below.
+When using an external power supply for the B channel, connect EX_BG (GND) to pin 3 of connector CNSO1 as shown in the figure below.
+For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전출력_외부전원_NPN.png)   
-그림 4.3.2.5-4 서보/안전모듈(BD642) 안전출력 외부전원 NPN-TYPE 사용시 결선도   
+Figure 4.3.2.5-4 Safety Output Wiring Diagram(External Power Supply, NPN Type)–Servo/Safety Module(BD642)   
 
 * PNP-TYPE(: Active High)   
-아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_AV(24V)는 2번 핀에 연결합니다.   
-B채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_BV(24V)는 3번 핀에 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A channel, and blue indicates the B channel.
+When using an external power supply for the A channel, connect EX_AV(24V) to pin 2 of connector CNSO1, as shown in the figure below.
+When using an external power supply for the B channel, connect EX_BV(24V) to pin 3 of connector CNSO1, as shown in the figure below.
+For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전출력_외부전원_PNP.png)   
-그림 4.3.2.5-5 서보/안전모듈(BD642) 안전출력 외부전원 PNP-TYPE 사용시 결선도   
+Figure 4.3.2.5-5 Safety Output Wiring Diagram(External Power Supply, PNP Type)–Servo/Safety Module(BD642)

@@ -1,62 +1,68 @@
-﻿# 4.3.2.6. 안전입력 결선
+﻿# 4.3.2.6. Safety Input Wiring
 
 {% hint style="warning" %}
-안전입력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+When performing safety input wiring, ensure that the controller power is turned OFF before starting the wiring work.
 {% endhint %}
 
-아래 그림은 서보/안전모듈(BD642) 실물사진과 실제 설치 시, 전면에서 보았을 때의 안전입력 커넥터(CNSI1) 위치를 보여줍니다.   
+The figure below shows a photograph of the Servo/Safety Module(BD642) and the location of the safety input connector(CNSI1) as viewed from the front during actual installation.   
 
 ![](../../../_assets/BD642_전면사진_안전입력.png)   
-그림 4.3.2.6-1 서보/안전모듈(BD642) 실물사진과 안전입력 커넥터(CNSI1) 위치
+Figure 4.3.2.6-1 Photograph of the Servo/Safety Module(BD642) and Location of the Safety Input Connector(CNSI1)
 
-(1) 안전입력 공장출하 상태(사용안하는 경우)   
-
-안전입력 신호를 사용하지 않을 경우, 기본 NC(Normal Close, B접점)연결되어야 합니다. 아래는 사용하지 않을 경우의 결선을 보여줍니다(공장 출하시 결선상태).   
+(1) Safety Input Factory Default State(When Not Used)   
+If the safety input signals are not used, they must be connected as NC(Normally Closed, B-contact) by default.
+The figure below shows the wiring configuration when the safety inputs are not used(factory default wiring state).
 
 ![](../../../_assets/BD642_안전입력_사용안함.png)   
-그림 4.3.2.6-2 서보/안전모듈(BD642) 안전입력 공장 출하시 결선상태
+Figure 4.3.2.6-2 Factory Default Wiring State of Safety Inputs – Servo/Safety Module(BD642)
 
-안전입력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN / PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.
+When wiring the safety inputs, the wiring method differs depending on whether an internal power supply or an external power supply is used. It also varies according to the NPN/PNP type configuration. The following figures show the wiring examples for each case.
 
-(2) 내부전원 사용시
+(2) When Using the Internal Power Supply
 * NPN-TYPE(: Active Low)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 17번-18번, 21번-22번, 25번-26번, 29번-30번 핀을 각각 연결합니다.   
-B채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 19번-20번, 23번-24번, 27번-28번, 31번-32번 핀을 각각 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A channel, and blue indicates the B channel.
+When using the internal power supply for the A-channel, connect the following pins of connector CNSI1 for the corresponding channel as shown in the figure below:
+17–18, 21–22, 25–26, and 29–30.
+When using the internal power supply for the B-channel, connect the following pins of connector CNSI1 for the corresponding channel as shown in the figure below:
+19–20, 23–24, 27–28, and 31–32.
+For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전입력_내부전원_NPN.png)   
-그림 4.3.2.6-3 서보/안전모듈(BD642) 안전입력 내부전원 NPN-TYPE 사용시 결선도
+Figure 4.3.2.6-3 Safety Input Wiring Diagram(Internal Power Supply, NPN Type) – Servo/Safety Module(BD642)
 
 * PNP-TYPE(: Active High)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 1번-2번, 5번-6번, 9번-10번, 13번-14번 핀을 각각 연결합니다.   
-B채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 3번-4번, 7번-8번, 11번-12번, 15번-16번 핀을 각각 연결합니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A-channel, and blue indicates the B-channel.
+When using the internal power supply for the A-channel, connect the following pin pairs of connector CNSI1 for the corresponding channel as shown in the figure below:
+1–2, 5–6, 9–10, and 13–14.
+When using the internal power supply for the B-channel, connect the following pin pairs of connector CNSI1 for the corresponding channel as shown in the figure below:
+3–4, 7–8, 11–12, and 15–16.
+For connection to external devices, refer to the wiring example shown below.   
 
 ![](../../../_assets/BD642_안전입력_내부전원_PNP.png)   
-그림 4.3.2.6-4 서보/안전모듈(BD642) 안전입력 내부전원 PNP-TYPE 사용시 결선도
+Figure 4.3.2.6-4 Safety Input Wiring Diagram(Internal Power Supply, PNP Type) – Servo/Safety Module(BD642)
 
 {% hint style="warning" %}
-내부전원을 외부 디바이스와 연결할 때, 디바이스의 전원으로 사용해서는 안됩니다.   
+When connecting the internal power supply to an external device, it must not be used as the power source for the device.   
 {% endhint %}
 
-(3) 외부전원 사용시
+(3) When Using an External Power Supply
 * NPN-TYPE(: Active Low)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 1번,17번,5번,21번,9번,25번,13번,29번 핀을 연결하지 않습니다.   
-B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 4번,20번,8번,24번,12번,28번,16번,32번 핀을 연결하지 않습니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+In the figure below, red indicates the A-channel, and blue indicates the B-channel.
+When using an external power supply for the A-channel, do not connect the following pins of connector CNSI1 as shown in the figure below:
+1, 17, 5, 21, 9, 25, 13, and 29.
+When using an external power supply for the B-channel, do not connect the following pins of connector CNSI1 as shown in the figure below:
+4, 20, 8, 24, 12, 28, 16, and 32.
+For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전입력_외부전원_NPN.png)   
-그림 4.3.2.6-5 서보/안전모듈(BD642) 안전입력 외부전원 NPN-TYPE 사용시 결선도
+Figure 4.3.2.6-5 Wiring Diagram for Safety Input(External Power Supply, NPN Type) – Servo/Safety Module(BD642)
 
 * PNP-TYPE(: Active High)   
-아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
-A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 1번,17번,5번,21번,9번,25번,13번,29번 핀을 연결하지 않습니다.   
-B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 4번,20번,8번,24번,12번,28번,16번,32번 핀을 연결하지 않습니다.   
-외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.
+In the figure below, red represents the A-channel and blue represents the B-channel.
+When using an external power supply for the A channel, do not connect pins 1, 17, 5, 21, 9, 25, 13, and 29 of connector CNSI1 as shown.
+When using an external power supply for the B channel, do not connect pins 4, 20, 8, 24, 12, 28, 16, and 32 of connector CNSI1 as shown.
+Connections to external devices should follow the wiring example shown below.
 
 ![](../../../_assets/BD642_안전입력_외부전원_PNP.png)   
-그림 4.3.2.6-6 서보/안전모듈(BD642) 안전입력 외부전원 PNP-TYPE 사용시 결선도
+Figure 4.3.2.6-6 Wiring Diagram for Safety Input(External Power Supply, PNP Type) – Servo/Safety Module(BD642)
 
