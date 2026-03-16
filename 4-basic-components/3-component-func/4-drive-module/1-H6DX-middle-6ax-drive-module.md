@@ -1,109 +1,110 @@
-﻿# 4.3.4.1. H6D6X (중형 6축 일체형 드라이브모듈)
+﻿# 4.3.4.1. H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
-드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
+The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
-전원공급모듈로부터 입력되는 3상 전류를 다이오드모듈로 정류 후 직류로 변화하여 평활용 커패시터에 저장합니다. 로봇의 감속 시에 모터로부터 발생하는 전력은 IGBT와 저항을 통하여 소비하며, 다음과 같이 구성되어 있습니다
+The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows. 
 
-표 4-14 H6D6X(중형 6축 일체형 드라이브모듈)의 구성
+Table 4-14 Configuration of H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="6">BD651<br>(Power Board)</td>
-    <td>게이트 드라이브 회로</td>
-    <td>IPM 게이트 신호 생성</td>
+    <td>Gate drive circuit</td>
+    <td>Generates the IPM gate signal</td>
   </tr>
   <tr>
-    <td>게이트 전원 모듈</td>
-    <td>게이트 전원 전달</td>
+    <td>Gate power module</td>
+    <td>Transmit the gate power</td>
   </tr>
   <tr>
-    <td>전류 검출부</td>
-    <td>모터에 흐르는 전류를 검출</td>
+    <td>Current detection part</td>
+    <td>Detects the current that flows through the motor</td>
   </tr>
   <tr>
-    <td>회생 제어</td>
-    <td>PN전압의 상승 시 IGBT 구동</td>
+    <td>Regenerative control</td>
+    <td>Drives the IGBT when the PN voltage rises</td>
   </tr>
   <tr>
-    <td>에러검출부</td>
-    <td>PN 과전압, 회생방전 저항 과열, PN 저전압 에러 검지</td>
+    <td>Error detection part</td>
+    <td>Detects the PN overvoltage, regenerative discharge resistor overheating, and PN undervoltage errors</td>
   </tr>
   <tr>
-    <td>고전압 커패시터</td>
-    <td>직류 전원 평활</td>
+    <td>High voltage capacitor</td>
+    <td>Smooths the direct current</td>
   </tr>
   <tr>
-    <td rowspan="2">BD652<br>(Interface Board)</td>
-    <td>시퀀스 연동부</td>
-    <td>시퀀스 상태와 서보 온 신호 연동</td>
+    <td rowspan="2">BD652<br>(Iterface Board)</td>
+    <td>Sequence interlocking part</td>
+    <td>Interlocks between the sequence status and the servo on signal</td>
   </tr>
   <tr>
-    <td>전용 IO 터미널블록</td>
-    <td>제어기 내부의 예비 IO 포트</td>
+    <td>Dedicated IO Terminal Blocks</td>
+    <td>Reserved IO port inside the controller</td>
   </tr>
   <tr>
-    <td rowspan="4">기타부품</td>
-    <td>방열판(Heat Sink)</td>
-    <td>전력소자로부터 발생하는 열을 외부로 방출</td>
+    <td rowspan="4">Other parts</td>
+    <td>Heat sink</td>
+    <td>Releases the heat generated from power elements to the outside</td>
   </tr>
   <tr>
-    <td>정류부</td>
-    <td>교류입력 전원을 정류하여 모터 구동용 직류 전원 생성</td>
+    <td>Rectification part</td>
+    <td>Rectify the AC input power to generate DC power for driving the motor</td>
   </tr>
   <tr>
-    <td>회생 IGBT</td>
-    <td>회생방전 수행</td>
+    <td>Regenerative IGBT</td>
+    <td>Performs regenerative discharge</td>
   </tr>
   <tr>
     <td>IPM</td>
-    <td>3상 모터 구동용 전력 변환</td>
+    <td>Convert the power for driving a three-phase motor</td>
   </tr>
 </tbody>
 </table>
 
-■  **중형 6축 일체형 드라이브모듈 형번 구성**
+■  **Configuration of the Type Number of the Medium-Sized 6 Axes Integrated Drive Module**
 
 ![](../../../_assets/중형_6축_일체형_드라이브모듈_형번_구성.png  )
 
-표 4-15 중형 6축 일체형 드라이브모듈의 형식기호
+Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module 
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>구분</strong></p></td>
-<td><p><strong>형식기호</strong></p></td>
+<td><p><strong>Category</strong></p></td>
+<td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 중형 6축 드라이브모듈</strong></p></td>
+<td><p><strong>Hi6 Medium-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6X</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-16 중형 6축 일체형 드라이브모듈의 사양
+Table 4-16 Specification of the Medium-Sized 6 Axes Integrated Drive Module
 
 <table>
 <thead>
   <tr>
-    <th>구성</th>
-    <th colspan="2">분류</th>
-    <th colspan="2">적용</th>
+    <th>Configuration</th>
+    <th colspan="2">Classification</th>
+    <th colspan="2">Application </th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">IPM용량</td>
+    <td rowspan="2">IPM capacity</td>
     <td>3X</td>
     <td>3Y</td>
     <td>HS180, HS220, HH300, HH050</td>
-    <td rowspan="2">6축 일체형</td>
+    <td rowspan="2">6 axes integrated </td>
   </tr>
   <tr>
     <td>4X</td>
@@ -111,68 +112,66 @@
     <td>HC2502B2D, HC2503B2D</td>
   </tr>
   <tr>
-    <td>년도</td>
+    <td>Year</td>
     <td colspan="2">00 ~ 99</td>
-    <td colspan="2">생산년도: 2000년 ~ 2099년</td>
+    <td colspan="2">Production year: 2000~2099</td>
   </tr>
   <tr>
-    <td>월</td>
+    <td>Month</td>
     <td colspan="2">01 ~ 12</td>
-    <td colspan="2">생산월: 1월 ~ 12월</td>
+    <td colspan="2">Production month: January~December</td>
   </tr>
   <tr>
-    <td>일련번호</td>
+    <td>Serial No.</td>
     <td colspan="2">001 ~ 999</td>
-    <td colspan="2">월 생산대수: 1대 ~ 999대</td>
+    <td colspan="2">Number of units produced monthly: 1~999</td>
   </tr>
 </tbody>
 </table>
 
-표 4-17 중형 6축 드라이브모듈의 IPM 기호
+Table 4-17 Symbols of the IPM of the medium-sized 6 axes drive module 
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>IPM 기호</th>
-    <th>IPM 사양</th>
+    <th>IPM symbol</th>
+    <th>IPM Specification</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">중형 6축 드라이브 모듈
-</td>
+    <td rowspan="6">Drive module of the medium-sized 6 axes</td>
     <td>X</td>
-    <td>(IPM 전류정격) 100A</td>
+    <td>(IPM current rating) 100A</td>
   </tr>
   <tr>
     <td>Y</td>
-    <td>(IPM 전류정격) 75A</td>
-    <td rowspan="5">
+    <td>(IPM current rating) 75A</td>
   </tr>
-  <tr>
+   <tr>
     <td>Z</td>
-    <td>(IPM 전류정격) 50A</td>
+    <td>(IPM current rating) 50A</td>
   </tr>
 </tbody>
 </table>
 
-표 4-18 중형 6축 드라이브모듈의 홀센서(Hall Sensor) 기호
+Table 4-18 Symbols of the Hall Sensors of the medium-sized 6 axes drive module 
 
 <table>
 <thead>
   <tr>
     <th>Drive Model</th>
-    <th>Hall Sensor기호(사양)</th>
-    <th>Full Scale 전류(Im)</th>
-    <th>IPM 사양 (정격 전류)</th>
+    <th>Hall sensor symbol (Specification)</th>
+    <th>Full-scalecurrent (Im)</th>
+    <th>IPM specification<br>(Rated current)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">중형 6축 드라이브 모듈
-</td>
-    <tr>
+    <td rowspan="6">Drive module of the medium-sized 6 axes</td>
+  </tr>
+  <tr>
     <td>1 (4V/50A)</td>
     <td>93.75Apeak</td>
     <td rowspan="5">PM100CG1APL065 202G (100A)<br>PM75CG1APL065 202G (75A)<br>PM50CG1APL065 202G (50A)</td>
@@ -197,169 +196,175 @@
 </table>
 
 {% hint style="info" %}
-드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
+The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
 
-![](../../../_assets/그림_4_20_BD651V60_부품_배치도.PNG  )
 
-![](../../../_assets/그림_4_21_BD651V70_부품_배치도.PNG  )
+![](../../../_assets/그림_4_20_BD651V60_부품_배치도.PNG  )</br></br>
+![](../../../_assets/그림_4_21_BD651V70_부품_배치도.PNG  )</br></br>
 
-그림 4.20 BD651V60, BD651V70 부품 배치도
+Figure 4.20 Parts Placement Diagram of BD651V60, BD651V70</br></br>
 
-표 4-19 BD651 커넥터 설명
+Table 4-19 Description of the Connectors of BD651
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>PWM신호, IPM에러 신호</p></td>
-<td><p>BD652 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals</p></td>
+<td><p>Board-to-board connectors of the BD652</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNRST</strong></p></td>
-<td><p>3상 전원 입력</p></td>
-<td><p>전장 모듈 CNRST</p></td>
+<td><p>3-phase power input</p></td>
+<td><p>CNRST for the electronic module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD652 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of the BD652</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNDR</strong></p></td>
-<td><p>회생방전 전력 출력</p></td>
-<td><p>회생방전 저항</p></td>
+<td><p>Regenerative discharge power output</p></td>
+<td><p>Regenerative discharge resistor</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNTR</strong></p></td>
-<td><p>회생방전 저항 과열 검지</p></td>
-<td><p>회생방전 저항 온도센서</p></td>
+<td><p>Regenerative discharge resistor overheating detection</p></td>
+<td><p>Regenerative discharge resistor temperature sensor</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNM1~3</strong></p></td>
-<td><p>1축~3축 모터 구동 출력</p></td>
+<td><p>Motor drive output for axis 1 to axis 3</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNM4~6</strong></p></td>
-<td><p>4축~6축 모터 구동 출력</p></td>
+<td><p>Motor drive output for axis 4 to axis 6</p></td>
 <td><p>CMC2</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPN7~8</strong></p></td>
-<td><p>부가축 드라이브모듈 직류전원</p></td>
-<td><p>선택사양 부가축 드라이브모듈 CNPN</p></td>
+<td><p>Direct current power for the drive module of the additional axis</p></td>
+<td><p>CNPN for the drive module for an optional additional axis.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNFG1</strong></p></td>
-<td><p>1축~3축 모터의 Frame Ground</p></td>
+<td><p>Frame ground for axis 1 to axis 3</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNFG2</strong></p></td>
-<td><p>4축~6축 모터의 Frame Ground</p></td>
+<td><p>Frame ground for axis 4 to axis 6</p></td>
 <td><p>CMC2</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-20 BD651 LED 설명
+Table 4-20 Description of LEDs of BD651
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태 표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status Display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC ON</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>컨버터부 제어전압 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control voltage of the converter part is normal</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DR</strong></p></td>
-<td><p>적색</p></td>
-<td><p>회생방전 동작 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on the regenerative discharge is operating</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PN</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN전압이 42V이상 시 점등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned on when the PN voltage is higher than 42V</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RYON</strong></p></td>
-<td><p>적색</p></td>
-<td><p>PN방전 동작 시 소등</p></td>
+<td><p>Red</p></td>
+<td><p>Will be turned off when the PN discharge is operating</p></td>
 </tr>
 </tbody>
 </table>
 
-![](../../../_assets/그림_4_22_BD652V60_부품_배치도.PNG  )
-![](../../../_assets/그림_4_23_BD652V70_부품_배치도.PNG  )
+![](../../../_assets/그림_4_22_BD652V60_부품_배치도.PNG  ) </br></br>
 
-그림 4.21 BD652V60, BD652V70 부품 배치도
+![](../../../_assets/그림_4_23_BD652V70_부품_배치도.PNG  ) </br></br>
 
-표 4-21 BD652 커넥터 설명
+Figure 4.21 Parts Placement Diagram of BD652V60, BD652V70
+
+Table 4-21 Description of the Connectors of BD652
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Usage</strong></p></td>
+<td><p><strong>Connection of external devices</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
-<td><p>8축 PWM신호, IPM에러 신호<br>컨버터부 에러 신호</p></td>
-<td><p>BD640 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD640</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>축별 PWM신호, IPM에러 신호</p></td>
-<td><p>BD651 Board to Board 커넥터</p></td>
+<td><p>PWM signals and IPM error signals for individual axes</p></td>
+<td><p>Board-to-board connectors of BD651</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM7~8</strong></p></td>
-<td><p>부가축 PWM신호, IPM에러 신호</p></td>
-<td><p>부가축 드라이브모듈(BD658 또는 BD659)의 CNPWM</p></td>
+<td><p>PWM signal and IPM error signal for the additional axis</p></td>
+<td><p>CNPWM of the drive module (BD658 or BD659) of the additional axis</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>컨버터부 에러 신호</p></td>
-<td><p>BD651 Board to Board 커넥터</p></td>
+<td><p>Converter part error signal</p></td>
+<td><p>Board-to-board connectors of BD651</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>TBIO</strong></p></td>
+<td><p>Reserved only for the IO terminal block</p></td>
+<td><p>Reserved</p></td>
 </tr>
 </tbody>
 </table>
 
-표 4-22 BD652 LED 설명
+Table 4-22 Description of the LEDs of BD652
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>상태 표시</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Color</strong></p></td>
+<td><p><strong>Status Display</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC</strong></p></td>
-<td><p>황색</p></td>
-<td><p>전자접촉기 구동 시 점등</p></td>
+<td><p>Yellow</p></td>
+<td><p>Will be turned on when the magnet contact is driving</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>제어전원 정상 시 점등</p></td>
+<td><p>Green</p></td>
+<td><p>Will be turned on when the control power is normal</p></td>
 </tr>
 </tbody>
 </table>
