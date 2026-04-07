@@ -946,7 +946,7 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 소비 전력&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>Hi6-N80(U)-A0 : 10.5KVA<br>Hi6-N00(U)-A0 : 7.8KVA<br>Hi6-N30(U)-A0 : 4.4KVA</td>
+    <td colspan="2"><br>N80(U)-A0 : 10.5KVA<br>N00(U)-A0 : 7.8KVA<br>N30(U)-A0 : 4.4KVA</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>동작 온도&nbsp;&nbsp;&nbsp;</td>
@@ -1768,7 +1768,7 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 
 다음 표 4-3는 커넥터의 용도와외부장치접속에 대한 설명입니다.
 
-표 4-3 Hi6COM-T 커넥터의 종류 및 용도
+표 4-3 H6COM-T 커넥터의 종류 및 용도
 
 <table>
 <tbody>
@@ -3743,7 +3743,7 @@ H6APSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 </table>
 
 
-# 4.3.5.3. BD6C3 LED
+### 4.3.5.3. BD6C3 LED
 
 전장보드(BD6C3)의 LED 배치는 다음 그림과 같으며 각각에 대한 용도 및 연결 전원, LED 색상은 표 4-41과 같습니다.
 

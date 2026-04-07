@@ -112,7 +112,7 @@
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>최대 소비 전력&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>Hi6-N80(U)-A0 : 10.5KVA<br>Hi6-N00(U)-A0 : 7.8KVA<br>Hi6-N30(U)-A0 : 4.4KVA</td>
+    <td colspan="2"><br>N80(U)-A0 : 10.5KVA<br>N00(U)-A0 : 7.8KVA<br>N30(U)-A0 : 4.4KVA</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>동작 온도&nbsp;&nbsp;&nbsp;</td>
