@@ -1,4 +1,6 @@
-﻿# Hi6-N 제어기 보수 설명서
+﻿
+[__SOURCE](README.md)
+# Hi7-N 제어기 보수 설명서
 
 ## 개요
 
@@ -21,7 +23,7 @@
 
 이 설명서에서 다루고 있는 내용은 저작권 법과 비밀 유지 계약에 의하여 보호받고 있습니다. 이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내 부 교육 자료로 제공되어 사용될 수 있습니다만, 명시적으로 허용하지 않은 사용, 복사, 제 3자에의 공개 및 배포 등의 행위는 엄격히 금지됩니다.
 
-Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2025 HYUNDAI ROBOTICS. All rights reserved.
 
 ## 안전 주의 사항
 
@@ -124,7 +126,11 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
 
 * 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
+
+[__SOURCE](1-safety/README.md)
 # 1. 안전
+
+[__SOURCE](1-safety/1-applied-standard.md)
 # 1.1. 적용 표준
 
 이 제품에 적용된 안전 표준은 다음과 같습니다.
@@ -168,40 +174,32 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * IEC 60204-1:2016 Safety of machinery - Electrical equipment of machines - Part 1: General requirements
 
 * ISO 11161:2007 Safety of machinery - Integrated manufacturing systems - Basic requirements
+
+[__SOURCE](1-safety/2-safety-performance.md)
 # 1.2. 안전 성능
 
 산업용 로봇의 안전 모듈의 성능은 다음과 같습니다.
 
 표 1-1 안전모듈의 안전성능
-<table>
-<thead>
-  <tr>
-    <th>항목</th>
-    <th>안전 성능</th>
-    <th>적용 표준</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>HFT</td>
-    <td>1</td>
-    <td rowspan="2">IEC 61508/62061/61800-5-2</td>
-  </tr>
-  <tr>
-    <td>SIL (Safety Integrity Level)</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>Category</td>
-    <td>3</td>
-    <td rowspan="2">ISO 13849-1</td>
-  </tr>
-  <tr>
-    <td>PL (Performance Level)</td>
-    <td>d</td>
-  </tr>
-</tbody>
-</table>
+SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
+|            **항목**            | **안전 성능** |         **적용 표준**         |
+| :--------------------------: | :-------: | :-----------------------: |
+|              HFT             |     1     | IEC 61508/62061/61800-5-2 |
+| SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
+|           Category           |     4     |        ISO 13849-1        |
+|    PL (Performance Level)    |     e     |        ISO 13849-1        |
+|    		PFH    			   |1.34217E-08|        ISO 13849-1        |
+
+
+
+그 외의 안전 기능의 안전 성능은 다음과 같습니다.
+|            **항목**            | **안전 성능** |         **적용 표준**         |
+| :--------------------------: | :-------: | :-----------------------: |
+|              HFT             |     1     | IEC 61508/62061/61800-5-2 |
+| SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
+|           Category           |     3     |        ISO 13849-1        |
+|    PL (Performance Level)    |     d     |        ISO 13849-1        |
+[__SOURCE](1-safety/3-safety-edu.md)
 # 1.3. 안전 교육
 
 제품의 기능을 효과적으로 사용하려면 반드시 설명서의 내용을 숙지하고 제품을 올바르게 설치, 사용 및 보수해야 합니다. 제품 사용자는 로봇이 설치 및 사용되는 지역의 로봇 관련 안전 법규의 숙지 및 준수의 책임과 로봇 시스템에서 작업하는 사용자의 안전을 담보할 안전 장치를 제대로 설계, 설치 및 운용할 책임을 가집니다.
@@ -219,6 +217,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
   - 로봇 및 로봇 시스템의 성능과 잠재적인 위험 요소
 
   - 특정 로봇의 응용 관련 작업 등
+
+[__SOURCE](1-safety/4-risk-assess.md)
 # 1.4. 위험성 평가
 
 로봇을 포함한 통합 시스템 구성에 있어 위험성 평가는 대부분의 국가에서 법적 필수 사항으로 다루고 있을 만큼 중요한 요소 중 하나입니다. 로봇이 시스템에 통합되는 방식에 따라 로봇 설치에 대한 안전 평가가 달라지므로 로봇 자체만으로는 통합 시스템의 위험성을 평가할 수 없습니다.
@@ -241,6 +241,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 회피 가능성
 
 통합 시스템 구성 시 로봇의 안전 관련 기능으로 위험 요소가 충분히 제거되지 않은 경우 위험성 평가에서 추가 보호 장치의 필요성을 확인할 수 있습니다.
+
+[__SOURCE](1-safety/5-potential_risk.md)
 # 1.5. 잠재적 위험
 
 로봇과 연동된 통합 시스템의 위험성 평가에서 로봇의 안전 관련 기능만으로 위험 요소가 충분히 제거되지 않았다는 결과가 도출되었을 경우에는 반드시 추가 보호 대책을 수립해야 합니다.
@@ -266,6 +268,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 안전 관련 기능 설정의 임의 변경에 의한 오류 등
 
 발생 가능한 위험의 유형은 시스템 구성에 따라 다르므로 통합 시스템을 사용하기 전에는 반드시 위험성 평가를 실행하십시오.
+
+[__SOURCE](1-safety/6-validity-responsibility.md)
 # 1.6. 유효성 및 책임
 
 로봇을 설치 및 사용하는 국가 및 지역의 안전 규정 및 법률을 기준으로 안전 요건을 준수해야 합니다. 로봇 통합 시스템의 공급자와 사용자에게는 다음의 사항을 비롯하여 다양한 책임이 부여됩니다.
@@ -285,11 +289,13 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 설명서를 비롯한 모든 종류의 기술 문서 제공 등
 
 이 설명서의 안전 관련 내용에서 제품 사용 중 발생할 수 있는 모든 위험 요소와 상황을 다루지는 않습니다.
+
+[__SOURCE](1-safety/7-safety-label.md)
 # 1.7. 안전 라벨
 
 제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다. 또한 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
 
-![](../_assets/그림_1.1_안전라벨.png)
+![](../_assets/fig_1.1_safety_label.png)
 
 그림 1.1 안전라벨
 
@@ -306,6 +312,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 {% hint style="info" %}
 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
 {% endhint %}
+
+[__SOURCE](1-safety/8-safety-function/README.md)
 # 1.8 안전기능
 
 로봇의 안전 시스템은 [ISO13849-1:2015]의 안전성능(PL)=d Cat3와 [IEC62061:2005\]의 안전무결성수준(SIL) 레벨2을 만족시키기 위해 이중화(HFT=1) 설계되었으며, 안전 관련 디바이스의 상태를 지속적으로 모니터링합니다. 자가진단에 의한 에러 검출 또는 안전 관련 신호가 입력되면 위험성평가에 의해 결정된 정지 분류에 따라 로봇을 정지시킵니다. 또한, 안전회로의 이중화 스위치 중 어느 하나라도 활성화 되었을 경우 모터 구동 전원과 브레이크 구동 전원을 차단하여 안전한 상태가 되도록 합니다. 해당 상태에 대한 정보는 티칭펜던트를 통해 확인 가능합니다.
@@ -315,6 +323,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 {% endhint %}
 
 로봇의 안전 관련 주요한 기능은 아래와 같습니다.
+
+[__SOURCE](1-safety/8-safety-function/1-key-safety-function.md)
 # 1.8.1. 주요 안전 기능
 
 * 비상정지 (IEC 60204-1,10,7)
@@ -348,6 +358,8 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 * 조작모드의 선택(ANSI/RIA R15.06-2012)
 
 로봇은 수동 또는 자동, 리모트모드에서 조작할 수 있습니다. 수동모드에서의 최고 속도는 250 mm/s로 제한되며, 티칭펜던트를 통해서만 조작이 가능합니다. 또한 옵션 구성에 의해 제어반에 모드스위치의 추가장착이 가능합니다. 조작에 관한 상세 내용은 조작 매뉴얼을 참고하시기 바랍니다.
+
+[__SOURCE](1-safety/8-safety-function/2-related-other-func.md)
 # 1.8.2. 관련 기타 기능
 
 로봇의 암(Arm)에 의한 사고로 사람의 끼임이 발생하는 경우 아래의 사항을 숙지하고 조치해 주시기 바랍니다.
@@ -371,9 +383,11 @@ Copyright ⓒ 2023 HYUNDAI ROBOTICS. All rights reserved.
 반드시 주기적으로 점검하여 주십시오. 고장시 대책에 대해서는 트러블슈팅 매뉴얼을 참고 바랍니다.
 {% endhint %}
 
+
+[__SOURCE](1-safety/9-stop.md)
 # 1.9. 정지
 
-Hi6제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. IEC 60204-1에 명시된 정지분류 기준으로 안전입력 별 분류는 아래와 같습니다.
+Hi7제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. IEC 60204-1에 명시된 정지분류 기준으로 안전입력 별 분류는 아래와 같습니다.
 
 * 정지분류 0: 기계 액추에이터의 전원을 즉시 제거하여 정지(제어되지 않은 정지)
 
@@ -382,7 +396,11 @@ Hi6제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. 
 * 정지분류1: 정지를 달성하기 위해 기계 액추에이터에 사용할 수 있는 전력이 있는 제어 정지 및 정지가 달성되면 전력을 제거
 
     →  비상 정지 버튼 외 안전입력
+
+[__SOURCE](1-safety/10-safety-measures-install/README.md)
 # 1.10. 설치 시 안전 대책
+
+[__SOURCE](1-safety/10-safety-measures-install/1-safety-guard-install.md)
 # 1.10.1. 안전 가드 설치
 
 {% hint style="warning" %}
@@ -414,6 +432,8 @@ Hi6제어기의 안전 시스템은 아래의 정지 처리가 가능합니다. 
 * 안전망을 설치하지 않은 경우에는 안전플러그를 대신할 수 있도록, 로봇의 안전가드 범위의 사양 내에 들어가는 장소 전체에 광전스위치, 매트스위치 등과 같은 안전 장치를 설치하여, 사람이 진입하였을 때 로봇이 자동으로 정지하도록 해주십시오.
 
 * 로봇의 동작영역(위험영역)은 바닥에 페인트 칠을 하는 것과 같이 식별될 수 있도록 하여 주십시오.
+
+[__SOURCE](1-safety/10-safety-measures-install/2-place-robots-peripherals.md)
 # 1.10.2. 로봇 및 주변기기 배치
 
 {% hint style="warning" %}
@@ -458,6 +478,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 ![](../../_assets/그림_1.6_산업용_로봇의_원통형_안전펜스.png  )
 
 그림 1.6 산업용 로봇의 원통형 안전펜스
+
+[__SOURCE](1-safety/10-safety-measures-install/3-robot-install.md)
 # 1.10.3. 로봇 설치
 
 {% hint style="info" %}
@@ -513,6 +535,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 * 로봇 별 로봇 보수메뉴얼을 참고하여 설치 하시기 바랍니다.
 
 * 현장 상황에 맞춰 소프트 리미미트를 지정 후 하드웨어 리미트의 위치 및 조정은 반드시 교육된 작업자에 의해 설치하시기 바랍니다. 설치 시 동작 여부를 반드시 체크해주십시오.
+
+[__SOURCE](1-safety/11-robot-safety-measures-op/README.md)
 # 1.11. 로봇 조작시 안전 작업
 
 
@@ -521,6 +545,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 자동모드에서 모든 정상적인 작업은 안전가드 밖에서 행하여야만 합니다. 작업 전에는 로봇의 작업영역 안에 사람이 없는지를 반드시 확인하여 주십시오. 
 {% endhint %}
 
+
+[__SOURCE](1-safety/11-robot-safety-measures-op/1-robot-safety-measures-op.md)
 # 1.11.1. 로봇 조작시 안전대책
 
 로봇 조작시 안전은 매우 중요하므로 아래의 대책을 따라 주십시오.
@@ -628,6 +654,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 *  일시정지중, 가벼운 이상조치를 위해 출입문을 여는 경우 (노즐접촉과 용착 검출, 아크 이상에 의한 경우 등)에는 티칭(teaching) 작업의 출입과 똑같은 대책을 강구해서 출입합니다.
 
 * 로봇 조작을 완료하면 안전망 안을 청소하여 공구, 기름, 이물질 등이 남아 있지 않은지를 확인하여 주십시오. 작업영역이 기름 등으로 더러워지거나, 공구류가 떨어져 있으면 그것이 원인이 되어 전도 등의 사고가 발생할 경우가 있습니다. 항상 정리정돈을 생활화하기 바랍니다.
+
+[__SOURCE](1-safety/11-robot-safety-measures-op/2-robot-safety-measures-test-run.md)
 # 1.11.2. 로봇 시운전시 안전대책
 
 {% hint style="info" %}
@@ -640,6 +668,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 * 로봇을 시운전할 경우는 먼저 수동모드(매뉴얼 모드)로 설정을 한 후 모든 축을 테스트해 볼 수 있는 잡프로그램을 입력한 후 스탭단위로 1사이클 이상 동작을 확인하여 주십시오. 로봇이 움직이는 동안 안전가드를 열거나 또는 인에이블링 스위치(티칭펜던트 인에이블링)를 떼어 로봇이 정지를 하는지 확인을 해주십시오. 문제점이 발견되었을 경우는 비상정지 버튼을 눌러 로봇이 정지하는 것을 확인합니다. 만약 비상정지 장치가 제 기능을 수행하지 않는다면, 즉시 주전원을 차단합니다. 그리고 담당 AS직원을 호출하여 주십시오. 문제가 없다면, 순서대로 속도를 올려(50 % → 75 % → 100 %)서, 각각 1 사이클(Cycle) 이상 반복하여 동작을 확인하여 주십시오. 처음부터 고속으로 동작시키면 큰 사고를 발생시킬 수 있습니다.
 
 * 시운전시에는 어떤 문제점이 발생할지 예상할 수 없습니다. 시운전 중에는 절대로 안전망 안으로 들어가지 말아주십시오. 신뢰성이 낮은 상태이기 때문에 예상하지 못하는 사고가 발생할 가능성이 매우 높습니다.
+
+[__SOURCE](1-safety/11-robot-safety-measures-op/3-robot-safety-measures-auto-run.md)
 # 1.11.3. 자동 운전시 안전대책
 
 로봇 자동 운전 시 안전은 매우 중요하므로 아래의 대책에 따라 하십시오.
@@ -661,6 +691,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 * 이상발생 후, 조치를 완료하고 동작을 확인하는 경우 안전망 안에 작업자가 있는 상태에서는 동작시키지 말아 주십시오, 신뢰성이 낮은 상태로 다른 이상이 발생하는 등, 예측하지 못한 사고가 발생할 수 있습니다.
 
 * 자동모드를 선택하기 전, 중단된 안전 장치의 기능이 있다면, 반드시 완전한 기능으로 돌아오게 한 후 작업을 진행해야 합니다.
+
+[__SOURCE](1-safety/12-enter-fence-safety-measure.md)
 # 1.12. 안전망 내 진입시 안전 대책
 
 로봇작업 영역 안의 안전문으로 들어갈때에는 소정의 교육을 수강한 작업자와 감시인이 2인 1조가 되어 작업을 진행해야 합니다. 또한, 안전모, 보안경, 안전화는 필히 착용하십시오. 감시인은 언제라도 비상정지 스위치를 누를
@@ -694,7 +726,11 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 출입이 가능한 상태에서 갑작스러운 움직임에 대한 주의 게을리해서는 안됩니다.
 어떠한 경우든지 긴급상황에 대한 준비없이 접근하는 것은 절대로 피하여 주십시오.
 {% endhint %}
+
+[__SOURCE](1-safety/13-maintenance-safety-measures/README.md)
 # 1.13. 보수 점검시 안전 대책
+
+[__SOURCE](1-safety/13-maintenance-safety-measures/1-controller-maintenance-safety-measures.md)
 # 1.13.1. 제어기 보수, 점검시 안전대책
 
 로봇 제어기 보수, 점검 시 다음의 안전대책을 따라 주십시오.
@@ -714,6 +750,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 * 제어기 내부의 보수 및 점검 작업시, 충분한 조도가 확보되지 않을 경우에는 외부 조명등을 사용 하십시오\[배정1\] .
 
 * 서보 앰프의 방열판과 회생저항은 열이 심하게 발생하므로 만지지 마십시오. 보수가 끝낸 다음 제어기내에 공구, 이물질 등을 놓아두지 않았는지 확인한 후 문을 확실하게 닫아 주십시오. ----\[배정1\]Hi5a 의 점검사항에 추가되었던 문구 반영.
+
+[__SOURCE](1-safety/13-maintenance-safety-measures/2-robot-maintenance-safety-measures.md)
 # 1.13.2. 로봇시스템, 로봇본체의 보수, 점검시 안전대책
 
 로봇시스템, 로봇본체의 보수, 점검시 다음의 안전대책을 따라 주십시오.
@@ -731,6 +769,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 {% hint style="info" %}
 구동력이 없는 로봇의축을 이동 시 중력에 의한 낙하 또는 제동 장치의 해제로 인해 추가적인 위험이 발생할 수 있으므로, 반드시 지시된 절차에 따라 작업을 진행하여 주십시오.
 {% endhint %}
+
+[__SOURCE](1-safety/13-maintenance-safety-measures/3-measures-after-maintenance.md)
 # 1.13.3. 보수, 점검 후 조치사항
 
 보수, 점검 후에는 다음의 조치사항을 따라 주십시오.
@@ -755,6 +795,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 안전 관련 기능에 영향을 미칠 수있는 구성 부품 변경 또는 로봇에 옵션 장비 (하드웨어 및 소프트웨어 모두) 추가한 경우 “1.11 로봇 조작시 안전 작업”에 기재된 사항을 유의하여 반드시 기능 정상 여부를 확인하여 주십시오.
 {% endhint %}
 
+
+[__SOURCE](1-safety/14-end-effector-safety/README.md)
 # 1.14. 엔드 이펙터(End Effector) 안전
 
 {% hint style="warning" %}
@@ -762,24 +804,34 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 {% endhint %}
 
 
-자세한 엔드 이펙터 설치에 관한 사양은 각 로봇 보수메뉴얼을 참고하시기 바랍니다.# 1.14.1. 그리퍼(Gripper)
+자세한 엔드 이펙터 설치에 관한 사양은 각 로봇 보수메뉴얼을 참고하시기 바랍니다.
+[__SOURCE](1-safety/14-end-effector-safety/1-gripper.md)
+# 1.14.1. 그리퍼(Gripper)
 
 * 만약 작업물을 잡기 위해 그리퍼(gripper)를 사용할 경우 불시에 작업물이 떨어지는 것에 대한 방비책이 있어야 합니다.
 
 * 엔드 이펙터(end effector) 및 암(arm)상에 기기를 취부할 경우에는 볼트는 규정된 크기와 개수를 사용하고, 토크 렌치를 사용하여 규정토크로서 완전히 조여 주십시오. 또 볼트에 녹이 없는 것이나 더럽지 않은 것을 사용하십시오. 
 
 * 엔드 이펙터 제작에 있어서는 로봇 손목부 부하허용치의 범위 안에서 사용 가능하도록 고려하십시오. 또, 전원이나 에어공급을 중단하였을 경우에도 파지물이 방출되거나 떨어지는 일이 없는 구조로 하고, 모서리부나 돌출부의 처리를 확실하게 해서, 대인, 대물 손상을 주지 않는 구조로 하여 주십시오.
+
+[__SOURCE](1-safety/14-end-effector-safety/2-tool-work.md)
 # 1.14.2. 툴(Tool) / 작업물
 
 * 밀링 커트와 같은 공구를 안전하게 바꾸는 것이 가능하도록 해야 합니다. 커터가 회전하는 것이 멈출 때까지 안전장치는 제 기능을 확실히 발휘하여야 합니다.
 
 * 툴(Tool)은 갑작스러운 정전 또는 제어 장애 등이 발생되더라도 작업물에 이상이 없도록 설계되어야 합니다. 수동 조작일 때는 작업물의 분리가 가능해야 합니다.
+
+[__SOURCE](1-safety/14-end-effector-safety/3-pneumatic-hydraulic-system.md)
 # 1.14.3. 공압 / 수압 시스템
 
 * 특별한 안전법규는 공압, 수압 시스템까지 적용됩니다.
 
 * 이러한 시스템은 정지 후에도 잔여 에너지가 남아 있을 수 있으니, 특히 주의를 기울여 주십시오. 공압, 수압 시스템을 수리하기 전에는 반드시 기기내의 압력을 제거하여 주십시오.
+
+[__SOURCE](2-details/README.md)
 # 2. 세부 사양
+
+[__SOURCE](2-details/1-detail-spec-controller-model.md)
 # 2.1. 제어기 모델별 세부사양
 
 표 2‑1 제어기 모델별 세부 사양
@@ -788,8 +840,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 <thead>
   <tr>
     <th colspan="2">&nbsp;&nbsp;&nbsp;<br>모델&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6-N00-A0<br>Hi6-N30-A0<br>Hi6-N80-A0&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6-N00U-A0<br>Hi6-N30U-A0<br>Hi6-N80U-A0</th>
+    <th><br>Hi7-N00-A0<br>Hi7-N30-A0<br>Hi7-N80-A0&nbsp;&nbsp;&nbsp;</th>
+    <th><br>Hi7-N00U-A0<br>Hi7-N30U-A0<br>Hi7-N80U-A0</th>
   </tr>
 </thead>
 <tbody>
@@ -843,13 +895,9 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>디지털 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 8점 (최대 496점) / 출력: 8점 (최대 496점)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 36점 (최대 44점) / 출력: 36점 (최대 44점)&nbsp;&nbsp;&nbsp;</td>
   </tr>
-  <tr>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>아날로그 I/O<br>&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>입력: 4점 / 출력: 4점&nbsp;&nbsp;&nbsp;</td>
-  </tr>
-  <tr>
+   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>컨베어 펄스 카운터&nbsp;&nbsp;&nbsp;(선택사양)&nbsp;&nbsp;&nbsp;</td>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>라인드라이버 / 오픈컬렉터 &nbsp;&nbsp;&nbsp;</td>
   </tr>
@@ -863,25 +911,25 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6COM-T&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>서보보드&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD640&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>서보안전보드&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD642&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>안전모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD632&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>백플레인보드&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>BD604&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>전원공급모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6PSM(BD6C2)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>중형&nbsp;&nbsp;&nbsp;6축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6D6X<br>N80(U)-A0 : H6D6X<br>N30(U)-A0 : H6D6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>부가&nbsp;&nbsp;&nbsp;1축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6D1X, H6D1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>와이어 하네스&nbsp;&nbsp;&nbsp;</td>
@@ -918,11 +966,11 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>외관 크기*1<br>(WxHxD)&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W650xD560xH580 (mm)<br>Caster(옵션) 포함시 &nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>W680xD520xH550 (mm)<br>Caster(옵션) 포함시 &nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>중 량&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">표준 사양(TR 미포함)<br>Hi6-N30(U): 120kg<br>Hi6-N00(U): 120kg<br>Hi6-N80(U): 125kg<br><br>옵션 사양(TR포함)<br>Hi6-N30(U): 165kg<br>Hi6-N00(U): 185kg<br>Hi6-N80(U): 195kg</td>
+    <td colspan="2">표준 사양(TR 미포함)<br>Hi7-N30(U): 80kg<br>Hi7-N00(U): 80kg<br>Hi7-N80(U): 90kg<br><br>옵션 사양(TR포함)<br>Hi7-N30(U): 140kg<br>Hi7-N00(U): 160kg<br>Hi7-N80(U): 170kg</td>
   </tr>
 </tbody>
 </table>
@@ -942,42 +990,42 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 </thead>
 <tbody>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N30&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N30&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N00&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N00&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N80&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N80&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N30U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N30U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N00U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N00U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6-N80U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N80U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
@@ -990,11 +1038,15 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 주 1) 전원 용량 : 제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 본체 보수설명서 참조
 
 주 2) 전압 범위 : ±10 % (제어기의 전원 터미널)
+
+[__SOURCE](2-details/2-controller-appearance.md)
 # 2.2. 제어기 외관
 
-![](../_assets/2.2._제어기_외관(Hi6).png )
+![](../_assets/2.2._제어기_외관(Hi6a).png )
 
 그림 2.1 제어기 전면 외관도
+
+[__SOURCE](3-installation/README.md)
 # 3. 제어기의 설치
 
 설치 위치나 방향, 주위 공간의 크기 등을 고려하여 제품을 올바르게 설치, 운반, 보관하면 제품의 수명을 확보하고 성능 저하를 방지할 수 있습니다.
@@ -1013,23 +1065,29 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 제품 설치 전에 반드시 충분한 위험성 평가를 수행하고 평과의 결과를 바탕으로 안전 기능을 설정하십시오. 안전 기능에 대한 자세한 내용은 “1. 안전” 을 참조하십시오.
 {% endhint %}
 
+
+[__SOURCE](3-installation/1-configuration/README.md)
 # 3.1. 구성
+
+[__SOURCE](3-installation/1-configuration/1-basic-configuration.md)
 # 3.1.1. 기본구성
 
 ![](../../_assets/그림_3.1_산업용_로봇_설치의_기본_구성.png)
 
 그림 3.1 산업용 로봇 설치의 기본 구성
 
-* Hi6제어기(Hi6 Controller)
+* Hi7 제어기(Hi7 Controller)
 
 * 티칭펜던트(Teaching Pendant)
 
 * Wire Harness(Hi6제어기 ↔ 로봇)
 
 * 로봇(Robot)
+
+[__SOURCE](3-installation/1-configuration/2-various-name-plates.md)
 # 3.1.2. 각종 명판의 확인
 
-![](../../_assets/그림_1.1_안전라벨.png  )
+![](../../_assets/fig_1.1_safety_label.png  )
 
 그림 3.2 제어기 라벨
 
@@ -1050,6 +1108,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 {% hint style="info" %}
 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
 {% endhint %}
+
+[__SOURCE](3-installation/2-install-use-env.md)
 # 3.2. 설치 및 사용 환경
 
 설치 및 사용 환경 조건을 고려하여 알맞은 장소에 제품을 설치합니다.
@@ -1087,10 +1147,14 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
 국제 표준 및 국내 법규의 관련 요건을 준수하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
 {% endhint %}
+
+[__SOURCE](3-installation/3-controller-transport/README.md)
 # 3.3. 제어기의 운반
 
-Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 설명합니다.
+Hi7제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 설명합니다.
 로봇의 포장, 운반에 관련한 사항은 로봇보수메뉴얼을 참고하시기 바랍니다.
+
+[__SOURCE](3-installation/3-controller-transport/1-packaging.md)
 # 3.3.1. 포장
 
 * 모델 명판을 박스에 부착하십시오.
@@ -1100,7 +1164,9 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 * T/P가 박스에 포장될 때는 외부의 충격에 의해 LCD의 파손을 방지하기 위해 공기로 충전된 완충재를 사용하여 주십시오.
 
 * 방수 처리된 팩킹 리스트를 박스 바깥면에 부착하십시오.
-# 3.3.2. 운반(무게 수정)
+
+[__SOURCE](3-installation/3-controller-transport/2-carrying-weight-modi.md)
+# 3.3.2. 운반
 
 * 제어기의 전면 Door가 완전한 잠김 상태인지를 확인하여 주십시오.
 
@@ -1110,7 +1176,7 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 
 * 제어기는 정밀장치이므로 강한 충격이 가해지지 않도록 운반에 주의하여 주십시오.
 
-* 제어기의 중량은 Max. 250kg입니다. 크레인을 사용할 경우 Wire가 제어기 위의 물건에 손상을 입히지 않도록 주의하여 주십시오.
+* 제어기의 중량은 Max. 170kg입니다. 크레인을 사용할 경우 Wire가 제어기 위의 물건에 손상을 입히지 않도록 주의하여 주십시오.
 ※    제어기의 중량은 “2. 세부사양”을 참고하시기 바랍니다.
 
 * 지게차를 사용할 경우 제어기가 흔들리지 않도록 고정하여 주십시오. 
@@ -1149,6 +1215,8 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 {% endhint %}
 
 
+
+[__SOURCE](3-installation/3-controller-transport/3-unpackaging.md)
 # 3.3.3. 포장 해제
 
 * 포장을 해체하고 로봇을 설치하기 전에 안전 규정 및 다른 지침을 주의깊게 숙지하십시오.
@@ -1162,6 +1230,8 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 * 로봇의 운반은 자격 있는 사람이 수행하십시오.
 
 * 포장의 해체시 운송중이나, 포장의 해체시 파손된 부분이 없는지 확인하십시오.
+
+[__SOURCE](3-installation/4-keep-controller.md)
 # 3.4. 제어기의 보관
 
 제어기를 설치하지 않고 보관할 경우 다음 사항을 참고하여 보관하십시오.
@@ -1175,9 +1245,13 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 * 온도와 습도가 변하기 쉬운 곳(결로 현상이 있는 곳)을 피하고 주위 온도가 -15℃ ∼ 40℃인 서늘하고 건조한 장소에 제어기를 보관하십시오.
 
 * 화학 제품, 산성 및 알칼리 제품, 배터리, 차단기 등이 있는 장소에 제어기를 보관하지 마십시오
+
+[__SOURCE](3-installation/5-disposal-controller.md)
 # 3.5. 제어기의 폐기
 
 사용자의 안전을 확보하고 환경을 보호하기 위해 특정 부품은 지정된 방법에 따라 관리 및 폐기해야 합니다. 또한 산업성 폐기 물질이 포함된 경우 절대 일반 산업용 쓰레기 또는 가정용 쓰레기와 함께 폐기해서는 안 됩니다. 로봇 시스템의 전체 또는 일부를 폐기할 때에는 해당 국가 또는 지역의 관련 규정 및 법규를 반드시 준수하십시오. 제품의 폐기 및 처분과 관련된 자세한 내용은 당사의 고객지원팀으로 문의하시기 바랍니다.
+
+[__SOURCE](3-installation/6-connection/README.md)
 # 3.6. 접속
 
 {% hint style="info" %}
@@ -1188,13 +1262,17 @@ Hi6제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 4. 배선과 결선은 반드시 자격있는 사람에 의해 수행되어야 합니다.
 {% endhint %}
 
+
+[__SOURCE](3-installation/6-connection/1-teach-pendant-conn.md)
 # 3.6.1. 티칭펜던트(Teaching Pendant)의 접속
 
 티칭펜던트(Teaching Pendant)의 케이블 커넥터를 제어기의 CNRTP 리셉터클에 연결하여 주십시오.
 
-![](../../_assets/그림_3.5_Hi6-N_(U)_티칭펜던트의_접속.png  )
+![](../../_assets/그림_3.5_Hi6a-N_(U)_티칭펜던트의_접속.png  )
 
-그림 3.5 Hi6-N\*\*(U) 티칭펜던트의 접속
+그림 3.5 Hi7-N\*\*(U) 티칭펜던트의 접속
+
+[__SOURCE](3-installation/6-connection/2-robot-controller.md)
 # 3.6.2. 로봇 본체와 제어기의 접속
 
 로봇 본체와 제어기간의 연결은 와이어하네스(wire harness)로 연결합니다. 각각의 리셉터클 명칭을 확인하시고 연결하여 주십시오.
@@ -1206,7 +1284,7 @@ Wire Harness 결선도
 <table>
 <thead>
   <tr>
-    <th>&nbsp;&nbsp;&nbsp;<br>Hi6-N Controller&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Hi7-N Controller&nbsp;&nbsp;&nbsp;</th>
     <th>&nbsp;&nbsp;&nbsp;<br>ROBOT&nbsp;&nbsp;&nbsp;</th>
   </tr>
 </thead>
@@ -1247,17 +1325,21 @@ Wire Harness 결선도
 {% endhint %}
 
 
-그림 3.6 로봇 본체와 제어기의 접속 (Hi6-N\*\*(U))
+그림 3.6 로봇 본체와 제어기의 접속 (Hi7-N\*\*(U))
+
+[__SOURCE](3-installation/6-connection/3-controller-1st-power/README.md)
 # 3.6.3. 제어기와 1차 전원의 접속
 
-1차 전원 및 브레이커(NFB)에서 전원이 제거된 상태인지를 확인하십시오. Hi6-N\*\* 제어기는 전원 케이블을 전원 인입구로 넣어서 브레이커(NFB)에 연결하여 주십시오.
+1차 전원 및 브레이커(NFB)에서 전원이 제거된 상태인지를 확인하십시오. Hi7-N\*\* 제어기는 전원 케이블을 전원 인입구로 넣어서 브레이커(NFB)에 연결하여 주십시오.
 
 이때 1차 전원의 케이블 끝단은 적당한 크기의 터미널 단자를 사용하여 주십시오
 
-![](../../../_assets/그림_3.8_Hi6-N__U__제어기에_1차_전원_접속부.png  )
-![](../../../_assets/그림_3.8_Hi6-N__U__제어기에_1차_전원_접속부_2.png  )
+![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부.png  )
+![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_2.png  )
 
-그림 3.7 Hi6-N\*\*(U) 제어기에 1차 전원 접속부
+그림 3.7 Hi7-N\*\*(U) 제어기에 1차 전원 접속부
+
+[__SOURCE](3-installation/6-connection/3-controller-1st-power/1-req-power.md)
 # 3.6.3.1. 전원 요구 조건
 
 표 3-2 전원 요구 조건
@@ -1274,7 +1356,7 @@ Wire Harness 결선도
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>Hi6-N00</p></td>
+<td><p>Hi7-N00</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -1282,7 +1364,7 @@ Wire Harness 결선도
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>Hi6-N30</p></td>
+<td><p>Hi7-N30</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -1290,7 +1372,7 @@ Wire Harness 결선도
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>Hi6-N80</p></td>
+<td><p>Hi7-N80</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -1298,7 +1380,7 @@ Wire Harness 결선도
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>Hi6-N00U</p></td>
+<td><p>Hi7-N00U</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -1306,7 +1388,7 @@ Wire Harness 결선도
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>Hi6-N30U</p></td>
+<td><p>Hi7-N30U</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -1314,7 +1396,7 @@ Wire Harness 결선도
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>Hi6-N80U</p></td>
+<td><p>Hi7-N80U</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -1328,6 +1410,8 @@ Wire Harness 결선도
 제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 “본체보수설명서” 참조
 
 주 2) 전압 범위: ±10% (제어기의 전원 터미널)
+
+[__SOURCE](3-installation/6-connection/3-controller-1st-power/2-power-wire-thick.md)
 # 3.6.3.2. 전원 전선 굵기
 
 표 3-3 권장 최소 전선 굵기
@@ -1337,8 +1421,8 @@ Wire Harness 결선도
   <tr>
     <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>No.&nbsp;&nbsp;&nbsp;</th>
     <th rowspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 길이m(feet)&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기<br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N00(U),Hi6-N80(U))&nbsp;&nbsp;&nbsp;</th>
-    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기 <br>&nbsp;&nbsp;&nbsp;<br>(Hi6-N30(U))&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기<br>&nbsp;&nbsp;&nbsp;<br>(Hi7-N00(U),Hi7-N80(U))&nbsp;&nbsp;&nbsp;</th>
+    <th colspan="2">&nbsp;&nbsp;&nbsp;<br>케이블 굵기 <br>&nbsp;&nbsp;&nbsp;<br>(Hi7-N30(U))&nbsp;&nbsp;&nbsp;</th>
   </tr>
   <tr>
     <th>&nbsp;&nbsp;&nbsp;<br>mm2&nbsp;&nbsp;&nbsp;</th>
@@ -1382,9 +1466,19 @@ Wire Harness 결선도
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](3-installation/6-connection/4-controller-ground.md)
 # 3.6.4. 제어기와 접지
 
 제어기를 안전하게 사용하기 위해 제어기에 접지선을 연결하여 주십시오. 5.5㎟ 이상의 접지선을 사용하여 주십시오. (제 3종 접지)
+
+
+제어기 접지선 연결 위치는 그림 3.9와 같이 나타내었다.
+
+![](../../_assets/그림_3.9_Hi6a-N__U__제어기에_FG_케이블_연결.png  )
+
+그림 3.9 제어기 전원 접지 연결 부스바
+[__SOURCE](3-installation/6-connection/5-other-caution.md)
 # 3.6.5. 기타 주의 사항
 
 {% hint style="info" %}
@@ -1394,6 +1488,8 @@ Wire Harness 결선도
 3. 반드시 1차 전원 투입 전에 접속관계, 제어기의 전원 사양 및 공급 전원 사양등을 재확인하여 주십시오.
 {% endhint %}
 
+
+[__SOURCE](3-installation/6-connection/6-user-eth-port-conn.md)
 # 3.6.6. 사용자 이더넷 포트의 접속
 
 사용자용 이더넷 포트는 제어기 전면 도어부에 위치하며, Pin Description 및 PC와의 결선은 다음과 같습니다.
@@ -1434,25 +1530,31 @@ Wire Harness 결선도
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/README.md)
 # 4. 제어기의 기본구성
 
-![](../_assets/4._제어기의_기본구성(Hi6)-주의.png  )
-# 4.1. 구성
+
+
+[__SOURCE](4-basic-components/1-config.md)
+# 4.1. 구성.
 
 제어기는 제어기 본체와 티칭펜던트(Teaching Pendant)로 구성되어 있습니다.
 
-![](../_assets/그림_4.1_Hi6-N_(U)_제어기.png  )
+![](../_assets/그림_4.1_Hi6a-N_(U)_제어기.png  )
 
-그림 4.1 Hi6-N\*\*(U) 제어기
+그림 4.1 Hi7-N\*\*(U) 제어기
 
 ![](../_assets/그림_4.2_티칭펜던트_TP630.png  )
 
 그림 4.2 티칭펜던트 TP630
+
+[__SOURCE](4-basic-components/2-part-layout.md)
 # 4.2. 부품 배치
 
-Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과 같으며 그림 4.3부터 그림 4.5 과 같이 배치되어 있습니다.
+Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과 같으며 그림 4.3부터 그림 4.5 과 같이 배치되어 있습니다.
 
-표 4-1 Hi6-N00/N30/N80 제어기 각 부품 명칭
+표 4-1 Hi7-N00/N30/N80 제어기 각 부품 명칭
 
 <table>
 <tbody>
@@ -1468,17 +1570,17 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>BD640</p></td>
-<td><p>서보(Servo)보드</p></td>
+<td><p>BD642</p></td>
+<td><p>서보안전(Servo-safety)보드</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>BD632</p></td>
-<td><p>안전(Safety)보드</p></td>
+<td><p>BD604</p></td>
+<td><p>백플레인보드(backplane)보드</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>H6PSM</p></td>
+<td><p>H6aPSM</p></td>
 <td><p>전원공급모듈</p></td>
 </tr>
 <tr class="even">
@@ -1576,21 +1678,22 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 </tbody>
 </table>
 
-![](../_assets/그림_4.3_Hi6-N00(U),N30(U),N80(U)_제어기_전면_외부의_부품배치.png  )
+![](../_assets/그림_4.3_Hi6a-N00(U),N30(U),N80(U)_제어기_전면_외부의_부품배치.png)
 
-그림 4.3 Hi6-N00(U)/N30(U)/N80(U) 제어기 전면 외부의 부품배치
+그림 4.3 Hi7-N00(U)/N30(U)/N80(U) 제어기 전면 외부의 부품배치
 
-![](../_assets/그림_4.4_Hi6-N00(U),N30(U),N80(U)_제어기_전면_내부의_부품배치.png  )
+![](../_assets/그림_4.4_Hi6a-N00(U),N30(U),N80(U)_제어기_전면_내부의_부품배치.png  )
 
-그림 4.4 Hi6-N00(U)/N30(U)/N80(U) 제어기 전면 내부의 부품배치
+그림 4.4 Hi7-N00(U)/N30(U)/N80(U) 제어기 전면 내부의 부품배치
 
-![](../_assets/그림_4.5_Hi6-N00(U),N30(U),N80(U)_제어기_후면_부품배치-1.png  )
+![](../_assets/그림_4.5_Hi6a-N00(U),N30(U),N80(U)_제어기_후면_부품배치.png  )
 
-![](../_assets/그림_4.5_Hi6-N00(U),N30(U),N80(U)_제어기_후면_부품배치.png  )
+그림 4.5 Hi7-N00(U)/N30(U)/N80(U) 제어기 후면 부품배치
 
-![](../_assets/그림_4.5_Hi6-N00(U),N30(U),N80(U)_제어기_후면_부품배치-3.png  )
+![](../_assets/그림_4.6_Hi6a-N00(U),N30(U),N80(U)_제어기_트랜스포머함.png  )
 
-그림 4.5 Hi6-N00(U)/N30(U)/N80(U) 제어기 후면 부품배치
+그림_4.6 Hi7-N00(U),N30(U),N80(U)_제어기_트랜스포머함.png
+[__SOURCE](4-basic-components/3-component-func/README.md)
 # 4.3. 구성품별 기능
 
 표 4-2 각 구성품별 기능요약
@@ -1609,12 +1712,12 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
     <td>- 기록점 기록 및 동작 경로 계산<br>- 프로그램 및 로봇 정수 보존<br>- 티치펜던트(T/P)통신<br>- LAN, USB, 직렬(RS232)통신 접속</td>
   </tr>
   <tr>
-    <td>서보보드(BD640)</td>
-    <td>- 서보제어용 DSP<br>- 엔코더 접속(시리얼 I/F)<br>- 서보모터 및 브레이크 개폐출력<br>- 시퀀스제어</td>
+    <td>서보안전보드(BD642)</td>
+    <td>- 서보제어용 DSP<br>- 엔코더 접속(시리얼 I/F)<br>- 서보모터 및 브레이크 개폐출력<br>- Functional Safety 기능<br> - 시퀀스제어<br>- 제어기내 입출력(시스템용I/O)<br>- 본체로부터의 각종 입력신호 처리<br>- 안전체인 회로</td>    
   </tr>
   <tr>
-    <td>안전모듈(BD632)</td>
-    <td>- 제어기내 입출력(시스템용I/O)<br>- 본체로부터의 각종 입력신호 처리<br>- 안전체인 회로</td>
+    <td>백플레인보드(BD604)</td>
+    <td>- 보드별 제어전원 공급<br>- 서보안전보드(BD642)와 AMP 신호 연결<br>- Precharge/FAN 릴레이 동작신호 전달</td>
   </tr>
   <tr>
     <td>드라이브모듈<br>(Drive Module)</td>
@@ -1633,7 +1736,7 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
   </tr>
   <tr>
     <td>전원공급모듈</td>
-    <td>H6PSM</td>
+    <td>H6APSM</td>
     <td>- 모터 구동 전원의 개폐<br>- 각종 전원의 분배</td>
   </tr>
 </tbody>
@@ -1641,14 +1744,26 @@ Hi6-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 
 
 ※ 제어기별 구성품 종류는 ‘2.1절 로봇 제어기의 세부사양’을 참고 바랍니다.
+
+제어기 모듈의 각 보드 위치를 그림 4.7과 같이 나타내었다.
+
+![](../../_assets/그림_4_3_구성품%20위치.png)
+
+그림 4.7 제어모듈 구성품
+
+[__SOURCE](4-basic-components/3-component-func/1-main-module-H6COM-T/README.md)
 # 4.3.1. 메인모듈(H6COM-T)
+
+[__SOURCE](4-basic-components/3-component-func/1-main-module-H6COM-T/1-overview.md)
 # 4.3.1.1. 개요
 
 H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드의 결합으로 이루어져 있습니다. Main CPU 보드는 SSD 슬롯, CPU슬롯, 메모리카드 슬롯, USB포트, COM포트 와 Carrier보드를 체결하는 버스커넥터로 구성되어 있습니다. Carier보드는 3개의 외부 LAN포트, 2개의 내부 시스템용 LAN포트 2개의USB포트, GPIO포트, 2개의 PCI 커넥터, 1개의 PCI-e커넥터와 DC 24V전원 커넥터를 포함하고 있습니다. 내부 시스템 LAN포트는 EtherCAT통신과 Teach Pandent와의 인터페이스를 위한 목적으로 사용되며, GIO는 전원장치로부터 정전신호를 감지하기 위해 사용됩니다. USB는 디버깅 목적으로 쓰입니다. 기타 범용적인 버스 인터페이스를 지원하기 위해 PCI 확장슬롯과 외부의 LAN포트 여분 3포트를 제공하며, 해당 슬롯을 통해 EtherCAT 외의 다른 통신인터페이스 들과 연결될 수 있습니다.
 
-![](../../../_assets/그림_4.23_H6COM-T.png  )
+![](../../../_assets/그림_4_1_1_메인모듈이미지.png  )
 
 그림 4.6 H6COM-T
+
+[__SOURCE](4-basic-components/3-component-func/1-main-module-H6COM-T/2-connector.md)
 # 4.3.1.2. 커넥터
 
 다음 표 4-3는 커넥터의 용도와외부장치접속에 대한 설명입니다.
@@ -1678,27 +1793,27 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 <td><p>-</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>LAN 1</strong></p></td>
+<td><p><strong>LAN 4</strong></p></td>
 <td><p>EtherCAT 마스터 커넥터 포트</p></td>
 <td><p>EtherCAT 커넥터</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>LAN 2</strong></p></td>
+<td><p><strong>LAN 5</strong></p></td>
 <td><p>이더넷포트: T/P간 통신용</p></td>
 <td><p>TP 커넥터</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>LAN 3</strong></p></td>
+<td><p><strong>LAN 1</strong></p></td>
 <td><p>이더넷포트: 사용자용(PC I/F)</p></td>
 <td><p>옵션용 EtherCAT 커넥터</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>LAN4</strong></p></td>
+<td><p><strong>LAN 2</strong></p></td>
 <td><p>이더넷포트: 사용자용(PC I/F)</p></td>
 <td><p>-</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>LAN5</strong></p></td>
+<td><p><strong>LAN 3</strong></p></td>
 <td><p>이더넷포트: 사용자용(PC I/F)</p></td>
 <td><p>-</p></td>
 </tr>
@@ -1714,1546 +1829,741 @@ H6COM-T는 은 그림 4.3과 같은 구조로서 Main CPU보드와 Carier보드�
 </tr>
 </tbody>
 </table>
-# 4.3.2. 안전모듈(BD632)
+
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/README.md)
+# 4.3.2. 서보/안전모듈(BD642)
+
+
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/1-overview.md)
 # 4.3.2.1. 개요
 
-안전모듈(BD632)은 ISO 13849-1를 준수하여 PLr=d cat3(SIL2)을 만족시키기 위해 이중화된 안전 전기회로로 설계되었으며, 안전 관련 입력의 상태를 지속적으로 모니터링합니다. 만약 시스템 에러 또는 안전 관련 입력이 검지되면, 위험성 평가에 의해 결정된 정지 분류에 따라 모터전원과 브레이크 전원을 차단함으로써, 로봇을 안전한 상태가 되도록 하는 역할을 합니다.
+서보/안전모듈(BD642)은 로봇 제어기에서 서보제어 및 안전기능을 수행합니다.   
+
+서보제어는 전체 8축(로봇 기본 6축, 부가축 2축) 모터를 동시 제어 가능합니다. 서보제어에 필요한 기능은 모터 제어에 필요한 피드백 신호(전류센서, 위치센서 등) 입력부, 피드백 신호를 이용한 모터제어 알고리즘(위치,속도 & 토크제어 및 전류 제어) 구현을 위한 연산 처리부(MCU & FPGA) 그리고 실제 서보제어를 위한 파워 소자들(IPM, 정류 다이오드, DC링크 & 브레이크 등)을 제어 및 모니터링하는 부분으로 구성되어 있습니다.   
+
+또한, 로봇 제어기에 필요한 안전기능을 수행합니다. 안전 기능 구현을 위하여 MCU를 듀얼 채널로 구성하여 STO 처리 및 안전 입/출력 신호 처리 등을 수행합니다.   
+
+이 외 로봇 제어기 인터페이스 기능으로는 T/P 인터페이스, BD671(PROFIsafe)보드 인터페이스, Main Com 인터페이스, BD604(백 플레인)보드 인터페이스, BD680(Option Safety IO)보드 인터페이스 그리고 BD6C3(Power Distribution) 보드 인터페이스 등이 있습니다.   
+
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/2-connector.md)
 # 4.3.2.2. 커넥터
 
-다음 그림은 BD632(Safety IO Module)에 있는 각종 커넥터의 위치와 용도를 나타낸 것입니다.
+아래 그림은 서보/안전모듈(BD642)의 외부연결에 필요한 커넥터의 위치를 보여줍니다. 또한, 아래 표는 각 커넥터의 명칭, 용도를 기술합니다.   
 
-![](../../../_assets/그림_4.24_BD632(Safety_IO_Board)의_커넥터_및_스위치_배치.png  )
+![](../../../_assets/BD642_PCB_커넥터명.png)
+그림 4.3.2.2-1 서보/안전모듈(BD642)커넥터 배치
 
-그림 4.7 BD632(Safety IO Board)의 커넥터 및 스위치 배치
-
-표 4-4 BD632(Safety IO Board)커넥터 종류 및 용도
-
+표 4.3.2.2-1 서보/안전모듈(BD642)커넥터 명칭, 용도 및 외부연결장치
 <table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>용도</strong></th>
+    <th><strong>외부연결장치</strong></th>
+  </tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>번호</strong></p></td>
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p><strong>CNSMPS1</strong></p></td>
-<td><p>SMPS DC24V전원 공급</p></td>
-<td><p>DC24V SMPS</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>A</strong></p></td>
-<td><p><strong>CNSMPS2</strong></p></td>
-<td><p>SMPS DC24V전원 공급</p></td>
-<td><p>DC24V SMPS</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>B</strong></p></td>
-<td><p><strong>CNTP</strong></p></td>
-<td><p>티칭 펜던트의 전원, 비상정지, 모드스위치, 인에이블링 스위치
-입력</p></td>
-<td><p>티칭펜던트</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>C</strong></p></td>
-<td><p><strong>CNMC</strong></p></td>
-<td><p>MC(Magnet Contact) 입출력신호 접속</p></td>
-<td><p>MC(Magnet Contact)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>D</strong></p></td>
-<td><p><strong>CNLS</strong></p></td>
-<td><p>Arm간섭, Over-travel검지용 리밋스위치 입력</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>E</strong></p></td>
-<td><p><strong>CNLS7</strong></p></td>
-<td><p>부가 7축 Over-travel검지용 리밋스위치 입력</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>F</strong></p></td>
-<td><p><strong>CNLS8</strong></p></td>
-<td><p>부가 8축 Over-travel검지용 리밋스위치 입력</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>G</strong></p></td>
-<td><p><strong>CNSV</strong></p></td>
-<td><p>서보시퀀스보드(BD640) I/F</p>
-<p>(모터온오프, 피드백, 서보시퀀스보드 상태, 안전보드 상태)</p></td>
-<td><p>BD640</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>H</strong></p></td>
-<td><p><strong>CNEMSW</strong></p></td>
-<td><p>OP(Operational Panel)의 비상정지 입력</p></td>
-<td><p>OP(Operational Panel)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>I</strong></p></td>
-<td><p><strong>CNOPSW</strong></p></td>
-<td><p>OP(Operational Panel)의 모드스위치, 키입력</p></td>
-<td><p>OP(Operational Panel)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>J</strong></p></td>
-<td><p><strong>CNOPLP</strong></p></td>
-<td><p>OP(Operational Panel)의 LAMP 출력</p></td>
-<td><p>OP(Operational Panel)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>K</strong></p></td>
-<td><p><strong>TBEM</strong></p></td>
-<td><p>외부 안전 입력</p>
-<p>(비상정지, AUTO모드 안전가드1, AUTO모드 안전가드2, 일반안전가드
-입력)</p></td>
-<td><p>유저 IO</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>L</strong></p></td>
-<td><p><strong>EXMON</strong></p></td>
-<td><p>외부모터온</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>M</strong></p></td>
-<td><p><strong>TBPLC</strong></p></td>
-<td><p>안전 PLC용 안전신호 접속</p></td>
-<td><p>Safety PLC</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>N</strong></p></td>
-<td><p><strong>MJ1</strong></p></td>
-<td><p>이더켓 통신 연결(INPUT)</p></td>
-<td><p>BD640</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>N</strong></p></td>
-<td><p><strong>MJ2</strong></p></td>
-<td><p>이더켓 통신 연결(OUTPUT)</p></td>
-<td><p>-</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>O</strong></p></td>
-<td><p><strong>SW3,SW4</strong></p></td>
-<td><p>limit&OVT On/OFF SW</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>P</strong></p></td>
-<td><p><strong>SW1,SW2</strong></p></td>
-<td><p>OP INSTALL 입력(enable, disable)</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>Q</strong></p></td>
-<td><p><strong>A_JTAG1,B_JTAG1</strong></p></td>
-<td><p>J-TAG커넥터(프로그램 다운로드)</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>R</strong></p></td>
-<td><p><strong>SW7</strong></p></td>
-<td><p>ES, SG  입력(enable, disable)</p></td>
-<td></td>
-</tr>
+  <tr>
+    <td>A</td>
+    <td>J4</td>
+    <td>EtherCAT 통신연결</td>
+    <td>Hi6COM LAN4</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>CNSO1</td>
+    <td>안전 출력단자</td>
+    <td>외부 디바이스</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>CNSI1</td>
+    <td>안전 입력단자</td>
+    <td>외부 디바이스</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>CNEM</td>
+    <td>외부 비상 스위치</td>
+    <td>비상 스위치</td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>CNTP</td>
+    <td>티칭펜던트(전원,비상정지,모드스위치,인에이블 스위치)</td>
+    <td>커넥터 CNRTP</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>CNMC</td>
+    <td>Magnet Contact 입/출력 신호</td>
+    <td>전원분배보드(BD6C2) CNMC</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>CNEN8</td>
+    <td>부가축 8축 엔코더 신호</td>
+    <td>커넥터 AEC2</td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>CNEN7</td>
+    <td>부가축 7축 엔코더 신호</td>
+    <td>커넥터 AEC1</td>
+  </tr>
+  <tr>
+    <td>J</td>
+    <td>CNEN46</td>
+    <td>4~6축 엔코더 신호</td>
+    <td>커넥터 CEC1</td>
+  </tr>
+  <tr>
+    <td>K</td>
+    <td>CNEN13</td>
+    <td>1~3축 엔코더 신호</td>
+    <td>커넥터 CEC1</td>
+  </tr>
+  <tr>
+    <td>M</td>
+    <td>CNBRK78</td>
+    <td>부가축 7,8축 브레이크 신호</td>
+    <td>커넥터 AMC1, AMC2</td>
+  </tr>
+  <tr>
+    <td>N</td>
+    <td>CNBRK16</td>
+    <td>1~6축 브레이크 신호</td>
+    <td>커넥터 CMC1, CMC2</td>
+  </tr>
+  <tr>
+    <td>P</td>
+    <td>J12</td>
+    <td>브레이크 전원</td>
+    <td>전원분배보드(BD6C2) CNOBK</td>
+  </tr>
+  <tr>
+    <td>Q</td>
+    <td>CNBS1</td>
+    <td>구동장치 인터페이스 신호</td>
+    <td>백플레인보드(BD604) CNBS1</td>
+  </tr>
+  <tr>
+    <td>R</td>
+    <td>CNBS2</td>
+    <td>구동장치 인터페이스 신호</td>
+    <td>백플레인보드(BD604) CNBS2</td>
+  </tr>
 </tbody>
 </table>
-
-\(1\) BD632 외부안전신호용 터미널블럭: TBEM
-
-![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
-
-그림 4.8 BD632(Safety IO Board) TBEM
-
+      
 {% hint style="info" %}
 안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
 {% endhint %}
 
-표 4-5 BD632(Safety IO Board) TBEM 설명
-
-<table>
-<thead>
-  <tr>
-    <th>단자번호</th>
-    <th>단자명</th>
-    <th>용도</th>
-    <th>기타</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>16</td>
-    <td>SGG1+</td>
-    <td rowspan="2">일반안전가드 체인1입력</td>
-    <td rowspan="2">일반안전가드 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>SGG1-</td>
-  </tr>
-  <tr>
-    <td>15</td>
-    <td>SGG2+</td>
-    <td rowspan="2">일반안전가드 체인2입력</td>
-    <td rowspan="2">일반안전가드 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>SGG2-</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>SGA11+</td>
-    <td rowspan="2">자동안전가드1 체인1입력</td>
-    <td rowspan="2">자동안전가드1 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>SGA11-</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>SGA21+</td>
-    <td rowspan="2">자동안전가드1 체인2입력</td>
-    <td rowspan="2">자동안전가드1 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>SGA21-</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>SGA12+</td>
-    <td rowspan="2">자동안전가드2 체인1입력</td>
-    <td rowspan="2">자동안전가드2 체인1 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>SGA12-</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>SGA22+</td>
-    <td rowspan="2">자동안전가드2 체인2입력</td>
-    <td rowspan="2">자동안전가드2 체인2 을 사용하지 않을 경우 쇼트시킵니다</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>SGA22-</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>EMEX1+</td>
-    <td rowspan="2">외부비상정지 체인1 입력</td>
-    <td rowspan="2">외부장치의 비상정지 체인1을 사용하지 않을 경우 쇼트시킵니다.</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>EMEX1-</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>EMEX2+</td>
-    <td rowspan="2">외부비상정지 체인2 입력</td>
-    <td rowspan="2">외부장치의 비상정지 체인2을 사용하지 않을 경우 쇼트시킵니다.</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>EMEX2-</td>
-  </tr>
-</tbody>
-</table>
-
-
-\(2\)   BD632 안전 PLC 연결용 터미널블럭: TBPLC
-
-![](../../../_assets/그림_4.26_BD632(Safety_IO_Board)_TBPLC.png  )
-
-그림 4.9 BD632(Safety IO Board) TBPLC
-
-![](../../../_assets/4.3.2.2._커넥터(Hi6)-경고.png  )
-
-표 4-6 BD632(Safety IO Board) TBPLC 설명
-
-<table>
-<thead>
-  <tr>
-    <th>단자번호</th>
-    <th>단자명</th>
-    <th>용도</th>
-    <th>기타</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>12</td>
-    <td>PLC_P</td>
-    <td>안전 PLC 24V</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>PLC_G</td>
-    <td>안전 PLC GND</td>
-    <td>SG/ES신호의 Common역할을 함.</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>PLC_TO1</td>
-    <td>Safety IO의 모니터링용 출력에 대한 입력단자</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>PLC_FDBK1</td>
-    <td>Safety IO의 T0에 대한 피드백신호 출력</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>SG1</td>
-    <td>안전PLC로부터의 안전가드 입력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>SG2</td>
-    <td>안전PLC로부터의 안전가드 입력 체인 2</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>ES1</td>
-    <td>안전PLC로부터의 비상정지 입력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>ES2</td>
-    <td>안전PLC로부터의 비상정지 입력 체인 2</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>EMOUT11+</td>
-    <td rowspan="2">내부 비상정지 출력 체인 1</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>EMOUT11-</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>EMOUT21+</td>
-    <td rowspan="2">내부 비상정지 출력 체인 2</td>
-    <td rowspan="2">PNP출력 타입만 적용가능</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>EMOUT21-</td>
-  </tr>
-</tbody>
-</table>
-
-\(3\)    외부 모터온 커넥터
-
-![](../../../_assets/외부_모터온_커넥터.png  )
-
-표 4-7 BD632 외부 모터온 스위치
-
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>단자번호</strong></p></td>
-<td><p><strong>단자명</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>기타</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>5</p></td>
-<td><p>EXMON_C1+</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C1+와<br>EXMON_C1-를 쇼트시킵니다.</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>EXMON_C1-</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C1+와<br>EXMON_C1-를 쇼트시킵니다.</p></td>
-</tr>
-<tr class="even">
-<td><p>8</p></td>
-<td><p>EXMON_C2+</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C2+와<br>EXMON_C2-를 쇼트시킵니다.</p></td>
-</tr>
-<tr class="odd">
-<td><p>4</p></td>
-<td><p>EXMON_C2-</p></td>
-<td><p>외부 모터온(접점type)</p></td>
-<td><p>사용하지 않을 경우 EXMON_C2+와<br>EXMON_C2-를 쇼트시킵니다.</p></td>
-</tr>
-</tbody>
-</table>
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/3-display.md)
 # 4.3.2.3. 표시장치
 
-![](../../../_assets/그림_4.27_BD632(Safety_IO_Board)의_표시장치.png  )
+(1) 보드 TOP면 표시 장치   
 
-그림 4.10 BD632(Safety IO Board)의 표시장치
+아래 그림은 서보/안전모듈(BD642)의 표시장치(LED, 7세그먼트) 위치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.   
 
-표 4-8 BD632(Safety IO Module) 표시장치 설명
+![](../../../_assets/BD642_PCB_상태.png)   
+그림 4.3.2.3-1 서보/안전모듈(BD642) 보드TOP 표시장치 배치
 
+표 4.3.2.3-1 서보/안전모듈(BD642) 보드TOP 표시장치 설명   
 <table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>정상시</strong></th>
+    <th><strong>이상시 조치내용</strong></th>
+  </tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>표시내용</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>정상시</strong></p></td>
-<td><p><strong>이상발생시 조치 내용</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LED1</strong></p></td>
-<td><p>24V전원(체인1)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F1)확인</p>
-<p>조치2: BD632보드교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LED2</strong></p></td>
-<td><p>24V전원(체인2)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F2)확인</p>
-<p>조치2: BD632보드교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LED3</strong></p></td>
-<td><p>24V전원(체인1)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F3)확인</p>
-<p>조치2: BD632보드교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LED4</strong></p></td>
-<td><p>24V전원(체인2)</p></td>
-<td><p>녹색</p>
-<p>적색</p></td>
-<td><p>녹색점등</p></td>
-<td><p>현상: 적색 점등 or 소등</p>
-<p>조치1: 입력전압 확인(24V)</p>
-<p>조치2: 소등 되었다면 퓨즈(F5)확인</p>
-<p>조치2: BD632보드교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDR1</strong></p></td>
-<td><p>리셋</p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>현상: 적색 점등</p>
-<p>조치1: BD632보드교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDR2</strong></p></td>
-<td><p>이더캣 통신 에러 LED</p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>현상: 적색 점등</p>
-<p>조치1: 이더켓 케이블 연결 상태 확인</p>
-<p>조치2: BD632 보드 교체</p>
-<p>조치3: H6COM or BD640 점검</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG3</strong></p></td>
-<td><p>OP 설치 LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>스위치 On(OP 설치시) 녹색 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG4</strong></p></td>
-<td><p>OP 설치 LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>스위치 On(OP 설치시) 녹색 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG5</strong></p></td>
-<td><p>STO출력 LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>STO On: 점등</p>
-<p>STO OFF: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG6</strong></p></td>
-<td><p>STO출력 LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>STO On: 점등</p>
-<p>STO OFF: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG7</strong></p></td>
-<td><p>MC상태 체크LED(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC Close: 점등</p>
-<p>MC Open: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG8</strong></p></td>
-<td><p>MC상태 체크LED(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC Close: 점등</p>
-<p>MC Open: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632 보드 교체</p>
-<p>조치2: 마그네트컨택트 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG9</strong></p></td>
-<td><p>티칭펜던트 수동모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG10</strong></p></td>
-<td><p>티칭펜던트 수동모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG11</strong></p></td>
-<td><p>티칭펜던트 자동모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG12</strong></p></td>
-<td><p>티칭펜던트 자동모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG13</strong></p></td>
-<td><p>티칭펜던트 원격모드 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG14</strong></p></td>
-<td><p>티칭펜던트 원격모드 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG15</strong></p></td>
-<td><p>티칭펜던트 인에이블링 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG16</strong></p></td>
-<td><p>티칭펜던트 인에이블링 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG17</strong></p></td>
-<td><p>티칭펜던트 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG18</strong></p></td>
-<td><p>티칭펜던트 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 티칭펜던트 교체</p>
-<p>조치2: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG19</strong></p></td>
-<td><p>OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OVT스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG20</strong></p></td>
-<td><p>OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OVT스위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG21</strong></p></td>
-<td><p>하드리밋 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 하드리밋 스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG22</strong></p></td>
-<td><p>하드리밋 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 하드리밋 스위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG23</strong></p></td>
-<td><p>부가축 OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 부가축OVT스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG24</strong></p></td>
-<td><p>부가축 OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 부가축OVT스위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG25</strong></p></td>
-<td><p>확장축 OVT입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 확장축 OVT스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG26</strong></p></td>
-<td><p>확장축 OVT입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 확장축 OVT스위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG27</strong></p></td>
-<td><p>안전가드입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 일반안전가드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG28</strong></p></td>
-<td><p>안전가드입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 일반안전가드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG29</strong></p></td>
-<td><p>자동모드 안전가드1 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드1 안전가드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG30</strong></p></td>
-<td><p>자동모드 안전가드1 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드1 안전가드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG31</strong></p></td>
-<td><p>자동모드 안전가드2 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드2 안전가드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG32</strong></p></td>
-<td><p>자동모드 안전가드2 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 자동모드2 안전가드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG33</strong></p></td>
-<td><p>외부 모터온 입력(접점type)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 모터온 접점 스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG34</strong></p></td>
-<td><p>외부 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 비상정지 위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG35</strong></p></td>
-<td><p>외부 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 외부 비상정지 스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG36</strong></p></td>
-<td><p>서보 상태 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: BD640교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG37</strong></p></td>
-<td><p>안전모듈 상태 출력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG38</strong></p></td>
-<td><p>서보 상태 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: BD640교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG39</strong></p></td>
-<td><p>안전모듈 상태 출력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG40</strong></p></td>
-<td><p>OP 비상정지 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OP 비상정지 위치 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG41</strong></p></td>
-<td><p>OP 비상정지 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: OP 비상정지 스위치 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG52</strong></p></td>
-<td><p>PLC 전원</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 퓨즈(F6) 점검</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG53</strong></p></td>
-<td><p>비상정지(npn type) 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG54</strong></p></td>
-<td><p>비상정지(npn type) 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG55</strong></p></td>
-<td><p>자동모드 안전가드(npn type) 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG56</strong></p></td>
-<td><p>자동모드 안전가드(npn type) 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 점등</p>
-<p>미입력시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: LEDG52점검(이상 시 LEDG52 조치작업)</p>
-<p>조치2: 케이블 점검</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 연결된 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG57</strong></p></td>
-<td><p>24V 전원입력</p></td>
-<td><p>녹색</p></td>
-<td><p>녹색 점등</p></td>
-<td><p>현상: 소등</p>
-<p>조치1: 24V전원 케이블 및 전압 점검(CNSMPS1커넥터 연결 전원)</p>
-<p>조치2: 퓨즈점검(F1)</p>
-<p>조치3: BD632교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG58</strong></p></td>
-<td><p>이더캣 MJ1커넥터 ACT LED</p></td>
-<td><p>녹색</p></td>
-<td><p>이더캣 케이블 연결시: 점등</p>
-<p>이더캣 케이블 미연결시: 소등</p>
-<p>이더캣 통신시: 블링크</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG59</strong></p></td>
-<td><p>이더캣 MJ2커넥터 ACT LED</p></td>
-<td><p>녹색</p></td>
-<td><p>이더캣 케이블 연결시: 점등</p>
-<p>이더캣 케이블 미연결시: 소등</p>
-<p>이더캣 통신시: 블링크</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG60</strong></p></td>
-<td><p>이더캣 상태 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>통신연결시: 블링크</p>
-<p>통신미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG61</strong></p></td>
-<td><p>이더캣 RUN LED</p></td>
-<td><p>녹색</p></td>
-<td><p>통신연결시: 블링크</p>
-<p>통신미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG62</strong></p></td>
-<td><p>안전체인 입력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG63</strong></p></td>
-<td><p>안전체인 입력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>입력시: 소등</p>
-<p>미입력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG64</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 스피드 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG65</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 스피드 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG68</strong></p></td>
-<td><p>안전체인출력(체인1)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG69</strong></p></td>
-<td><p>안전체인출력(체인2)</p></td>
-<td><p>녹색</p></td>
-<td><p>출력시: 소등</p>
-<p>미출력시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG70</strong></p></td>
-<td><p>ACFLT</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 or 전장품 교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG71</strong></p></td>
-<td><p>EXMON_C2</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 연결된 보드 or 전장품 교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG72</strong></p></td>
-<td><p>마그네트 컨택트 ON/OFF신호 (채널1)</p></td>
-<td><p>녹색</p></td>
-<td><p>ON신호시: 소등</p>
-<p>OFF신호시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-BD640)</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 펌웨어 확인</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG73</strong></p></td>
-<td><p>마그네트 상태 Feedback(채널1)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC CLOSE: 소등</p>
-<p>MC OPEN: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-H6PSM-MC)</p>
-<p>조치2: MC교체</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 펌웨어 확인</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>LEDG74</strong></p></td>
-<td><p>마그네트 컨택트 ON/OFF신호 (채널2)</p></td>
-<td><p>녹색</p></td>
-<td><p>ON신호시: 소등</p>
-<p>OFF신호시: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-BD640)</p>
-<p>조치2: BD632교체</p>
-<p>조치3: 펌웨어 확인</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>LEDG75</strong></p></td>
-<td><p>마그네트 상태 Feedback(채널2)</p></td>
-<td><p>녹색</p></td>
-<td><p>MC CLOSE: 소등</p>
-<p>MC OPEN: 점등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 연결된 케이블 점검(BD632-H6PSM-MC)</p>
-<p>조치2: MC교체</p>
-<p>조치3: BD632교체</p>
-<p>조치4: 펌웨어 확인</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>MJ1 G</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 링크 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 블링크</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>MJ1 Y</strong></p></td>
-<td><p>이더캣 MJ1 커넥터 ACT LED</p></td>
-<td><p>노랑색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>MJ2 G</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 링크 LED</p></td>
-<td><p>녹색</p></td>
-<td><p>연결시: 블링크</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>MJ2 Y</strong></p></td>
-<td><p>이더캣 MJ2 커넥터 ACT LED</p></td>
-<td><p>노랑색</p></td>
-<td><p>연결시: 점등</p>
-<p>미연결시: 소등</p></td>
-<td><p>현상: 정상 이외 상태</p>
-<p>조치1: 이더캣 케이블 점검</p>
-<p>조치2: 펌웨어 확인</p>
-<p>조치3: BD632 교체</p>
-<p>조치4: BD640 or H6COM교체</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>SEG1</strong></p></td>
-<td><p>안전모듈 상태 LED(체인1)</p></td>
-<td><p>7-seg</p></td>
-<td><p>정상시: 숫자 표기 및 점이 블링크</p></td>
-<td><p>현상: 소등 또는 점이 블링크가 되지 않고 멈춰 있음.</p>
-<p>조치1: BD632교체</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>SEG2</strong></p></td>
-<td><p>안전모듈 상태 LED(체인2)</p></td>
-<td><p>7-seg</p></td>
-<td><p>정상시: 숫자 표기 및 점이 블링크</p></td>
-<td><p>현상: 소등 또는 점이 블링크가 되지 않고 멈춰 있음.</p>
-<p>조치1: BD632교체</p></td>
-</tr>
-</tbody>
+  <tr>
+    <td>(1)<br>(2)</td>
+    <td>LED1<br>LED2</td>
+    <td>입력전원 제한기능</td>
+    <td>적색</td>
+    <td>소등</td>
+    <td>
+      현상 : 적색 점등
+      <br>원인 : 입력전압 저전압 또는 과전압 발생
+      <br>조치 : 입력전압(24V) 확인
+    </td>
+  </tr>
+  <tr>
+    <td>(3)</td>
+    <td>LED3</td>
+    <td>외부 A채널 전원</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상: 노란색 소등
+      <br>원인 : 외부 A채널 전원 과전류 및 외부결선 오작업 등
+      <br>조치 : 퓨즈(FS2) 확인
+    </td>
+  </tr>
+  <tr>
+    <td>(4)</td>
+    <td>LED4</td>
+    <td>외부 B채널 전원</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상: 노란색 소등
+      <br>원인 : 외부 B채널 전원 과전류 및 외부결선 오작업 등
+      <br>조치 : 퓨즈(FS3) 확인
+    </td>
+  </tr>
+  <tr>
+    <td>(5)</td>
+    <td>LED5</td>
+    <td>A채널 MCU 전원</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상 : 노란색 소등
+      <br>원인 : A채널 MCU 전원(3.3V, 1.2V) 이상
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(6)</td>
+    <td>LED6</td>
+    <td>B채널 MCU 전원</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상 : 노란색 소등
+      <br>원인 : B채널 MCU 전원(3.3V, 1.2V) 이상
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(7)</td>
+    <td>LED7</td>
+    <td>A채널 MCU 상태 표시</td>
+    <td>적색
+      <br>녹색
+      <br>파란색
+    </td>
+    <td>RGB 깜박임</td>
+    <td>
+      현상 : 전체 소등 및 깜박임 없음
+      <br>원인1 : A채널 MCU 전원(3.3V, 1.2V) 이상
+      <br>원인2 : A채널 MCU 프로그램 이상 등
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(8)</td>
+    <td>LED8</td>
+    <td>B채널 MCU 상태 표시</td>
+    <td>적색
+      <br>녹색
+      <br>파란색
+    </td>
+    <td>RGB 깜박임</td>
+    <td>
+      현상 : 전체 소등 및 깜박임 없음
+      <br>원인1 : B채널 MCU 전원(3.3V, 1.2V) 이상
+      <br>원인2 : B채널 MCU 프로그램 이상 등
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(9)
+      <br>(10)</td>
+    <td>LED9
+      <br>LED10</td>
+    <td>A채널 MCU EtherCAT LINK0 상태
+      <br>A채널 MCU EtherCAT LINK1 상태
+    </td>
+    <td>녹색
+      <br>녹색
+    </td>
+    <td>녹색 깜박임
+      <br>녹색 깜박임
+    </td>
+    <td>
+      현상 : 깜박임 없음
+      <br>원인 : A채널 MCU EtherCAT 이상
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(11)
+      <br>(12)</td>
+    <td>LED13
+      <br>LED14</td>
+    <td>FPGA EtherCAT LINK0 상태
+      <br>FPGA EtherCAT LINK1 상태
+    </td>
+    <td>녹색
+      <br>녹색
+    </td>
+    <td>녹색 깜박임
+      <br>녹색 깜박임
+    </td>
+    <td>
+      현상 : 깜박임 없음
+      <br>원인 : FPGA EtherCAT 이상
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(13)</td>
+    <td>LED17</td>
+    <td>FPGA 전원 상태</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상 : 노락색 소등
+      <br>원인 : FPGA 전원(5V,3.3V,1.8V,1.35V,1V) 이상
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(14)</td>
+    <td>LED18</td>
+    <td>FPGA 상태 표시</td>
+    <td>적색
+      <br>녹색
+      <br>파란색</td>
+    <td>RGB 깜박임</td>
+    <td>
+      현상 : 전체 소등 및 깜박임 없음
+      <br>원인1 : FPGA 전원(5V,3.3V,1.8V,1.35V,1V) 이상
+      <br>원인2 : FPGA 프로그램 이상 등
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+  <tr>
+    <td>(15)</td>
+    <td>LED19
+      <br>LED21
+      <br>LED23
+      <br>LED25
+      <br>LED20
+      <br>LED22
+      <br>LED24
+      <br>LED26
+      </td>
+    <td>  1축 브레이크 상태
+      <br>2축 브레이크 상태
+      <br>3축 브레이크 상태
+      <br>4축 브레이크 상태
+      <br>5축 브레이크 상태
+      <br>6축 브레이크 상태
+      <br>7축 브레이크 상태
+      <br>8축 브레이크 상태
+      </td>
+    <td>주황식</td>
+    <td>브레이크 릴리스(점등)
+      <br>브레이크 홀드(소등)
+    </td>
+    <td>
+      현상 : 브레이크 상태 불일치
+      <br>원인1 : 브레이크 전원 이상
+      <br>원인2 : 하네스 불량 등
+      <br>조치 : 보드(BD642) 교체
+    </td>
+  </tr>
+
+  <tr>
+    <td>(16)<br>
+        (17)<br>
+        (18)
+    </td>
+    <td>LED27
+      <br>LED28
+      <br>SEG1
+    </td>
+    <td>  
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+      다음 전면표시 장치 항목 참조
+    </td>
+  </tr>
+
 </table>
+</tbody>
+
+(2) 보드 전면 표시 장치   
+아래 그림은 서보/안전모듈(BD642)의 전면 표시 장치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
+
+![](../../../_assets/BD642_전면표시장치.png)   
+그림 4.3.2.3-2 서보/안전모듈(BD642) 전면 표시장치 배치
+
+표 4.3.2.3-2 서보/안전모듈(BD642) 전면 표시장치 설명   
+<table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>표시상태</strong></th>
+    <th><strong>표시상태 설명</strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">(1)</td>
+    <td>A_SO1</td>
+    <td>A채널 안전출력1 상태표시</td>
+    <td rowspan="2">녹색 </td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전출력1 ON 상태 <br>
+                    각 채널 안전출력1 OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SO1</td>
+    <td>B채널 안전출력1 상태표시</td>
+  </tr>
+  <tr>
+    <td rowspan="2">(2)</td>
+    <td>A_SIx<br>
+        (x=1~4)</td>
+    <td>A채널 안전입력x 상태표시</td>
+    <td rowspan="2">녹색</td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전입력x ON 상태 <br>
+                    각 채널 안전입력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SIn<br>
+        (n=1~4)</td>
+    <td>B채널 안전입력x 상태표시</td>
+  </tr>
+
+  <tr>
+    <td rowspan="10">(3)</td>
+    <td>LED27 (1)</td>
+    <td>LED27 (1) 표시내용</td>
+    <td rowspan="5">녹색</td>
+    <td>
+    <td> LED27 (1) MCU_A MOD</td>
+  </tr>
+  <tr>
+    <td>LED27 (2)</td>
+    <td>LED27 (2) 표시내용</td>
+    <td>
+    <td>LED27 (2) MCU_B MOD</td>
+  </tr>
+  <tr>
+    <td>LED27 (3)</td>
+    <td>LED27 (3) 표시내용</td>
+    <td>
+    <td>LED27 (3) ZYNQ MOD</td>
+  </tr>
+  <tr>
+    <td>LED27 (4)</td>
+    <td>LED27 (4) 표시내용</td>
+    <td>
+    <td>LED27 (4) DSP_RUN</td>
+  </tr>
+  <tr>
+    <td>LED27 (5)</td>
+    <td>LED27 (5) 표시내용</td>
+    <td>
+    <td>LED27 (5) ZYNQ_RUN</td>
+  </tr>
+  <tr>
+    <td>LED28 (1)</td>
+    <td>LED28 (1) 표시내용</td>
+    <td rowspan="5">적색</td>
+    <td>
+    <td>LED28 (1) MCU_A STA</td>
+  </tr>
+  <tr>
+    <td>LED28 (2)</td>
+    <td>LED28 (2) 표시내용</td>
+    <td>
+    <td>LED28 (2) MCU_B STA</td>
+  </tr>
+  <tr>
+    <td>LED28 (3)</td>
+    <td>LED28 (3) 표시내용</td>
+    <td>
+    <td>LED28 (3) ZYNQ STA</td>
+  </tr>
+  <tr>
+    <td>LED28 (4)</td>
+    <td>LED28 (4) 표시내용</td>
+    <td>
+    <td>LED28 (4) DSP ERR</td>
+  </tr>
+  <tr>
+    <td>LED28 (5)</td>
+    <td>LED28 (5) 표시내용</td>
+    <td>
+    <td>LED28 (5) ZYNQ ERR</td>
+  </tr>
+  <tr>
+    <td>(4)</td>
+    <td>SEG1</td>
+    <td>BD642 보드 상태표시</td>
+    <td rowspan="2">적색 </td>
+    <td>             </td>
+    <td>부팅상태 표시</td>
+  </tr>
+</table>
+
+표 4.3.2.3-3 서보/안전모듈(BD642) 전면 LED 상태 설명
+![](../../../_assets/표_4_3_2_3_LED_상태표시.png)  
+
+
+![](../../../_assets/그림_4_3_2_3_Segment_상태표시.png)  
+그림 4.3.2.3-3 세그먼트 상태 표시내용
+</tbody>
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/4-setting.md)
 # 4.3.2.4. 설정장치
 
-![](../../../_assets/그림_4.31_BD632(Safety_IO_Board)의_설정장치_설명.png  )
-
-그림 4.11 BD632(Safety IO Board)의 설정장치 설명
-
-{% hint style="warning" %}
-안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
-{% endhint %}
-
-표 4-9 BD632(Safety IO Module)의 SW1, SW2, SW3, SW4, SW7 설정장치 설명
-
-
-<table>
-<thead>
-  <tr>
-    <th colspan="2">스위치</th>
-    <th rowspan="2">SW1</th>
-    <th rowspan="2">SW2</th>
-    <th rowspan="2">SW3</th>
-    <th rowspan="2">SW4</th>
-    <th rowspan="2">SW7</th>
-  </tr>
-  <tr>
-    <th colspan="2">번호</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td colspan="2">용도</td>
-    <td>OP(Operational Panel) 설치 여부 설정 (체인1)</td>
-    <td>OP(Operational Panel) 설치 여부 설정 (체인2)</td>
-    <td>OVT6,LS, OVT7(부가축), OVT8(확장축) 설치 여부 설정(체인1)</td>
-    <td>OVT6, LS, OVT7(부가축), OVT8(확장축) 설치 여부 설정(체인2)</td>
-    <td>PLC ES, SG 설치 여부 설정<br>(체인1, 체인2)</td>
-  </tr>
-  <tr>
-    <td rowspan="2">설정</td>
-    <td>OFF</td>
-    <td>미설치</td>
-    <td>미설치</td>
-    <td>1: OVT6 설치<br>2: LS 설치<br>3: OVT7 설치<br>4: OVT8 설치</td>
-    <td>1: OVT6 설치<br>2: LS 설치<br>3: OVT7 설치<br>4: OVT8 설치</td>
-    <td>1: ES설치(체인1)<br>2: SG설치(체인1)<br>3: ES설치(체인2)<br>4: SG설치(체인2)</td>
-  </tr>
-  <tr>
-    <td>ON</td>
-    <td>설치</td>
-    <td>설치</td>
-    <td>1: OVT6 미설치<br>2: LS 미설치<br>3: OVT7 미설치<br>4: OVT8 미설치</td>
-    <td>1: OVT6 미설치<br>2: LS 미설치<br>3: OVT7 미설치<br>4: OVT8 미설치</td>
-    <td>1: ES미설치(체인1)<br>2: SG미설치(체인1)<br>3: ES미설치(체인2)<br>4: SG미설치(체인2)</td>
-  </tr>
-  <tr>
-    <td colspan="2">출고시</td>
-    <td>미설치(OFF)</td>
-    <td>미설치(OFF)</td>
-    <td>1: OFF<br>2: OFF<br>3: On(부가축OVT연결시 OFF)<br>4: On(확장축OVT연결시 OFF)</td>
-    <td>1: OFF<br>2: OFF<br>3: On(부가축OVT연결시 OFF)<br>4: On(확장축OVT연결시 OFF)</td>
-    <td>1: ES미설치(체인1)<br>2: SG미설치(체인1)<br>3: ES미설치(체인2)<br>4: SG미설치(체인2)</td>
-  </tr>
-</tbody>
-</table>
-# 4.3.2.5. 비상정지의 연결
-
-(1\)    접점입력 외부비상정지 
-
-외부비상정지(EMEX)는 제어기의 모드(자동, 수동)에 무관하게 작동되도록 설계 되어 있으며, BD632(Safety IO Board)에 의해 지속적으로 모니터링됩니다. 안전 입력이 들어오면, 모터 파워를 제거하여 로봇을 안전한
-상태로 만듭니다. 
-외부 비상 정지 스위치의 연결은 아래 그림과 같이 접점출력의 형태로 사용하여야 합니다.
-
-![](../../../_assets/그림_4.32_터미널블록_TBEM에_외부비상정지_스위치를_연결하는_방법.png  )
-
-그림 4.12 터미널블록 TBEM에 외부비상정지 스위치를 연결하는 방법
-
-외부 비상정지를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(TBEM 커넥터의 9-1, 10-2번 핀 연결)들을 연결하여 입력을 무효화시킵니다.
-
-![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
-
-그림 4.13 접점입력 외부비상정지를 사용하지 않을 경우 조치방법
-
-{% hint style="warning" %}
-외부 비상정지를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
-{% endhint %}
-
-# 4.3.2.6. 안전가드의 연결
-
-(1\)    일반안전가드
-
-일반 안전가드는 제어기의 모드(자동, 수동)에 무관하게 작동하는 안전가드입니다. 즉 설치된 안전가드 내부로 사람이 진입하거나 가드가 끊어진 경우 제어기는 즉각적으로 모터파워를 제거합니다. 사용될 수 있는 안전가드는 접점출력의 형태가 되어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
-
-![](../../../_assets/그림_4.34_터미널블록_TBRMT에_일반_안전가드를_연결하는_방법.png  )
-
-그림 4.14 터미널블록 TBRMT에 일반 안전가드를 연결하는 방법
-
-일반 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(15-7, 16-8번 핀)들을 연결하여 입력을 무효화시킵니다.
-
-![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
-
-그림 4.15 일반 안전가드를 사용하지 않을 경우 조치방법
-
-{% hint style="warning" %}
-일반 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
-{% endhint %}
-
-\(2\)    접점입력 자동안전가드
-
-자동 안전가드는 제어기가 자동모드에 있을 경우에만 작동하는 안전가드로서 아래와 같이 2개의 입력을 제공합니다. 일반 안전가드와 마찬가지로 접점출력의 형태이어야 합니다. 터미널블록 TBEM에는 다음의 그림처럼 이중화된 안전체인에 안전가드의 접점출력을 연결할 수 있도록 단자가 구성되어 있습니다.
-
-![](../../../_assets/그림_4.36_터미널블록_TBEM에_접점입력_자동_안전가드를_연결하는_방법.png  )
-
-그림 4.16 터미널블록 TBEM에 접점입력 자동 안전가드를 연결하는 방법
-
-자동 안전가드를 사용하지 않을 경우에는 다음과 같은 방법으로 터미널블록TBEM의 단자(11-3, 12-4, 13-5, 14-6)들을 연결하여 입력을 무효화시킵니다.
-
-![](../../../_assets/그림_4.25_BD632(Safety_IO_Board)_TBEM.png  )
-
-그림 4.17 접점입력 자동 안전가드를 사용하지 않을 경우 조치방법
-
-{% hint style="warning" %}
-자동 안전 가드를 설치하여 사용할 경우에는 비상정지가 정상적으로 작동되는지 확인 후 로봇을 가동시켜야 합니다. 또한 비상정지 입력이 무효화가 되어 있는지 확인하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전조치입니다.
-{% endhint %}
-
-# 4.3.2.7. Safety PLC, IO의 연결
-
-Safety PLC 또는 IO와 로봇제어기와는 다음과 같은 방법으로 비상입력신호와 모니터링 출력 신호들을 연결합니다.
-
-![](../../../_assets/그림_4.38_Safety_PLC,IO의_연결방법.png  )
-
-그림 4.18 Safety PLC/IO의 연결방법
-
-\(1\) P-COM 입력 안전입력
-
-안전 PLC의 안전입력(ES, SG)은 터미널블럭 TBEM에서 PNP출력을 제어기가 입력 받을 수 있도록 설계되었습니다. 그런 이유로 반드시 PLC의 전원(DC24V)전원을 연결 후 사용 해야 합니다.
-
-{% hint style="warning" %}
-안전 입력을 설치하여 사용할 경우에는 정상적으로 기능이 작동하는지 확인 후 로봇을 가동시켜야 합니다. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
-{% endhint %}
-
-
-\(2\) 비상정지출력
-
-제어기 내부에 설치된 비상정지스위치(조작패널, 티치펜던트 등)의 상태를 외부장치에서 사용하고자 할 때에는 PNP출력을 제어기가 ON/OFF하여 사용할 수 있도록 설계 되었습니다.
-
-{% hint style="warning" %}
-비상정지 출력을 설치하여 사용할 경우에는 비상정지 출력이 정상적으로 작동되는지 확인 후 로봇을 작동하십시오. 이는 작업자의 안전을 위하여 반드시 필요한 사전 조치입니다.
-{% endhint %}
-
-# 4.3.2.8. 외부 모터온 신호의 연결
-
-![](../../../_assets/그림_4.39_외부_모터온_신호의_연결방법.png  )
-
-그림 4.19 외부 모터온 신호의 연결방법
-
-제어기 외부에서 모터온 신호 입력을 사용할 경우 위의 접점의 형태로 연결하여 사용해야 합니다. 연결하지 않을 경우 점퍼선으로 연결을 해주시기 바랍니다.(N.C접점)
-# 4.3.3. 서보보드(BD640)
-# 4.3.3.1. 개요
-
-메인으로부터 이더켓 통신을 통하여 받은 위치 지령에 의하여 6축(최대8축)분 모터에 대한 동작제어를 수행하며, 엔코더 신호처리, 에러상황점검 및 구동장치(Drive Unit)의 PWM신호를 만듭니다.
-
-![](../../../_assets/4.3.3.1._개요(Hi6).png  )
-# 4.3.3.2. 커넥터
-
-표 4-10 서보보드(BD640) 커넥터 종류 및 용도
-
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>명칭</strong></p></td>
-<td><p><strong>용도</strong></p></td>
-<td><p><strong>외부장치접속</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CNEC1,4</strong></p></td>
-<td><p>엔코더 신호 접속</p></td>
-<td><p>CNR4</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CNEC7,8</strong></p></td>
-<td><p>부가축 엔코더 신호 접속</p></td>
-<td><p>CNR7,CNR8</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CNBS1,2,3</strong></p></td>
-<td><p>구동장치(Drive Unit)신호 접속</p></td>
-<td><p>구동장치의 CNBS1,2,3</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CNJTAG1</strong></p></td>
-<td><p>FPGA JTAG 에뮬레이터Port</p></td>
-<td><p>JTAG 에뮬레이터</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>JP1</strong></p></td>
-<td><p>FPGA BOOT MODE</p></td>
-<td><p>FPGA 플래쉬 및 JTAG 부팅모드</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>VR1</strong></p></td>
-<td><p>엔코더 입력 전원 조절 장치</p></td>
-<td><p>-</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CNPNB1</strong></p></td>
-<td><p>브레이크 전원 입력</p></td>
-<td><p>브레이크 케이블</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CNB1</strong></p></td>
-<td><p>메인축 브레이크 전원</p></td>
-<td><p>1~6축 브레이크 케이블</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CNB7,8</strong></p></td>
-<td><p>부가축 브레이크 전원</p></td>
-<td><p>7,8축 브레이크 케이블</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CNPRC1</strong></p></td>
-<td><p>MC 릴레이 접점</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>CN24VB1</strong></p></td>
-<td><p>BD640 메인 전원</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CNSV1</strong></p></td>
-<td><p>BD632 DIO 접점 인터페이스</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>DS1</strong></p></td>
-<td><p>DSP 부팅모드</p></td>
-<td><p>-</p></td>
-</tr>
-</tbody>
-</table>
-# 4.3.3.3. 표시장치
-
-표 4-11 서보보드(BD640) LED
-
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>상태</strong></p>
-<p><strong>명칭</strong></p></td>
-<td><p><strong>색상</strong></p></td>
-<td><p><strong>정상시</strong></p></td>
-<td><p><strong>이상시</strong></p></td>
-<td><p><strong>비    고</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>AL1</strong></p></td>
-<td><p>적색</p></td>
-<td><p>소등</p></td>
-<td><p>점등</p></td>
-<td><p>전체 축의 PWM 제어 신호가 OFF됨</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>SON1~8</strong></p></td>
-<td><p>녹색</p></td>
-<td><p>모터ON시 점등</p></td>
-<td><p>모터OFF시 소등</p></td>
-<td><p>-</p></td>
-</tr>
-</tbody>
-</table>
-# 4.3.3.4. 설정장치
-
-{% hint style="info" %}
-DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 임의로 변경하면 안됩니다.
-{% endhint %}
-
-표 4-12 서보보드(BD640) DIP스위치(DS1) 설정방법
-
-<table>
-<thead>
-  <tr>
-    <th>스위치 번호</th>
-    <th>1</th>
-    <th>2</th>
-    <th>모드</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>출고 시 설정</td>
-    <td>OFF</td>
-    <td>OFF</td>
-    <td>GET MODE</td>
-  </tr>
-  <tr>
-    <td>테스트 시</td>
-    <td>ON</td>
-    <td>OFF</td>
-    <td>WAIT MODE</td>
-  </tr>
-  <tr>
-    <td>스위치 외형</td>
-    <td colspan="3"></td>
-  </tr>
-</tbody>
-</table>
-
-![](../../../_assets/표4-11_스위치외형.png)</br></br>
+아래 그림은 서보/안전모듈(BD642)의 설정(스위치)장치 위치를 보여줍니다. 아래 표는 각 설정의 용도를 기술합니다.   
+   
+![](../../../_assets/BD642_PCB_설정_r1.png)   
+그림 4.3.2.4-1 서보/안전모듈(BD642)의 설정장치 배치
 
 {% hint style="info" %}
 다음은 사용자가 임의로 변경할 수 없으며, FPGA JTAG을 통한 재프로그래밍이 필요한 경우에만 참고하세요.
 {% endhint %}
 
-
-표 4-13 서보보드(BD640) 점퍼 (JP1) 설명
-
+표 4.3.2.4-1 서보/안전모듈(BD642) SW1 설정장치 설명   
 <table>
 <thead>
   <tr>
-    <th colspan="2" rowspan="2">명칭<br>설정내용</th>
-    <th colspan="4">JP1</th>
-  </tr>
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th></th>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>설정상태</strong></th>
+    <th><strong>설정내용</strong></th>
+    <th><strong>비고</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">점퍼 셋팅</td>
-    <td>QSPI (플래쉬) 부팅 모드</td>
-    <td>⊙</td>
-    <td>⊙</td>
-    <td></td>
-    <td></td>
+    <td rowspan="2">①</td>
+    <td rowspan="2">SW1</td>
+    <td><img src="../../../_assets/BD642_플래쉬메모리_부팅모드.png" width="100"></td>
+    <td>플래쉬 메모리 부팅 모드</td>
+    <td>공장 출하시 셋팅상태</td>
   </tr>
   <tr>
-    <td>JTAG 프로그래밍 모드</td>
-    <td></td>
-    <td>⊙</td>
-    <td>⊙</td>
-    <td></td>
+    <td><img src="../../../_assets/BD642_JTAG프로그램_다운로드모드.png" width="100"></td>
+    <td>JTAG 프로그램 다운로드 모드</td>
+    <td>-</td>
   </tr>
-  <tr>
-    <td>출고 시 설정</td>
-    <td colspan="5">1, 2 : short / 3 : open</td>
-  </tr>
+</table>
+</tbody>
+
+
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/5-cnso-conn.md)
+# 4.3.2.5. 안전출력 결선
+
+{% hint style="warning" %}
+안전출력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+{% endhint %}
+
+아래 그림은 서보/안전모듈(BD642) 실물사진과 실제 설치 시, 전면에서 보았을 때의 안전입력 커넥터(CNSO1) 위치를 보여줍니다.   
+
+![](../../../_assets/BD642_전면사진_안전출력.png)   
+그림 4.3.2.5-1 서보/안전모듈(BD642) 실물사진과 안전출력 커넥터(CNSO1) 위치   
+
+안전출력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN / PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.   
+
+(1) 내부전원 사용시   
+* NPN-TYPE(: Active Low)   
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 1번-2번 핀을 연결합니다.   
+B채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 3번-4번 핀을 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전출력_내부전원_NPN.png)   
+그림 4.3.2.5-2 서보/안전모듈(BD642) 안전출력 내부전원 NPN-TYPE 사용시 결선도   
+
+* PNP-TYPE(: Active High)   
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1의 5번-6번 핀을 연결합니다.   
+B채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO2의 7번-8번 핀을 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전출력_내부전원_PNP.png)   
+그림 4.3.2.5-3 서보/안전모듈(BD642) 안전출력 내부전원 PNP-TYPE 사용시 결선도   
+
+(2) 외부전원 사용시   
+* NPN-TYPE(: Active Low)   
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+커넥터 CNSO1의 1번, 4번, 5번, 8번은 연결하지 않습니다.   
+A채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_AG(GND)는 2번 핀에 연결합니다.   
+B채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_BG(GND)는 3번 핀에 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전출력_외부전원_NPN.png)   
+그림 4.3.2.5-4 서보/안전모듈(BD642) 안전출력 외부전원 NPN-TYPE 사용시 결선도   
+
+* PNP-TYPE(: Active High)   
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_AV(24V)는 2번 핀에 연결합니다.   
+B채널 외부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO1에 EX_BV(24V)는 3번 핀에 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전출력_외부전원_PNP.png)   
+그림 4.3.2.5-5 서보/안전모듈(BD642) 안전출력 외부전원 PNP-TYPE 사용시 결선도   
+
+[__SOURCE](4-basic-components/3-component-func/2-BD642-Servo-safety-board/6-cnsi-conn.md)
+# 4.3.2.6. 안전입력 결선
+
+{% hint style="warning" %}
+안전입력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+{% endhint %}
+
+아래 그림은 서보/안전모듈(BD642) 실물사진과 실제 설치 시, 전면에서 보았을 때의 안전입력 커넥터(CNSI1) 위치를 보여줍니다.   
+
+![](../../../_assets/BD642_전면사진_안전입력.png)   
+그림 4.3.2.6-1 서보/안전모듈(BD642) 실물사진과 안전입력 커넥터(CNSI1) 위치
+
+(1) 안전입력 공장출하 상태(사용안하는 경우)   
+
+안전입력 신호를 사용하지 않을 경우, 기본 NC(Normal Close, B접점)연결되어야 합니다. 아래는 사용하지 않을 경우의 결선을 보여줍니다(공장 출하시 결선상태).   
+
+![](../../../_assets/BD642_안전입력_사용안함.png)   
+그림 4.3.2.6-2 서보/안전모듈(BD642) 안전입력 공장 출하시 결선상태
+
+안전입력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN / PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.
+
+(2) 내부전원 사용시
+* NPN-TYPE(: Active Low)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 17번-18번, 21번-22번, 25번-26번, 29번-30번 핀을 각각 연결합니다.   
+B채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 19번-20번, 23번-24번, 27번-28번, 31번-32번 핀을 각각 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전입력_내부전원_NPN.png)   
+그림 4.3.2.6-3 서보/안전모듈(BD642) 안전입력 내부전원 NPN-TYPE 사용시 결선도
+
+* PNP-TYPE(: Active High)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 1번-2번, 5번-6번, 9번-10번, 13번-14번 핀을 각각 연결합니다.   
+B채널 내부전원을 사용하는 경우, 아래 그림과 같이 해당 채널의 커넥터 CNSI1의 3번-4번, 7번-8번, 11번-12번, 15번-16번 핀을 각각 연결합니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전입력_내부전원_PNP.png)   
+그림 4.3.2.6-4 서보/안전모듈(BD642) 안전입력 내부전원 PNP-TYPE 사용시 결선도
+
+{% hint style="warning" %}
+내부전원을 외부 디바이스와 연결할 때, 디바이스의 전원으로 사용해서는 안됩니다.   
+{% endhint %}
+
+(3) 외부전원 사용시
+* NPN-TYPE(: Active Low)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 1번,17번,5번,21번,9번,25번,13번,29번 핀을 연결하지 않습니다.   
+B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 4번,20번,8번,24번,12번,28번,16번,32번 핀을 연결하지 않습니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.   
+
+![](../../../_assets/BD642_안전입력_외부전원_NPN.png)   
+그림 4.3.2.6-5 서보/안전모듈(BD642) 안전입력 외부전원 NPN-TYPE 사용시 결선도
+
+* PNP-TYPE(: Active High)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.   
+A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 1번,17번,5번,21번,9번,25번,13번,29번 핀을 연결하지 않습니다.   
+B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI1의 4번,20번,8번,24번,12번,28번,16번,32번 핀을 연결하지 않습니다.   
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.
+
+![](../../../_assets/BD642_안전입력_외부전원_PNP.png)   
+그림 4.3.2.6-6 서보/안전모듈(BD642) 안전입력 외부전원 PNP-TYPE 사용시 결선도
+
+
+[__SOURCE](4-basic-components/3-component-func/3-backplane-board-BD604/README.md)
+# 4.3.3. 백플레인 보드(BD604)
+
+
+[__SOURCE](4-basic-components/3-component-func/3-backplane-board-BD604/1-overview.md)
+# 4.3.3.1. 개요
+
+백플레인보드(BD604)는 그림 4.50과 같은 구조로서 Hi7 제어기 보드류릐 제어전원을 공급하고 BD642에서 출력되는 AMP 관련 신호들을 AMP Interface Baord(BD652/Bd654)로 통하여 전달한다. 주요 옵션보드의 고정, 신호 전달 역할을 수행한다.
+
+![](../../../_assets/그림_4.50_Backplan_구조.png  )
+
+그림 4.50 백플레인 보드 구조
+
+![](../../../_assets/그림_4.52_Backplan_커넥터.png  )
+
+그림 4.51 백플레인 보드 커넥터
+
+[__SOURCE](4-basic-components/3-component-func/3-backplane-board-BD604/2-connector.md)
+# 4.3.3.2. 커넥터
+
+다음 표 4-3는 커넥터의 용도와 외부장치접속에 대한 설명입니다.
+
+표 4-3 백플레인보드 커넥터의 종류 및 용도
+
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>명칭</strong></p></td>
+<td><p><strong>용도</strong></p></td>
+<td><p><strong>외부장치접속</strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong>CN24VIN</strong></p></td>
+<td><p>DC 24V 메인 전원 공급</p></td>
+<td><p>전원분배보드(BD6C3) CNOCM 커넥터 </p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>CNPRC</strong></p></td>
+<td><p>Precharge Relay 및 FAN Relay 구동 및 모니터링 </p></td>
+<td><p>전원분배보드(BD6C3) CNPRC 커넥터</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>CNBS1, CNBS2</strong></p></td>
+<td><p>서보안전보드(BD642) 전원 및 신호 연결 커넥터</p></td>
+<td><p>서보안전보드(BD632) CNBS1, CNBS2 커넥터</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>CNBS3, CNBS4</strong></p></td>
+<td><p>AMP Interface Board(BD652/BD654) 전원 및 신호 연결 커넥터</p></td>
+<td><p>AMP Interface Board(BD652/BD654) CNBS1, CNBS2 커넥터</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>CNBS5, CNBS6</strong></p></td>
+<td><p>AMP Interface Board(BD652/BD654) 전원 및 신호 연결 케이블 커넥터</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>CON1</strong></p></td>
+<td><p>안전통신보드(BD671) 전원 및 신호 연결 커넥터</p></td>
+<td><p>안전통신보드(BD671) CN1 커넥터</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>CON2, CON3</strong></p></td>
+<td><p>USER IO 보드(BD681) 전원 및 신호 연결 커넥터</p></td>
+<td><p>USER IO 보드(BD681) CN3, CN4 커넥터</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>CON4, CON5</strong></p></td>
+<td><p>USER IO 확장 보드(BD682) 전원 및 신호 연결 커넥터</p></td>
+<td><p>USER IO 확장 보드(BD682) CN4, CN5 커넥터</p></td>
+</tr>
 </tbody>
 </table>
+
+위 커넥터의 연결구조는 그림4.51과 같이 나타내었다.
+
+![](../../../_assets/그림_4.51_Backplan_커넥터_연결구조.png  )
+
+그림 4.52 백플레인 보드 커넥터 연결 구조
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/README.md)
 # 4.3.4. 드라이브모듈 (Drive Module)
+
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/1-H6DX-middle-6ax-drive-module.md)
 # 4.3.4.1. H6D6X (중형 6축 일체형 드라이브모듈)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
@@ -3456,9 +2766,11 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
 {% endhint %}
 
-![](../../../_assets/그림_4.39_BD651_부품_배치도.png  )
+![](../../../_assets/그림_4_20_BD651V60_부품_배치도.PNG  )
 
-그림 4.20 BD651 부품 배치도
+![](../../../_assets/그림_4_21_BD651V70_부품_배치도.PNG  )
+
+그림 4.20 BD651V60, BD651V70 부품 배치도
 
 표 4-19 BD651 커넥터 설명
 
@@ -3559,9 +2871,10 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tbody>
 </table>
 
-![](../../../_assets/그림_4.40_BD652_부품_배치도.png  )
+![](../../../_assets/그림_4_22_BD652V60_부품_배치도.PNG  )
+![](../../../_assets/그림_4_23_BD652V70_부품_배치도.PNG  )
 
-그림 4.21 BD652 부품 배치도
+그림 4.21 BD652V60, BD652V70 부품 배치도
 
 표 4-21 BD652 커넥터 설명
 
@@ -3592,11 +2905,6 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 <td><p>컨버터부 에러 신호</p></td>
 <td><p>BD651 Board to Board 커넥터</p></td>
 </tr>
-<tr class="even">
-<td><p><strong>TBIO</strong></p></td>
-<td><p>예비 전용IO 터미널블록</p></td>
-<td><p>Reserved</p></td>
-</tr>
 </tbody>
 </table>
 
@@ -3621,6 +2929,8 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/2-H6D6A-small-6ax-drive-module.md)
 # 4.3.4.2. H6D6A (소형 6축 일체형 드라이브모듈)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
@@ -3708,8 +3018,8 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 <td><p><strong>형식기호</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 소형 6축 드라이브모듈</strong></p></td>
-<td><p>H6D6A</p></td>
+<td><p><strong>Hi7 소형 6축 드라이브모듈</strong></p></td>
+<td><p>H6AD6A</p></td>
 </tr>
 </tbody>
 </table>
@@ -3825,9 +3135,10 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 드라이브 모듈은 로봇에 따라 다르므로 교환할 때에는 형식을 반드시 확인하시기 바랍니다.
 {% endhint %}
 
-![](../../../_assets/그림_4.41_BD653_부품_배치도.png  )
+![](../../../_assets/그림_4_24_BD653V60_부품_배치도.PNG  )
 
-그림 4.22 BD653 부품 배치도
+
+그림 4.22 BD653V60 부품 배치도
 
 표 4-28 BD653 커넥터 설명
 
@@ -3918,9 +3229,9 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tbody>
 </table>
 
-![](../../../_assets/그림_4.42_BD654_부품_배치도.png  )
+![](../../../_assets/그림_4_25_BD654V60_부품_배치도.PNG  )
 
-그림 4.23 BD654 부품 배치도
+그림 4.23 BD654V60 부품 배치도
 
 표 4-30 BD654 커넥터 설명
 
@@ -3951,11 +3262,6 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 <td><p>컨버터부 에러 신호</p></td>
 <td><p>BD653 Board to Board 커넥터</p></td>
 </tr>
-<tr class="even">
-<td><p><strong>TBIO</strong></p></td>
-<td><p>예비 전용IO 터미널블록</p></td>
-<td><p>Reserved</p></td>
-</tr>
 </tbody>
 </table>
 
@@ -3980,6 +3286,8 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/3-optional-drive-module-spec.md)
 # 4.3.4.3. 선택사양 드라이브모듈 사양
 
 
@@ -3998,8 +3306,8 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </thead>
 <tbody>
   <tr>
-    <td>Hi6 1축 드라이브모듈</td>
-    <td>H6D1</td>
+    <td>Hi7 1축 드라이브모듈</td>
+    <td>H6AD1</td>
   </tr>
 </tbody>
 </table>
@@ -4068,15 +3376,17 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/4-H6D1X-carriage-drive-module-spec.md)
 # 4.3.4.4. H6D1X (캐리지용 드라이브모듈; 선택사양)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 캐리지용 드라이브모듈은 100A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이  성되어 있습니다.
 
-![](../../../_assets/그림_4.43_H6D1X용BD658_부품_배치도.png  )
+![](../../../_assets/그림_4_26_BD658V60_부품_배치도.PNG  )
 
-그림 4.24 H6D1X용BD658 부품 배치도
+그림 4.24 H6AD1X용 BD658V60 부품 배치도
 
-표 4-35 H6D1X의 구성
+표 4-35 H6AD1X의 구성
 
 <table>
 <thead>
@@ -4111,7 +3421,7 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tbody>
 </table>
 
-표 4-36 H6D1X 커넥터 설명
+표 4-36 H6AD1X 커넥터 설명
 
 <table>
 <thead>
@@ -4144,13 +3454,15 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/3-component-func/4-drive-module/5-H6D1Z_servogun-drive-module-spec.md)
 # 4.3.4.5. H6D1Z (서보건용 드라이브모듈; 선택사양)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 서보건용 드라이브모듈은 50A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
 
-![](../../../_assets/그림_4.44_H6D1Z용_BD659_부품_배치도.png  )
+![](../../../_assets/그림_4_27_BD659V60_부품_배치도.PNG  )
 
-그림 4.25 H6D1Z용 BD659 부품 배치도
+그림 4.25 H6AD1Z용 BD659V60 부품 배치도
 
 표 4-37 H6D1Z의 구성
 
@@ -4187,7 +3499,7 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
 </tbody>
 </table>
 
-표 4-38 H6D1Z커넥터 설명
+표 4-38 H6AD1Z커넥터 설명
 
 <table>
 <thead>
@@ -4220,20 +3532,24 @@ DIP스위치는 출고 시 모드 OFF로 설정되어 있으며, 사용자가 �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/README.md)
 # 4.3.5. 전원공급모듈 (H6PSM)
-# 4.3.5.1. H6PSM 및 전원분배보드 (BD6C2)
 
-H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
+[__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/1-H6APSM-power-dist-bd-BD6C3.md)
+# 4.3.5.1. H6APSM 및 전원분배보드 (BD6C3)
 
-![](../../../_assets/그림_4.45_H6PSM(Hi6-N_제어기_전원공급모듈)_외부.png  )
+H6APSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
 
-그림 4.26 H6PSM(Hi6-N 제어기 전원공급모듈) 외부
+![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부.png  )
 
-모터전원용 3상 AC전원의 개폐, 브레이크 전원 생성, 팬 구동 등의 AC제어전원, 제어모듈의 직류 전원공급을 위한 SMPS전원 등의 분배는 다음 그림의 전원계통도와 같습니다. 각각의 전원에는 회로차단기(CP) 또는 퓨즈가 연결되어 있어 과전류에 대한 회로 보호를 합니다.
+그림 4.26 H6APSM(Hi7-N 제어기 전원공급모듈) 외부
 
-![](../../../_assets/그림_4.47_Hi6-N_제어기의_전원계통.png  )
+모터전원용 3상 AC전원의 개폐, 브레이크 전원 생성, 220VAC to 24VDC SMPS 입력 등의 AC제어전원, 제어모듈의 직류 전원공급을 위한 SMPS전원 등의 분배는 다음 그림의 전원계통도와 같습니다. 각각의 전원에는 회로차단기(CP) 또는 퓨즈가 연결되어 있어 과전류에 대한 회로 보호를 합니다.
 
-그림 4.27 Hi6-N 제어기의 전원계통
+![](../../../_assets/그림_4.27_Hi6a-N_제어기의_전원계통.png  )
+
+그림 4.27 Hi7-N 제어기의 전원계통
 
 표 4-39 전장모듈에서 퓨즈의 종류와 용도
 
@@ -4247,31 +3563,38 @@ H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 </thead>
 <tbody>
   <tr>
-    <td>F1, F2</td>
-    <td>냉각 팬 전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>F1, F2, F3</td>
+    <td>제어전원(AC220V) 과전류보호용 퓨즈</td>
+    <td>AC220V 8A</td>
   </tr>
   <tr>
-    <td>F3, F4</td>
-    <td>CMSMPS전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>FS17</td>
+    <td>CMDCFAN, DCFAN2~5 GND 과전류보호용 퓨즈</td>
+    <td>7VAC/60VDC 7A</td>
   </tr>
   <tr>
-    <td>F5, F6</td>
-    <td>BKSMPS전원(AC220V) 과전류보호용 퓨즈</td>
-    <td>AC220V 5A</td>
+    <td>FS18</td>
+    <td>DCFAN2~5 과전류보호용 퓨즈</td>
+    <td>125VAC/125VDC 6.3A</td>
+  </tr>
+  <tr>
+    <td>FS19</td>
+    <td>Control module 냉각용 DCFAN 과전류보호용 퓨즈</td>
+    <td>125VAC/125VDC 0.315A</td>
   </tr>
 </tbody>
 </table>
-# 4.3.5.2. BD6C2 커넥터
 
-전장보드(BD6C2)의 커넥터 배치는 다음 그림과 같으며 각각에 대한 용도 및 접속장치는 표 4-40과 같습니다.
+[__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/2-BD6C3-connector.md)
+# 4.3.5.2. BD6C3 커넥터
 
-![](../../../_assets/그림_4.48_전장보드(BD6C2)의_커넥터.png  )
+전장보드(BD6C3)의 커넥터 배치는 다음 그림과 같으며 각각에 대한 용도 및 접속장치는 표 4-40과 같습니다.
 
-그림 4.28 전장보드(BD6C2)의 커넥터
+![](../../../_assets/그림_4.28_전장보드(BD6C3)의_커넥터.png  )
 
-표 4-40 BD6C2 커넥터의 종류와 용도
+그림 4.28 전장보드(BD6C3)의 커넥터
+
+표 4-40 BD6C3 커넥터의 종류와 용도
 
 <table>
 <thead>
@@ -4283,21 +3606,16 @@ H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 </thead>
 <tbody>
   <tr>
-    <td>CNAC</td>
+    <td>CNAC1</td>
     <td>제어용 3상 전원 입력</td>
     <td>3상 220V</td>
   </tr>
-  <tr>
-    <td>CN220</td>
-    <td>CMSMPS용 전원 출력</td>
-    <td>단상 220V</td>
+    <tr>
+    <td>CNAC2</td>
+    <td>16축 이상 제어용 3상 전원 출력</td>
+    <td>3상 220V</td>
   </tr>
-  <tr>
-    <td>CNFN1~4</td>
-    <td>AC팬 전원 출력</td>
-    <td>단상 220V</td>
-  </tr>
-  <tr>
+   <tr>
     <td>CNPR1</td>
     <td>돌입전류 제한 회로 입력</td>
     <td>3상 220V, MC1입력단</td>
@@ -4308,73 +3626,200 @@ H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
     <td>3상 220V, MC2출력단</td>
   </tr>
   <tr>
-    <td>CNBKAC</td>
-    <td>브레이크용 SMPS 입력</td>
+    <td>CNACOUT1</td>
+    <td>사용자용 220VAC 전원 출력1</td>
     <td>단상 220V</td>
   </tr>
   <tr>
-    <td>CNBKDC</td>
-    <td>브레이크용 SMPS 출력</td>
-    <td>24VDC</td>
+    <td>CNACOUT2</td>
+    <td>사용자용 220VAC 전원 출력2</td>
+    <td>단상 220V</td>
   </tr>
-  <tr>
-    <td>CNPB1</td>
-    <td>브레이크제어용 전원</td>
-    <td>24VDC, PB, BD640</td>
-  </tr>
-  <tr>
-    <td>CNPB2</td>
-    <td>브레이크제어용 전원</td>
-    <td>24VDC, PB, Reserved</td>
-  </tr>
-  <tr>
-    <td>CNPRC</td>
-    <td>돌입전류 제한 회로 제어 및 모니터링</td>
-    <td>BD640 CNPRC</td>
-  </tr>
-  <tr>
-    <td>CNFPS1</td>
+    <tr>
+    <td>CNPFS1</td>
     <td>CMSMPS 정전검출 신호 출력1</td>
     <td>H6COM DIO</td>
   </tr>
-  <tr>
-    <td>CNFPS2</td>
-    <td>CMSMPS 정전검출 신호 출력2</td>
-    <td>Reserved</td>
+   <tr>
+    <td>CNMC</td>
+    <td>전자접촉기 제어 및 모니터링</td>
+    <td>BD642 CNMC</td>
   </tr>
   <tr>
+    <td>CNPRC</td>
+    <td>돌입전류 제한 회로 제어 및 모니터링, FAN Fault 및 FAN 전원 제어 및 모니터링</td>
+    <td>BD642 CNPRC</td>
+  </tr>
+  <tr>
+    <td>CNFN1</td>
+    <td>Control module용 DC팬 전원 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNFN2~5</td>
+    <td>DC팬 전원 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNOCM</td>
+    <td>Control Module용 SMPS 24VDC 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNOH6COM</td>
+    <td>H6COM용 SMPS 24VDC 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNOBK</td>
+    <td>Motor Brkae용 SMPS 24VDC 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNORO</td>
+    <td>Robot용 SMPS 24VDC 출력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNOUS</td>
+    <td>User용 SMPS 24VDC 출력</td>
+    <td>24VDC</td>
+  </tr>
+
+
+  <tr>
+    <td>CNCMSM</td>
+    <td>Control module용 SMPS 220VAC 입력</td>
+    <td>단상 220V</td>
+  </tr>
+  <tr>
+    <td>CNBKSM</td>
+    <td>Motor Brake용 SMPS 220VAC 입력</td>
+    <td>단상 220V</td>
+  </tr>
+  <tr>
+    <td>CNUSSM</td>
+    <td>User용 SMPS 220VAC 입력</td>
+    <td>단상 220V</td>
+  </tr>
+  <tr>
+    <td>CNROSM</td>
+    <td>Robot용 SMPS 220VAC 입력</td>
+    <td>단상 220V</td>
+  </tr>
+
+  <tr>
+    <td>CNI24CM</td>
+    <td>Common Module용 SMPS 24VDC 분배를 위한 입력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNI24BK</td>
+    <td>Brake용 SMPS 24VDC 분배를 위한 입력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNI24RO</td>
+    <td>Robot용 SMPS 24VDC 분배를 위한 입력</td>
+    <td>24VDC</td>
+  </tr>
+  <tr>
+    <td>CNI24US</td>
+    <td>User용 SMPS 24VDC 분배를 위한 입력</td>
+    <td>24VDC</td>
+  </tr>
+  
+  <tr>
     <td>CNMC1</td>
-    <td>전자접촉기 MC1 제어 및 모니터링</td>
+    <td>Magnetic Contactor 1 ON/OFF 전원 입력 및 feedback, Brake Control Signal 제어</td>
     <td>MC1</td>
   </tr>
   <tr>
     <td>CNMC2</td>
-    <td>전자접촉기 MC2 제어 및 모니터링</td>
+    <td>Magnetic Contactor 2 ON/OFF 전원 입력 및 feedback, Brake Control Signal 제어</td>
     <td>MC2</td>
-  </tr>
-  <tr>
-    <td>CNMC</td>
-    <td>전자접촉기 제어 및 모니터링</td>
-    <td>BD632 CNMC</td>
-  </tr>
-  <tr>
-    <td>CN24VB</td>
-    <td>모듈별 제어전원 입력</td>
-    <td>24VDC, CMBUFFER 출력</td>
-  </tr>
-  <tr>
-    <td>CN24VB1~8</td>
-    <td>모듈별 제어전원 출력</td>
-    <td>24VDC, 모듈별 CN24VB</td>
-  </tr>
-  <tr>
-    <td>CNBM</td>
-    <td>CMSMPS 정전검출 신호 입력</td>
-    <td>CMSMPS 13-14</td>
   </tr>
 </tbody>
 </table>
+
+
+# 4.3.5.3. BD6C3 LED
+
+전장보드(BD6C3)의 LED 배치는 다음 그림과 같으며 각각에 대한 용도 및 연결 전원, LED 색상은 표 4-41과 같습니다.
+
+![](../../../_assets/그림_4.29_전장보드(BD6C3)의_LED.png  )
+
+그림 4.29 전장보드(BD6C3)의 LED
+
+표 4-41 BD6C3 LED의 종류와 용도
+
+<table>
+<thead>
+  <tr>
+    <th>명칭</th>
+    <th>용도</th>
+    <th>사양</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>LDFNFLT</td>
+    <td>FAN1~5 중에 FAN Fault가 1개 이상 발생 시 ON</td>
+    <td>FAN Fault, 빨강</td>
+  </tr>
+  <tr>
+    <td>LEDFAN</td>
+    <td>FAN용 24VDC 입력을 위한 Relay가 ON 시 LED ON</td>
+    <td>FAN Power Relay, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDCM</td>
+    <td>Control Moudle용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>CMSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDBK</td>
+    <td>Brake용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>BKSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDUS</td>
+    <td>User용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>USSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDRO</td>
+    <td>Robot용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>ROSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>MC1LED</td>
+    <td>Magnetic Contactor 1의 ON 전원이 정상 입력 시 ON</td>
+    <td>BD642, 초록</td>
+  </tr>
+  <tr>
+    <td>MC2LED</td>
+    <td>Magnetic Contactor 2의 ON 전원이 정상 입력 시 ON</td>
+    <td>BD642, 초록</td>
+  </tr>
+  <tr>
+    <td>RYPRC1</td>
+    <td>Precharging Relay ON signal 입력 시 Relay 내부의 LED ON</td>
+    <td>BD604, 초록</td>
+  </tr>
+  <tr>
+    <td>RYPRC2</td>
+    <td>FAN 전원 Relay ON signal 입력 시 Relay 내부의 LED ON</td>
+    <td>BD604, 초록</td>
+  </tr>
+
+</tbody>
+</table>
+
+[__SOURCE](4-basic-components/3-component-func/6-teach-pendant-TP630/README.md)
 # 4.3.6. 티치펜던트 (TP630)
+
+[__SOURCE](4-basic-components/3-component-func/6-teach-pendant-TP630/1-overview.md)
 # 4.3.6.1. 개요
 
 티치펜던트(TP630)는 제어기의 메인모듈(H6COM-T)과 이더넷으로 통신하며, 다음과 같은 기능을 사용자가 직접 조작할 수 있도록 합니다.
@@ -4395,17 +3840,77 @@ H6PSM(Hi6-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 
 또한, 티치펜던트 하단 고무커버 아래 USB A type 커넥터가 장착되어 있으므로, 사용자는 USB Memory Stick을 이용하여 각종 보드류의 버전뿐만 아니라 데이터 및 티칭 프로그램 등 필요한 파일들을 업/다운 로드 할 수 있습니다.
 
-![](../../../_assets/그림_4.49_티치펜던트_TP630의_외관.png  )
+![](../../../_assets/그림_4.2_티칭펜던트_TP630_Hi6a.png  )
 
 그림 4.29 티치펜던트 TP630의 외관
+
+[__SOURCE](4-basic-components/3-component-func/6-teach-pendant-TP630/2-USB-cover.md)
 # 4.3.6.2. USB 커버
 
 티치펜던트 옆면 고무커버 아래 USB A type 커넥터가 장착되어 있으므로, 사용자는 USB Memory Stick을 이용하여 각종 보드류의 버전뿐만 아니라 데이터 및 티칭 프로그램 등 필요한 파일들을 업/다운 로드 할 수 있습니다.
+
+
+[__SOURCE](5-optional-components/README.md)
 # 5. 제어기의 선택구성
+
+표 5-1 선택 구성 기능요약
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">구성품</th>
+    <th>기능</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3">제어 옵션</td>
+    <td>확장안전신호보드(BD680)</td>
+    <td>- Safety 디지털 입력 8 채널<br>- Safety 디지털 출력 8 채널</td>
+  </tr>
+  <tr>
+    <td>USER DIO보드(BD681)<br>확장DIO보드(BD682)</td>
+    <td>- 디지털 입력 최대 48 채널<br>- 디지털 출력 최대 48 채널<br>- NPN/PNP 전환 가능<br>- 디지털 출력 중 릴레이 출력 8채널 선택가능<br>- 컨베이어 인터페이스 2 체널</td>    
+  </tr>
+  <tr>
+    <td>안전 통신 보드(BD671)</td>
+    <td>- PROFiSafe/PROfiNET 통신 지원<br>- PROFiSafe 통신 : 입력 64 포인트, 출력 64 포인트<br>- PROFiNET 통신 : 입력 240 byte, 출력 240 byte </td>
+  </tr>
+  <tr>
+    <td rowspan="3">통신 옵션</td>
+    <td>Ethernet/IP Master/Slave</td>
+        <td>- H6COM-T LAN Port 지원<br>- TP630에서 설정 가능</td>
+  </tr>
+  <tr>
+    <td>2'nd EtherCAT Master</td>
+  </tr>
+  <tr>
+    <td>CIP Safety</td>
+  </tr>  
+  <tr>
+    <td>PCI 통신 카드</td>
+    <td>PC Cards CIFX 50 시리즈 15종</td>
+    <td>- Ethernet Master/Slave<br>- CC-Link Slave<br>- DeviceNET Master/Slave<br>- PROFIBUS Master/Slave<br>- CC-Link IE Fileld</td>
+  </tr>
+  <tr>
+    <td>브레이크 해제유닛</td>
+    <td>-</td>
+    <td>- 로봇의 각 축 모터브레이크를 해제가 필요할 경우 사용</td>
+  </tr>
+  <tr>
+    <td>Remote IO 모듈</td>
+    <td>통신모듈<br>IO 모듈</td>
+    <td>- User DIO 신호외에 추가로 사용하기 위해서 필요</td>
+  </tr>
+</tbody>
+</table>
+[__SOURCE](5-optional-components/1-PCI-comm-card/README.md)
 # 5.1. PCI 통신 카드
+
+[__SOURCE](5-optional-components/1-PCI-comm-card/1-overview.md)
 # 5.1.1. 개요
 
-Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드를 이용하여 필요한 산업용 통신을 사용할 수 있습니다. 보편적인 모델인 Ethernet용 PCI 통신 카드 기반으로 설명되어 있으며, 자세한 내용은 “PC Cards CIFX 50 50E 70E 100EH UM 51 EN”문서의 PC Cards CIFX 50 모델을 참조하여 주시기 바랍니다.
+Hi7 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드를 이용하여 필요한 산업용 통신을 사용할 수 있습니다. 보편적인 모델인 Ethernet용 PCI 통신 카드 기반으로 설명되어 있으며, 자세한 내용은 “PC Cards CIFX 50 50E 70E 100EH UM 51 EN”문서의 PC Cards CIFX 50 모델을 참조하여 주시기 바랍니다.
 
 표 5-1 PCI 통신 카드 품명
 
@@ -4458,7 +3963,7 @@ Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드
   <tr>
     <td>7</td>
     <td>CIFX 50-DN/ML-HRC</td>
-    <td>DeviceNet Maser PCI</td>
+    <td>DeviceNet Master PCI</td>
     <td>CombiCon Male, 5 pin</td>
   </tr>
   <tr>
@@ -4511,6 +4016,8 @@ Hi6 제어기에서 산업용 통신을 이용하기 위해서 PCI 통신 카드
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/1-PCI-comm-card/2-PCI-comm-card-config.md)
 # 5.1.2. PCI 통신카드 구성
 
 PCI통신카드는 기본적으로(Ethernet 기반 통신 사용 기준) 다음과 같이 구성되어 있으며, 산업용 통신에 따라 커넥터 및 LED 개수가 다릅니다.
@@ -4547,6 +4054,8 @@ PCI통신카드는 기본적으로(Ethernet 기반 통신 사용 기준) 다음�
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/1-PCI-comm-card/3-PCI-comm-card-front.md)
 # 5.1.3. PCI 통신 카드 전면부
 
 PCI통신 카드 전면부를 통해 통신 세팅, 통신 케이블 연결, 통신 상태 확인을 할 수 있습니다. 기본적으로 Rotary Switch를 H6COM PCI Slot 위치에 따라 순서대로 1 ~ 4번을 세팅해서 사용합니다..
@@ -4588,7 +4097,11 @@ PCI통신 카드 전면부를 통해 통신 세팅, 통신 케이블 연결, 통
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/2-brake-release-unit/README.md)
 # 5.2. 브레이크 해제 유닛
+
+[__SOURCE](5-optional-components/2-brake-release-unit/1-overview.md)
 # 5.2.1. 개요
 
 브레이크 해제유닛은 로봇의 각 축 모터브레이크를 해제가 필요할 경우 사용할 수 있는 유닛입니다. 주로 초기 로봇 설치 시 로봇 자세를 설정하는 데 도움을 줄 수 있습니다. 브레이크 해제 시 반드시 “1.8.2 관련 기타 기능”의 “수동브레이크 해제”의 안전 사항을 충분히 인지한 후 사용하시기 바랍니다.
@@ -4605,6 +4118,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 상기 “주의사항”을 지키지 않는 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
 {% endhint %}
 
+
+[__SOURCE](5-optional-components/2-brake-release-unit/2-brake-release-switch.md)
 # 5.2.2. 브레이크 해제 스위치
 
 브레이크 해제유닛의 스위치 배치는 그림 5.3과 같으며 각각에 대한 용도 및 동작설명은 표 5-4와 같습니다. 원하는 축의 브레이크를 해제하기 위해서는 먼저 Enable 버튼을 누르고, Enable 버튼을 누르고 있는 상태에서 B1~B8 중 버튼을 동시에 누르면 해당 축이 해제됩니다.
@@ -4671,6 +4186,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/2-brake-release-unit/3-power-connector.md)
 # 5.2.3. 전원 및 커넥터
 
 브레이크 해제 유닛의 전원 및 커넥터 배치는 다음 그림5.4와 같으며 각각에 대한 용도 및 접속장치는 표 5-5와 같습니다.
@@ -4733,6 +4250,8 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/2-brake-release-unit/4-brake-release-unit-status-LED.md)
 # 5.2.3. 브레이크 해제 유닛 상태 표시 LED
 
 브레이크 해제 유닛 브레이크 해제 유닛의 상태 표시를 위한 LED는 그림 5.3과 같으며 각각에 대한 용도 및 동작상태는 표 5-6과 같습니다.
@@ -4795,10 +4314,14 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/3-remote-io/README.md)
 # 5.3. 리모트 IO
+
+[__SOURCE](5-optional-components/3-remote-io/1-overview.md)
 # 5.3.1. 개요
 
-Hi6 제어기에서 범용 IO 신호를 사용하기 위해서 상용 리모트 IO가 필요합니다. 상용 리모트 IO는 기본적으로 “통신모듈” 1개에 “IO 모듈”(사용자 선택)을 연결하여 사용합니다. 아래의 모듈은 Crevis사의 상용 리모트 IO 모듈을 소개해 놓았으며, 타사의 상용 리모트 IO를 구매하여 사용하여도 무방합니다. 자세한 사용법은 구매하신 IO업체에 요청하시면 됩니다.
+Hi7 제어기에서 User DIO 신호외에 추가로 사용하기 위해서 상용 리모트 IO가 필요합니다. 상용 리모트 IO는 기본적으로 “통신모듈” 1개에 “IO 모듈”(사용자 선택)을 연결하여 사용합니다. 아래의 모듈은 Crevis사의 상용 리모트 IO 모듈을 소개해 놓았으며, 타사의 상용 리모트 IO를 구매하여 사용하여도 무방합니다. 자세한 사용법은 구매하신 IO업체에 요청하시면 됩니다.
 
 {% hint style="info" %}
 상용 리모트 IO를 사용하기 위해서는 필드버스 통신이 반드시 필요 합니다. 따라서, 위에 언급된 ‘5.1. PCI 통신카드’을 참고하여 PCI 통신 카드를 같이 구성하시기 바랍니다.
@@ -4807,6 +4330,8 @@ Hi6 제어기에서 범용 IO 신호를 사용하기 위해서 상용 리모트 
 ![](../../_assets/그림_5.5상용_리모트_IO_구성_예시.png  )
 
 그림 5.5 상용 리모트 IO 구성 예시
+
+[__SOURCE](5-optional-components/3-remote-io/2-comm-module-crevis.md)
 # 5.3.2. 통신 모듈(Crevis사)
 
 통신 모듈의 종류를 다음과 같으며 원하는 통신에 따라 사용하면 됩니다.
@@ -4842,6 +4367,8 @@ Hi6 제어기에서 범용 IO 신호를 사용하기 위해서 상용 리모트 
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/3-remote-io/3-io-other-module-crevis.md)
 # 5.3.3. IO 및 기타 모듈(Crevis 사)
 
 IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게 구성해서 사용하면 됩니다.
@@ -4985,10 +4512,557 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/README.md)
+# 5.4. 옵션 안전IO모듈(BD680)
+
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/1-overview.md)
+# 5.4.1. 개요
+
+옵션 안전IO모듈(BD680)은 추가적으로 안전IO 신호가 필요한 경우 선택하여 해당 기능을 수행합니다.   
+
+로봇 제어기 현장 적용할 때, 추가적으로 안전IO 신호가 필요한 경우 서보/안전모듈(BD642)에 장착되어 기능을 수행합니다. 옵션 안전IO모듈(BD680)은 단독으로 사용할 수 없으며 서보/안전모듈(BD642)과 커넥터(Board to Board)를 연결하여 전원, 제어 신호 및 인터페이스를 이용하여 해당 기능 동작이 가능합니다.   
+안전 IO신호는 디지털 입력 신호 8점, 디지털 출력 신호 8점으로 구성되어 있습니다.   
+
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/2-connector.md)
+# 5.4.2. 커넥터
+
+아래 그림은 옵션 안전IO모듈(BD680)의 외부연결에 필요한 커넥터의 위치를 보여줍니다. 또한, 아래 표는 각 커넥터의 명칭, 용도를 기술합니다.
+
+![](../../_assets/BD680_PCB_커넥터.png)   
+그림 5.4.2-1 옵션 안전IO모듈(BD680)커넥터 배치   
+
+표 5.4.2-1 옵션 안전IO모듈(BD680)커넥터 명칭, 용도 및 외부연결장치   
+<table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>용도</strong></th>
+    <th><strong>외부연결장치</strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>A</td>
+    <td>CNSO2</td>
+    <td>안전 출력단자</td>
+    <td>외부 디바이스</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>CNSI2</td>
+    <td>안전 입력단자</td>
+    <td>외부 디바이스</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>J1
+      <br>J2</td>
+    <td>BD642연결 커넥터(Board to Board)</td>
+    <td>서보/안전모듈(BD642)</td>
+  </tr>
+</tbody>
+</table>
+
+{% hint style="info" %}
+안전관련 입력을 연결하여 활성화를 한경우 반드시 “1.11. 로봇 조작시 안전대책”을 참고하여 기능 정상 동작 여부를 확인하여 주십시오.
+{% endhint %}
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/3-display.md)
+# 5.4.3. 표시장치
+
+(1) 보드 TOP면 표시 장치   
+
+아래 그림은 옵션 안전IO모듈(BD680)의 표시(LED)장치 위치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
+
+![](../../_assets/BD680_PCB_상태.png)   
+그림 5.4.3-1 옵션 안전IO모듈(BD680)의 표시장치 배치   
+
+표 5.4.3-1 옵션 안전IO모듈(BD680)의 표시장치 설명   
+
+<table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>정상시</strong></th>
+    <th><strong>이상시 조치내용</strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>(1)</td>
+    <td>LED1</td>
+    <td>A채널 전원 표시</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상 : 노란색 소등
+      <br>원인 : A채널 입력전원 이상
+      <br>조치1 : A채널 입력전원(24V) 확인
+      <br>조치2 : 퓨즈(FS1) 확인
+    </td>
+  </tr>
+  <tr>
+    <td>(2)</td>
+    <td>LED2</td>
+    <td>B채널 전원 표시</td>
+    <td>노란색</td>
+    <td>점등</td>
+    <td>
+      현상 : 노란색 소등
+      <br>원인 : B채널 입력전원 이상
+      <br>조치1 : B채널 입력전원(24V) 확인
+      <br>조치2 : 퓨즈(FS2) 확인
+    </td>
+</table>
+</tbody>
+
+(2) 보드 전면 표시 장치   
+
+아래 그림은 옵션 안전IO모듈(BD680)의 전면 표시 장치를 보여줍니다. 아래 표는 각 표시의 내용을 기술합니다.
+
+![](../../_assets/BD680_전면표시장치.png)   
+그림 5.4.3-2 옵션 안전IO모듈(BD680)의 전면 표시장치 배치   
+
+표 5.4.3-2 옵션 안전IO모듈(BD680) 전면 표시장치 설명   
+<table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>표시내용</strong></th>
+    <th><strong>색상</strong></th>
+    <th><strong>표시상태</strong></th>
+    <th><strong>표시상태 설명</strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>(1)</td>
+    <td>SW1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>향후 사용 예정</td>
+  </tr>
+  <tr>
+    <td rowspan="2">(2)</td>
+    <td>A_SOx<br>
+        (x=1~8)</td>
+    <td>A채널 안전출력x 상태표시</td>
+    <td rowspan="2">녹색</td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전출력x ON 상태 <br>
+                    각 채널 안전출력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SOx<br>
+        (x=1~8)</td>
+    <td>B채널 안전출력x 상태표시</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">(3)</td>
+    <td>A_SIx<br>
+        (x=1~8)</td>
+    <td>A채널 안전입력x 상태표시</td>
+    <td rowspan="2">녹색 </td>
+    <td rowspan="2">점등<br>소등</td>
+    <td rowspan="2">각 채널 안전입력x ON 상태 <br>
+                    각 채널 안전입력x OFF 상태</td>
+  </tr>
+  <tr>
+    <td>B_SIx<br>
+        (x=1~8)</td>
+    <td>B채널 안전입력x 상태표시</td>
+  </tr>
+</table>
+</tbody>
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/4-setting.md)
+# 5.4.4. 설정장치
+
+아래 그림은 옵션 안전IO모듈(BD680)의 설정(스위치)장치 위치를 보여줍니다. 아래 표는 각 설정의 용도를 기술합니다.   
+
+![](../../_assets/BD680_PCB_설정.png)   
+그림 5.4.4-1 옵션 안전IO모듈(BD680)의 설정장치 배치
+
+표 5.4.4-1 옵션 안전IO모듈(BD680) SW1 설정장치 설명   
+<table>
+<thead>
+  <tr>
+    <th><strong>번호</strong></th>
+    <th><strong>명칭</strong></th>
+    <th><strong>설정상태</strong></th>
+    <th><strong>설정내용</strong></th>
+    <th><strong>비고</strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>①</td>
+    <td>SW1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>향후 사용예정</td>
+  </tr>
+</table>
+</tbody>
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/5-cnso-conn.md)
+# 5.4.5. 안전출력 결선
+
+{% hint style="warning" %}
+안전출력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+{% endhint %}
+
+아래 그림은 옵션 안전IO모듈(BD680) 실물사진과 실제 설치 시, 전면에서 보았을 때의 커넥터 위치를 보여줍니다.   
+
+![](../../_assets/BD680_전면사진_안전출력.png)   
+그림 5.4.5-1 옵션 안전IO모듈(BD680) 실물사진과 안전출력 커넥터 위치   
+
+안전출력 결선시, 내부전원 사용할 경우, 외부전원 사용할 경우의 결선이 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.   
+
+(1) 내부전원 사용시   
+
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+A채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO2의 1번-2번 핀을 연결, 11번-12번 핀을 연결합니다.  
+B채널 내부전원 사용하는 경우, 아래 그림과 같이 커넥터 CNSO2의 13번-14번 핀을 연결, 23번-24번 핀을 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+
+![](../../_assets/BD680_안전출력_내부전원.png)  
+그림 5.4.5-2 옵션 안전IO모듈(BD680) 안전출력 내부전원 사용시 결선도   
+
+(2) 외부전원 사용시  
+아래 그림 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+커넥터 CNSO2의 1번, 12번, 13번, 24번은 연결하지 않습니다.  
+A채널 외부전원 EX_AV(24V)는 2번 핀에 연결하고 외부전원 EX_AG(GND)는 11번 핀에 연결합니다.  
+B채널 외부전원 EX_BV(24V)는 14번 핀에 연결하고 외부전원 EX_BG(GND)는 23번 핀에 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+
+![](../../_assets/BD680_안전출력_외부전원.png)
+그림 5.4.5-3 옵션 안전IO모듈(BD680) 안전출력 외부전원 사용시 결선도
+
+[__SOURCE](5-optional-components/4-BD680-Option-safetyIO-board/6-cnsi-conn.md)
+# 5.4.6. 안전입력 결선
+
+{% hint style="warning" %}
+안전입력 결선 작업 시, 반드시 제어기 전원을 OFF한 상태에서 결선작업 하시기 바랍니다.
+{% endhint %}
+
+아래 그림은 옵션 안전IO모듈(BD680) 실물사진과 실제 설치 시, 전면에서 보았을 때의 커넥터 위치를 보여줍니다.    
+
+![](../../_assets/BD680_전면사진_안전입력.png)  
+그림 5.4.6-1 옵션 안전IO모듈(BD680) 실물사진과 안전입력 커넥터 위치   
+
+안전입력 결선시, 내부전원과 외부전원 사용할 경우의 결선이 다르고 NPN/PNP 타입에 따라서도 다릅니다. 아래는 각각의 경우에 대한 결선을 보여줍니다.   
+
+(1) 내부전원 사용시   
+* NPN-TYPE(: Active Low)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+A채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번-3번 핀을 연결합니다.  
+B채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번-15번 핀을 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.     
+
+![](../../_assets/BD680_안전입력_내부전원_NPN.png)   
+그림 5.4.6-2 옵션 안전IO모듈(BD680) 안전입력 내부전원 NPN-TYPE 사용시 결선도   
+
+* PNP-TYPE(: Active High)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+A채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 3번-12번 핀을 연결합니다.  
+B채널 내부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 15번-24번 핀을 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+
+![](../../_assets/BD680_안전입력_내부전원_PNP.png)   
+그림 5.4.6-3 옵션 안전IO모듈(BD680) 안전입력 내부전원 PNP-TYPE 사용시 결선도   
+
+{% hint style="warning" %}
+내부전원을 외부 장치와 결선할 때, 장치의 전원으로 사용해서는 안됩니다.
+{% endhint %}  
+
+(2) 외부전원 사용시   
+* NPN-TYPE(: Active Low)  
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번, 12번 핀을 연결하지 않으며 외부전원(EX_AV)는 3번 핀에 연결합니다.  
+B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번, 24번 핀을 연결하지 않으며 외부전원(EX_BV)는 15번 핀에 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+
+![](../../_assets/BD680_안전입력_외부전원_NPN.png)   
+그림 5.4.6-4 옵션 안전IO모듈(BD680) 안전입력 외부전원 NPN-TYPE 사용시 결선도   
+
+* PNP-TYPE(: Active High)   
+아래 그림의 빨간색은 A채널을 나타내고 파란색은 B채널을 나타냅니다.  
+A채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 1번, 12번 핀을 연결하지 않으며 외부전원(EX_AG)는 3번 핀에 연결합니다.  
+B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 CNSI2의 13번, 24번 핀을 연결하지 않으며 외부전원(EX_BG)는 15번 핀에 연결합니다.  
+외부 디바이스와의 연결은 아래 결선 예를 참조하여 결선합니다.  
+
+![](../../_assets/BD680_안전입력_외부전원_PNP.png)   
+그림 5.4.6-5 옵션 안전IO모듈(BD680) 안전입력 외부전원 PNP-TYPE 사용시 결선도
+
+
+[__SOURCE](5-optional-components/5-UserDIO/README.md)
+# 5.5. 사용자 DIO
+[__SOURCE](5-optional-components/5-UserDIO/1-overview.md)
+# 5.5.1 개요
+
+Hi7 제어기에서 '사용자 DIO 보드(BD681)'와 '확장 DIO 보드(BD682)'를 활용하여 디지털 입출력 신호와 컨베이어 인터페이스를 진행할 수 있습니다.
+
+{% hint style="info" %}
+매뉴얼에서 DIO는 디지털 입출력(Digital Input and Output)을 의미합니다.
+{% endhint %}
+
+'확장 DIO 보드(BD682)'는 단독으로는 사용할 수 없으며 '사용자 DIO 보드(BD681)'와 같이 사용해야 합니다.
+
+<br>
+
+**표 5-9 보드 사양**
+
+<table>
+<thead>
+    <tr>
+        <th style="width: 50px; text-align: center;">
+            No.
+        </th>
+        <th style="width: 110px; text-align: center;">
+            보드명<br>
+            (보드 식별자)
+        </th>
+        <th style="width: 300px; text-align: center;">
+            보드 기능 정보
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td style="text-align: center;">
+            <strong>1</strong>
+        </td>
+        <td style="text-align: center;">
+            사용자 DIO 보드<br>
+            ( BD681 )
+        </td>
+        <td> 
+             - 디지털 입력 16 채널 <br>
+             - 디지털 출력 16 채널
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">
+            <strong>2</strong>
+        </td>
+        <td style="text-align: center;">
+            확장 DIO 보드<br>
+            ( BD682 )
+        </td>
+        <td> 
+             - 디지털 입력 16 채널 <br>
+             - 디지털 출력 16 채널 (릴레이 출력 8 채널 포함)<br> 
+             - 컨베이어 인터페이스 2채널 <br> 
+             - 단독 사용 불가 (BD681과 같이 사용 필요)
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<br>
+BD681 2개와 BD682 1개를 이용하여 최대 48 채널의 입출력을 제어할 수 있습니다.
+<br><br>
+
+[__SOURCE](5-optional-components/5-UserDIO/2-HW-Inform.md)
+# 5.5.2 하드웨어 정보
+사용자IO모듈(BD681)을 사용하여 각종 장치들과 디지털 입출력 포트를 통하여 연계 또는 구성이 가능합니다.<br>
+또한 확장IO모듈(BD682)를 통해 디지털 입출력 포트 추가 및 컨베이어 시스템과의 동기화를 할 수 있습니다.<br>
+기본적인 보드의 하드웨어 구성은 아래와 같습니다.<br>
+![](../../_assets/그림_5_31_BD681_BD682_HW_및_커넥터_정보.png)<br>
+
+### 5.5.2.1 디지털 입력
+다음의 그림과 표는 디지털 입력용 터미널 블록의 핀 구성을 나타낸 것입니다.<br>
+각 터미널 블록은 16개의 입력 신호를 받을 수 있으며, 용도에 따라 NPN, PNP 타입의 입력을 받을 수 있습니다.<br>
+BD682를 추가 장착을 하게 되면, 디지털 입력 16pt가 추가 됩니다. <br>
+NPN,PNP 신호를 구성하는 방법은 기능 설명서를 참조하시기 바랍니다.<br>
+![](../../_assets/그림_5.34_BD681_디지털_입력_커넥터_핀맵.JPG)<br>
+| 번호 | 신호명   | 신호 설명  |번호 | 신호명 | 신호 설명 |
+|------|---------|---------- |-----|-------- |----------|
+| 1    |COM_IN_A |COM 신호<br>(1~8)    | 11 | COM_IN_B | COM 신호<br>(9~16) |
+| 2    |A1|디지털 입력1| 12 | B1 |디지털 입력9    |
+| 3    |A2|디지털 입력2| 13 | B2 |디지털 입력10   |
+| 4    |A3|디지털 입력3| 14 | B3 |디지털 입력11   |
+| 5    |A4|디지털 입력4| 15 | B4 |디지털 입력12   |
+| 6    |A5|디지털 입력5| 16 | B5 |디지털 입력13   |
+| 7    |A6|디지털 입력6| 17 | B6 |디지털 입력14   |
+| 8    |A7|디지털 입력7| 18 | B7 |디지털 입력15   |
+| 9    |A8|디지털 입력8| 19 | B8 |디지털 입력16   |
+| 10   | COM_IN_A| COM 신호<br>(1~8)  |  20 | COM_IN_B  | COM 신호<br>(9~16)| <br>
+
+확장DIO보드(BD682) 추가 장착 시 핀맵 은 아래와 같습니다.<br>
+![](../../_assets/그림_5.35_BD682_디지털_입력_커넥터_핀맵.JPG)<br>
+| 번호 | 신호명   | 신호 설명  |번호 | 신호명 | 신호 설명 |
+|------|---------|---------- |-----|-------- |----------|
+| 1    |COM_IN_A |COM 신호<br>(1~8)    | 11 | COM_IN_B | COM 신호<br>(9~16) |        
+| 2    |A9|디지털 입력1| 12 | B1 |디지털 입력9    |
+| 3    |A10|디지털 입력2| 13 | B2 |디지털 입력10   |
+| 4    |A11|디지털 입력3| 14 | B3 |디지털 입력11   |
+| 5    |A12|디지털 입력4| 15 | B4 |디지털 입력12   |
+| 6    |A13|디지털 입력5| 16 | B5 |디지털 입력13   |
+| 7    |A14|디지털 입력6| 17 | B6 |디지털 입력14   |
+| 8    |A7|디지털 입력7| 18 | B7 |디지털 입력15   |
+| 9    |A8|디지털 입력8| 19 | B8 |디지털 입력16   |
+| 10   | COM_IN_A| COM 신호<br>(1~8)  |  20 | COM_IN_B  | COM 신호<br>(9~16)| <br>
+           
+### 5.5.2.2 디지털 출력
+다음의 그림과 표는 디지털 출력용 터미널 블록의 핀 구성을 나타낸 것입니다.<br>
+각 터미널 블록은 16개의 출력 신호를 받을 수 있으며, 용도에 따라 NPN, PNP 타입의 출력을 받을 수 있습니다.<br>
+BD682를 추가 장착을 하게 되면, 디지털 출력 16pt가 추가 됩니다.<br>
+![](../../_assets/그림_5.33_BD681_디지털_출력_커넥터_핀맵.JPG)<br>
+
+| 번호 | 신호명   | 신호 설명  |번호 | 신호명 | 신호 설명 |
+|------|---------|---------- |-----|-------- |----------|
+| 1    |COM_OUT_A |COM 신호<br>(1~8)    | 11 | COM_OUT_B | COM 신호<br>(9~16) |        
+| 2    |A1|디지털 출력1| 12 | B1 |디지털 출력9    |
+| 3    |A2|디지털 출력2| 13 | B2 |디지털 출력10   |
+| 4    |A3|디지털 출력3| 14 | B3 |디지털 출력11   |
+| 5    |A4|디지털 출력4| 15 | B4 |디지털 출력12   |
+| 6    |A5|디지털 출력5| 16 | B5 |디지털 출력13   |
+| 7    |A6|디지털 출력6| 17 | B6 |디지털 출력14   |
+| 8    |A7|디지털 출력7| 18 | B7 |디지털 출력15   |
+| 9    |A8|디지털 출력8| 19 | B8 |디지털 출력16   |
+| 10   | COM_OUT_A| COM 신호<br>(1~8)  |  20 | COM_OUT_B  | COM 신호<br>(9~16)| <br>
+
+확장DIO보드(BD682) 추가 장착 시 핀맵 은 아래와 같습니다.<br>
+![](../../_assets/그림_5.36_BD682_디지털_출력_커넥터_핀맵.JPG)<br>
+| 번호 | 신호명   | 신호 설명  |번호 | 신호명 | 신호 설명 |
+|------|---------|---------- |-----|-------- |----------|
+| 1    |COM_OUT_A |COM 신호<br>(17~24)    | 11 | COM_OUT_B | COM 신호<br>(25~32) |        
+| 2    |A9|디지털 출력17| 12 | B9 |디지털 출력25    |
+| 3    |A10|디지털 출력18| 13 | B10 |디지털 출력26   |
+| 4    |A11|디지털 출력19| 14 | B11 |디지털 출력27   |
+| 5    |A12|디지털 출력20| 15 | B12 |디지털 출력28   |
+| 6    |A13|디지털 출력21| 16 | B13 |디지털 출력29   |
+| 7    |A14|디지털 출력22| 17 | B14 |디지털 출력30   |
+| 8    |A15|디지털 출력23| 18 | B15 |디지털 출력31   |
+| 9    |A16|디지털 출력24| 19 | B16 |디지털 출력32   |
+| 10   | COM_OUT_A| COM 신호<br>(17~24)  |  20 | COM_OUT_B  | COM 신호<br>(25~32)| <br>
+
+### 5.5.2.3 컨베이어 동기화 구성
+다음의 그림은 컨베이어 동기화를 위한 엔코더 입력 및 리밋 스위치로 구성 되어 있습니다.<br>
+총 2개의 입력 채널로 구성되어 있으며, 입력 채널의 구성은 다음과 같습니다.
+각 채널 당, 2종류의 엔코더 타입(오픈컬렉터/라인드라이버)으로 설정 되어 있습니다.<br> 
+![](../../_assets/그림_5.37_BD682_컨베이어_커넥터_핀맵.JPG)<br>
+
+| 번호 | 신호명   | 신호 설명  |번호 | 신호명 | 신호 설명 |
+|------|---------|---------- |-----|-------- |----------|
+| 1    |PA2_P    |2번 채널 라인드라이버 타입 엔코더 <br> A신호 입력 Positive| 11 | PA1_P |1번 채널 라인드라이버 타입 엔코더 <br> A신호 입력 Positive|        
+| 2    |PA2_N    |2번 채널 라인드라이버 타입 엔코더 <br> A신호 입력 Negative| 12 | PA1_N |1번 채널 라인드라이버 타입 엔코더 <br> A신호 입력 Negative|
+| 3    |PB2_P    |2번 채널 라인드라이버 타입 엔코더 <br> B신호 입력 Positive| 13 | PB1_P |1번 채널 라인드라이버 타입 엔코더 <br> B신호 입력 Positive |
+| 4    |PB2_N    |2번 채널 라인드라이버 타입 엔코더 <br> B신호 입력 Negative| 14 | PB1_N |2번 채널 라인드라이버 타입 엔코더 <br> B신호 입력 Negative |
+| 5    |LDLS2    |2번 채널 라인드라이버 타입 엔코더 <br> 리밋 스위치 | 15 | LDLS1 |1번 채널 라인드라이버 타입 엔코더 <br> 리밋 스위치
+| 6    |GND      |접지 | 16 | GND |접지   |
+| 7    |P2+      |2번 채널 오픈컬렉터 엔코더 전원 | 17 | P1+ |1번 채널 오픈컬렉터 엔코더 전원   |
+| 8    |A2       |2번 채널 오픈컬렉터 타입 엔코더 <br> A 신호 입력| 18 | A1 |1번 채널 오픈컬렉터 타입 엔코더 <br> A 신호 입력  |
+| 9    |B2       |2번 채널 오픈컬렉터 타입 엔코더 <br> B 신호 입력| 19 | B1 |1번 채널 오픈컬렉터 타입 엔코더 <br> B 신호 입력   |
+| 10   |OCLS2    |2번 채널 오픈컬렉터 타입 엔코더 <br> 리밋 스위치  |  20 | OCLS1  | 1번 채널 오픈컬렉터 타입 엔코더 <br> 리밋 스위치| <br>
+[__SOURCE](5-optional-components/6-PROFIsafe-Board/README.md)
+# 5.6. 안전통신보드
+[__SOURCE](5-optional-components/6-PROFIsafe-Board/1-overview.md)
+# 6.1 개요
+
+Hi7 제어기에서 **'PROFIsafe 보드(BD671)'**를 활용하면 안전 관련 신호 처리를 수행할 수 있습니다. 이 보드는 PROFIsafe 통신 프로토콜을 기반으로 하여, 안전 신호를 표준 필드버스(예: PROFINET) 상에서 전송할 수 있도록 지원합니다.
+
+
+PROFIsafe는 PROFIBUS/PROFINET 네트워크 상에서 안전 관련 데이터(Safety Data)를 표준 데이터와 함께 전송할 수 있도록 하는 국제 안전 통신 표준입니다.
+
+<br>
+[__SOURCE](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
+# 6.2.1. 커넥터
+
+아래 그림은 옵션 안전 통신 보드(BD671)의 외부연결에 필요한 커넥터의 위치를 보여줍니다. 또한, 아래 표는 각 커넥터의 명칭, 용도를 기술합니다.
+
+![](../../_assets/그림_6.2_안전통신보드이미지.png)   
+그림 6.2-1 안전 통신 보드(BD671) 커넥터 배치   
+
+표 6.2-1 안전 통신 보드(BD671) 커넥터 명칭, 용도
+<table>
+<tbody>
+  <tr>
+    <td><strong>번호</strong></td>
+    <td><strong>명칭</strong></td>
+    <td><strong>용도</strong></td>
+    
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Status LED</td>
+    <td>EtherCAT, PROFIsafe 통신 Status LED </td>
+    
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>EtherCAT RJ45 커넥터 IN/OUT </td>
+    <td>내부 EtherCAT 통신용 커넥터</td>
+    
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>PROFIsafe RJ45 커넥터 </td>     
+    <td>외부 유저 PROFIsafe 통신용 </td>
+    
+  </tr>
+    <tr>
+    <td>D</td>
+    <td>백플레인 연결 커넥터 </td>     
+    <td>BD642(Safety) 보드와 통신 및 전원 공급 </td>
+    
+  </tr>
+</tbody>
+</table>
+
+
+표 6.2-2 A 파트의 Status LED 명칭, 용도
+<table>
+<tbody>
+  <tr>
+    <td><strong>명칭</strong></td>
+    <td><strong>M1 Status</strong></td>
+    <td><strong>Diagnosis LED</strong></td>
+    <td><strong>Maintenance LED</strong></td>
+    <td><strong>미삽</strong></td>
+    <td><strong>EtherCAT 진단 LED</strong></td>
+    
+  </tr>
+  <tr>
+    <td>LEDS1</td>
+    <td>GREEN (RUN)</td>
+    <td>ORANGE </td>
+    <td>YELLOW </td>
+    <td>- </td>
+    <td>GREEN (RUN) </td>
+    
+  </tr>
+  <tr>
+    <td>LEDS2</td>
+    <td>RED (ERROR)</td>
+    <td>-</td>
+    <td>- </td>
+    <td>- </td>
+    <td>RED(ERROR) </td>
+    
+  </tr>
+
+</tbody>
+</table>
+
+[__SOURCE](6-regular-inspection/README.md)
 # 6. 정기 점검
 
 제어기의 정기 점검은 고장의 발생을 최소화하고 성능을 지속적으로 유지하기
 위함이며, 정기 점검 작업시의 주의 사항 및 작업 내용을 설명합니다.
+
+[__SOURCE](6-regular-inspection/1-inspection-schedule.md)
 # 6.1. 점검 일정
 
 기본적으로 다음 그림과 같은 일정에 점검을 실시합니다. 정기 점검은 고장을 미연에 방지함과 제어기 및 로봇 본체를 오래 사용하더라도 안전성의 확보 및 정도를 계속 유지시키기 위함입니다. 정기점검은 절대적으로  필요한 일이며, 정상운전 중에도 필히 하여야 합니다.
@@ -4996,6 +5070,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 ![](../_assets/그림_6.1_점검_일정.png  )
 
 그림 6.1 점검 일정
+
+[__SOURCE](6-regular-inspection/2-regular-insp-general-cautions.md)
 # 6.2. 정기 점검 시 일반적 주의사항
 
 * 점검 작업은 당사가 실시한 로봇 트레이닝 센터의 수강을 수료한 사람이 하도록 하십시오.
@@ -5017,6 +5093,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 * 로봇과 제어기 점검을 동시에 하지 않도록 하십시오.
 
 * 점검 후에는 필히 시운전하여 로봇동작 확인 후 정상운전을 하십시오.
+
+[__SOURCE](6-regular-inspection/3-general-inspection.md)
 # 6.3. 일반 점검
 
 표 6-1 일상 점검
@@ -5071,6 +5149,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](6-regular-inspection/4-first-inspection-750-hour.md)
 # 6.4. 첫회 점검(750시간 점검)
 
 표 6-2 첫회 점검
@@ -5103,6 +5183,8 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </tr>
 </tbody>
 </table>
+
+[__SOURCE](6-regular-inspection/5-periodic-inspection.md)
 # 6.5. 주기적 점검
 
 표 6-3 주기 점검
@@ -5312,12 +5394,16 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   </tr>
 </tbody>
 </table>
+
+[__SOURCE](6-regular-inspection/6-long-vacation-inspection.md)
 # 6.6. 장기 휴가 시 점검
 
 장기 휴가의 경우 로봇 제어기의 전원을 내리기 전에 아래 사항을 점검하십시오.
 
 1. 메인보드에 있는 전지방전검지용 황색LED(BATLOW)가 점등되는지 확인하십시오. 전지에 이상이 있을 때 황색LED가 점등되며 이 때는 정격의 전지로 교환하여 주십시오. 전지에 이상이 있는 상태에서 제어기 입력 전원을 내리면 약 7일 후에는 보드 내의 각종 프로그램 / 정수 데이터가 지워져 버리므로 필히 HRView, USB Memory등을 사용하여 백업을 받아 놓으십시오.
 1. 제어기의 문이 잘 잠겨 있는지 확인하십시오.
+
+[__SOURCE](6-regular-inspection/7-repare-part-item.md)
 # 6.7. 보수 부품 항목
 
 각 부품들의 특성을 설명합니다.
@@ -5327,7 +5413,6 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 {% hint style="info" %}
 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
 {% endhint %}
-
 
 통상의 운전을 유지하기 위해서는 위 부품A-2, 부품A-3은 최소한의 필요한 부품이며 1 set이상을 준비하여 주십시오.
 
@@ -5426,7 +5511,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   <tr>
     <td>1</td>
     <td>모터 드라이브</td>
-    <td>H6D6X<br>H6D6A</td>
+    <td>H6AD6X<br>H6AD6A</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -5434,7 +5519,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   <tr>
     <td>2</td>
     <td>메인제어모듈</td>
-    <td>H6COM</td>
+    <td>H6COM-T</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td></td>
@@ -5442,7 +5527,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   <tr>
     <td>3</td>
     <td>티치펜던트</td>
-    <td>TP600</td>
+    <td>TP630</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td></td>
@@ -5450,7 +5535,7 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   <tr>
     <td>4</td>
     <td>전원공급모듈</td>
-    <td>H6PSM30<br>H6PSM15</td>
+    <td>H6APSM30<br>H6APSM15</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -5458,22 +5543,16 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
   <tr>
     <td rowspan="3">5</td>
     <td rowspan="3">보드</td>
-    <td>BD640</td>
+    <td>BD642</td>
     <td>현대로보틱스</td>
     <td>1</td>
-    <td>서보보드</td>
+    <td>서보안전보드</td>
   </tr>
   <tr>
-    <td>BD632</td>
+    <td>BD604</td>
     <td>현대로보틱스</td>
     <td>1</td>
-    <td>안전IO보드</td>
-  </tr>
-  <tr>
-    <td>BD631</td>
-    <td>현대로보틱스</td>
-    <td>1</td>
-    <td>안전EC보드</td>
+    <td>백플레인보드</td>
   </tr>
 </tbody>
 </table>
@@ -5607,12 +5686,18 @@ IO 및 기타 모듈의 종류는 다음과 같으며 원하는 동작에 맞게
 </table>
 
 ![](../_assets/6.7._보수_부품_항목-보존온도.png  )
+
+[__SOURCE](appendices/README.md)
 # 별첨
+
+[__SOURCE](appendices/rules-occupational-safety.md)
 # 산업안전보건기준에 관한 규칙 및 안전검사 고시
 
 당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
 
 "[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
+
+[__SOURCE](quality-assurance.md)
 # 품질보증
 
 "[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"

@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6a 제어기 보수 설명서](README.md)
+* [Hi7 제어기 보수 설명서](README.md)
 
 * [1. 안전](1-safety/README.md)
   * [1.1. 적용 표준](1-safety/1-applied-standard.md)
@@ -111,12 +111,9 @@
   * [5.5. 사용자 DIO (BD681)](5-optional-components/5-UserDIO/README.md)
     * [5.5.1. 개요](5-optional-components/5-UserDIO/1-overview.md)
     * [5.5.2. 하드웨어 정보](5-optional-components/5-UserDIO/2-HW-Inform.md)
-    
-
   * [5.6. 안전 통신 보드 (BD671))](5-optional-components/6-PROFIsafe-Board/README.md)
-    * [5.5.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
-    * [5.5.2. 하드웨어 정보](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
-
+    * [5.6.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
+    * [5.6.2. 하드웨어 정보](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
 
 * [6. 정기 점검](6-regular-inspection/README.md)
   * [6.1. 점검 일정](6-regular-inspection/1-inspection-schedule.md)

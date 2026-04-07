@@ -6,8 +6,8 @@
 <thead>
   <tr>
     <th colspan="2">&nbsp;&nbsp;&nbsp;<br>모델&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6a-N00-A0<br>Hi6a-N30-A0<br>Hi6a-N80-A0&nbsp;&nbsp;&nbsp;</th>
-    <th><br>Hi6a-N00U-A0<br>Hi6a-N30U-A0<br>Hi6a-N80U-A0</th>
+    <th><br>Hi7-N00-A0<br>Hi7-N30-A0<br>Hi7-N80-A0&nbsp;&nbsp;&nbsp;</th>
+    <th><br>Hi7-N00U-A0<br>Hi7-N30U-A0<br>Hi7-N80U-A0</th>
   </tr>
 </thead>
 <tbody>
@@ -136,7 +136,7 @@
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>중 량&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">표준 사양(TR 미포함)<br>Hi6a-N30(U): 80kg<br>Hi6a-N00(U): 80kg<br>Hi6a-N80(U): 90kg<br><br>옵션 사양(TR포함)<br>Hi6a-N30(U): 140kg<br>Hi6a-N00(U): 160kg<br>Hi6a-N80(U): 170kg</td>
+    <td colspan="2">표준 사양(TR 미포함)<br>Hi7-N30(U): 80kg<br>Hi7-N00(U): 80kg<br>Hi7-N80(U): 90kg<br><br>옵션 사양(TR포함)<br>Hi7-N30(U): 140kg<br>Hi7-N00(U): 160kg<br>Hi7-N80(U): 170kg</td>
   </tr>
 </tbody>
 </table>
@@ -156,42 +156,42 @@
 </thead>
 <tbody>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N30&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N30&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N00&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N00&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N80&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N80&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>220/380/400/415/440V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N30U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N30U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 4.4 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>15 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N00U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N00U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 7.8 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>30 A&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;&nbsp;&nbsp;<br>Hi6a-N80U&nbsp;&nbsp;&nbsp;</td>
+    <td>&nbsp;&nbsp;&nbsp;<br>Hi7-N80U&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>Max. 10.5 KVA&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>460/480V&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>50/60&nbsp;&nbsp;&nbsp;</td>

@@ -9,7 +9,7 @@ Wire Harness 결선도
 <table>
 <thead>
   <tr>
-    <th>&nbsp;&nbsp;&nbsp;<br>Hi6a-N Controller&nbsp;&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;&nbsp;<br>Hi7-N Controller&nbsp;&nbsp;&nbsp;</th>
     <th>&nbsp;&nbsp;&nbsp;<br>ROBOT&nbsp;&nbsp;&nbsp;</th>
   </tr>
 </thead>
@@ -50,4 +50,4 @@ Wire Harness 결선도
 {% endhint %}
 
 
-그림 3.6 로봇 본체와 제어기의 접속 (Hi6a-N\*\*(U))
+그림 3.6 로봇 본체와 제어기의 접속 (Hi7-N\*\*(U))

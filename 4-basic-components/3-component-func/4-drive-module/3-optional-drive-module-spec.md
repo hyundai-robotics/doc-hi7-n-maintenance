@@ -16,7 +16,7 @@
 </thead>
 <tbody>
   <tr>
-    <td>Hi6a 1축 드라이브모듈</td>
+    <td>Hi7 1축 드라이브모듈</td>
     <td>H6AD1</td>
   </tr>
 </tbody>
