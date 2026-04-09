@@ -1,2 +1,1 @@
-﻿# 5.4. Option Safety IO Module(BD680)
-
+# 5.4. 选项安全 IO 模块(BD680)

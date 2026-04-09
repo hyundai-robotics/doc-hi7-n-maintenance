@@ -1,1 +1,1 @@
-﻿# 2. Details of Specifications
+﻿# 2. 详细配置

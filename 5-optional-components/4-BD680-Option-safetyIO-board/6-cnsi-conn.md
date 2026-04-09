@@ -1,55 +1,54 @@
-﻿# 5.4.6. Safety Input Wiring
+# 5.4.6. 安全输入接线
 
 {% hint style="warning" %}
-When performing safety input wiring, ensure the controller power is turned OFF before starting the wiring work.
+在进行安全输入接线时，确保控制器电源在开始接线工作之前已关闭。
 {% endhint %}
 
-The figure below shows the actual appearance of the Optional Safety IO Module(BD680) and the location of the safety input connector(CNSI2) when viewed from the front.   
+下图显示了可选安全IO模块(BD680)的实际外观及安全输入连接器(CNSI2)的前视位置。  
 
 ![](../../_assets/BD680_전면사진_안전입력.png)  
-Figure 5.4.6-1 Optional Safety IO Module(BD680) – Physical View and Safety Input Connector(CNSI2) Location
+图5.4.6-1 可选安全IO模块(BD680) – 物理视图和安全输入连接器(CNSI2)位置
 
-The wiring for safety inputs differs depending on whether internal or external power is used and the type of signal(NPN/PNP). The following diagrams show the wiring configuration for each case.
+安全输入的接线根据使用内部或外部电源以及信号的类型(NPN/PNP)而有所不同。以下图示显示了每种情况的接线配置。
 
-(1) When Using Internal Power   
-* NPN-TYPE(: Active Low)   
-In the figure below, red represents A-Channel and blue represents B-Channel.
-A-Channel: When using internal power, connect pins 1–3 on connector CNSI2 as shown in the figure.
-B-Channel: When using internal power, connect pins 13–15 on connector CNSI2 as shown in the figure.
-For connection to external devices, refer to the wiring example below.
+(1) 使用内部电源时  
+* NPN-TYPE(: 主动低)  
+在下图中，红色代表A通道，蓝色代表B通道。
+A通道：使用内部电源时，如图所示连接CNSI2连接器的引脚1–3。
+B通道：使用内部电源时，如图所示连接CNSI2连接器的引脚13–15。
+有关连接外部设备的详细信息，请参阅下方的接线示例。
 
 ![](../../_assets/BD680_안전입력_내부전원_NPN.png)   
-Figure 5.4.6-2 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(NPN-TYPE)
+图5.4.6-2 可选安全IO模块(BD680) – 使用内部电源进行安全输入接线(NPN-TYPE)
 
-* PNP-TYPE(: Active High)   
-In the figure below, red represents A-Channel and blue represents B-Channel.
-A-Channel: When using internal power, connect pins 3–12 on connector CNSI2 as shown in the figure.
-B-Channel: When using internal power, connect pins 15–24 on connector CNSI2 as shown in the figure.
-For connection to external devices, refer to the wiring example below.
+* PNP-TYPE(: 主动高)  
+在下图中，红色代表A通道，蓝色代表B通道。
+A通道：使用内部电源时，如图所示连接CNSI2连接器的引脚3–12。
+B通道：使用内部电源时，如图所示连接CNSI2连接器的引脚15–24。
+有关连接外部设备的详细信息，请参阅下方的接线示例。
 
 ![](../../_assets/BD680_안전입력_내부전원_PNP.png)   
-Figure 5.4.6-3 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(PNP-TYPE)
+图5.4.6-3 可选安全IO模块(BD680) – 使用内部电源进行安全输入接线(PNP-TYPE)
 
 {% hint style="warning" %}
-Do not use the internal power as the power supply for external devices when connecting to them.
+连接外部设备时，请勿将内部电源用作外部设备的电源。
 {% endhint %}  
 
-(2) When Using External Power   
-* NPN-TYPE(: Active Low)  
-The red color in the figure represents A-Channel, and the blue color represents B-Channel.
-A-Channel: When using external power, do not connect pins 1 and 12 of connector CNSI2. Connect the external power EX_AV to pin 3.
-B-Channel: When using external power, do not connect pins 13 and 24 of connector CNSI2. Connect the external power EX_BV to pin 15.
-Refer to the wiring example below for connections to external devices.
+(2) 使用外部电源时  
+* NPN-TYPE(: 主动低)  
+图中的红色代表A通道，蓝色代表B通道。
+A通道：使用外部电源时，请勿连接CNSI2连接器的引脚1和12。将外部电源EX_AV连接到引脚3。
+B通道：使用外部电源时，请勿连接CNSI2连接器的引脚13和24。将外部电源EX_BV连接到引脚15。
+有关连接外部设备的详细信息，请参阅下方的接线示例。
 
 ![](../../_assets/BD680_안전입력_외부전원_NPN.png)   
-Figure 5.4.6-4 Wiring Diagram of Safety Inputs Using External Power(NPN-TYPE) for Option Safety I/O Module(BD680)
+图5.4.6-4 使用外部电源(NPN-TYPE)为可选安全I/O模块(BD680)的安全输入接线图
 
-* PNP-TYPE(: Active High)   
-he red color in the figure represents A-Channel, and the blue color represents B-Channel.
-A-Channel: When using external power, do not connect pins 1 and 12 of connector CNSI2. Connect the external power EX_AG to pin 3.
-B-Channel: When using external power, do not connect pins 13 and 24 of connector CNSI2. Connect the external power EX_BG to pin 15.
-Refer to the wiring example below for connections to external devices.
+* PNP-TYPE(: 主动高)  
+图中的红色代表A通道，蓝色代表B通道。
+A通道：使用外部电源时，请勿连接CNSI2连接器的引脚1和12。将外部电源EX_AG连接到引脚3。
+B通道：使用外部电源时，请勿连接CNSI2连接器的引脚13和24。将外部电源EX_BG连接到引脚15。
+有关连接外部设备的详细信息，请参阅下方的接线示例。
 
 ![](../../_assets/BD680_안전입력_외부전원_PNP.png)   
-Figure 5.4.6-5 Wiring Diagram of Safety Inputs Using External Power(PNP-TYPE) for Option Safety I/O Module(BD680)
-
+图5.4.6-5 使用外部电源(PNP-TYPE)为可选安全I/O模块(BD680)的安全输入接线图

@@ -1,13 +1,12 @@
-﻿# 6.2. General Cautions for Periodic Inspections
+﻿# 6.2. 定期检查的一般注意事项
 
-* The inspection work should be conducted by a person who has completed the courses implemented at the robot training center by our company. 
-* Before carrying out inspection works, check the parts, tools, drawings, etc. necessary for the work. 
-* Use the specialized replacement parts designated by our company. 
-* Turn off the power when inspecting the manipulator. 
-* When conducting works while keeping the door open, turn off the primary power and take precautions to prohibit dust, etc. to fly into the surrounding area. 
-* When required to touch the parts of the controller, you should take special care not to allow the IC to be destroyed by static electricity (Be careful also when contacting the connector). 
-* When performing periodic inspections while operating the manipulator, take precautions to prohibit anyone from entering inside the operation range. 
-* You should measure the voltage at a designated place and take precautions for electric shock and short-circuiting. 
-* Do not inspect the robot and the controller at the same time. 
-* After inspection, you must perform a trial-operation to check the operation of the robot before performing the normal operation. 
-
+* 检查工作应由完成我们公司在机器人培训中心实施的课程的人进行。 
+* 在进行检查工作之前，检查所需的零件、工具、图纸等。 
+* 使用我们公司指定的专用替换零件。 
+* 在检查操纵器时，请关闭电源。 
+* 在开门的情况下进行工作时，请关闭主电源，并采取措施防止灰尘等飞入周围区域。 
+* 当需要触摸控制器的部件时，您应特别小心，不要让IC由于静电而损坏（与连接器接触时也要小心）。 
+* 在操作操纵器时进行定期检查时，请采取措施禁止任何人进入操作范围内。 
+* 您应在指定位置测量电压，并采取防触电和短路的预防措施。 
+* 不要同时检查机器人和控制器。 
+* 检查后，必须进行试运行以检查机器人的操作，然后才能进行正常操作。

@@ -1,9 +1,9 @@
-﻿# 3.1.2. Checking of Various Name Plates
+﻿# 3.1.2. 检查各种名称牌
 
 ![](../../_assets/fig_1.1_safety_label.png  )<br>
-Figure 3.2 Controller’s Labels<br>
+图3.2 控制器的标签<br>
 
-Table 3-1 Label Type<br>
+表3-1 标签类型<br>
 ![](../../_assets/표3-1_라벨_종류-1_en.png  )
 
 ![](../../_assets/표3-1_라벨_종류-2.png  )
@@ -12,12 +12,9 @@ Table 3-1 Label Type<br>
 
 
 {% hint style="warning" %}
-Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
-safety symbols, name markings and wire markings or painting over them or blocking them 
-with a cover is prohibited. 
+任何损坏安全标签的行为，例如移动名称牌、警告标记、安全符号、名称标记和电线标记，或在其上涂漆或用覆盖物遮挡，都是禁止的。
 {% endhint %}
 
 {% hint style="info" %}
-Mark the installation and dangerous areas of the robot in a way that they can be 
-differentiated from other facilities and devices in terms of type, color and style. 
+以使机器人安装和危险区域在类型、颜色和样式上与其他设施和设备区别开来进行标记。
 {% endhint %}

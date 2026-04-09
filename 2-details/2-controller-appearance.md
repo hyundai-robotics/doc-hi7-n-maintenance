@@ -1,4 +1,4 @@
-﻿# 2.2. Exterior of the Controller
+# 2.2. 控制器的外观
 
 ![](../_assets/2.2._제어기_외관(Hi6a).png )<br>
-Figure 2.1 Front Exterior of the Controller<br>
+图2.1 控制器的前外观<br>

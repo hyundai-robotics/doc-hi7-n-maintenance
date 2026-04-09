@@ -1,6 +1,6 @@
-﻿# 3.3.1. Packing
+# 3.3.1. 包装
 
-* Attach the model name plate to the box. 
-* Protect all exposed connectors with a dust cap or polyvinyl. 
-* When the teach pendant is packaged in a box, use an air-filled cushioning to prevent the LCD from getting damaged due to external impact. 
-* Attach the waterproofed packing list to the outside of the box. 
+* 将型号铭牌固定在箱子上。
+* 用防尘盖或聚氯乙烯保护所有暴露的连接器。
+* 当教学挂件包装在盒子里时，使用充气缓冲材料以防止液晶显示屏因外部冲击而受损。
+* 将防水的装箱单贴在箱子外面。

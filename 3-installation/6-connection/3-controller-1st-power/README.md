@@ -1,9 +1,9 @@
-﻿# 3.6.3. Connectin of the Controller and Primary Power
+﻿# 3.6.3. 控制器与主电源的连接
 
-Check whether the power has been removed from the primary power and breaker (NFB). 
-In the case of a Hi7-N** controller, insert the power cable through the power inlet and then connect it to the breaker (NFB). 
-At this time, use a terminal receptable of an appropriate size for the end side of the primary power supply cable. 
+检查主电源和断路器（NFB）是否已断电。
+对于 Hi7-N** 控制器，通过电源入口插入电源电缆，然后将其连接到断路器（NFB）。
+此时，使用适当尺寸的端子接头连接主电源电缆的末端。
 
 ![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_en.png  )<br>
 ![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_2.png  )<br>
-Figure 3.7 Primary Power Connection Part of Hi7-N**(U) Controller<br>
+图3.7 Hi7-N**(U) 控制器的主电源连接部分<br>

@@ -1,9 +1,9 @@
-﻿# 4.3.2.1. Overview
+﻿# 4.3.2.1. 概述
 
-The Servo/Safety Module(BD642) performs both servo control and safety functions within the robot controller. The servo control function supports simultaneous control of up to eight axes, consisting of six primary robot axes and two auxiliary axes.
+伺服/安全模块(BD642) 在机器人控制器内同时执行伺服控制和安全功能。伺服控制功能支持对最多八个轴的同时控制，包括六个主要机器人轴和两个辅助轴。
 
-The servo control system is composed of several functional blocks. These include an input stage that receives feedback signals required for motor control(such as current sensor signals and position feedback signals), a processing unit consisting of an MCU and FPGA that executes the motor control algorithms(including position, velocity, torque, and current control) and a power control stage that controls and monitors the power devices used for servo operation, such as the IPM, rectifier diodes, DC link, and brake circuits.
+伺服控制系统由多个功能模块组成。这些模块包括接收电机控制所需反馈信号的输入阶段（例如电流传感器信号和位置反馈信号）、执行电机控制算法（包括位置、速度、扭矩和电流控制）的处理单元，由MCU和FPGA组成，以及控制和监视用于伺服操作的电源设备的功率控制阶段，如IPM、整流二极管、直流链接和刹车电路。
 
-In addition to motion control, the module provides the safety functions required by the robot controller. For safety implementation, the MCU is configured in a dual-channel architecture to ensure reliable processing of safety functions. This architecture supports Safe Torque Off (STO) handling as well as the processing of safety-related input and output signals.
+除了运动控制，模块还提供机器人控制器所需的安全功能。为确保安全功能的可靠处理，MCU配置为双通道架构。该架构支持安全扭矩关闭（STO）处理，以及安全相关输入和输出信号的处理。
 
-The module also provides communication and signal interfaces required for integration with other components of the robot controller system. These include interfaces for the T/P(Teach Pendant), BD671(PROFIsafe) board, Main COM, BD604(Backplane) board, BD680(Optional Safety I/O) board and BD6C3 (Power Distribution) board.
+该模块还提供与机器人控制器系统的其他组件集成所需的通信和信号接口。这些接口包括用于T/P（教学挂件）、BD671（PROFIsafe）板、主通信、BD604（背板）板、BD680（可选安全I/O）板和BD6C3（电源分配）板的接口。

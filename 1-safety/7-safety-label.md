@@ -1,18 +1,17 @@
-﻿# 1.7. Safety Labels
+﻿# 1.7. 安全标签
 
-Name plates, warning markings, safety symbols, etc. are attached on the inside and outside of the controller. Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited.<br> Mark the installation and dangerous areas of the robot in a way that they can be differentiated from other facilities and devices in terms of type, color and style. 
+名称牌、警告标记、安全符号等附在控制器的内外侧。任何损坏安全标签的行为，例如移动名称牌、警告标记、安全符号、名称标记和电线标记、在其上涂漆或用覆盖物遮挡，都被禁止。<br> 以能够在类型、颜色和样式上与其他设施和设备区分开的方式标记机器人的安装和危险区域。
 
 ![](../_assets/fig_1.1_safety_label.png)<br>
-Figure 1.1 Safety Lables<br>
+图 1.1 安全标签<br>
 
-Table 1-2 Safety Labels<br>
+表 1-2 安全标签<br>
 ![](../_assets/1.7._안전_라벨(Hi6)_en.png)<br>
 
 {% hint style="warning" %}
-Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
+任何损坏安全标签的行为，例如移动名称牌、警告标记、安全符号、名称标记和电线标记、在其上涂漆或用覆盖物遮挡，都被禁止。
 {% endhint %}
 
 {% hint style="info" %}
-Mark the installation and dangerous areas of the robot in a way that they can be 
-differentiated from other facilities and devices in terms of type, color and style.
+以能够在类型、颜色和样式上与其他设施和设备区分开的方式标记机器人的安装和危险区域。
 {% endhint %}

@@ -1,13 +1,11 @@
-﻿# 1.3. Safety Trainings
+﻿# 1.3. 安全培训
 
-In order to use the functions of the product effectively, you must fully understand the contents of the manual and then install, use and maintain the product properly. The users of the product are responsible for fully understanding and complying with robot-related safety laws in the area where the robot is installed and used, and also responsible for properly designing, installing, and operating safety devices to ensure the safety of users working in the robot system. 
+为了有效使用产品的功能，您必须完全理解手册的内容，然后正确安装、使用和维护产品。产品的用户有责任充分理解并遵守机器人相关的安全法律，确保在安装和使用机器人所在地区的安全，并负责正确设计、安装和操作安全设备，以确保在机器人系统中工作的用户的安全。
 
-* All the workers who install, use, and maintain the robot system must read the manual carefully and understand the contents completely. In particular, they must fully understand the safety cautions(![img](../_assets/삼각형1.png)).
-* Our company plans and implements the trainings for the installation, use and maintenance of the product. So, the product users and the workers must complete relevant training courses before using the product. 
-* The workers responsible for teaching and inspecting the robot must complete the robot use and 
-safety trainings before using the robot. The contents covered in the safety training courses include the following items. 
-  - The concept of safety. and the purpose and function of the safety devices 
-  - Procedures for safe handling of the robot 
-  - Performance and potential danger of the robot and robotic system 
-  - Items including the works related to specific applications of the robot 
-   
+* 所有安装、使用和维护机器人系统的工作人员必须仔细阅读手册并完全理解内容。特别是，他们必须充分理解安全注意事项(![img](../_assets/삼각형1.png))。
+* 我们公司计划并实施产品的安装、使用和维护培训。因此，产品用户和工作人员必须在使用产品之前完成相关培训课程。
+* 负责教授和检查机器人的工作人员必须在使用机器人之前完成机器人使用和安全培训。安全培训课程涵盖的内容包括以下项目。
+  - 安全的概念，以及安全设备的目的和功能
+  - 安全处理机器人的程序
+  - 机器人的性能和潜在危险及机器人系统
+  - 包括与机器人特定应用相关的工作的项目

@@ -1,5 +1,4 @@
-﻿# 1.14.3. Pneumatic / Hydraulic Systems
+# 1.14.3. 气动 / 液压系统
 
-* Special safety laws will be applied to the pneumatic and hydraulic systems.   
-* In this type of systems, as residual energy may remain even after the system is shut down, you should pay attention in particular. Before repairing the pneumatic or hydraulic systems, you must remove the pressure inside the devices. 
- 
+* 将对气动和液压系统应用特殊安全法律。  
+* 在这种类型的系统中，即使在系统关闭后，残余能量可能仍然存在，您应该特别注意。在修理气动或液压系统之前，您必须排除设备内部的压力。

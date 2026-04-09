@@ -1,70 +1,70 @@
-﻿# 5.4.3. Indicator Devices
+﻿# 5.4.3. 指示设备
 
-(1) Board TOP-side Indicators   
+(1) 板上顶部指示灯   
 
-The following figure shows the location of the indicator LEDs on the Option Safety IO Module(BD680). The table below describes the meaning of each indicator.
+下图显示了选项安全IO模块(BD680)上指示LED的位置。下表描述了每个指示灯的含义。
 
 ![](../../_assets/BD680_PCB_상태.png)   
-Figure 5.4.3-1 Layout of indicator LEDs on the Option Safety IO Module(BD680)
+图 5.4.3-1 选项安全IO模块(BD680)上指示LED的布局
 
-Table 5.4.3-1 Indicator description of the Option Safety IO Module(BD680)
+表 5.4.3-1 选项安全IO模块(BD680)的指示说明
 <table>
 <thead>
   <tr>
     <th><strong>No.</strong></th>
-    <th><strong>Name</strong></th>
-    <th><strong>Indication</strong></th>
-    <th><strong>Color</strong></th>
-    <th><strong>Normal Status</strong></th>
-    <th><strong>Abnormal / Action</strong></th>
+    <th><strong>名称</strong></th>
+    <th><strong>指示</strong></th>
+    <th><strong>颜色</strong></th>
+    <th><strong>正常状态</strong></th>
+    <th><strong>异常 / 操作</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>(1)</td>
     <td>LED1</td>
-    <td>Safety Output Channel A Status</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>安全输出通道A状态</td>
+    <td>黄色</td>
+    <td>开</td>
     <td>
-      Symptom: LED off
-      <br>Cause: A channel input power abnormal
-      <br>Action 1: Check A-channel input power(24V)
-      <br>Action 2: Check fuse(FS1)
+      症状: LED熄灭
+      <br>原因: A通道输入电源异常
+      <br>操作 1: 检查A通道输入电源(24V)
+      <br>操作 2: 检查保险丝(FS1)
     </td>
   </tr>
   <tr>
     <td>(2)</td>
     <td>LED2</td>
-    <td>Safety Output Channel B Status</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>安全输出通道B状态</td>
+    <td>黄色</td>
+    <td>开</td>
     <td>
-      Symptom: LED off
-      <br>Cause: B channel input power abnormal
-      <br>Action 1: Check B channel input power(24V)
-      <br>Action 2: Check fuse(FS2)
+      症状: LED熄灭
+      <br>原因: B通道输入电源异常
+      <br>操作 1: 检查B通道输入电源(24V)
+      <br>操作 2: 检查保险丝(FS2)
     </td>
 </table>
 </tbody>
 
-(2) Front Panel Indicators   
+(2) 前面板指示灯   
 
-The following figure shows the front panel indicators of the Option Safety I/O Module(BD680). The table below describes the function and meaning of each indicator.
+下图显示了选项安全I/O模块(BD680)的前面板指示灯。下表描述了每个指示灯的功能和含义。
 
 ![](../../_assets/BD680_전면표시장치.png)   
-Figure 5.4.3-2 Layout of Front Panel Indicators–Option Safety I/O Module(BD680)   
+图 5.4.3-2 前面板指示灯布局–选项安全I/O模块(BD680)   
 
-Table 5.4.3-2 Front Panel Indicator Description–Option Safety I/O Module(BD680) 
+表 5.4.3-2 前面板指示灯说明–选项安全I/O模块(BD680) 
 <table>
 <thead>
   <tr>
     <th><strong>No.</strong></th>
-    <th><strong>Name</strong></th>
-    <th><strong>Indication</strong></th>
-    <th><strong>Color</strong></th>
-    <th><strong>Display Status</strong></th>
-    <th><strong>Description / Action</strong></th>
+    <th><strong>名称</strong></th>
+    <th><strong>指示</strong></th>
+    <th><strong>颜色</strong></th>
+    <th><strong>显示状态</strong></th>
+    <th><strong>描述 / 操作</strong></th>
   </tr>
 </thead>
 <tbody>
@@ -74,38 +74,38 @@ Table 5.4.3-2 Front Panel Indicator Description–Option Safety I/O Module(BD680
     <td></td>
     <td></td>
     <td></td>
-    <td>Reserved</td>
+    <td>已保留</td>
   </tr>
   <tr>
     <td rowspan="2">(2)</td>
     <td>A_SOx<br>
         (x=1~8)</td>
-    <td>A-Channel Safety Output x status</td>
-    <td rowspan="2">GREEN</td>
-    <td rowspan="2">ON<br>OFF</td>
-    <td rowspan="2">Safety output x of each channel is ON.<br>
-                    Safety output x of each channel is OFF.</td>
+    <td>A通道安全输出x状态</td>
+    <td rowspan="2">绿色</td>
+    <td rowspan="2">开<br>关</td>
+    <td rowspan="2">每个通道的安全输出x为开。<br>
+                    每个通道的安全输出x为关。</td>
   </tr>
   <tr>
     <td>B_SOx<br>
         (x=1~8)</td>
-    <td>B-Channel Safety Output x status</td>
+    <td>B通道安全输出x状态</td>
   </tr>
 
   <tr>
     <td rowspan="2">(3)</td>
     <td>A_SIx<br>
         (x=1~8)</td>
-    <td>A-Channel Safety Input x status</td>
-    <td rowspan="2">GREEN </td>
-    <td rowspan="2">ON<br>OFF</td>
-    <td rowspan="2">Safety input x of each channel is ON.<br>
-                    Safety input x of each channel is OFF.</td>
+    <td>A通道安全输入x状态</td>
+    <td rowspan="2">绿色 </td>
+    <td rowspan="2">开<br>关</td>
+    <td rowspan="2">每个通道的安全输入x为开。<br>
+                    每个通道的安全输入x为关。</td>
   </tr>
   <tr>
     <td>B_SIx<br>
         (x=1~8)</td>
-    <td>B-Channel Safety Input x status</td>
+    <td>B通道安全输入x状态</td>
   </tr>
 </table>
 </tbody>

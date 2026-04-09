@@ -1,5 +1,4 @@
-﻿# 3.3. Transport of the Controller
+# 3.3. 运输控制器
 
-The following items describle the precautions to take in packing, transporting, and unpacking the Hi7 controller.<br>
-Rrefer to the robot maintenance manual for the matters related to the packing and transport 
-of the robot. 
+以下项目描述了包装、运输和拆卸 Hi7 控制器时需要采取的预防措施。<br>
+有关机器人包装和运输的事项，请参考机器人维护手册。

@@ -1,10 +1,7 @@
-﻿# 1.14. Safety Related to End Effctors  
+# 1.14. 与末端执行器相关的安全
 
 {% hint style="warning" %}
-When installing and operating end effectors, you must comply with ISO 10218-1:2018 in 
-applying, maintaining and operating them.  
+安装和操作末端执行器时，必须遵守 ISO 10218-1:2018 的要求，进行应用、维护和操作。  
 {% endhint %}
 
-
-Refer to the maintenance manual of each robot for detailed specifications regarding the installation of 
-end effectors. 
+有关末端执行器安装的详细规格，请参考每个机器人的维护手册。

@@ -1,34 +1,34 @@
-﻿# 5.3.2. Communication Module (of Crevis) 
+# 5.3.2. 通信模块 (of Crevis)
 
-The types of communication modules are as shown below and can be used according to the desired communication. 
+通信模块的类型如下所示，可以根据所需的通信进行使用。
 
-Table 5-8 Communication Module(of Crevis)
+表 5-8 通信模块 (of Crevis)
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>No.</strong></p></td>
-<td><p><strong>Model name</strong></p></td>
-<td><p><strong>Specification</strong></p></td>
+<td><p><strong>编号</strong></p></td>
+<td><p><strong>型号名称</strong></p></td>
+<td><p><strong>规格</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
 <td><p>M9212</p></td>
-<td><p>DeviceNet Network Adapter</p></td>
+<td><p>DeviceNet 网络适配器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
 <td><p>M9287</p></td>
-<td><p>ProfiNet Network Adapter</p></td>
+<td><p>ProfiNet 网络适配器</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
 <td><p>M9289</p></td>
-<td><p>ModbusTCP/UDP, EthernetIP Network Adapter</p></td>
+<td><p>ModbusTCP/UDP, EthernetIP 网络适配器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
 <td><p>M9386</p></td>
-<td><p>EtherCAT ID Network Adapter, 1452 bytes</p></td>
+<td><p>EtherCAT ID 网络适配器, 1452 字节</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,18 +1,14 @@
-﻿# 1.13.2. Safety Measures When Maintaining and Inspecting the Robot System and Manipulator 
+﻿# 1.13.2. 维护和检查机器人系统与操作器时的安全措施
 
-Observe  the  following  safety  measures  when  maintaining  and  inspecting  the  robot  system  and manipulator. 
-* Refer to safety measures for the maintenance and inspection of the controller. 
-* When maintaining and inspecting the robot system and manipulator, proceed with the work according to the instructed procedures. 
-* Must cut off the main power of the controller. In order to prevent other workers from powering it up again, put a warning marking such as [Power-On Prohibited] on the primary power supply.   
+在维护和检查机器人系统与操作器时，请遵守以下安全措施。  
+* 参考控制器的维护和检查安全措施。  
+* 在维护和检查机器人系统与操作器时，请按照指示的程序进行工作。  
+* 必须切断控制器的主电源。为了防止其他工人再次通电，请在主电源上贴上如 [禁止通电] 的警告标记。  
 
 {% hint style="info" %}
-During maintenance and inspection of the manipulator, the robot arm may fall, or there 
-could be a different type of danger. So, you must proceed with the work according to the 
-instructed procedures.
+在维护和检查操作器时，机器人手臂可能会掉落，或可能存在其他类型的危险。因此，您必须按照指示的程序进行工作。
 {% endhint %}
 
 {% hint style="info" %}
-When moving the axis of the robot without driving force applied, there is a risk of the axis 
-dropping due to gravity and also an additional risk due to the release of the brake system. 
-So, you must proceed with the work according to the instructed procedures.
+在没有施加驱动力的情况下移动机器人轴时，存在由于重力导致轴下落的风险，以及由于制动系统释放引发的额外风险。因此，您必须按照指示的程序进行工作。
 {% endhint %}

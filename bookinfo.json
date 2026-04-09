@@ -1,9 +1,9 @@
 ﻿{
-    "langCode": "en",
-    "series": "Hi7-N Controller",
-    "title": "Maintenance Manual",
-    "publisher": "HD Hyundai Robotics",
-    "tocTitle": "Contents",
+    "langCode": "zh",
+    "series": "Hi7-N 控制器",
+    "title": "维护手册",
+    "publisher": "HD现代机器人",
+    "tocTitle": "内容",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
-    "docId": "HI7NMAINTENANCE_EN_001"
+    "docId": "HI7NMAINTENANCE_ZH_001"
 }

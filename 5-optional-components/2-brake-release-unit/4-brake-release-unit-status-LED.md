@@ -1,62 +1,62 @@
-﻿# 5.2.4. Brake Release Unit Status Display LEDs
-The LEDs for displaying the status of the brake release unit are as shown in Figure 5.3, and their individual usage and operation status are as shown in Table 5-6 below.
+# 5.2.4. 刹车释放单元状态显示 LED
+显示刹车释放单元状态的 LED 如图 5.3 所示，它们的具体使用情况和操作状态如下表 5-6 所示。
 
-Table 5--6 Usage and Operation of the LEDs for the Status of the Brake Release Unit
+Table 5--6 刹车释放单元状态的 LED 使用和操作
 
 
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Usage</th>
-    <th>LED On operation</th>
+    <th>名称</th>
+    <th>使用情况</th>
+    <th>LED 开启操作</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Enable</td>
-    <td>Checking by pressing the Enable switch</td>
-    <td>When the Enable switch is pressed,</br>the yellow Enable LED will be turned on.</td>
+    <td>启用</td>
+    <td>通过按下启用开关进行检查</td>
+    <td>当按下启用开关时，</br>黄色启用 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D1</td>
-    <td>Checking by pressing the switch for axis 1</td>
-    <td>When the switch for axis 1 is pressed, the green D1 LED will be turned on.</td>
+    <td>通过按下轴 1 的开关进行检查</td>
+    <td>当按下轴 1 的开关时，绿色 D1 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D2</td>
-    <td>Checking by pressing the switch for axis 2</td>
-    <td>When the switch for axis 2 is pressed, the green D2 LED will be turned on.</td>
+    <td>通过按下轴 2 的开关进行检查</td>
+    <td>当按下轴 2 的开关时，绿色 D2 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D3</td>
-    <td>Checking by pressing the switch for axis 3</td>
-    <td>When the switch for axis 3 is pressed, the green D3 LED will be turned on.</td>
+    <td>通过按下轴 3 的开关进行检查</td>
+    <td>当按下轴 3 的开关时，绿色 D3 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D4</td>
-    <td>Checking by pressing the switch for axis 4</td>
-    <td>When the switch for axis 4 is pressed, the green D4 LED will be turned on.</td>
+    <td>通过按下轴 4 的开关进行检查</td>
+    <td>当按下轴 4 的开关时，绿色 D4 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D5</td>
-    <td>Checking by pressing the switch for axis 5</td>
-    <td>When the switch for axis 5 is pressed, the green D5 LED will be turned on.</td>
+    <td>通过按下轴 5 的开关进行检查</td>
+    <td>当按下轴 5 的开关时，绿色 D5 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D6</td>
-    <td>Checking by pressing the switch for axis 6</td>
-    <td>When the switch for axis 6 is pressed, the green D6 LED will be turned on.</td>
+    <td>通过按下轴 6 的开关进行检查</td>
+    <td>当按下轴 6 的开关时，绿色 D6 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D7</td>
-    <td>Checking by pressing the switch for axis 7</td>
-    <td>When the switch for axis 7 is pressed, the green D7 LED will be turned on.</td>
+    <td>通过按下轴 7 的开关进行检查</td>
+    <td>当按下轴 7 的开关时，绿色 D7 LED 将亮起。</td>
   </tr>
   <tr>
     <td>D8</td>
-    <td>Checking by pressing the switch for axis 8</td>
-    <td>When the switch for axis 8 is pressed, the green D8 LED will be turned on.</td>
+    <td>通过按下轴 8 的开关进行检查</td>
+    <td>当按下轴 8 的开关时，绿色 D8 LED 将亮起。</td>
   </tr>
 </tbody>
 </table>

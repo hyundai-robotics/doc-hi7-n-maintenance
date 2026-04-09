@@ -1,52 +1,52 @@
-﻿# 4.3.2.5. Safety Output Wiring
+# 4.3.2.5. 安全输出接线
 
 {% hint style="warning" %}
-When performing safety output wiring, ensure that the controller power is turned OFF before starting the wiring work.
+在进行安全输出接线时，确保在开始接线工作之前将控制器电源关闭。
 {% endhint %}
 
-The figure below shows a photograph of the Servo/Safety Module(BD642) and the location of the safety output connector(CNSO1) as viewed from the front during actual installation.
+下图显示了伺服/安全模块（BD642）的照片及其安全输出连接器（CNSO1）的安装位置，从前面观察实际安装时的情况。
 
 ![](../../../_assets/BD642_전면사진_안전출력.png)<br>
-Figure 4.3.2.5-1 Photograph of the Servo/Safety Module(BD642) and Location of the Safety Output Connector(CNSO1)
+图 4.3.2.5-1 伺服/安全模块（BD642）及安全输出连接器（CNSO1）的位置照片
 
-When wiring the safety outputs, the wiring method differs depending on whether an internal power supply or an external power supply is used. It also varies according to the NPN or PNP type configuration.
-The following figures show the wiring examples for each case.
+在接线安全输出时，接线方法取决于使用内部电源还是外部电源。它还根据 NPN 或 PNP 类型配置有所不同。
+以下图示展示了各情况下的接线示例。
 
-(1) When Using the Internal Power Supply   
-* NPN-TYPE(: Active Low)   
-In the figure below, red indicates the A channel and blue indicates the B channel.
-When using the internal power supply for the A channel, connect pins 1 and 2 of connector CNSO1 as shown in the figure below.
-When using the internal power supply for the B channel, connect pins 3 and 4 of connector CNSO1 as shown in the figure below.
-For connection to external devices, refer to the wiring example below.
+(1) 使用内部电源时   
+* NPN-TYPE(: 有效低)   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+当 A 通道使用内部电源时，请按照下图所示连接连接器 CNSO1 的 1 和 2 针。
+当 B 通道使用内部电源时，请按照下图所示连接连接器 CNSO1 的 3 和 4 针。
+有关连接到外部设备，请参考下面的接线示例。
 
 ![](../../../_assets/BD642_안전출력_내부전원_NPN.png)   
-Figure 4.3.2.5-2 Safety Output Wiring Diagram (Internal Power Supply, NPN Type) – Servo/Safety Module(BD642)   
+图 4.3.2.5-2 安全输出接线图（内部电源，NPN 类型）– 伺服/安全模块（BD642）   
 
-* PNP-TYPE(: Active High)   
-In the figure below, red indicates the A channel, and blue indicates the B channel.
-When using the internal power supply for the A channel, connect pins 5 and 6 of connector CNSO1 as shown in the figure below.
-When using the internal power supply for the B channel, connect pins 7 and 8 of connector CNSO1 as shown in the figure below.
-For connection to external devices, refer to the wiring example below.
+* PNP-TYPE(: 有效高)   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+当 A 通道使用内部电源时，请按照下图所示连接连接器 CNSO1 的 5 和 6 针。
+当 B 通道使用内部电源时，请按照下图所示连接连接器 CNSO1 的 7 和 8 针。
+有关连接到外部设备，请参考下面的接线示例。
 
 ![](../../../_assets/BD642_안전출력_내부전원_PNP.png)   
-Figure 4.3.2.5-3 Safety Output Wiring Diagram (Internal Power Supply, PNP Type) – Servo/Safety Module(BD642)   
+图 4.3.2.5-3 安全输出接线图（内部电源，PNP 类型）– 伺服/安全模块（BD642）   
 
-(2) When Using an External Power Supply   
-* NPN-TYPE(: Active Low)   
-In the figure below, red indicates the A channel, and blue indicates the B channel.
-Pins 1, 4, 5 and 8 of connector CNSO1 must not be connected.
-When using an external power supply for the A channel, connect EX_AG (GND) to pin 2 of connector CNSO1 as shown in the figure below.
-When using an external power supply for the B channel, connect EX_BG (GND) to pin 3 of connector CNSO1 as shown in the figure below.
-For connection to external devices, refer to the wiring example shown below.
+(2) 使用外部电源时   
+* NPN-TYPE(: 有效低)   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+连接器 CNSO1 的 1、4、5 和 8 针不得连接。
+当 A 通道使用外部电源时，请按照下图所示将 EX_AG (GND) 连接到连接器 CNSO1 的 2 针。
+当 B 通道使用外部电源时，请按照下图所示将 EX_BG (GND) 连接到连接器 CNSO1 的 3 针。
+有关连接到外部设备，请参考下面的接线示例。
 
 ![](../../../_assets/BD642_안전출력_외부전원_NPN.png)   
-Figure 4.3.2.5-4 Safety Output Wiring Diagram(External Power Supply, NPN Type)–Servo/Safety Module(BD642)   
+图 4.3.2.5-4 安全输出接线图（外部电源，NPN 类型）– 伺服/安全模块（BD642）   
 
-* PNP-TYPE(: Active High)   
-In the figure below, red indicates the A channel, and blue indicates the B channel.
-When using an external power supply for the A channel, connect EX_AV(24V) to pin 2 of connector CNSO1, as shown in the figure below.
-When using an external power supply for the B channel, connect EX_BV(24V) to pin 3 of connector CNSO1, as shown in the figure below.
-For connection to external devices, refer to the wiring example shown below.
+* PNP-TYPE(: 有效高)   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+当 A 通道使用外部电源时，请按照下图所示将 EX_AV (24V) 连接到连接器 CNSO1 的 2 针。
+当 B 通道使用外部电源时，请按照下图所示将 EX_BV (24V) 连接到连接器 CNSO1 的 3 针。
+有关连接到外部设备的参考接线示例，请参见下面的接线示例。
 
 ![](../../../_assets/BD642_안전출력_외부전원_PNP.png)   
-Figure 4.3.2.5-5 Safety Output Wiring Diagram(External Power Supply, PNP Type)–Servo/Safety Module(BD642)
+图 4.3.2.5-5 安全输出接线图（外部电源，PNP 类型）– 伺服/安全模块（BD642）

@@ -1,43 +1,43 @@
-﻿# 4.3.5.1. H6PSM and Power Distribution Board(BD6C3)
+# 4.3.5.1. H6PSM 和电源分配板(BD6C3)
 
-The H6PSM (Hi7-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
+H6PSM (Hi7-N 控制器电源模块) 模块负责控制器供电的打开、关闭和分配。以下图示展示了具有多种连接器和保险丝的电气模块的内部和外部结构。
 
 ![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부_en.png  )<br>
-Figure 4.34 Exterior of H6PSM (Hi7-N Controller Power Supply Module)<br>
+图 4.34 H6PSM (Hi7-N 控制器电源模块) 外部结构<br>
 
-The following figure shows the power system diagram for the AC control power related to the opening and closing of the 3-phase AC power for the motor power, the generation of the brake power, and the driving of the fan. The diagram in the figure also shows the power distribution, such as the SMPS power for the DC power supply to the control module. A circuit breaker (CP) or fuse is connected to each power to protect individual circuits against overcurrent. 
+下图显示了与电动机电源的三相交流电的开启和关闭、制动功率的生成以及风扇驱动相关的交流控制电源的电力系统图。图中的示意图还显示了电源分配，例如控制模块的直流电源的 SMPS 电源。每个电源都有一个断路器 (CP) 或保险丝，以保护各个电路免遭过电流的影响。
 
 ![](../../../_assets/그림_4.27_Hi6a-N_제어기의_전원계통_en.png)<br>
-Figure 4.35 Power System of the Hi7-N Controller 
+图 4.35 Hi7-N 控制器的电力系统 
 
-Table 4-35 Types and Usage of the Fuses of the Electronic Module 
+表 4-35 电子模块保险丝的类型和使用 
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Function</th>
-    <th>Specification</th>
+    <th>名称</th>
+    <th>功能</th>
+    <th>规格</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>F1, F2, F3</td>
-    <td>Fuse for overcurrent protection of control power(AC 220V)</td>
-    <td>AC220V 8A</td>
+    <td>控制电源的过电流保护保险丝(交流220V)</td>
+    <td>交流220V 8A</td>
   </tr>
   <tr>
     <td>FS17</td>
-    <td>Fuse for overcurrent protection of CMDCFAN and DCFAN2–5 GND</td>
+    <td>CMDCFAN 和 DCFAN2–5 GND 的过电流保护保险丝</td>
     <td>7VAC/60VDC 7A</td>
   </tr>
   <tr>
     <td>FS18</td>
-    <td>Fuse for overcurrent protection of DCFAN2–5</td>
+    <td>DCFAN2–5 的过电流保护保险丝</td>
     <td>125VAC/125VDC 6.3A</td>
   </tr>
   <tr>
     <td>FS19</td>
-    <td>Fuse for overcurrent protection of the DC fan for control module cooling</td>
+    <td>用于控制模块散热的直流风扇的过电流保护保险丝</td>
     <td>125VAC/125VDC 0.315A</td>
   </tr>
 </tbody>

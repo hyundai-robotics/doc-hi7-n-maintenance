@@ -1,19 +1,18 @@
-﻿# 1.8.2. Other Related Functions
-Required to fully understand the following items and take actions if a person is pinched due to an accident caused by the arm of the robot. 
+# 1.8.2. 其他相关功能
+了解以下项目并在机器人手臂引起的事故中如果有人被夹住时采取行动是必要的。
 
-* Release of the manual brake  
+* 手动刹车的释放
 
 {% hint style="danger" %}
-Considering that additional problems may occur due to gravity or brake release, you must take a measure, before carrying out works, such as using a rope and crane that are to used for transporation of individual robots to prevent the brake from running down or additional accidents from taking place during the release of the brake.
+考虑到由于重力或刹车释放可能发生额外问题，您必须在进行工作之前采取措施，例如使用用于运输单个机器人的绳索和起重机，以防止刹车在释放时下滑或发生额外事故。
 {% endhint %}
 
-  - After removing power from the controller, connect the brake release unit to the designated connector of the robot or the internal board connector of the controller and then release the manual brake for each axis as needed. 
-  - Refer to the maintenance manual of each robot for the information on individual axes of each robot, and for the designated transport equipment (eg, rope, crane) for each robot. 
+  - 在从控制器上断开电源后，将刹车释放单元连接到机器人的指定连接器或控制器的内部板连接器，然后根据需要释放每个轴的手动刹车。
+  - 有关每个机器人的各个轴的信息以及每个机器人的指定运输设备（例如，绳索、起重机），请参见每个机器人的维护手册。
 
-When the robot is stopped by the limit switch, it is possible to change the position by jogging the robot with the Teach Pendant in the constant setting mode. After designating the soft limit according to the site situation, make sure that it is installed by a trained worker. 
+当机器人被限位开关停止时，可以在常量设置模式下通过教学 pendant 来慢慢移动机器人。根据现场情况指定软限制后，确保由经过培训的工人进行安装。
 
 {% hint style="info" %}
-Our company is not responsible if the jogging operation does not work due to the failure of the hardware limit switch.  
-You must check it periodically. For the measure to take in case of a failure, please refer to the troubleshooting manual. 
+如果由于硬件限位开关的故障，慢慢移动操作无法正常工作，我公司不负责。  
+您必须定期检查。有关故障时采取的措施，请参阅故障排除手册。
 {% endhint %}
-

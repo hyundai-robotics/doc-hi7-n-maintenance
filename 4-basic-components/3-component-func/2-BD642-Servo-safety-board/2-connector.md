@@ -1,114 +1,114 @@
-﻿# 4.3.2.2. Connectors
+# 4.3.2.2. 连接器
 
-The figure below shows the locations of the connectors required for external connections of the Servo/Safety Module(BD642). The table below describes the name and function of each connector.
+下图显示了Servo/Safety Module(BD642)外部连接所需连接器的位置。下表描述了每个连接器的名称和功能。
 
 ![](../../../_assets/BD642_PCB_커넥터명.png)<br>
-Figure 4.3.2.2-1 Connector Layout of the Servo/Safety Module(BD642)
+图4.3.2.2-1 Servo/Safety Module(BD642)的连接器布局
 
-Table 4.3.2.2-1 Connector Names, Functions, and External Connection Devices of the Servo/Safety Module(BD642)
+表4.3.2.2-1 Servo/Safety Module(BD642)的连接器名称、功能和外部连接设备
 <table>
 <thead>
   <tr>
-    <th><strong>No.</strong></th>
-    <th><strong>Connector</strong></th>
-    <th><strong>Function</strong></th>
-    <th><strong>Ext. Device</strong></th>
+    <th><strong>编号</strong></th>
+    <th><strong>连接器</strong></th>
+    <th><strong>功能</strong></th>
+    <th><strong>外部设备</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>A</td>
     <td>J4</td>
-    <td>EtherCAT Communication interface</td>
+    <td>EtherCAT通信接口</td>
     <td>Hi6COM/LAN4</td>
   </tr>
   <tr>
     <td>B</td>
     <td>CNSO1</td>
-    <td>Safety Output Terminal</td>
-    <td>External Device</td>
+    <td>安全输出端子</td>
+    <td>外部设备</td>
   </tr>
   <tr>
     <td>C</td>
     <td>CNSI1</td>
-    <td>Safety Input Terminal</td>
-    <td>External Device</td>
+    <td>安全输入端子</td>
+    <td>外部设备</td>
   </tr>
   <tr>
     <td>D</td>
     <td>CNEM</td>
-    <td>External emergency switch interface</td>
-    <td>Emergency switch</td>
+    <td>外部紧急开关接口</td>
+    <td>紧急开关</td>
   </tr>
   <tr>
     <td>E</td>
     <td>CNTP</td>
-    <td>Teach pendant interface (power, emergency stop, mode switch, enable switch)</td>
-    <td>Connector CNRTP</td>
+    <td>教学挂件接口（电源、紧急停机、模式开关、使能开关）</td>
+    <td>连接器CNRTP</td>
   </tr>
   <tr>
     <td>F</td>
     <td>CNMC</td>
-    <td>Magnet Contact I/O signal</td>
-    <td>Power Distribution Board(BD6C3) CNMC</td>
+    <td>磁接触I/O信号</td>
+    <td>电源分配板(BD6C3) CNMC</td>
   </tr>
   <tr>
     <td>G</td>
     <td>CNEN8</td>
-    <td>Auxiliary axis 8 encoder signal</td>
-    <td>Connector AEC2</td>
+    <td>辅助轴8编码器信号</td>
+    <td>连接器AEC2</td>
   </tr>
   <tr>
     <td>H</td>
     <td>CNEN7</td>
-    <td>Auxiliary axis 7 encoder signal</td>
-    <td>Connector AEC1</td>
+    <td>辅助轴7编码器信号</td>
+    <td>连接器AEC1</td>
   </tr>
   <tr>
     <td>J</td>
     <td>CNEN46</td>
-    <td>Axis 4~6 encoder signals</td>
-    <td>Connector CEC1</td>
+    <td>轴4~6编码器信号</td>
+    <td>连接器CEC1</td>
   </tr>
   <tr>
     <td>K</td>
     <td>CNEN13</td>
-    <td>Axis 1~3 encoder signals</td>
-    <td>Connector CEC1</td>
+    <td>轴1~3编码器信号</td>
+    <td>连接器CEC1</td>
   </tr>
   <tr>
     <td>M</td>
     <td>CNBRK78</td>
-    <td>Auxiliary axis 7, 8 brake signals</td>
-    <td>Connectors AMC1, AMC2</td>
+    <td>辅助轴7、8制动信号</td>
+    <td>连接器AMC1、AMC2</td>
   </tr>
   <tr>
     <td>N</td>
     <td>CNBRK16</td>
-    <td>Axis 1~6 brake signals</td>
-    <td>Connectors CMC1, CMC2</td>
+    <td>轴1~6制动信号</td>
+    <td>连接器CMC1、CMC2</td>
   </tr>
   <tr>
     <td>P</td>
     <td>J12</td>
-    <td>Brake power supply</td>
-    <td>Power Distribution Board(BD6C3) CNOBK</td>
+    <td>制动电源</td>
+    <td>电源分配板(BD6C3) CNOBK</td>
   </tr>
   <tr>
     <td>Q</td>
     <td>CNBS1</td>
-    <td>Drive interface signals</td>
-    <td>Backplane Board(BD604) CNBS1</td>
+    <td>驱动接口信号</td>
+    <td>背板(BD604) CNBS1</td>
   </tr>
   <tr>
     <td>R</td>
     <td>CNBS2</td>
-    <td>Drive interface signals</td>
-    <td>Backplane Board(BD604) CNBS2</td>
+    <td>驱动接口信号</td>
+    <td>背板(BD604) CNBS2</td>
   </tr>
 </tbody>
 </table>
       
 {% hint style="info" %}
-If safety-related inputs are connected and activated, refer to “1.11 Safety Precautions for Robot Operation” and verify that the functions operate correctly.
+如果连接并激活与安全相关的输入，请参阅“1.11 机器人的安全操作注意事项”，并验证功能是否正常。
 {% endhint %}

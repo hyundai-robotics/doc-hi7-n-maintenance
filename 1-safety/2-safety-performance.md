@@ -1,22 +1,22 @@
-﻿# 1.2. Safety Performance
+﻿# 1.2. 安全性能
 
-The performance of the industrial robot's safety modules is as follows.
+工业机器人安全模块的性能如下。
 
-The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety I/O, PROFIsafe) is as follows.
+SafeSpace2.0的紧急停止和外部设备接口（基本安全I/O，PROFIsafe）的安全性能如下。
 
-Table 1-1 Safety Performance of Safety Modules
-|            **Item**          | **Safety Performance** |         **Applicable standards**         |
+表 1-1 安全模块的安全性能
+|            **项目**          | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
-|           Category           |     4     |        ISO 13849-1        |
-|    PL (Performance Level)    |     e     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     3     | IEC 61508/62061/61800-5-2 |
+|           类别           |     4     |        ISO 13849-1        |
+|    PL (性能等级)    |     e     |        ISO 13849-1        |
 |    		PFH    			   |1.34217E-08|        ISO 13849-1        |
 
-The safety performance of other safety functions is as follows.
-|            **Item**          | **Safety Performance** |         **Applicable standards**         |
+其他安全功能的安全性能如下。
+|            **项目**          | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
-|           Category           |     3     |        ISO 13849-1        |
-|    PL (Performance Level)    |     d     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     2     | IEC 61508/62061/61800-5-2 |
+|           类别           |     3     |        ISO 13849-1        |
+|    PL (性能等级)    |     d     |        ISO 13849-1        |

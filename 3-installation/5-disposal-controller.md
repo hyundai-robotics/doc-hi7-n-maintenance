@@ -1,3 +1,3 @@
-﻿# 3.5. Discarding of the Controller
+# 3.5. 控制器的废弃
 
-In order to ensure user safety and protect the environment, certain parts should be managed and discarded according to specified methods, and if they contain industrial waste materials, they must never be discarded together with general industrial or household waste. When discarding all or part of the robot system, you must comply with the relevant national or local regulations and laws. For details on the discarding and disposal of the product, please contact our customer support team. 
+为了确保用户安全并保护环境，某些部件应根据指定的方法进行管理和废弃，如果它们含有工业废物材料，绝不能与一般工业或家庭废物一同废弃。在废弃整个或部分机器人系统时，必须遵守相关的国家或地方法规和法律。有关产品废弃和处理的详细信息，请与我们的客户支持团队联系。

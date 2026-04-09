@@ -1,14 +1,14 @@
-﻿# 6.5. Cyclic Inspections 
+# 6.5. 循环检查
 
-Table 6-3 Cyclic Inspections 
+Table 6-3 循环检查 
 <table>
 <thead>
   <tr>
-    <th rowspan="2">No.</th>
-    <th colspan="3">Cycle<br>(Months)</th>
-    <th rowspan="2">Elements to Inspect</th>
-    <th rowspan="2">Items to Inspect</th>
-    <th rowspan="2">Remarks</th>
+    <th rowspan="2">编号</th>
+    <th colspan="3">周期<br>(月份)</th>
+    <th rowspan="2">检查的元素</th>
+    <th rowspan="2">检查的项目</th>
+    <th rowspan="2">备注</th>
   </tr>
   <tr>
     <th>3</th>
@@ -22,8 +22,8 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>Packing of the door</td>
-    <td>Checking for deformation and detachment</td>
+    <td>门的包装</td>
+    <td>检查变形和脱落</td>
     <td></td>
   </tr>
   <tr>
@@ -31,20 +31,20 @@ Table 6-3 Cyclic Inspections
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4"> Back</td>
-    <td>Checking dust on and rotation of the cooling fan blade part</td>
+    <td rowspan="4"> 后盖</td>
+    <td>检查冷却风扇叶片部分的灰尘和旋转</td>
     <td></td>
   </tr>
   <tr>
-    <td>Checking the regenerative discharge resistor for damage and dust </td>
+    <td>检查再生放电电阻器的损坏和灰尘 </td>
     <td></td>
   </tr>
   <tr>
-    <td>Checking the transformer room for any heat using the sense of touch, and then cleaning the room</td>
+    <td>用触觉检查变压器房间的热量，然后清洁房间</td>
     <td></td>
   </tr>
   <tr>
-    <td>Checking the transformer terminal block for any loosening and damage  </td>
+    <td>检查变压器端子块是否有松动和损坏</td>
     <td></td>
   </tr>
   <tr>
@@ -52,8 +52,8 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Wire harness</td>
-    <td>Checking the connectors for any loosening and damage</td>
+    <td>线束</td>
+    <td>检查连接器是否松动和损坏</td>
     <td></td>
   </tr>
   <tr>
@@ -61,8 +61,8 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>Motor drive</td>
-    <td>Checking the connectors and terminals for any loosening and damage </td>
+    <td>电机驱动</td>
+    <td>检查连接器和端子是否松动和损坏 </td>
     <td></td>
   </tr>
   <tr>
@@ -70,8 +70,8 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>Connectors of each board</td>
-    <td>Checking for any loosening using the sense of touch </td>
+    <td>各板的连接器</td>
+    <td>用触觉检查是否松动 </td>
     <td></td>
   </tr>
   <tr>
@@ -79,8 +79,8 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Operation panel</td>
-    <td>Checking the status of buttons and switches</td>
+    <td>操作面板</td>
+    <td>检查按钮和开关的状态</td>
     <td></td>
   </tr>
   <tr>
@@ -88,8 +88,8 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td> The whole controller</td>
-    <td>Cleaning dust</td>
+    <td> 整个控制器</td>
+    <td>清洁灰尘</td>
     <td></td>
   </tr>
   <tr>
@@ -97,8 +97,8 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Nameplate</td>
-    <td>Inspecting various nameplates</td>
+    <td>铭牌</td>
+    <td>检查各种铭牌</td>
     <td></td>
   </tr>
   <tr>
@@ -106,8 +106,8 @@ Table 6-3 Cyclic Inspections
     <td rowspan="4"></td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4"> Voltage measurement</td>
-    <td>Voltage of the primary power</td>
+    <td rowspan="4"> 电压测量</td>
+    <td>主电源的电压</td>
     <td rowspan="4"></td>
   </tr>
   <tr>
@@ -124,8 +124,8 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>Grounding</td>
-    <td>Checking the terminals for any loosening and detachment</td>
+    <td>接地</td>
+    <td>检查端子是否松动和脱落</td>
     <td></td>
   </tr>
   <tr>
@@ -133,29 +133,29 @@ Table 6-3 Cyclic Inspections
     <td></td>
     <td>◎</td>
     <td>◎</td>
-    <td>Battery</td>
-    <td>Checking the voltage and replacing the battery Periodically </td>
-    <td>Main  board LEDs</td>
+    <td>电池</td>
+    <td>检查电压并定期更换电池</td>
+    <td>主板LED灯</td>
   </tr>
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
     <td rowspan="4">◎</td>
-    <td rowspan="4">Teach pendant</td>
-    <td>Inspecting the exterior and checking the connector connection part</td>
+    <td rowspan="4">教导手柄</td>
+    <td>检查外部并检查连接器连接部分</td>
     <td></td>
   </tr>
   <tr>
-    <td>LCD Display Checking the status of the LCD display</td>
+    <td>LCD显示 检查LCD显示器的状态</td>
     <td></td>
   </tr>
   <tr>
-    <td>Checking the display of LEDs</td>
+    <td>检查LED的显示</td>
     <td></td>
   </tr>
   <tr>
-    <td>Checking the status of the buttons,switches, and LEDs</td>
+    <td>检查按钮、开关和LED的状态</td>
     <td></td>
   </tr>
   <tr>
@@ -163,36 +163,36 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td rowspan="5">Safety-related parts</td>
-    <td>Checking the emergency stop switch (on the controller and teach pendant)</td>
+    <td rowspan="5">安全相关部件</td>
+    <td>检查急停开关（在控制器和教导手柄上）</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Checking the main power circuit breaker switch (NFB1)</td>
+    <td>检查主电源断路器开关（NFB1）</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Checking the Enable device of the teach pendant</td>
+    <td>检查教导手柄的启用设备</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Checking the circuit protector(CP1)</td>
+    <td>检查电路保护器（CP1）</td>
     <td></td>
   </tr>
   <tr>
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td>Checking the magnetic contacts (MC1,2)</td>
+    <td>检查磁性接触器（MC1,2）</td>
     <td></td>
   </tr>
   <tr>
@@ -200,8 +200,8 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td>◎</td>
-    <td> Safety-related board</td>
-    <td>Checking the BD630(Connectors, LEDs)</td>
+    <td> 安全相关板</td>
+    <td>检查BD630（连接器，LED）</td>
     <td></td>
   </tr>
 </tbody>
