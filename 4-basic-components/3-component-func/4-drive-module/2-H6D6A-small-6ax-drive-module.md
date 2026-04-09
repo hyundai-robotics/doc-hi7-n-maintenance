@@ -76,7 +76,7 @@ The drive module differs depending on the type of the robot, so you must check t
 ■  **Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module**
 
 
-![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성.png  )
+![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성_en.png)
 
 Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 

@@ -1,12 +1,10 @@
-﻿# 3.1.2. 각종 명판의 확인
+﻿# 3.1.2. Checking of Various Name Plates
 
-![](../../_assets/fig_1.1_safety_label.png  )
+![](../../_assets/fig_1.1_safety_label.png  )<br>
+Figure 3.2 Controller’s Labels<br>
 
-그림 3.2 제어기 라벨
-
-표 3-1 라벨 종류
-
-![](../../_assets/표3-1_라벨_종류-1.png  )
+Table 3-1 Label Type<br>
+![](../../_assets/표3-1_라벨_종류-1_en.png  )
 
 ![](../../_assets/표3-1_라벨_종류-2.png  )
 
@@ -14,10 +12,12 @@
 
 
 {% hint style="warning" %}
-제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다.
+Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
+safety symbols, name markings and wire markings or painting over them or blocking them 
+with a cover is prohibited. 
 {% endhint %}
 
-
 {% hint style="info" %}
-로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Mark the installation and dangerous areas of the robot in a way that they can be 
+differentiated from other facilities and devices in terms of type, color and style. 
 {% endhint %}

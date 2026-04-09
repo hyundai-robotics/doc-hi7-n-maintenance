@@ -1,1 +1,1 @@
-﻿# 1.10. 설치 시 안전 대책
+﻿# 1.10. Safety Measures When Installing

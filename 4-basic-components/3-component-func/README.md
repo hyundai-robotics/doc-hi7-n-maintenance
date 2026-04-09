@@ -1,56 +1,51 @@
-﻿# 4.3. 구성품별 기능
+﻿# 4.3. Functions of the Individual Components
 
-표 4-2 각 구성품별 기능요약
-
+Table 4-2 Summary of Functions of the Individual Components
 <table>
 <thead>
   <tr>
-    <th colspan="2">구성품</th>
-    <th>기능</th>
+    <th colspan="2">Components</th>
+    <th>Functions</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">제어 모듈</td>
-    <td>메인제어모듈(H6COM-T)</td>
-    <td>- 기록점 기록 및 동작 경로 계산<br>- 프로그램 및 로봇 정수 보존<br>- 티치펜던트(T/P)통신<br>- LAN, USB, 직렬(RS232)통신 접속</td>
+    <td rowspan="3">Control module</td>
+    <td>Main control module(H6COM-T)</td>
+    <td>- Recording the record points and calculating the operation paths<br>- Preservation of the programs and robot integers<br>- Teach pendant(T/P) communication<br>- Connection of the LAN, USB, and the serial (RS232) communication</td>
   </tr>
   <tr>
-    <td>서보안전보드(BD642)</td>
-    <td>- 서보제어용 DSP<br>- 엔코더 접속(시리얼 I/F)<br>- 서보모터 및 브레이크 개폐출력<br>- Functional Safety 기능<br> - 시퀀스제어<br>- 제어기내 입출력(시스템용I/O)<br>- 본체로부터의 각종 입력신호 처리<br>- 안전체인 회로</td>    
+    <td>Servo board(BD642)</td>
+    <td>- DSP for servo control<br>- Encoder connection (Serial I/F)<br>- Open/close outputs for the servo motor<br>- Function of Functional Safety<br> - Sequence Control<br>- System I/O<br>- Circuit of Safety-Chain</td>    
   </tr>
   <tr>
-    <td>백플레인보드(BD604)</td>
-    <td>- 보드별 제어전원 공급<br>- 서보안전보드(BD642)와 AMP 신호 연결<br>- Precharge/FAN 릴레이 동작신호 전달</td>
+    <td>Backplane Board (BD604)</td>
+    <td>- Control power supply per board<br>- AMP signal connection with Servo Safety Board(BD642)<br>- Precharge/FAN relay operation signal transmission</td></td>
   </tr>
   <tr>
-    <td>드라이브모듈<br>(Drive Module)</td>
-    <td>대/중형6축: H6D6X<br>소형6축: H6D6A<br>부가축: H6D1X, H6D1Z</td>
-    <td>- 모터 구동용 전원 생성<br>- 회생 방전<br>- 서보 모터 전력 증폭 회로<br>- 각종 에러출력</td>
+    <td>Drive module<br>(Drive Module)</td>
+    <td>Large/Medium-sized 6axes: H6D6X<br>Small-sized 6axes: H6D6A<br>Additional axis: H6D1X, H6D1Z</td>
+    <td>- Generation of the motor drive power<br>- Regenerative discharge<br>- Servo motor power amplification circuit<br>- Various error outputs</td>
   </tr>
   <tr>
     <td>T/P<br>(Teach Pendant)</td>
     <td>TP630</td>
-    <td>- 각종정보표시(LCD)<br>- 버튼 스위치 입력(Function/Jog 등)<br>- 비상정지, Enable 및 T/P On/Off 입력</td>
+    <td>- Display of various information (LCD)<br>- Button inputs and switch inputs (function/jog, etc.)<br>- Emergency stop, enable, and T/P On/Off inputs</td>
   </tr>
   <tr>
-    <td>냉각장치</td>
+    <td>Cooling device</td>
     <td>Fan</td>
-    <td>- 반내 공기순환<br>- 구동장치 냉각</td>
+    <td>- Air circulation inside the panel<br>- Cooling of the drive module</td>
   </tr>
   <tr>
-    <td>전원공급모듈</td>
-    <td>H6APSM</td>
-    <td>- 모터 구동 전원의 개폐<br>- 각종 전원의 분배</td>
+    <td>Power supply module</td>
+    <td>H6PSM</td>
+    <td>- Opening/closing of the motor drive power<br>- Distribution of various power</td>
   </tr>
 </tbody>
 </table>
 
+※ For the types of components of each controller, refer to “2.1 Details of Specifications of Each Controller Model.” 
 
-※ 제어기별 구성품 종류는 ‘2.1절 로봇 제어기의 세부사양’을 참고 바랍니다.
-
-제어기 모듈의 각 보드 위치를 그림 4.7과 같이 나타내었다.
-
-![](../../_assets/그림_4_3_구성품%20위치.png)
-
-그림 4.7 제어모듈 구성품
+![](../../_assets/그림_4_3_구성품%20위치.png)<br>
+Figure 4.7 Components of the Control module<br>

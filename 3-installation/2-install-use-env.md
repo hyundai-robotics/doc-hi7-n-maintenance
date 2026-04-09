@@ -1,37 +1,30 @@
-﻿# 3.2. 설치 및 사용 환경
+﻿# 3.2. Installation and Use Environmets 
 
-설치 및 사용 환경 조건을 고려하여 알맞은 장소에 제품을 설치합니다.
-
-* 제품의 적정 사용 온도는 0℃ ~ 45℃이고, 적정 보관 습도는 20 ~ 85%RH입니다.
-
-* 제품을 옮기거나 사용할 때에는 떨어뜨리는 등 강한 충격을 주지 마십시오.
-
-* 제품의 무게에 따라 올바른 방법으로 안전에 유의하여 제품을 운반 및 설치하십시오.
-
-* 제품이 쉽게 전복되지 않는 단단하고 평평한 곳, 진동이 없는 곳에 제품을 설치하고 사용하십시오.
-
-* 물이나 습기, 가스, 먼지 등의 이물질이 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오.
-
-* 인화성 및 부식성 물질이나 가스가 있는 곳, 열이 발생하는 곳 또는 화기 주변에 제품을 설치 및 사용하지 마십시오.
-
-* 강한 전기적 노이즈 발생원이 있거나 그 영향이 미치는 곳에 제품을 설치 및 사용하지 마십시오.
-
-* 제어기는 “1.10. 설치 시 안전 대책”을 참고하여 안전한 장소에 설치하여 주십시오.
-
-* 제어기의 보수시에는 “1.13. 보수 점검시 안전 대책”을 참고하여 진행해 주십시오.
-
-* 용접작업을 행하는 곳에서는 용접 Spatter 및 냉각수의 영향이 없는 곳에 설치하여 주십시오.
-
-* 제어기의 설치 시 주위 벽이나 장애물이 있을 경우 최소 500mm이상 거리를 두고 설치하여 주십시오.
-
-* 로봇 설치에 대한 사항은 각 로봇 보수 매뉴얼을 참고하여 설치하여 주십시오.
+Install the product in an appropriate place in consideration of the installation and use environments and conditions. 
+* The proper use temperature of the product is 0℃ - 45℃, and the proper storage humidity is 20 to 85%RH. 
+* Do not drop the product or apply a strong impact to it while moving or using it. 
+* Transport and install the product in a correct way based on the weight of the product while paying attention to the safety. 
+* Install and use the product in a solid, flat and vibration-free area where the product will not turn over easily. 
+* Do not install and use the product in an area with a lot of foreign substances such as water, moisture, gas, dust, or in a dirty place. 
+* Do not install or use the product in an area with flammable and corrosive substances or gases, or in an area wherer heat is generated, or near heat of fire. 
+* Do not install or use the product in an area that has a source of strong electrical noise or is affected by it. 
+* Install the controller in a safe area by referring to “1.10 Safety Measures When Installing”. 
+* Carry out the controller maintenance work by referring to “1.13. Safety Measures When Maintaining and Inspecting”. 
+* When installing the product in an area where welding work is performed, install the product in a location where there will be no effect from welding spatter and cooling water. 
+* When installing the controller, keep a distance of at least 500mm if there is a wall or obstacle nearby. 
+* For the matters related to the installation of the robot, refer to each robot maintenance manual. 
 
 {% hint style="info" %}
-권장하는 장소에 제품을 설치하지 않을 경우 제품의 성능 및 수명이 감소될 수 있습니다. 권장 사항을 준수하여 제품을 설치 및 사용하십시오.
+If the product is not installed in the recommended locations, the performance and service 
+life of the product may be reduced. Install and use the product according to the recommendations.
 {% endhint %}
 
 
 {% hint style="warning" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In 
+addition, it is required to comply with the relevant requirements of international 
+standards and national laws.<br>
+Our company (or the manufacturer) will not be responsible for any accidents that occur 
+due to not complying with the relevant requirements of international standards and 
+national laws or due to not reviewing the “risk assessment”. 
 {% endhint %}

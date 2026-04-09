@@ -1,10 +1,9 @@
-﻿# 3.6.3. 제어기와 1차 전원의 접속
+﻿# 3.6.3. Connectin of the Controller and Primary Power
 
-1차 전원 및 브레이커(NFB)에서 전원이 제거된 상태인지를 확인하십시오. Hi6-N\*\* 제어기는 전원 케이블을 전원 인입구로 넣어서 브레이커(NFB)에 연결하여 주십시오.
+Check whether the power has been removed from the primary power and breaker (NFB). 
+In the case of a Hi7-N** controller, insert the power cable through the power inlet and then connect it to the breaker (NFB). 
+At this time, use a terminal receptable of an appropriate size for the end side of the primary power supply cable. 
 
-이때 1차 전원의 케이블 끝단은 적당한 크기의 터미널 단자를 사용하여 주십시오
-
-![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부.png  )
-![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_2.png  )
-
-그림 3.7 Hi6a-N\*\*(U) 제어기에 1차 전원 접속부
+![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_en.png  )<br>
+![](../../../_assets/그림_3.8_Hi6a-N__U__제어기에_1차_전원_접속부_2.png  )<br>
+Figure 3.7 Primary Power Connection Part of Hi7-N**(U) Controller<br>

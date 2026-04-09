@@ -1,1 +1,1 @@
-﻿# 1.13. 보수 점검시 안전 대책
+﻿# 1.13. Safety Measures When Maintaining and Inspecting

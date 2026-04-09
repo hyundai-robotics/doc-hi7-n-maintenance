@@ -1,1 +1,1 @@
-﻿# 2. 세부 사양
+﻿# 2. Details of Specifications

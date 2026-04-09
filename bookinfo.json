@@ -1,9 +1,9 @@
 ﻿{
-    "langCode": "ko",
-    "series": "Hi7-N 제어기",
-    "title": "보수설명서",
-    "publisher": "현대로보틱스",
-    "tocTitle": "목차",
+    "langCode": "en",
+    "series": "Hi7-N Controller",
+    "title": "Maintenance Manual",
+    "publisher": "HD Hyundai Robotics",
+    "tocTitle": "Contents",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
-    "docId": "HI7NMAINTENANCE_KO_001"
+    "docId": "HI7NMAINTENANCE_EN_001"
 }

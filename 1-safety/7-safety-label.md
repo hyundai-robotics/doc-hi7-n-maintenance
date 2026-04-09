@@ -1,21 +1,18 @@
-﻿# 1.7. 안전 라벨
+﻿# 1.7. Safety Labels
 
-제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다. 또한 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Name plates, warning markings, safety symbols, etc. are attached on the inside and outside of the controller. Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited.<br> Mark the installation and dangerous areas of the robot in a way that they can be differentiated from other facilities and devices in terms of type, color and style. 
 
-![](../_assets/fig_1.1_safety_label.png)
+![](../_assets/fig_1.1_safety_label.png)<br>
+Figure 1.1 Safety Lables<br>
 
-그림 1.1 안전라벨
-
-표 1-2 안전라벨.
-
-![](../_assets/1.7._안전_라벨(Hi6).png)
-
+Table 1-2 Safety Labels<br>
+![](../_assets/1.7._안전_라벨(Hi6)_en.png)<br>
 
 {% hint style="warning" %}
-제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 라벨에 손상을 주는 일체의 행위를 금합니다.
+Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
 
-
 {% hint style="info" %}
-로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+Mark the installation and dangerous areas of the robot in a way that they can be 
+differentiated from other facilities and devices in terms of type, color and style.
 {% endhint %}

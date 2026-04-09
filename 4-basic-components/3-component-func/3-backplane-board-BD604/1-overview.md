@@ -1,11 +1,10 @@
-﻿# 4.3.7.1. 개요
+﻿# 4.3.3.1. Overview
 
-백플레인보드(BD604)는 그림 4.50과 같은 구조로서 Hi6a 제어기 보드류릐 제어전원을 공급하고 BD642에서 출력되는 AMP 관련 신호들을 AMP Interface Baord(BD652/Bd654)로 통하여 전달한다. 주요 옵션보드의 고정, 신호 전달 역할을 수행한다.
+The backplane board (BD604), as shown in Figure 4.50, supplies control power to Hi6a boards and transmits AMP-related signals generated from BD642 through the AMP interface board (BD652/BD654).<br>
+It also serves to mount major optional boards and transmit signals between them. 
 
-![](../../../_assets/그림_4.50_Backplan_구조.png  )
+![](../../../_assets/그림_4.50_Backplan_구조.png )<br>
+Figure 4.25 Backplane Board Structure<br>
 
-그림 4.50 백플레인 보드 구조
-
-![](../../../_assets/그림_4.52_Backplan_커넥터.png  )
-
-그림 4.51 백플레인 보드 커넥터
+![](../../../_assets/그림_4.52_Backplan_커넥터.png )<br>
+Figure 4.26 Backplane Board Connectors<br>

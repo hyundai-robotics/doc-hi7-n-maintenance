@@ -1,55 +1,39 @@
-﻿# 1.10.3. 로봇 설치
+﻿# 1.10.3. Installation of the Robot 
 
 {% hint style="info" %}
-ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. 또한 해당 국제 표준 및 국내 법규의 관련 요건을 준수해야 합니다. 
-국제 표준 및 국내 법규의 관련 요건을 준수하지 않거나, 검토하지 않은 경우에 발생하는 사고에 대해서는 당사(또는 제조사)에서 책임지지 않습니다.
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In 
+addition, it is required to comply with the relevant requirements of international 
+standards and national laws.<br>
+Our company(or the manufacturer) will not be responsible for any accidents that occur 
+due to not complying with the relevant requirements of international standards and 
+national laws or due to not reviewing the “risk assessment”. 
 {% endhint %}
 
-자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다.
-
-* 포장 해체 시, 운반이나 해체 과정에서 발생할 수 있는 제품의 손상 여부를 확인하십시오.
-
-* 포장 해체 후 제품을 설치하기 전에는, 반드시 안전 규정과 지시 사항, 제품의 설치 및 사용 환경 정보를 확인하고 설치 방법을 숙지하십시오. 
-
-* 로봇을 사용하는 작업자는 응용, 보조 설명서에 기술된 사항을 숙지하여 산업용 로봇을 능숙하게 조작, 취급하도록 하여야 합니다.
-
-* 로봇을 설치하는 작업자는 문제점이 있을 경우 안전 지시사항을 설치 작업중에 적용할 수 있어야 합니다.
-
-* 시스템 공급자는 안전기능을 사용하는 모든 회로가 그 기능을 확실하게 수행함을 보장하여야 합니다.
-
-* 로봇에 공급하는 주전원은 로봇의 작업영역 밖에서 차단될 수 있도록 설치되어야 합니다.
-
-* 시스템 공급자는 비상정지 기능을 사용하는 모든 회로가 제 기능을 안전한 방법으로 수행함을 확실하게 보장하여야 합니다.
-
-* 로봇을 급히 정지할 경우를 위하여 비상정지 버튼은 작업자가 접근하기 쉬운 곳에 위치하여야 합니다.
-
-* 본체치수, 동작범위를 고려하여 주변기기와의 간섭이 없도록 합니다.
-
-* 직사광선이 닿는 장소, 습기가 많은 장소, 기름기나 화학물질이 있는 장소, 공기중에 금속가루, 폭발성 기체가 많은 곳의 설치는 피하여 주십시오.
-
-* 주위온도 0~45 ℃의 범위인 곳에 설치하여 주십시오.
-
-* 분해, 점검이 용이하도록 충분한 공간을 확보하여 주십시오.
-
-* 안전망을 설치하고, 로봇의 동작범위 안에 사람이 진입하지 못하도록 하여 주십시오.
-
-* 로봇 동작영역에는 장애물이 없도록 하여 주십시오.
-
-* 직사광선이 닿는 장소, 발열체의 부근에 설치할 경우에는 제어기의 열역학 상태를 고려하여 대책을 세워주십시오.
-
-* 공기중에 금속가루 등의 분진이 많은 곳에 설치할 경우는 별도의 대책을 세워 주십시오.
-
-* 로봇에 용접 전류가 절대로 흐르지 않도록 설치하여 주십시오. 즉, 스폿 건(spot gun)과 로봇 손목 사이는 절연합니다.
-
-* 접지는 노이즈에 의한 오동작 및 감전방지 등의 점에서 중요하므로, 하기와 같이 설치하여 주십시오.
-  - 전용 접지단자를 설치하고 제3종 접지 이상으로 합니다.
-
-  - 접지선은 제어반 내부의 접지 버스바(bus bar)에 접속합니다.
-
-  - 로봇 본체 설치시에 앵커(anchor) 등에 의해 바닥에 직접 접지된 경우에는 제어기측과 로봇 본체측이 2점 접지로 되어 폐회로가 발생, 역으로 노이즈 등에 의한 오동작이 우려됩니다. 이러한 경우에는 로봇 본체의 베이스(base)부에 접지선을 접속하고 제어기측은 접속하지 않습니다. 또한 로봇 정지시에 떨림이 있을 경우에는 접지의 불완전 혹은 폐회로 발생의 가능성이 크므로 다시 한번 접지를 살펴주십시오.
-
-  - 트랜스 내장 건(gun)을 사용할 경우에는 1차 전원 케이블이 직접 스폿 건(spot gun)에 접속되기 때문에 떨어질 위험성이 있습니다. 이 경우에는 제어반의 보호와 감전방지를 위해 로봇 본체의 베이스(base)부에 직접 접지선을 접속하고, 제어기에는 접속하지 말아 주십시오.
-
-* 로봇 별 로봇 보수메뉴얼을 참고하여 설치 하시기 바랍니다.
-
-* 현장 상황에 맞춰 소프트 리미미트를 지정 후 하드웨어 리미트의 위치 및 조정은 반드시 교육된 작업자에 의해 설치하시기 바랍니다. 설치 시 동작 여부를 반드시 체크해주십시오.
+Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws. 
+* When unpacking the pruduct, check it for damage that may occur while transporting or unpacking it. 
+* Before installing the product after unpacking it, you must check the safety regulations, instructions, information related to the product installation and use environments, and  fully undertand the installation methods. 
+* The worker who uses the robot should fully understand the contents described in the application and auxiliary manuals, and operate and handle the industrial robot skillfully. 
+* The worker who installs the robot should be able to apply the safety instructions  during  the installation if there is a problem. 
+* The system supplier should guarantee that all circuits used for safety functions perform  their functions surely. 
+* The main power supply to the robot should be installed in a way that it can be cut off from outside the robot operation area. 
+* The system supplier should surely guarantee that all circuits used for safety functions perform their functions safely. 
+* The emergency stop button should be located at a place where the worker can easily approach it when required to stop the robot urgently.  
+* By taking into consideration the dimensions of the manipulator and the operation range, make sure that that there is no interference with peripheral devices. 
+* Avoid installing the robot in a place that is exposed to direct sunlight, has high level of humidity, has oil or chemicals around and has lots of metal powder or explosive gas in the air. 
+* Install the robot in an area where the ambient temperature is 0 - 45 ℃. 
+* Secure enough space for disassembling and inspecting the robot easily. 
+* Install a safety fence and prevent people from entering the robot operation range. 
+* Make sure there is no obstacle in the robot operation area. 
+* When installing the robot in an area exposed to direct sunlight or near a heating element, you should take measures in consideration of the thermodynamic state of the controller. 
+* Take additional measures when installing the robot in an area that has lots of dust such as metal powder in the air. 
+* Carry out installation in a way that welding current never flows to the robot. In other words, there should be insulation between the spot gun and the wrist of the robot.  
+* Since grounding is important for preventing a malfunction due to noise and an electric shock, you should install the robot as shown below. 
+  - Install the dedicated grounding terminal while setting it as Type 3 Grounding higher.   
+  - Connect the grounding wire to the grounding bus bar inside the control panel. 
+  - When the manipulator is installed, if it is directly grounded to the floor by an anchor, etc., the controller side and the manipulator side will make a two-point grounding, forming a closed circuit, which conversely may cause malfunctioning due to some reasons such as noise. In this case, connect the grounding wire to the base part of the manipulator, but not to the controller side. In addition, if there is shaking when the robot stops, there is a high possibility that the grounding is incomplete or there is a closed circuit. It is required to check the grounding again. 
+  - If you use a gun with an embedded transformer, there is a risk of dropping because the 
+primary power cable is connected directly to the spot gun. In this case, in order to protect 
+the control panel and prevent electric shock, connect the grounding wire directly to the 
+base part of the manipulator and do not connect it to the controller. 
+* Carry out the installation by referring to the robot maintenance manual for each robot. 
+* After designating the soft limit suitable for the site situation, the positionining and adjustment of the hardware limit must be performed by a trained worker. After installation, you must check whether the functions are working well.   

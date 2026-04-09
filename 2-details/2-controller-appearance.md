@@ -1,5 +1,4 @@
-﻿# 2.2. 제어기 외관
+﻿# 2.2. Exterior of the Controller
 
-![](../_assets/2.2._제어기_외관(Hi6a).png )
-
-그림 2.1 제어기 전면 외관도
+![](../_assets/2.2._제어기_외관(Hi6a).png )<br>
+Figure 2.1 Front Exterior of the Controller<br>

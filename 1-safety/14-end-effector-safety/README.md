@@ -1,8 +1,10 @@
-﻿# 1.14. 엔드 이펙터(End Effector) 안전
+﻿# 1.14. Safety Related to End Effctors  
 
 {% hint style="warning" %}
-엔드 이펙터(End Effector)를 설치 및 운영하는 경우 반드시 ISO 10218-1:2018을 준수하여 적용 및 보수, 운영을 하여야 한다. 
+When installing and operating end effectors, you must comply with ISO 10218-1:2018 in 
+applying, maintaining and operating them.  
 {% endhint %}
 
 
-자세한 엔드 이펙터 설치에 관한 사양은 각 로봇 보수메뉴얼을 참고하시기 바랍니다.
+Refer to the maintenance manual of each robot for detailed specifications regarding the installation of 
+end effectors. 

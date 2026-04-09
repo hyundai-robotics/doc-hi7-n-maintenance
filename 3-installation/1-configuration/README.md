@@ -1,1 +1,1 @@
-﻿# 3.1. 구성
+﻿# 3.1. Configuration

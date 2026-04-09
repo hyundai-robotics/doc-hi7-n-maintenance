@@ -1,17 +1,18 @@
-﻿# 1.13.2. 로봇시스템, 로봇본체의 보수, 점검시 안전대책
+﻿# 1.13.2. Safety Measures When Maintaining and Inspecting the Robot System and Manipulator 
 
-로봇시스템, 로봇본체의 보수, 점검시 다음의 안전대책을 따라 주십시오.
-
-* 제어기 보수, 점검시 안전대책을 참조하여 주십시오.
-
-* 로봇시스템, 로봇 본체를 보수, 점검할 때는 지시된 절차에 의하여 작업을 진행하여 주십시오.
-
-* 제어기의 주전원은 꼭 차단하여 주십시오. 다른 작업자가 다시 전원을 올리지 못하도록 1차 전원에 \[전원투입금지\] 등의 경고 표시를 하여 주십시오.  
+Observe  the  following  safety  measures  when  maintaining  and  inspecting  the  robot  system  and manipulator. 
+* Refer to safety measures for the maintenance and inspection of the controller. 
+* When maintaining and inspecting the robot system and manipulator, proceed with the work according to the instructed procedures. 
+* Must cut off the main power of the controller. In order to prevent other workers from powering it up again, put a warning marking such as [Power-On Prohibited] on the primary power supply.   
 
 {% hint style="info" %}
-로봇 본체의 보수, 점검시 로봇의 암(arm)이 낙하 또는 그밖의 위험이 생길 경우가 있으니, 반드시 지시된 절차대로 작업을 진행하여 주십시오
+During maintenance and inspection of the manipulator, the robot arm may fall, or there 
+could be a different type of danger. So, you must proceed with the work according to the 
+instructed procedures.
 {% endhint %}
 
 {% hint style="info" %}
-구동력이 없는 로봇의축을 이동 시 중력에 의한 낙하 또는 제동 장치의 해제로 인해 추가적인 위험이 발생할 수 있으므로, 반드시 지시된 절차에 따라 작업을 진행하여 주십시오.
+When moving the axis of the robot without driving force applied, there is a risk of the axis 
+dropping due to gravity and also an additional risk due to the release of the brake system. 
+So, you must proceed with the work according to the instructed procedures.
 {% endhint %}

@@ -2,7 +2,7 @@
 
 ■  **Configuration of the Type Number of the Optional Drive Module**
 
-![](../../../_assets/선택사양_드라이브모듈의_형번_구성.png  )
+![](../../../_assets/선택사양_드라이브모듈의_형번_구성_en.png  )
 
 Table 4-32 Type Symbol of the Optional Drive Module
 

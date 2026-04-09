@@ -1,24 +1,23 @@
-﻿# 1.13.3. 보수, 점검 후 조치사항
+﻿# 1.13.3. Actions to Take after Maintenance and Inspection 
 
-보수, 점검 후에는 다음의 조치사항을 따라 주십시오.
-
-* 제어기 내의 전선이나 부품이 정상적으로 결합되어 있는지를 점검하여 주십시오.
-
-* 보수가 끝난 뒤 제어기, 로봇 본체, 시스템 내 또는 주위에 공구가 남겨져 있는지 확인하여 정리정돈을 확실히 하여 주십시오. 각 문은 반드시 닫아 주십시오.
-
-* 만약 어떤 문제나 치명적인 결함이 발견되었을 때는 로봇의 전원을 켜지 마십시오.
-
-* 제어반 내에 주전원 차단기를 켜십시오.
-
-* 로봇의 현재의 위치와 상태를 확인하십시오.
-
-* 로봇을 저속에서 작동하십시오.
+Observe the following actions after maintenance and inspection. 
+* Check if the wires or parts inside the controller are connected normally. 
+* After maintenance, check whether any tool is left behind inside and around the controller, 
+manipulator or the robot system, and keep them surely arranged and organized. Must close every door. 
+* If any problem or fatal defect is found, do not turn on the power of the robot. 
+* Turn on the main breaker in the control panel. 
+* Check the current position and status of the robot.
+* Operate the robot at a low speed. 
 
 {% hint style="info" %}
-전원을 켜기 전에 로봇의 작업영역 안에 작업자가 없는지, 자신이 안전한 장소에 있는지를 확인한 후 전원을 투입하십시오.
+Before turning on the power, check that there is no worker inside the robot operation 
+area and you are in a safe place 
 {% endhint %}
 
 {% hint style="warning" %}
-안전 관련 기능에 영향을 미칠 수있는 구성 부품 변경 또는 로봇에 옵션 장비 (하드웨어 및 소프트웨어 모두) 추가한 경우 “1.11 로봇 조작시 안전 작업”에 기재된 사항을 유의하여 반드시 기능 정상 여부를 확인하여 주십시오.
+When it comes to the change of components or additoin of optional equipment (both 
+hardware and software) to the robot both of which may affect safety-related functions, 
+you must check whether the functions are in normal conditions, by paying attention to the 
+items described in “1.11 Safety Works When Operating the Robot”. 
 {% endhint %}
 

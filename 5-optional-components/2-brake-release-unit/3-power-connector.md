@@ -22,8 +22,7 @@ Our company (or the manufacturer) will not be responsible for any accidents that
 {% endhint %}
 
 
-![](../../_assets/그림_5.4_브레이크_해제_유닛_스위치_및_커넥터.png  )
-
+![](../../_assets/그림_5.4_브레이크_해제_유닛_스위치_및_커넥터_en.png)<br>
 Figure 5.4 Switches and Connectors of the Brake Release Unit</br></br>
 
 Table 5-5 Types and Usage of the Connectors of the Brake Release Unit

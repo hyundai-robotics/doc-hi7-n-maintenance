@@ -1,3 +1,3 @@
-﻿# 4. 제어기의 기본구성
+﻿# 4. Basic Configuration of the Controller 
 
 

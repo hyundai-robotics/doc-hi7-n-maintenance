@@ -1,20 +1,19 @@
-﻿# 3.6.3.1. 전원 요구 조건
+﻿# 3.6.3.1. Power Requirements
 
-표 3-2 전원 요구 조건
-
+Table 3-2 Power Requirements
 <table>
 <tbody>
 <tr class="odd">
 <td><p><strong>No.</strong></p></td>
-<td><p><strong>제어기 종류</strong></p></td>
-<td><p><strong>용량<sup>*1)</sup> [KVA]</strong></p></td>
-<td><p><strong>입력 전압 <sup>*2)</sup> [V]</strong></p></td>
-<td><p><strong>주파수[Hz]</strong></p></td>
-<td><p><strong>피크전류[A]</strong></p></td>
+<td><p><strong>Controller type</strong></p></td>
+<td><p><strong>Capacity<sup>*1)</sup> [KVA]</strong></p></td>
+<td><p><strong> Input voltage<sup>*2)</sup> [V]</strong></p></td>
+<td><p><strong>Frequency<br>[Hz]</strong></p></td>
+<td><p><strong>Peak current<br>[A]</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>Hi6a-N00</p></td>
+<td><p>Hi7-N00</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -22,7 +21,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
-<td><p>Hi6a-N30</p></td>
+<td><p>Hi7-N30</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -30,7 +29,7 @@
 </tr>
 <tr class="even">
 <td><p><strong>3</strong></p></td>
-<td><p>Hi6a-N80</p></td>
+<td><p>Hi7-N80</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>220V/380V/400V/440V</p></td>
 <td><p>50/60</p></td>
@@ -38,7 +37,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>Hi6a-N00U</p></td>
+<td><p>Hi7-N00U</p></td>
 <td><p>Max. 7.8KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -46,7 +45,7 @@
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>Hi6a-N30U</p></td>
+<td><p>Hi7-N30U</p></td>
 <td><p>Max. 4.4KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -54,7 +53,7 @@
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>Hi6a-N80U</p></td>
+<td><p>Hi7-N80U</p></td>
 <td><p>Max. 10.5KVA</p></td>
 <td><p>460V/480V</p></td>
 <td><p>50/60</p></td>
@@ -63,8 +62,5 @@
 </tbody>
 </table>
 
-주 1) 전원 용량
-
-제어기 공급 전원용량을 의미하며, 로봇별 전원용량은 “본체보수설명서” 참조
-
-주 2) 전압 범위: ±10% (제어기의 전원 터미널)
+Note 1) Power capacity: Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the “Manipulator Maintenance Manual”.<br> 
+Note 2) Voltage range: ±10% (at the power terminal of the controller) 

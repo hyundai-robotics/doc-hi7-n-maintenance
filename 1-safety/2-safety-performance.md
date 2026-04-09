@@ -1,10 +1,11 @@
-﻿# 1.2. 안전 성능
+﻿# 1.2. Safety Performance
 
-산업용 로봇의 안전 모듈의 성능은 다음과 같습니다.
+The performance of the industrial robot's safety modules is as follows.
 
-표 1-1 안전모듈의 안전성능
-SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety I/O, PROFIsafe) is as follows.
+
+Table 1-1 Safety Performance of Safety Modules
+|            **Item**          | **Safety Performance** |         **Applicable standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
@@ -12,10 +13,8 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 |    PL (Performance Level)    |     e     |        ISO 13849-1        |
 |    		PFH    			   |1.34217E-08|        ISO 13849-1        |
 
-
-
-그 외의 안전 기능의 안전 성능은 다음과 같습니다.
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of other safety functions is as follows.
+|            **Item**          | **Safety Performance** |         **Applicable standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |

@@ -1,9 +1,11 @@
-﻿# 3.6.5. 기타 주의 사항
+﻿# 3.6.5. Other Cautions 
 
 {% hint style="info" %}
-1. 제어기 및 로봇 본체의 배선은 신호선과 전력선을 분리하여 배선하십시오.
-   또한 고전력선과 신호선간에는 분리된 DUCT를 사용하여 배선하십시오.
-2. 배선은 보호 Cover를 사용하여 통행 시 손상이 생기지 않도록 조치하여 주십시오.
-3. 반드시 1차 전원 투입 전에 접속관계, 제어기의 전원 사양 및 공급 전원 사양등을 재확인하여 주십시오.
+1. When wiring the controller and manipulator, separate the signal line and the power 
+line. In addition, use separate ducts respectively for high power lines and signal lines. 
+2. Use a protective cover for the wires, as a measure to prevent the wires from getting 
+damaged when people are passing. 
+3. Before supplying the primary power, you must check again the relationship in terms of 
+connection, the power specification and the power supply specification of the controller. 
 {% endhint %}
 

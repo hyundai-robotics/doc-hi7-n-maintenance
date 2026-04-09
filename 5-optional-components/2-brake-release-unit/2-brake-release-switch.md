@@ -3,7 +3,7 @@
 The placement of the switches of the brake release unit is as shown in Figure 5.3, and their individual usage and operation are described in Table 5-4. To release the brake of the targeted axis, first press the Enable button, and then, while pressing the Enable button, press one of the buttons B1–B8 at the same time. Then, the relevant axis will be released.
 
 
-![](../../_assets/그림_5.3_브레이크_해제유닛_스위치_및_상태확인_LED.png  )
+![](../../_assets/그림_5.3_브레이크_해제유닛_스위치_및_상태확인_LED_en.png  )
 
 Figure 5.3 Switches and Status Checking LEDs of the Brake Release Unit</br></br>
 
