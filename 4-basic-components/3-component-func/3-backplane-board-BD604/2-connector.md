@@ -24,7 +24,7 @@
 <tr class="even">
 <td><p><strong>CNBS1, CNBS2</strong></p></td>
 <td><p>서보안전보드(BD642) 전원 및 신호 연결 커넥터</p></td>
-<td><p>서보안전보드(BD632) CNBS1, CNBS2 커넥터</p></td>
+<td><p>서보안전보드(BD642) CNBS1, CNBS2 커넥터</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNBS3, CNBS4</strong></p></td>

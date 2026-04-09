@@ -322,7 +322,7 @@
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
 <td><p>8축 PWM신호, IPM에러 신호<br>컨버터부 에러 신호</p></td>
-<td><p>BD640 Board to Board 커넥터</p></td>
+<td><p>BD642 Board to Board 커넥터</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>

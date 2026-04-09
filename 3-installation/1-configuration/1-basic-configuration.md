@@ -8,6 +8,6 @@
 
 * 티칭펜던트(Teaching Pendant)
 
-* Wire Harness(Hi6제어기 ↔ 로봇)
+* Wire Harness(Hi7제어기 ↔ 로봇)
 
 * 로봇(Robot)

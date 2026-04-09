@@ -20,7 +20,7 @@
     <td>A</td>
     <td>J4</td>
     <td>EtherCAT 통신연결</td>
-    <td>Hi6COM LAN4</td>
+    <td>H6COM LAN4</td>
   </tr>
   <tr>
     <td>B</td>

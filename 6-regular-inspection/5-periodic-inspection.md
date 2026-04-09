@@ -202,7 +202,7 @@
     <td>◎</td>
     <td>◎</td>
     <td>안전 관련 보드</td>
-    <td>‧ BD632 점검(커넥터, LED)</td>
+    <td>‧ BD642 점검(커넥터, LED)</td>
     <td></td>
   </tr>
 </tbody>
