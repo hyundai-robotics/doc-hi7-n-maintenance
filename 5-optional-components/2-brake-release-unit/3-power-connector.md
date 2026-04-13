@@ -46,7 +46,7 @@
   <tr>
     <td>브레이크 해제 케이블 연결 커넥터</td>
     <td>브레이크 해제유닛과 제어기 연결</td>
-    <td>BD640보드 CNB1, CNB7, CNB8</td>
+    <td>BD642보드 CNBRK16, CNBRK78</td>
   </tr>
   <tr>
     <td>DC24V 배터리 전원 커넥터</td>

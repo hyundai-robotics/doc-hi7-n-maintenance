@@ -81,7 +81,7 @@
 <td><p><strong>형식기호</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 중형 6축 드라이브모듈</strong></p></td>
+<td><p><strong>Hi7 중형 6축 드라이브모듈</strong></p></td>
 <td><p>H6D6X</p></td>
 </tr>
 </tbody>
