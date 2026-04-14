@@ -82,7 +82,7 @@ Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module
 <td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 Medium-Sized 6 Axes drive module</strong></p></td>
+<td><p><strong>Hi7 Medium-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6X</p></td>
 </tr>
 </tbody>
