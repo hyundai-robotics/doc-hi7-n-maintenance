@@ -20,7 +20,7 @@ Table 4.3.2.2-1 Connector Names, Functions, and External Connection Devices of t
     <td>A</td>
     <td>J4</td>
     <td>EtherCAT Communication interface</td>
-    <td>Hi6COM/LAN4</td>
+    <td>H6COM/LAN4</td>
   </tr>
   <tr>
     <td>B</td>

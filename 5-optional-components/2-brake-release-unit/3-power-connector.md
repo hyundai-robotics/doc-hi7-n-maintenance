@@ -44,7 +44,7 @@ Table 5-5 Types and Usage of the Connectors of the Brake Release Unit
   <tr>
     <td>Brake release cable connection connector</td>
     <td>Connection of the brake release unit and controller</td>
-    <td>CNB1, CNB7, and CNB8 of BD640</td>
+    <td>CNBRK16, CNB78 of BD642</td>
   </tr>
   <tr>
     <td>DC24V battery power connector</td>

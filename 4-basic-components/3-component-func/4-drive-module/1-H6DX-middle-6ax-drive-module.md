@@ -322,7 +322,7 @@ Table 4-21 Description of the Connectors of BD652
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
 <td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD640</p></td>
+<td><p>Board-to-board connectors of BD642</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>

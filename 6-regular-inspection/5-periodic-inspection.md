@@ -201,7 +201,7 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td> Safety-related board</td>
-    <td>Checking the BD630(Connectors, LEDs)</td>
+    <td>Checking the BD642(Connectors, LEDs)</td>
     <td></td>
   </tr>
 </tbody>
