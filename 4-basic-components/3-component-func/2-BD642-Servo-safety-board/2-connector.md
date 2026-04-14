@@ -50,7 +50,7 @@
     <td>F</td>
     <td>CNMC</td>
     <td>Magnet Contact 입/출력 신호</td>
-    <td>전원분배보드(BD6C2) CNMC</td>
+    <td>전원분배보드(BD6C3) CNMC</td>
   </tr>
   <tr>
     <td>G</td>
@@ -92,7 +92,7 @@
     <td>P</td>
     <td>J12</td>
     <td>브레이크 전원</td>
-    <td>전원분배보드(BD6C2) CNOBK</td>
+    <td>전원분배보드(BD6C3) CNOBK</td>
   </tr>
   <tr>
     <td>Q</td>
