@@ -87,7 +87,7 @@ Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 <td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 Small-Sized 6 Axes drive module</strong></p></td>
+<td><p><strong>Hi7 Small-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6A</p></td>
 </tr>
 </tbody>

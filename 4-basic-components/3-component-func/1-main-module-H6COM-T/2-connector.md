@@ -2,7 +2,7 @@
 
 Table 4-3 describes the usage of the connector and the connection of external devices.
 
-Table 4-3 Types and Usage of the Connectors of Hi7COM-T
+Table 4-3 Types and Usage of the Connectors of H6COM-T
 <table>
 <tbody>
 <tr class="odd">

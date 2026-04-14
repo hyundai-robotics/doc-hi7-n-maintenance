@@ -15,7 +15,7 @@ Table 4-32 Type Symbol of the Optional Drive Module
 </thead>
 <tbody>
   <tr>
-    <td>Hi6 1 Axes drive module</td>
+    <td>Hi7 1 Axes drive module</td>
     <td>H6D1</td>
   </tr>
 </tbody>
