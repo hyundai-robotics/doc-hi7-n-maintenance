@@ -17,15 +17,15 @@ The dangerous areas of the robot system, in other words, the areas where the rob
 The robot system should be configured in a way that it can be stopped immediately by an emergency stop device when a worker or object needs to enter the dangerous area in spite of possible danger.<br>
 
 The workers are responsible for installing, checking and operating these safety devices.<br>
-This manual has been created based on standard specifications, so some contents may differ depending on the options and model of the product that you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual.<br>
+This manual has been created based on standard specifications, so some contents may differ depending on the options and model of the product that you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual.<br>
 
-For detailed information on the revision of the manual, you need to visit our internet website (www.hyundai-robotics.com).<br>
+For detailed information on the revision of the manual, you need to visit our internet website (https://www.hd-hyundairobotics.com/en/main).<br>
 
 ## Copyrights
 
-The contents covered in this manual are protected by copyright laws and confidentiality agreements. This manual may be provided as reference material for customers who have purchased Hyundai Robotics products or may be used as internal training material. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by Hyundai Robotics, are strictly prohibited.
+The contents covered in this manual are protected by copyright laws and confidentiality agreements. This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
 
-Copyright ⓒ 2025 HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2025-2026 HD HYUNDAI ROBOTICS. All rights reserved.
 
 ## Safety Cautions
 
@@ -350,14 +350,14 @@ Figure 1.3 Connection of the Additional Emergency Stop Device<br>
 
 * Protective stop (ISO 10218-1:2011)<br>
 The robot should have multiple safety inputs so that it can be used in connection with external safety devices such as safety guards, safety pads, and safety lamps. These safety inputs will make the robot stop when there is an input from the robot itself and peripheral facilities, securing a safe state.<br>
-For details on the connection to the safety inputs, refer to “4.3.2. Safety Module (BD632)”. 
+For details on the connection to the safety inputs, refer to “4.3.2. Safety Module (BD642)”. 
 
 * Speed limit (EN ISO 10218-1:2011)<br>
 In manual operation mode, the speed of the robot is limited to a maximum of 250 mm/s. The speed limit applies not only to the TCP (Tool Center Point) but also to all other parts of the robot that are to be operated in manual mode. It should be also made possible to monitor the speed of the equipment mounted on the robot. 
 
 * Operaiton area limit (ANSI/RIA R15.06-2012)<br>
 When applying a robot, in order to secure a sufficient safety area, the operation range of the robot can be limited by using a hardware limit or a stopper. This function can minimize the damage if the robot collides with an external safety device such as a safety guard. Axis 1, 2, and 3 are mainly limited by a stopper or hardware limit. If the operation range is changed due to a mechanical stopper or hardware limit, the operation range limit parameter should be also changed in software as well. Please refer to the operation manual about the change.<br>
-The operation area limit of each axis can be changed by the user, and at the time of shipment, it is set to the maximum operation range of the robot. The safety system of the Hi7 controller can support up to 4 hardware limit switches as an option. Refer to “4.3.2. Please refer to “Safety Module (BD632)” for the matters related to the connection.
+The operation area limit of each axis can be changed by the user, and at the time of shipment, it is set to the maximum operation range of the robot. The safety system of the Hi7 controller can support up to 4 hardware limit switches as an option. Refer to “4.3.2. Please refer to “Safety Module (BD642)” for the matters related to the connection.
 
 * Operaiton mode selection (ANSI/RIA R15.06-2012)
 
@@ -1641,7 +1641,7 @@ Figure 4.8 H6COM-T<br>
 
 Table 4-3 describes the usage of the connector and the connection of external devices.
 
-Table 4-3 Types and Usage of the Connectors of Hi7COM-T
+Table 4-3 Types and Usage of the Connectors of H6COM-T
 <table>
 <tbody>
 <tr class="odd">
@@ -1739,7 +1739,7 @@ Table 4.3.2.2-1 Connector Names, Functions, and External Connection Devices of t
     <td>A</td>
     <td>J4</td>
     <td>EtherCAT Communication interface</td>
-    <td>Hi6COM/LAN4</td>
+    <td>H6COM/LAN4</td>
   </tr>
   <tr>
     <td>B</td>
@@ -2369,7 +2369,7 @@ Figure 4.3.2.6-6 Wiring Diagram for Safety Input(External Power Supply, PNP Type
 [__SOURCE](4-basic-components/3-component-func/3-backplane-board-BD604/1-overview.md)
 # 4.3.3.1. Overview
 
-The backplane board (BD604), as shown in Figure 4.50, supplies control power to Hi6a boards and transmits AMP-related signals generated from BD642 through the AMP interface board (BD652/BD654).<br>
+The backplane board (BD604), as shown in Figure 4.50, supplies control power to Hi7 boards and transmits AMP-related signals generated from BD642 through the AMP interface board (BD652/BD654).<br>
 It also serves to mount major optional boards and transmit signals between them. 
 
 ![](../../../_assets/그림_4.50_Backplan_구조.png )<br>
@@ -2526,7 +2526,7 @@ Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module
 <td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 Medium-Sized 6 Axes drive module</strong></p></td>
+<td><p><strong>Hi7 Medium-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6X</p></td>
 </tr>
 </tbody>
@@ -2766,7 +2766,7 @@ Table 4-21 Description of the Connectors of BD652
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
 <td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD640</p></td>
+<td><p>Board-to-board connectors of BD642</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
@@ -2903,7 +2903,7 @@ Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 <td><p><strong>Type symbol</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi6 Small-Sized 6 Axes drive module</strong></p></td>
+<td><p><strong>Hi7 Small-Sized 6 Axes drive module</strong></p></td>
 <td><p>H6D6A</p></td>
 </tr>
 </tbody>
@@ -3129,7 +3129,7 @@ Table 4-30 Description of the Connectors of BD654
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
 <td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD640</p></td>
+<td><p>Board-to-board connectors of BD642</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
@@ -3194,7 +3194,7 @@ Table 4-32 Type Symbol of the Optional Drive Module
 </thead>
 <tbody>
   <tr>
-    <td>Hi6 1 Axes drive module</td>
+    <td>Hi7 1 Axes drive module</td>
     <td>H6D1</td>
   </tr>
 </tbody>
@@ -4103,7 +4103,7 @@ Table 5-5 Types and Usage of the Connectors of the Brake Release Unit
   <tr>
     <td>Brake release cable connection connector</td>
     <td>Connection of the brake release unit and controller</td>
-    <td>CNB1, CNB7, and CNB8 of BD640</td>
+    <td>CNBRK16, CNB78 of BD642</td>
   </tr>
   <tr>
     <td>DC24V battery power connector</td>
@@ -5231,7 +5231,7 @@ Table 6-3 Cyclic Inspections
     <td>◎</td>
     <td>◎</td>
     <td> Safety-related board</td>
-    <td>Checking the BD630(Connectors, LEDs)</td>
+    <td>Checking the BD642(Connectors, LEDs)</td>
     <td></td>
   </tr>
 </tbody>
