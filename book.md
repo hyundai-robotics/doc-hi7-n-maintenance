@@ -164,6 +164,11 @@ or breaking of the product due to the customer’s transport of the product.
 * These are maintenance parts to be prepared when multiple units are purchased. 
 
 
+[__SOURCE](0-about-this-manual/precautions.md)
+# Precautions
+
+{% include file="en/precautions.md" %}
+
 [__SOURCE](1-safety/README.md)
 # 1. Safety
 [__SOURCE](1-safety/1-applied-standard.md)

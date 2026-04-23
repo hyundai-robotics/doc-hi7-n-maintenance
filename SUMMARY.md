@@ -2,6 +2,8 @@
 
 * [Hi7-N Controller Maintenance Manual](README.md)
 
+* [Precautions](0-about-this-manual/precautions.md)
+
 * [1. Safety](1-safety/README.md)
   * [1.1. Applicable Standards](1-safety/1-applied-standard.md)
   * [1.2. Safety Performance](1-safety/2-safety-performance.md)
