@@ -1,6 +1,7 @@
 ﻿# Table of contents
 
 * [Hi7-N 控制器维护手册](README.md)
+* [注意事项](0-about-this-manual/precautions.md)
 * [1. 安全](1-safety/README.md)
   * [1.1. 适用标准](1-safety/1-applied-standard.md)
   * [1.2. 安全性能](1-safety/2-safety-performance.md)

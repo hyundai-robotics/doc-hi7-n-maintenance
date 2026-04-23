@@ -19,13 +19,13 @@
 工作人员负责安装、检查和操作这些安全装置。<br>
 本手册是基于标准规范创建的，因此部分内容可能因您购买的产品的选项和型号而有所不同。此外，本手册的内容和规格如有变更，恕不另行通知，以提高产品性能，现代机器人公司对因手册中的不准确性或打印错误可能导致的情况不承担责任。<br>
 
-有关手册修订的详细信息，请访问我们的网站（www.hyundai-robotics.com）。<br>
+有关手册修订的详细信息，请访问我们的网站(http://www.hyundai-robotics.cn)。<br>
 
 ## 版权
 
 本手册中涵盖的内容受版权法和保密协议保护。本手册可作为购买现代机器人产品的客户的参考材料或用作内部培训材料。任何未得到现代机器人明确允许的活动，如使用、复制、披露或分发给第三方，均被严格禁止。
 
-Copyright ⓒ 2026 HD HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2025-2026 HD HYUNDAI ROBOTICS. All rights reserved.
 
 ## 安全注意事项
 
@@ -113,6 +113,10 @@ Copyright ⓒ 2026 HD HYUNDAI ROBOTICS. All rights reserved.
 * 在运输产品时，您应充分了解手册中的运输相关内容并遵循说明。由于客户的产品运输造成的任何损坏或破损，我公司不承担责任。
 * 这些是日常维护和检查时需准备的重要部分。
 * 这些是购买多台设备时需准备的维护部分。
+[__SOURCE](0-about-this-manual/precautions.md)
+# 注意事项
+
+{% include file="zh/precautions.md" %}
 [__SOURCE](1-safety/README.md)
 # 1. 安全
 [__SOURCE](1-safety/1-applied-standard.md)
