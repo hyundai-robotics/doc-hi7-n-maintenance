@@ -1,7 +1,7 @@
 ﻿# Table of contents
 
-* [Hi7 제어기 보수 설명서](README.md)
-
+* [Hi7-N 제어기 보수 설명서](README.md)
+* [사전 주의사항](0-about-this-manual/precautions.md)
 * [1. 안전](1-safety/README.md)
   * [1.1. 적용 표준](1-safety/1-applied-standard.md)
   * [1.2. 안전 성능](1-safety/2-safety-performance.md)
