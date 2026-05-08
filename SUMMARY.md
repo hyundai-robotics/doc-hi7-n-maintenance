@@ -10,7 +10,7 @@
   * [1.5. 잠재적 위험](1-safety/5-potential_risk.md)
   * [1.6. 유효성 및 책임](1-safety/6-validity-responsibility.md)
   * [1.7. 안전 라벨](1-safety/7-safety-label.md)
-  * [1.8 안전기능](1-safety/8-safety-function/README.md)
+  * [1.8. 안전기능](1-safety/8-safety-function/README.md)
     * [1.8.1. 주요 안전 기능](1-safety/8-safety-function/1-key-safety-function.md)
     * [1.8.2. 관련 기타 기능](1-safety/8-safety-function/2-related-other-func.md)
   * [1.9. 정지](1-safety/9-stop.md)
