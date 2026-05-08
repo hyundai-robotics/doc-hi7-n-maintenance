@@ -5,5 +5,10 @@
     "publisher": "HD现代机器人",
     "tocTitle": "内容",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
-    "docId": "HI7NMAINTENANCE_ZH_001"
+    "docId": "HI7NMAINTENANCE_ZH_001",
+    "references" : [
+        {
+            "rpath": "doc-hi6-operation/zh-tp630"
+        }
+    ]
 }
