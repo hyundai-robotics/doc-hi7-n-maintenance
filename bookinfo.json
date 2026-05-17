@@ -8,5 +8,6 @@
     "docId": "HI7NMAINTENANCE_KO_001",
     "references" : [
         {"title" : "${cont_model} 제어기 조작설명서 - TP630", "id" : "${cont_model:upper}OPTP630_KO_001"}
-    ]
+    ],
+    "permittedStrs" : ["Hi7"]
 }
