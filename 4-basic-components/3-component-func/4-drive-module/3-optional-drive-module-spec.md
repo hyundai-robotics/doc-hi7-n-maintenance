@@ -1,6 +1,6 @@
 ﻿# 4.3.4.3. Specification of the Optional Drive Module
 
-■  **Configuration of the Type Number of the Optional Drive Module**
+### Configuration of the Type Number of the Optional Drive Module
 
 ![](../../../_assets/선택사양_드라이브모듈의_형번_구성_en.png  )
 

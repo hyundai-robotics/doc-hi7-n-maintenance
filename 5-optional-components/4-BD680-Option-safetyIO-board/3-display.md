@@ -53,9 +53,9 @@ Table 5.4.3-1 Indicator description of the Option Safety IO Module(BD680)
 The following figure shows the front panel indicators of the Option Safety I/O Module(BD680). The table below describes the function and meaning of each indicator.
 
 ![](../../_assets/BD680_전면표시장치.png)   
-Figure 5.4.3-2 Layout of Front Panel Indicators–Option Safety I/O Module(BD680)   
+Figure 5.4.3-2 Layout of Front Panel Indicators-Option Safety I/O Module(BD680)   
 
-Table 5.4.3-2 Front Panel Indicator Description–Option Safety I/O Module(BD680) 
+Table 5.4.3-2 Front Panel Indicator Description-Option Safety I/O Module(BD680) 
 <table>
 <thead>
   <tr>

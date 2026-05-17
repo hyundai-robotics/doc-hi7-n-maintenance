@@ -62,5 +62,5 @@ Table 3-2 Power Requirements
 </tbody>
 </table>
 
-Note 1) Power capacity: Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the “Manipulator Maintenance Manual”.<br> 
+Note 1) Power capacity: Refers to the power supply capacity of the controller. For the power capacity of each robot, refer to the "Manipulator Maintenance Manual".<br> 
 Note 2) Voltage range: ±10% (at the power terminal of the controller) 

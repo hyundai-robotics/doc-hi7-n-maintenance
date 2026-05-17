@@ -45,7 +45,7 @@ Table 4-2 Summary of Functions of the Individual Components
 </tbody>
 </table>
 
-※ For the types of components of each controller, refer to “2.1 Details of Specifications of Each Controller Model.” 
+* For the types of components of each controller, refer to "2.1 Details of Specifications of Each Controller Model." 
 
 ![](../../_assets/그림_4_3_구성품%20위치.png)<br>
 Figure 4.7 Components of the Control module<br>

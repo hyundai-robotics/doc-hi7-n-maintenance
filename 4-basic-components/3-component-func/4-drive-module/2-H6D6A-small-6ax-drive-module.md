@@ -73,7 +73,7 @@ Table 4-23 Configuration of H6D6A (Small-Sized 6 Axes Integrated Drive Module)
 The drive module differs depending on the type of the robot, so you must check the type when replacing it.
 {% endhint %}
 
-■  **Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module**
+### Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module
 
 
 ![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성_en.png)

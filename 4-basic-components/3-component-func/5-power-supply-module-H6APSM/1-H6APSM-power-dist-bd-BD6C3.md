@@ -27,12 +27,12 @@ Table 4-35 Types and Usage of the Fuses of the Electronic Module
   </tr>
   <tr>
     <td>FS17</td>
-    <td>Fuse for overcurrent protection of CMDCFAN and DCFAN2–5 GND</td>
+    <td>Fuse for overcurrent protection of CMDCFAN and DCFAN2-5 GND</td>
     <td>7VAC/60VDC 7A</td>
   </tr>
   <tr>
     <td>FS18</td>
-    <td>Fuse for overcurrent protection of DCFAN2–5</td>
+    <td>Fuse for overcurrent protection of DCFAN2-5</td>
     <td>125VAC/125VDC 6.3A</td>
   </tr>
   <tr>

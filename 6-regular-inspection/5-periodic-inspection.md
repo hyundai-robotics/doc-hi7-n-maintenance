@@ -111,13 +111,13 @@ Table 6-3 Cyclic Inspections
     <td rowspan="4"></td>
   </tr>
   <tr>
-    <td>‧CNFN1 B2-C2</td>
+    <td>CNFN1 B2-C2</td>
   </tr>
   <tr>
-    <td>‧CNPB1 PB-MB</td>
+    <td>CNPB1 PB-MB</td>
   </tr>
   <tr>
-    <td>‧ CN24VB1 P24B-24GND</td>
+    <td> CN24VB1 P24B-24GND</td>
   </tr>
   <tr>
     <td>10</td>

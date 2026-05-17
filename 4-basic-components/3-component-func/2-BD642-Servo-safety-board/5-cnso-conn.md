@@ -20,7 +20,7 @@ When using the internal power supply for the B channel, connect pins 3 and 4 of 
 For connection to external devices, refer to the wiring example below.
 
 ![](../../../_assets/BD642_안전출력_내부전원_NPN.png)   
-Figure 4.3.2.5-2 Safety Output Wiring Diagram (Internal Power Supply, NPN Type) – Servo/Safety Module(BD642)   
+Figure 4.3.2.5-2 Safety Output Wiring Diagram (Internal Power Supply, NPN Type) - Servo/Safety Module(BD642)   
 
 * PNP-TYPE(: Active High)   
 In the figure below, red indicates the A channel, and blue indicates the B channel.
@@ -29,7 +29,7 @@ When using the internal power supply for the B channel, connect pins 7 and 8 of 
 For connection to external devices, refer to the wiring example below.
 
 ![](../../../_assets/BD642_안전출력_내부전원_PNP.png)   
-Figure 4.3.2.5-3 Safety Output Wiring Diagram (Internal Power Supply, PNP Type) – Servo/Safety Module(BD642)   
+Figure 4.3.2.5-3 Safety Output Wiring Diagram (Internal Power Supply, PNP Type) - Servo/Safety Module(BD642)   
 
 (2) When Using an External Power Supply   
 * NPN-TYPE(: Active Low)   
@@ -40,7 +40,7 @@ When using an external power supply for the B channel, connect EX_BG (GND) to pi
 For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전출력_외부전원_NPN.png)   
-Figure 4.3.2.5-4 Safety Output Wiring Diagram(External Power Supply, NPN Type)–Servo/Safety Module(BD642)   
+Figure 4.3.2.5-4 Safety Output Wiring Diagram(External Power Supply, NPN Type)-Servo/Safety Module(BD642)   
 
 * PNP-TYPE(: Active High)   
 In the figure below, red indicates the A channel, and blue indicates the B channel.
@@ -49,4 +49,4 @@ When using an external power supply for the B channel, connect EX_BV(24V) to pin
 For connection to external devices, refer to the wiring example shown below.
 
 ![](../../../_assets/BD642_안전출력_외부전원_PNP.png)   
-Figure 4.3.2.5-5 Safety Output Wiring Diagram(External Power Supply, PNP Type)–Servo/Safety Module(BD642)
+Figure 4.3.2.5-5 Safety Output Wiring Diagram(External Power Supply, PNP Type)-Servo/Safety Module(BD642)

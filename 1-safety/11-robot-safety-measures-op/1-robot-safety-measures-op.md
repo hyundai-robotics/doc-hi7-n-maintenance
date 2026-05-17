@@ -9,7 +9,7 @@ Observe the following measures considering that safety is very important when op
 * Two people must work together. One person should be teaching and the other should be monitoring from the operation panel. One of the two should be ready to press the emergency stop switch at any time, and the other should perform the work quickly with sufficient care in the operation area. In addition, check the evacuation route before starting the work.  
 * Supply the power after confirming that there is no worker within the safety guard. 
 * Works such as teaching should be performed outside the robot safety guard in principle. However, when required to stop the system and work within the operation range, the worker should bring in the mode switch key (or a switch to change to the auto mode), or the safety plug when going inside. Such action is necessary to make sure that no other worker accidentally changes the robot to the auto operation mode. Also, pay special attention to the direction of the operation of the robot just in preparation for the robot malfunctioning or operating in wrong conditions.<br>
-※  The supervisor should observe the followings.
+*  The supervisor should observe the followings.
   - The supervisor should be positioned at a location where she or he can see the robot entirely and should be dedicated to the duties of supervision. 
   - If there is any problem, press the emergency stop button immediately. 
   - Other people except for the persons involved in the work should not be allowed to stay within the operation range. 

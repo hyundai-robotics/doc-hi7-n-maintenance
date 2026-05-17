@@ -69,7 +69,7 @@ Table 4-14 Configuration of H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
 </tbody>
 </table>
 
-■  **Configuration of the Type Number of the Medium-Sized 6 Axes Integrated Drive Module**
+### Configuration of the Type Number of the Medium-Sized 6 Axes Integrated Drive Module
 
 ![](../../../_assets/중형_6축_일체형_드라이브모듈_형번_구성_en.png  )
 

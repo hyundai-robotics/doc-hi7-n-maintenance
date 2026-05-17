@@ -1,7 +1,7 @@
 ﻿# 5.1.1. Overview 
 
-To use industrial communication in the Hi7 controller, you can use a PCI communication card. Descriptions below are provided based on a PCI communication card for Ethernet, which is a general model. For details, please refer to the contents for the PC Cards CIFX 50 model in the document “PC Cards CIFX 50 50E 70E 
-100EH UM 51 EN”.
+To use industrial communication in the Hi7 controller, you can use a PCI communication card. Descriptions below are provided based on a PCI communication card for Ethernet, which is a general model. For details, please refer to the contents for the PC Cards CIFX 50 model in the document "PC Cards CIFX 50 50E 70E 
+100EH UM 51 EN".
 
 Table 5-2 Part Names of PCI Communication Cards
 <table>

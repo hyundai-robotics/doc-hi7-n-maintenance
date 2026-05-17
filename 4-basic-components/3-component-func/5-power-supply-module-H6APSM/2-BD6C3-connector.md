@@ -171,7 +171,7 @@ Table 4-37 Types and Functions of BD6C3 LEDs
 <tbody>
   <tr>
     <td>LDFNFLT</td>
-    <td>ON when a fault occurs in one or more of FAN 1–5</td>
+    <td>ON when a fault occurs in one or more of FAN 1-5</td>
     <td>FAN Fault, Red</td>
   </tr>
   <tr>

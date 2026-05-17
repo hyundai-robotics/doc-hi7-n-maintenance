@@ -110,5 +110,5 @@ Table 4.3.2.2-1 Connector Names, Functions, and External Connection Devices of t
 </table>
       
 {% hint style="info" %}
-If safety-related inputs are connected and activated, refer to “1.11 Safety Precautions for Robot Operation” and verify that the functions operate correctly.
+If safety-related inputs are connected and activated, refer to "1.11 Safety Precautions for Robot Operation" and verify that the functions operate correctly.
 {% endhint %}

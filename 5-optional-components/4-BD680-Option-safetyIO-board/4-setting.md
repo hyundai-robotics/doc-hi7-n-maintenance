@@ -5,7 +5,7 @@ The following figure shows the location of the setting(switch) devices on the Op
 ![](../../_assets/BD680_PCB_설정.png)   
 Figure 5.4.4-1 Layout of Setting Devices on Optional Safety IO Module(BD680)
 
-Table 5.4.4-1 Setting Device(SW1) Description – Optional Safety IO Module(BD680)
+Table 5.4.4-1 Setting Device(SW1) Description - Optional Safety IO Module(BD680)
 <table>
 <thead>
   <tr>

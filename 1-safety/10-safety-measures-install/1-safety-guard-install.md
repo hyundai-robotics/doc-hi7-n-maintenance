@@ -10,7 +10,7 @@ Configure the system to ensure that the robot stops when a worker opens the door
 ![](../../_assets/그림_1.4_안전펜스_연결.png)<br>
 Figure 1.4 Connection of the Safety Fence<br>
 
-Source: ISO 13855:2010 Safety of machinery — Positioning of safeguards with   respect to the approach speeds of parts of the human body 
+Source: ISO 13855:2010 Safety of machinery - Positioning of safeguards with   respect to the approach speeds of parts of the human body 
  
 Table 1-3 Installation Standards of the Safety Fence
 ![](../../_assets/표_1-3_안전펜스_설치_규격.png)<br>

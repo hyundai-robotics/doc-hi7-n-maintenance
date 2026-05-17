@@ -39,5 +39,5 @@ Table 5.4.2-1 Names, Functions, and External Connection Devices of BD680 Connect
 </table>
 
 {% hint style="info" %}
-When safety-related inputs are connected and activated, always refer to “1.11. Safety Measures During Robot Operation” to verify proper function.
+When safety-related inputs are connected and activated, always refer to "1.11. Safety Measures During Robot Operation" to verify proper function.
 {% endhint %}

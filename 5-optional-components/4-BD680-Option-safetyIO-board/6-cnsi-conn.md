@@ -7,28 +7,28 @@ When performing safety input wiring, ensure the controller power is turned OFF b
 The figure below shows the actual appearance of the Optional Safety IO Module(BD680) and the location of the safety input connector(CNSI2) when viewed from the front.   
 
 ![](../../_assets/BD680_전면사진_안전입력.png)  
-Figure 5.4.6-1 Optional Safety IO Module(BD680) – Physical View and Safety Input Connector(CNSI2) Location
+Figure 5.4.6-1 Optional Safety IO Module(BD680) - Physical View and Safety Input Connector(CNSI2) Location
 
 The wiring for safety inputs differs depending on whether internal or external power is used and the type of signal(NPN/PNP). The following diagrams show the wiring configuration for each case.
 
 (1) When Using Internal Power   
 * NPN-TYPE(: Active Low)   
 In the figure below, red represents A-Channel and blue represents B-Channel.
-A-Channel: When using internal power, connect pins 1–3 on connector CNSI2 as shown in the figure.
-B-Channel: When using internal power, connect pins 13–15 on connector CNSI2 as shown in the figure.
+A-Channel: When using internal power, connect pins 1-3 on connector CNSI2 as shown in the figure.
+B-Channel: When using internal power, connect pins 13-15 on connector CNSI2 as shown in the figure.
 For connection to external devices, refer to the wiring example below.
 
 ![](../../_assets/BD680_안전입력_내부전원_NPN.png)   
-Figure 5.4.6-2 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(NPN-TYPE)
+Figure 5.4.6-2 Optional Safety IO Module(BD680)-Safety Input Wiring Using Internal Power(NPN-TYPE)
 
 * PNP-TYPE(: Active High)   
 In the figure below, red represents A-Channel and blue represents B-Channel.
-A-Channel: When using internal power, connect pins 3–12 on connector CNSI2 as shown in the figure.
-B-Channel: When using internal power, connect pins 15–24 on connector CNSI2 as shown in the figure.
+A-Channel: When using internal power, connect pins 3-12 on connector CNSI2 as shown in the figure.
+B-Channel: When using internal power, connect pins 15-24 on connector CNSI2 as shown in the figure.
 For connection to external devices, refer to the wiring example below.
 
 ![](../../_assets/BD680_안전입력_내부전원_PNP.png)   
-Figure 5.4.6-3 Optional Safety IO Module(BD680)–Safety Input Wiring Using Internal Power(PNP-TYPE)
+Figure 5.4.6-3 Optional Safety IO Module(BD680)-Safety Input Wiring Using Internal Power(PNP-TYPE)
 
 {% hint style="warning" %}
 Do not use the internal power as the power supply for external devices when connecting to them.

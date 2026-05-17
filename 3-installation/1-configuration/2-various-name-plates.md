@@ -1,7 +1,7 @@
 ﻿# 3.1.2. Checking of Various Name Plates
 
 ![](../../_assets/fig_1.1_safety_label.png  )<br>
-Figure 3.2 Controller’s Labels<br>
+Figure 3.2 Controller's Labels<br>
 
 Table 3-1 Label Type<br>
 ![](../../_assets/표3-1_라벨_종류-1_en.png  )

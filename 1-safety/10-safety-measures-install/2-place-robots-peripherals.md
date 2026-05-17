@@ -6,7 +6,7 @@ In addition, it is required to comply with the relevant requirements of internat
 standards and national laws.<br>
 Our company(or the manufacturer) will not be responsible for any accidents that occur 
 due to not complying with the relevant requirements of international standards and 
-national laws or due to not reviewing the “risk assessment”. 
+national laws or due to not reviewing the "risk assessment". 
 {% endhint %}
 
 Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws. 
@@ -14,7 +14,7 @@ Installation of the product should be performed by a qualified installer accordi
 * When unpacking the product, check it for damage that may occur while transporting or unpacka it. 
 * Before installing the product after unpacking it, you must check the safety regulations, instructions, information related to the product installation and use environments, and  fully undertand the installation methods. 
 * When connecting the primary power of the controller or peripheral device, peroform the connection after checking first whether the supply side power is turned off. Since high voltage is used as the primary power source, there is a risk of electric shock. 
-* Put up a sign “No entry during operation” at the entrance of the safety fence, and inform the workers of the intents. 
+* Put up a sign "No entry during operation" at the entrance of the safety fence, and inform the workers of the intents. 
 * Place the controller, interlock panels, and other control panels in a way that they can be operated from outside the safety fence. 
 * When installing the operation stand, attach an emergency stop button to it also. Wherever  you operate the robot, you should be able to stop the robot in an emergency situation. 
 * Do not allow the wiring or piping of the manipulator, controller, interlock panel, timer, etc. to get caught on by the workers' feet or to get stepped on directly by the forklift. Otherwise, there is a risk of accidents of the worker getting electric shock or the wires getting disconnected.

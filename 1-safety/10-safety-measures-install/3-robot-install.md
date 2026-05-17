@@ -6,7 +6,7 @@ addition, it is required to comply with the relevant requirements of internation
 standards and national laws.<br>
 Our company(or the manufacturer) will not be responsible for any accidents that occur 
 due to not complying with the relevant requirements of international standards and 
-national laws or due to not reviewing the “risk assessment”. 
+national laws or due to not reviewing the "risk assessment". 
 {% endhint %}
 
 Installation of the product should be performed by a qualified installer according to relevant national and local regulations and laws. 

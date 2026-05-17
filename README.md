@@ -19,17 +19,12 @@ This manual has been created based on standard specifications, so some contents 
 
 For detailed information on the revision of the manual, you need to visit our internet website (https://www.hd-hyundairobotics.com/en/main).<br>
 
-## Copyrights
-
-The contents covered in this manual are protected by copyright laws and confidentiality agreements. This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
-
-Copyright ⓒ 2025-2026 HD HYUNDAI ROBOTICS. All rights reserved.
 
 ## Safety Cautions
 
 Before using the product, you must fully understand the following safety cautions for proper use, user safety, and prevention of property damage.
 
-■ Danger
+### Danger
 
 {% hint style="danger" %}
 Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
@@ -41,7 +36,7 @@ a measure, before carrying out works, such as using a rope and crane that are to
 transport of individual robots to prevent the brake from running down or additional accidents 
 from taking place during the release of the brake.<br>
 
-■ Warning
+### Warning
 
 {% hint style="warning" %}
 Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
@@ -54,14 +49,14 @@ a cover is prohibited.
 Therefore, install a safety fence to prevent the worker from getting close to the robot. 
 * The robot should be installed and operated according to the guidelines of ISO10218-2. In
 addition, it is required to comply with the relevant requirements of international standards and national laws. Our company(or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and 
-national laws or due to not reviewing the “risk assessment”.
+national laws or due to not reviewing the "risk assessment".
 * Must observe the safety work procedures to prevent safety accidents. Do not change or ignore
 safety devices or circuits under any circumstances, and pay attention to possible electric shock. In auto mode, all normal works should be performed outside the safety guard. Before carrying out works, make sure that there are no people in the operation area of the robot.
 * Sufficiently check under your feet when teaching. In particular, you must perform the teaching work outside the safety guard when teaching at a high speed(250mm/s or above). 
 * When it comes to changing of components or addition of optional equipment(both hardware
 and software) to the robot both of which may affect safety-related functions, you must check 
 whether the functions are in normal conditions, by paying attention to the items described in 
-“1.11 Safety Works When Operating the Robot”. 
+"1.11 Safety Works When Operating the Robot". 
 * When installing and operating an end effector, you must perform application, maintenance and 
 operation according to ISO/TR 20218-1:2018.
 * When transporting the product by using lifting equipment, you should comply with the relevant 
@@ -75,13 +70,13 @@ is disabled. This is an essential measure that must be taken in advance for the 
 * If a safety input is to be installed and used, the robot should be operated after confirming that the input function operates normally. This is an essential measure that must be taken in advance for the safety of workers. 
 * The robot should be installed and operated according to the guidelines of ISO10218-2. In 
 addition, it is required to comply with the relevant requirements of international standards and
-national laws. Our company(or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not following the above “caution”. 
-* If a safety-related input is installed and enabled, you must check whether the function operates normally by referring to “1.11 Safety Measures When Operating the Robot”. 
+national laws. Our company(or the manufacturer) will not be responsible for any accidents that occur due to not complying with the relevant requirements of international standards and national laws or due to not following the above "caution". 
+* If a safety-related input is installed and enabled, you must check whether the function operates normally by referring to "1.11 Safety Measures When Operating the Robot". 
 * If an emergency stop output is to be installed and used, the robot should be operated after 
 confirming that the emergency stop output operates normally. This is an essential measure that 
 must be taken in advance for the safety of workers. 
 
-■ Caution 
+### Caution 
 
 {% hint style="info" %}
 Low-level danger factor: Incompliance may result in minor injury to the worker or damage to property, such as damage to the product.
@@ -104,16 +99,16 @@ procedures.
 * When moving the axis of the robot that has no driving force applied, there is a risk of the axis dropping due to gravity and also an additional risk due to the release of the brake system. So, you must proceed with the work according to the instructed procedures.
 * Before turning on the power, check that there is no worker inside the robot operation area and you are in a safe place. 
 * Before installing the product, you must perform a sufficient risk assessment and then set the 
-safety functions based on the assessment results. For details on safety functions, refer to “1. 
-Safety” section. 
+safety functions based on the assessment results. For details on safety functions, refer to "1. 
+Safety" section. 
 * When installing and repairing the product, contact the customer support team and ask an expert. 
 * Do not install and use the product in an area that has lots of dust or is dirty. Dust or foreign substances may cause product failure or performance problems.  
 * Mark the installation and dangerous areas of the robot in a way that they can be clearly
 differentiated from other facilities and devices in terms of type, color and style. 
 * If the product is not installed in the recommended locations, the performance and service life of the product may be reduced. Install and use the product according to the recommendations. 
-  - Before connecting the cables, turn “off” the controller's main power switch and then lock it by using a padlock.  
+  - Before connecting the cables, turn "off" the controller's main power switch and then lock it by using a padlock.  
   - The controller has DC400V charged energy. Be careful. Wait at least 5 minutes after turning 
-“off” the power switch, and then wait 5 minutes at least to discharge the charged energy. 
+"off" the power switch, and then wait 5 minutes at least to discharge the charged energy. 
   - When handling the PCB, take precautions not to allow static electricity to damage it 
   - Wiring and connection of wires must be performed by qualified personnel. 
 * Since the contact part of the connector for each robot may be different from the figure above, you must read the relevant robot maintenance manual carefully before connecting the wire 
@@ -133,7 +128,7 @@ required to reprogram through FPGA JTAG.
 replacing it.
   - Do not release more than two axes at the same time. 
   - Must keep a safe distance from the robot first before using the brake release unit. 
-  - Use the brake release unit after preparing for the dropping of the robot’s axis by using
+  - Use the brake release unit after preparing for the dropping of the robot's axis by using
 equipment such as a crane. 
   - Check the safety matters while working in a group of at least 2 people.
 * When using the brake release unit, follow the procedures below. 
@@ -157,7 +152,7 @@ may result.
 * If you transport the product by using lifting equipment, you should comply with relevant national and local safety regulations and equipment usage guidelines.   
 * When transporting the product, you should fully understand the transport-related contents in 
 the manual and follow the instructions. Our company will not be responsible for any damage to 
-or breaking of the product due to the customer’s transport of the product.  
+or breaking of the product due to the customer's transport of the product.  
 * These are important parts to be prepared for daily maintenance and inspection. 
 * These are maintenance parts to be prepared when multiple units are purchased. 
 
