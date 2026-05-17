@@ -10,7 +10,7 @@
 
 그림 1.4 안전펜스 연결
 
-출처: ISO 13855:2010 Safety of machinery — Positioning of safeguards with respect to the approach speeds of parts of the human body
+출처: ISO 13855:2010 Safety of machinery - Positioning of safeguards with respect to the approach speeds of parts of the human body
 
 [](../../_assets/표_1-3_안전펜스_설치_규격.png  )
 
