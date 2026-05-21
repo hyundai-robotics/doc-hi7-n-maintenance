@@ -1,12 +1,12 @@
-﻿# 4.3.4.4. H6D1X (Carriage Drive Module; Optional)
+﻿# 4.3.4.4. H7D1X (Carriage Drive Module; Optional)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The carriage drive module can drive one motor of 100A or below and is configured as follows.
 
 ![](../../../_assets/그림_4_26_BD658V60_부품_배치도.PNG  )
 
-Figure 4.24 Parts Placement Diagram of BD658V60 for H6D1X</br></br>
+Figure 4.24 Parts Placement Diagram of BD658V60 for H7D1X</br></br>
 
-Table 4-35 Configuration of H6D1X
+Table 4-35 Configuration of H7D1X
 
 <table>
 <thead>
@@ -42,7 +42,7 @@ Table 4-35 Configuration of H6D1X
 </tbody>
 </table>
 
-Table 4-36 Description of the Connectors of H6D1X
+Table 4-36 Description of the Connectors of H7D1X
 
 <table>
 <thead>

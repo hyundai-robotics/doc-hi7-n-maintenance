@@ -1,10 +1,10 @@
-﻿# 4.3.4.1. H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+﻿# 4.3.4.1. H7D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
 The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows. 
 
-Table 4-14 Configuration of H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+Table 4-14 Configuration of H7D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
 
 <table>
@@ -83,7 +83,7 @@ Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module
 </tr>
 <tr class="even">
 <td><p><strong>Hi7 Medium-Sized 6 Axes drive module</strong></p></td>
-<td><p>H6D6X</p></td>
+<td><p>H7D6X</p></td>
 </tr>
 </tbody>
 </table>

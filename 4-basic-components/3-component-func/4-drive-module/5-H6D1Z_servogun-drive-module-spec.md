@@ -1,12 +1,12 @@
-﻿# 4.3.4.5. H6D1Z (Servo Gun Drive Module; Optional)
+﻿# 4.3.4.5. H7D1Z (Servo Gun Drive Module; Optional)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The servo gun drive module can drive one motor of 50A or below and is configured as follows.
 
 ![](../../../_assets/그림_4_27_BD659V60_부품_배치도.PNG  )
 
-Figure 4.25 Parts Placement Diagram of BD659V60 for H6D1Z</br></br>
+Figure 4.25 Parts Placement Diagram of BD659V60 for H7D1Z</br></br>
 
-Table 4-37 Configuration of H6D1Z
+Table 4-37 Configuration of H7D1Z
 
 <table>
 <thead>
@@ -41,7 +41,7 @@ Table 4-37 Configuration of H6D1Z
 </tbody>
 </table>
 
-Table 4-38 Description of the Connectors of H6D1Z
+Table 4-38 Description of the Connectors of H7D1Z
 
 <table>
 <thead>
