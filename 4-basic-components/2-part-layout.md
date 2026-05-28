@@ -28,23 +28,23 @@ Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>H6aPSM</p></td>
+<td><p>H7PSM</p></td>
 <td><p>전원공급모듈</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>H6D6X(대/중형)</p>
-<p>/H6D6A(소형)</p></td>
+<td><p>H7D6X(대/중형)</p>
+<p>/H7D6A(소형)</p></td>
 <td><p>대/중/소형 6축용 드라이브모듈</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>H6D1X(선택사양)</p></td>
+<td><p>H7D1X(선택사양)</p></td>
 <td><p>100A 1축 드라이브모듈</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>6-1</strong></p></td>
-<td><p>H6D1Z(선택사양)</p></td>
+<td><p>H7D1Z(선택사양)</p></td>
 <td><p>50A 1축 드라이브모듈</p></td>
 </tr>
 <tr class="odd">
