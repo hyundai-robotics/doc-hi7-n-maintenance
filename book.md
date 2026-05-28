@@ -857,16 +857,16 @@ Table 2-1 Details of Specification of Each Controller Model
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>Power supply module&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7PSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>Drive module&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>For medium-sized 6 axes&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H7D6X<br>N80(U)-A0 : H7D6X<br>N30(U)-A0 : H7D6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>For one additional axis&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7D1X, H7D1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Wire harness&nbsp;&nbsp;&nbsp;</td>
@@ -1460,23 +1460,23 @@ Table 4-1 Names of Individual Parts of the Hi7-N00/N30/N80 Controller
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>H6PSM</p></td>
+<td><p>H7PSM</p></td>
 <td><p>Power supply module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>H6D6X(Large/Medium-sized)</p>
-<p>/H6D6A(Small-sized)</p></td>
+<td><p>H7D6X(Large/Medium-sized)</p>
+<p>/H7D6A(Small-sized)</p></td>
 <td><p>Drive module for Large/Medium/Small-sized 6 axes</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>H6D1X(Optional)</p></td>
+<td><p>H7D1X(Optional)</p></td>
 <td><p>Drive module for 1 axis of 100A</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>6-1</strong></p></td>
-<td><p>H6D1Z(Optional)</p></td>
+<td><p>H7D1Z(Optional)</p></td>
 <td><p>Drive module for 1 axis of 50A</p></td>
 </tr>
 <tr class="odd">
@@ -1597,7 +1597,7 @@ Table 4-2 Summary of Functions of the Individual Components
   </tr>
   <tr>
     <td>Drive module<br>(Drive Module)</td>
-    <td>Large/Medium-sized 6axes: H6D6X<br>Small-sized 6axes: H6D6A<br>Additional axis: H6D1X, H6D1Z</td>
+    <td>Large/Medium-sized 6axes: H7D6X<br>Small-sized 6axes: H7D6A<br>Additional axis: H7D1X, H7D1Z</td>
     <td>- Generation of the motor drive power<br>- Regenerative discharge<br>- Servo motor power amplification circuit<br>- Various error outputs</td>
   </tr>
   <tr>
@@ -1612,7 +1612,7 @@ Table 4-2 Summary of Functions of the Individual Components
   </tr>
   <tr>
     <td>Power supply module</td>
-    <td>H6PSM</td>
+    <td>H7PSM</td>
     <td>- Opening/closing of the motor drive power<br>- Distribution of various power</td>
   </tr>
 </tbody>
@@ -2442,13 +2442,13 @@ Figure 4.27 Connector Configuration of Backplane Board<br>
 # 4.3.4. Drive Module
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/1-H6DX-middle-6ax-drive-module.md)
-# 4.3.4.1. H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+# 4.3.4.1. H7D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
 The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows. 
 
-Table 4-14 Configuration of H6D6X (Medium-Sized 6 Axes Integrated Drive Module)
+Table 4-14 Configuration of H7D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
 
 <table>
@@ -2527,7 +2527,7 @@ Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module
 </tr>
 <tr class="even">
 <td><p><strong>Hi7 Medium-Sized 6 Axes drive module</strong></p></td>
-<td><p>H6D6X</p></td>
+<td><p>H7D6X</p></td>
 </tr>
 </tbody>
 </table>
@@ -2814,14 +2814,14 @@ Table 4-22 Description of the LEDs of BD652
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/2-H6D6A-small-6ax-drive-module.md)
-# 4.3.4.2. H6D6A (Small-Sized 6 Axes Integrated Drive Module)
+# 4.3.4.2. H7D6A (Small-Sized 6 Axes Integrated Drive Module)
 
 The drive module performs a power amplification function that allows the current to flow to individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
 
 The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows.
 
 
-Table 4-23 Configuration of H6D6A (Small-Sized 6 Axes Integrated Drive Module)
+Table 4-23 Configuration of H7D6A (Small-Sized 6 Axes Integrated Drive Module)
 
 <table>
 <thead>
@@ -2904,7 +2904,7 @@ Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 </tr>
 <tr class="even">
 <td><p><strong>Hi7 Small-Sized 6 Axes drive module</strong></p></td>
-<td><p>H6D6A</p></td>
+<td><p>H7D6A</p></td>
 </tr>
 </tbody>
 </table>
@@ -3195,7 +3195,7 @@ Table 4-32 Type Symbol of the Optional Drive Module
 <tbody>
   <tr>
     <td>Hi7 1 Axes drive module</td>
-    <td>H6D1</td>
+    <td>H7D1</td>
   </tr>
 </tbody>
 </table>
@@ -3267,15 +3267,15 @@ Table 4-34 Symbols of the Hall Sensors of the Optional Drive Module
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/4-H6D1X-carriage-drive-module-spec.md)
-# 4.3.4.4. H6D1X (Carriage Drive Module; Optional)
+# 4.3.4.4. H7D1X (Carriage Drive Module; Optional)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The carriage drive module can drive one motor of 100A or below and is configured as follows.
 
 ![](../../../_assets/그림_4_26_BD658V60_부품_배치도.PNG  )
 
-Figure 4.24 Parts Placement Diagram of BD658V60 for H6D1X</br></br>
+Figure 4.24 Parts Placement Diagram of BD658V60 for H7D1X</br></br>
 
-Table 4-35 Configuration of H6D1X
+Table 4-35 Configuration of H7D1X
 
 <table>
 <thead>
@@ -3311,7 +3311,7 @@ Table 4-35 Configuration of H6D1X
 </tbody>
 </table>
 
-Table 4-36 Description of the Connectors of H6D1X
+Table 4-36 Description of the Connectors of H7D1X
 
 <table>
 <thead>
@@ -3346,15 +3346,15 @@ Table 4-36 Description of the Connectors of H6D1X
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/5-H6D1Z_servogun-drive-module-spec.md)
-# 4.3.4.5. H6D1Z (Servo Gun Drive Module; Optional)
+# 4.3.4.5. H7D1Z (Servo Gun Drive Module; Optional)
 
 The drive module performs a power amplification function that allows the current to flow to the individual phases of the motor according to the current command from the servo board. The servo gun drive module can drive one motor of 50A or below and is configured as follows.
 
 ![](../../../_assets/그림_4_27_BD659V60_부품_배치도.PNG  )
 
-Figure 4.25 Parts Placement Diagram of BD659V60 for H6D1Z</br></br>
+Figure 4.25 Parts Placement Diagram of BD659V60 for H7D1Z</br></br>
 
-Table 4-37 Configuration of H6D1Z
+Table 4-37 Configuration of H7D1Z
 
 <table>
 <thead>
@@ -3389,7 +3389,7 @@ Table 4-37 Configuration of H6D1Z
 </tbody>
 </table>
 
-Table 4-38 Description of the Connectors of H6D1Z
+Table 4-38 Description of the Connectors of H7D1Z
 
 <table>
 <thead>
@@ -3424,15 +3424,15 @@ Table 4-38 Description of the Connectors of H6D1Z
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/README.md)
-# 4.3.5. Power Supply Module(H6PSM)
+# 4.3.5. Power Supply Module(H7PSM)
 
 [__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/1-H6APSM-power-dist-bd-BD6C3.md)
-# 4.3.5.1. H6PSM and Power Distribution Board(BD6C3)
+# 4.3.5.1. H7PSM and Power Distribution Board(BD6C3)
 
-The H6PSM (Hi7-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
+The H7PSM (Hi7-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
 
 ![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부_en.png  )<br>
-Figure 4.34 Exterior of H6PSM (Hi7-N Controller Power Supply Module)<br>
+Figure 4.34 Exterior of H7PSM (Hi7-N Controller Power Supply Module)<br>
 
 The following figure shows the power system diagram for the AC control power related to the opening and closing of the 3-phase AC power for the motor power, the generation of the brake power, and the driving of the fan. The diagram in the figure also shows the power distribution, such as the SMPS power for the DC power supply to the control module. A circuit breaker (CP) or fuse is connected to each power to protect individual circuits against overcurrent. 
 
@@ -5353,7 +5353,7 @@ Table 6-6 Maintenance Parts of the Category A-2 (Important Backup Parts)
   <tr>
     <td>1</td>
     <td>Motor drive </td>
-    <td>H6AD6X<br>H6AD6A</td>
+    <td>H7D6X<br>H7D6A</td>
     <td>Hyundai Robotics</td>
     <td>1</td>
     <td>Medium-sized robot Small-sized robot</td>
@@ -5377,7 +5377,7 @@ Table 6-6 Maintenance Parts of the Category A-2 (Important Backup Parts)
   <tr>
     <td>4</td>
     <td> Power supply module </td>
-    <td>H6APSM30<br>H6APSM15</td>
+    <td>H7PSM30<br>H7PSM15</td>
     <td>Hyundai Robotics</td>
     <td>1</td>
     <td>Large-sized robot Medium-sized robot Small-sized robot</td>

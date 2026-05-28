@@ -27,23 +27,23 @@ Table 4-1 Names of Individual Parts of the Hi7-N00/N30/N80 Controller
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>H6PSM</p></td>
+<td><p>H7PSM</p></td>
 <td><p>Power supply module</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>H6D6X(Large/Medium-sized)</p>
-<p>/H6D6A(Small-sized)</p></td>
+<td><p>H7D6X(Large/Medium-sized)</p>
+<p>/H7D6A(Small-sized)</p></td>
 <td><p>Drive module for Large/Medium/Small-sized 6 axes</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>H6D1X(Optional)</p></td>
+<td><p>H7D1X(Optional)</p></td>
 <td><p>Drive module for 1 axis of 100A</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>6-1</strong></p></td>
-<td><p>H6D1Z(Optional)</p></td>
+<td><p>H7D1Z(Optional)</p></td>
 <td><p>Drive module for 1 axis of 50A</p></td>
 </tr>
 <tr class="odd">

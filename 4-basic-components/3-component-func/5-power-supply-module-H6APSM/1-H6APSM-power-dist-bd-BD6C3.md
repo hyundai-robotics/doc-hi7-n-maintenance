@@ -1,9 +1,9 @@
-﻿# 4.3.5.1. H6PSM and Power Distribution Board(BD6C3)
+﻿# 4.3.5.1. H7PSM and Power Distribution Board(BD6C3)
 
-The H6PSM (Hi7-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
+The H7PSM (Hi7-N controller power supply module) module is responsible for the opening and closing and distribution of various power supplied to the controller. The following figures show the interior and exterior of the electrical module with diverse connectors and fuses.
 
 ![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부_en.png  )<br>
-Figure 4.34 Exterior of H6PSM (Hi7-N Controller Power Supply Module)<br>
+Figure 4.34 Exterior of H7PSM (Hi7-N Controller Power Supply Module)<br>
 
 The following figure shows the power system diagram for the AC control power related to the opening and closing of the 3-phase AC power for the motor power, the generation of the brake power, and the driving of the fan. The diagram in the figure also shows the power distribution, such as the SMPS power for the DC power supply to the control module. A circuit breaker (CP) or fuse is connected to each power to protect individual circuits against overcurrent. 
 

@@ -24,7 +24,7 @@ Table 4-2 Summary of Functions of the Individual Components
   </tr>
   <tr>
     <td>Drive module<br>(Drive Module)</td>
-    <td>Large/Medium-sized 6axes: H6D6X<br>Small-sized 6axes: H6D6A<br>Additional axis: H6D1X, H6D1Z</td>
+    <td>Large/Medium-sized 6axes: H7D6X<br>Small-sized 6axes: H7D6A<br>Additional axis: H7D1X, H7D1Z</td>
     <td>- Generation of the motor drive power<br>- Regenerative discharge<br>- Servo motor power amplification circuit<br>- Various error outputs</td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@ Table 4-2 Summary of Functions of the Individual Components
   </tr>
   <tr>
     <td>Power supply module</td>
-    <td>H6PSM</td>
+    <td>H7PSM</td>
     <td>- Opening/closing of the motor drive power<br>- Distribution of various power</td>
   </tr>
 </tbody>

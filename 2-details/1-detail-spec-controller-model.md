@@ -85,16 +85,16 @@ Table 2-1 Details of Specification of Each Controller Model
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>Power supply module&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7PSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>Drive module&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>For medium-sized 6 axes&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H7D6X<br>N80(U)-A0 : H7D6X<br>N30(U)-A0 : H7D6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>For one additional axis&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7D1X, H7D1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>Wire harness&nbsp;&nbsp;&nbsp;</td>
