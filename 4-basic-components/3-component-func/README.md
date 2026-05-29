@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <td>드라이브모듈<br>(Drive Module)</td>
-    <td>대/중형6축: H6D6X<br>소형6축: H6D6A<br>부가축: H6D1X, H6D1Z</td>
+    <td>대/중형6축: H7D6X<br>소형6축: H7D6A<br>부가축: H7D1X, H7D1Z</td>
     <td>- 모터 구동용 전원 생성<br>- 회생 방전<br>- 서보 모터 전력 증폭 회로<br>- 각종 에러출력</td>
   </tr>
   <tr>
@@ -40,7 +40,7 @@
   </tr>
   <tr>
     <td>전원공급모듈</td>
-    <td>H6APSM</td>
+    <td>H7PSM</td>
     <td>- 모터 구동 전원의 개폐<br>- 각종 전원의 분배</td>
   </tr>
 </tbody>

@@ -105,7 +105,7 @@
   <tr>
     <td>1</td>
     <td>모터 드라이브</td>
-    <td>H6AD6X<br>H6AD6A</td>
+    <td>H7D6X<br>H7D6A</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -129,7 +129,7 @@
   <tr>
     <td>4</td>
     <td>전원공급모듈</td>
-    <td>H6APSM30<br>H6APSM15</td>
+    <td>H7PSM30<br>H7PSM15</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>

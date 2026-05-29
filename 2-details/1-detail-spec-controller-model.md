@@ -86,16 +86,16 @@
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>전원공급모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7PSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>중형&nbsp;&nbsp;&nbsp;6축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H7D6X<br>N80(U)-A0 : H7D6X<br>N30(U)-A0 : H7D6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>부가&nbsp;&nbsp;&nbsp;1축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7D1X, H7D1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>와이어 하네스&nbsp;&nbsp;&nbsp;</td>

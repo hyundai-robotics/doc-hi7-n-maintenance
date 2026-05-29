@@ -920,16 +920,16 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>전원공급모듈&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6aPSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7PSM(BD6C3)&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td rowspan="2">&nbsp;&nbsp;&nbsp;<br>드라이브&nbsp;&nbsp;&nbsp;모듈&nbsp;&nbsp;&nbsp;</td>
     <td>&nbsp;&nbsp;&nbsp;<br>중형&nbsp;&nbsp;&nbsp;6축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2"><br>N00(U)-A0 : H6AD6X<br>N80(U)-A0 : H6AD6X<br>N30(U)-A0 : H6AD6A</td>
+    <td colspan="2"><br>N00(U)-A0 : H7D6X<br>N80(U)-A0 : H7D6X<br>N30(U)-A0 : H7D6A</td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;&nbsp;<br>부가&nbsp;&nbsp;&nbsp;1축용&nbsp;&nbsp;&nbsp;</td>
-    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H6AD1X, H6AD1Z&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;<br>H7D1X, H7D1Z&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;<br>와이어 하네스&nbsp;&nbsp;&nbsp;</td>
@@ -1580,23 +1580,23 @@ Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 </tr>
 <tr class="odd">
 <td><p><strong>4</strong></p></td>
-<td><p>H6aPSM</p></td>
+<td><p>H7PSM</p></td>
 <td><p>전원공급모듈</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>5</strong></p></td>
-<td><p>H6D6X(대/중형)</p>
-<p>/H6D6A(소형)</p></td>
+<td><p>H7D6X(대/중형)</p>
+<p>/H7D6A(소형)</p></td>
 <td><p>대/중/소형 6축용 드라이브모듈</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>6</strong></p></td>
-<td><p>H6D1X(선택사양)</p></td>
+<td><p>H7D1X(선택사양)</p></td>
 <td><p>100A 1축 드라이브모듈</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>6-1</strong></p></td>
-<td><p>H6D1Z(선택사양)</p></td>
+<td><p>H7D1Z(선택사양)</p></td>
 <td><p>50A 1축 드라이브모듈</p></td>
 </tr>
 <tr class="odd">
@@ -1721,7 +1721,7 @@ Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
   </tr>
   <tr>
     <td>드라이브모듈<br>(Drive Module)</td>
-    <td>대/중형6축: H6D6X<br>소형6축: H6D6A<br>부가축: H6D1X, H6D1Z</td>
+    <td>대/중형6축: H7D6X<br>소형6축: H7D6A<br>부가축: H7D1X, H7D1Z</td>
     <td>- 모터 구동용 전원 생성<br>- 회생 방전<br>- 서보 모터 전력 증폭 회로<br>- 각종 에러출력</td>
   </tr>
   <tr>
@@ -1736,7 +1736,7 @@ Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
   </tr>
   <tr>
     <td>전원공급모듈</td>
-    <td>H6APSM</td>
+    <td>H7PSM</td>
     <td>- 모터 구동 전원의 개폐<br>- 각종 전원의 분배</td>
   </tr>
 </tbody>
@@ -2564,13 +2564,13 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 # 4.3.4. 드라이브모듈 (Drive Module)
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/1-H6DX-middle-6ax-drive-module.md)
-# 4.3.4.1. H6D6X (중형 6축 일체형 드라이브모듈)
+# 4.3.4.1. H7D6X (중형 6축 일체형 드라이브모듈)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
 
 전원공급모듈로부터 입력되는 3상 전류를 다이오드모듈로 정류 후 직류로 변화하여 평활용 커패시터에 저장합니다. 로봇의 감속 시에 모터로부터 발생하는 전력은 IGBT와 저항을 통하여 소비하며, 다음과 같이 구성되어 있습니다
 
-표 4-14 H6D6X(중형 6축 일체형 드라이브모듈)의 구성
+표 4-14 H7D6X(중형 6축 일체형 드라이브모듈)의 구성
 
 <table>
 <thead>
@@ -2648,7 +2648,7 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </tr>
 <tr class="even">
 <td><p><strong>Hi7 중형 6축 드라이브모듈</strong></p></td>
-<td><p>H6D6X</p></td>
+<td><p>H7D6X</p></td>
 </tr>
 </tbody>
 </table>
@@ -2931,13 +2931,13 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/2-H6D6A-small-6ax-drive-module.md)
-# 4.3.4.2. H6D6A (소형 6축 일체형 드라이브모듈)
+# 4.3.4.2. H7D6A (소형 6축 일체형 드라이브모듈)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 6축 일체형 드라이브모듈은 6개의 모터를 동시에 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
 
 전원공급모듈로부터 입력되는 3상 전류를 다이오드 모듈로 정류하여 직류로 변화하여 평활용 커패시터에 저장합니다. 로봇의 감속 시에 모터로부터 발생하는 전력은 IGBT와 저항을 통하여 소비하며, 다음과 같이 구성되어 있습니다.
 
-표 4-23 H6D6A (소형 6축 일체형 드라이브모듈)의 구성
+표 4-23 H7D6A (소형 6축 일체형 드라이브모듈)의 구성
 
 <table>
 <thead>
@@ -3019,7 +3019,7 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </tr>
 <tr class="even">
 <td><p><strong>Hi7 소형 6축 드라이브모듈</strong></p></td>
-<td><p>H6AD6A</p></td>
+<td><p>H7AD6A</p></td>
 </tr>
 </tbody>
 </table>
@@ -3307,7 +3307,7 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 <tbody>
   <tr>
     <td>Hi7 1축 드라이브모듈</td>
-    <td>H6AD1</td>
+    <td>H7D1</td>
   </tr>
 </tbody>
 </table>
@@ -3378,15 +3378,15 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/4-H6D1X-carriage-drive-module-spec.md)
-# 4.3.4.4. H6D1X (캐리지용 드라이브모듈; 선택사양)
+# 4.3.4.4. H7D1X (캐리지용 드라이브모듈; 선택사양)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각 상에 전류를 흘려주는 전력증폭기능을 수행합니다. 캐리지용 드라이브모듈은 100A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이  성되어 있습니다.
 
 ![](../../../_assets/그림_4_26_BD658V60_부품_배치도.PNG  )
 
-그림 4.24 H6AD1X용 BD658V60 부품 배치도
+그림 4.24 H7D1X용 BD658V60 부품 배치도
 
-표 4-35 H6AD1X의 구성
+표 4-35 H7D1X의 구성
 
 <table>
 <thead>
@@ -3421,7 +3421,7 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </tbody>
 </table>
 
-표 4-36 H6AD1X 커넥터 설명
+표 4-36 H7D1X 커넥터 설명
 
 <table>
 <thead>
@@ -3456,15 +3456,15 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/4-drive-module/5-H6D1Z_servogun-drive-module-spec.md)
-# 4.3.4.5. H6D1Z (서보건용 드라이브모듈; 선택사양)
+# 4.3.4.5. H7D1Z (서보건용 드라이브모듈; 선택사양)
 
 드라이브모듈(Drive Module)은 서보보드로부터의 전류지령에 따라 모터 각상에 전류를 흘려주는 전력증폭기능을 수행합니다. 서보건용 드라이브모듈은 50A 이하의 1개의 모터를 구동시킬 수 있으며, 다음과 같이 구성되어 있습니다.
 
 ![](../../../_assets/그림_4_27_BD659V60_부품_배치도.PNG  )
 
-그림 4.25 H6AD1Z용 BD659V60 부품 배치도
+그림 4.25 H7D1Z용 BD659V60 부품 배치도
 
-표 4-37 H6D1Z의 구성
+표 4-37 H7D1Z의 구성
 
 <table>
 <thead>
@@ -3499,7 +3499,7 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </tbody>
 </table>
 
-표 4-38 H6AD1Z커넥터 설명
+표 4-38 H7D1Z커넥터 설명
 
 <table>
 <thead>
@@ -3534,16 +3534,16 @@ B채널 외부전원을 사용하는 경우, 아래 그림과 같이 커넥터 C
 </table>
 
 [__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/README.md)
-# 4.3.5. 전원공급모듈 (H6PSM)
+# 4.3.5. 전원공급모듈 (H7PSM)
 
 [__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/1-H6APSM-power-dist-bd-BD6C3.md)
-# 4.3.5.1. H6APSM 및 전원분배보드 (BD6C3)
+# 4.3.5.1. H7PSM 및 전원분배보드 (BD6C3)
 
-H6APSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
+H7PSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 전원에 대한 개폐 및 분배를 담당하는 모듈입니다. 다음 그림들은 각종 커넥터들과 퓨즈가 있는 전장모듈의 내외부의 모습을 보여주고 있습니다.
 
 ![](../../../_assets/그림_4.26_H6APSM(Hi6a-N_제어기_전원공급모듈)_외부.png  )
 
-그림 4.26 H6APSM(Hi7-N 제어기 전원공급모듈) 외부
+그림 4.26 H7PSM(Hi7-N 제어기 전원공급모듈) 외부
 
 모터전원용 3상 AC전원의 개폐, 브레이크 전원 생성, 220VAC to 24VDC SMPS 입력 등의 AC제어전원, 제어모듈의 직류 전원공급을 위한 SMPS전원 등의 분배는 다음 그림의 전원계통도와 같습니다. 각각의 전원에는 회로차단기(CP) 또는 퓨즈가 연결되어 있어 과전류에 대한 회로 보호를 합니다.
 
@@ -5511,7 +5511,7 @@ PROFIsafe는 PROFIBUS/PROFINET 네트워크 상에서 안전 관련 데이터(Sa
   <tr>
     <td>1</td>
     <td>모터 드라이브</td>
-    <td>H6AD6X<br>H6AD6A</td>
+    <td>H7D6X<br>H7D6A</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
@@ -5535,7 +5535,7 @@ PROFIsafe는 PROFIBUS/PROFINET 네트워크 상에서 안전 관련 데이터(Sa
   <tr>
     <td>4</td>
     <td>전원공급모듈</td>
-    <td>H6APSM30<br>H6APSM15</td>
+    <td>H7PSM30<br>H7PSM15</td>
     <td>현대로보틱스</td>
     <td>1</td>
     <td>중형 로봇<br>소형 로봇</td>
