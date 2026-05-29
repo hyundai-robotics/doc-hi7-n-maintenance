@@ -1017,7 +1017,7 @@ Figure 3.2 Controller's Labels<br>
 Table 3-1 Label Type<br>
 ![](../../_assets/표3-1_라벨_종류-1_en.png  )
 
-![](../../_assets/표3-1_라벨_종류-2.png  )
+![](../../_assets/표3-1_라벨_종류-2_2.png  )
 
 ![](../../_assets/표3-1_라벨_종류-3.png  )
 
@@ -2515,7 +2515,7 @@ Table 4-14 Configuration of H7D6X (Medium-Sized 6 Axes Integrated Drive Module)
 
 ### Configuration of the Type Number of the Medium-Sized 6 Axes Integrated Drive Module
 
-![](../../../_assets/중형_6축_일체형_드라이브모듈_형번_구성_en.png  )
+![](../../../_assets/중형_6축_일체형_드라이브모듈_형번_구성_en_2.png  )
 
 Table 4-15 Type Symbol of the Medium-Sized 6 Axes Integrated Drive Module 
 
@@ -2892,7 +2892,7 @@ The drive module differs depending on the type of the robot, so you must check t
 ### Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module
 
 
-![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성_en.png)
+![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성_en_2.png)
 
 Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
 
@@ -3181,7 +3181,7 @@ Table 4-31 Description of the LEDs of BD654
 
 ### Configuration of the Type Number of the Optional Drive Module
 
-![](../../../_assets/선택사양_드라이브모듈의_형번_구성_en.png  )
+![](../../../_assets/선택사양_드라이브모듈의_형번_구성_en_2.png  )
 
 Table 4-32 Type Symbol of the Optional Drive Module
 
