@@ -6,7 +6,7 @@ Figure 3.2 Controller's Labels<br>
 Table 3-1 Label Type<br>
 ![](../../_assets/표3-1_라벨_종류-1_en.png  )
 
-![](../../_assets/표3-1_라벨_종류-2.png  )
+![](../../_assets/표3-1_라벨_종류-2_2.png  )
 
 ![](../../_assets/표3-1_라벨_종류-3.png  )
 
