@@ -10,4 +10,5 @@ replacement of parts. In addition, in order to prevent other workers from inadve
 * When required to open the controller door, you must turn off the power first and then wait for about 3 minutes before starting the work. 
 * Use external lighting when sufficient illumination is not secured when performing maintenance and inspection works inside the controller. 
 * Do not touch the heat sink and regenerative resistor of the servo amplifier because they generate excessive heat. After maintenance, check whether tools, foreign substances, etc. are left behind inside the controller, and then close the door securely. 
+* Performing maintenance work without shutting down the power or implementing lock-out procedures may result in serious injury or death to the operator due to the sudden, unexpected startup of the robot.
 
