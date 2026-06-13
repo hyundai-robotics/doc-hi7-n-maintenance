@@ -122,10 +122,19 @@
 
 * 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
 
+[__SOURCE](0-about-this-manual/README.md)
+# 이 설명서에 대하여
+
+
 [__SOURCE](0-about-this-manual/precautions.md)
 # 사전 주의사항
 
 {% include file="ko/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 안전 주의 사항
+
+{% include file="ko/safety-notice.md" %}
 
 [__SOURCE](1-safety/README.md)
 # 1. 안전
