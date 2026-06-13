@@ -113,10 +113,18 @@ Copyright ⓒ 2025-2026 HD HYUNDAI ROBOTICS. All rights reserved.
 * 在运输产品时，您应充分了解手册中的运输相关内容并遵循说明。由于客户的产品运输造成的任何损坏或破损，我公司不承担责任。
 * 这些是日常维护和检查时需准备的重要部分。
 * 这些是购买多台设备时需准备的维护部分。
+[__SOURCE](0-about-this-manual/README.md)
+# 关于手册
+
 [__SOURCE](0-about-this-manual/precautions.md)
 # 注意事项
 
 {% include file="zh/precautions.md" %}
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 安全注意事项
+
+{% include file="zh/safety-notice.md" %}
+
 [__SOURCE](1-safety/README.md)
 # 1. 安全
 [__SOURCE](1-safety/1-applied-standard.md)
