@@ -1,3 +1,3 @@
 ﻿# 4.3.6.2. USB Cover
 
-There is a USB A type connector mounted under the rubber cover at the bottom of the teach pendant, allowing the user to upload/download necessary files, such as versions of diverse types of boards, as well as data and teaching programs, using a USB memory stick.
+在教学挂件底部的橡胶盖下安装了一个USB A型连接器，允许用户使用USB闪存驱动器上传/下载必要的文件，例如各种类型电路板的版本以及数据和教学程序。

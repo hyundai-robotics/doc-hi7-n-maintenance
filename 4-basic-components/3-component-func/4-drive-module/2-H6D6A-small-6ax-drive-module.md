@@ -1,171 +1,169 @@
-﻿# 4.3.4.2. H7D6A (Small-Sized 6 Axes Integrated Drive Module)
+# 4.3.4.2. H7D6A (小型 6 轴集成驱动模块)
 
-The drive module performs a power amplification function that allows the current to flow to individual phases of the motor according to the current command from the servo board. The six axes integrated drive module can drive six motors at the same time and is configured as follows.
+驱动模块执行功率放大功能，使电流根据伺服板的电流命令流向电机的各个相位。六轴集成驱动模块可以同时驱动六个电机，其配置如下。
 
-The three-phase current entered from the power supply module is rectified through a diode module and then converted into direct current and stored in a smoothing capacitor. When the motor speed of the robot is decelerated, the electric power generated from the motor will be consumed through IGBT and resistors. The relevant configuration is as follows.
+从电源模块输入的三相电流通过二极管模块整流，然后转换为直流电并存储在平滑电容中。当机器人的电机速度减速时，电机产生的电力通过IGBT和电阻消耗。相关配置如下。
 
-
-Table 4-23 Configuration of H7D6A (Small-Sized 6 Axes Integrated Drive Module)
+表 4-23 H7D6A (小型 6 轴集成驱动模块) 的配置
 
 <table>
 <thead>
   <tr>
-    <th colspan="2">Components</th>
-    <th>Components</th>
+    <th colspan="2">组件</th>
+    <th>组件</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">BD653<br>(Power Board)</td>
-    <td>Gate drive circuit</td>
-    <td>Generates the IPM gate signal</td>
+    <td rowspan="6">BD653<br>(电源板)</td>
+    <td>门驱动电路</td>
+    <td>生成 IPM 门信号</td>
   </tr>
   <tr>
-    <td>Gate power module</td>
-    <td>Generates the gate power</td>
+    <td>门电源模块</td>
+    <td>生成门电源</td>
   </tr>
   <tr>
-    <td>Current detection part</td>
-    <td>Detects the current that flows through the motor</td>
+    <td>电流检测部分</td>
+    <td>检测流过电机的电流</td>
   </tr>
   <tr>
-    <td>Regenerative control</td>
-    <td>Turn on the IGBT when the PN voltage rises</td>
+    <td>再生控制</td>
+    <td>当PN电压上升时开启IGBT</td>
   </tr>
   <tr>
-    <td>Error detection part</td>
-    <td>Detects the overvoltage, regenerative resistor overheating, and undervoltage errors</td>
+    <td>错误检测部分</td>
+    <td>检测过电压、再生电阻过热和欠电压错误</td>
   </tr>
   <tr>
-    <td>High voltage capacitor</td>
-    <td>Smooths the direct current</td>
+    <td>高电压电容</td>
+    <td>平滑直流电</td>
   </tr>
   <tr>
-    <td rowspan="2">BD654<br>(Iterface Board)</td>
-    <td>Sequence interlocking part</td>
-    <td>Interlocks between the sequence status and the servo on signal</td>
+    <td rowspan="2">BD654<br>(接口板)</td>
+    <td>序列联锁部分</td>
+    <td>序列状态与伺服开启信号之间的联锁</td>
   </tr>
   <tr>
-    <td>Dedicated IO Terminal Blocks</td>
-    <td>Reserved IO port inside the controller</td>
+    <td>专用IO终端块</td>
+    <td>控制器内部保留的IO端口</td>
   </tr>
   <tr>
-    <td rowspan="4">Other Parts</td>
-    <td>Heat sink</td>
-    <td>Releases the heat generated in power elements to the outside</td>
+    <td rowspan="4">其他部件</td>
+    <td>散热器</td>
+    <td>将功率元件中产生的热量释放到外部</td>
   </tr>
   <tr>
-    <td>Rectification part</td>
-    <td>Rectify the AC input power to generate DC power for driving the motor</td>
+    <td>整流部分</td>
+    <td>将交流输入电源整流以产生驱动电机的直流电</td>
   </tr>
   <tr>
-    <td>Regenerative IGBT</td>
-    <td>Performs regenerative discharge</td>
+    <td>再生IGBT</td>
+    <td>执行再生放电</td>
   </tr>
   <tr>
     <td>IPM</td>
-    <td>Convert the power for driving a three-phase motor</td>
+    <td>转换驱动三相电机的电力</td>
   </tr>
 </tbody>
 </table>
 
 {% hint style="info" %}
-The drive module differs depending on the type of the robot, so you must check the type when replacing it.
+驱动模块因机器人类型而异，更换时必须检查类型。
 {% endhint %}
 
-### Configuration of the Type Number of the Small-Sized 6 Axes Integrated Drive Module
-
+### 小型 6 轴集成驱动模块的类型编号配置
 
 ![](../../../_assets/소형_6축_일체형_드라이브모듈_형번_구성_en_2.png)
 
-Table 4-24 Type Symbol of the Small-Sized 6 Axes Integrated Drive Module
+表 4-24 小型 6 轴集成驱动模块的类型符号
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>Category </strong></p></td>
-<td><p><strong>Type symbol</strong></p></td>
+<td><p><strong>类别 </strong></p></td>
+<td><p><strong>类型符号</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Hi7 Small-Sized 6 Axes drive module</strong></p></td>
+<td><p><strong>Hi7 小型 6 轴驱动模块</strong></p></td>
 <td><p>H7D6A</p></td>
 </tr>
 </tbody>
 </table>
 
-Table 4-25 Specification of the Small-Sized 6 Axes Integrated Drive Module
+表 4-25 小型 6 轴集成驱动模块的规格
 
 <table>
 <thead>
   <tr>
-    <th>Configuration</th>
-    <th colspan="2">Classification</th>
-    <th colspan="2">Application</th>
+    <th>配置</th>
+    <th colspan="2">分类</th>
+    <th colspan="2">应用</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>IPM capacity</td>
+    <td>IPM 容量</td>
     <td>3A</td>
     <td>3D</td>
     <td>HA006B, HH020</td>
-    <td>6 axes integrated </td>
+    <td>6 轴集成 </td>
   </tr>
   <tr>
-    <td>Year</td>
+    <td>年份</td>
     <td colspan="2">00 ~ 99</td>
-    <td colspan="2">Production year: 2000-2099</td>
+    <td colspan="2">生产年份：2000-2099</td>
   </tr>
   <tr>
-    <td>Month</td>
+    <td>月份</td>
     <td colspan="2">01 ~ 12</td>
-    <td colspan="2">Production month: January-December</td>
+    <td colspan="2">生产月份：一月至十二月</td>
   </tr>
   <tr>
-    <td>Serial No.</td>
+    <td>序列号</td>
     <td colspan="2">001 ~ 999</td>
-    <td colspan="2">Number of units produced monthly: 1~999</td>
+    <td colspan="2">每月生产单位数量：1~999</td>
   </tr>
 </tbody>
 </table>
 
-Table 4-26 Capacity of the Small-Sized IPM
+表 4-26 小型 IPM 的容量
 
 <table>
 <thead>
   <tr>
-    <th>Drive Model</th>
-    <th>IPM symbol</th>
-    <th>IPM Specification</th>
+    <th>驱动模型</th>
+    <th>IPM 符号</th>
+    <th>IPM 规格</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="7">Drive module of the small-sized 6 axes</td>
+    <td rowspan="7">小型 6 轴的驱动模块</td>
     <td>A</td>
-    <td>(IPM allowable current rating) 30A</td>
+    <td>(IPM 允许电流额定值) 30A</td>
   </tr>
   <tr>
     <td>D</td>
-    <td>(IPM allowable current rating) 10A</td>
+    <td>(IPM 允许电流额定值) 10A</td>
   </tr>
 </tbody>
 </table>
 
-Table 4-27 Symbols of the Hall Sensors of the Small-Sized IPM
+表 4-27 小型 IPM 的霍尔传感器符号
 
 <table>
 <thead>
   <tr>
-    <th>Drive Model</th>
-    <th>Hall sensor symbol (Specification)</th>
-    <th>Full-scale current (Im)</th>
-    <th>IPM specification (Allowable current rating)</th>
+    <th>驱动模型</th>
+    <th>霍尔传感器符号 (规格)</th>
+    <th>满量程电流 (Im)</th>
+    <th>IPM 规格 (允许电流额定值)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="7">Drive module of the small-sized 6 axes</td>
+    <td rowspan="7">小型 6 轴的驱动模块</td>
     <td>3 (4V/15A)</td>
     <td>27.27Apeak</td>
     <td rowspan="2">6MBP50VAA060 (30A)</td>
@@ -201,161 +199,161 @@ Table 4-27 Symbols of the Hall Sensors of the Small-Sized IPM
 </table>
 
 {% hint style="info" %}
-The drive module differs depending on the type of the robot, so you must check the type when replacing it.
+驱动模块因机器人类型而异，更换时必须检查类型。
 {% endhint %}
 
 ![](../../../_assets/그림_4_24_BD653V60_부품_배치도.PNG  )
 
-Figure 4.22 Parts Placement Diagram of BD653V60 
+图 4.22 BD653V60 的部件布置图
 
-Table 4-28 Description of the Connectors of BD653
+表 4-28 BD653 连接器的说明
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Usage</strong></p></td>
-<td><p><strong>Connection of external devices</strong></p></td>
+<td><p><strong>名称</strong></p></td>
+<td><p><strong>用途</strong></p></td>
+<td><p><strong>外部设备连接</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>PWM signals and IPM error signals</p></td>
-<td><p>Board-to-board connectors of BD654</p></td>
+<td><p>PWM 信号和 IPM 错误信号</p></td>
+<td><p>BD654 的板对板连接器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNRST</strong></p></td>
-<td><p>3-phase power input</p></td>
-<td><p>CNRST for the electronic module</p></td>
+<td><p>三相电源输入</p></td>
+<td><p>用于电子模块的 CNRST</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD654</p></td>
+<td><p>转换部分错误信号</p></td>
+<td><p>BD654 的板对板连接器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNDR</strong></p></td>
-<td><p>Regenerative discharge power output </p></td>
-<td><p>Regenerative discharge resistor</p></td>
+<td><p>再生放电功率输出 </p></td>
+<td><p>再生放电电阻</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNTR</strong></p></td>
-<td><p>Regenerative discharge resistor overheating detection</p></td>
-<td><p>Regenerative discharge resistor temperature sensor</p></td>
+<td><p>再生放电电阻过热检测</p></td>
+<td><p>再生放电电阻温度传感器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNM1~6</strong></p></td>
-<td><p>Motor drive output</p></td>
+<td><p>电机驱动输出</p></td>
 <td><p>CMC1</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPN7~8</strong></p></td>
-<td><p>Direct current for the drive module of the additional axis</p></td>
-<td><p>CNPN for the drive module for an optional additional axis</p></td>
+<td><p>用于附加轴的驱动模块的直流电</p></td>
+<td><p>可选附加轴的驱动模块的 CNPN</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNFG1, CNFG4</strong></p></td>
-<td><p>Frame ground for motors</p></td>
+<td><p>电机的框架接地</p></td>
 <td><p>CMC1</p></td>
 </tr>
 </tbody>
 </table>
 
-Table 4-29 Description of the LEDs of BD653
+表 4-29 BD653 的 LED 说明
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Color</strong></p></td>
-<td><p><strong>Status display</strong></p></td>
+<td><p><strong>名称</strong></p></td>
+<td><p><strong>颜色</strong></p></td>
+<td><p><strong>状态显示</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC ON</strong></p></td>
-<td><p>Yellow</p></td>
-<td><p>Will be turned on when the magnet contact is driving</p></td>
+<td><p>黄色</p></td>
+<td><p>当磁体接触驱动时将点亮</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>Green</p></td>
-<td><p>Will be turned on when the control voltage of the converter part is normal</p></td>
+<td><p>绿色</p></td>
+<td><p>当转换部分的控制电压正常时将点亮</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DR</strong></p></td>
-<td><p>Red</p></td>
-<td><p>Will be turned on the regenerative discharge is operating</p></td>
+<td><p>红色</p></td>
+<td><p>当再生放电工作时将点亮</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PN</strong></p></td>
-<td><p>Red</p></td>
-<td><p>Will be turned on when the PN voltage is higher than 42V</p></td>
+<td><p>红色</p></td>
+<td><p>当 PN 电压高于 42V 时将点亮</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RYON</strong></p></td>
-<td><p>Red</p></td>
-<td><p>Will be turned off when the PN discharge operation starts</p></td>
+<td><p>红色</p></td>
+<td><p>当 PN 放电操作开始时将熄灭</p></td>
 </tr>
 </tbody>
 </table>
 
 ![](../../../_assets/그림_4_25_BD654V60_부품_배치도.PNG  )
 
-Figure 4.23 Parts Placement Diagram of BD654</br></br>
+图 4.23 BD654 的部件布置图</br></br>
 
-Table 4-30 Description of the Connectors of BD654
+表 4-30 BD654 连接器的说明
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Usage</strong></p></td>
-<td><p><strong>Connection of external devices</strong></p></td>
+<td><p><strong>名称</strong></p></td>
+<td><p><strong>用途</strong></p></td>
+<td><p><strong>外部设备连接</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNBS1~3</strong></p></td>
-<td><p>PWM signals and IPM error signals for 8 axes<br>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD642</p></td>
+<td><p>8 轴的 PWM 信号和 IPM 错误信号<br>转换部分错误信号</p></td>
+<td><p>BD642 的板对板连接器</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNPWM1~6</strong></p></td>
-<td><p>PWM signals and IPM error signals for individual axes</p></td>
-<td><p>Board-to-board connectors of BD653</p></td>
+<td><p>各个轴的 PWM 信号和 IPM 错误信号</p></td>
+<td><p>BD653 的板对板连接器</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CNPWM7~8</strong></p></td>
-<td><p>PWM signal and IPM error signal for the additional axis</p></td>
-<td><p>CNPWM of the drive module (BD 658 or BD 659) of the additional axis</p></td>
+<td><p>附加轴的 PWM 信号和 IPM 错误信号</p></td>
+<td><p>附加轴驱动模块 (BD 658 或 BD 659) 的 CNPWM</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CNCVT</strong></p></td>
-<td><p>Converter part error signal</p></td>
-<td><p>Board-to-board connectors of BD653</p></td>
+<td><p>转换部分错误信号</p></td>
+<td><p>BD653 的板对板连接器</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TBIO</strong></p></td>
-<td><p>Reserved only IO terminal block</p></td>
-<td><p>Reserved</p></td>
+<td><p>仅限保留 IO 端子块</p></td>
+<td><p>保留</p></td>
 </tr>
 </tbody>
 </table>
 
-Table 4-31 Description of the LEDs of BD654
+表 4-31 BD654 的 LED 说明
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Color</strong></p></td>
-<td><p><strong>Status Display</strong></p></td>
+<td><p><strong>名称</strong></p></td>
+<td><p><strong>颜色</strong></p></td>
+<td><p><strong>状态显示</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MC</strong></p></td>
-<td><p>Yellow</p></td>
-<td><p>Will be turned on when the magnet contact is driving</p></td>
+<td><p>黄色</p></td>
+<td><p>当磁体接触驱动时将点亮</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>POW</strong></p></td>
-<td><p>Green</p></td>
-<td><p>Will be turned on when the control power is normal</p></td>
+<td><p>绿色</p></td>
+<td><p>当控制电源正常时将点亮</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,13 +1,18 @@
 ﻿{
-    "langCode": "en",
-    "series": "Hi7-N Controller",
-    "title": "Maintenance Manual",
-    "publisher": "HD Hyundai Robotics",
-    "tocTitle": "Contents",
+    "langCode": "zh",
+    "series": "Hi7-N 控制器",
+    "title": "维护手册",
+    "publisher": "HD 현대 로보틱스",
+    "tocTitle": "内容",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
-    "docId": "HI7NMAINTENANCE_EN_001",
-    "references" : [
-        {"title" : "${cont_model} Controller Operation Manual -TP630", "id" : "${cont_model:upper}OPTP630_EN_001"}
+    "docId": "HI7NMAINTENANCE_ZH_001",
+    "references": [
+        {
+            "title": "${cont_model} 控制器操作手册 -TP630",
+            "id": "${cont_model:upper}OPTP630_ZH_001"
+        }
     ],
-    "permittedStrs" : ["Hi7"]
+    "permittedStrs": [
+        "Hi7"
+    ]
 }

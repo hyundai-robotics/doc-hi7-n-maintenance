@@ -1,23 +1,21 @@
-﻿# 1.12. Safety Measures When Entering Inside the Safety Fence
+﻿# 1.12. 进入安全防护区域或围栏内的安全措施
 
-When required to enter the safety door in the robot operation area, a worker and a super visor who have received certain trainings should perform works in a group of two. Also, they must wear a safety helmet, protective glasses and safety shoes. The supervisor should be prepared to press the emergency stop switch at any time, and the worker must bring in the teach pendant when going inside, making impossible for other people to operate the robot. Must put up a sign on the control panel to indicate that the robot is being operated. 
- 
-When you enter the robot operation area, you must full understand the following items. 
+当需要进入机器人操作区域的安全门时，接受过特定培训的工人和监督员应成对进行工作。此外，他们必须佩戴安全头盔、防护眼镜和安全鞋。监督员应随时准备按下紧急停止开关，工人在进入时必须携带操作手柄，以便其他人无法操作机器人。必须在控制面板上张贴标志，指示机器人正在操作中。
 
-* No one except for the teaching person should enter the robot operation area. 
-* The operation setting mode of the controller should be manual mode on the control panel. 
-* Always wear certified work clothes. 
-* Do not wear gloves when operating the controller. 
-* Don't let underwear, shirt, tie etc. come out of the work clothes. 
-* Do not wear large jewelry such as earrings, rings or necklaces. 
-* Must wear safety shoes, safety helmet and protective glasses, and, when necessary, should wear safety gear such as safety gloves. 
-* Before operating the robot, check if the emergency stop circuit is functioning well to turn off the motor when the emergency stop button on the control panel or the teach pendant is pressed.
-* Work in a position facing the manipulator. 
-* Follow predetermined work procedures. 
-* Thinking that the robot may rush towards you unexpectedly, you should prepare a method or place for evacuation. 
+当您进入机器人操作区域时，必须充分了解以下事项。
+
+* 除教学人员外，任何人不得进入机器人操作区域。
+* 控制器的操作设置模式应为手动模式。
+* 始终穿着经过认证的工作服。
+* 操作控制器时，请勿戴手套。
+* 不要让内衣、衬衫、领带等露出工作服。
+* 不要佩戴大型珠宝，如耳环、戒指或项链。
+* 必须穿戴安全鞋、安全头盔和防护眼镜，并在必要时应佩戴安全装备，如安全手套。
+* 在操作机器人之前，检查紧急停止电路是否正常工作，以便在按下控制面板或操作手柄上的紧急停止按钮时能关闭电机。
+* 在面朝操作者的位置工作。
+* 遵循预定的工作程序。
+* 考虑到机器人可能会意外向您冲来，您应准备好撤离的方法或地点。
 
 {% hint style="info" %}
-You should not be negligent in paying attention to sudden movements even when entry 
-is made possible. Must avoid approaching without preparing for possible emergency 
-situation under any circumstances. 
+即使在可以进入的情况下，您也不应该忽视对突然移动的注意。无论如何，必须避免在没有准备应对可能紧急情况的情况下接近。
 {% endhint %}

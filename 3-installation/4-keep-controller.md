@@ -1,8 +1,8 @@
-﻿# 3.4. Storage of the Controller
+# 3.4. 控制器的存放
 
-When storing the controller, instead of installing it, refer to the following items. 
-* Store the controller while keeping it in the packaged state and seal the power and communication connection parts tightly. 
-* When storing the controller for a long time, you must take safety measures against the risk of it falling over. 
-* When storing the controller wrapped in packing material, pack it with a desiccant or store it in a dry place. If it is stored in a highly humid place, moisture may form inside the packing material, damaging the product. 
-* Avoid places where temperature and humidity may change easily (where condensation occurs) and store the controller in a cool, dry place where the ambient temperature ranges from -15 ℃ to 40 ℃. 
-* Do not store the controller in locations where there are chemical products, acid and alkali products, batteries, circuit breakers, etc. 
+当存放控制器时，请参考以下事项，而不是安装它。 
+* 在打包状态下存放控制器，并将电源和通信连接部分密封紧密。 
+* 长时间存放控制器时，必须采取防止其倾倒的安全措施。 
+* 将控制器包裹在包装材料中存放时，需用干燥剂包装或存放在干燥的地方。如果存放在湿度较高的地方，包装材料内部可能会形成水分，从而损坏产品。 
+* 避免温度和湿度可能容易变化的地方（发生冷凝的地方），并将控制器存放在温度范围为-15 ℃ 到 40 ℃ 的凉爽干燥处。 
+* 不要将控制器存放在有化学产品、酸碱产品、电池、断路器等的地方。

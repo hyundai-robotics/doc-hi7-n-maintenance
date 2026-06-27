@@ -1,68 +1,67 @@
-﻿# 4.3.2.6. Safety Input Wiring
+# 4.3.2.6. 安全输入接线
 
 {% hint style="warning" %}
-When performing safety input wiring, ensure that the controller power is turned OFF before starting the wiring work.
+在进行安全输入接线时，请确保在开始接线工作之前，控制器电源已关闭。
 {% endhint %}
 
-The figure below shows a photograph of the Servo/Safety Module(BD642) and the location of the safety input connector(CNSI1) as viewed from the front during actual installation.   
+下图显示了伺服/安全模块（BD642）的照片以及在实际安装过程中从前方查看的安全输入连接器（CNSI1）位置。
 
 ![](../../../_assets/BD642_전면사진_안전입력.png)   
-Figure 4.3.2.6-1 Photograph of the Servo/Safety Module(BD642) and Location of the Safety Input Connector(CNSI1)
+图 4.3.2.6-1 伺服/安全模块（BD642）和安全输入连接器（CNSI1）位置的照片
 
-(1) Safety Input Factory Default State(When Not Used)   
-If the safety input signals are not used, they must be connected as NC(Normally Closed, B-contact) by default.
-The figure below shows the wiring configuration when the safety inputs are not used(factory default wiring state).
+(1) 安全输入出厂默认状态（未使用时）   
+如果不使用安全输入信号，必须默认连接为 NC（常闭，B触点）。
+下图显示了当安全输入未使用时的接线配置（出厂默认接线状态）。
 
 ![](../../../_assets/BD642_안전입력_사용안함.png)   
-Figure 4.3.2.6-2 Factory Default Wiring State of Safety Inputs - Servo/Safety Module(BD642)
+图 4.3.2.6-2 安全输入的出厂默认接线状态 - 伺服/安全模块（BD642）
 
-When wiring the safety inputs, the wiring method differs depending on whether an internal power supply or an external power supply is used. It also varies according to the NPN/PNP type configuration. The following figures show the wiring examples for each case.
+在接线安全输入时，接线方式因使用内部电源或外部电源而异。它还根据 NPN/PNP 类型配置而不同。以下图显示了每种情况的接线示例。
 
-(2) When Using the Internal Power Supply
-* NPN-TYPE(: Active Low)   
-In the figure below, red indicates the A channel, and blue indicates the B channel.
-When using the internal power supply for the A-channel, connect the following pins of connector CNSI1 for the corresponding channel as shown in the figure below:
-17-18, 21-22, 25-26, and 29-30.
-When using the internal power supply for the B-channel, connect the following pins of connector CNSI1 for the corresponding channel as shown in the figure below:
-19-20, 23-24, 27-28, and 31-32.
-For connection to external devices, refer to the wiring example shown below.
+(2) 使用内部电源时
+* NPN-TYPE（: 有效低）   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+使用内部电源进行 A 通道时，按照下图所示连接连接器 CNSI1 的以下引脚：
+17-18、21-22、25-26 和 29-30。
+使用内部电源进行 B 通道时，按照下图所示连接连接器 CNSI1 的以下引脚：
+19-20、23-24、27-28 和 31-32。
+有关连接外部设备的信息，请参阅下方的接线示例。
 
 ![](../../../_assets/BD642_안전입력_내부전원_NPN.png)   
-Figure 4.3.2.6-3 Safety Input Wiring Diagram(Internal Power Supply, NPN Type) - Servo/Safety Module(BD642)
+图 4.3.2.6-3 安全输入接线图（内部电源，NPN 类型） - 伺服/安全模块（BD642）
 
-* PNP-TYPE(: Active High)   
-In the figure below, red indicates the A-channel, and blue indicates the B-channel.
-When using the internal power supply for the A-channel, connect the following pin pairs of connector CNSI1 for the corresponding channel as shown in the figure below:
-1-2, 5-6, 9-10, and 13-14.
-When using the internal power supply for the B-channel, connect the following pin pairs of connector CNSI1 for the corresponding channel as shown in the figure below:
-3-4, 7-8, 11-12, and 15-16.
-For connection to external devices, refer to the wiring example shown below.   
+* PNP-TYPE（: 有效高）   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+使用内部电源进行 A 通道时，按照下图所示连接连接器 CNSI1 的以下引脚对：
+1-2、5-6、9-10 和 13-14。
+使用内部电源进行 B 通道时，按照下图所示连接连接器 CNSI1 的以下引脚对：
+3-4、7-8、11-12 和 15-16。
+有关连接外部设备的信息，请参阅下方的接线示例。   
 
 ![](../../../_assets/BD642_안전입력_내부전원_PNP.png)   
-Figure 4.3.2.6-4 Safety Input Wiring Diagram(Internal Power Supply, PNP Type) - Servo/Safety Module(BD642)
+图 4.3.2.6-4 安全输入接线图（内部电源，PNP 类型） - 伺服/安全模块（BD642）
 
 {% hint style="warning" %}
-When connecting the internal power supply to an external device, it must not be used as the power source for the device.   
+当将内部电源连接到外部设备时，不能作为设备的电源使用。   
 {% endhint %}
 
-(3) When Using an External Power Supply
-* NPN-TYPE(: Active Low)   
-In the figure below, red indicates the A-channel, and blue indicates the B-channel.
-When using an external power supply for the A-channel, do not connect the following pins of connector CNSI1 as shown in the figure below:
-1, 17, 5, 21, 9, 25, 13, and 29.
-When using an external power supply for the B-channel, do not connect the following pins of connector CNSI1 as shown in the figure below:
-4, 20, 8, 24, 12, 28, 16, and 32.
-For connection to external devices, refer to the wiring example shown below.
+(3) 使用外部电源时
+* NPN-TYPE（: 有效低）   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+使用外部电源进行 A 通道时，请勿按照下图所示连接连接器 CNSI1 的以下引脚：
+1、17、5、21、9、25、13 和 29。
+使用外部电源进行 B 通道时，请勿按照下图所示连接连接器 CNSI1 的以下引脚：
+4、20、8、24、12、28、16 和 32。
+有关连接外部设备的信息，请参阅下方的接线示例。
 
 ![](../../../_assets/BD642_안전입력_외부전원_NPN.png)   
-Figure 4.3.2.6-5 Wiring Diagram for Safety Input(External Power Supply, NPN Type) - Servo/Safety Module(BD642)
+图 4.3.2.6-5 安全输入接线图（外部电源，NPN 类型） - 伺服/安全模块（BD642）
 
-* PNP-TYPE(: Active High)   
-In the figure below, red represents the A-channel and blue represents the B-channel.
-When using an external power supply for the A channel, do not connect pins 1, 17, 5, 21, 9, 25, 13, and 29 of connector CNSI1 as shown.
-When using an external power supply for the B channel, do not connect pins 4, 20, 8, 24, 12, 28, 16, and 32 of connector CNSI1 as shown.
-Connections to external devices should follow the wiring example shown below.
+* PNP-TYPE（: 有效高）   
+下图中，红色表示 A 通道，蓝色表示 B 通道。
+当使用外部电源进行 A 通道时，请勿如图所示连接连接器 CNSI1 的引脚 1、17、5、21、9、25、13 和 29。
+当使用外部电源进行 B 通道时，请勿如图所示连接连接器 CNSI1 的引脚 4、20、8、24、12、28、16 和 32。
+对外部设备的连接应遵循下方的接线示例。
 
 ![](../../../_assets/BD642_안전입력_외부전원_PNP.png)   
-Figure 4.3.2.6-6 Wiring Diagram for Safety Input(External Power Supply, PNP Type) - Servo/Safety Module(BD642)
-
+图 4.3.2.6-6 安全输入接线图（外部电源，PNP 类型） - 伺服/安全模块（BD642）

@@ -1,8 +1,6 @@
-﻿# 4.3.1.1. Overview
+﻿# 4.3.1.1. 概述
 
-H6COM-T is structure as shown in Figure 4.9, in which the main CPU board and the carrier board are combined. The main CPU board consists of an SSD slot, a CPU slot, a memory card slot, a USB port, a COM port, and a bus connector that is to be connected to the carrier board. The carrier board contains three 
-LAN ports for external systems, two LAN ports for internal systems, two USB ports, one GPIO port, two PCI connectors, one PCI-e connector and one DC 24V power connector. The LAN ports for internal systems are used for EtherCAT communication, as well as for interface with the teach pendant, and the GPIO port is used to detect a power failure signal from the power system. The SB is used for debugging. One PCI expansion slot and three spare LAN ports for external systems are provided to support other universal bus interfaces. The connection to other communication interfaces than EtherCAT can be made via the 
-relevant slots. 
+H6COM-T 的结构如图 4.9 所示，主 CPU 板和载体板相结合。主 CPU 板由 SSD 插槽、CPU 插槽、内存卡插槽、USB 端口、COM 端口和连接到载体板的总线连接器组成。载体板包含三个用于外部系统的 LAN 端口，两个用于内部系统的 LAN 端口，两个 USB 端口，一个 GPIO 端口，两个 PCI 连接器，一个 PCI-e 连接器和一个 DC 24V 电源连接器。用于内部系统的 LAN 端口用于 EtherCAT 通信，以及与教导挂件的接口，GPIO 端口用于检测电源系统的电源故障信号。SB用于调试。提供一个 PCI 扩展插槽和三个用于外部系统的备用 LAN 端口，以支持其他通用总线接口。与 EtherCAT 以外的其他通信接口的连接可以通过相关插槽进行。
 
 ![](../../../_assets/그림_4_1_1_메인모듈이미지.png)<br>
-Figure 4.8 H6COM-T<br>
+图 4.8 H6COM-T<br>

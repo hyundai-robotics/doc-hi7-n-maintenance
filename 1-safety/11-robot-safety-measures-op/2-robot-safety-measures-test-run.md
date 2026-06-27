@@ -1,15 +1,11 @@
-﻿# 1.11.2. Safety Measures When Trial-Operating the Robot
+# 1.11.2. 机器人试运行时的安全措施
 
 {% hint style="info" %}
-In the case of trial-operation, there may be a design error, a teaching error, or a defect in manufacturing with regard to the entire system including the teaching program, jigs, and 
-sequencing. For this reason, you should work with elevated safety awareness in trial-
-operation. Multiple factors can contribute to safety accidents. Observe the following 
-measures considering that safety is very important when trial-operating the robot. 
+在试运行的情况下，可能存在设计错误、教学错误或制造缺陷，包括教学程序、夹具和排序等整个系统。因此，在试运行时应提高安全意识。多个因素可能导致安全事故。考虑到安全在试运行机器人时非常重要，请遵循以下措施。
 {% endhint %}
 
+* 在操作机器人之前，检查紧急停止按钮和停止按钮等按钮的功能，以及相关信号的功能。之后，检查与异常检测相关的操作。首先，检查所有使机器人停止的信号非常重要。当预计会发生事故时，最重要的是停止机器人。
 
-* Before operating the robot, check the functions of buttons such as the emergency stop button and the stop button as well as the functions of relevant signals. After that, check the operation related to detection of abnormality. First of all, it is important to check all the signals that stop the robot. When an accident is expected, the most important thing is to stop the robot. 
+* 在进行机器人的试运行时，首先将其设置为手动模式，输入一个可以测试所有轴的作业程序，然后重复每个步骤超过 1 次循环以检查操作。当机器人移动时，打开安全防护罩或移除启用开关（教学挂件上的启用开关）以检查机器人是否停止。如果发现问题，请按下紧急停止按钮以检查机器人是否停止。如果紧急停止装置未能正常工作，请立即关闭主电源。之后，应联系负责的售后人员。如果没有问题，则依次增加速度（50% → 75% → 100%），并通过重复每个循环超过 1 次来检查操作。开头以高速运行可能会导致重大事故。
 
-*  When performing trial opreation of the robot, first set it to manual mode, input a job program with which you can test all axes, and then check the operation by repeating more than 1 cycle for each step While the robot is moving, open the safety guard or remove the enabling switch (enabling swith on the Teach Pendant) to see whether the robot stop. If a problem is found, press the emergency stop button to check whether the robot stops. If the emergency stop device does not perform its function well, immediately shut off the main  power. After that, you should call the responsible aftersales person. If there is no problem, increase the speed in sequence (50% → 75% → 100%), and check the operation by repeating more than 1 cycle each. Operating at high speed from the beginning may lead to a major accident. 
-
-* It is not possible to predict what kind of problem will occur during trial-operation. Never enter inside the safety fence during trial-operation. As the reliability is low, it is very likely that unexpected accidents could occur. 
+* 无法预测试运行期间会发生什么问题。在试运行期间，切勿进入安全围栏。由于可靠性低，发生意外事故的可能性很大。

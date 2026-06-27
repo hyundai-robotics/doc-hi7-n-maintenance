@@ -1,6 +1,6 @@
-﻿# 6.1. Inspection Schedule 
+﻿# 6.1. 检查计划
 
-Inspections should be carried out according to the schedule shown in the figure below. Periodic inspections are designed to prevent failures in advance and to secure safety and maintain accuracy even when the controller and manipulator are used for a long time. Periodic inspections are absolutely necessary and must be conducted even during normal operation. 
+检查应根据下图所示的计划进行。定期检查旨在提前防止故障，并在控制器和操作器长期使用时确保安全和维持准确性。定期检查是绝对必要的，即使在正常操作期间也必须进行。
 
 ![](../_assets/그림_6.1_점검_일정_en.png )<br>
-Figure 6.1 Inspection Schedule<br>
+图 6.1 检查计划<br>

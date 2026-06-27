@@ -1,29 +1,28 @@
-﻿# 1.10.1. Installing the Safety Guard 
+# 1.10.1. 安装安全围栏 
 
 {% hint style="warning" %}
-When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot. 
+当机器人运行时，机器人与工人之间存在碰撞风险。因此，安装安全围栏以防止工人靠近机器人。
 {% endhint %}
 
-When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot according to ISO 13855:2010.<br>
-Configure the system to ensure that the robot stops when a worker opens the door of the safety fence and approaches the facility, during the robot operation, for any reason, such as inspecting the robot or a welding fixure, performing tip dressing or tip changing, etc.<br>
+当机器人运行时，机器人与工人之间存在碰撞风险。因此，根据 ISO 13855:2010 安装安全围栏，以防止工人靠近机器人。<br>
+配置系统，以确保在机器人运行期间，当工人打开安全围栏的门并接近设备时，无论出于何种原因，例如检查机器人或焊接夹具、进行刀具磨尖或更换刀具等，机器人都会停止。<br>
 
 ![](../../_assets/그림_1.4_안전펜스_연결.png)<br>
-Figure 1.4 Connection of the Safety Fence<br>
+图 1.4 安全围栏的连接<br>
 
-Source: ISO 13855:2010 Safety of machinery - Positioning of safeguards with   respect to the approach speeds of parts of the human body 
+来源：ISO 13855:2010 机械安全 - 关于人体部位接近速度的安全防护装置的定位
  
-Table 1-3 Installation Standards of the Safety Fence
+表 1-3 安全围栏的安装标准
 ![](../../_assets/표_1-3_안전펜스_설치_규격.png)<br>
 
-Source: ISO 13855:2010 Safety of machinery - Positioning of safeguards with respect to the approach speeds of parts of the human body
+来源：ISO 13855:2010 机械安全 - 关于人体部位接近速度的安全防护装置的定位
 
-* The safety fence should cover the operation area of the robot, and should secure enough space so that there is no interference when the worker carries out works, such as teaching, maintenance, etc. 
-The  safety fence should be made solid to prevent it frome being moved  easily and should be structured in a way not to allow people to enter inside the fence by going over the safety fence. 
-* In principle, it is required to install and use a fixed type safety fence that does not have dangerous parts such as uneven or sharp parts. 
-* An entrance door should be installed to allow people to enter inside the safety fence, and a safety plug must be installed on the door in a way that the door should not open unless the plug is removed.<br>
-In addition, wiring should be configured in a way that allows the motor to be turned off and the brake to be in hold state when the safety plug is removed or the sfety fence is opened. 
-* If you want to operate the robot even when the safety plug is removed, wiring should be configured in a way that allows the robot to play back at low speed. 
-* Install the emergency stop button of the robot at a location where the operator can quickly press it. 
-* If a safety fence is not to be installed, safety devices such as photoelectric switches and mat switches should be installed covering the entire area that falls within the specification of the safety guard 
-range of the robot, as substitute devices for the safety fence, making it possile for the robot to stop automatically when a person enters inside the safety fence.  
-* Make sure that the robot's operation area (danger area) can be identified in some way, such as painting the floor. 
+* 安全围栏应覆盖机器人的操作区域，并应确保足够的空间，以便工人在进行教学、维护等工作时不会干扰。
+安全围栏应制作坚固，以防止其轻易被移动，并应结构设计成不允许人们越过安全围栏进入围栏内。
+* 原则上，要求安装和使用没有不平或锋利部件的固定类型安全围栏。
+* 应安装入口门，以允许人员进入安全围栏，并且在门上必须安装安全插头，以确保门在未拆除插头时不会打开。<br>
+此外，布线应配置为在安全插头被拆除或安全围栏被打开时，使电机关闭且制动处于保持状态。
+* 如果想在安全插头拆除时仍操作机器人，则应配置布线使机器人以低速回放运行。
+* 将机器人的紧急停止按钮安装在操作员可以快速按压的位置。
+* 如果不安装安全围栏，则应安装光电开关和垫开关等安全装置，覆盖在安全防护范围内机器人的整个区域，作为安全围栏的替代设备，使机器人在有人进入安全围栏时能自动停机。
+* 确保机器人的操作区域（危险区）可以通过某种方式识别，例如在地面上涂漆。

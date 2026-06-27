@@ -1,1 +1,1 @@
-﻿# 5.6. Safety communication board(BD671) 
+# 5.6. 安全通信板(BD671)

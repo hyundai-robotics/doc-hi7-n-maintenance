@@ -1,75 +1,75 @@
-﻿# 5.6.2. Connector
+# 5.6.2. 连接器
 
-The figure below shows the locations of the connectors required for external connection of the optional safety communication board (BD671). Additionally, the table below describes the name and purpose of each connector.
+下图显示了用于外部连接可选安全通信板 (BD671) 的连接器的位置。此外，下表描述了每个连接器的名称和用途。
 
 ![](../../_assets/그림_6.2_안전통신보드이미지.png)<br>
-Figure 6.2-1 Safety Communication Board (BD671) Connector Layout<br>
+图 6.2-1 安全通信板 (BD671) 连接器布局<br>
 
-Table 6.2-1 Safety Communication Board(BD671) Connector Names and Applications
+表 6.2-1 安全通信板(BD671) 连接器名称及应用
 <table>
 <tbody>
   <tr>
-    <td><strong>No.</strong></td>
-    <td><strong>Name</strong></td>
-    <td><strong>Function</strong></td>
+    <td><strong>编号</strong></td>
+    <td><strong>名称</strong></td>
+    <td><strong>功能</strong></td>
     
   </tr>
   <tr>
     <td>A</td>
-    <td>Status LED</td>
-    <td>EtherCAT, PROFIsafe Communication Status LED </td>
+    <td>状态 LED</td>
+    <td>EtherCAT, PROFIsafe 通信状态 LED </td>
     
   </tr>
   <tr>
     <td>B</td>
-    <td>EtherCAT RJ45 Connector IN/OUT </td>
-    <td>Internal EtherCAT Communication Connector</td>
+    <td>EtherCAT RJ45 连接器 IN/OUT </td>
+    <td>内部 EtherCAT 通信连接器</td>
     
   </tr>
   <tr>
     <td>C</td>
-    <td>PROFIsafe RJ45 Connector </td>     
-    <td>User PROFIsafe Communication</td>
+    <td>PROFIsafe RJ45 连接器 </td>     
+    <td>用户 PROFIsafe 通信</td>
     
   </tr>
     <tr>
     <td>D</td>
-    <td>Backplane Connection Connectors</td>     
-    <td>Communication and power supply with the BD642(Safety) board</td>
+    <td>背板连接连接器</td>     
+    <td>与 BD642(安全)板的通信和电源供应</td>
     
   </tr>
 </tbody>
 </table>
 
 
-Table 6.2-2 Status LED Names and Uses in Part A
+表 6.2-2 部件 A 中状态 LED 的名称和用途
 <table>
 <tbody>
   <tr>
-    <td><strong>Name</strong></td>
-    <td><strong>M1 Status</strong></td>
-    <td><strong>Diagnosis LED</strong></td>
-    <td><strong>Maintenance LED</strong></td>
+    <td><strong>名称</strong></td>
+    <td><strong>M1 状态</strong></td>
+    <td><strong>诊断 LED</strong></td>
+    <td><strong>维护 LED</strong></td>
     <td><strong>미삽</strong></td>
-    <td><strong>EtherCAT diagnosis LED</strong></td>
+    <td><strong>EtherCAT 诊断 LED</strong></td>
     
   </tr>
   <tr>
     <td>LEDS1</td>
-    <td>GREEN (RUN)</td>
-    <td>ORANGE </td>
-    <td>YELLOW </td>
+    <td>绿色 (运行)</td>
+    <td>橙色 </td>
+    <td>黄色 </td>
     <td>- </td>
-    <td>GREEN (RUN) </td>
+    <td>绿色 (运行) </td>
     
   </tr>
   <tr>
     <td>LEDS2</td>
-    <td>RED (ERROR)</td>
+    <td>红色 (错误)</td>
     <td>-</td>
-    <td>- </td>
-    <td>- </td>
-    <td>RED(ERROR) </td>
+    <td>-</td>
+    <td>-</td>
+    <td>红色(错误) </td>
     
   </tr>
 

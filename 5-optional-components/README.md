@@ -1,52 +1,52 @@
-﻿# 5. Optional Components of the Controller
+# 5. 控制器的可选组件
 
-Table 5-1 Summary of Optional Configurations
+Table 5-1 可选配置摘要
 <table>
 <thead>
   <tr>
-    <th colspan="2">Component</th>
-    <th>Function</th>
+    <th colspan="2">组件</th>
+    <th>功能</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">Control options</td>
-    <td>Extended safety signal board(BD680)</td>
-    <td>- 8-channel safety digital input<br>- 8-channel safety digital output</td>
+    <td rowspan="3">控制选项</td>
+    <td>扩展安全信号板(BD680)</td>
+    <td>- 8通道安全数字输入<br>- 8通道安全数字输出</td>
   </tr>
   <tr>
-    <td>User DIO board (BD681)<br>Extended DIO board (BD682)</td>
-    <td>- Up to 48-digital input channel<br>- Up to 48-digital output channel<br>- - NPN/PNP switchable<br>- 8 relay output channels selectable among digital outputs<br>- Conveyer I/F 2-channel</td>    
+    <td>用户DIO板 (BD681)<br>扩展DIO板 (BD682)</td>
+    <td>- 可支持48个数字输入通道<br>- 可支持48个数字输出通道<br>- - NPN/PNP可切换<br>- 8个继电器输出频道可在数字输出中选择<br>- 输送机I/F 2通道</td>    
   </tr>
   <tr>
-    <td>Safety Communication board(BD671)</td>
-    <td>- PROFiSafe/PROfiNET</td>
+    <td>安全通信板(BD671)</td>
+    <td>- PROFiSafe/PROFiNET</td>
   </tr>
   <tr>
-    <td rowspan="3">Communication options</td>
-    <td>Ethernet/IP Master/Slave</td>
-        <td>- Supports H6COM-T LAN port<br>- Configurable in TP630</td>
+    <td rowspan="3">通信选项</td>
+    <td>以太网/IP 主/从</td>
+        <td>- 支持H6COM-T LAN端口<br>- 可在TP630中配置</td>
   </tr>
   <tr>
-    <td>2'nd EtherCAT Master</td>
+    <td>第二个EtherCAT主机</td>
   </tr>
   <tr>
-    <td>CIP Safety</td>
+    <td>CIP安全</td>
   </tr>  
   <tr>
-    <td>PCI  communication card</td>
-    <td>15 types of PC cards CIFX 50 series</td>
-    <td>- Ethernet Master/Slave<br>- CC-Link Slave<br>- DeviceNET Master/Slave<br>- PROFIBUS Master/Slave<br>- CC-Link IE Fileld</td>
+    <td>PCI通信卡</td>
+    <td>15种PC卡CIFX 50系列</td>
+    <td>- 以太网主/从<br>- CC-Link从<br>- DeviceNET主/从<br>- PROFIBUS主/从<br>- CC-Link IE Fileld</td>
   </tr>
   <tr>
-    <td>Brake release unit</td>
+    <td>制动释放单元</td>
     <td>-</td>
-    <td>- Used when motor brake release of each robot axis is required</td>
+    <td>- 当每个机器人轴需要释放电机制动时使用</td>
   </tr>
   <tr>
-    <td>Remote IO module</td>
-    <td>Communication module IO module</td>
-    <td>- Required for additional use beyond user DIO signals</td>
+    <td>远程IO模块</td>
+    <td>通信模块IO模块</td>
+    <td>- 超出用户DIO信号时需要额外使用</td>
   </tr>
 </tbody>
 </table>

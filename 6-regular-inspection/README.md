@@ -1,3 +1,3 @@
-﻿# 6. Periodic Inspections
+﻿# 6. 定期检查
 
-The periodic inspection of the controller is designed to minimize the occurrence of failures and to maintain the performance continuously.  This  section describes  the cautions and contents  of works during the periodic inspection. 
+对控制器的定期检查旨在最小化故障的发生并持续维护性能。本节描述了定期检查期间的注意事项和工作内容。

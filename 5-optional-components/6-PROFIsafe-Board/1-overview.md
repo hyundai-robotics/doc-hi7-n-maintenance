@@ -1,5 +1,4 @@
-﻿### 5.6.1. Overview 
+### 5.6.1. 概述
 
-In Hi7, using the **'PROFIsafe board (BD671)'** allows processing of safety-related signals. This board is based on the PROFIsafe communication protocol and supports transmission of safety signals over standard fieldbus networks (e.g., PROFINET). 
-PROFIsafe is an international safety communication standard that enables the transmission of safety-related data together with standard data on PROFIBUS/PROFINET networks. 
-<br>
+在 Hi7 中，使用 **'PROFIsafe board (BD671)'** 允许处理与安全相关的信号。此板基于 PROFIsafe 通信协议，并支持在标准现场总线网络（例如，PROFINET）上传输安全信号。
+PROFIsafe 是一个国际安全通信标准，能够在 PROFIBUS/PROFINET 网络上同时传输与安全相关的数据和标准数据。

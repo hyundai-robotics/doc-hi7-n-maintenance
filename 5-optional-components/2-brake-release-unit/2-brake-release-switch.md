@@ -1,67 +1,66 @@
-﻿# 5.2.2. Brake Release Switch
+﻿# 5.2.2. 刹车释放开关
 
-The placement of the switches of the brake release unit is as shown in Figure 5.3, and their individual usage and operation are described in Table 5-4. To release the brake of the targeted axis, first press the Enable button, and then, while pressing the Enable button, press one of the buttons B1-B8 at the same time. Then, the relevant axis will be released.
-
+刹车释放单元开关的放置如图5.3所示，其各自的使用和操作在表5-4中描述。要释放目标轴的刹车，首先按下启用按钮，然后在按住启用按钮的同时，同时按下B1-B8中的一个按钮。然后，相关轴将被释放。
 
 ![](../../_assets/그림_5.3_브레이크_해제유닛_스위치_및_상태확인_LED_en.png  )
 
-Figure 5.3 Switches and Status Checking LEDs of the Brake Release Unit</br></br>
+图5.3 刹车释放单元的开关和状态检查LED</br></br>
 
-Table 5-4 Usage of the Switches of the Brake Release Unit 
+表5-4 刹车释放单元开关的使用 
 
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Usage</th>
-    <th>During operation</th>
+    <th>名称</th>
+    <th>使用</th>
+    <th>在操作期间</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>E</td>
-    <td>Brake Release Enable</td>
-    <td>Yellow Enable LED ON</td>
+    <td>刹车释放启用</td>
+    <td>黄色启用LED亮</td>
   </tr>
   <tr>
     <td>B1</td>
-    <td>Axis 1 Brake Release</td>
-    <td>Green D1 LED ON</td>
+    <td>轴1刹车释放</td>
+    <td>绿色D1 LED亮</td>
   </tr>
   <tr>
     <td>B2</td>
-    <td>Axis 2 Brake Release</td>
-    <td>Green D2 LED ON</td>
+    <td>轴2刹车释放</td>
+    <td>绿色D2 LED亮</td>
   </tr>
   <tr>
     <td>B3</td>
-    <td>Axis 3 Brake Release</td>
-    <td>Green D3 LED ON</td>
+    <td>轴3刹车释放</td>
+    <td>绿色D3 LED亮</td>
   </tr>
   <tr>
     <td>B4</td>
-    <td>Axis 4 Brake Release</td>
-    <td>Green D4 LED ON</td>
+    <td>轴4刹车释放</td>
+    <td>绿色D4 LED亮</td>
   </tr>
   <tr>
     <td>B5</td>
-    <td>Axis 5 Brake Release</td>
-    <td>Green D5 LED ON</td>
+    <td>轴5刹车释放</td>
+    <td>绿色D5 LED亮</td>
   </tr>
   <tr>
     <td>B6</td>
-    <td>Axis 6 Brake Release</td>
-    <td>Green D6 LED ON</td>
+    <td>轴6刹车释放</td>
+    <td>绿色D6 LED亮</td>
   </tr>
   <tr>
     <td>B7</td>
-    <td>Axis 7 Brake Release</td>
-    <td>Green D7 LED ON</td>
+    <td>轴7刹车释放</td>
+    <td>绿色D7 LED亮</td>
   </tr>
   <tr>
     <td>B8</td>
-    <td>Axis 8 Brake Release</td>
-    <td>Green D8 LED ON</td>
+    <td>轴8刹车释放</td>
+    <td>绿色D8 LED亮</td>
   </tr>
 </tbody>
 </table>

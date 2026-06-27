@@ -1,31 +1,31 @@
-﻿# 5.4.5. Safety Output Wiring
+# 5.4.5. 安全输出接线
 
 {% hint style="warning" %}
-When wiring the safety outputs, always ensure that the controller power is turned OFF before performing any wiring work.
+在接线安全输出时，始终确保控制器电源在进行任何接线工作之前处于关闭状态。
 {% endhint %}
 
-The figure below shows the actual optional Safety IO Module(BD680) and the location of the safety output connector as seen from the front during installation.
+下图显示了实际的可选安全IO模块(BD680)以及在安装时从前方看到的安全输出连接器的位置。
 
-![](../../_assets/BD680_전면사진_안전출력.png)   
-Figure 5.4.5-1 Optional Safety IO Module(BD680)-Front view and safety output connector location
+![](../../_assets/BD680_전면사진_안전출력.png)  
+图5.4.5-1 可选安全IO模块(BD680)-前视图和安全输出连接器位置
 
-The wiring method differs depending on whether internal power or external power is used. The following sections illustrate the wiring for each case.
+接线方法取决于使用内部电源或外部电源。以下部分说明了每种情况的接线方式。
 
-(1) Using Internal Power   
-In the figure below, red represents A-Channel and blue represents B-Channel.
-A-Channel(Internal Power): Connect pins 1-2 and 11-12 of connector CNSO2 as shown.
-B-Channel(Internal Power): Connect pins 13-14 and 23-24 of connector CNSO2 as shown.
-Refer to the wiring examples below for connections to external devices.
+(1) 使用内部电源  
+下图中，红色代表A通道，蓝色代表B通道。  
+A通道(内部电源)：如图所示，将连接器CNSO2的引脚1-2和11-12连接。  
+B通道(内部电源)：如图所示，将连接器CNSO2的引脚13-14和23-24连接。  
+有关连接到外部设备的接线示例，请参见下面的接线示例。
 
 ![](../../_assets/BD680_안전출력_내부전원.png)  
-Figure 5.4.5-2 Optional Safety IO Module(BD680)-Safety Output Wiring with Internal Power
+图5.4.5-2 可选安全IO模块(BD680)-使用内部电源的安全输出接线
 
-(2) Using External Power
-In the figure below, red represents A-Channel and blue represents B-Channel.
-Connector CNSO2 pins 1, 12, 13, and 24 are not connected.
-A-Channel(External Power): Connect EX_AV(24V) to pin 2 and EX_AG(GND) to pin 11.
-B-Channel(External Power): Connect EX_BV(24V) to pin 14 and EX_BG(GND) to pin 23.
-Refer to the wiring examples below for connections to external devices.
+(2) 使用外部电源  
+下图中，红色代表A通道，蓝色代表B通道。  
+连接器CNSO2的引脚1、12、13和24未连接。  
+A通道(外部电源)：将EX_AV(24V)连接到引脚2，将EX_AG(GND)连接到引脚11。  
+B通道(外部电源)：将EX_BV(24V)连接到引脚14，将EX_BG(GND)连接到引脚23。  
+有关连接到外部设备的接线示例，请参见下面的接线示例。
 
-![](../../_assets/BD680_안전출력_외부전원.png)
-Figure 5.4.5-3 Optional Safety IO Module(BD680)-Safety Output Wiring Using External Power
+![](../../_assets/BD680_안전출력_외부전원.png)  
+图5.4.5-3 可选安全IO模块(BD680)-使用外部电源的安全输出接线

@@ -1,15 +1,15 @@
-﻿# 1.5. Potential Risks 
+﻿# 1.5. 潜在风险
 
-If the results of the risk assessment of an integrated system linked to the robot reveal that the risk factors have not been sufficiently removed only with the safety-related functions of the robot, additional protective measures must be taken.<br>
-The items to take into consideration when establishing additional protective measures is as follows. 
-* During installation, fingers can be pinched(caught) between the robot base and the mounting table. 
-* Injuries(puncture wound, penetrating injury, etc.) from sharp edges or pointed parts of obstacles or tools in the operation area. 
-* Injuries (bruise, falling over, fracture, etc.) due to collision with the robot 
-* Injuries caused (puncture wound, penetrating injury, fracture, etc.) due to obstacles around the robot 
-* Injuries that may occur because the fastening part is not completely fixed 
-* Injuries(skin damage, shortness of breath, etc.) that may occur when working with toxic and hazardous substances 
-* Separation of a workpiece from the tool due to sudden power failure 
-* A mistake caused by confusing with the emergency stop switch of other equipment 
-* Errors due to arbitrary change of the setting of safety-related functions
+如果与机器人连接的集成系统的风险评估结果显示，仅依靠机器人的安全相关功能未能充分消除风险因素，则必须采取额外的保护措施。<br>
+建立额外保护措施时需要考虑的事项如下：
+* 安装过程中，手指可能会夹在机器人底座和安装桌之间。
+* 由于操作区域内障碍物或工具的锋利边缘或尖部导致的伤害（刺伤、穿透伤等）。
+* 由于与机器人碰撞造成的伤害（瘀伤、摔倒、骨折等）。
+* 由于机器人周围的障碍物造成的伤害（刺伤、穿透伤、骨折等）。
+* 由于固定部件没有完全固定而可能发生的伤害。
+* 在与有毒和危险物质一起工作时可能发生的伤害（皮肤损伤、呼吸急促等）。
+* 由于突然停电，工件与工具分离。
+* 由于混淆其他设备的紧急停止开关而导致的错误。
+* 由于随意更改安全相关功能设置而导致的错误。
 
-The type of risk that may occur depends on the system configuration, so you must conduct the risk assessment before using the integrated system. 
+可能发生的风险类型取决于系统配置，因此在使用集成系统之前，必须进行风险评估。

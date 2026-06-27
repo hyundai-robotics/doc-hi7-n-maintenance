@@ -1,8 +1,8 @@
-﻿# 1.9. Stop
-The safety system of Hi7 controller can handle the stop operation as shown below. Safety inputs can be classified as follows according to the stop classification criteria specified in IEC 60204-1.
+﻿# 1.9. 停止
+Hi7 控制器的安全系统可以处理如下所示的停止操作。安全输入可以根据 IEC 60204-1 中指定的停止分类标准进行分类。
 
-* Stop classification Stopping (uncontrolled stoping) occurs as the power to the machine actuator is immediately removed.<br>
-→ Emergency stop button
+* 停止分类 立即去除机器执行器的电源时发生停止（非控制停止）。<br>
+→ 紧急停止按钮
 
-*  Stop classification 1: Controlled stop in which the machine actuator still has a power that can be used to achieve the stopping. The power will be removd when the stopping is achieved.<br>
-→  Safety inputs except for the emergency stop button
+* 停止分类 1：控制停止，在该情况下，机器执行器仍然具有可以用于实现停止的电源。停止实现后将移除电源。<br>
+→ 除紧急停止按钮外的安全输入

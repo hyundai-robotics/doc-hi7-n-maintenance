@@ -1,16 +1,15 @@
-﻿# 5.2.1. Overview
+# 5.2.1. 概述
 
-The brake release unit can be used when it is necessary to release the motor brake for each axis of the robot. It can help to set the robot posture mainly during the initial installation of the robot. When releasing the brake, you must fully understand the safety information of "Release of the manual brake" in "1.8.2 Other Related Functions" before using the robot.
+制动释放单元可用于在需要释放机器人每个轴的电机制动时。它可以帮助在机器人初始安装期间设置机器人姿态。释放制动时，必须充分理解“1.8.2 其他相关功能”中“手动制动释放”的安全信息，然后才能使用机器人。
 
 {% hint style="info" %}
-1. Do not release more than two axes at the same time.
-2. Keep a safe distance from the robot first before using the brake release unit.
-3. Use the brake release unit after preparing for the dropping of the robot's axis using equipment such as a crane.
-4. Check the safety matters while working in a group of at least two people.
+1. 不要同时释放超过两个轴。
+2. 使用制动释放单元之前，保持与机器人之间的安全距离。
+3. 使用制动释放单元之前，准备好使用起重机等设备降低机器人的轴。
+4. 在至少两人小组中工作时检查安全事项。
 {% endhint %}
 
 {% hint style="warning" %}
-The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
-Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the relevant requirements of international standards and national laws or not following the above "caution."
+机器人应根据 ISO 10218-2 的指南进行安装和操作。此外，必须遵守国际标准和国家法律的相关要求。
+我们公司（或制造商）不对因未遵守国际标准和国家法律的相关要求或未遵循上述“注意事项”而发生的任何事故负责。
 {% endhint %}
-

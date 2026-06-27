@@ -1,36 +1,30 @@
-﻿# 3.3.2. Transport(Modifying the Weight)
+﻿# 3.3.2. 运输（修改重量）
 
-* Check whether the front door of the controller is completely locked. 
-* Remove anything that is not fixed onto the controller. 
-* Check if the eye bolts on the controller are surely fastened. 
-* As the controller is a precision device, pay attention to the transport of it to prevent any strong impact from being applied to it. 
-* The weight of the controller is maximum 170kg. When using a crane, take precautions to prevent an object on the controller from being damaged by the wire.  
-* For the weight of the controller, refer to "2. Details of Specifications'. 
-* When using a forklift, fix the controller in a way to prevent the controller from shaking. 
-* When moving the product by vehicle, fix the manipulator and controller by using squids. 
-* When transporting the product, fully understand the contents related to the packing and transport, and follow the instructions. Our company will not be responsible for any damage to or breaking of the product due to customer's carelessness, inexperience in operation, or negligence. 
-* Check the following items when transporting the controller by using a crane.
-  - In general, the controller should be transported by using crane wires for which eye bolts are used. 
-  - Check whether the wires have sufficient strength to withstand the weight of the controller. 
-  - Check whether the eye bolts are fastened tightly. 
+* 检查控制器的前门是否完全锁定。
+* 移除控制器上未固定的任何物品。
+* 检查控制器上的眼螺栓是否牢固固定。
+* 由于控制器是精密设备，注意运输时防止其受到强烈冲击。
+* 控制器的重量最大为170kg。使用起重机时，采取预防措施以防止控制器上的物体被电缆损坏。
+* 关于控制器的重量，请参考“2. 详细配置”。
+* 使用叉车时，以防控制器晃动的方式固定控制器。
+* 通过车辆移动产品时，使用水母固定操作器和控制器。
+* 运输产品时，充分了解与包装和运输相关的内容，并遵循说明。由于客户的疏忽、操作经验不足或疏忽造成的产品损坏或破损，我公司不承担任何责任。
+* 使用起重机运输控制器时，请检查以下事项。
+  - 一般来说，控制器应使用眼螺栓所用的起重机电缆进行运输。
+  - 检查电缆是否具有足够的强度以承受控制器的重量。
+  - 检查眼螺栓是否紧固。
 
 ![](../../_assets/그림_3.3_제어기_와이어_연결_위치.png  )<br>
-Figure 3.3 Controller Wire Connection Position<br>
+图 3.3 控制器电缆连接位置<br>
 
-* Check the following items when transporting the controller by using a forklift, 
-  - When transporting the product by using wire ropes, use a wire that can withstand the weight of the controller. 
-  - Check whether the eyebolts are firmly fixed. 
-  - Transport the controller while keeping it as low as possible. 
+* 使用叉车运输控制器时，请检查以下事项，
+  - 使用电缆绳运输产品时，请使用可以承受控制器重量的电缆。
+  - 检查眼螺栓是否牢固固定。
+  - 运输控制器时尽量保持其尽可能低的位置。
 
 ![](../../_assets/그림_3.4_지게차를_이용한_제어기_운반.png  )<br>
-Figure 3.4 Transport of the Controller by Using a Forklift<br>
-
+图 3.4 使用叉车运输控制器<br>
 
 {% hint style="warning" %}
-If you transport the product by uisng lifting equpment, you should comply with the 
-relevant national and local safety regulations and equipment usage guidelines. When 
-moving the product by using a crane, you must make sure that that no workers are under 
-the product. Also, never work or walk under the crane or the product. 
+如果使用提升设备运输产品，应遵守相关国家和地方安全法规及设备使用指南。使用起重机移动产品时，必须确保没有工人在产品下方。同时，切勿在起重机或产品下方工作或走动。
 {% endhint %}
-
-

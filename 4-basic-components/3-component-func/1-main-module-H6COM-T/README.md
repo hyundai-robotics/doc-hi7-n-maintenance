@@ -1,1 +1,1 @@
-﻿# 4.3.1. Main Module(H6COM-T)
+# 4.3.1. 主模块(H6COM-T)

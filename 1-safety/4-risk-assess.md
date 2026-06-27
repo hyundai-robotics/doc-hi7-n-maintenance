@@ -1,20 +1,19 @@
-﻿# 1.4. Risk Assessment  
+# 1.4. 风险评估  
 
-When it comes to configuring an integrated system including a robot, risk assessment is one of the most critical factors that are handled as legal requirements in most countries. A risk assessment of an integrated system cannot be performed only on a single robot because the safety assessment for the installation of the will differ depending on how the robot is integrated into the system. 
+在配置包括机器人在内的集成系统时，风险评估是大多数国家作为法律要求处理的最关键因素之一。集成系统的风险评估不能仅针对单个机器人进行，因为机器人的安全评估将取决于机器人如何集成到系统中。
 
-The system administrator should configure and operate the system according to the guidelines of ISO 12100 and ISO 10218-2 to conduct a risk assessment.<br>
-You should conduct the risk assessment by taking into account the entire process of an integrated system including the robot. The main objectives of the risk assessment are as follows
-* Basic settings for the use of the robot, and teaching of the robot 
-* Trouble diagnosis, and maintenance 
-* Normal operation of the installed robot
+系统管理员应根据ISO 12100和ISO 10218-2的指南配置和操作系统，以进行风险评估。<br>
+您应考虑整个集成系统的过程，包括机器人，进行风险评估。风险评估的主要目标如下：
+* 机器人使用的基本设置和机器人的教学 
+* 故障诊断和维护 
+* 已安装机器人的正常操作
 
-After installing the robot and configuring the system, you must conduct a risk assessment. The risk assessment mainly determines the appropriateness of safety devices in the robot integrated system, as well as the necessity for additional emergency stop devices and other safety devices.<br>
-It is very important to know the appropriate safety devices and properly configure the robot integrated system. You should configure the integrated system by referring to the relevant information in the manual.<br>
-For details on configuring the safety functions, refer to "1.8. Safety Functions". In addition, when installing the robot in a specific location or configuring safety-related functions by using the safety I/O, the important items in the risk assessment of an integrated robot system are as follows. 
-* Severity 
-* Frequency of exposure to risks 
-* Possible occurrence 
-* Possible avoidance<br>
+在安装机器人并配置系统后，必须进行风险评估。风险评估主要确定机器人集成系统中安全设备的适当性，以及额外紧急停止设备和其他安全设备的必要性。<br>
+了解适当的安全设备并正确配置机器人集成系统非常重要。您应根据手册中的相关信息配置集成系统。<br>
+有关配置安全功能的详细信息，请参阅“1.8. 安全功能”。此外，在特定位置安装机器人或使用安全I/O配置安全相关功能时，机器人集成系统风险评估中的重要事项如下：
+* 严重性 
+* 接触风险的频率 
+* 可能的发生 
+* 可能的避免<br>
 
-In the process of configuring an integrated system, if the safety-related functions of the robot do not sufficiently eliminate the risk factors, it is possible to check the necessity for additional protective devices during the risk assessment.
-   
+在配置集成系统的过程中，如果机器人的安全相关功能未能充分消除风险因素，则在风险评估期间可以检查额外保护设备的必要性。

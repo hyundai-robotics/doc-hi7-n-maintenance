@@ -1,12 +1,6 @@
-﻿# 1.11. Safety Works When Operating the Robot
-
+﻿# 1.11. 安全操作机器人时的工作
 
 {% hint style="warning" %}
-Must observe safety work procedures to prevent safety accidents. Do not change or ignore 
-safety devices or circuits under any circumstances, and pay attention to possible electric 
-shock.<br>
-In auto mode, all normal works should be performed outside the safety guard. Before 
-carrying out works, you must make sure that there are no people in the operation area of 
-the robot. 
+必须遵守安全工作程序以防止安全事故。在任何情况下都不得更改或忽视安全设备或电路，并注意可能的电击。<br>
+在自动模式下，所有正常工作应在安全护栏外进行。在进行工作之前，必须确保机器人操作区域内没有人。 
 {% endhint %}
-

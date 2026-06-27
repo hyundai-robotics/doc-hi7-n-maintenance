@@ -1,1 +1,1 @@
-﻿# 4.3.5. Power Supply Module(H7PSM)
+﻿# 4.3.5. 电源模块(H7PSM)

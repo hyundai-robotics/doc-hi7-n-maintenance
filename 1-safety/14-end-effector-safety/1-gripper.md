@@ -1,5 +1,5 @@
-﻿# 1.14.1. Gripper 
+# 1.14.1. Gripper 
 
-* When a gripper is used to hold a workpiece, there should be a measure to take against abrupt dropping of the workpiece. 
-* When installing the device onto an end effector or arm, you should use the bolts of specified sizes and the specified number of bolts, and tighten them completely according to regulated torques by using torque wrenches. You should use bolts that are not rusted or stained. 
-* When manufacturing an end effector, you should take into account that it can be used within the allowable load value of the wrist of the robot. An end effector should hava a structure that will not allow a gripped material to be released or dropped even when the power supply or air supply is interrupted, and the corners and protrusions should be surely treated in order to prevent people or objects from suffering any damage. 
+* 当夹头用于固定工件时，应采取措施防止工件突然掉落。 
+* 在将设备安装到末端执行器或臂上时，应使用规定尺寸的螺栓和规定数量的螺栓，并根据规定的扭矩使用扭矩扳手完全拧紧。应使用未生锈或沾染的螺栓。 
+* 在制造末端执行器时，应考虑其可以在机器人的腕关节的允许负载值内使用。末端执行器应具有一个结构，即使在电源或气源中断时，也不会释放或掉落夹持的材料，并且应确保处理好角落和突出部分，以防止人员或物体受到损害。

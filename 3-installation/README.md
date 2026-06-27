@@ -1,14 +1,11 @@
-﻿# 3. Installation of the Controller
+# 3. 控制器的安装
 
-If you properly install, transport, and store the product in consideration of the position and direction of the installation and the size of the surrounding space, you can secure the service life of the product and prevent the degradation of its performance. 
-* Checking of the installation and use environments 
-* Transport of the controller 
-* Storage of the controller 
-* Discarding of the controller
+如果您在安装的位置和方向以及周围空间的大小方面正确安装、运输和存储产品，则可以确保产品的使用寿命，并防止其性能退化。
+* 检查安装和使用环境
+* 控制器的运输
+* 控制器的存储
+* 控制器的处置
 
 {% hint style="info" %}
-Before installing the product, you must perform a risk assessment sufficiently and then set 
-the safety function based on the assement results. For details on safety functions, refer to 
-"1. Safety".
+在安装产品之前，您必须充分进行风险评估，然后根据评估结果设置安全功能。有关安全功能的详细信息，请参考“1. 安全”。
 {% endhint %}
-

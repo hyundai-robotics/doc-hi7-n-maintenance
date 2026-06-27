@@ -1,14 +1,14 @@
-﻿# Hi7-N Controller Maintenance Manual
+# Hi7-N Controller Maintenance Manual
 
 ## Overview
 
-The main purpose of this chapter is to describe the matters about the safety for the users of the industrial robot and for the workers who maintain and operate the robot.<br>
-Every worker who installs, replaces, adjusts, operate, preserves and maintains the robot system must carefully read and fully understand the operation manual and maintenance manual. Also, keep the manuals nearby so that you can view it whenever necessary.<br>
+本章旨在阐述面向工业机器人用户、维护及操作人员的安全要求事项。<br>
+Every worker who installs, replaces, adjusts, operate, preserves and maintains the robot system must carefully read and fully understand the operation manual and maintenance manual. 此外，请将手册就近保管，以便需要时随时查看。<br>
 
 Our company plans and implements the preservation, maintenance and operation trainings so the person using the robot should ensure that the workers working in the robot system should receive the relevant trainings.<br>
 It must be ensured that only those who have completed this course can handle the robot.<br>
 
-The users of our industrial robots are responsible for surely understanding and complying with safety-related laws applicable in concerned countries and for properly designing, installing, and operating safety devices to protect workers working in robot systems.<br>
+为确保在机器人系统中工作的人员安全，我司工业机器人用户有责任充分理解并遵守适用于相关国家的安全法律，并负责正确设计、安装和运行安全装置。<br>
 
 The dangerous areas of the robot system, in other words, the areas where the robot, tools and peripheral devices are operating, should be equipped with safety devices according to ANSI/RIA R15.06-2012 to prevent an object, other than the workers and the workpiece, from entering the dangerous areas.<br>
 
@@ -17,7 +17,7 @@ The robot system should be configured in a way that it can be stopped immediatel
 The workers are responsible for installing, checking and operating these safety devices.<br>
 This manual has been created based on standard specifications, so some contents may differ depending on the options and model of the product that you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual.<br>
 
-For detailed information on the revision of the manual, you need to visit our internet website (https://www.hd-hyundairobotics.com/en/main).<br>
+For detailed information on the revision of the manual, you need to visit our internet website (https://www.hd-hyundairobotics.com/zh/main).<br>
 
 
 ## Safety Cautions
@@ -137,22 +137,14 @@ equipment such as a crane.
   - Turn on the AC220V power switch.  
   - Turn on the DC24V power switch. 
 * When the use of the brake release unit is finished, follow the procedures below. 
-  - Turn off the DC24V power switch. 
-  - Turn off the AC220V power switch. 
-  - Disconnect the AC power cable.  
-  - Do not use AC220V power and DC24V battery power at the same time. 
-* Fieldbus communication must be available to use commercial remote IO. Therefore, you should 
-configure the PCI communication card together by referring to the Paragraph 5.1 mentioned 
-above. 
-* The drive unit differs depending on the type of the robot, so you must check the type when 
-replacing the drive unit. 
-* When transporting the product, you should maintain a proper posture and work in a group of 
-at least two workers. Otherwise, injury to parts of the body such as the back, arms and legs 
-may result. 
-* If you transport the product by using lifting equipment, you should comply with relevant national and local safety regulations and equipment usage guidelines.   
-* When transporting the product, you should fully understand the transport-related contents in 
-the manual and follow the instructions. Our company will not be responsible for any damage to 
-or breaking of the product due to the customer's transport of the product.  
-* These are important parts to be prepared for daily maintenance and inspection. 
-* These are maintenance parts to be prepared when multiple units are purchased. 
-
+  - Turn off the DC24V power switch.
+  - 关闭 AC220V 电源开关。
+  - 断开 AC 电源电缆。
+  - 不要同时使用 AC220V 电源和 DC24V 电池电源。
+* 要使用商业远程 IO，必须提供现场总线通信。因此，您应该参考上述第 5.1 节配置 PCI 通信卡。
+* 驱动单元因机器人的类型而异，因此在更换驱动单元时必须检查类型。
+* 在运输产品时，您应保持正确的姿势，并至少由两名工人一起操作。否则，可能会导致后背、手臂和腿部等身体部位受伤。
+* 如果您使用起重设备运输产品，您应遵守相关国家和地方的安全法规及设备使用指南。
+* 在运输产品时，您应充分了解手册中与运输相关的内容并遵循说明。我们公司对因客户运输产品而造成的任何损坏或破损不承担责任。
+* 这些是日常维护和检查需要准备的重要部分。
+* 这些是购买多个单元时需要准备的维护部件。

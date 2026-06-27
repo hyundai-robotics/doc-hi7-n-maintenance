@@ -1,116 +1,116 @@
-﻿# 4.3.2.3. Indicators
+# 4.3.2.3. 指示灯
 
-(1) Board Top Indicators
+(1) 主板顶部指示灯
 
-The figure below shows the locations of the indicators(LEDs and 7-segment display) on the top side of the Servo/Safety Module(BD642).
-The table below describes the function of each indicator.
+下图显示了Servo/Safety模块(BD642)顶部的指示灯(LED和7段显示器)的位置。
+下表描述了每个指示灯的功能。
 
 ![](../../../_assets/BD642_PCB_상태.png)   
-Figure 4.3.2.3-1 Board Top Indicator Layout of the Servo/Safety Module(BD642)
+图 4.3.2.3-1 Servo/Safety模块(BD642)的主板顶部指示灯布局
 
-Table 4.3.2.3-1 Description of Board Top Indicators of the Servo/Safety Module(BD642)   
+表 4.3.2.3-1 Servo/Safety模块(BD642)主板顶部指示灯描述   
 <table>
 <thead>
   <tr>
-    <th><strong>No.</strong></th>
-    <th><strong>Indicator</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>Color</strong></th>
-    <th><strong>Normal Status</strong></th>
-    <th><strong>Action in Case of Abnormal</strong></th>
+    <th><strong>编号</strong></th>
+    <th><strong>指示灯</strong></th>
+    <th><strong>描述</strong></th>
+    <th><strong>颜色</strong></th>
+    <th><strong>正常状态</strong></th>
+    <th><strong>异常情况下的措施</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>(1)<br>(2)</td>
     <td>LED1<br>LED2</td>
-    <td>Input power limiting function</td>
-    <td>RED</td>
-    <td>OFF</td>
+    <td>输入电源限制功能</td>
+    <td>红色</td>
+    <td>关闭</td>
     <td>
-      Symptom: Red LED ON
-      <br>Cause: Input voltage under- or over-voltage
-      <br>Action: Check the input voltage(24 V)
+      症状: 红色LED亮
+      <br>原因: 输入电压过低或过高
+      <br>措施: 检查输入电压(24 V)
     </td>
   </tr>
   <tr>
     <td>(3)</td>
     <td>LED3</td>
-    <td>External A-channel power</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>外部A通道电源</td>
+    <td>黄色</td>
+    <td>开启</td>
     <td>
-      Symptom: Yellow LED OFF
-      <br>Cause: Overcurrent in the external A-channel power or incorrect external wiring
-      <br>Action: Check fuse (FS2)
+      症状: 黄色LED关闭
+      <br>原因: 外部A通道电源过流或外部接线错误
+      <br>措施: 检查保险丝(FS2)
     </td>
   </tr>
   <tr>
     <td>(4)</td>
     <td>LED4</td>
-    <td>External B-channel power</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>外部B通道电源</td>
+    <td>黄色</td>
+    <td>开启</td>
     <td>
-      Symptom: Yellow LED OFF
-      <br>Cause: Overcurrent in the external B-channel power or incorrect external wiring
-      <br>Action: Check fuse(FS3)
+      症状: 黄色LED关闭
+      <br>原因: 外部B通道电源过流或外部接线错误
+      <br>措施: 检查保险丝(FS3)
     </td>
   </tr>
   <tr>
     <td>(5)</td>
     <td>LED5</td>
-    <td>A-channel MCU power</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>A通道MCU电源</td>
+    <td>黄色</td>
+    <td>开启</td>
     <td>
-      Symptom: Yellow LED OFF
-      <br>Cause: Abnormal A-channel MCU power(3.3V, 1.2V)
-      <br>Action: Replace the board(BD642)
+      症状: 黄色LED关闭
+      <br>原因: A通道MCU电源异常(3.3V, 1.2V)
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
     <td>(6)</td>
     <td>LED6</td>
-    <td>B-channel MCU power</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>B通道MCU电源</td>
+    <td>黄色</td>
+    <td>开启</td>
     <td>
-      Symptom: Yellow LED OFF
-      <br>Cause: Abnormal B-channel MCU power(3.3V, 1.2V)
-      <br>Action: Replace the board(BD642)
+      症状: 黄色LED关闭
+      <br>原因: B通道MCU电源异常(3.3V, 1.2V)
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
     <td>(7)</td>
     <td>LED7</td>
-    <td>A-channel MCU status indicator</td>
-    <td>RED
-      <br>GREEN
-      <br>BLUE
+    <td>A通道MCU状态指示灯</td>
+    <td>红色
+      <br>绿色
+      <br>蓝色
     </td>
-    <td>RGB blinking</td>
+    <td>RGB闪烁</td>
     <td>
-      Symptom: All LEDs OFF and no blinking
-      <br>Cause 1: Abnormal A-channel MCU power(3.3V, 1.2V)
-      <br>Cause 2: A-channel MCU program malfunction
-      <br>Action: Replace the board(BD642)
+      症状: 所有LED关闭且无闪烁
+      <br>原因1: A通道MCU电源异常(3.3V, 1.2V)
+      <br>原因2: A通道MCU程序故障
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
     <td>(8)</td>
     <td>LED8</td>
-    <td>B-channel MCU status indicator</td>
-    <td>RED
-      <br>GREEN
-      <br>BLUE
+    <td>B通道MCU状态指示灯</td>
+    <td>红色
+      <br>绿色
+      <br>蓝色
     </td>
-    <td>RGB blinking</td>
+    <td>RGB闪烁</td>
     <td>
-      Symptom: All LEDs OFF and no blinking
-      <br>Cause 1: Abnormal B-channel MCU power(3.3V, 1.2V)
-      <br>Cause 2: B-channel MCU program malfunction
-      <br>Action: Replace the board(BD642)
+      症状: 所有LED关闭且无闪烁
+      <br>原因1: B通道MCU电源异常(3.3V, 1.2V)
+      <br>原因2: B通道MCU程序故障
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
@@ -118,19 +118,19 @@ Table 4.3.2.3-1 Description of Board Top Indicators of the Servo/Safety Module(B
       <br>(10)</td>
     <td>LED9
       <br>LED10</td>
-    <td>A-channel MCU EtherCAT LINK0 status
-      <br>A-channel MCU EtherCAT LINK1 status
+    <td>A通道MCU EtherCAT LINK0状态
+      <br>A通道MCU EtherCAT LINK1状态
     </td>
-    <td>GREEN
-      <br>GREEN
+    <td>绿色
+      <br>绿色
     </td>
-    <td>GREEN blinking
-      <br>GREEN blinking
+    <td>绿色闪烁
+      <br>绿色闪烁
     </td>
     <td>
-      Symptom: No blinking
-      <br>Cause: A-channel MCU EtherCAT malfunction
-      <br>Action: Replace the board(BD642)
+      症状: 无闪烁
+      <br>原因: A通道MCU EtherCAT故障
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
@@ -138,46 +138,46 @@ Table 4.3.2.3-1 Description of Board Top Indicators of the Servo/Safety Module(B
       <br>(12)</td>
     <td>LED13
       <br>LED14</td>
-    <td>FPGA EtherCAT LINK0 status
-      <br>FPGA EtherCAT LINK1 status
+    <td>FPGA EtherCAT LINK0状态
+      <br>FPGA EtherCAT LINK1状态
     </td>
-    <td>GREEN
-      <br>GREEN
+    <td>绿色
+      <br>绿色
     </td>
-    <td>GREEN blinking
-      <br>GREEN blinking
+    <td>绿色闪烁
+      <br>绿色闪烁
     </td>
     <td>
-      Symptom: No blinking
-      <br>Cause: FPGA EtherCAT malfunction
-      <br>Action: Replace the board(BD642)
+      症状: 无闪烁
+      <br>原因: FPGA EtherCAT故障
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
     <td>(13)</td>
     <td>LED17</td>
-    <td>FPGA power status</td>
-    <td>YELLOW</td>
-    <td>ON</td>
+    <td>FPGA电源状态</td>
+    <td>黄色</td>
+    <td>开启</td>
     <td>
-      Symptom: Yellow LED OFF
-      <br>Cause: Abnormal FPGA power(5V, 3.3V, 1.8V, 1.35V, 1V)
-      <br>Action: Replace the board(BD642)
+      症状: 黄色LED关闭
+      <br>原因: FPGA电源异常(5V, 3.3V, 1.8V, 1.35V, 1V)
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
     <td>(14)</td>
     <td>LED18</td>
-    <td>FPGA status indicator</td>
-    <td>RED
-      <br>GREEN
-      <br>BLUE</td>
-    <td>RGB blinking</td>
+    <td>FPGA状态指示灯</td>
+    <td>红色
+      <br>绿色
+      <br>蓝色</td>
+    <td>RGB闪烁</td>
     <td>
-      Symptom: All LEDs OFF and no blinking
-      <br>Cause 1: Abnormal FPGA power (5V, 3.3V, 1.8V, 1.35 V, 1V)
-      <br>Cause 2: FPGA program malfunction
-      <br>Action: Replace the board(BD642)
+      症状: 所有LED关闭且无闪烁
+      <br>原因1: FPGA电源异常(5V, 3.3V, 1.8V, 1.35V, 1V)
+      <br>原因2: FPGA程序故障
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
   <tr>
@@ -191,24 +191,24 @@ Table 4.3.2.3-1 Description of Board Top Indicators of the Servo/Safety Module(B
       <br>LED24
       <br>LED26
       </td>
-    <td>  Axis 1 brake status
-      <br>Axis 2 brake status
-      <br>Axis 3 brake status
-      <br>Axis 4 brake status
-      <br>Axis 5 brake status
-      <br>Axis 6 brake status
-      <br>Axis 7 brake status
-      <br>Axis 8 brake status
+    <td>  轴 1 刹车状态
+      <br>轴 2 刹车状态
+      <br>轴 3 刹车状态
+      <br>轴 4 刹车状态
+      <br>轴 5 刹车状态
+      <br>轴 6 刹车状态
+      <br>轴 7 刹车状态
+      <br>轴 8 刹车状态
       </td>
-    <td>ORANGE</td>
-    <td>Brake released(ON)
-      <br>Brake hold (OFF)
+    <td>橙色</td>
+    <td>刹车释放(开启)
+      <br>刹车保持(关闭)
     </td>
     <td>
-      Symptom: Brake status mismatch
-      <br>ause 1: Abnormal brake power supply
-      <br>Cause 2: Harness failure or wiring issue
-      <br>Action: Replace the board(BD642)
+      症状: 刹车状态不匹配
+      <br>原因1: 刹车电源异常
+      <br>原因2: 线束故障或接线问题
+      <br>措施: 更换主板(BD642)
     </td>
   </tr>
 
@@ -226,138 +226,138 @@ Table 4.3.2.3-1 Description of Board Top Indicators of the Servo/Safety Module(B
     <td></td>
     <td></td>
     <td>
-      Refer to the following section: Front panel indicators
+      请参阅以下部分：前面板指示灯
     </td>
   </tr>
 
 </table>
 </tbody>
 
-(2) Front Panel Indicators
-The figure below shows the front panel indicators of the Servo/Safety Module(BD642). The table below describes the function of each indicator.
+(2) 前面板指示灯
+下图显示了Servo/Safety模块(BD642)的前面板指示灯。下表描述了每个指示灯的功能。
 
 ![](../../../_assets/BD642_전면표시장치.png)   
-Figure 4.3.2.3-2 Front Panel Indicator Layout of the Servo/Safety Module(BD642)
+图 4.3.2.3-2 Servo/Safety模块(BD642)前面板指示灯布局
 
-Table 4.3.2.3-2 Description of Front Panel Indicators of the Servo/Safety Module(BD642)
+表 4.3.2.3-2 Servo/Safety模块(BD642)前面板指示灯描述
 <table>
 <thead>
   <tr>
-    <th><strong>No.</strong></th>
-    <th><strong>Indicator</strong></th>
-    <th><strong>Description</strong></th>
-    <th><strong>Color</strong></th>
-    <th><strong>Status</strong></th>
-    <th><strong>Status Description</strong></th>
+    <th><strong>编号</strong></th>
+    <th><strong>指示灯</strong></th>
+    <th><strong>描述</strong></th>
+    <th><strong>颜色</strong></th>
+    <th><strong>状态</strong></th>
+    <th><strong>状态描述</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td rowspan="2">(1)</td>
     <td>A_SO1</td>
-    <td>A-channel Safety Output 1 status indicator</td>
-    <td rowspan="2">GREEN </td>
-    <td rowspan="2">ON<br>OFF</td>
-    <td rowspan="2">Safety Output 1 ON state for the A-channel<br>
-                    Safety Output 1 OFF state for the A-channel</td>
+    <td>A通道安全输出1状态指示灯</td>
+    <td rowspan="2">绿色 </td>
+    <td rowspan="2">开启<br>关闭</td>
+    <td rowspan="2">A通道安全输出1开启状态<br>
+                    A通道安全输出1关闭状态</td>
   </tr>
   <tr>
     <td>B_SO1</td>
-    <td>Safety Output 1 ON state for the B-channel</td>
+    <td>B通道安全输出1开启状态</td>
   </tr>
   <tr>
     <td rowspan="2">(2)</td>
     <td>A_SIx<br>
         (x=1~4)</td>
-    <td>A-channel Safety Input x status indicator</td>
-    <td rowspan="2">GREEN</td>
-    <td rowspan="2">ON<br>OFF</td>
-    <td rowspan="2">Safety Input x ON state for the A-channel<br>
-                    Safety Input x OFF state for the A-channel</td>
+    <td>A通道安全输入x状态指示灯</td>
+    <td rowspan="2">绿色</td>
+    <td rowspan="2">开启<br>关闭</td>
+    <td rowspan="2">A通道安全输入x开启状态<br>
+                    A通道安全输入x关闭状态</td>
   </tr>
   <tr>
     <td>B_SIn<br>
         (n=1~4)</td>
-    <td>B-channel Safety Input n status indicator</td>
+    <td>B通道安全输入n状态指示灯</td>
   </tr>
 
   <tr>
     <td rowspan="10">(3)</td>
     <td>LED27 (1)</td>
-    <td>LED27 (1) indicator</td>
-    <td rowspan="5">GREEN</td>
+    <td>LED27 (1)指示灯</td>
+    <td rowspan="5">绿色</td>
     <td>
     <td> LED27 (1) MCU_A MOD</td>
   </tr>
   <tr>
     <td>LED27 (2)</td>
-    <td>LED27 (2) indicator</td>
+    <td>LED27 (2)指示灯</td>
     <td>
     <td>LED27 (2) MCU_B MOD</td>
   </tr>
   <tr>
     <td>LED27 (3)</td>
-    <td>LED27 (3) indicator</td>
+    <td>LED27 (3)指示灯</td>
     <td>
     <td>LED27 (3) ZYNQ MOD</td>
   </tr>
   <tr>
     <td>LED27 (4)</td>
-    <td>LED27 (4) indicator</td>
+    <td>LED27 (4)指示灯</td>
     <td>
     <td>LED27 (4) DSP_RUN</td>
   </tr>
   <tr>
     <td>LED27 (5)</td>
-    <td>LED27 (5) indicator</td>
+    <td>LED27 (5)指示灯</td>
     <td>
     <td>LED27 (5) ZYNQ_RUN</td>
   </tr>
   <tr>
     <td>LED28 (1)</td>
-    <td>LED28 (1) indicator</td>
-    <td rowspan="5">RED</td>
+    <td>LED28 (1)指示灯</td>
+    <td rowspan="5">红色</td>
     <td>
     <td>LED28 (1) MCU_A STA</td>
   </tr>
   <tr>
     <td>LED28 (2)</td>
-    <td>LED28 (2) indicator</td>
+    <td>LED28 (2)指示灯</td>
     <td>
     <td>LED28 (2) MCU_B STA</td>
   </tr>
   <tr>
     <td>LED28 (3)</td>
-    <td>LED28 (3) indicator</td>
+    <td>LED28 (3)指示灯</td>
     <td>
     <td>LED28 (3) ZYNQ STA</td>
   </tr>
   <tr>
     <td>LED28 (4)</td>
-    <td>LED28 (4) indicator</td>
+    <td>LED28 (4)指示灯</td>
     <td>
     <td>LED28 (4) DSP ERR</td>
   </tr>
   <tr>
     <td>LED28 (5)</td>
-    <td>LED28 (5) indicator</td>
+    <td>LED28 (5)指示灯</td>
     <td>
     <td>LED28 (5) ZYNQ ERR</td>
   </tr>
   <tr>
     <td>(4)</td>
     <td>SEG1</td>
-    <td>BD642 board status indicator</td>
-    <td rowspan="2">RED </td>
+    <td>BD642主板状态指示灯</td>
+    <td rowspan="2">红色 </td>
     <td>             </td>
-    <td>Displays the boot status</td>
+    <td>显示启动状态</td>
   </tr>
 </table>
 
-Table 4.3.2.3-3 Description of Front LED Status(BD642)
+表 4.3.2.3-3 前LED状态描述(BD642)
 ![](../../../_assets/표_4_3_2_3_LED_상태표시.png)  
 
 
 ![](../../../_assets/그림_4_3_2_3_Segment_상태표시_r1.png)  
-Figure 4.3.2.3-3 Segment Status Indication
+图 4.3.2.3-3 段状态指示
 </tbody>

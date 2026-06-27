@@ -1,14 +1,12 @@
-﻿# 1.13.1. Safety Measures When Maintaining and Inspecting the Controller
+# 1.13.1. 维护和检查控制器时的安全措施
 
-Observe the following safety measures when maintaining and inspecting the robot controller. 
-* Maintenance and inspection works should be performed only by those who have received special maintenance trainings and fully understand the related contents. 
-* Progress the work according to the controller maintenance and inspection procedures. 
-* For the maintenance and inspection works, you must check the surroundings for safety and secure a passage or a place to avoid danger before progressing the work safely. 
-* Must turn off the power before performing daily inspection or maintenance of the robot or 
-replacement of parts. In addition, in order to prevent other workers from inadvertently turning on the power, put a warning marking such as [Power-On Prohibited] on the primary power supply. 
-* Always use the designated replacement parts. 
-* When required to open the controller door, you must turn off the power first and then wait for about 3 minutes before starting the work. 
-* Use external lighting when sufficient illumination is not secured when performing maintenance and inspection works inside the controller. 
-* Do not touch the heat sink and regenerative resistor of the servo amplifier because they generate excessive heat. After maintenance, check whether tools, foreign substances, etc. are left behind inside the controller, and then close the door securely. 
-* Performing maintenance work without shutting down the power or implementing lock-out procedures may result in serious injury or death to the operator due to the sudden, unexpected startup of the robot.
-
+在维护和检查机器人控制器时，请遵守以下安全措施。 
+* 维护和检查工作应仅由经过特殊维护培训且完全理解相关内容的人执行。 
+* 按照控制器维护和检查程序进行工作。 
+* 对于维护和检查工作，必须检查周围的安全情况，并确保有通道或地点以避免危险，然后安全地进行工作。 
+* 在执行日常检查或维护机器人或更换零件之前，必须先切断电源。此外，为了防止其他工人无意间开启电源，请在主电源上放置类似“[禁止开机]”的警示标记。 
+* 始终使用指定的替换零件。 
+* 如果需要打开控制器门，必须先切断电源，然后等待大约3分钟再开始工作。 
+* 当在控制器内部进行维护和检查工作时，如果未确保足够的照明，请使用外部照明。 
+* 不要触摸伺服放大器的散热器和再生电阻，因为它们会产生过多的热量。维护后，检查工具、异物等是否遗留在控制器内部，然后再安全地关闭门。 
+* 在没有关闭电源或实施锁定程序的情况下进行维护工作，可能会导致操作人员因机器人突然、意外启动而造成严重伤害或死亡。

@@ -1,10 +1,10 @@
-﻿# 4.3.3.1. Overview
+﻿# 4.3.3.1. 概述
 
-The backplane board (BD604), as shown in Figure 4.50, supplies control power to Hi7 boards and transmits AMP-related signals generated from BD642 through the AMP interface board (BD652/BD654).<br>
-It also serves to mount major optional boards and transmit signals between them. 
+背板电路板 (BD604)，如图 4.50 所示，为 Hi7 电路板提供控制电源，并通过 AMP 接口板 (BD652/BD654) 传输从 BD642 生成的与 AMP 相关的信号。<br>
+它还用于安装主要的可选电路板，并在它们之间传输信号。 
 
 ![](../../../_assets/그림_4.50_Backplan_구조.png )<br>
-Figure 4.25 Backplane Board Structure<br>
+图 4.25 背板电路板结构<br>
 
 ![](../../../_assets/그림_4.52_Backplan_커넥터.png )<br>
-Figure 4.26 Backplane Board Connectors<br>
+图 4.26 背板电路板连接器<br>

@@ -1,8 +1,7 @@
-﻿# 5.4.1. Overview
+﻿# 5.4.1. 概述
 
-The Optional Safety I/O Module(BD680) provides additional safety I/O signals when required.
+可选安全 I/O 模块(BD680)在需要时提供额外的安全 I/O 信号。
 
-When additional safety I/O signals are needed for field deployment of the robot controller, the module operates by being installed on the Servo/Safety Module(BD642). The BD680 module cannot be used independently and must be connected to the BD642 via a Board-to-Board connector, which supplies power, control signals, and interface connections necessary for operation.
+当机器人控制器的现场部署需要额外的安全 I/O 信号时，该模块通过安装在伺服/安全模块(BD642)上进行操作。BD680 模块不能独立使用，必须通过板对板连接器连接到 BD642，该连接器提供操作所需的电源、控制信号和接口连接。
 
-The safety I/O signals consist of 8 digital input signals and 8 digital output signals.
-
+安全 I/O 信号由 8 个数字输入信号和 8 个数字输出信号组成。

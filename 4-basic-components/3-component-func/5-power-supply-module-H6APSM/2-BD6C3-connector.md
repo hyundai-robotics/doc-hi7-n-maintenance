@@ -1,152 +1,151 @@
-﻿# 4.3.5.2. Connectors of BD6C3
+# 4.3.5.2. BD6C3的连接器
 
-The connector layout of the electrical board (BD6C3) is shown in the following figure. The function and connection device for each are listed in Table 4-40. 
+电气板(BD6C3)的连接器布局如下面的图所示。每个连接器的功能和连接设备列在表4-40中。
 
-![](../../../_assets/그림_4.28_전장보드(BD6C3)의_커넥터.png  )<br>
-Figure 4.36 Connectors of the Electronic Board (BD6C3)<br>
+![](../../../_assets/그림_4.28_전장보드(BD6C3)의_커넥터.png)<br>
+图4.36 电子板(BD6C3)的连接器<br>
 
-Table 4-36 Type and Function of BD6C3 Connector 
+表4-36 BD6C3连接器的类型和功能 
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Function</th>
-    <th>Specification</th>
+    <th>名称</th>
+    <th>功能</th>
+    <th>规格</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>CNAC1</td>
-    <td>3-phase power input for control</td>
-    <td>3-phase 220V</td>
+    <td>控制用的三相电源输入</td>
+    <td>三相220V</td>
   </tr>
     <tr>
     <td>CNAC2</td>
-    <td>3-phase power output for control of 16 axes or more</td>
-    <td>3-phase 220V</td>
+    <td>控制16轴或更多的三相电源输出</td>
+    <td>三相220V</td>
   </tr>
    <tr>
     <td>CNPR1</td>
-    <td>Inrush current limiting circuit input</td>
-    <td>3-phase 220V, MC1 input terminal</td>
+    <td>冲击电流限制电路输入</td>
+    <td>三相220V, MC1输入端子</td>
   </tr>
   <tr>
     <td>CNPR2</td>
-    <td>Inrush current limiting circuit output</td>
-    <td>3-phase 220V, MC2 output terminal</td>
+    <td>冲击电流限制电路输出</td>
+    <td>三相220V, MC2输出端子</td>
   </tr>
   <tr>
     <td>CNACOUT1</td>
-    <td>220 VAC power output 1 for users</td>
-    <td>Single-phase 220V</td>
+    <td>用户的220 VAC电源输出1</td>
+    <td>单相220V</td>
   </tr>
   <tr>
     <td>CNACOUT2</td>
-    <td>220 VAC power output 2 for users</td>
-    <td>Single-phase 220V</td>
+    <td>用户的220 VAC电源输出2</td>
+    <td>单相220V</td>
   </tr>
     <tr>
     <td>CNPFS1</td>
-    <td>CMSMPS power failure detection signal output 1</td>
+    <td>CMSMPS电源故障检测信号输出1</td>
     <td>H6COM DIO</td>
   </tr>
    <tr>
     <td>CNMC</td>
-    <td>Contactor control and monitoring</td>
+    <td>接触器控制和监测</td>
     <td>BD642 CNMC</td>
   </tr>
   <tr>
     <td>CNPRC</td>
-    <td>Control and monitoring of inrush current limiting circuit, fan fault and fan power</td>
+    <td>冲击电流限制电路、风扇故障和风扇电源的控制和监测</td>
     <td>BD642 CNPRC</td>
   </tr>
   <tr>
     <td>CNFN1</td>
-    <td>DC fan power output for control module</td>
+    <td>控制模块的直流风扇电源输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNFN2~5</td>
-    <td>DC fan power output</td>
+    <td>直流风扇电源输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNOCM</td>
-    <td>SMPS 24VDC output for control modules</td>
+    <td>控制模块的SMPS 24VDC输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNOH6COM</td>
-    <td>SMPS 24VDC output for H6COMs</td>
+    <td>H6COM的SMPS 24VDC输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNOBK</td>
-    <td>SMPS 24VDC output for motor brakes</td>
+    <td>电机刹车的SMPS 24VDC输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNORO</td>
-    <td>SMPS 24VDC output for robots</td>
+    <td>机器人的SMPS 24VDC输出</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNOUS</td>
-    <td>SMPS 24VDC output for users</td>
+    <td>用户的SMPS 24VDC输出</td>
     <td>24VDC</td>
   </tr>
 
-
   <tr>
     <td>CNCMSM</td>
-    <td>SMPS 220VAC input for control modules</td>
-    <td>Single-phase 220V</td>
+    <td>控制模块的SMPS 220VAC输入</td>
+    <td>单相220V</td>
   </tr>
   <tr>
     <td>CNBKSM</td>
-    <td>SMPS 220VAC input for motor brakes</td>
-    <td>Single-phase 220V</td>
+    <td>电机刹车的SMPS 220VAC输入</td>
+    <td>单相220V</td>
   </tr>
   <tr>
     <td>CNUSSM</td>
-    <td>SMPS 220VAC input for users</td>
-    <td>Single-phase 220V</td>
+    <td>用户的SMPS 220VAC输入</td>
+    <td>单相220V</td>
   </tr>
   <tr>
     <td>CNROSM</td>
-    <td>SMPS 220VAC input for robots</td>
-    <td>Single-phase 220V</td>
+    <td>机器人的SMPS 220VAC输入</td>
+    <td>单相220V</td>
   </tr>
 
   <tr>
     <td>CNI24CM</td>
-    <td>Input for SMPS 24VDC distribution for common modules</td>
+    <td>公共模块的SMPS 24VDC分配输入</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNI24BK</td>
-    <td>Input for SMPS 24VDC distribution for brakes</td>
+    <td>制动器的SMPS 24VDC分配输入</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNI24RO</td>
-    <td>Input for SMPS 24VDC distribution for robots</td>
+    <td>机器人的SMPS 24VDC分配输入</td>
     <td>24VDC</td>
   </tr>
   <tr>
     <td>CNI24US</td>
-    <td>Input for SMPS 24VDC distribution for users</td>
+    <td>用户的SMPS 24VDC分配输入</td>
     <td>24VDC</td>
   </tr>
   
   <tr>
     <td>CNMC1</td>
-    <td>Magnetic contactor 1 ON/OFF power input and feedback, and brake control signal control</td>
+    <td>磁接触器1的开/关电源输入和反馈，以及刹车控制信号控制</td>
     <td>MC1</td>
   </tr>
   <tr>
     <td>CNMC2</td>
-    <td>Magnetic contactor 2 ON/OFF power input and feedback, and brake control signal control</td>
+    <td>磁接触器2的开/关电源输入和反馈，以及刹车控制信号控制</td>
     <td>MC2</td>
   </tr>
 </tbody>
@@ -154,70 +153,70 @@ Table 4-36 Type and Function of BD6C3 Connector
 
 ### 4.3.5.3. BD6C3 LED
 
-The LED layout of the electrical board (BD6C3) is shown in the following figure. The function, connected power, and LED color for each are listed in Table 4-41.
+电气板(BD6C3)的LED布局如下面的图所示。每个LED的功能、连接电源和颜色列在表4-41中。
 
 ![](../../../_assets/그림_4.29_전장보드(BD6C3)의_LED.png)<br>
-Figure 4.37 LEDs of BD6C3<br>
+图4.37 BD6C3的LED<br>
 
-Table 4-37 Types and Functions of BD6C3 LEDs
+表4-37 BD6C3 LED的类型和功能
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Fuction</th>
-    <th>Specification</th>
+    <th>名称</th>
+    <th>功能</th>
+    <th>规格</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>LDFNFLT</td>
-    <td>ON when a fault occurs in one or more of FAN 1-5</td>
-    <td>FAN Fault, Red</td>
+    <td>当FAN 1-5中发生故障时点亮</td>
+    <td>风扇故障, 红色</td>
   </tr>
   <tr>
     <td>LEDFAN</td>
-    <td>ON when the relay for supplying 24VDC to the fan is ON</td>
-    <td>FAN Power Relay, Green</td>
+    <td>当给风扇供电的24VDC继电器处于开启状态时点亮</td>
+    <td>风扇电源继电器, 绿色</td>
   </tr>
   <tr>
     <td>LEDCM</td>
-    <td>ON when SMPS 24VDC for control modules is normally supplied</td>
-    <td>CMSMPS, Green</td>
+    <td>当控制模块的SMPS 24VDC正常供电时点亮</td>
+    <td>CMSMPS, 绿色</td>
   </tr>
   <tr>
     <td>LEDBK</td>
-    <td>ON when SMPS 24VDC for brakes is normally supplied</td>
-    <td>BKSMPS, Green</td>
+    <td>当刹车的SMPS 24VDC正常供电时点亮</td>
+    <td>BKSMPS, 绿色</td>
   </tr>
   <tr>
     <td>LEDUS</td>
-    <td>ON when SMPS 24VDC for users is normally supplied</td>
-    <td>USSMPS, Green</td>
+    <td>当用户的SMPS 24VDC正常供电时点亮</td>
+    <td>USSMPS, 绿色</td>
   </tr>
   <tr>
     <td>LEDRO</td>
-    <td>ON when SMPS 24VDC for robots is normally supplied</td>
-    <td>ROSMPS, Green</td>
+    <td>当机器人的SMPS 24VDC正常供电时点亮</td>
+    <td>ROSMPS, 绿色</td>
   </tr>
   <tr>
     <td>MC1LED</td>
-    <td>ON when the ON power for magnetic contactor 1 is normally supplied</td>
-    <td>BD642, Green</td>
+    <td>当磁接触器1的开电源正常供电时点亮</td>
+    <td>BD642, 绿色</td>
   </tr>
   <tr>
     <td>MC2LED</td>
-    <td>ON when the ON power for magnetic contactor 2 is normally supplied</td>
-    <td>BD642, Green</td>
+    <td>当磁接触器2的开电源正常供电时点亮</td>
+    <td>BD642, 绿色</td>
   </tr>
   <tr>
     <td>RYPRC1</td>
-    <td>ON inside relay when aprecharging relay ON signal is supplied</td>
-    <td>BD604, Green</td>
+    <td>当预充电继电器开关信号被提供时，内部继电器点亮</td>
+    <td>BD604, 绿色</td>
   </tr>
   <tr>
     <td>RYPRC2</td>
-    <td>ON inside relay when a fan power relay ON signal is supplied</td>
-    <td>BD604, Green</td>
+    <td>当风扇电源继电器开关信号被提供时，内部继电器点亮</td>
+    <td>BD604, 绿色</td>
   </tr>
 
 </tbody>

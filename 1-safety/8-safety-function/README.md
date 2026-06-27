@@ -1,10 +1,10 @@
-﻿# 1.8. Safety Functions
+# 1.8. 安全功能
  
-The safety system of the robot is designed in dual configuration (HFT=1) to satisfy the safety performance(PL) = d Cat3 of [ISO13849-1:2015] and the safety  integrity level(SIL) 2 of [IEC62061:2005], and continuously monitors the status of safety related devices. When an error is detected by self-diagnosis, or a safety related signal is inputted, the safety functions will stop the robot according to the classification of stop situations determined based on the risk assessment.<br>
-Also, when any of the dual switches of the safety circuit is activated, the motor drive power and brake drive power will be cut off by the sfety functions to secure a safe state. Information on the relevant status can be checked through the Teach Pendant. 
+机器人的安全系统采用双重配置设计（HFT=1），以满足[ISO13849-1:2015]的安全性能（PL）= d Cat3 和[IEC62061:2005]的安全完整性级别（SIL）2，并持续监控安全相关设备的状态。当自我诊断检测到错误或输入安全相关信号时，安全功能将根据基于风险评估确定的停止情况分类停止机器人。<br>
+此外，当安全电路的任意双重开关被激活时，安全功能将切断电动机驱动功率和刹车驱动功率，以确保安全状态。相关状态的信息可以通过教学挂件检查。 
 
 {% hint style="danger" %}
-Make sure that the safety circuit is never ignored, modified or altered in any way.
+确保安全电路绝不被忽视、修改或以任何方式改变。
 {% endhint %}
 
-The safety-related main functions of the robot are as follows. 
+机器人的安全相关主要功能如下。

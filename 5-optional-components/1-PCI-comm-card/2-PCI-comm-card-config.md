@@ -1,34 +1,34 @@
-﻿# 5.1.2. Configuration of the PCI Communication Card
+﻿# 5.1.2. PCI通信卡的配置
 
-A PCI communication card is basically configured, as shown below (when Ethernet-based communication is used), and varies in the number of connectors and LEDs depending on the type of industrial communication. 
+PCI通信卡的基本配置如下所示（当使用基于以太网的通信时），并根据工业通信的类型而有所不同的连接器和LED数量。 
 
 ![](../../_assets/그림_5.1_PCI통신_카드_외관.png  )<br>
-Figure 5.1 Exterior of the PCI Communication Card<br>
+图5.1 PCI通信卡的外观<br>
 
-Table 5-3 Description of the Exterior of the PCI Communication Card
+表5-3 PCI通信卡外观描述
 <table>
 <thead>
   <tr>
-    <th>Name</th>
-    <th>Usage</th>
+    <th>名称</th>
+    <th>用途</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Rotary Switch</td>
-    <td>Sets the communication according to the slot ID</td>
+    <td>旋转开关</td>
+    <td>根据槽位ID设置通信</td>
   </tr>
   <tr>
     <td>LED</td>
-    <td>Displays the system and communication status</td>
+    <td>显示系统和通信状态</td>
   </tr>
   <tr>
-    <td>Communication Port</td>
-    <td>Communication connection port</td>
+    <td>通信端口</td>
+    <td>通信连接端口</td>
   </tr>
   <tr>
-    <td>PCI bus</td>
-    <td>PC connection bus</td>
+    <td>PCI总线</td>
+    <td>PC连接总线</td>
   </tr>
 </tbody>
 </table>
