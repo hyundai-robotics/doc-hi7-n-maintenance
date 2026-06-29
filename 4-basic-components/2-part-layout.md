@@ -13,8 +13,8 @@ Hi7-N00/N30/N80 제어기의 주요 구성품과 각 부의 명칭은 표 4-1과
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>H6COM-T</p></td>
-<td><p>메인제어모듈</p></td>
+<td><p>COM MODULE ASSY(Hi7-N)</p></td>
+<td><p>메인제어모듈 ASSY</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
