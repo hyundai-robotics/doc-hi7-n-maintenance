@@ -12,8 +12,8 @@ Table 4-1 Names of Individual Parts of the Hi7-N00/N30/N80 Controller
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>H6COM-T</p></td>
-<td><p>Main control module</p></td>
+<td><p>COM MODULE ASSY(Hi7-N)</p></td>
+<td><p>Main control module ASSY</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>

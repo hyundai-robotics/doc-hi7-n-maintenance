@@ -1454,8 +1454,8 @@ Table 4-1 Names of Individual Parts of the Hi7-N00/N30/N80 Controller
 </tr>
 <tr class="even">
 <td><p><strong>1</strong></p></td>
-<td><p>H6COM-T</p></td>
-<td><p>Main control module</p></td>
+<td><p>COM MODULE ASSY(Hi7-N)</p></td>
+<td><p>Main control module ASSY</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>2</strong></p></td>
@@ -1642,8 +1642,8 @@ H6COM-T is structure as shown in Figure 4.9, in which the main CPU board and the
 LAN ports for external systems, two LAN ports for internal systems, two USB ports, one GPIO port, two PCI connectors, one PCI-e connector and one DC 24V power connector. The LAN ports for internal systems are used for EtherCAT communication, as well as for interface with the teach pendant, and the GPIO port is used to detect a power failure signal from the power system. The SB is used for debugging. One PCI expansion slot and three spare LAN ports for external systems are provided to support other universal bus interfaces. The connection to other communication interfaces than EtherCAT can be made via the 
 relevant slots. 
 
-![](../../../_assets/그림_4_1_1_메인모듈이미지.png)<br>
-Figure 4.8 H6COM-T<br>
+![](../../../_assets/H6COM_T_COM_MODULE_ASSY_Hi7_N.png)<br>
+Figure 4.8 H6COM-T & COM MODULE ASSY(Hi7-N)<br>
 
 [__SOURCE](4-basic-components/3-component-func/1-main-module-H6COM-T/2-connector.md)
 # 4.3.1.2. Connectors
@@ -5369,8 +5369,8 @@ Table 6-6 Maintenance Parts of the Category A-2 (Important Backup Parts)
   </tr>
   <tr>
     <td>2</td>
-    <td> Main control module</td>
-    <td>H6COM-T</td>
+    <td> Main control module ASSY</td>
+    <td>COM MODULE ASSY(Hi7-N)</td>
     <td>Hyundai Robotics</td>
     <td>1</td>
     <td></td>
