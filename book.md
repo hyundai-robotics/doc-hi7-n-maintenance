@@ -21,8 +21,16 @@ This manual has been created based on standard specifications, so some contents 
 
 For detailed information on the revision of the manual, you need to visit our internet website (https://www.hd-hyundairobotics.com/en/main).<br>
 
+[__SOURCE](0-about-this-manual/README.md)
+# About the Manual
 
-## Safety Cautions
+[__SOURCE](0-about-this-manual/precautions.md)
+# Precautions
+
+{% include file="en/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# Safety Cautions
 
 Before using the product, you must fully understand the following safety cautions for proper use, user safety, and prevention of property damage.
 
@@ -158,19 +166,6 @@ or breaking of the product due to the customer's transport of the product.
 * These are important parts to be prepared for daily maintenance and inspection. 
 * These are maintenance parts to be prepared when multiple units are purchased. 
 
-
-[__SOURCE](0-about-this-manual/README.md)
-# About the Manual
-
-[__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
-
-{% include file="en/precautions.md" %}
-
-[__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
-
-{% include file="en/safety-notice.md" %}
 
 [__SOURCE](1-safety/README.md)
 # 1. Safety

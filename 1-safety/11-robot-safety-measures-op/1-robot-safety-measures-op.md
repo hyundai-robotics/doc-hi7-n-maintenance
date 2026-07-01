@@ -35,7 +35,7 @@ teaching work outside the safety guard when teaching at a high spped(250mm/s or 
 
 * Prepare proper work regulations, considering the installation location and work details, with regard to the robot operation and manipulation methods, and actions to take when abnormality occurs. In addition, work should be carried out according to the work regulations. 
 * Precautions to take when the robot is stopped 
-  - Must avoid approaching the robot recklessly while thinking that the robot is stopped When you approach the robot because you think it is stopped, the robot may suddenly move, causing an accident in many cases. The robot will be in the stopped state in the following cases. 
+  - Must avoid approaching the robot recklessly while thinking that the robot is stopped When you approach the robot because you think it is stopped, the robot may suddenly move, causing an accident in many cases. The robot will be in the stopped state in the following cases.
 
 Table 1-4 Status of the robot when it stop mode
 <table>

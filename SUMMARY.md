@@ -87,6 +87,7 @@
     * [4.3.5. Power Supply Module(H7PSM)](4-basic-components/3-component-func/5-power-supply-module-H6APSM/README.md)
       * [4.3.5.1. H7PSM and Power Distribution Board(BD6C3)](4-basic-components/3-component-func/5-power-supply-module-H6APSM/1-H6APSM-power-dist-bd-BD6C3.md)
       * [4.3.5.2. Connectors of BD6C3](4-basic-components/3-component-func/5-power-supply-module-H6APSM/2-BD6C3-connector.md)
+      * [4.3.5.3. LED of BD6C3](4-basic-components/3-component-func/5-power-supply-module-H6APSM/3-BD6C3-led.md)
     * [4.3.6. Teach Pendant(TP630)](4-basic-components/3-component-func/6-teach-pendant-TP630/README.md)
       * [4.3.6.1. Overview](4-basic-components/3-component-func/6-teach-pendant-TP630/1-overview.md)
       * [4.3.6.2. USB Cover](4-basic-components/3-component-func/6-teach-pendant-TP630/2-USB-cover.md)
@@ -115,10 +116,12 @@
   * [5.5. User DIO](5-optional-components/5-UserDIO/README.md)
     * [5.5.1. Overview](5-optional-components/5-UserDIO/1-overview.md)
     * [5.5.2. Information of hardware](5-optional-components/5-UserDIO/2-HW-Inform.md)  
+      * [5.5.2.1. Digital input](5-optional-components/5-UserDIO/2-1-digital-input.md)  
+      * [5.5.2.2. Digital output](5-optional-components/5-UserDIO/2-2-digital-output.md)  
+      * [5.5.2.3. Conveyor](5-optional-components/5-UserDIO/2-3-conveyor.md)  
   * [5.6. Safety communication board(BD671)](5-optional-components/6-PROFIsafe-Board/README.md)
     * [5.6.1. Overview](5-optional-components/6-PROFIsafe-Board/1-overview.md)
-    * [5.6.2. Connector](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
-
+    * [5.6.2. Connector](5-optional-components/6-PROFIsafe-Board/2-HW-inform.md)
 
 * [6. Periodic Inspections](6-regular-inspection/README.md)
   * [6.1. Inspection Schedule](6-regular-inspection/1-inspection-schedule.md)
