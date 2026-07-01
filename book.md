@@ -19,8 +19,17 @@
 이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 옵션과 모델에 따라 일부 내용이 다를 수 있습니다. 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다.
 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트(https://www.hd-hyundairobotics.com)를 방문하여 확인하시기 바랍니다.
 
+[__SOURCE](0-about-this-manual/README.md)
+# 이 설명서에 대하여
 
-## 안전 주의 사항
+
+[__SOURCE](0-about-this-manual/precautions.md)
+# 사전 주의사항
+
+{% include file="ko/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 안전 주의 사항
 
 제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
 
@@ -121,20 +130,6 @@
 * 일상적 보수점검으로서 준비해야 할 중요 부품입니다.
 
 * 여러 대 구입하는 경우에는 준비해야 할 보수 부품입니다.
-
-[__SOURCE](0-about-this-manual/README.md)
-# 이 설명서에 대하여
-
-
-[__SOURCE](0-about-this-manual/precautions.md)
-# 사전 주의사항
-
-{% include file="ko/precautions.md" %}
-
-[__SOURCE](0-about-this-manual/safety-notice.md)
-# 안전 주의 사항
-
-{% include file="ko/safety-notice.md" %}
 
 [__SOURCE](1-safety/README.md)
 # 1. 안전
@@ -3749,79 +3744,6 @@ H7PSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 </table>
 
 
-### 4.3.5.3. BD6C3 LED
-
-전장보드(BD6C3)의 LED 배치는 다음 그림과 같으며 각각에 대한 용도 및 연결 전원, LED 색상은 표 4-41과 같습니다.
-
-![](../../../_assets/그림_4.29_전장보드(BD6C3)의_LED.png  )
-
-그림 4.29 전장보드(BD6C3)의 LED
-
-표 4-41 BD6C3 LED의 종류와 용도
-
-<table>
-<thead>
-  <tr>
-    <th>명칭</th>
-    <th>용도</th>
-    <th>사양</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>LDFNFLT</td>
-    <td>FAN1~5 중에 FAN Fault가 1개 이상 발생 시 ON</td>
-    <td>FAN Fault, 빨강</td>
-  </tr>
-  <tr>
-    <td>LEDFAN</td>
-    <td>FAN용 24VDC 입력을 위한 Relay가 ON 시 LED ON</td>
-    <td>FAN Power Relay, 초록</td>
-  </tr>
-  <tr>
-    <td>LEDCM</td>
-    <td>Control Moudle용 SMPS 24VDC가 정상 입력 시 ON</td>
-    <td>CMSMPS, 초록</td>
-  </tr>
-  <tr>
-    <td>LEDBK</td>
-    <td>Brake용 SMPS 24VDC가 정상 입력 시 ON</td>
-    <td>BKSMPS, 초록</td>
-  </tr>
-  <tr>
-    <td>LEDUS</td>
-    <td>User용 SMPS 24VDC가 정상 입력 시 ON</td>
-    <td>USSMPS, 초록</td>
-  </tr>
-  <tr>
-    <td>LEDRO</td>
-    <td>Robot용 SMPS 24VDC가 정상 입력 시 ON</td>
-    <td>ROSMPS, 초록</td>
-  </tr>
-  <tr>
-    <td>MC1LED</td>
-    <td>Magnetic Contactor 1의 ON 전원이 정상 입력 시 ON</td>
-    <td>BD642, 초록</td>
-  </tr>
-  <tr>
-    <td>MC2LED</td>
-    <td>Magnetic Contactor 2의 ON 전원이 정상 입력 시 ON</td>
-    <td>BD642, 초록</td>
-  </tr>
-  <tr>
-    <td>RYPRC1</td>
-    <td>Precharging Relay ON signal 입력 시 Relay 내부의 LED ON</td>
-    <td>BD604, 초록</td>
-  </tr>
-  <tr>
-    <td>RYPRC2</td>
-    <td>FAN 전원 Relay ON signal 입력 시 Relay 내부의 LED ON</td>
-    <td>BD604, 초록</td>
-  </tr>
-
-</tbody>
-</table>
-
 [__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/3_BD6C3_LED.md)
 # 4.3.5.3. BD6C3 LED
 
@@ -4963,6 +4885,7 @@ BD681 2개와 BD682 1개를 이용하여 최대 48 채널의 입출력을 제어
 
 [__SOURCE](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
 # 5.5.2.1 디지털 입력
+
 다음의 그림과 표는 디지털 입력용 터미널 블록의 핀 구성을 나타낸 것입니다.<br>
 각 터미널 블록은 16개의 입력 신호를 받을 수 있으며, 용도에 따라 NPN, PNP 타입의 입력을 받을 수 있습니다.<br>
 BD682를 추가 장착을 하게 되면, 디지털 입력 16pt가 추가 됩니다. <br>
@@ -5062,13 +4985,13 @@ Hi7 제어기에서 **'PROFIsafe 보드(BD671)'**를 활용하면 안전 관련 
 PROFIsafe는 PROFIBUS/PROFINET 네트워크 상에서 안전 관련 데이터(Safety Data)를 표준 데이터와 함께 전송할 수 있도록 하는 국제 안전 통신 표준입니다.
 <br>
 
-[__SOURCE](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
-# 6.2.1. 커넥터
+[__SOURCE](5-optional-components/6-PROFIsafe-Board/2-HW-inform.md)
+# 5.6.2. 커넥터
 
 아래 그림은 옵션 안전 통신 보드(BD671)의 외부연결에 필요한 커넥터의 위치를 보여줍니다. 또한, 아래 표는 각 커넥터의 명칭, 용도를 기술합니다.
 
 ![](../../_assets/그림_6.2_안전통신보드이미지.png)   
-그림 6.2-1 안전 통신 보드(BD671) 커넥터 배치   
+그림 6.2-1 안전 통신 보드(BD671) 커넥터 배치
 
 표 6.2-1 안전 통신 보드(BD671) 커넥터 명칭, 용도
 <table>
@@ -5077,7 +5000,7 @@ PROFIsafe는 PROFIBUS/PROFINET 네트워크 상에서 안전 관련 데이터(Sa
     <td><strong>번호</strong></td>
     <td><strong>명칭</strong></td>
     <td><strong>용도</strong></td>
-    
+
   </tr>
   <tr>
     <td>A</td>
