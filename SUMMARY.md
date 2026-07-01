@@ -85,7 +85,8 @@
     * [4.3.5. 전원공급모듈 (H7PSM))](4-basic-components/3-component-func/5-power-supply-module-H6APSM/README.md)
       * [4.3.5.1. H7PSM 및 전원분배보드 (BD6C3)](4-basic-components/3-component-func/5-power-supply-module-H6APSM/1-H6APSM-power-dist-bd-BD6C3.md)
       * [4.3.5.2. BD6C3 커넥터](4-basic-components/3-component-func/5-power-supply-module-H6APSM/2-BD6C3-connector.md)
-    * [4.3.6. 티치펜던트 (TP630)](4-basic-components/3-component-func/6-teach-pendant-TP630/README.md)
+      * [4.3.5.3. BD6C3 LED](4-basic-components/3-component-func/5-power-supply-module-H6APSM/3_BD6C3_LED.md)      
+      * [4.3.6. 티치펜던트 (TP630)](4-basic-components/3-component-func/6-teach-pendant-TP630/README.md)
       * [4.3.6.1. 개요](4-basic-components/3-component-func/6-teach-pendant-TP630/1-overview.md)
       * [4.3.6.2. USB 커버](4-basic-components/3-component-func/6-teach-pendant-TP630/2-USB-cover.md)
 
@@ -113,6 +114,10 @@
   * [5.5. 사용자 DIO (BD681)](5-optional-components/5-UserDIO/README.md)
     * [5.5.1. 개요](5-optional-components/5-UserDIO/1-overview.md)
     * [5.5.2. 하드웨어 정보](5-optional-components/5-UserDIO/2-HW-Inform.md)
+    * [5.5.2.1. 디지털 입력](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
+    * [5.5.2.2. 디지털 출력](5-optional-components/5-UserDIO/2_2_HW_digital_output.md)
+    * [5.5.2.3. 컨베이어 동기화 구성](5-optional-components/5-UserDIO/2_3_HW_convey_sync.md)
+
   * [5.6. 안전 통신 보드 (BD671))](5-optional-components/6-PROFIsafe-Board/README.md)
     * [5.6.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
     * [5.6.2. 하드웨어 정보](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)

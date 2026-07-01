@@ -606,6 +606,7 @@ ISO 10218-2의 지침에 따라 로봇을 설치하고 운영해야합니다. �
 
 * 로봇 정지 시 유의사항
   - 로봇이 정지해 있는 것으로 알고, 무작정 접근하는 것은 반드시 피하여야 합니다. 정지해 있다고 생각한 로봇에 접근하였는데, 로봇이 갑자기 움직여서 재해가 발생한 경우가 많습니다. 로봇이 정지해 있는 상태에는 아래와 같은 경우가 있습니다.
+  
 표 1-4 로봇정지 시 로봇상태
 <table>
 <tbody>
@@ -1285,9 +1286,8 @@ Hi7제어기의 포장, 운반, 포장해제에 있어 주의사항에 대해 �
 
 로봇 본체와 제어기간의 연결은 와이어하네스(wire harness)로 연결합니다. 각각의 리셉터클 명칭을 확인하시고 연결하여 주십시오.
 
-![](../../_assets/3.6.2._로봇_본체와_제어기의_접속-1.png  )
-
-Wire Harness 결선도
+![](../../_assets/3.6.2._로봇_본체와_제어기의_접속-1.png  )<br>
+그림 3.6 로봇 본체와 제어기의 접속 (Hi7-N\*\*(U))
 
 <table>
 <thead>
@@ -1332,8 +1332,6 @@ Wire Harness 결선도
 로봇별로 커넥터 접촉부가 위의 그림과 상이 할 수 있으므로 반드시 와이어하네스(Wire Harness) 연결 전 해당 로봇 보수 매뉴얼을 숙독하여 연결을 하십시오.
 {% endhint %}
 
-
-그림 3.6 로봇 본체와 제어기의 접속 (Hi7-N\*\*(U))
 
 [__SOURCE](3-installation/6-connection/3-controller-1st-power/README.md)
 # 3.6.3. 제어기와 1차 전원의 접속
@@ -3824,6 +3822,80 @@ H7PSM(Hi7-N 제어기 전원공급모듈)은 제어기에 공급되는 각종 �
 </tbody>
 </table>
 
+[__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/3_BD6C3_LED.md)
+# 4.3.5.3. BD6C3 LED
+
+전장보드(BD6C3)의 LED 배치는 다음 그림과 같으며 각각에 대한 용도 및 연결 전원, LED 색상은 표 4-41과 같습니다.
+
+![](../../../_assets/그림_4.29_전장보드(BD6C3)의_LED.png  )
+
+그림 4.29 전장보드(BD6C3)의 LED
+
+표 4-41 BD6C3 LED의 종류와 용도
+
+<table>
+<thead>
+  <tr>
+    <th>명칭</th>
+    <th>용도</th>
+    <th>사양</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>LDFNFLT</td>
+    <td>FAN1~5 중에 FAN Fault가 1개 이상 발생 시 ON</td>
+    <td>FAN Fault, 빨강</td>
+  </tr>
+  <tr>
+    <td>LEDFAN</td>
+    <td>FAN용 24VDC 입력을 위한 Relay가 ON 시 LED ON</td>
+    <td>FAN Power Relay, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDCM</td>
+    <td>Control Moudle용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>CMSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDBK</td>
+    <td>Brake용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>BKSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDUS</td>
+    <td>User용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>USSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>LEDRO</td>
+    <td>Robot용 SMPS 24VDC가 정상 입력 시 ON</td>
+    <td>ROSMPS, 초록</td>
+  </tr>
+  <tr>
+    <td>MC1LED</td>
+    <td>Magnetic Contactor 1의 ON 전원이 정상 입력 시 ON</td>
+    <td>BD642, 초록</td>
+  </tr>
+  <tr>
+    <td>MC2LED</td>
+    <td>Magnetic Contactor 2의 ON 전원이 정상 입력 시 ON</td>
+    <td>BD642, 초록</td>
+  </tr>
+  <tr>
+    <td>RYPRC1</td>
+    <td>Precharging Relay ON signal 입력 시 Relay 내부의 LED ON</td>
+    <td>BD604, 초록</td>
+  </tr>
+  <tr>
+    <td>RYPRC2</td>
+    <td>FAN 전원 Relay ON signal 입력 시 Relay 내부의 LED ON</td>
+    <td>BD604, 초록</td>
+  </tr>
+
+</tbody>
+</table>
+
 [__SOURCE](4-basic-components/3-component-func/6-teach-pendant-TP630/README.md)
 # 4.3.6. 티치펜던트 (TP630)
 
@@ -4888,7 +4960,9 @@ BD681 2개와 BD682 1개를 이용하여 최대 48 채널의 입출력을 제어
 기본적인 보드의 하드웨어 구성은 아래와 같습니다.<br>
 ![](../../_assets/그림_5_31_BD681_BD682_HW_및_커넥터_정보.png)<br>
 
-### 5.5.2.1 디지털 입력
+
+[__SOURCE](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
+# 5.5.2.1 디지털 입력
 다음의 그림과 표는 디지털 입력용 터미널 블록의 핀 구성을 나타낸 것입니다.<br>
 각 터미널 블록은 16개의 입력 신호를 받을 수 있으며, 용도에 따라 NPN, PNP 타입의 입력을 받을 수 있습니다.<br>
 BD682를 추가 장착을 하게 되면, 디지털 입력 16pt가 추가 됩니다. <br>
@@ -4922,7 +4996,9 @@ NPN,PNP 신호를 구성하는 방법은 기능 설명서를 참조하시기 바
 | 9    |A8|디지털 입력8| 19 | B8 |디지털 입력16   |
 | 10   | COM_IN_A| COM 신호<br>(1~8)  |  20 | COM_IN_B  | COM 신호<br>(9~16)| <br>
            
-### 5.5.2.2 디지털 출력
+
+[__SOURCE](5-optional-components/5-UserDIO/2_2_HW_digital_output.md)
+# 5.5.2.2 디지털 출력
 다음의 그림과 표는 디지털 출력용 터미널 블록의 핀 구성을 나타낸 것입니다.<br>
 각 터미널 블록은 16개의 출력 신호를 받을 수 있으며, 용도에 따라 NPN, PNP 타입의 출력을 받을 수 있습니다.<br>
 BD682를 추가 장착을 하게 되면, 디지털 출력 16pt가 추가 됩니다.<br>
@@ -4956,7 +5032,9 @@ BD682를 추가 장착을 하게 되면, 디지털 출력 16pt가 추가 됩니�
 | 9    |A16|디지털 출력24| 19 | B16 |디지털 출력32   |
 | 10   | COM_OUT_A| COM 신호<br>(17~24)  |  20 | COM_OUT_B  | COM 신호<br>(25~32)| <br>
 
-### 5.5.2.3 컨베이어 동기화 구성
+
+[__SOURCE](5-optional-components/5-UserDIO/2_3_HW_convey_sync.md)
+# 5.5.2.3 컨베이어 동기화 구성
 다음의 그림은 컨베이어 동기화를 위한 엔코더 입력 및 리밋 스위치로 구성 되어 있습니다.<br>
 총 2개의 입력 채널로 구성되어 있으며, 입력 채널의 구성은 다음과 같습니다.
 각 채널 당, 2종류의 엔코더 타입(오픈컬렉터/라인드라이버)으로 설정 되어 있습니다.<br> 
