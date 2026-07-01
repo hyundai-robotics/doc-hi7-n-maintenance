@@ -114,14 +114,12 @@
   * [5.5. 사용자 DIO (BD681)](5-optional-components/5-UserDIO/README.md)
     * [5.5.1. 개요](5-optional-components/5-UserDIO/1-overview.md)
     * [5.5.2. 하드웨어 정보](5-optional-components/5-UserDIO/2-HW-Inform.md)
-    * [5.5.2.1. 디지털 입력](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
-    * [5.5.2.2. 디지털 출력](5-optional-components/5-UserDIO/2_2_HW_digital_output.md)
-    * [5.5.2.3. 컨베이어 동기화 구성](5-optional-components/5-UserDIO/2_3_HW_convey_sync.md)
-
+      * [5.5.2.1. 디지털 입력](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
+      * [5.5.2.2. 디지털 출력](5-optional-components/5-UserDIO/2_2_HW_digital_output.md)
+      * [5.5.2.3. 컨베이어 동기화 구성](5-optional-components/5-UserDIO/2_3_HW_convey_sync.md)
   * [5.6. 안전 통신 보드 (BD671))](5-optional-components/6-PROFIsafe-Board/README.md)
     * [5.6.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
     * [5.6.2. 하드웨어 정보](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
-
 * [6. 정기 점검](6-regular-inspection/README.md)
   * [6.1. 점검 일정](6-regular-inspection/1-inspection-schedule.md)
   * [6.2. 정기 점검 시 일반적 주의사항](6-regular-inspection/2-regular-insp-general-cautions.md)
