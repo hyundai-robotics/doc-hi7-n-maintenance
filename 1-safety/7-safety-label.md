@@ -11,6 +11,9 @@ Table 1-2 Safety Labels<br>
 {% hint style="warning" %}
 Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
+{% hint style="warning" %}
+Tout acte visant à détériorer les étiquettes de sécurité, tel que le déplacement des plaques signalétiques, des marquages d'avertissement, des symboles de sécurité, des marquages d'identification et des repères de câbles, ou le fait de les recouvrir de peinture ou de les masquer avec un cache, est interdit. 
+{% endhint %}
 
 {% hint style="info" %}
 Mark the installation and dangerous areas of the robot in a way that they can be 

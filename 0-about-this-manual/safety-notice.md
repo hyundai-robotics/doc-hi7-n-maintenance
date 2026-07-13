@@ -8,6 +8,10 @@ Before using the product, you must fully understand the following safety caution
 Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
 {% endhint %}
 
+{% hint style="danger" %}
+Danger imminent : Le non-respect de ces consignes peut entraîner la mort ou des blessures graves pour l'opérateur.
+{% endhint %}
+
 * Make sure that the safety circuit is never ignored, modified or altered in any way.<br>
 * Considering that additional problems may occur due to gravity or brake release, you must take 
 a measure, before carrying out works, such as using a rope and crane that are to be used for 
@@ -19,6 +23,11 @@ from taking place during the release of the brake.<br>
 {% hint style="warning" %}
 Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
 {% endhint %}
+
+{% hint style="warning" %}
+Danger potentiel : Le non-respect de ces consignes peut entraîner des blessures pour l'opérateur ou des dommages matériels, tels que des dégâts importants sur le produit.
+{% endhint %}
+
 
 * Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
 safety symbols, name markings and wire markings or painting over them or blocking them with 

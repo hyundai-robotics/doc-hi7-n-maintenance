@@ -2,6 +2,9 @@
 
 {% hint style="warning" %}
 When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot. 
+{% endhint %}<br>
+{% hint style="warning" %}
+Lors du fonctionnement du robot, il existe un risque de collision entre le robot et l'opérateur. Par conséquent, installez une barrière de sécurité pour empêcher l'opérateur de s'approcher du robot. 
 {% endhint %}
 
 When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot according to ISO 13855:2010.<br>

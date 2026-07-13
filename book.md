@@ -40,6 +40,10 @@ Before using the product, you must fully understand the following safety caution
 Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
 {% endhint %}
 
+{% hint style="danger" %}
+Danger imminent : Le non-respect de ces consignes peut entraîner la mort ou des blessures graves pour l'opérateur.
+{% endhint %}
+
 * Make sure that the safety circuit is never ignored, modified or altered in any way.<br>
 * Considering that additional problems may occur due to gravity or brake release, you must take 
 a measure, before carrying out works, such as using a rope and crane that are to be used for 
@@ -51,6 +55,11 @@ from taking place during the release of the brake.<br>
 {% hint style="warning" %}
 Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
 {% endhint %}
+
+{% hint style="warning" %}
+Danger potentiel : Le non-respect de ces consignes peut entraîner des blessures pour l'opérateur ou des dommages matériels, tels que des dégâts importants sur le produit.
+{% endhint %}
+
 
 * Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
 safety symbols, name markings and wire markings or painting over them or blocking them with 
@@ -316,6 +325,9 @@ Table 1-2 Safety Labels<br>
 {% hint style="warning" %}
 Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
+{% hint style="warning" %}
+Tout acte visant à détériorer les étiquettes de sécurité, tel que le déplacement des plaques signalétiques, des marquages d'avertissement, des symboles de sécurité, des marquages d'identification et des repères de câbles, ou le fait de les recouvrir de peinture ou de les masquer avec un cache, est interdit. 
+{% endhint %}
 
 {% hint style="info" %}
 Mark the installation and dangerous areas of the robot in a way that they can be 
@@ -330,6 +342,9 @@ Also, when any of the dual switches of the safety circuit is activated, the moto
 
 {% hint style="danger" %}
 Make sure that the safety circuit is never ignored, modified or altered in any way.
+{% endhint %}
+{% hint style="danger" %}
+Veillez à ce que le circuit de sécurité ne soit jamais ignoré, modifié ou altéré de quelque manière que ce soit.
 {% endhint %}
 
 The safety-related main functions of the robot are as follows. 
@@ -563,7 +578,7 @@ teaching work outside the safety guard when teaching at a high spped(250mm/s or 
 
 * Prepare proper work regulations, considering the installation location and work details, with regard to the robot operation and manipulation methods, and actions to take when abnormality occurs. In addition, work should be carried out according to the work regulations. 
 * Precautions to take when the robot is stopped 
-  - Must avoid approaching the robot recklessly while thinking that the robot is stopped When you approach the robot because you think it is stopped, the robot may suddenly move, causing an accident in many cases. The robot will be in the stopped state in the following cases. 
+  - Must avoid approaching the robot recklessly while thinking that the robot is stopped When you approach the robot because you think it is stopped, the robot may suddenly move, causing an accident in many cases. The robot will be in the stopped state in the following cases.
 
 Table 1-4 Status of the robot when it stop mode
 <table>
@@ -3631,7 +3646,8 @@ Table 4-36 Type and Function of BD6C3 Connector
 </tbody>
 </table>
 
-### 4.3.5.3. BD6C3 LED
+[__SOURCE](4-basic-components/3-component-func/5-power-supply-module-H6APSM/3-BD6C3-led.md)
+# 4.3.5.3. BD6C3 LED
 
 The LED layout of the electrical board (BD6C3) is shown in the following figure. The function, connected power, and LED color for each are listed in Table 4-41.
 
@@ -4741,7 +4757,10 @@ The basic hardware configuration of the boards is as follows:
 
 ![](../../_assets/그림_5_31_BD681_BD682_HW_및_커넥터_정보_en.png)<br>
 
-### 5.5.2.1 Digital Imput
+
+[__SOURCE](5-optional-components/5-UserDIO/2-1-digital-input.md)
+# 5.5.2.1 Digital Input
+
 The following figure and table show the pin configuration of the terminal blocks for digital inputs. Each terminal block can receive 16 input signals, supporting NPN or PNP type inputs depending on the application. When BD682 is additionally mounted, 16 digital inputs are added. Refer to the function manual for how to configure NPN and PNP signals. 
 
 ![](../../_assets/그림_5.34_BD681_디지털_입력_커넥터_핀맵_en.png)<br>
@@ -4774,7 +4793,10 @@ When extended DIO board (BD682) is additionally mounted, the pin map is as follo
 | 9    |A8|Digital input 8| 19 | B8 |Digital input 16   |
 | 10   | COM_IN_A| COM Signal<br>(1~8)  |  20 | COM_IN_B  | COM Signal<br>(9~16)| <br>
            
-### 5.5.2.2 Digital Output 
+
+[__SOURCE](5-optional-components/5-UserDIO/2-2-digital-output.md)
+# 5.5.2.2 Digital Output
+
 The following figure and table show the pin configuration of the terminal blocks for digital outputs. Each terminal block can transmit 16 output signals, supporting NPN or PNP type outputs depending on the application.<br>
 When BD682 is additionally mounted, 16 digital outputs are added.<br>
 
@@ -4808,7 +4830,10 @@ When BD682 is additionally mounted, 16 digital outputs are added.<br>
 | 9    |A16|Digital output 24| 19 | B16 |Digital output 32   |
 | 10   | COM_OUT_A| COM Signal<br>(17~24)  |  20 | COM_OUT_B  | COM Signal<br>(25~32)| <br>
 
-### 5.5.2.3 Conveyor 
+
+[__SOURCE](5-optional-components/5-UserDIO/2-3-conveyor.md)
+# 5.5.2.3 Conveyor 
+
 The following figure shows the configuration for conveyor synchronization with encoder inputs and limit switches. 
 It consists of a total of two input channels. Each channel supports two types of encoders(open collector/line driver).<br> 
 
@@ -4832,12 +4857,12 @@ It consists of a total of two input channels. Each channel supports two types of
 [__SOURCE](5-optional-components/6-PROFIsafe-Board/README.md)
 # 5.6. Safety communication board(BD671) 
 [__SOURCE](5-optional-components/6-PROFIsafe-Board/1-overview.md)
-### 5.6.1. Overview 
+# 5.6.1. Overview 
 
 In Hi7, using the **'PROFIsafe board (BD671)'** allows processing of safety-related signals. This board is based on the PROFIsafe communication protocol and supports transmission of safety signals over standard fieldbus networks (e.g., PROFINET). 
 PROFIsafe is an international safety communication standard that enables the transmission of safety-related data together with standard data on PROFIBUS/PROFINET networks. 
 <br>
-[__SOURCE](5-optional-components/6-PROFIsafe-Board/2-HW-Inform.md)
+[__SOURCE](5-optional-components/6-PROFIsafe-Board/2-HW-inform.md)
 # 5.6.2. Connector
 
 The figure below shows the locations of the connectors required for external connection of the optional safety communication board (BD671). Additionally, the table below describes the name and purpose of each connector.
