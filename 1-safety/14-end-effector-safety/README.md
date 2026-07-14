@@ -5,6 +5,4 @@ When installing and operating end effectors, you must comply with ISO 10218-1:20
 applying, maintaining and operating them.  
 {% endhint %}
 
-
-Refer to the maintenance manual of each robot for detailed specifications regarding the installation of 
-end effectors. 
+Refer to the maintenance manual of each robot for detailed specifications regarding the installation of end effectors. 

@@ -40,10 +40,6 @@ Before using the product, you must fully understand the following safety caution
 Imminent danger: Incompliance may cause the death of or serious injuries to the worker.
 {% endhint %}
 
-{% hint style="danger" %}
-Danger imminent : Le non-respect de ces consignes peut entraîner la mort ou des blessures graves pour l'opérateur.
-{% endhint %}
-
 * Make sure that the safety circuit is never ignored, modified or altered in any way.<br>
 * Considering that additional problems may occur due to gravity or brake release, you must take 
 a measure, before carrying out works, such as using a rope and crane that are to be used for 
@@ -55,11 +51,6 @@ from taking place during the release of the brake.<br>
 {% hint style="warning" %}
 Potential danger: Incompliance may cause injuries to the worker or damage to property, such as significant damage to the product.
 {% endhint %}
-
-{% hint style="warning" %}
-Danger potentiel : Le non-respect de ces consignes peut entraîner des blessures pour l'opérateur ou des dommages matériels, tels que des dégâts importants sur le produit.
-{% endhint %}
-
 
 * Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
 safety symbols, name markings and wire markings or painting over them or blocking them with 
@@ -325,9 +316,6 @@ Table 1-2 Safety Labels<br>
 {% hint style="warning" %}
 Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
-{% hint style="warning" %}
-Tout acte visant à détériorer les étiquettes de sécurité, tel que le déplacement des plaques signalétiques, des marquages d'avertissement, des symboles de sécurité, des marquages d'identification et des repères de câbles, ou le fait de les recouvrir de peinture ou de les masquer avec un cache, est interdit. 
-{% endhint %}
 
 {% hint style="info" %}
 Mark the installation and dangerous areas of the robot in a way that they can be 
@@ -342,9 +330,6 @@ Also, when any of the dual switches of the safety circuit is activated, the moto
 
 {% hint style="danger" %}
 Make sure that the safety circuit is never ignored, modified or altered in any way.
-{% endhint %}
-{% hint style="danger" %}
-Veillez à ce que le circuit de sécurité ne soit jamais ignoré, modifié ou altéré de quelque manière que ce soit.
 {% endhint %}
 
 The safety-related main functions of the robot are as follows. 
@@ -421,7 +406,7 @@ The safety system of Hi7 controller can handle the stop operation as shown below
 # 1.10.1. Installing the Safety Guard 
 
 {% hint style="warning" %}
-When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot. 
+When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot.
 {% endhint %}
 
 When the robot is operating, there is a risk of collision between the robot and the worker. Therefore, install a safety fence to prevent a worker from getting close to the robot according to ISO 13855:2010.<br>
@@ -529,16 +514,11 @@ base part of the manipulator and do not connect it to the controller.
 [__SOURCE](1-safety/11-robot-safety-measures-op/README.md)
 # 1.11. Safety Works When Operating the Robot
 
-
 {% hint style="warning" %}
-Must observe safety work procedures to prevent safety accidents. Do not change or ignore 
-safety devices or circuits under any circumstances, and pay attention to possible electric 
-shock.<br>
+Must observe safety work procedures to prevent safety accidents. Do not change or ignore safety devices or circuits under any circumstances, and pay attention to possible electric shock.<br>
 In auto mode, all normal works should be performed outside the safety guard. Before 
-carrying out works, you must make sure that there are no people in the operation area of 
-the robot. 
+carrying out works, you must make sure that there are no people in the operation area of the robot. 
 {% endhint %}
-
 
 [__SOURCE](1-safety/11-robot-safety-measures-op/1-robot-safety-measures-op.md)
 # 1.11.1. Safety Measures When Operting the Robot
@@ -565,8 +545,7 @@ Observe the following measures considering that safety is very important when op
 * Do not operate the robot operation buttons on the teach pendant just by using the feeling at the hands while watching the teaching points. Instead, operate the buttons while checking with bare eyes. 
 
 {% hint style="warning" %}
-Sufficiently check under your feet  when teaching. In  particular, you must perform the 
-teaching work outside the safety guard when teaching at a high spped(250mm/s or above). 
+Sufficiently check under your feet  when teaching. In  particular, you must perform the teaching work outside the safety guard when teaching at a high spped(250mm/s or above). 
 {% endhint %}
 
 * Take the following measures when abnormality occurs.
@@ -752,8 +731,7 @@ area and you are in a safe place
 {% hint style="warning" %}
 When it comes to the change of components or additoin of optional equipment (both 
 hardware and software) to the robot both of which may affect safety-related functions, 
-you must check whether the functions are in normal conditions, by paying attention to the 
-items described in "1.11 Safety Works When Operating the Robot". 
+you must check whether the functions are in normal conditions, by paying attention to the items described in "1.11 Safety Works When Operating the Robot". 
 {% endhint %}
 
 
@@ -765,9 +743,7 @@ When installing and operating end effectors, you must comply with ISO 10218-1:20
 applying, maintaining and operating them.  
 {% endhint %}
 
-
-Refer to the maintenance manual of each robot for detailed specifications regarding the installation of 
-end effectors. 
+Refer to the maintenance manual of each robot for detailed specifications regarding the installation of end effectors. 
 [__SOURCE](1-safety/14-end-effector-safety/1-gripper.md)
 # 1.14.1. Gripper 
 
@@ -1040,11 +1016,8 @@ Table 3-1 Label Type<br>
 
 ![](../../_assets/표3-1_라벨_종류-3.png  )
 
-
 {% hint style="warning" %}
-Any act of damaging the safety labels, such as relocating the name plates, warning markings, 
-safety symbols, name markings and wire markings or painting over them or blocking them 
-with a cover is prohibited. 
+Any act of damaging the safety labels, such as relocating the name plates, warning markings, safety symbols, name markings and wire markings or painting over them or blocking them with a cover is prohibited. 
 {% endhint %}
 
 {% hint style="info" %}
@@ -1074,10 +1047,8 @@ If the product is not installed in the recommended locations, the performance an
 life of the product may be reduced. Install and use the product according to the recommendations.
 {% endhint %}
 
-
 {% hint style="warning" %}
-The robot should be installed and operated according to the guidelines of ISO 10218-2. In 
-addition, it is required to comply with the relevant requirements of international 
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international 
 standards and national laws.<br>
 Our company (or the manufacturer) will not be responsible for any accidents that occur 
 due to not complying with the relevant requirements of international standards and 
@@ -1127,14 +1098,12 @@ Figure 3.3 Controller Wire Connection Position<br>
 ![](../../_assets/그림_3.4_지게차를_이용한_제어기_운반.png  )<br>
 Figure 3.4 Transport of the Controller by Using a Forklift<br>
 
-
 {% hint style="warning" %}
 If you transport the product by uisng lifting equpment, you should comply with the 
 relevant national and local safety regulations and equipment usage guidelines. When 
 moving the product by using a crane, you must make sure that that no workers are under 
 the product. Also, never work or walk under the crane or the product. 
 {% endhint %}
-
 
 
 [__SOURCE](3-installation/3-controller-transport/3-unpackaging.md)
@@ -4002,7 +3971,7 @@ The brake release unit can be used when it is necessary to release the motor bra
 {% endhint %}
 
 {% hint style="warning" %}
-The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws. 
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international standards and national laws.<br>
 Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the relevant requirements of international standards and national laws or not following the above "caution."
 {% endhint %}
 
@@ -4099,7 +4068,6 @@ The placement of the power and connectors of the brake release unit is as shown 
 {% hint style="warning" %}
 Our company (or the manufacturer) will not be responsible for any accidents that occur because of not complying with the above "caution."
 {% endhint %}
-
 
 ![](../../_assets/그림_5.4_브레이크_해제_유닛_스위치_및_커넥터_en.png)<br>
 Figure 5.4 Switches and Connectors of the Brake Release Unit</br></br>

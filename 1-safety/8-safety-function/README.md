@@ -6,8 +6,5 @@ Also, when any of the dual switches of the safety circuit is activated, the moto
 {% hint style="danger" %}
 Make sure that the safety circuit is never ignored, modified or altered in any way.
 {% endhint %}
-{% hint style="danger" %}
-Veillez à ce que le circuit de sécurité ne soit jamais ignoré, modifié ou altéré de quelque manière que ce soit.
-{% endhint %}
 
 The safety-related main functions of the robot are as follows. 

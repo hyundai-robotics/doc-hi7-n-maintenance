@@ -22,8 +22,7 @@ Observe the following measures considering that safety is very important when op
 * Do not operate the robot operation buttons on the teach pendant just by using the feeling at the hands while watching the teaching points. Instead, operate the buttons while checking with bare eyes. 
 
 {% hint style="warning" %}
-Sufficiently check under your feet  when teaching. In  particular, you must perform the 
-teaching work outside the safety guard when teaching at a high spped(250mm/s or above). 
+Sufficiently check under your feet  when teaching. In  particular, you must perform the teaching work outside the safety guard when teaching at a high spped(250mm/s or above). 
 {% endhint %}
 
 * Take the following measures when abnormality occurs.

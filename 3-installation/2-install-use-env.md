@@ -19,10 +19,8 @@ If the product is not installed in the recommended locations, the performance an
 life of the product may be reduced. Install and use the product according to the recommendations.
 {% endhint %}
 
-
 {% hint style="warning" %}
-The robot should be installed and operated according to the guidelines of ISO 10218-2. In 
-addition, it is required to comply with the relevant requirements of international 
+The robot should be installed and operated according to the guidelines of ISO 10218-2. In addition, it is required to comply with the relevant requirements of international 
 standards and national laws.<br>
 Our company (or the manufacturer) will not be responsible for any accidents that occur 
 due to not complying with the relevant requirements of international standards and 

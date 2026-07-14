@@ -6,9 +6,6 @@ Required to fully understand the following items and take actions if a person is
 {% hint style="danger" %}
 Considering that additional problems may occur due to gravity or brake release, you must take a measure, before carrying out works, such as using a rope and crane that are to used for transporation of individual robots to prevent the brake from running down or additional accidents from taking place during the release of the brake.
 {% endhint %}
-{% hint style="danger" %}
-Étant donné que des problèmes supplémentaires peuvent survenir en raison de la gravité ou du desserrage du frein, vous devez prendre des mesures avant toute intervention, telles que l'utilisation d'une corde et d'une grue prévues pour le transport de chaque robot, afin d'empêcher toute chute ou tout autre accident lors du relâchement du frein.
-{% endhint %}
 
   - After removing power from the controller, connect the brake release unit to the designated connector of the robot or the internal board connector of the controller and then release the manual brake for each axis as needed. 
   - Refer to the maintenance manual of each robot for the information on individual axes of each robot, and for the designated transport equipment (eg, rope, crane) for each robot. 
