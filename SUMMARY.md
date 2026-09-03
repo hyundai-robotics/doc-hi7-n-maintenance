@@ -117,7 +117,7 @@
       * [5.5.2.1. 디지털 입력](5-optional-components/5-UserDIO/2_1_HW_digital_input.md)
       * [5.5.2.2. 디지털 출력](5-optional-components/5-UserDIO/2_2_HW_digital_output.md)
       * [5.5.2.3. 컨베이어 동기화 구성](5-optional-components/5-UserDIO/2_3_HW_convey_sync.md)
-    * [5.5.3. 사용 가이드](5-optional-components/5-UserDIO/3-Use-Guide.md)
+    * [5.5.3. 사용 가이드](5-optional-components/5-UserDIO/3-Use-Guide_r0.md)
   * [5.6. 안전 통신 보드 (BD671))](5-optional-components/6-PROFIsafe-Board/README.md)
     * [5.6.1. 개요](5-optional-components/6-PROFIsafe-Board/1-overview.md)
     * [5.6.2. 커넥터](5-optional-components/6-PROFIsafe-Board/2-HW-inform.md)
