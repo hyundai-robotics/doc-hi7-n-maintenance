@@ -9,7 +9,7 @@ The User DIO module(BD681) and the expansion DIO module(BD682) can be connected 
 The digital input specifications for User DIO module(BD681) and the expansion DIO module(BD682) are identical, as shown in the table below.<br>
 
 <table style="border-collapse: collapse; width: 100%;">
-  <caption style="text-align: left; padding-bottom: 0; margin-bottom: 0;">
+  <caption style="caption-side: top; text-align: left; padding-bottom: 0; margin-bottom: 0;">
 Table 5.5.3-1 BD681 & BD682 Digital Input Specification
   </caption>
 <thead>
