@@ -175,6 +175,7 @@ Refer to the wiring example below for connecting external devices.<br>
   </figcaption>
 </figure>
 <br>
+
 ##### (3) Wiring digital outputs<br>
 * NPN-TYPE(:Active Low)<BR>
 In the figure below, red indicates channels 1 to 8, and blue indicates channels 9 to 16. When using an external power supply or PSM power, connect to (+)EX_24V and (-)EX_GND.<br>
@@ -218,6 +219,7 @@ Refer to the wiring example below for connecting external devices.<br>
   </figcaption>
 </figure>
 <br>
+
 ##### (4) Precautions for Digital input/output Wiring<br>
 * Case 1<br>
 When digital output terminals are used for two or more stages of control depending on capacity, application or intended purpose (see the figure below).<br>
