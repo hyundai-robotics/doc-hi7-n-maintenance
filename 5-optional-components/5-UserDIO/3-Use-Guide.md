@@ -6,11 +6,6 @@ When wiring the digital inputs/outputs, always ensure that the controller power 
 The User DIO module(BD681) and the expansion DIO module(BD682) can be connected to or configured with various external devices via digital IO ports.
 
 ##### (1) Digital Input/Output Specification<br>
-
-#### (1) Digital Input/Output Specification<br>
-
-### (1) Digital Input/Output Specification<br>
-
 The digital input specifications for User DIO module(BD681) and the expansion DIO module(BD682) are identical, as shown in the table below.<br>
 
 <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
@@ -137,7 +132,7 @@ The digital output specifications for the expansion DIO module(BD682) is identic
 </tbody>
 </table>
 
-(2) Wiring digital inputs<br>
+##### (2) Wiring digital inputs<br>
 * NPN-TYPE(:Active Low)<BR>
 In the figure below, red indicates channels 1 to 8, and blue indicates channels 9 to 16. When using an external power supply or PSM power, connect to (+)EX_24V and (-)EX_GND.<br>
 For the NPN-type, connect the external power (+)EX_24V to pins 1 and 11 of the BD681 and BD682, and connect (-)EX_GND to the external device.<br>
@@ -180,7 +175,7 @@ Refer to the wiring example below for connecting external devices.<br>
   </figcaption>
 </figure>
 <br>
-(3) Wiring digital outputs<br>
+##### (3) Wiring digital outputs<br>
 * NPN-TYPE(:Active Low)<BR>
 In the figure below, red indicates channels 1 to 8, and blue indicates channels 9 to 16. When using an external power supply or PSM power, connect to (+)EX_24V and (-)EX_GND.<br>
 For the NPN-type, connect the external power (-)EX_GND to pins 1 and 11 of the BD681 and BD682, and connect (+)EX_24V to the external device.<br>
@@ -223,7 +218,7 @@ Refer to the wiring example below for connecting external devices.<br>
   </figcaption>
 </figure>
 <br>
-(4) Precautions for Digital input/output Wiring<br>
+##### (4) Precautions for Digital input/output Wiring<br>
 * Case 1<br>
 When digital output terminals are used for two or more stages of control depending on capacity, application or intended purpose (see the figure below).<br>
 <br>
