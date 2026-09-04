@@ -5,7 +5,7 @@ When wiring the digital inputs/outputs, always ensure that the controller power 
 
 The User DIO module(BD681) and the expansion DIO module(BD682) can be connected to or configured with various external devices via digital IO ports.
 
-(1) Digital Input/Output Specification<br>
+### (1) Digital Input/Output Specification<br>
 The digital input specifications for User DIO module(BD681) and the expansion DIO module(BD682) are identical, as shown in the table below.<br>
 
 <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
