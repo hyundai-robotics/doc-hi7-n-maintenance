@@ -10,7 +10,7 @@ The digital input specifications for User DIO module(BD681) and the expansion DI
 
 <table style="border-collapse: collapse; width: 100%;">
   <caption style="caption-side: top; text-align: left; padding-bottom: 0; margin-bottom: 0;">
-Table 5.5.3-1 BD681 & BD682 Digital Input Specification
+    Table 5.5.3-1 BD681 & BD682 Digital Input Specification
   </caption>
 <thead>
   <tr>
@@ -52,9 +52,10 @@ Table 5.5.3-1 BD681 & BD682 Digital Input Specification
 </table>
 
 The digital output specifications for the user DIO module(BD681) is identical, as shown in the table below.<br>
-
-Table 5.5.3-2 BD681 Digital Output Specification
-<table>
+<table style="border-collapse: collapse; width: 100%;">
+  <caption style="caption-side: top; text-align: left; padding-bottom: 0; margin-bottom: 0;">
+    Table 5.5.3-2 BD681 Digital Output Specification
+  </caption>
 <thead>
   <tr>
     <th><strong>Items</strong></th>
@@ -91,8 +92,10 @@ Table 5.5.3-2 BD681 Digital Output Specification
 
 The digital output specifications for the expansion DIO module(BD682) is identical, as shown in the table below.<br>
 
-Table 5.5.3-3 BD682 Digital Output Specification
-<table>
+<table style="border-collapse: collapse; width: 100%;">
+  <caption style="caption-side: top; text-align: left; padding-bottom: 0; margin-bottom: 0;">
+    Table 5.5.3-3 BD682 Digital Output Specification
+  </caption>
 <thead>
   <tr>
     <th><strong>Items</strong></th>
