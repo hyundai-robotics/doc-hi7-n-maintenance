@@ -138,22 +138,42 @@ In the figure below, red indicates channels 1 to 8, and blue indicates channels 
 For the NPN-type, connect the external power (+)EX_24V to pins 1 and 11 of the BD681 and BD682, and connect (-)EX_GND to the external device.<br>
 Refer to the wiring example below for connecting external devices.<br>
 
-![](../../_assets/BD681_di_wiring.png)<br>
-Figure 5.5.3-1 BD681 Digital Input Wiring Diagram for NPN-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD681_di_wiring.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-1 BD681 Digital Input Wiring Diagram for NPN-Type
+  </figcaption>
+</figure>
 
-![](../../_assets/BD682_di_wiring.png)<br>
-Figure 5.5.3-2 BD682 Digital Input Wiring Diagram for NPN-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD682_di_wiring.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-2 BD682 Digital Input Wiring Diagram for NPN-Type
+  </figcaption>
+</figure>
 
 * PNP-TYPE(:Active High)<br>
 In the figure below, red indicates channels 1 to 8, and blue indicates channels 9 to 16. When using an external power supply or PSM power, connect to (+)EX_24V and (-)EX_GND.<br>
 For the PNP-type, connect the external power (-)EX_GND to pins 1 and 11 of the BD681 and BD682, and connect (+)EX_24V to the external device.<br>
 Refer to the wiring example below for connecting external devices.<br>
 
-![](../../_assets/BD681_di_wiring_pnp.png)<br>
-Figure 5.5.3-3 BD681 Digital Input Wiring Diagram for PNP-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD681_di_wiring_pnp.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-3 BD681 Digital Input Wiring Diagram for PNP-Type
+  </figcaption>
+</figure>
 
-![](../../_assets/BD682_di_wiring_pnp.png)<br>
-Figure 5.5.3-4 BD682 Digital Input Wiring Diagram for PNP-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD682_di_wiring_pnp.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-4 BD682 Digital Input Wiring Diagram for PNP-Type
+  </figcaption>
+</figure>
 
 (3) Wiring digital outputs<br>
 * NPN-TYPE(:Active Low)<BR>
@@ -161,29 +181,54 @@ In the figure below, red indicates channels 1 to 8, and blue indicates channels 
 For the NPN-type, connect the external power (-)EX_GND to pins 1 and 11 of the BD681 and BD682, and connect (+)EX_24V to the external device.<br>
 Refer to the wiring example below for connecting external devices.<br>
 
-![](../../_assets/BD681_do_wiring_npn.png)<br>
-Figure 5.5.3-5 BD681 Digital Output Wiring Diagram for NPN-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD681_do_wiring_npn.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-5 BD681 Digital Output Wiring Diagram for NPN-Type
+  </figcaption>
+</figure>
 
-![](../../_assets/BD682_do_wiring_npn.png)<br>
-Figure 5.5.3-6 BD682 Digital Output Wiring Diagram for NPN-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD682_do_wiring_npn.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-6 BD682 Digital Output Wiring Diagram for NPN-Type
+  </figcaption>
+</figure>
 
 * PNP-TYPE(:Active High)<br>
 In the figure below, red indicates channels 1 to 8, and blue indicates channels 9 to 16. When using an external power supply or PSM power, connect to (+)EX_24V and (-)EX_GND.<br>
 For the PNP-type, connect the external power (+)EX_24V to pins 1 and 11 of the BD681 and BD682, and connect (-)EX_GND to the external device.<br>
 Refer to the wiring example below for connecting external devices.<br>
 
-![](../../_assets/BD681_do_wiring_pnp.png)<br>
-Figure 5.5.3-7 BD681 Digital Output Wiring Diagram for PNP-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD681_do_wiring_pnp.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-7 BD681 Digital Output Wiring Diagram for PNP-Type
+  </figcaption>
+</figure>
 
-![](../../_assets/BD682_do_wiring_pnp.png)<br>
-Figure 5.5.3-8 BD682 Digital Output Wiring Diagram for PNP-Type<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/BD682_do_wiring_pnp.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-8 BD682 Digital Output Wiring Diagram for PNP-Type
+  </figcaption>
+</figure>
 
 (4) Precautions for Digital input/output Wiring<br>
 * Case 1<br>
 When digital output terminals are used for two or more stages of control depending on capacity, application or intended purpose (see the figure below).<br>
 
-![](../../_assets/bd681_bd682_case_one_0.png)<br>
-Figure 5.5.3-9 BD681 & BD682 Digital Output Case 1<br>
+<figure style="margin: 0; text-align: center;">
+  <img  src="../../_assets/bd681_bd682_case_one_0.png" 
+        style="display: block; margin: 0 auto 5px auto;">
+  <figcaption style="margin-top: 0;">
+    Figure 5.5.3-9 BD681 & BD682 Digital Output Case 1
+  </figcaption>
+</figure>
 
 When wired as shown above, turning OFF an inductive load inevitably generates a reverse voltage(back EMF). Since there is no circuit configured to suppress it, this reverse voltage can flow back into the BD681 or BD682, potentially causing errors or malfunctions in the Hi7 controller.<br>
 
@@ -191,19 +236,10 @@ To prevent this issue, please implement one of the following solutions:<br>
 Item (1): Install a varistor and diode to suppress the reverse voltage.<br>
 Item (2): Design and provide a separate SMPS.<br>
 
-![](../../_assets/bd681_bd682_case_one_solution_0.png)<br>
-Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1<br>
-
-<figure style="margin: 0 auto;">
-  <img src="../../_assets/bd681_bd682_case_one_solution_0.png" style="display: block; margin-bottom: 5px;">
-  <figcaption style="margin-top: 0; text-align: center;">
-    Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1
-  </figcaption>
-</figure>
-
 <figure style="margin: 0; text-align: center;">
   <img src="../../_assets/bd681_bd682_case_one_solution_0.png" style="display: block; margin: 0 auto 5px auto;">
   <figcaption style="margin-top: 0;">
     Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1
   </figcaption>
 </figure>
+
