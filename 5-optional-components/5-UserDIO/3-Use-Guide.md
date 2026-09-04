@@ -194,9 +194,9 @@ Item (2): Design and provide a separate SMPS.<br>
 ![](../../_assets/bd681_bd682_case_one_solution_0.png)<br>
 Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1<br>
 
-<figure style="margin: 0; text-align: center;">
+<figure style="margin: 0; auto;">
   <img src="../../_assets/bd681_bd682_case_one_solution_0.png" style="display: block; margin-bottom: 5px;">
-  <figcaption style="margin-top: 0;">
+  <figcaption style="margin-top: 0; text-align: center;">
     Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1
   </figcaption>
 </figure>
