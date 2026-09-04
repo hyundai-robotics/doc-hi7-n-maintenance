@@ -202,7 +202,7 @@ In the figure below, red indicates channels 1 to 8, and blue indicates channels 
 For the PNP-type, connect the external power (+)EX_24V to pins 1 and 11 of the BD681 and BD682, and connect (-)EX_GND to the external device.<br>
 Refer to the wiring example below for connecting external devices.<br>
 
-<figure style="margin: 0; text-align: center;">
+<figure style="margin: 100%; text-align: center;">
   <img  src="../../_assets/BD681_do_wiring_pnp.png" 
         style="display: block; margin: 0 auto 5px auto;">
   <figcaption style="margin-top: 0;">
@@ -210,7 +210,7 @@ Refer to the wiring example below for connecting external devices.<br>
   </figcaption>
 </figure>
 
-<figure style="margin: 0; text-align: center;">
+<figure style="margin: 100%; text-align: center;">
   <img  src="../../_assets/BD682_do_wiring_pnp.png" 
         style="display: block; margin: 0 auto 5px auto;">
   <figcaption style="margin-top: 0;">
@@ -231,12 +231,11 @@ When digital output terminals are used for two or more stages of control dependi
 </figure>
 
 When wired as shown above, turning OFF an inductive load inevitably generates a reverse voltage(back EMF). Since there is no circuit configured to suppress it, this reverse voltage can flow back into the BD681 or BD682, potentially causing errors or malfunctions in the Hi7 controller.<br>
-
 To prevent this issue, please implement one of the following solutions:<br>
 Item (1): Install a varistor and diode to suppress the reverse voltage.<br>
 Item (2): Design and provide a separate SMPS.<br>
 
-<figure style="margin: 0; text-align: center;">
+<figure style="margin: 100%; text-align: center;">
   <img src="../../_assets/bd681_bd682_case_one_solution_0.png" style="display: block; margin: 0 auto 5px auto;">
   <figcaption style="margin-top: 0;">
     Figure 5.5.3-10 BD681 & BD682 Digital Output: Solution for Case 1
