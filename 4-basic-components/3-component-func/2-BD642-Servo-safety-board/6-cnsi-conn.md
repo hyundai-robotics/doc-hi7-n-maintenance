@@ -9,9 +9,9 @@ The figure below shows a photograph of the Servo/Safety Module(BD642) and the lo
 ![](../../../_assets/BD642_전면사진_안전입력.png)   
 Figure 4.3.2.6-1 Photograph of the Servo/Safety Module(BD642) and Location of the Safety Input Connector(CNSI1)
 
-(1) Safety Input Factory Default State(When Not Used)   
-If the safety input signals are not used, they must be connected as NC(Normally Closed, B-contact) by default.
-The figure below shows the wiring configuration when the safety inputs are not used(factory default wiring state).
+(1) Safety Input Factory Default State<br>
+The figure below shows the safety input wiring configuration as shipped from the factory. <br>
+Unused safety input channels can remain open (OPEN) without additional wiring.
 
 ![](../../../_assets/BD642_안전입력_사용안함.png)   
 Figure 4.3.2.6-2 Factory Default Wiring State of Safety Inputs - Servo/Safety Module(BD642)
